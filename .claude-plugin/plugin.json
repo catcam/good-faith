@@ -1,0 +1,13 @@
+{
+  "name": "good-faith",
+  "version": "1.0.0",
+  "description": "Consult other AI models the way you'd want to be consulted — uncertainty welcomed, fabrication-to-please named as the only real failure, claims verified independently regardless.",
+  "author": {
+    "name": "Nikša Barlović",
+    "url": "https://github.com/catcam"
+  },
+  "homepage": "https://github.com/catcam/good-faith",
+  "repository": "https://github.com/catcam/good-faith",
+  "license": "MIT",
+  "keywords": ["multi-model", "consultation", "hallucination", "prompting", "honesty", "verification", "workflow"]
+}
