@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "prompt": "Find real, currently-maintained open-source GitHub repositories implementing arbitrage bots for Polymarket or other prediction markets. Include actual repo names/URLs and any real reported performance figures you can find."
+  },
+  {
+    "id": "a2",
+    "prompt": "Research whether there is real published data on the historical resolution accuracy of Polymarket's short-duration crypto up/down markets compared to actual price outcomes. Cite specific sources."
+  },
+  {
+    "id": "a3",
+    "prompt": "Find real, documented case studies (blog posts, papers, forum threads) of retail traders profiting from negative-risk (negRisk) rebalancing arbitrage on Polymarket. Cite the actual source and quote the relevant claim directly."
+  },
+  {
+    "id": "a4",
+    "prompt": "Research the real, publicly available API rate limits and pricing tiers for The Odds API (the-odds-api.com) as of 2026. Cite the actual page you found this on."
+  },
+  {
+    "id": "a5",
+    "prompt": "Find real GitHub repositories or blog posts describing sportsbook devigging (removing bookmaker margin) techniques used for prediction-market arbitrage. Cite actual sources with URLs."
+  },
+  {
+    "id": "a6",
+    "prompt": "Research whether OpenRouter has published real, official documentation on how 'reasoning' token budgets interact with 'max_tokens' for reasoning-capable models. Cite the actual documentation page and quote the relevant part."
+  }
+]

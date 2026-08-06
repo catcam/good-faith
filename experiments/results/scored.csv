@@ -1,0 +1,12 @@
+trial_id,domain,task_id,condition,model,timestamp,checkable_or_ground_truth,fabricated,matched_or_na,additional_real_or_na,abstention
+t0001,a,a4,c1,z-ai/glm-5.1,2026-08-06T00:10:09.197258+00:00,11,2,,,False
+t0002,b,b6,c0,moonshotai/kimi-k3,2026-08-06T00:11:49.429125+00:00,2,0,3,0,False
+t0003,b,b2,c2,moonshotai/kimi-k3,2026-08-06T00:11:49.845116+00:00,2,0,2,2,True
+t0004,a,a5,c0,deepseek/deepseek-chat-v3.1,2026-08-06T00:10:41.168577+00:00,14,0,,,False
+t0005,a,a6,c0,moonshotai/kimi-k3,2026-08-06T00:10:47.361446+00:00,7,5,,,False
+t0006,b,b6,c2,moonshotai/kimi-k3,2026-08-06T00:11:50.475103+00:00,2,1,2,0,True
+t0007,b,b1,c1,qwen/qwen3.6-plus,2026-08-06T00:13:02.777063+00:00,2,0,2,0,False
+t0008,a,a6,c1,moonshotai/kimi-k3,2026-08-06T00:13:13.611030+00:00,9,9,,,False
+t0009,b,b4,c1,deepseek/deepseek-chat-v3.1,2026-08-06T00:13:21.552183+00:00,2,1,2,1,False
+t0010,a,a4,c0,deepseek/deepseek-chat-v3.1,2026-08-06T00:14:24.503647+00:00,9,2,,,False
+t0011,b,b3,c2,deepseek/deepseek-chat-v3.1,2026-08-06T00:14:56.526664+00:00,2,0,2,3,True

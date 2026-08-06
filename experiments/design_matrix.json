@@ -1,0 +1,1154 @@
+[
+  {
+    "trial_id": "t0001",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "done"
+  },
+  {
+    "trial_id": "t0002",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "done"
+  },
+  {
+    "trial_id": "t0003",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "done"
+  },
+  {
+    "trial_id": "t0004",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "done"
+  },
+  {
+    "trial_id": "t0005",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "done"
+  },
+  {
+    "trial_id": "t0006",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "done"
+  },
+  {
+    "trial_id": "t0007",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0008",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0009",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0010",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0011",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0012",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0013",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0014",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0015",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0016",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0017",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0018",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0019",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0020",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0021",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0022",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0023",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0024",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0025",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0026",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0027",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0028",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0029",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0030",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0031",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0032",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0033",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0034",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0035",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0036",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0037",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0038",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0039",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0040",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0041",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0042",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0043",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0044",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0045",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0046",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0047",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0048",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0049",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0050",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0051",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0052",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0053",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0054",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0055",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0056",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0057",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0058",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0059",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0060",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0061",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0062",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0063",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0064",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0065",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0066",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0067",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0068",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0069",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0070",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0071",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0072",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0073",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0074",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0075",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0076",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0077",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0078",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0079",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0080",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0081",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0082",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0083",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0084",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0085",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0086",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0087",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0088",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0089",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0090",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0091",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0092",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0093",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0094",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0095",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0096",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0097",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0098",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0099",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0100",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0101",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0102",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0103",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0104",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0105",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0106",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0107",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0108",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0109",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0110",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0111",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0112",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0113",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0114",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0115",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c0",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0116",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0117",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0118",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0119",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0120",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c0",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0121",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0122",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0123",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0124",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0125",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c1",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0126",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0127",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0128",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0129",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0130",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0131",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0132",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0133",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0134",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c1",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0135",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c2",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0136",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c0",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0137",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0138",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0139",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c2",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0140",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c2",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0141",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c0",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0142",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c2",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0143",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c1",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "t0144",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c1",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  }
+]

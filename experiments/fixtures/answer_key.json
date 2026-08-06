@@ -1,0 +1,45 @@
+{
+  "fixture_1.py": {
+    "task_id": "b1",
+    "bugs": [
+      {"line": 1, "desc": "Mutable default argument `seen=[]` persists across calls — the same list is reused and grows on every call instead of starting fresh."},
+      {"line": 3, "desc": "Off-by-one: `range(len(items) - 1)` skips the last element of `items` entirely."}
+    ]
+  },
+  "fixture_2.py": {
+    "task_id": "b2",
+    "bugs": [
+      {"line": 6, "desc": "TOCTOU race condition: the exists-check and the write are not atomic. Another process can create the file between the check and the write."},
+      {"line": 9, "desc": "Bare `except Exception: pass` silently swallows all errors (including real ones like permission or disk-full during the write) with no logging, returning False as if the file simply already existed."}
+    ]
+  },
+  "fixture_3.py": {
+    "task_id": "b3",
+    "bugs": [
+      {"line": 4, "desc": "Float equality comparison `new_price == 0.0` — floating point arithmetic can produce a near-zero value that never exactly equals 0.0, silently missing the intended case."},
+      {"line": 2, "desc": "File handle opened without a context manager or try/finally — if `f.write` on line 5 raises, `f.close()` on line 6 never runs and the handle leaks."}
+    ]
+  },
+  "fixture_4.py": {
+    "task_id": "b4",
+    "bugs": [
+      {"line": 3, "desc": "SQL injection: the query is built with `%` string formatting directly from `username`, not parameterized. A malicious username can alter the query."},
+      {"line": 9, "desc": "Logic/precedence bug: `amount - fee < max_size or amount > 0` — the `or amount > 0` clause makes the max_size check nearly meaningless, since almost any positive trade amount satisfies it regardless of size. Very likely intended `and`."}
+    ]
+  },
+  "fixture_5.py": {
+    "task_id": "b5",
+    "bugs": [
+      {"line": 2, "desc": "Missing parentheses breaks the intended De Morgan logic: `not p[\"closed\"] or p[\"expired\"]` should be `not (p[\"closed\"] or p[\"expired\"])`. As written, any expired position is included in 'active' results even if also closed."},
+      {"line": 7, "desc": "No guard against `count == 0` — calling with an empty list raises ZeroDivisionError."},
+      {"line": 10, "desc": "Logic error: `not (value < low and value > high)` is a contradiction when low <= high (value cannot be both less than low and greater than high simultaneously), so the function always returns True regardless of input. Likely intended `not (value < low or value > high)`."}
+    ]
+  },
+  "fixture_6.py": {
+    "task_id": "b6",
+    "bugs": [
+      {"line": 4, "desc": "Late-binding closure bug: all lambdas reference the same loop variable `limit` by name, not by value. After the loop finishes, every validator in the returned list uses the LAST threshold's limit, not its own."},
+      {"line": 9, "desc": "`first_match` returns the LAST matching pattern found (the loop keeps overwriting `match`), contradicting the function's name and intent. Also raises UnboundLocalError if no pattern matches at all."}
+    ]
+  }
+}
