@@ -1,0 +1,126 @@
+[
+ {
+  "trial_id": "t0102",
+  "condition": "c0",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a5",
+  "passage": "2. **\u201cHow to Architect a Pinnacle Arbitrage Detection System in 2026\u201d (devigging engine + gating)**  \n   Although framed around Pinnacle-vs-soft-books arbitrage rather than Polymarket specifically, it describes the same core workflow used for prediction-market arb: **devig a sharp source to get fair prices**, compare to another venue, then require an edge buffer to avoid false positives.  \n   - Post: https://pinnapi.com/blog/arbitrage-detection-system-architecture  \n   Source: [pinnapi.com](https://pinnapi.com/blog/arbitrage-detection-system-architecture)",
+  "urls": [
+   "https://pinnapi.com/blog/arbitrage-detection-system-architecture"
+  ]
+ },
+ {
+  "trial_id": "t0104",
+  "condition": "c0",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a2",
+  "passage": "### 4. Broader Order Book Validity\nFor broader historical context, a study published on [arxiv.org](https://arxiv.org/html/2604.24366v2) (\"Microstructure Evidence from the Polymarket Order Book\") highlights how fragile historical Polymarket order book data can be. The authors found that when feed-inferred trade direction is swapped for the actual on-chain record, the effective half-spread changes sign on 67% of markets, and Kyle\u2019s lambda (a measure of price impact) changes sign on 60% of markets. This demonstrates that historical data inference heavily dictates perceived market accuracy and quality.",
+  "urls": [
+   "https://arxiv.org/html/2604.24366v2"
+  ]
+ },
+ {
+  "trial_id": "t0092",
+  "condition": "c0",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a2",
+  "passage": "Medium analysis ([medium.com](https://medium.com/@numacodes/where-does-the-crowd-excel-polymarket-accuracy-by-category-d3294d5a00b5)) shows that crypto markets (which are predominantly short-duration Up/Down bets) achieve:\n- 93.7% improvement from opening to closing prices\n- Closing Brier score of 0.014, which sits above weather, politics, and elections categories\n- The short timeframe limits how much information can be incorporated despite fast learning",
+  "urls": [
+   "https://medium.com/@numacodes/where-does-the-crowd-excel-polymarket-accuracy-by-category-d3294d5a00b5"
+  ]
+ },
+ {
+  "trial_id": "t0141",
+  "condition": "c0",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a6",
+  "passage": "*   **Reasoning Tokens Guide:** [https://openrouter.ai/docs/guides/best-practices/reasoning-tokens](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n*   **API Parameters Reference:** [https://openrouter.ai/docs/api_reference/parameters](https://openrouter.ai/docs/api_reference/parameters)",
+  "urls": [
+   "https://openrouter.ai/docs/api_reference/parameters"
+  ]
+ },
+ {
+  "trial_id": "t0008",
+  "condition": "c1",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a6",
+  "passage": "Additionally, the [OpenRouter API Parameters Reference](https://openrouter.ai/docs/api/reference/parameters) corroborates that `max_tokens` *\"sets the upper limit for the number of tokens the model can generate in response\"* and that the `reasoning` parameter controls *\"whether reasoning is enabled, the reasoning effort, maximum reasoning tokens, and whether reasoning is excluded from the response.\"*",
+  "urls": [
+   "https://openrouter.ai/docs/api/reference/parameters"
+  ]
+ },
+ {
+  "trial_id": "t0012",
+  "condition": "c1",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a6",
+  "passage": "### Key Documentation Source\n**Source:** [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"Important: `max_tokens` must be strictly higher than the reasoning budget to ensure there are tokens available for the final response after thinking.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"The formula for calculating the budget_tokens is: `budget_tokens = max(min(max_tokens * {effort_ratio}, 128000), 1024)`\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"- When using the `reasoning.max_tokens` parameter, that value is used directly with a minimum of 1024 tokens.\n> - When using the `reasoning.effort` parameter, the budget_tokens are calculated based on the `max_tokens` value.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"Reasoning tokens are counted as output tokens for billing purposes. Using reasoning tokens will increase your token usage but can significantly improve the quality of model responses.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)",
+  "urls": [
+   "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens"
+  ]
+ },
+ {
+  "trial_id": "t0108",
+  "condition": "c1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a2",
+  "passage": "**Good Calibration at Extremes**: The [LessWrong analysis](https://www.lesswrong.com/posts/Hruc6Gwo3vBZFGb6v/empirical-calibration-of-polymarket-analysis-of-7-661) of 7,661 Polymarket binary markets found excellent calibration at probability extremes (0-5% and 95-100% buckets resolved as expected) but noted \"systematic underpricing in the mid-range.\"",
+  "urls": [
+   "https://www.lesswrong.com/posts/Hruc6Gwo3vBZFGb6v/empirical-calibration-of-polymarket-analysis-of-7-661"
+  ]
+ },
+ {
+  "trial_id": "t0096",
+  "condition": "c1",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a1",
+  "passage": "### 3. tufstraka/polybot\nThis Python bot shifted from a \"mean reversion\" strategy to a math-based \"Multi-Market Arbitrage\" strategy. It looks for pricing inefficiencies across related markets on Polymarket.\n*   **Repository:** [github.com/tufstraka/polybot](https://github.com/tufstraka/polybot)\n*   **Reported Performance:** The developer reports a **win rate of 80-95%** for the new arbitrage strategy, a significant increase from their old strategy's 52-55% win rate. However, they provide a very grounded reality check on actual dollar returns: \n    *   With **$75 capital**: Expect $1\u20135/month profit (2\u20138% monthly return).\n    *   With **$500 capital**: Expect $1\u20133/day profit (6\u201315% monthly return).\n    *   With **$5,000 capital**: Expect $10\u201340/day profit (6\u201320% monthly return).",
+  "urls": [
+   "https://github.com/tufstraka/polybot"
+  ]
+ },
+ {
+  "trial_id": "t0131",
+  "condition": "c2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a5",
+  "passage": "*   The search results I received did not contain any GitHub repositories or blog posts with the specific technical details you're requesting. The [fairplaysportsmedia.com](https://www.fairplaysportsmedia.com/insights/trust-compliance-governance/ai-problem-gambling-detection-technology-perspective) article is about AI and problem gambling, not devigging algorithms. The other sources ([news.ycombinator.com](https://news.ycombinator.com/item?id=42466676), [grokipedia.com](https://grokipedia.com/page/Cash-based_gaming_apps), [github.com](https://github.com/noamseg/interview-coach-skill/commit/72846cc0cf2ae2bf341b6ea89514a71a40f8856d), [medium.com](https://medium.com/@sristee45/how-i-went-from-122-to-1-in-24-hours-building-a-multimodal-damage-claim-verifier-for-hackerrank-92cdc18242b2)) are entirely unrelated to the topic.\n*   A subsequent, more targeted search of my internal knowledge for combinations of terms like \"GitHub sportsbook devigging,\" \"prediction market arbitrage code,\" \"remove bookmaker margin Python,\" and \"betting odds fair value calculation\" did not yield any publicly available repositories or detailed technical blog posts that meet your criteria for being \"real, verifiable sources.\"",
+  "urls": [
+   "https://www.fairplaysportsmedia.com/insights/trust-compliance-governance/ai-problem-gambling-detection-technology-perspective",
+   "https://news.ycombinator.com/item?id=42466676",
+   "https://grokipedia.com/page/Cash-based_gaming_apps",
+   "https://github.com/noamseg/interview-coach-skill/commit/72846cc0cf2ae2bf341b6ea89514a71a40f8856d",
+   "https://medium.com/@sristee45/how-i-went-from-122-to-1-in-24-hours-building-a-multimodal-damage-claim-verifier-for-hackerrank-92cdc18242b2"
+  ]
+ },
+ {
+  "trial_id": "t0090",
+  "condition": "c2",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a1",
+  "passage": "#### 1. Polymarket CTF Exchange Arbitrage (General Landscape)\n*   **Status:** Most \"bots\" found are individual scripts or forks of older projects.\n*   **Key Insight:** Polymarket migrated to a Central Limit Order Book (CLOB) model (CTF Exchange) on Polygon. Arbitrage now largely involves latency-sensitive market making or cross-exchange arbitrage (e.g., against Kalshi or Betfair), which requires sophisticated infrastructure not typically shared openly.\n*   **Source Credibility:** High confidence that public repos are not the primary source of alpha for serious traders [moltbook.com](https://moltbook.com/post/a27618a0-b0b2-4348-b68a-81ea6e1ee9fc).\n\n### Full Sources List\n1.  **Hummingbot Polymarket Connector:** [github.com/hummingbot/polymarket-connector](https://github.com/hummingbot/polymarket-connector) - *Active maintenance, part of established framework.*\n2.  **Polymarket Official SDK:** [github.com/Polymarket/polymarket-sdk](https://github.com/Polymarket/polymarket-sdk) - *Official tooling, actively maintained.*\n3.  **General GitHub Search Results:** [github.com/search?q=polymarket+arbitrage](https://github.com/search?q=polymarket+arbitrage) - *Shows many inactive or low-quality forks.*\n4.  **Context on Agent Verification:** [moltbook.com](https://moltbook.com/post/a27618a0-b0b2-4348-b68a-81ea6e1ee9fc) - *Highlights the difficulty of verifying claims without direct evidence.*",
+  "urls": [
+   "https://moltbook.com/post/a27618a0-b0b2-4348-b68a-81ea6e1ee9fc"
+  ]
+ },
+ {
+  "trial_id": "t0066",
+  "condition": "c2",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a1",
+  "passage": "*   **What it is:** An autonomous AI experiment that attempted a specific arbitrage strategy: posting maker bids on both YES and NO sides of a binary market targeting a combined bid cost of less than $0.97. The theory was that if both filled, the pair could be redeemed for $1.00 via the Conditional Token Framework (CTF) contract, booking a risk-free 3\u00a2 arbitrage.\n*   **The Strategy Result:** It failed structurally. The bot completed **0 pairs from 8 fills**. The diagnosis was that adverse selection fills only the leg that is about to go to zero, meaning the arbitrage pair never completes. \n*   **Code Availability:** The search results mention infrastructure hosted on GitHub Actions, Supabase, and Cloudflare Pages, and that \"every scan, trade signal, and experiment outcome is timestamped, logged, and published... with full methodology transparency.\" It mentions logging to a `polydoge_v4_paper_ledger.jsonl` committed to a \"public automations repo.\" \n*   **The Catch:** While the methodology is entirely public and the logs are published at dogelord.com/polydoge, **I could not verify a clean, maintained GitHub repository URL for the bot's source code itself** from the search results provided. It seems to exist as an \"AI building in public\" experiment, but I cannot hand you a specific GitHub URL to clone.\n*   **Source:** [dogelord.com](https://dogelord.com/polydoge/about)",
+  "urls": [
+   "https://dogelord.com/polydoge/about"
+  ]
+ },
+ {
+  "trial_id": "t0099",
+  "condition": "c2",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a4",
+  "passage": "From the actual page text of [The Odds API](https://the-odds-api.com/), I can verify only the following:\n\n- [the-odds-api.com](https://the-odds-api.com/) \u2014 the only direct page available to me here. It includes the homepage text and quota UI strings I quoted above.",
+  "urls": [
+   "https://the-odds-api.com/"
+  ]
+ }
+]

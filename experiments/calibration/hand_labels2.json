@@ -1,0 +1,75 @@
+{
+ "_method": "Same procedure as hand_labels.json (blind, full source text searched with find.py, operational definition incl. link scope = the sentence/bullet the link is on).",
+ "t0102": {
+  "supported": 2,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "title; devig sharp source -> fair price, compare, buffer (def arb_exists(..., buffer=1.02))"
+ },
+ "t0104": {
+  "supported": 3,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "paper title; half-spread sign change 67%; Kyle's lambda 60% (first window). Last sentence is the model's own conclusion"
+ },
+ "t0092": {
+  "supported": 0,
+  "fabricated": 0,
+  "undetermined": 3,
+  "note": "medium.com blocked from every route"
+ },
+ "t0141": {
+  "supported": 0,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "list of links only"
+ },
+ "t0008": {
+  "supported": 2,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "both quotes verbatim (URL redirects to /docs/api_reference/parameters)"
+ },
+ "t0012": {
+  "supported": 4,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "all quotes verbatim"
+ },
+ "t0108": {
+  "supported": 3,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "7,661 markets; well-calibrated at extremes; quote 'systematic underpricing in the mid-range' verbatim"
+ },
+ "t0096": {
+  "supported": 6,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "strategy switch, 80-95% vs 52-55%, $75/$500/$5,000 table rows, Python - all in README"
+ },
+ "t0131": {
+  "supported": 2,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "meta-claims: fairplay piece is about problem gambling, the other four sources are unrelated (titles/URLs confirm)"
+ },
+ "t0090": {
+  "supported": 0,
+  "fabricated": 0,
+  "undetermined": 2,
+  "note": "moltbook page is a JS shell (663 chars) - claims attributed to it undeterminable; Status/Key Insight bullets carry no link (unattributed); other listed repos belong to their own passages"
+ },
+ "t0066": {
+  "supported": 7,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "<$0.97 combined bid, CTF $1 redemption, 0 pairs from 8 fills, adverse selection, GitHub Actions/Supabase/Cloudflare, quote verbatim, ledger file, public automations repo"
+ },
+ "t0099": {
+  "supported": 1,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "homepage text does contain plan usage quota strings (FAQ block on the homepage)"
+ }
+}

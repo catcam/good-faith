@@ -1,0 +1,302 @@
+[
+ {
+  "trial_id": "t0047",
+  "claims": [
+   {
+    "claim": "Top performer earned $2,009,631.76 across 4,049 transactions",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "Excerpt contains the exact figures $2,009,631.76 and 4,049 transactions."
+   },
+   {
+    "claim": "Average profit per trade was $496",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "Excerpt includes \"averaging $496 per trade\"."
+   },
+   {
+    "claim": "Strategy used was systematic NegRisk rebalancing",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "Excerpt states \"strategy: systematic negrisk rebalancing\"."
+   },
+   {
+    "claim": "Combinatorial arbitrage captured 0.24% of profits",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "Excerpt includes \"combinatorial arbitrage captured 0.24% of profits\"."
+   },
+   {
+    "claim": "Probability\u2011sum deviations in multi\u2011condition markets delivered 73%",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "Excerpt contains \"probability-sum deviations in multi-condition markets delivered 73%\"."
+   },
+   {
+    "claim": "Total extraction was $28,990,000 from buying YES ($11.09M), buying NO ($17.31M), and selling strategies ($612K YES, $4K NO)",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "fabricated",
+    "why": "Excerpt does not mention these specific dollar breakdowns; only a total of $39,587,585 is given."
+   },
+   {
+    "claim": "Average profit per opportunity was $43,800 versus $1,500 for single\u2011condition, a 29\u00d7 capital efficiency advantage",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "fabricated",
+    "why": "Excerpt contains no figures for $43,800, $1,500, or a 29\u00d7 advantage."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0056",
+  "claims": [
+   {
+    "claim": "Across 60,307 settled crypto up/down markets, 49.2% resolved up and 50.8% resolved down",
+    "url": "https://depthfeed.com/resources/how-polymarket-crypto-markets-settle",
+    "verdict": "supported",
+    "why": "Excerpt explicitly states the 49.2%/50.8% split for 60,307 markets."
+   },
+   {
+    "claim": "A documented case had a market open price\u2011to\u2011beat of $62,701.75 and close reference price of $62,519.65, resulting in a Down resolution",
+    "url": "https://depthfeed.com/resources/how-polymarket-crypto-markets-settle",
+    "verdict": "fabricated",
+    "why": "The provided excerpt does not contain any mention of those specific price figures or the example case."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0107",
+  "claims": [
+   {
+    "claim": "User @Tutaaa91 bought YES/NO tokens for < $0.02 each, earning a single\u2011trade profit of $58,983.36",
+    "url": "https://arxiv.org/html/2508.03474v1",
+    "verdict": "supported",
+    "why": "The arXiv excerpt contains the exact sentence describing the @tutaaa91 trade and the $58,983.36 profit."
+   },
+   {
+    "claim": "Total profit from buying \u201cYES\u201d is $11,092,286.31 and buying \u201cNO\u201d is $17,307,113.81; Polymarket announced that some accounts profit heavily by buying \u201cNO\u201d positions",
+    "url": "https://arxiv.org/html/2508.03474v1",
+    "verdict": "supported",
+    "why": "The arXiv excerpt lists the same profit figures and includes the statement that Polymarket announced accounts making profit by buying \u201cNO\u201d positions."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0083",
+  "claims": [
+   {
+    "claim": "Realized estimate of $40\u202fmillion USD profit extracted across both types of arbitrage during the measurement period",
+    "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol354-aft2025/LIPIcs.AFT.2025.27/LIPIcs.AFT.2025.27.pdf",
+    "verdict": "supported",
+    "why": "The provided excerpt from the PDF contains the exact statement about a $40\u202fmillion USD realized profit estimate."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0110",
+  "claims": [
+   {
+    "claim": "Usage credits reset on the first of every month",
+    "url": "https://the-odds-api.com/manage/faqs.html",
+    "verdict": "supported",
+    "why": "FAQ excerpt explicitly states that usage credits are automatically reset on the first of every month."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0037",
+  "claims": [
+   {
+    "claim": "The reasoning token allocation is capped at 128,000 tokens maximum and 1024 tokens minimum, with a formula budget_tokens = max(min(max_tokens * effort_ratio, 128000), 1024) and specific effort_ratio values.",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt contains the exact sentence describing the caps, formula, and effort_ratio values."
+   },
+   {
+    "claim": "`max_tokens` must be strictly higher than the reasoning budget to ensure tokens remain for the final response.",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt includes the statement \"important : max_tokens must be strictly higher than the reasoning budget to ensure there are tokens available for the final response after thinking.\""
+   },
+   {
+    "claim": "When using the `reasoning.max_tokens` parameter, that value is used directly with a minimum of 1024 tokens.",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt states \"when using the reasoning.max_tokens parameter, that value is used directly with a minimum of 1024 tokens.\""
+   },
+   {
+    "claim": "Reasoning tokens are counted as output tokens for billing purposes and increase token usage but improve response quality.",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt includes \"token usage and billing reasoning tokens are counted\" and discusses that using reasoning tokens will increase usage while improving quality."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0045",
+  "claims": [
+   {
+    "claim": "The repository is a Rust arbitrage system for cross\u2011platform prediction\u2011market trading between Kalshi and Polymarket.",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "supported",
+    "why": "The README excerpt describes the project as \"a arbitrage system for cross\u2011platform prediction market trading between kalshi and polymarket\" and the repo language is Rust."
+   },
+   {
+    "claim": "The project includes Kalshi and Polymarket REST/WebSocket clients, a lock\u2011free orderbook cache, SIMD\u2011based arbitrage detection, concurrent order execution, position & P&L tracking, and a circuit breaker.",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "supported",
+    "why": "The excerpt lists these features in the project status checklist and architecture section."
+   },
+   {
+    "claim": "Kalshi fees are factored into arbitrage detection using the formula ceil(0.07 \u00d7 contracts \u00d7 price \u00d7 (1\u2011price)).",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "supported",
+    "why": "The README fee\u2011handling section contains the exact formula."
+   },
+   {
+    "claim": "Polymarket has zero trading fees.",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "supported",
+    "why": "The fee\u2011handling section states \"polymarket: zero trading fees\"."
+   },
+   {
+    "claim": "The repository defines four arbitrage types: poly_yes_kalshi_no, kalshi_yes_poly_no, poly_same_market, and kalshi_same_market.",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "supported",
+    "why": "The README includes a table listing exactly those four arbitrage types."
+   },
+   {
+    "claim": "No verified profit or win\u2011rate figures are provided in the repository.",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "supported",
+    "why": "The provided excerpts show only build/run instructions and benchmarks placeholders, with no profit or win\u2011rate data."
+   },
+   {
+    "claim": "The most concrete currently visible repos from the search are the five listed GitHub URLs.",
+    "url": "https://github.com/taetaehoho/poly-kalshi-arb",
+    "verdict": "undetermined",
+    "why": "Only the first URL has supporting excerpt; the other four URLs lack provided evidence to confirm they are the most concrete repos."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0111",
+  "claims": [
+   {
+    "claim": "The proportional method formula is p_true_A = (1/odds_A) / ((1/odds_A)+(1/odds_B))",
+    "url": "https://clawarbs.com/blog/devig-prediction-markets/",
+    "verdict": "supported",
+    "why": "The excerpt explicitly provides the proportional formula and describes dividing each implied probability by the sum of implied probabilities."
+   },
+   {
+    "claim": "Shin\u2019s Method is a more complex algorithm that accounts for the fact that favorites often carry a different margin proportion than underdogs.",
+    "url": "https://clawarbs.com/blog/devig-prediction-markets/",
+    "verdict": "fabricated",
+    "why": "The excerpt only lists Shin\u2019s Method among the methods but does not contain any statement about it accounting for favorite\u2011specific margins."
+   },
+   {
+    "claim": "Logarithmic Method is another variation for stripping margin.",
+    "url": "https://clawarbs.com/blog/devig-prediction-markets/",
+    "verdict": "fabricated",
+    "why": "The source excerpt mentions the logarithmic method but provides no description that it is a variation for stripping margin."
+   },
+   {
+    "claim": "At Pinnacle, the overround in a two\u2011way sports market is typically 2 to 3%.",
+    "url": "https://clawarbs.com/blog/devig-prediction-markets/",
+    "verdict": "supported",
+    "why": "The excerpt states that in a two\u2011way sports market at Pinnacle the overround is typically 2 to 3%."
+   },
+   {
+    "claim": "At soft sportsbooks, the overround is 8 to 10%.",
+    "url": "https://clawarbs.com/blog/devig-prediction-markets/",
+    "verdict": "supported",
+    "why": "The excerpt includes the figure that soft sportsbooks have an overround of 8 to 10%."
+   },
+   {
+    "claim": "Worked example: Celtics odds 1.75 decimal give 57.14% implied probability; Heat odds 2.20 decimal give 45.45% implied probability; sum 102.60% overround.",
+    "url": "https://clawarbs.com/blog/devig-prediction-markets/",
+    "verdict": "supported",
+    "why": "The excerpt provides this exact worked example with the same numbers and calculated sum."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0067",
+  "claims": [
+   {
+    "claim": "Polymarket's official documentation frequently mentions arbitrage opportunities but only as general explanations, not verified retail case studies.",
+    "url": "https://polymarket.com/",
+    "verdict": "fabricated",
+    "why": "The provided excerpt from the homepage contains unrelated election commentary and no mention of arbitrage opportunities."
+   },
+   {
+    "claim": "Polymarket's Discord community discussions frequently mention arbitrage opportunities but only as general explanations, not verified retail case studies.",
+    "url": "https://discord.com/invite/polymarket",
+    "verdict": "undetermined",
+    "why": "The page could not be scraped (JavaScript required), so the presence of the claimed content cannot be confirmed."
+   },
+   {
+    "claim": "Polymarket's Reddit community frequently mentions arbitrage opportunities but only as general explanations, not verified retail case studies.",
+    "url": "https://www.reddit.com/r/Polymarket/",
+    "verdict": "undetermined",
+    "why": "The page yielded only a generic placeholder with no extractable text, making verification impossible."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0133",
+  "claims": [
+   {
+    "claim": "Polymarket prices are \u201cwell\u2011calibrated in aggregate.\u201d",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "Source could not be fetched (HTTP\u202f403); cannot verify the statement."
+   },
+   {
+    "claim": "The mean Brier score at the 30\u2011day horizon is 0.045.",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "Source could not be fetched; the numeric claim cannot be confirmed."
+   },
+   {
+    "claim": "The Brier skill score against a climatological baseline is 0.69, indicating a ~69% reduction in mean\u2011squared forecast error.",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "Source unavailable; cannot verify the skill\u2011score figure."
+   },
+   {
+    "claim": "A small, consistent positive bias of 0.9 to 1.6 percentage points was found across all time horizons.",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "Source could not be accessed; bias magnitude cannot be confirmed."
+   },
+   {
+    "claim": "Crypto \u201cUp/Down\u201d markets were excluded because their outcome labels cannot be uniformly interpreted as Yes\u2011probability forecasts.",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "Source unavailable; cannot verify the quoted filtering methodology."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0140",
+  "claims": [
+   {
+    "claim": "The post provides the exact Pandas code for vig removal and Expected Value (EV) calculation.",
+    "url": "https://scraper.page/from-box-scores-to-bets-building-a-sports-simulation-pipelin",
+    "verdict": "supported",
+    "why": "The excerpt includes Pandas code that computes implied probabilities, removes vig, and calculates EV, matching the claim."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0135",
+  "claims": [
+   {
+    "claim": "The repository was created in May\u202f2026, has 2 stars and 0 forks, and its description mentions a multi\u2011agent AI swarm for analyzing Polymarket prediction markets with bull/bear teams, meta\u2011judge, Kelly\u2011criterion sizing, and on\u2011chain ARC pinning.",
+    "url": "https://github.com/TejasS1233/pythia",
+    "verdict": "supported",
+    "why": "The GitHub page excerpt shows created_at=2026-05-23, stars=2, forks=0, and a description matching the claim."
+   }
+  ]
+ }
+]

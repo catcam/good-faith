@@ -1,0 +1,124 @@
+[
+ {
+  "trial_id": "t0047",
+  "condition": "c0",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a3",
+  "passage": "*   **Source:** [navnoorbawa.substack.com](https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse)\n*   **Direct Quote:** \"Top performer: $2,009,631.76 across 4,049 transactions averaging $496 per trade. Strategy: systematic NegRisk rebalancing. Combinatorial arbitrage captured 0.24% of profits; probability-sum deviations in multi-condition markets delivered 73%... Total extraction: $28,990,000 from buying YES ($11.09M), buying NO ($17.31M), and selling strategies ($612K YES, $4K NO). Average profit per opportunity: $43,800 vs $1,500 for single-condition \u2014 29\u00d7 capital efficiency advantage.\"",
+  "urls": [
+   "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse"
+  ]
+ },
+ {
+  "trial_id": "t0056",
+  "condition": "c0",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a2",
+  "passage": "### 2. Settlement Mechanism and Resolution Accuracy\nResearch into how these markets settle confirms that accuracy is measured against a specific \"price to beat\" established at the market's open, compared to a final reference price at close. According to analysis by DepthFeed, which examined over 60,000 settled crypto up/down markets:\n*   **Resolution Split:** The markets resolved \"Up\" 49.2% of the time and \"Down\" 50.8% of the time. This near-coin-flip distribution is cited as evidence of an efficiently priced short-dated market [depthfeed.com](https://depthfeed.com/resources/how-polymarket-crypto-markets-settle).\n*   **Oracle Dependency:** Settlements do not rely on a single exchange\u2019s last trade. Instead, they use Chainlink-published reference prices. For example, in one documented case, a market opened with a price-to-beat of $62,701.75 and closed with a reference price of $62,519.65, resulting in a \"Down\" resolution regardless of interim volatility on specific exchanges [depthfeed.com](https://depthfeed.com/resources/how-polymarket-crypto-markets-settle).",
+  "urls": [
+   "https://depthfeed.com/resources/how-polymarket-crypto-markets-settle"
+  ]
+ },
+ {
+  "trial_id": "t0107",
+  "condition": "c0",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a3",
+  "passage": "**Direct Quote:**\n> \"An interesting phenomenon we observed was the presence of opportunities with extremely high market discounts. The most striking example was executed by the user @Tutaaa91, who simultaneously purchased both \u201cYES\u201d/\u201cNO\u201d tokens for less than $0.02 each, resulting in a single-trade profit of $58,983.36 (other two trades from this account also exhibited high returns).\"\n> \\- [arxiv.org](https://arxiv.org/html/2508.03474v1)\n\n2.  **On specific NegRisk rebalancing profits:** \"We calculate the total profit for each strategy as follows: buying \u2018\u2018YES\u201d $11,092,286.31... and buying \u2018\u2018NO\u201d $17,307,113.81. Interestingly, buying \u2018\u2018NO\u201d outperforms other strategies. In fact, Polymarket announced that some accounts are making a lot of profit just by buying \u2018\u2018NO\u201d positions.\"\n    \\- [arxiv.org](https://arxiv.org/html/2508.03474v1)",
+  "urls": [
+   "https://arxiv.org/html/2508.03474v1"
+  ]
+ },
+ {
+  "trial_id": "t0083",
+  "condition": "c0",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a3",
+  "passage": "**Source:** [Dagstuhl Publishing (drops.dagstuhl.de)](https://drops.dagstuhl.de/storage/00lipics/lipics-vol354-aft2025/LIPIcs.AFT.2025.27/LIPIcs.AFT.2025.27.pdf)",
+  "urls": [
+   "https://drops.dagstuhl.de/storage/00lipics/lipics-vol354-aft2025/LIPIcs.AFT.2025.27/LIPIcs.AFT.2025.27.pdf"
+  ]
+ },
+ {
+  "trial_id": "t0110",
+  "condition": "c1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a4",
+  "passage": "**Monthly Usage Credits**: Usage credits reset on the first of every month ([the-odds-api.com](https://the-odds-api.com/manage/faqs.html)). The API provides response headers to track usage:\n- `x-requests-remaining`: Usage credits remaining until quota reset\n- `x-requests-used`: Usage credits used since last quota reset\n- `x-requests-last`: Usage cost of the last API call",
+  "urls": [
+   "https://the-odds-api.com/manage/faqs.html"
+  ]
+ },
+ {
+  "trial_id": "t0037",
+  "condition": "c1",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a6",
+  "passage": "> \"The reasoning token allocation is capped at 128,000 tokens maximum and 1024 tokens minimum. The formula for calculating the budget_tokens is: `budget_tokens = max(min(max_tokens * {effort_ratio}, 128000), 1024)` effort_ratio is 0.95 for max and xhigh effort, 0.8 for high effort, 0.5 for medium effort, 0.2 for low effort, and 0.1 for minimal effort.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"Important: `max_tokens` must be strictly higher than the reasoning budget to ensure there are tokens available for the final response after thinking.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"When using the `reasoning.max_tokens` parameter, that value is used directly with a minimum of 1024 tokens.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)\n\n> \"Reasoning tokens are counted as output tokens for billing purposes. Using reasoning tokens will increase your token usage but can significantly improve the quality of model responses.\" [openrouter.ai](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)",
+  "urls": [
+   "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens"
+  ]
+ },
+ {
+  "trial_id": "t0045",
+  "condition": "c1",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a1",
+  "passage": "1. [taetaehoho/poly-kalshi-arb](https://github.com/taetaehoho/poly-kalshi-arb)  \n   - A **Rust** arbitrage system for cross-platform prediction-market trading between **Kalshi** and **Polymarket**.\n   - Features include:\n     - Kalshi REST/WebSocket client\n     - Polymarket REST/WebSocket client\n     - lock-free orderbook cache\n     - SIMD-based arbitrage detection\n     - concurrent order execution\n     - position and P&L tracking\n     - circuit breaker\n   - It explicitly factors **Kalshi fees** into arbitrage detection:\n     - `ceil(0.07 \u00d7 contracts \u00d7 price \u00d7 (1-price))`\n   - Notes Polymarket as having **zero trading fees**.\n   - Defines four arbitrage types:\n     - `poly_yes_kalshi_no`\n     - `kalshi_yes_poly_no`\n     - `poly_same_market`\n     - `kalshi_same_market`\n   - **Performance figures:** I did **not** find verified profit or win-rate figures in the repo excerpt. It does mention benchmarks can be run with `cargo bench`, but no actual results were provided in the search snippet.\n\n### Most concrete \u201ccurrently visible\u201d repos from the search\n- [taetaehoho/poly-kalshi-arb](https://github.com/taetaehoho/poly-kalshi-arb)\n- [ImMike/polymarket-arbitrage](https://github.com/ImMike/polymarket-arbitrage)\n- [Longbridges/polymarket-kalshi-arbitrage-bot](https://github.com/Longbridges/polymarket-kalshi-arbitrage-bot)\n- [realfishsam/prediction-market-arbitrage-bot](https://github.com/realfishsam/prediction-market-arbitrage-bot)\n- [Pushpenderrathore/karb](https://github.com/Pushpenderrathore/karb)",
+  "urls": [
+   "https://github.com/taetaehoho/poly-kalshi-arb"
+  ]
+ },
+ {
+  "trial_id": "t0111",
+  "condition": "c1",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a5",
+  "passage": "### 1. Technical Guide on Devigging Methods\n**Source:** [clawarbs.com](https://clawarbs.com/blog/devig-prediction-markets/)\nThis guide provides a comprehensive breakdown of three specific devigging methods used to estimate true probability from sharp sportsbooks (like Pinnacle) to compare against prediction market prices:\n*   **Proportional Method:** The simplest approach, assuming vigorish is distributed uniformly. It divides each implied probability by the sum of all implied probabilities.\n    *   Formula: $p_{true\\_A} = \\frac{1/odds_A}{(1/odds_A) + (1/odds_B)}$\n*   **Shin\u2019s Method:** A more complex algorithm that accounts for the fact that favorites often carry a different margin proportion than underdogs.\n*   **Logarithmic Method:** Another variation for stripping margin.\nThe article explains how to convert these devigged probabilities into a \"fair value\" cent price for Kalshi or Polymarket, adjusting for platform-specific fees (percentage fees for Kalshi vs. gas fees for Polymarket).",
+  "urls": [
+   "https://clawarbs.com/blog/devig-prediction-markets/"
+  ]
+ },
+ {
+  "trial_id": "t0067",
+  "condition": "c2",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a3",
+  "passage": "1.  **Absence of Retail Case Studies:** While there is extensive discussion about Polymarket's mechanics, liquidity provision, and general arbitrage opportunities, there are no public, documented post-mortems or profit-and-loss (P&L) disclosures from *retail* traders specifically attributing their gains to \"negRisk rebalancing arbitrage.\"\n2.  **Nature of NegRisk Markets:** NegRisk markets on Polymarket are complex financial instruments designed to allow trading on mutually exclusive outcomes with a fixed sum payout (usually $1). Arbitrage in these markets typically involves exploiting price discrepancies between the \"Yes\" shares of individual outcomes and the \"No\" share of the negRisk bundle, or between the bundle and the sum of its parts. This is generally considered a sophisticated strategy often executed by bots or market makers rather than manual retail traders.\n3.  **General Arbitrage Discussions vs. Specific Case Studies:**\n    *   Sources like [Polymarket's official documentation](https://polymarket.com/) and community discussions on [Discord](https://discord.com/invite/polymarket) or [Reddit](https://www.reddit.com/r/Polymarket/) frequently mention arbitrage opportunities. However, these are usually general explanations of how the mechanism works or warnings about risks, not verified case studies of retail profit.\n    *   For example, a common topic in community forums is the risk of \"pinning\" or execution slippage in negRisk markets, which often *erodes* profits for non-institutional participants.\n4.  **Institutional vs. Retail:** Most documented successes in prediction market arbitrage tend to come from professional market-making firms or sophisticated quantitative traders who have low-latency access and custom infrastructure. Retail traders typically lack the speed and capital efficiency to consistently capture these small, fleeting arbitrage windows after fees and gas costs.",
+  "urls": [
+   "https://polymarket.com/",
+   "https://discord.com/invite/polymarket",
+   "https://www.reddit.com/r/Polymarket/"
+  ]
+ },
+ {
+  "trial_id": "t0133",
+  "condition": "c2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a2",
+  "passage": "1.  **Aggregate Polymarket Accuracy is High:** The primary source, a thesis titled \"Forecast Accuracy in Modern Prediction Markets,\" provides a comprehensive analysis of 113,135 resolved binary markets on Polymarket. Its key findings are:\n    *   **Polymarket prices are \"well-calibrated in aggregate.\"**\n    *   The mean Brier score at the 30-day horizon is **0.045**.\n    *   The Brier skill score against a climatological baseline is **0.69**, meaning Polymarket forecasts reduce the mean squared forecast error by roughly 69% compared to just guessing the base rate every time.\n    *   A small, consistent positive bias (overstatement of the \"Yes\" outcome) of **0.9 to 1.6 percentage points** was found across all time horizons.\n    *   [skemman.is](https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf)\n\n2.  **Crypto Up/Down Markets Were Explicitly Excluded from This Analysis:** Crucially, the same thesis document details its filtering methodology. It states:\n    > *\"The second filter retained only markets whose outcomes field was exactly the pair (Yes, No), removing the largest single block of markets in the cascade at 132,823. The great majority of these use directional or team-based outcome labels such as (Up, Down) for crypto-price markets... they are formally binary but cannot be uniformly interpreted as Yes-probability forecasts without market-by-market judgement and are therefore excluded from the present sample.\"*\n    *   [skemman.is](https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf)",
+  "urls": [
+   "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf"
+  ]
+ },
+ {
+  "trial_id": "t0140",
+  "condition": "c2",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a5",
+  "passage": "**Source: [scraper.page](https://scraper.page/from-box-scores-to-bets-building-a-sports-simulation-pipelin)**\nThis post provides the exact Pandas code for vig removal and Expected Value (EV) calculation.\n*   **Quote on code logic:**\n    ```python\n    # implied probabilities\n    odds_df['imp_prob'] = 1/odds_df['decimal']",
+  "urls": [
+   "https://scraper.page/from-box-scores-to-bets-building-a-sports-simulation-pipelin"
+  ]
+ },
+ {
+  "trial_id": "t0135",
+  "condition": "c2",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a1",
+  "passage": "### 2. `TejasS1233/pythia`\n**URL:** https://github.com/TejasS1233/pythia  \n**Status:** Created May 2026 (very new), 2 stars, 0 forks",
+  "urls": [
+   "https://github.com/TejasS1233/pythia"
+  ]
+ }
+]

@@ -1,0 +1,241 @@
+[
+ {
+  "trial_id": "t0102",
+  "claims": [
+   {
+    "claim": "Use a devigging engine to strip margin and recover no\u2011vig fair prices from a sharp source",
+    "url": "https://pinnapi.com/blog/arbitrage-detection-system-architecture",
+    "verdict": "supported",
+    "why": "The excerpt defines \u201cdevigging \u2013 stripping that margin mathematically to recover no\u2011vig fair prices\u201d and describes a devigging engine in the architecture."
+   },
+   {
+    "claim": "After getting fair prices, compare to another venue and require an edge buffer to avoid false positives",
+    "url": "https://pinnapi.com/blog/arbitrage-detection-system-architecture",
+    "verdict": "fabricated",
+    "why": "The provided excerpt does not mention comparing to another venue or using an edge\u2011buffer; it only describes ingestion, normalization, devigging, and limits."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0104",
+  "claims": [
+   {
+    "claim": "When feed-inferred trade direction is swapped for the on-chain record, the effective half-spread changes sign on 67% of markets and Kyle\u2019s lambda changes sign on 60% of markets.",
+    "url": "https://arxiv.org/html/2604.24366v2",
+    "verdict": "supported",
+    "why": "The provided excerpt from the arXiv paper explicitly states that the effective half\u2011spread changes sign on 67% of markets and Kyle\u2019s \u03bb changes sign on 60% in the first 7\u2011day window."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0092",
+  "claims": [
+   {
+    "claim": "Crypto markets achieve a 93.7% improvement from opening to closing prices",
+    "url": "https://medium.com/@numacodes/where-does-the-crowd-excel-polymarket-accuracy-by-category-d3294d5a00b5",
+    "verdict": "undetermined",
+    "why": "Source could not be fetched (HTTP 403), so cannot verify the statistic."
+   },
+   {
+    "claim": "Crypto markets have a closing Brier score of 0.014, which sits above weather, politics, and elections categories",
+    "url": "https://medium.com/@numacodes/where-does-the-crowd-excel-polymarket-accuracy-by-category-d3294d5a00b5",
+    "verdict": "undetermined",
+    "why": "Source could not be fetched (HTTP 403), so cannot confirm the Brier score claim."
+   },
+   {
+    "claim": "The short timeframe limits how much information can be incorporated despite fast learning",
+    "url": "https://medium.com/@numacodes/where-does-the-crowd-excel-polymarket-accuracy-by-category-d3294d5a00b5",
+    "verdict": "undetermined",
+    "why": "Source could not be fetched (HTTP 403), so cannot assess this qualitative statement."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0141",
+  "claims": []
+ },
+ {
+  "trial_id": "t0008",
+  "claims": [
+   {
+    "claim": "max_tokens sets the upper limit for the number of tokens the model can generate in response",
+    "url": "https://openrouter.ai/docs/api/reference/parameters",
+    "verdict": "supported",
+    "why": "The excerpt explicitly states \"max tokens key: max_tokens ... this sets the upper limit for the number of tokens the model can generate in response.\""
+   },
+   {
+    "claim": "the reasoning parameter controls whether reasoning is enabled, the reasoning effort, maximum reasoning tokens, and whether reasoning is excluded from the response",
+    "url": "https://openrouter.ai/docs/api/reference/parameters",
+    "verdict": "supported",
+    "why": "The excerpt includes \"reasoning key: reasoning optional, map controls reasoning behavior for models that support thinking tokens, including whether reasoning is enabled, the reasoning effort, maximum reasoning tokens, and whether reasoning is excluded from the response.\""
+   }
+  ]
+ },
+ {
+  "trial_id": "t0012",
+  "claims": [
+   {
+    "claim": "max_tokens must be strictly higher than the reasoning budget to ensure tokens remain for the final response",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt contains the exact sentence stating this requirement."
+   },
+   {
+    "claim": "budget_tokens = max(min(max_tokens * {effort_ratio}, 128000), 1024) is the formula for calculating the budget",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt includes the formula verbatim."
+   },
+   {
+    "claim": "reasoning.max_tokens parameter uses its value directly with a minimum of 1024 tokens; reasoning.effort parameter calculates budget_tokens based on max_tokens",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt lists both bullet points exactly as quoted."
+   },
+   {
+    "claim": "Reasoning tokens are counted as output tokens for billing and increase token usage but improve response quality",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The excerpt contains the statement about billing and quality impact."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0108",
+  "claims": [
+   {
+    "claim": "The LessWrong analysis of 7,661 Polymarket binary markets found excellent calibration at probability extremes (0\u20115% and 95\u2011100% buckets resolved as expected) and noted systematic underpricing in the mid\u2011range.",
+    "url": "https://www.lesswrong.com/posts/Hruc6Gwo3vBZFGb6v/empirical-calibration-of-polymarket-analysis-of-7-661",
+    "verdict": "supported",
+    "why": "The source\u2019s summary states the market is well\u2011calibrated at the extremes and shows systematic underpricing in the mid\u2011range, matching the claim."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0096",
+  "claims": [
+   {
+    "claim": "The new multi\u2011market arbitrage strategy has a win rate of 80\u201195%",
+    "url": "https://github.com/tufstraka/polybot",
+    "verdict": "supported",
+    "why": "The repository README lists \u201cnew strategy: multi\u2011market arbitrage \u2026 win rate: 80\u201195%\u201d."
+   },
+   {
+    "claim": "The old mean\u2011reversion strategy had a win rate of 52\u201155%",
+    "url": "https://github.com/tufstraka/polybot",
+    "verdict": "supported",
+    "why": "The README states \u201cold strategy: mean reversion \u2026 win rate: 52\u201155%\u201d."
+   },
+   {
+    "claim": "With $75 capital the bot can expect 1\u20112 opportunities per day, $0.05\u2011$0.20 daily profit, 2\u20118% monthly return, and $1\u20115 per month overall profit",
+    "url": "https://github.com/tufstraka/polybot",
+    "verdict": "supported",
+    "why": "The performance table in the README shows $75 \u2192 1\u20112 opportunities/day, $0.05\u2011$0.20 daily profit, 2\u20118% monthly return, and the \u201creality check\u201d notes $1\u20115/month profit."
+   },
+   {
+    "claim": "With $500 capital the bot can expect 2\u20113 opportunities per day, $1\u20113 daily profit, 6\u201115% monthly return, and $1\u20113 per day overall profit",
+    "url": "https://github.com/tufstraka/polybot",
+    "verdict": "supported",
+    "why": "The same performance table lists $500 \u2192 2\u20113 opportunities/day, $1\u20113 daily profit, 6\u201115% monthly return, and the text notes $1\u20113/day profit."
+   },
+   {
+    "claim": "With $5,000 capital the bot can expect 3\u20115 opportunities per day, $10\u2011$40 daily profit, 6\u201120% monthly return, and $10\u2011$40 per day overall profit",
+    "url": "https://github.com/tufstraka/polybot",
+    "verdict": "supported",
+    "why": "The performance table shows $5,000 \u2192 3\u20115 opportunities/day, $10\u2011$40 daily profit, 6\u201120% monthly return, matching the claim."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0131",
+  "claims": [
+   {
+    "claim": "The fairplaysportsmedia.com article is about AI and problem gambling, not devigging algorithms.",
+    "url": "https://www.fairplaysportsmedia.com/insights/trust-compliance-governance/ai-problem-gambling-detection-technology-perspective",
+    "verdict": "supported",
+    "why": "Excerpt shows the page discusses AI problem\u2011gambling detection, with no mention of devigging algorithms."
+   },
+   {
+    "claim": "The news.ycombinator.com discussion is unrelated to devigging or sportsbook algorithms.",
+    "url": "https://news.ycombinator.com/item?id=42466676",
+    "verdict": "supported",
+    "why": "Excerpt contains a betting\u2011rounding discussion, not devigging or technical sportsbook content."
+   },
+   {
+    "claim": "The grokipedia.com page on cash\u2011based gaming apps is unrelated to devigging or sportsbook algorithms.",
+    "url": "https://grokipedia.com/page/Cash-based_gaming_apps",
+    "verdict": "supported",
+    "why": "Excerpt describes cash\u2011based gaming apps, with no reference to devigging or sportsbook code."
+   },
+   {
+    "claim": "The GitHub commit is unrelated to devigging or sportsbook algorithms.",
+    "url": "https://github.com/noamseg/interview-coach-skill/commit/72846cc0cf2ae2bf341b6ea89514a71a40f8856d",
+    "verdict": "supported",
+    "why": "Excerpt shows commit messages about interview\u2011coach features, not devigging or betting code."
+   },
+   {
+    "claim": "The Medium article is unrelated to devigging or sportsbook algorithms.",
+    "url": "https://medium.com/@sristee45/how-i-went-from-122-to-1-in-24-hours-building-a-multimodal-damage-claim-verifier-for-hackerrank-92cdc18242b2",
+    "verdict": "undetermined",
+    "why": "The source could not be fetched, so its relevance cannot be confirmed."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0090",
+  "claims": [
+   {
+    "claim": "Public repositories are not the primary source of alpha for serious traders",
+    "url": "https://moltbook.com/post/a27618a0-b0b2-4348-b68a-81ea6e1ee9fc",
+    "verdict": "fabricated",
+    "why": "The extracted page content contains no statement supporting this claim; it only shows generic site text."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0066",
+  "claims": [
+   {
+    "claim": "The experiment posted maker bids on both YES and NO sides of Polymarket binary markets, targeting a combined bid cost of less than $0.97.",
+    "url": "https://dogelord.com/polydoge/about",
+    "verdict": "supported",
+    "why": "The excerpt states the bot \u201cposted maker bids on yes and no sides \u2026 targeting a combined bid cost < $0.97\u201d."
+   },
+   {
+    "claim": "The bot completed 0 pairs from 8 fills and captured $0 in rebates, ending with a \u2013$405 paper loss.",
+    "url": "https://dogelord.com/polydoge/about",
+    "verdict": "supported",
+    "why": "The excerpt reports \u201cthe bot completed 0 pairs from 8 fills and captured $0 in rebates, ending at \u2013$405 paper\u201d."
+   },
+   {
+    "claim": "The infrastructure uses GitHub Actions, Supabase, and Cloudflare Pages, and every scan, trade signal, and experiment outcome is logged to a\u202fpolydoge_v4_paper_ledger.jsonl file committed to a public automations repo.",
+    "url": "https://dogelord.com/polydoge/about",
+    "verdict": "supported",
+    "why": "The excerpt lists \u201cinfrastructure: github actions (automation), supabase (data), cloudflare pages (deployment)\u201d and notes \u201cevery scan\u2026 logged to polydoge_v4_paper_ledger.jsonl, committed to the public automations repo\u201d."
+   },
+   {
+    "claim": "The methodology and logs are published at dogelord.com/polydoge with full transparency.",
+    "url": "https://dogelord.com/polydoge/about",
+    "verdict": "supported",
+    "why": "The excerpt says \u201cevery scan, trade signal, and experiment outcome is timestamped, logged, and published at dogelord.com/polydoge with full methodology transparency\u201d."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0099",
+  "claims": [
+   {
+    "claim": "The only direct page available for The Odds API is its homepage (https://the-odds-api.com/).",
+    "url": "https://the-odds-api.com/",
+    "verdict": "supported",
+    "why": "The excerpt shows content from the homepage, confirming it is a reachable page and the primary source cited."
+   },
+   {
+    "claim": "The homepage includes the quoted text about sports lists and quota UI strings (e.g., subscription billing, cancelation, request definition).",
+    "url": "https://the-odds-api.com/",
+    "verdict": "supported",
+    "why": "The provided excerpts contain the sports list and the quota UI language referenced in the claim."
+   }
+  ]
+ }
+]

@@ -1,0 +1,123 @@
+[
+ {
+  "trial_id": "t0088",
+  "condition": "c0",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a4",
+  "passage": "### API Rate Limits\nThe current rate limit on paid usage plans is **30 requests per second** [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html) [the-odds-api.com](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html). \n\nIf the rate limit is exceeded, the API returns an `EXCEEDED_FREQ_LIMIT` error (HTTP status code 429) [the-odds-api.com](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html). However, 429 errors can still occur even if you are sending requests below the 30 requests/second limit for the following reasons:\n1.  **Traffic Spikes:** If the system receives a sudden large increase in traffic, it may take a few minutes to scale up, temporarily knocking back requests with 429s [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html).\n2.  **Network Conditions:** Servers receive requests at a different rate than they are sent due to network variations. For example, sending exactly 30 requests per second over 2 seconds might result in the server receiving 25 in the first second and 33 in the next second (meaning 3 requests get rate-limited) [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html).\n\n**Best Practices for Rate Limits:**\n*   Expect 429s occasionally, especially when operating close to the limit, and retry the request after a couple of seconds [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html).\n*   Space requests out over a longer time period rather than sending short bursts [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html).\n*   Combine multiple markets or regions into a single request rather than making one request per market/region [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html).\n*   Cache responses and make less frequent requests to endpoints that don't update often, such as `/sports` and `/events` [the-odds-api.com](https://the-odds-api.com/guide/rate-limit.html).\n*   Be mindful of usage quota costs, as different endpoints carry different credit costs [the-odds-api.com](https://the-odds-api.com/manage/troubleshoot-unexpected-usage.html). You can monitor your usage via the HTTP response headers: `x-requests-remaining`, `x-requests-used`, and `x-requests-last` [the-odds-api.com](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html).",
+  "urls": [
+   "https://the-odds-api.com/guide/rate-limit.html"
+  ]
+ },
+ {
+  "trial_id": "t0116",
+  "condition": "c0",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a1",
+  "passage": "4. **seralifatih/pm-arbitrage**  \n   GitHub: https://github.com/seralifatih/pm-arbitrage ([github.com](https://github.com/seralifatih/pm-arbitrage))  ",
+  "urls": [
+   "https://github.com/seralifatih/pm-arbitrage"
+  ]
+ },
+ {
+  "trial_id": "t0128",
+  "condition": "c0",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a5",
+  "passage": "**Source: [github.com/Ecart-type/devig](https://github.com/Ecart-type/devig/blob/main/README.md)**\nThis repository implements four standard devigging algorithms, noting that they \"disagree with each other\" and must be tested empirically:\n*   **Multiplicative:** Equivalent to the proportional method; assumes margin is taken in proportion to price. Recommended for two-way markets.\n*   **Additive:** Subtracts an equal amount from each implied probability. Risky for longshots as it can result in negative probabilities.\n*   **Power:** Solves $\\sum q_i^k = 1$; assumes longshots carry more margin. Recommended for three-way markets (e.g., Soccer 1X2).\n*   **Shin:** Models the margin as protection against insider trading.",
+  "urls": [
+   "https://github.com/Ecart-type/devig/blob/main/README.md"
+  ]
+ },
+ {
+  "trial_id": "t0040",
+  "condition": "c0",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a6",
+  "passage": "**Note for Claude 5 Sonnet**: The [Claude 5 Sonnet Migration Guide](https://openrouter.ai/docs/cookbook/evaluate-and-optimize/model-migrations/claude-5-sonnet) indicates that **\"`reasoning.max_tokens` is accepted but ignored\"** for this specific model, as it uses adaptive thinking rather than fixed token budgets.",
+  "urls": [
+   "https://openrouter.ai/docs/cookbook/evaluate-and-optimize/model-migrations/claude-5-sonnet"
+  ]
+ },
+ {
+  "trial_id": "t0014",
+  "condition": "c1",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a4",
+  "passage": "*   **No Explicit Free Tier Rate Limit:** Unlike paid tiers, the free tier does not have a published \"requests per minute\" limit. Developers must rely on the `x-requests-remaining` header to manage usage and avoid hitting the monthly cap or triggering burst protection.\n*   **Historical Data Costs:** Because historical odds cost 10\u00d7 more credits than live odds, the 500-credit free allowance is exhausted very quickly if used for historical data (e.g., one request for 1 market and 1 region costs 10 credits, allowing only 50 such calls per month).\n*   **Account Management:** Usage credits and subscription changes are managed through the accounts portal. Even if a user has an active subscription, they may need to create a new account structure to access certain management features.\n*   [the-odds-api.com](https://the-odds-api.com/manage/faqs.html)\n*   [the-odds-api.com](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html)",
+  "urls": [
+   "https://the-odds-api.com/manage/faqs.html"
+  ]
+ },
+ {
+  "trial_id": "t0080",
+  "condition": "c1",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a3",
+  "passage": "*   **Source:** [navnoorbawa.substack.com](https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse) and [arxiv.org](https://arxiv.org/html/2508.03474v1)\n*   **Direct Quote:** \"the user with the highest profits generated a total of $2,009,631.76 through these strategies.\"\n*   **Direct Quote on Strategy:** \"Top performer: $2,009,631.76 across 4,049 transactions averaging $496 per trade... systematic NegRisk rebalancing... $28,990,000 from buying YES ($11.09M), buying NO ($17.31M), and selling strategies ($612K YES, $4K NO).\"\n\n*   **Source:** [arxiv.org](https://arxiv.org/html/2508.03474v1)\n*   **Direct Quote:** \"most striking example was executed by the user @Tutaaa91, who simultaneously purchased both \u201dYES\u201d/\u201dNO\u201d tokens for less than $0.02 each, resulting in a single-trade profit of $58,983.36 (other two trades from this account also exhibited high returns).\"\n\n*   **Source:** [arxiv.org](https://arxiv.org/html/2508.03474v1)\n*   **Direct Quote:** \"Interestingly, buying \u201dNO\u201d outperforms other strategies. In fact, Polymarket announced that some accounts are making a lot of profit just by buying \u201dNO\u201d positions (see related Polymarket tweets [26, 25]).\"\n\n### Context on the Scale of NegRisk Arbitrage\nTo understand why these individual case studies occurred, it helps to note the sheer scale of the opportunity. The researchers found that multi-condition NegRisk market rebalancing was far more lucrative than traditional single-market arbitrage:\n*   **Direct Quote:** \"NegRisk rebalancing: $29M (73%) [of total profits]... Single-condition: $10.58M (27%)\" [navnoorbawa.substack.com](https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m)\n*   **Direct Quote:** \"Of the 1578 NegRisk markets, 662 had at least one arbitrage opportunity.\" [arxiv.org](https://arxiv.org/html/2508.03474v1)",
+  "urls": [
+   "https://arxiv.org/html/2508.03474v1"
+  ]
+ },
+ {
+  "trial_id": "t0064",
+  "condition": "c1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a3",
+  "passage": "**Relevant Claims:**\n*   **Total Profit Documented:** \"The combined amount extracted from all strategies presented totals **$39,587,585.02**.\"\n*   **Breakdown of NegRisk Rebalancing:** \"Market rebalancing within multi-condition NegRisk markets generated **73% of total profits**\" (approximately **$29 million**). [navnoorbawa.substack.com](https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m)\n*   **Strategy Breakdown:** The paper provides a table of the exact profits from different arbitrage strategies within NegRisk markets, which is also cited elsewhere:\n    > \"buying 'YES' **$11,092,286.31**, selling 'YES' **$612,188.83**, selling 'NO' **$4,264.33**, and buying 'NO' **$17,307,113.81**.\" [collective.flashbots.net](https://collective.flashbots.net/t/arbitrage-in-prediction-markets-strategies-impact-and-open-questions/5198)\n*   **Top Performer Case Study:** The paper identifies the single most profitable account:\n    > \"user with the highest profits generated a total of **$2,009,631.76** through these strategies.\" ... \"The top 10 users by profit can be found in Table 1. # Account (trimmed) Amount ($) Transactions **1 0xd218e474776403a3301422... 2,009,631.76 4,049**\"",
+  "urls": [
+   "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m",
+   "https://collective.flashbots.net/t/arbitrage-in-prediction-markets-strategies-impact-and-open-questions/5198"
+  ]
+ },
+ {
+  "trial_id": "t0036",
+  "condition": "c1",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a2",
+  "passage": "**3. Historical Resolution Dataset**\n[felixdoteth/polymarket-crypto-5m-dataset](https://github.com/felixdoteth/polymarket-crypto-5m-dataset) contains **77,829 individual 5-minute markets** (20,928 BTC, 18,969 ETH, 18,966 SOL, 18,966 XRP) covering December 18, 2025\u2013March 16, 2026. It pairs Polymarket Gamma API resolution data with Binance price feeds to track historical outcomes.",
+  "urls": [
+   "https://github.com/felixdoteth/polymarket-crypto-5m-dataset"
+  ]
+ },
+ {
+  "trial_id": "t0085",
+  "condition": "c2",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a4",
+  "passage": "As per our agreement, I will not invent these figures. To get this information, you would need to visit [the-odds-api.com](https://the-odds-api.com/) directly and check their \"Pricing\" or \"API Docs\" sections, which are the authoritative sources for this data.",
+  "urls": [
+   "https://the-odds-api.com/"
+  ]
+ },
+ {
+  "trial_id": "t0103",
+  "condition": "c2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a1",
+  "passage": "1.  **Main Project Found: `prediction-markets-arbitrage`**\n    *   **Repo/URL:** `traderyy/prediction-markets-arbitrage` [[1]](https://github.com/traderyy/prediction-markets-arbitrage)\n    *   **Status:** Actively maintained. The last commit was **4 months ago** (as of my search date) [[1]](https://github.com/traderyy/prediction-markets-arbitrage).\n    *   **What it is:** This is a **TypeScript framework** for building arbitrage bots across multiple prediction markets (Polymarket, Omen, Azuro). It's not a \"plug-and-play\" bot, but a codebase you would need to understand, configure, and run yourself. The README states its goal is to \"identify and execute arbitrage opportunities\" [[1]](https://github.com/traderyy/prediction-markets-arbitrage).\n    *   **Performance Claims:** **I could not verify any real performance figures.** The repository itself does not publish performance data. A separate blog post by the author discusses the *theory* and mechanics of such arbitrage but does not report live trading results [[2]](https://traderyy.medium.com/prediction-market-arbitrage-part-1-theory-4a4387c6d0b1).\n\n1.  **GitHub - traderyy/prediction-markets-arbitrage** [[1]](https://github.com/traderyy/prediction-markets-arbitrage)\n    *   *Title:* `traderyy/prediction-markets-arbitrage: A framework for identifying and executing arbitrage opportunities across prediction markets.`\n    *   *Key Info:* Primary active repo. Framework for Polymarket, Omen, Azuro. Last commit ~4 months ago.\n\n1.  **Deep Dive into the Framework:** The most promising lead is the `traderyy` repo [[1]](https://github.com/traderyy/prediction-markets-arbitrage). The logical next step would be to study its code, setup instructions, and configuration to understand the capital requirements, risks (e.g., gas costs, slippage), and operational complexity.\n2.  **Search for User Experiences:** Instead of looking for official performance reports, we could search forums like GitHub Issues, Twitter/X, or prediction market Discord channels for anecdotes from users who have attempted to run these bots. This might surface practical challenges or rough estimates of performance.\n3.  **Clarify the Goal:** Are we looking for a ready-to-run bot (which doesn't seem to exist with verified performance), or are we willing to invest time in understanding and potentially modifying a framework like the one found?\n\n*   **High Confidence:** The `traderyy/prediction-markets-arbitrage` repository exists and is the most actively mai",
+  "urls": [
+   "https://github.com/traderyy/prediction-markets-arbitrage"
+  ]
+ },
+ {
+  "trial_id": "t0065",
+  "condition": "c2",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a2",
+  "passage": "**1. Tax Treatment and Mechanics of Crypto Markets on Polymarket**\nThe article from [monacocpa.cpa](https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood) discusses the mechanics of Polymarket's crypto contracts, but only from a tax perspective. It notes that \"Polymarket US... Available markets are more limited: sports, crypto, and entertainment,\" and it walks through the capital gains implications of a contract paying out at $1 (YES) or $0 (NO). It contains zero data on win rates or resolution accuracy.",
+  "urls": [
+   "https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood"
+  ]
+ },
+ {
+  "trial_id": "t0033",
+  "condition": "c2",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a5",
+  "passage": "**[github.com/zack-alex/arb-betting](https://github.com/zack-alex/arb-betting)**\n*   **What it is:** A tool for finding arbitrage opportunities.\n*   **Techniques:** It involves calculating the \"fair\" odds by removing the margin from the bookmaker's quoted odds to determine if a \"true\" arbitrage (or a \"value\" bet against a prediction market) exists.",
+  "urls": [
+   "https://github.com/zack-alex/arb-betting"
+  ]
+ }
+]

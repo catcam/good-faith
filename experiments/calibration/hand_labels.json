@@ -1,0 +1,15 @@
+{
+ "_method": "Labelled by Claude (Opus 5.5), 2026-10-06, blind to judge verdicts, by searching the FULL fetched source text for every number/quote/term (find.py). Same operational definition of an attributed claim as verify_v2.JUDGE_PER_PASSAGE. Not human labels - to be spot-checked by Niksa.",
+ "t0047": {"supported": 6, "fabricated": 0, "undetermined": 0, "note": "direct quote; every number found verbatim on the substack page"},
+ "t0056": {"supported": 5, "fabricated": 0, "undetermined": 0, "note": "'over 60,000' = page's 60,307; 49.2/50.8; 'efficiently priced'; Chainlink; 62,701.75 -> 62,519.65 example"},
+ "t0107": {"supported": 2, "fabricated": 0, "undetermined": 0, "note": "both arxiv quotes found verbatim incl. $58,983.36 and $11,092,286.31/$17,307,113.81"},
+ "t0083": {"supported": 0, "fabricated": 0, "undetermined": 0, "note": "passage is only a Source: line, no claim"},
+ "t0110": {"supported": 1, "fabricated": 0, "undetermined": 0, "note": "reset on first of month supported; x-requests-* header list is not attributed to the linked FAQ, so not counted"},
+ "t0037": {"supported": 4, "fabricated": 0, "undetermined": 0, "note": "all four quotes found on the OpenRouter docs page"},
+ "t0045": {"supported": 7, "fabricated": 0, "undetermined": 0, "note": "Rust, feature list, Kalshi fee formula, zero Polymarket fees, four arb types, cargo bench all in README; 'no verified profit figures' is the model's own hedge"},
+ "t0111": {"supported": 5, "fabricated": 0, "undetermined": 0, "note": "3 methods, proportional=uniform vig, Shin for favourites, Pinnacle, fair-value cents, gas vs % fees all on page"},
+ "t0067": {"supported": 0, "fabricated": 1, "undetermined": 2, "note": "polymarket.com called 'official documentation' that 'frequently mentions arbitrage' - homepage has no 'arbitrage' at all; Discord/Reddit claims rest on JavaScript pages -> undetermined; numbered items 1,2,4 are unattributed analysis"},
+ "t0133": {"supported": 0, "fabricated": 0, "undetermined": 6, "note": "skemman.is PDF answers 403 from Contabo, home proxy and Windsor - could not check"},
+ "t0140": {"supported": 2, "fabricated": 0, "undetermined": 0, "note": "code line found verbatim; vig removal + EV code present"},
+ "t0135": {"supported": 3, "fabricated": 0, "undetermined": 0, "note": "created 2026-05-23, 2 stars, 0 forks match GitHub API"}
+}

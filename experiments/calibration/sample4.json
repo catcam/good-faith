@@ -1,0 +1,108 @@
+[
+ {
+  "trial_id": "t0053",
+  "condition": "c0",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a5",
+  "passage": "Source: [github.com/p-danilin/prediction-market-data-platform](https://github.com/p-danilin/prediction-market-data-platform)",
+  "urls": [
+   "https://github.com/p-danilin/prediction-market-data-platform"
+  ]
+ },
+ {
+  "trial_id": "t0051",
+  "condition": "c0",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a1",
+  "passage": "### 3. Longbridges/polymarket-kalshi-arbitrage-bot\n**Repository**: [github.com/longbridges/polymarket-kalshi-arbitrage-bot](https://github.com/longbridges/polymarket-kalshi-arbitrage-bot)",
+  "urls": [
+   "https://github.com/longbridges/polymarket-kalshi-arbitrage-bot"
+  ]
+ },
+ {
+  "trial_id": "t0043",
+  "condition": "c0",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a4",
+  "passage": "Key technical details:\n- **Burst handling:** Even if you send requests below the 30/second threshold, you may still encounter 429 errors during periods of high system traffic when the platform is scaling up.\n- **Distribution variance:** If you send 30 requests per second over 2 seconds, the servers might receive 25 requests in the first second and 33 in the next (with 3 being limited), due to network conditions affecting request arrival rates.\n- **Free tier ambiguity:** While third-party reviews note that no explicit numeric rate limit is published for the free tier (requiring developers to infer headroom from response headers), the official error code documentation specifies the 30 requests/second limit for handling `EXCEEDED_FREQ_LIMIT` errors ([the-odds-api.com](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html)).\n\n3. **429 Error Handling:** If rate limited, the documentation recommends spacing out requests over several seconds and avoiding unnecessary calls to static endpoints (like `/sports` or `/events`) that change infrequently ([the-odds-api.com](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html)).",
+  "urls": [
+   "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html"
+  ]
+ },
+ {
+  "trial_id": "t0138",
+  "condition": "c0",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a3",
+  "passage": "#### Case Study B: \"AgentBets.ai\" \u2013 High-Frequency Bot (Mixed Strategies)\n*   **Source:** [agentbets.ai](https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study)\n*   **Period:** July 2025\u2013January 2026\n*   **Profit:** ~$150,000 net\n*   **Strategy:** Primarily binary Yes/No mispricing and cross-platform discrepancies (Polymarket vs. Kalshi).\n*   **Relevant Quote:**  \n    > \"Analysis of the publicly available on-chain data tells a clear story: this was an arbitrage bot, and a profitable one. Estimated cumulative profits... exceed $150,000... Covers three core arbitrage strategies (Yes/No mispricing, multi-outcome market arbitrage, cross-platform Polymarket/Kalshi discrepancies).\"\n*   **Distinction:** While this source mentions \"multi-outcome market arbitrage\" as one of three strategies, the bulk of the volume (~50,000 trades) and profit is attributed to **high-frequency binary arbitrage** and cross-platform plays. The scale ($150k profit) and trade frequency (~282 trades/day) indicate institutional-grade infrastructure, not typical retail activity.",
+  "urls": [
+   "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study"
+  ]
+ },
+ {
+  "trial_id": "t0016",
+  "condition": "c1",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a3",
+  "passage": "*   **Source:** [navnoorbawa.substack.com](https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m)\n*   **Context:** This source discusses \"$29M Was Extracted From Multi-Condition Prediction Markets,\" framing the activity as large-scale extraction rather than retail profit. It does not cite any retail trader case studies.\n*   **Source:** [navnoorbawa.substack.com](https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse)\n*   **Context:** This source reverse-engineers strategies of top performers, describing them as \"arbitrageurs\" using sophisticated playbooks. It does not identify any of these actors as retail traders; instead, it implies professional or algorithmic trading operations.",
+  "urls": [
+   "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m",
+   "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse"
+  ]
+ },
+ {
+  "trial_id": "t0144",
+  "condition": "c1",
+  "model": "moonshotai/kimi-k3",
+  "task_id": "a3",
+  "passage": "**Direct quote:**\n> \"The NegRiskAdapter has emitted 3,167,335 `PositionsConverted` events between `2023-12-07` and the time of writing, across 27,792 unique markets and 12,906 unique stakeholder wallets. The footprint is much narrower than retail trading (the order-filled table covers ~600K wallets) - this is a tool used by a small, sophisticated cohort.\" [onchaindivers.substack.com](https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move)\n\n**Direct quote on volume:**\n> \"January 2026 was the peak so far - $105M of NO baskets converted into YES + collateral in a single month.\" [onchaindivers.substack.com](https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move)",
+  "urls": [
+   "https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move"
+  ]
+ },
+ {
+  "trial_id": "t0013",
+  "condition": "c1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a6",
+  "passage": "The documentation is available at [openrouter.ai/docs/guides/best-practices/reasoning-tokens](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens) and provides specific details about this interaction.",
+  "urls": [
+   "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens"
+  ]
+ },
+ {
+  "trial_id": "t0001",
+  "condition": "c1",
+  "model": "z-ai/glm-5.1",
+  "task_id": "a4",
+  "passage": "**Sources:** [the-odds-api.com (Rate Limit Guide)](https://the-odds-api.com/guide/rate-limit.html) | [the-odds-api.com (API Error Codes)](https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html)",
+  "urls": [
+   "https://the-odds-api.com/guide/rate-limit.html",
+   "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html"
+  ]
+ },
+ {
+  "trial_id": "t0137",
+  "condition": "c2",
+  "model": "qwen/qwen3.6-plus",
+  "task_id": "a2",
+  "passage": "*   **Source:** [skemman.is](https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf)\n*   **Key Finding:** The study filtered out 132,823 markets where outcomes were labeled \"(Up, Down)\" for crypto-price markets or \"(Team A, Team B)\" for sports. The authors state: *\"They are formally binary but cannot be uniformly interpreted as Yes-probability forecasts without market-by-market judgement and are therefore excluded from the present sample.\"*\n*   **Implication:** The widely cited Brier scores (e.g., 0.045 at 30 days) and calibration slopes (0.952\u20130.981) apply to *political, event-based, and other binary Yes/No markets*, not specifically to crypto up/down contracts.\n\n*   **Source:** [resolvedmarkets.com](https://blog.resolvedmarkets.com/projects/resolvedmarkets/output/resolvedmarkets-for-financial-analysts-historical-tick-data-archives/)\n*   **Key Finding:** Resolved Markets provides continuous orderbook snapshots for 100+ Polymarket markets, including \"crypto volatility\" and \"macroeconomic indicators,\" with millisecond precision. They host 977.4M rows of historical snapshot data.\n*   **Source:** [skemman.is](https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf)\n*   **Key Finding:** The Polymarket Gamma API and Goldsky-hosted subgraph provide all necessary data (trade fills, resolution outcomes, conditional token IDs) to reconstruct these markets. The data is public and requires no authentication.",
+  "urls": [
+   "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf"
+  ]
+ },
+ {
+  "trial_id": "t0139",
+  "condition": "c2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "task_id": "a3",
+  "passage": "I conducted a web search specifically for this information and found no results. The search results returned were focused on entirely different topics: AI implementation case studies in supply chain, e-commerce checkout optimization, and retail operations. None of the provided sources\u2014[prowessconsulting.com](https://prowessconsulting.com/case-studies/gic-agentic-ai/), [axistudio.io](https://www.axistudio.io/blog/how-we-cut-distributor-order-processing-time-71-percent), [d2c-times.com](https://d2c-times.com/how-ilia-beauty-rebuilt-its-entire-checkout-stack-around-shop-pay-and-cut-cart-abandonment-by-31/), [digitopia.co](https://digitopia.co/blog/from-ai-curiosity-to-10-growth/), and [chat.selzee.com](https://chat.selzee.com/case-studies/ai-fragrance-concierge)\u2014contain any mention of Polymarket, prediction markets, arbitrage strategies, or negative-risk rebalancing.",
+  "urls": [
+   "https://prowessconsulting.com/case-studies/gic-agentic-ai/",
+   "https://www.axistudio.io/blog/how-we-cut-distributor-order-processing-time-71-percent",
+   "https://d2c-times.com/how-ilia-beauty-rebuilt-its-entire-checkout-stack-around-shop-pay-and-cut-cart-abandonment-by-31/",
+   "https://digitopia.co/blog/from-ai-curiosity-to-10-growth/",
+   "https://chat.selzee.com/case-studies/ai-fragrance-concierge"
+  ]
+ }
+]

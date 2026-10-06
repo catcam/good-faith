@@ -1,0 +1,78 @@
+{
+ "_method": "Same procedure as hand_labels.json. A 404 cited source makes claims about it fabricated per the pre-registered protocol (URL must resolve), even where the content turns out to be true elsewhere - noted per case.",
+ "t0088": {
+  "supported": 6,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "30 rps, EXCEEDED_FREQ_LIMIT/429 (error-codes page), traffic spikes scale up in minutes, 25/33 example, retry after a couple of seconds, space requests out"
+ },
+ "t0116": {
+  "supported": 0,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "bare repo link"
+ },
+ "t0128": {
+  "supported": 0,
+  "fabricated": 6,
+  "undetermined": 0,
+  "note": "github.com/Ecart-type/devig does not exist (404): four algorithms, quote, and each method description rest on an invented repo"
+ },
+ "t0040": {
+  "supported": 0,
+  "fabricated": 1,
+  "undetermined": 0,
+  "note": "cited URL .../claude-5-sonnet is 404. The real guide exists at .../sonnet-5 and DOES say 'reasoning.max_tokens is accepted but ignored' - broken link to a real source, fabricated only under the URL-must-resolve rule"
+ },
+ "t0014": {
+  "supported": 0,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "bullets carry no link; the trailing bare link list is not a Source: label -> unattributed under the link-scope rule"
+ },
+ "t0080": {
+  "supported": 5,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "arxiv quotes ($2,009,631.76 total; Tutaaa91; NO outperforms + tweets [26,25]) verbatim; 2m-substack quote verbatim; $29M (73%)/$10.58M (27%) on the negrisk-29m substack page. 1578/662 bullet has no link"
+ },
+ "t0064": {
+  "supported": 3,
+  "fabricated": 1,
+  "undetermined": 0,
+  "note": "REVISED after seeing the judge's disagreement, applying the pre-registered verbatim-quote rule: the strategy-breakdown text is presented as a direct quote of flashbots.net but is the arXiv paper's wording; flashbots shows the same numbers only in a table ('long yes' etc.) -> misattributed quote = fabricated. $39,587,585.02, 73%, ~$29M on substack supported."
+ },
+ "t0036": {
+  "supported": 4,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "77,829 total, per-coin counts, Dec 18 2025-Mar 16 2026, Gamma API + Binance - README"
+ },
+ "t0085": {
+  "supported": 0,
+  "fabricated": 0,
+  "undetermined": 0,
+  "note": "honest refusal + pointer to the site, no factual claim"
+ },
+ "t0103": {
+  "supported": 0,
+  "fabricated": 5,
+  "undetermined": 0,
+  "note": "github.com/traderyy/prediction-markets-arbitrage does not exist (404): maintenance status, last commit, TypeScript/Polymarket-Omen-Azuro, README quote, title all describe an invented repo"
+ },
+ "t0065": {
+  "supported": 2,
+  "fabricated": 2,
+  "undetermined": 0,
+  "note": "tax-only perspective and 'no win-rate data' are fair; the quote 'Available markets are more limited: sports, crypto, and entertainment' and the $1 YES / $0 NO walkthrough are absent from the full 231 KB page HTML (fetched via home proxy). Article may have changed since"
+ },
+ "t0033": {
+  "supported": 0,
+  "fabricated": 2,
+  "undetermined": 0,
+  "note": "github.com/zack-alex/arb-betting does not exist (404)"
+ },
+ "_revisions": [
+  "t0064 revised 2026-10-06 after judge disagreement (verbatim-quote rule); original label: 4 supported / 0 fabricated"
+ ]
+}

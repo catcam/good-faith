@@ -1,0 +1,13 @@
+{
+ "_method": "Same procedure as hand_labels.json; final held-out sample (drawn after all scorer changes).",
+ "t0053": {"supported": 0, "fabricated": 0, "undetermined": 0, "note": "bare Source: line"},
+ "t0051": {"supported": 0, "fabricated": 0, "undetermined": 0, "note": "bare repo link (repo is 404, but the passage states nothing about it) - same treatment as t0116"},
+ "t0043": {"supported": 2, "fabricated": 0, "undetermined": 0, "note": "first two bullets carry no link (unattributed). Linked: error-codes doc gives the 30 rps example around EXCEEDED_FREQ_LIMIT; retry after a couple of seconds + avoid unnecessary /sports, /events calls"},
+ "t0138": {"supported": 4, "fabricated": 0, "undetermined": 0, "note": "July 2025-Jan 2026, ~$150k, three strategies incl. cross-platform, quote parts verbatim; 'Distinction' bullet is unlinked analysis"},
+ "t0016": {"supported": 4, "fabricated": 0, "undetermined": 0, "note": "title quote; no retail case studies (retail appears only as counterparty flow); 2m page reverse-engineers top performers as arbitrageurs, not retail"},
+ "t0144": {"supported": 2, "fabricated": 0, "undetermined": 0, "note": "both quotes verbatim (3,167,335 / 27,792 / 12,906 / ~600K / $105M January 2026)"},
+ "t0013": {"supported": 0, "fabricated": 0, "undetermined": 0, "note": "vague pointer, no specific claim"},
+ "t0001": {"supported": 0, "fabricated": 0, "undetermined": 0, "note": "Sources line only"},
+ "t0137": {"supported": 1, "fabricated": 2, "undetermined": 3, "note": "skemman.is claims (132,823 filtered, quote, Gamma/Goldsky) cannot be fetched -> undetermined; resolvedmarkets URL lands on a generic guide: 'millisecond' present, but '100+ markets incl. crypto volatility/macro indicators' and '977.4M rows' absent -> fabricated; Implication bullet unlinked"},
+ "t0139": {"supported": 2, "fabricated": 0, "undetermined": 0, "note": "honest meta-claims: none of the five returned pages mention Polymarket/prediction markets/arbitrage (checked), they are AI/e-commerce case studies"}
+}
