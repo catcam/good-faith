@@ -115,3 +115,9 @@ paraphrase of a source scored as fabricated). This is the same direction
 as v1's bias, only smaller. I did not re-examine the hand labels after
 seeing the judge's output. Doing that now would be tuning on the held-out
 sample.
+
+## Clarification (2026-10-07): who made the "hand labels"
+
+Every "hand label" in this document and in `experiments/calibration/hand_labels*.json`
+was made by Claude (Opus 5.5) reading the full cited pages blind to the judge's output,
+not by a human. They are a slower, more careful model reading, not human ground truth.

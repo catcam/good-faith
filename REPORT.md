@@ -30,7 +30,10 @@ answers dropped out of the denominator. 9 of 24 C2 responses did this, so the C2
 from the remaining ones. Counted per response, the direction flips (C0 4.4 fabricated
 claims, C2 2.6), but that is exploratory, not the planned metric.
 
-A corrected scorer (v2) was calibrated against blind hand labels on four samples. Before the
+A corrected scorer (v2) was calibrated against blind reference labels on four samples. **These
+labels were made by Claude (Opus 5.5), reading the full cited pages, not by a human.** They are a
+more careful model's reading, not human ground truth, and the pre-registration's promise of
+human calibration is still unmet. Before the
 held-out sample was judged, a pass criterion was committed (`1b1669d`): ≥ 83% passage-level
 agreement and no one-sided error. On the held-out sample v2 reached **80% (8/10)**, so it
 **failed**. Its errors lean towards "fabricated", the same direction as v1's bias, only
