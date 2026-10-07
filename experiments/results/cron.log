@@ -1,0 +1,460 @@
+Balance: $18.05
+132 pending, running 6 this batch.
+  t0013 [a/c1/deepseek/deepseek-chat-v3.1] done — fabricated=5/7
+  t0014 [a/c1/qwen/qwen3.6-plus] done — fabricated=5/14
+  t0015 [b/c2/moonshotai/kimi-k3] done — fabricated=0/3
+  t0016 [a/c1/qwen/qwen3.6-plus] done — fabricated=4/6
+  t0017 [b/c1/moonshotai/kimi-k3] done — fabricated=0/2
+  t0018 [b/c0/moonshotai/kimi-k3] done — fabricated=0/2
+Batch done. 126 trials still pending.
+Balance: $17.23
+126 pending, running 6 this batch.
+  t0019 [b/c0/qwen/qwen3.6-plus] done — fabricated=1/2
+  t0020 [a/c0/qwen/qwen3.6-plus] done — fabricated=5/14
+  t0021 [b/c1/deepseek/deepseek-chat-v3.1] done — fabricated=0/3
+  t0022 [a/c0/z-ai/glm-5.1] done — fabricated=7/11
+  t0023 [b/c0/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0024 [b/c0/moonshotai/kimi-k3] done — fabricated=0/2
+Batch done. 120 trials still pending.
+Balance: $16.63
+120 pending, running 6 this batch.
+  t0025 [a/c2/moonshotai/kimi-k3] done — fabricated=0/0
+  t0026 [b/c0/moonshotai/kimi-k3] done — fabricated=0/3
+  t0027 [b/c0/z-ai/glm-5.1] done — fabricated=0/2
+  t0028 [b/c1/qwen/qwen3.6-plus] done — fabricated=1/2
+  t0029 [b/c2/deepseek/deepseek-chat-v3.1] done — fabricated=1/2
+  t0030 [a/c1/qwen/qwen3.6-plus] done — fabricated=1/7
+Batch done. 114 trials still pending.
+Balance: $16.14
+114 pending, running 6 this batch.
+  t0031 [b/c0/z-ai/glm-5.1] done — fabricated=0/3
+  t0032 [b/c2/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0033 [a/c2/moonshotai/kimi-k3] done — fabricated=14/14
+  t0034 [b/c1/qwen/qwen3.6-plus] done — fabricated=0/3
+  t0035 [b/c2/z-ai/glm-5.1] done — fabricated=0/2
+  t0036 [a/c1/moonshotai/kimi-k3] done — fabricated=0/9
+Batch done. 108 trials still pending.
+Balance: $15.62
+108 pending, running 6 this batch.
+  t0037 [a/c1/z-ai/glm-5.1] done — fabricated=6/7
+  t0038 [a/c0/z-ai/glm-5.1] done — fabricated=3/4
+  t0039 [a/c2/deepseek/deepseek-chat-v3.1] done — fabricated=0/0
+  t0040 [a/c0/deepseek/deepseek-chat-v3.1] done — fabricated=7/7
+  t0041 [b/c0/qwen/qwen3.6-plus] done — fabricated=1/2
+  t0042 [b/c0/deepseek/deepseek-chat-v3.1] done — fabricated=0/3
+Batch done. 102 trials still pending.
+Balance: $14.96
+102 pending, running 6 this batch.
+  t0043 [a/c0/moonshotai/kimi-k3] done — fabricated=2/14
+  t0044 [b/c1/z-ai/glm-5.1] done — fabricated=0/2
+  t0045 [a/c1/moonshotai/kimi-k3] done — fabricated=7/24
+  t0046 [b/c2/qwen/qwen3.6-plus] done — fabricated=0/3
+  t0047 [a/c0/z-ai/glm-5.1] done — fabricated=0/0
+  t0048 [b/c0/qwen/qwen3.6-plus] done — fabricated=0/3
+Batch done. 96 trials still pending.
+Balance: $14.20
+96 pending, running 6 this batch.
+  t0049 [a/c0/qwen/qwen3.6-plus] done — fabricated=8/14
+  t0050 [b/c2/deepseek/deepseek-chat-v3.1] done — fabricated=2/3
+  t0051 [a/c0/deepseek/deepseek-chat-v3.1] done — fabricated=14/17
+  t0052 [a/c1/moonshotai/kimi-k3] done — fabricated=1/9
+  t0053 [a/c0/z-ai/glm-5.1] done — fabricated=1/17
+  t0054 [b/c1/moonshotai/kimi-k3] done — fabricated=0/2
+Batch done. 90 trials still pending.
+Balance: $13.49
+90 pending, running 6 this batch.
+  t0055 [b/c2/moonshotai/kimi-k3] done — fabricated=0/2
+  t0056 [a/c0/qwen/qwen3.6-plus] done — fabricated=0/11
+  t0057 [b/c1/z-ai/glm-5.1] done — fabricated=0/3
+  t0058 [b/c0/qwen/qwen3.6-plus] done — fabricated=1/2
+  t0059 [a/c1/moonshotai/kimi-k3] done — fabricated=2/7
+  t0060 [a/c1/z-ai/glm-5.1] done — fabricated=0/9
+Batch done. 84 trials still pending.
+Balance: $12.43
+84 pending, running 6 this batch.
+  t0061 [b/c2/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0062 [b/c1/moonshotai/kimi-k3] done — fabricated=0/2
+  t0063 [b/c2/z-ai/glm-5.1] done — fabricated=0/2
+  t0064 [a/c1/deepseek/deepseek-chat-v3.1] done — fabricated=0/0
+  t0065 [a/c2/z-ai/glm-5.1] done — fabricated=0/5
+  t0066 [a/c2/z-ai/glm-5.1] done — fabricated=6/8
+Batch done. 78 trials still pending.
+Balance: $11.61
+78 pending, running 6 this batch.
+  t0067 [a/c2/qwen/qwen3.6-plus] done — fabricated=2/3
+  t0068 [b/c1/z-ai/glm-5.1] done — fabricated=0/2
+  t0069 [b/c0/deepseek/deepseek-chat-v3.1] done — fabricated=1/2
+  t0070 [a/c2/deepseek/deepseek-chat-v3.1] done — fabricated=0/0
+  t0071 [b/c1/moonshotai/kimi-k3] done — fabricated=1/2
+  t0072 [b/c0/moonshotai/kimi-k3] done — fabricated=0/2
+Batch done. 72 trials still pending.
+Balance: $11.07
+72 pending, running 6 this batch.
+  t0073 [b/c2/qwen/qwen3.6-plus] done — fabricated=1/2
+  t0074 [b/c0/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+  t0075 [b/c1/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0076 [b/c1/moonshotai/kimi-k3] done — fabricated=0/2
+  t0077 [b/c0/z-ai/glm-5.1] done — fabricated=1/2
+  t0078 [b/c2/moonshotai/kimi-k3] done — fabricated=0/2
+Batch done. 66 trials still pending.
+Balance: $10.45
+66 pending, running 6 this batch.
+  t0079 [b/c0/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+  t0080 [a/c1/z-ai/glm-5.1] done — fabricated=9/9
+  t0081 [b/c2/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+  t0082 [b/c0/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0083 [a/c0/moonshotai/kimi-k3] done — fabricated=0/0
+  t0084 [b/c0/z-ai/glm-5.1] done — fabricated=0/2
+Batch done. 60 trials still pending.
+Balance: $10.24
+60 pending, running 6 this batch.
+  t0085 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0086 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0087 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0088 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0089 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0090 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 54 trials still pending.
+Balance: $10.17
+54 pending, running 6 this batch.
+  t0091 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0092 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0093 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0094 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0095 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0096 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 48 trials still pending.
+Balance: $10.02
+48 pending, running 6 this batch.
+  t0097 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0098 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0099 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0100 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0101 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0102 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 42 trials still pending.
+Balance: $9.91
+42 pending, running 6 this batch.
+  t0103 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0104 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0105 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0106 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0107 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0108 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 36 trials still pending.
+Balance: $9.86
+36 pending, running 6 this batch.
+  t0109 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0110 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0111 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0112 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0113 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0114 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 30 trials still pending.
+Balance: $9.80
+30 pending, running 6 this batch.
+  t0115 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0116 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0117 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0118 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0119 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0120 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 24 trials still pending.
+Balance: $9.76
+24 pending, running 6 this batch.
+  t0121 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0122 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0123 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0124 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0125 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0126 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 18 trials still pending.
+Balance: $9.73
+18 pending, running 6 this batch.
+  t0127 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0128 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0129 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0130 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0131 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+  t0132 FAILED: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+Batch done. 12 trials still pending.
+Balance: $9.55
+54 pending, running 6 this batch.
+  t0091 [b/c1/z-ai/glm-5.1] done — fabricated=0/2
+  t0092 [a/c0/deepseek/deepseek-chat-v3.1] done — fabricated=4/6
+  t0093 [a/c2/moonshotai/kimi-k3] done — fabricated=0/0
+  t0094 [a/c2/qwen/qwen3.6-plus] done — fabricated=0/0
+  t0095 [b/c2/z-ai/glm-5.1] done — fabricated=2/2
+  t0096 [a/c1/z-ai/glm-5.1] done — fabricated=5/5
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $9.42
+48 pending, running 6 this batch.
+  t0097 [a/c2/z-ai/glm-5.1] done — fabricated=0/0
+  t0098 [b/c1/z-ai/glm-5.1] done — fabricated=0/2
+  t0099 [a/c2/moonshotai/kimi-k3] done — fabricated=0/3
+  t0100 [a/c2/z-ai/glm-5.1] done — fabricated=0/0
+  t0101 [a/c0/moonshotai/kimi-k3] done — fabricated=9/10
+  t0102 [a/c0/moonshotai/kimi-k3] done — fabricated=1/5
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $9.23
+42 pending, running 6 this batch.
+  t0103 [a/c2/deepseek/deepseek-chat-v3.1] done — fabricated=4/4
+  t0104 [a/c0/z-ai/glm-5.1] done — fabricated=6/6
+  t0105 [b/c0/z-ai/glm-5.1] done — fabricated=0/2
+  t0106 [b/c1/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0107 [a/c0/deepseek/deepseek-chat-v3.1] done — fabricated=6/6
+  t0108 [a/c1/deepseek/deepseek-chat-v3.1] done — fabricated=6/7
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $9.10
+36 pending, running 6 this batch.
+  t0109 [b/c2/qwen/qwen3.6-plus] done — fabricated=1/2
+  t0110 [a/c1/deepseek/deepseek-chat-v3.1] done — fabricated=2/7
+  t0111 [a/c1/qwen/qwen3.6-plus] done — fabricated=2/8
+  t0112 [b/c1/moonshotai/kimi-k3] done — fabricated=0/3
+  t0113 [a/c2/moonshotai/kimi-k3] done — fabricated=0/0
+  t0114 [b/c2/z-ai/glm-5.1] done — fabricated=0/2
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $8.97
+30 pending, running 6 this batch.
+  t0115 [b/c0/z-ai/glm-5.1] done — fabricated=0/2
+  t0116 [a/c0/moonshotai/kimi-k3] done — fabricated=20/20
+  t0117 [b/c0/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+  t0118 [b/c1/deepseek/deepseek-chat-v3.1] done — fabricated=1/2
+  t0119 [b/c1/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0120 [b/c0/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $8.85
+24 pending, running 6 this batch.
+  t0121 [b/c1/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+  t0122 [b/c2/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+  t0123 [a/c1/z-ai/glm-5.1] done — fabricated=2/5
+  t0124 [a/c2/z-ai/glm-5.1] done — fabricated=0/0
+  t0125 [b/c1/z-ai/glm-5.1] done — fabricated=0/2
+  t0126 [b/c2/deepseek/deepseek-chat-v3.1] done — fabricated=0/2
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $8.74
+18 pending, running 6 this batch.
+  t0127 [b/c1/deepseek/deepseek-chat-v3.1] done — fabricated=1/2
+  t0128 [a/c0/qwen/qwen3.6-plus] done — fabricated=2/11
+  t0129 [b/c2/qwen/qwen3.6-plus] done — fabricated=0/2
+  t0130 [b/c2/z-ai/glm-5.1] done — fabricated=0/3
+  t0131 [a/c2/deepseek/deepseek-chat-v3.1] done — fabricated=2/5
+  t0132 [a/c1/deepseek/deepseek-chat-v3.1] done — fabricated=3/9
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $8.64
+12 pending, running 6 this batch.
+  t0133 [a/c2/deepseek/deepseek-chat-v3.1] done — fabricated=5/6
+  t0134 [a/c1/deepseek/deepseek-chat-v3.1] done — fabricated=5/10
+  t0135 [a/c2/moonshotai/kimi-k3] done — fabricated=10/10
+  t0136 [b/c0/moonshotai/kimi-k3] done — fabricated=1/2
+  t0137 [a/c2/qwen/qwen3.6-plus] done — fabricated=4/7
+  t0138 [a/c0/qwen/qwen3.6-plus] done — fabricated=0/5
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+Balance: $8.49
+6 pending, running 6 this batch.
+  t0139 [a/c2/deepseek/deepseek-chat-v3.1] done — fabricated=4/4
+  t0140 [a/c2/z-ai/glm-5.1] done — fabricated=4/8
+  t0141 [a/c0/qwen/qwen3.6-plus] done — fabricated=3/5
+  t0142 [a/c2/qwen/qwen3.6-plus] done — fabricated=4/4
+  t0143 [a/c1/qwen/qwen3.6-plus] done — fabricated=5/8
+  t0144 [a/c1/moonshotai/kimi-k3] done — fabricated=8/8
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 223, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch.py", line 217, in main
+    regenerate_exploratory_report()
+  File "/home/botuser/good-faith/experiments/analyze_exploratory.py", line 188, in regenerate_exploratory_report
+    out_path.write_text("\n".join(lines) + "\n")
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/exploratory.md'
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.
+All trials complete. Nothing to do.

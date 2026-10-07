@@ -16,9 +16,15 @@ This isn't a capability failure. It's an incentive failure, and you built it int
 
 State explicitly, before the task, that not knowing is an acceptable — a *successful* — answer. The only real failure is inventing something to sound more complete than you honestly are.
 
-This isn't a magic phrase. It's a measurable, testable change to what counts as success in the prompt. Full writeup, including the actual before/after case that produced this project: [`PHILOSOPHY.md`](PHILOSOPHY.md).
+This isn't a magic phrase. It's a testable change to what counts as success in the prompt. Full writeup, including the actual before/after case that produced this project: [`PHILOSOPHY.md`](PHILOSOPHY.md).
 
 **It also doesn't work perfectly.** One model in the case this project is built on fabricated again on a second pass, under the same good-faith framing. That's why the practice here has two halves, not one: extend the framing, *and* verify every checkable claim independently afterward. Trust the invitation to be honest; don't trust the citation just because it arrived under that invitation.
+
+## Evidence status
+
+Honest version: **unproven.** The idea came from one observed case. A pre-registered 144-trial experiment ([EXPERIMENT.md](EXPERIMENT.md)) was run to test it, and its result is **inconclusive**. The automatic fabrication scorer turned out to be unreliable, a corrected scorer failed its own held-out validation, and the code-review judge was never calibrated. The raw numbers even point the wrong way in one domain, but they come from a measurement shown to be broken. Full account: [REPORT.md](REPORT.md).
+
+What still stands without the experiment is the second half of the practice: verify every checkable claim yourself. That holds no matter which prompt you use.
 
 ## How It Works
 

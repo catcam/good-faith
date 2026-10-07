@@ -44,7 +44,7 @@ For anything you'll act on (money, a security decision, a factual claim that goe
 
 ## After the response comes back — verify anyway
 
-Good faith is a stance you extend, not a guarantee you receive. The framing measurably reduces fabrication — it doesn't eliminate it. Treat every concrete, checkable claim (a URL, a named repo, a specific number attributed to a source) as a claim to verify, not a citation to trust:
+Good faith is a stance you extend, not a guarantee you receive. The framing may reduce fabrication — the one controlled test so far couldn't confirm or rule that out (see REPORT.md in the repo) — and it certainly doesn't eliminate it. Treat every concrete, checkable claim (a URL, a named repo, a specific number attributed to a source) as a claim to verify, not a citation to trust:
 
 1. Extract every checkable claim from the response
 2. Independently verify each one (WebSearch, WebFetch, or direct lookup — not by asking the same model to confirm itself)

@@ -53,7 +53,7 @@
     "task_id": "b1",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0008",
@@ -61,7 +61,7 @@
     "task_id": "a6",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0009",
@@ -69,7 +69,7 @@
     "task_id": "b4",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0010",
@@ -77,7 +77,7 @@
     "task_id": "a4",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0011",
@@ -85,7 +85,7 @@
     "task_id": "b3",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0012",
@@ -93,7 +93,7 @@
     "task_id": "a6",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0013",
@@ -101,7 +101,7 @@
     "task_id": "a6",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0014",
@@ -109,7 +109,7 @@
     "task_id": "a4",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0015",
@@ -117,7 +117,7 @@
     "task_id": "b5",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0016",
@@ -125,7 +125,7 @@
     "task_id": "a3",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0017",
@@ -133,7 +133,7 @@
     "task_id": "b6",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0018",
@@ -141,7 +141,7 @@
     "task_id": "b1",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0019",
@@ -149,7 +149,7 @@
     "task_id": "b2",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0020",
@@ -157,7 +157,7 @@
     "task_id": "a4",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0021",
@@ -165,7 +165,7 @@
     "task_id": "b5",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0022",
@@ -173,7 +173,7 @@
     "task_id": "a1",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0023",
@@ -181,7 +181,7 @@
     "task_id": "b1",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0024",
@@ -189,7 +189,7 @@
     "task_id": "b3",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0025",
@@ -197,7 +197,7 @@
     "task_id": "a3",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0026",
@@ -205,7 +205,7 @@
     "task_id": "b5",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0027",
@@ -213,7 +213,7 @@
     "task_id": "b6",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0028",
@@ -221,7 +221,7 @@
     "task_id": "b3",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0029",
@@ -229,7 +229,7 @@
     "task_id": "b4",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0030",
@@ -237,7 +237,7 @@
     "task_id": "a2",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0031",
@@ -245,7 +245,7 @@
     "task_id": "b5",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0032",
@@ -253,7 +253,7 @@
     "task_id": "b3",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0033",
@@ -261,7 +261,7 @@
     "task_id": "a5",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0034",
@@ -269,7 +269,7 @@
     "task_id": "b5",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0035",
@@ -277,7 +277,7 @@
     "task_id": "b1",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0036",
@@ -285,7 +285,7 @@
     "task_id": "a2",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0037",
@@ -293,7 +293,7 @@
     "task_id": "a6",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0038",
@@ -301,7 +301,7 @@
     "task_id": "a6",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0039",
@@ -309,7 +309,7 @@
     "task_id": "a6",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0040",
@@ -317,7 +317,7 @@
     "task_id": "a6",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0041",
@@ -325,7 +325,7 @@
     "task_id": "b4",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0042",
@@ -333,7 +333,7 @@
     "task_id": "b5",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0043",
@@ -341,7 +341,7 @@
     "task_id": "a4",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0044",
@@ -349,7 +349,7 @@
     "task_id": "b4",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0045",
@@ -357,7 +357,7 @@
     "task_id": "a1",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0046",
@@ -365,7 +365,7 @@
     "task_id": "b5",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0047",
@@ -373,7 +373,7 @@
     "task_id": "a3",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0048",
@@ -381,7 +381,7 @@
     "task_id": "b5",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0049",
@@ -389,7 +389,7 @@
     "task_id": "a1",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0050",
@@ -397,7 +397,7 @@
     "task_id": "b5",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0051",
@@ -405,7 +405,7 @@
     "task_id": "a1",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0052",
@@ -413,7 +413,7 @@
     "task_id": "a5",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0053",
@@ -421,7 +421,7 @@
     "task_id": "a5",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0054",
@@ -429,7 +429,7 @@
     "task_id": "b2",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0055",
@@ -437,7 +437,7 @@
     "task_id": "b3",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0056",
@@ -445,7 +445,7 @@
     "task_id": "a2",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0057",
@@ -453,7 +453,7 @@
     "task_id": "b5",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0058",
@@ -461,7 +461,7 @@
     "task_id": "b3",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0059",
@@ -469,7 +469,7 @@
     "task_id": "a4",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0060",
@@ -477,7 +477,7 @@
     "task_id": "a2",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0061",
@@ -485,7 +485,7 @@
     "task_id": "b1",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0062",
@@ -493,7 +493,7 @@
     "task_id": "b1",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0063",
@@ -501,7 +501,7 @@
     "task_id": "b3",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0064",
@@ -509,7 +509,7 @@
     "task_id": "a3",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0065",
@@ -517,7 +517,7 @@
     "task_id": "a2",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0066",
@@ -525,7 +525,7 @@
     "task_id": "a1",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0067",
@@ -533,7 +533,7 @@
     "task_id": "a3",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0068",
@@ -541,7 +541,7 @@
     "task_id": "b6",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0069",
@@ -549,7 +549,7 @@
     "task_id": "b3",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0070",
@@ -557,7 +557,7 @@
     "task_id": "a4",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0071",
@@ -565,7 +565,7 @@
     "task_id": "b4",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0072",
@@ -573,7 +573,7 @@
     "task_id": "b2",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0073",
@@ -581,7 +581,7 @@
     "task_id": "b2",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0074",
@@ -589,7 +589,7 @@
     "task_id": "b6",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0075",
@@ -597,7 +597,7 @@
     "task_id": "b2",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0076",
@@ -605,7 +605,7 @@
     "task_id": "b3",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0077",
@@ -613,7 +613,7 @@
     "task_id": "b2",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0078",
@@ -621,7 +621,7 @@
     "task_id": "b4",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0079",
@@ -629,7 +629,7 @@
     "task_id": "b2",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0080",
@@ -637,7 +637,7 @@
     "task_id": "a3",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0081",
@@ -645,7 +645,7 @@
     "task_id": "b2",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0082",
@@ -653,7 +653,7 @@
     "task_id": "b6",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0083",
@@ -661,7 +661,7 @@
     "task_id": "a3",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0084",
@@ -669,7 +669,7 @@
     "task_id": "b1",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0085",
@@ -677,7 +677,11 @@
     "task_id": "a4",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0086",
@@ -685,7 +689,11 @@
     "task_id": "b1",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0087",
@@ -693,7 +701,11 @@
     "task_id": "b1",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0088",
@@ -701,7 +713,11 @@
     "task_id": "a4",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0089",
@@ -709,7 +725,11 @@
     "task_id": "b6",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0090",
@@ -717,7 +737,11 @@
     "task_id": "a1",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0091",
@@ -725,7 +749,11 @@
     "task_id": "b3",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0092",
@@ -733,7 +761,11 @@
     "task_id": "a2",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0093",
@@ -741,7 +773,11 @@
     "task_id": "a6",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0094",
@@ -749,7 +785,11 @@
     "task_id": "a5",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0095",
@@ -757,7 +797,11 @@
     "task_id": "b2",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0096",
@@ -765,7 +809,11 @@
     "task_id": "a1",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0097",
@@ -773,7 +821,11 @@
     "task_id": "a3",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0098",
@@ -781,7 +833,11 @@
     "task_id": "b1",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0099",
@@ -789,7 +845,11 @@
     "task_id": "a4",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0100",
@@ -797,7 +857,11 @@
     "task_id": "a4",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0101",
@@ -805,7 +869,11 @@
     "task_id": "a2",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0102",
@@ -813,7 +881,11 @@
     "task_id": "a5",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0103",
@@ -821,7 +893,11 @@
     "task_id": "a1",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0104",
@@ -829,7 +905,11 @@
     "task_id": "a2",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0105",
@@ -837,7 +917,11 @@
     "task_id": "b4",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0106",
@@ -845,7 +929,11 @@
     "task_id": "b4",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0107",
@@ -853,7 +941,11 @@
     "task_id": "a3",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0108",
@@ -861,7 +953,11 @@
     "task_id": "a2",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0109",
@@ -869,7 +965,11 @@
     "task_id": "b4",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0110",
@@ -877,7 +977,11 @@
     "task_id": "a4",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0111",
@@ -885,7 +989,11 @@
     "task_id": "a5",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0112",
@@ -893,7 +1001,11 @@
     "task_id": "b5",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0113",
@@ -901,7 +1013,11 @@
     "task_id": "a2",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0114",
@@ -909,7 +1025,11 @@
     "task_id": "b4",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0115",
@@ -917,7 +1037,11 @@
     "task_id": "b3",
     "condition": "c0",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0116",
@@ -925,7 +1049,11 @@
     "task_id": "a1",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0117",
@@ -933,7 +1061,11 @@
     "task_id": "b4",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0118",
@@ -941,7 +1073,11 @@
     "task_id": "b3",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0119",
@@ -949,7 +1085,11 @@
     "task_id": "b6",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0120",
@@ -957,7 +1097,11 @@
     "task_id": "b1",
     "condition": "c0",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0121",
@@ -965,7 +1109,11 @@
     "task_id": "b6",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0122",
@@ -973,7 +1121,11 @@
     "task_id": "b6",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0123",
@@ -981,7 +1133,11 @@
     "task_id": "a5",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0124",
@@ -989,7 +1145,11 @@
     "task_id": "a6",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0125",
@@ -997,7 +1157,11 @@
     "task_id": "b2",
     "condition": "c1",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0126",
@@ -1005,7 +1169,11 @@
     "task_id": "b1",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0127",
@@ -1013,7 +1181,11 @@
     "task_id": "b2",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0128",
@@ -1021,7 +1193,11 @@
     "task_id": "a5",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0129",
@@ -1029,7 +1205,11 @@
     "task_id": "b6",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0130",
@@ -1037,7 +1217,11 @@
     "task_id": "b5",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0131",
@@ -1045,7 +1229,11 @@
     "task_id": "a5",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0132",
@@ -1053,7 +1241,11 @@
     "task_id": "a5",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
   },
   {
     "trial_id": "t0133",
@@ -1061,7 +1253,7 @@
     "task_id": "a2",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0134",
@@ -1069,7 +1261,7 @@
     "task_id": "a1",
     "condition": "c1",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0135",
@@ -1077,7 +1269,7 @@
     "task_id": "a1",
     "condition": "c2",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0136",
@@ -1085,7 +1277,7 @@
     "task_id": "b4",
     "condition": "c0",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0137",
@@ -1093,7 +1285,7 @@
     "task_id": "a2",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0138",
@@ -1101,7 +1293,7 @@
     "task_id": "a3",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0139",
@@ -1109,7 +1301,7 @@
     "task_id": "a3",
     "condition": "c2",
     "model": "deepseek/deepseek-chat-v3.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0140",
@@ -1117,7 +1309,7 @@
     "task_id": "a5",
     "condition": "c2",
     "model": "z-ai/glm-5.1",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0141",
@@ -1125,7 +1317,7 @@
     "task_id": "a6",
     "condition": "c0",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0142",
@@ -1133,7 +1325,7 @@
     "task_id": "a6",
     "condition": "c2",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0143",
@@ -1141,7 +1333,7 @@
     "task_id": "a1",
     "condition": "c1",
     "model": "qwen/qwen3.6-plus",
-    "status": "pending"
+    "status": "done"
   },
   {
     "trial_id": "t0144",
@@ -1149,6 +1341,6 @@
     "task_id": "a3",
     "condition": "c1",
     "model": "moonshotai/kimi-k3",
-    "status": "pending"
+    "status": "done"
   }
 ]

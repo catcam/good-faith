@@ -1,0 +1,7 @@
+trial_id,domain,task_id,condition,model,timestamp,checkable_or_ground_truth,fabricated,matched_or_na,additional_real_or_na,abstention
+c3_t0007,a,a2,c3,deepseek/deepseek-chat-v3.1,2026-08-25T15:07:21.844419+00:00,0,0,,,True
+c3_t0008,b,b4,c3,deepseek/deepseek-chat-v3.1,2026-08-25T15:09:46.435727+00:00,2,1,2,0,True
+c3_t0009,a,a3,c3,qwen/qwen3.6-plus,2026-08-25T15:10:05.458664+00:00,1,1,,,True
+c3_t0010,b,b6,c3,deepseek/deepseek-chat-v3.1,2026-08-25T15:11:20.528425+00:00,2,0,2,0,False
+c3_t0011,b,b6,c3,qwen/qwen3.6-plus,2026-08-25T15:11:41.742220+00:00,2,0,2,0,True
+c3_t0012,b,b6,c3,z-ai/glm-5.1,2026-08-25T15:11:51.573611+00:00,2,0,2,0,True

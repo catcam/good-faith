@@ -1,4 +1,7 @@
 .env
-experiments/raw/*.json
+# raw model responses are committed so the result can be re-scored independently
 __pycache__/
 *.pyc
+experiments/calibration/pages/
+*.pid
+*.shpid

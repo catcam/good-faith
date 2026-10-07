@@ -13,6 +13,13 @@ from verify import verify_domain_a, verify_domain_b
 
 BATCH_SIZE = 6
 MIN_BALANCE = 5.0
+MAX_ATTEMPTS = 3  # bounded auto-retry (2026-08-25, see retry_stuck_errors.py):
+                  # a row that errors goes back to "pending" for the NEXT
+                  # batch to retry automatically, up to this many attempts,
+                  # before being marked terminal "failed" instead of "error" --
+                  # the earlier state ("error" = silently never retried again)
+                  # is exactly what let 48 rows get stuck for weeks on the
+                  # since-fixed Groq judge-model bug without anyone noticing.
 
 MATRIX_PATH = ROOT / "experiments" / "design_matrix.json"
 SCORED_CSV = ROOT / "experiments" / "results" / "scored.csv"
@@ -42,6 +49,12 @@ def append_scored_row(row: dict):
         w.writerow(row)
 
 
+OUTLIER_THRESHOLD = 0.30  # matches analyze_exploratory.py -- kept as a separate
+                          # constant here (not imported) so this file has no
+                          # hard dependency on that one; duplication is cheap
+                          # and both are small enough to keep in sync by hand.
+
+
 def regenerate_summary():
     if not SCORED_CSV.exists():
         return
@@ -59,6 +72,7 @@ def regenerate_summary():
         lines.append(f"\n## Domain {domain.upper()}\n")
         lines.append("| condition | trials | checkable/ground_truth | fabricated | fabrication_rate | abstention_rate |")
         lines.append("|---|---|---|---|---|---|")
+        outlier_notes = []
         for cond in ("c0", "c1", "c2"):
             crows = [r for r in drows if r["condition"] == cond]
             if not crows:
@@ -68,7 +82,28 @@ def regenerate_summary():
             abst = sum(1 for r in crows if r["abstention"] == "True")
             rate = f"{total_fab/total_checkable:.2%}" if total_checkable else "n/a"
             abst_rate = f"{abst/len(crows):.2%}"
+            # Outlier flag: a single trial dominating this cell's fabricated
+            # count (2026-08-25 finding: c2/domain-a's 73% rate was driven by
+            # 1 of 7 trials at 64% of the cell's total fabrications -- see
+            # exploratory.md for the full root-vs-dependent breakdown).
+            if total_fab > 0:
+                worst = max(crows, key=lambda r: int(r["fabricated"]))
+                worst_fab = int(worst["fabricated"])
+                share = worst_fab / total_fab
+                if share >= OUTLIER_THRESHOLD:
+                    rate = f"{rate} ⚠"
+                    outlier_notes.append(
+                        f"  ⚠ {cond}: trial {worst['trial_id']} ({worst['model']}) "
+                        f"alone contributes {worst_fab}/{total_fab} ({share:.0%}) of this "
+                        f"cell's fabricated claims -- see exploratory.md")
             lines.append(f"| {cond} | {len(crows)} | {total_checkable} | {total_fab} | {rate} | {abst_rate} |")
+        if outlier_notes:
+            lines.append("")
+            lines.extend(outlier_notes)
+
+    lines.append("\nSee exploratory.md for root-vs-dependent fabrication clustering "
+                 "and full outlier detail (exploratory analysis, not part of the "
+                 "pre-registered primary metric).")
 
     SUMMARY_MD.write_text("\n".join(lines) + "\n")
 
@@ -77,6 +112,16 @@ def main():
     if not MATRIX_PATH.exists():
         print("design_matrix.json missing — run generate_matrix.py first.")
         sys.exit(1)
+
+    # Self-healing safety net (2026-08-25): the in-loop attempts-cap below
+    # already handles ongoing errors, but this catches any row that somehow
+    # ends up stuck in status="error" outside that path (a future code
+    # change, a manually-edited matrix, an interrupted run) -- idempotent
+    # no-op in the normal case since no row should reach "error" anymore.
+    from retry_stuck_errors import retry_stuck_errors
+    n_recovered = retry_stuck_errors(MATRIX_PATH)
+    if n_recovered:
+        print(f"Recovered {n_recovered} stuck error row(s) back to pending.")
 
     try:
         bal = openrouter_balance()
@@ -152,14 +197,24 @@ def main():
                   f"fabricated={scored['fabricated']}/{scored['checkable_or_ground_truth']}")
 
         except Exception as e:
-            row["status"] = "error"
-            row["error"] = str(e)[:300]
-            print(f"  {row['trial_id']} FAILED: {e}")
+            attempts = row.get("attempts", 0) + 1
+            row["attempts"] = attempts
+            history = row.get("error_history", [])
+            history.append(str(e)[:300])
+            row["error_history"] = history
+            if attempts < MAX_ATTEMPTS:
+                row["status"] = "pending"  # auto-retry next batch, not immediately (avoid hammering a live outage)
+                print(f"  {row['trial_id']} FAILED (attempt {attempts}/{MAX_ATTEMPTS}, will retry): {e}")
+            else:
+                row["status"] = "failed"  # terminal -- stop auto-retrying, needs a human look
+                print(f"  {row['trial_id']} FAILED (attempt {attempts}/{MAX_ATTEMPTS}, giving up): {e}")
 
         sleep_backoff(0)
 
     save_matrix(rows)
     regenerate_summary()
+    from analyze_exploratory import regenerate_exploratory_report
+    regenerate_exploratory_report()
     remaining = len([r for r in rows if r["status"] == "pending"])
     print(f"Batch done. {remaining} trials still pending.")
 

@@ -1,0 +1,410 @@
+[
+  {
+    "trial_id": "c3_t0001",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
+  },
+  {
+    "trial_id": "c3_t0002",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
+  },
+  {
+    "trial_id": "c3_t0003",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
+  },
+  {
+    "trial_id": "c3_t0004",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
+  },
+  {
+    "trial_id": "c3_t0005",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
+  },
+  {
+    "trial_id": "c3_t0006",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending",
+    "error_history": [
+      "Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    ],
+    "attempts": 0
+  },
+  {
+    "trial_id": "c3_t0007",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "done"
+  },
+  {
+    "trial_id": "c3_t0008",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "done"
+  },
+  {
+    "trial_id": "c3_t0009",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "done"
+  },
+  {
+    "trial_id": "c3_t0010",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "done"
+  },
+  {
+    "trial_id": "c3_t0011",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "done"
+  },
+  {
+    "trial_id": "c3_t0012",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "done"
+  },
+  {
+    "trial_id": "c3_t0013",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0014",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0015",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0016",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0017",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0018",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0019",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0020",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0021",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0022",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0023",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0024",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0025",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0026",
+    "domain": "a",
+    "task_id": "a4",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0027",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0028",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0029",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0030",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0031",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0032",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0033",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0034",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0035",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0036",
+    "domain": "b",
+    "task_id": "b1",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0037",
+    "domain": "b",
+    "task_id": "b3",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0038",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0039",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0040",
+    "domain": "b",
+    "task_id": "b4",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0041",
+    "domain": "b",
+    "task_id": "b5",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0042",
+    "domain": "a",
+    "task_id": "a2",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0043",
+    "domain": "a",
+    "task_id": "a6",
+    "condition": "c3",
+    "model": "deepseek/deepseek-chat-v3.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0044",
+    "domain": "b",
+    "task_id": "b2",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0045",
+    "domain": "a",
+    "task_id": "a3",
+    "condition": "c3",
+    "model": "z-ai/glm-5.1",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0046",
+    "domain": "b",
+    "task_id": "b6",
+    "condition": "c3",
+    "model": "moonshotai/kimi-k3",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0047",
+    "domain": "a",
+    "task_id": "a5",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  },
+  {
+    "trial_id": "c3_t0048",
+    "domain": "a",
+    "task_id": "a1",
+    "condition": "c3",
+    "model": "qwen/qwen3.6-plus",
+    "status": "pending"
+  }
+]

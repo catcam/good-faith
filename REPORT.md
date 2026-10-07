@@ -69,4 +69,14 @@ for an "uncertain" section, and the abstention pattern list matches that word.
 4. Drop the word "uncertain" from abstention detection, or drop the uncertain-section
    invitation from C2.
 
-C3 (6/48 trials) stays paused. It would be scored by the same unvalidated measurement.
+C3 (6/48 trials) stays paused. It would be scored by the same unvalidated measurement. Its
+daily cron had in fact been failing on a file-permission error since trial 6, so the stop
+was accidental before it was deliberate. Both experiment crons are now disabled.
+
+## Data
+
+Everything needed to re-score independently is in the repo: every prompt, raw model
+response and v1 verification (`experiments/raw/`), the scored table
+(`experiments/results/scored.csv`), the blind hand labels and judge outputs
+(`experiments/calibration/`). Fetched web pages are not included. They are third-party
+content and can be re-fetched from the URLs in the responses.

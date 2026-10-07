@@ -1,0 +1,946 @@
+Balance: $9.49
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $9.31
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $9.19
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $9.05
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.93
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.82
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.71
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.56
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.40
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.33
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.25
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.18
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.10
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $8.03
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $7.77
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.70
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.56
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.49
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.39
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.33
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.10
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $17.02
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.87
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.81
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.74
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.63
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.54
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.47
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.29
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.07
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $16.00
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $15.94
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $15.87
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $15.80
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $15.71
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $15.65
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $15.58
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $13.95
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $13.87
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $13.79
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $13.72
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $13.65
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'
+Balance: $13.55
+42 C3 pending, running 6 this batch.
+  c3_t0001 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0002 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0003 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0004 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0005 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+  c3_t0006 FAILED (attempt 1/3, will retry): [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/results/scored_c3.csv'
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 202, in <module>
+    main()
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 190, in main
+    save_matrix(rows)
+  File "/home/botuser/good-faith/experiments/run_trial_batch_c3.py", line 38, in save_matrix
+    MATRIX_PATH.write_text(json.dumps(rows, indent=2))
+  File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/botuser/good-faith/experiments/design_matrix_c3.json'

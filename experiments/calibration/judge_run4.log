@@ -1,0 +1,14 @@
+judge done: 12 passages
+judge done: 12 passages
+judge done: 12 passages
+Traceback (most recent call last):
+  File "/home/botuser/good-faith/experiments/calibration/run_judge.py", line 10, in <module>
+    claims = v.judge_passage(s["passage"], s["urls"] + v.extract_urls(s["passage"]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/botuser/good-faith/experiments/calibration/../verify_v2.py", line 475, in judge_passage
+    verdict = _judge(JUDGE_PER_PASSAGE.format(passage=passage, evidence=evidence, sources="\n\n".join(blocks)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/botuser/good-faith/experiments/calibration/../verify_v2.py", line 362, in _judge
+    raise RuntimeError(f"judge failed after {attempts} attempts: {last}")
+RuntimeError: judge failed after 4 attempts: Client error '429 Too Many Requests' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
