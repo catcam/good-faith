@@ -87,3 +87,31 @@ If v2 fails, Domain A is reported as not reliably measurable with this
 judge, next to the v1 result, and is not re-scored. The final run uses the
 same model and settings through OpenRouter pinned to Groq as the provider
 (`JUDGE_BACKEND=openrouter`), because the Groq free tier hit its daily cap.
+
+## Held-out result (run v2e, 2026-10-07)
+
+Correction to the criterion above: sample 4 has 10 passages, not 12 (two of
+its draws had no citing passage). I wrote "12" without checking. Read
+proportionally, 10/12 = 83%.
+
+| sample | passages agree on "any fabrication" | claim-level TP / FP / FN |
+|---|---|---|
+| 1 (tuned on) | 12/12 | 1 / 0 / 0 |
+| 2 (tuned on) | 10/12 | 0 / 2 / 0 |
+| 3 (tuned on) | 9/12 | 13 / 3 / 4 |
+| **4 (held out)** | **8/10 = 80%** | 1 / 3 / 1 |
+
+- Criterion 1 (≥ 83% passage agreement): **fails** (80%).
+- Criterion 2 (|FP − FN| ≤ 2): passes (3 vs 1).
+
+**v2 does not pass.** As decided in advance, Domain A is not re-scored, and
+it is reported as not reliably measurable with this LLM judge. The v1 result
+stands as the pre-registered number, together with the documented reasons
+why it is not a valid measurement.
+
+The judge's held-out errors lean towards "fabricated" (t0051: an
+unreachable repo the hand labels did not count as a claim; t0138: a
+paraphrase of a source scored as fabricated). This is the same direction
+as v1's bias, only smaller. I did not re-examine the hand labels after
+seeing the judge's output. Doing that now would be tuning on the held-out
+sample.

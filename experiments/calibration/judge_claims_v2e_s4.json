@@ -1,0 +1,187 @@
+[
+ {
+  "trial_id": "t0053",
+  "claims": []
+ },
+ {
+  "trial_id": "t0051",
+  "claims": [
+   {
+    "claim": "The repository https://github.com/longbridges/polymarket-kalshi-arbitrage-bot exists",
+    "url": "https://github.com/longbridges/polymarket-kalshi-arbitrage-bot",
+    "verdict": "fabricated",
+    "why": "The URL is unreachable; GitHub returns a 404 indicating the repository does not exist."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0043",
+  "claims": [
+   {
+    "claim": "The official error code documentation specifies a 30 requests/second limit for handling EXCEEDED_FREQ_LIMIT errors.",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+    "verdict": "supported",
+    "why": "The page contains the number 30 and discusses rate limits, matching the claim."
+   },
+   {
+    "claim": "The documentation recommends spacing out requests after a 429 and avoiding unnecessary calls to static endpoints like /sports or /events.",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+    "verdict": "supported",
+    "why": "Excerpt includes guidance to retry after a few seconds and to avoid frequent calls to sports/events endpoints."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0138",
+  "claims": [
+   {
+    "claim": "Period of activity: July\u202f2025\u202f\u2013\u202fJanuary\u202f2026",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "supported",
+    "why": "Excerpt states the address was active since July\u202f2025 and the case study covers six months, ending early\u202f2026."
+   },
+   {
+    "claim": "Profit of approximately $150,000 net",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "supported",
+    "why": "Excerpt says estimated cumulative profits exceed $150,000."
+   },
+   {
+    "claim": "Strategy was primarily binary Yes/No mispricing and cross\u2011platform discrepancies",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "fabricated",
+    "why": "Source lists three core strategies (yes/no mispricing, multi\u2011outcome arbitrage, cross\u2011platform) but does not state that binary arbitrage was the primary one."
+   },
+   {
+    "claim": "Quoted passage about the bot being profitable and covering three core arbitrage strategies",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "supported",
+    "why": "Exact wording of the quote appears in the page excerpt."
+   },
+   {
+    "claim": "Approximately 50,000 trades were executed",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "supported",
+    "why": "Excerpt mentions ~50,000 trades."
+   },
+   {
+    "claim": "Trade frequency of about 282 trades per day",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "supported",
+    "why": "Excerpt cites both ~270 trades/day and explicitly 282 trades a day."
+   },
+   {
+    "claim": "Bulk of volume and profit is attributed to high\u2011frequency binary arbitrage and cross\u2011platform plays",
+    "url": "https://agentbets.ai/blog/polymarket-arbitrage-bot-case-study",
+    "verdict": "fabricated",
+    "why": "Source does not assign the majority of volume/profit to binary arbitrage; it only lists the three strategies without such attribution."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0016",
+  "claims": [
+   {
+    "claim": "The source contains the quote \u201c$29M Was Extracted From Multi-Condition Prediction Markets.\u201d",
+    "url": "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m",
+    "verdict": "supported",
+    "why": "The full\u2011page search found the exact quote and the number $29M on the page."
+   },
+   {
+    "claim": "The source does not cite any retail trader case studies.",
+    "url": "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m",
+    "verdict": "undetermined",
+    "why": "The provided excerpts and search do not show whether retail case studies are absent; the page content is insufficient to confirm this claim."
+   },
+   {
+    "claim": "The source describes top performers as \u201carbitrageurs\u201d using sophisticated playbooks.",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "The page title and excerpt contain the phrase \u201cthe $2m arbitrageur playbook: reverse engineering top performer strategies,\u201d indicating the described actors are called arbitrageurs."
+   },
+   {
+    "claim": "The source does not identify any of these actors as retail traders.",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "undetermined",
+    "why": "The excerpts do not provide evidence about whether retail traders are mentioned or excluded; the claim cannot be verified from the available text."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0144",
+  "claims": [
+   {
+    "claim": "The NegRiskAdapter has emitted 3,167,335 PositionsConverted events between 2023-12-07 and the time of writing",
+    "url": "https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move",
+    "verdict": "supported",
+    "why": "Exact quote and numbers are present on the page."
+   },
+   {
+    "claim": "The events span 27,792 unique markets",
+    "url": "https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move",
+    "verdict": "supported",
+    "why": "Number appears in the quoted passage on the page."
+   },
+   {
+    "claim": "The events involve 12,906 unique stakeholder wallets",
+    "url": "https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move",
+    "verdict": "supported",
+    "why": "Number is included in the same quoted passage on the page."
+   },
+   {
+    "claim": "The footprint is much narrower than retail trading (the order\u2011filled table covers ~600K wallets)",
+    "url": "https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move",
+    "verdict": "supported",
+    "why": "The comparative statement appears in the quoted text."
+   },
+   {
+    "claim": "January 2026 was the peak so far \u2013 $105M of NO baskets converted into YES + collateral in a single month",
+    "url": "https://onchaindivers.substack.com/p/polymarkets-hidden-rebalancing-move",
+    "verdict": "supported",
+    "why": "Exact quote and dollar amount are found on the page."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0013",
+  "claims": [
+   {
+    "claim": "The documentation is available at openrouter.ai/docs/guides/best-practices/reasoning-tokens and provides specific details about this interaction.",
+    "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "verdict": "supported",
+    "why": "The page is reachable and its content includes sections on reasoning tokens, usage details, and API specifics, confirming it provides the claimed documentation."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0001",
+  "claims": []
+ },
+ {
+  "trial_id": "t0137",
+  "claims": [
+   {
+    "claim": "The study filtered out 132,823 markets where outcomes were labeled \u201c(Up, Down)\u201d for crypto-price markets or \u201c(Team A, Team B)\u201d for sports, stating they are formally binary but excluded.",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "The PDF could not be fetched (HTTP 403), so the claim cannot be verified."
+   },
+   {
+    "claim": "Resolved Markets provides continuous orderbook snapshots for 100+ Polymarket markets, including \u201ccrypto volatility\u201d and \u201cmacroeconomic indicators,\u201d with millisecond precision and hosts 977.4\u202fM rows of historical snapshot data.",
+    "url": "https://blog.resolvedmarkets.com/projects/resolvedmarkets/output/resolvedmarkets-for-financial-analysts-historical-tick-data-archives/",
+    "verdict": "fabricated",
+    "why": "The reachable page excerpts do not contain the stated numbers (100+, 977.4\u202fM rows) or the quoted phrase, indicating the claim is not supported by the source."
+   },
+   {
+    "claim": "The Polymarket Gamma API and Goldsky\u2011hosted subgraph provide all necessary data (trade fills, resolution outcomes, conditional token IDs) to reconstruct these markets, and the data is public with no authentication required.",
+    "url": "https://skemman.is/bitstream/1946/53683/1/Forecast%20Accuracy%20in%20Modern%20Prediction%20Markets%3a%20An%20Empirical%20Analysis%20of%20Polymarket.pdf",
+    "verdict": "undetermined",
+    "why": "The PDF could not be fetched, so the claim cannot be verified."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0139",
+  "claims": []
+ }
+]

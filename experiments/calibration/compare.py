@@ -18,7 +18,7 @@ def cmp(sample, hand, judge, label, verbose=True):
     print(f"  totals hand {th} judge {tj} | passages agree on 'any fabrication': {any_agree}/{len(S)} | exact fab count {agree}/{len(S)} | claim-level TP {tp} FP {fp} FN {fn}")
     return tp, fp, fn, any_agree, len(S)
 
-r = [cmp("sample.json", "hand_labels.json", "judge_claims_v2d_s1.json", "sample 1 (tuned on)"),
-     cmp("sample2.json", "hand_labels2.json", "judge_claims_v2d_s2.json", "sample 2 (tuned on)"),
-     cmp("sample3.json", "hand_labels3.json", "judge_claims_v2d_s3.json", "sample 3 (tuned on in round 3)"),
-     cmp("sample4.json", "hand_labels4.json", "judge_claims_v2d_s4.json", "sample 4 (HELD OUT - drawn after all changes)")]
+r = [cmp("sample.json", "hand_labels.json", "judge_claims_v2e_s1.json", "sample 1 (tuned on)"),
+     cmp("sample2.json", "hand_labels2.json", "judge_claims_v2e_s2.json", "sample 2 (tuned on)"),
+     cmp("sample3.json", "hand_labels3.json", "judge_claims_v2e_s3.json", "sample 3 (tuned on in round 3)"),
+     cmp("sample4.json", "hand_labels4.json", "judge_claims_v2e_s4.json", "sample 4 (HELD OUT - drawn after all changes)")]

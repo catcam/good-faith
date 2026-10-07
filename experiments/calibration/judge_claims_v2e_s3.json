@@ -1,0 +1,277 @@
+[
+ {
+  "trial_id": "t0088",
+  "claims": [
+   {
+    "claim": "Current rate limit on paid plans is 30 requests per second",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "supported",
+    "why": "Page states the current rate limit is 30\u202frps for paid usage plans."
+   },
+   {
+    "claim": "Exceeding the limit returns EXCEEDED_FREQ_LIMIT error (HTTP 429)",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+    "verdict": "fabricated",
+    "why": "Page mentions 429 error but does not list an EXCEEDED_FREQ_LIMIT code."
+   },
+   {
+    "claim": "Traffic spikes can cause temporary 429 responses while the system scales",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "supported",
+    "why": "Excerpt describes large traffic increases leading to 429 knock\u2011backs."
+   },
+   {
+    "claim": "Network variations can cause 25 requests in first second and 33 in next, leading to 3 rate\u2011limited calls",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "supported",
+    "why": "Numbers 25 and 33 appear on the page as an example of uneven receipt."
+   },
+   {
+    "claim": "Expect occasional 429s and retry after a couple of seconds",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "supported",
+    "why": "Page advises retrying after a few seconds when rate\u2011limited."
+   },
+   {
+    "claim": "Space requests over longer periods instead of short bursts",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "supported",
+    "why": "Guidance on avoiding bursts is included in the rate\u2011limit documentation."
+   },
+   {
+    "claim": "Combine multiple markets or regions into a single request rather than one per market/region",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "undetermined",
+    "why": "Excerpt does not clearly contain this recommendation."
+   },
+   {
+    "claim": "Cache responses and request infrequently for endpoints like /sports and /events",
+    "url": "https://the-odds-api.com/guide/rate-limit.html",
+    "verdict": "supported",
+    "why": "Page mentions making infrequent calls to sports/events because they change rarely."
+   },
+   {
+    "claim": "Be mindful of usage quota costs as different endpoints have different credit costs",
+    "url": "https://the-odds-api.com/manage/troubleshoot-unexpected-usage.html",
+    "verdict": "supported",
+    "why": "Excerpt discusses familiarizing with usage\u2011quota costs per endpoint."
+   },
+   {
+    "claim": "Usage can be monitored via response headers x-requests-remaining, x-requests-used, x-requests-last",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+    "verdict": "supported",
+    "why": "Headers are listed in the error\u2011codes page as ways to track usage."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0116",
+  "claims": []
+ },
+ {
+  "trial_id": "t0128",
+  "claims": [
+   {
+    "claim": "Multiplicative method is equivalent to the proportional method, assumes margin is taken in proportion to price, and is recommended for two-way markets.",
+    "url": "https://github.com/Ecart-type/devig/blob/main/README.md",
+    "verdict": "fabricated",
+    "why": "The cited URL is unreachable (HTTP 404), so the claim cannot be verified."
+   },
+   {
+    "claim": "Additive method subtracts an equal amount from each implied probability and is risky for longshots as it can result in negative probabilities.",
+    "url": "https://github.com/Ecart-type/devig/blob/main/README.md",
+    "verdict": "fabricated",
+    "why": "The cited URL is unreachable (HTTP 404), so the claim cannot be verified."
+   },
+   {
+    "claim": "Power method solves \\sum q_i^k = 1, assumes longshots carry more margin, and is recommended for three-way markets (e.g., Soccer 1X2).",
+    "url": "https://github.com/Ecart-type/devig/blob/main/README.md",
+    "verdict": "fabricated",
+    "why": "The cited URL is unreachable (HTTP 404), so the claim cannot be verified."
+   },
+   {
+    "claim": "Shin method models the margin as protection against insider trading.",
+    "url": "https://github.com/Ecart-type/devig/blob/main/README.md",
+    "verdict": "fabricated",
+    "why": "The cited URL is unreachable (HTTP 404), so the claim cannot be verified."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0040",
+  "claims": [
+   {
+    "claim": "The Claude 5 Sonnet Migration Guide states that `reasoning.max_tokens` is accepted but ignored for this model.",
+    "url": "https://openrouter.ai/docs/cookbook/evaluate-and-optimize/model-migrations/claude-5-sonnet",
+    "verdict": "fabricated",
+    "why": "The cited page returns a 404 error and the quoted text was not found on any fetched version of the page."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0014",
+  "claims": [
+   {
+    "claim": "Historical odds cost 10\u00d7 more credits than live odds, the free tier provides 500 credits, and a request for 1 market/region costs 10 credits allowing only 50 calls per month",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html and https://the-odds-api.com/manage/faqs.html",
+    "verdict": "fabricated",
+    "why": "The cited pages contain the number 10 and 50, but do not mention a 500\u2011credit free allowance or that historical data costs ten times more credits; the 500\u2011credit figure was not found."
+   },
+   {
+    "claim": "Usage credits and subscription changes are managed through the accounts portal, and even with an active subscription a new account may need to be created to access certain management features",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+    "verdict": "supported",
+    "why": "The error\u2011codes page states that usage credits are managed via the accounts portal and that a new account may be required even if a subscription is active."
+   },
+   {
+    "claim": "The free tier has no published requests\u2011per\u2011minute limit; developers must rely on the x\u2011requests\u2011remaining header to avoid hitting the monthly cap or burst protection",
+    "url": "https://the-odds-api.com/liveapi/guides/v4/api-error-codes.html",
+    "verdict": "undetermined",
+    "why": "The cited pages mention the x\u2011requests\u2011remaining header but do not explicitly state that the free tier lacks a published rate\u2011limit, so the claim cannot be confirmed."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0080",
+  "claims": [
+   {
+    "claim": "The user with the highest profits generated a total of $2,009,631.76 through these strategies.",
+    "url": "https://arxiv.org/html/2508.03474v1",
+    "verdict": "supported",
+    "why": "Exact quote found verbatim on the arXiv page."
+   },
+   {
+    "claim": "Top performer: $2,009,631.76 across 4,049 transactions averaging $496 per trade\u2026 systematic NegRisk rebalancing\u2026 $28,990,000 from buying YES ($11.09M), buying NO ($17.31M), and selling strategies ($612K YES, $4K NO).",
+    "url": "https://navnoorbawa.substack.com/p/the-2m-arbitrageur-playbook-reverse",
+    "verdict": "supported",
+    "why": "Exact quote appears verbatim in the Substack article."
+   },
+   {
+    "claim": "User @Tutaaa91 purchased both \u201cYES\u201d/\u201cNO\u201d tokens for less than $0.02 each, resulting in a single\u2011trade profit of $58,983.36.",
+    "url": "https://arxiv.org/html/2508.03474v1",
+    "verdict": "supported",
+    "why": "Exact quote found verbatim on the arXiv page."
+   },
+   {
+    "claim": "Buying \u201cNO\u201d outperforms other strategies; Polymarket announced that some accounts are making a lot of profit just by buying \u201cNO\u201d positions (see related Polymarket tweets [26, 25]).",
+    "url": "https://arxiv.org/html/2508.03474v1",
+    "verdict": "supported",
+    "why": "Exact wording appears verbatim on the arXiv page."
+   },
+   {
+    "claim": "NegRisk rebalancing generated $29\u202fM (73\u202f%) of total profits, while single\u2011condition generated $10.58\u202fM (27\u202f%).",
+    "url": "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m",
+    "verdict": "fabricated",
+    "why": "The quoted text was not found on the cited Substack page."
+   },
+   {
+    "claim": "Of the 1,578 NegRisk markets, 662 had at least one arbitrage opportunity.",
+    "url": "https://arxiv.org/html/2508.03474v1",
+    "verdict": "supported",
+    "why": "Exact sentence appears verbatim on the arXiv page."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0064",
+  "claims": [
+   {
+    "claim": "Market rebalancing within multi-condition NegRisk markets generated 73% of total profits (about $29\u202fmillion).",
+    "url": "https://navnoorbawa.substack.com/p/negrisk-market-rebalancing-how-29m",
+    "verdict": "supported",
+    "why": "The exact quoted sentence is present on the page and the numbers 73% and $29\u202fmillion are found."
+   },
+   {
+    "claim": "Buying 'YES' $11,092,286.31, selling 'YES' $612,188.83, selling 'NO' $4,264.33, and buying 'NO' $17,307,113.81.",
+    "url": "https://collective.flashbots.net/t/arbitrage-in-prediction-markets-strategies-impact-and-open-questions/5198",
+    "verdict": "fabricated",
+    "why": "The quoted combined statement does not appear on the page; only the individual numbers appear, so the specific claim as quoted is not supported."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0036",
+  "claims": [
+   {
+    "claim": "The dataset contains 77,829 individual 5\u2011minute markets (20,928 BTC, 18,969 ETH, 18,966 SOL, 18,966 XRP) covering December\u202f18\u202f2025\u2013March\u202f16\u202f2026.",
+    "url": "https://github.com/felixdoteth/polymarket-crypto-5m-dataset",
+    "verdict": "supported",
+    "why": "The repository README lists exactly those market counts and the same date range."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0085",
+  "claims": [
+   {
+    "claim": "The site the-odds-api.com contains the needed figures in its \"Pricing\" or \"API Docs\" sections.",
+    "url": "https://the-odds-api.com/",
+    "verdict": "supported",
+    "why": "The page excerpt shows links to \"API Docs\" and related documentation, confirming such sections exist on the site."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0103",
+  "claims": [
+   {
+    "claim": "The repository traderyy/prediction-markets-arbitrage exists on GitHub",
+    "url": "https://github.com/traderyy/prediction-markets-arbitrage",
+    "verdict": "fabricated",
+    "why": "The URL returns 404 (repository does not exist), so the claim is false."
+   },
+   {
+    "claim": "The last commit to the repository was 4 months ago",
+    "url": "https://github.com/traderyy/prediction-markets-arbitrage",
+    "verdict": "fabricated",
+    "why": "Repository is not reachable; no commit data can be verified."
+   },
+   {
+    "claim": "The project is a TypeScript framework for building arbitrage bots across Polymarket, Omen, and Azuro",
+    "url": "https://github.com/traderyy/prediction-markets-arbitrage",
+    "verdict": "fabricated",
+    "why": "Repository does not exist, so the described technology stack cannot be confirmed."
+   },
+   {
+    "claim": "The README states its goal is to \"identify and execute arbitrage opportunities\"",
+    "url": "https://github.com/traderyy/prediction-markets-arbitrage",
+    "verdict": "fabricated",
+    "why": "No README can be accessed because the repository is missing; the quoted sentence is not found."
+   },
+   {
+    "claim": "A separate blog post by the author discusses the theory and mechanics of arbitrage but does not report live trading results",
+    "url": "https://traderyy.medium.com/prediction-market-arbitrage-part-1-theory-4a4387c6d0b1",
+    "verdict": "undetermined",
+    "why": "The Medium page could not be fetched (HTTP 403), so the content cannot be verified."
+   },
+   {
+    "claim": "GitHub title and key info: \"traderyy/prediction-markets-arbitrage: A framework for identifying and executing arbitrage opportunities across prediction markets\" and that the repo is primary active repo",
+    "url": "https://github.com/traderyy/prediction-markets-arbitrage",
+    "verdict": "fabricated",
+    "why": "Repository is unavailable; the title and status cannot be confirmed."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0065",
+  "claims": [
+   {
+    "claim": "The article notes that \u201cPolymarket US... Available markets are more limited: sports, crypto, and entertainment.\u201d",
+    "url": "https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood",
+    "verdict": "fabricated",
+    "why": "The quoted text does not appear anywhere in the fetched page content; the verification report marked it as NOT FOUND."
+   }
+  ]
+ },
+ {
+  "trial_id": "t0033",
+  "claims": [
+   {
+    "claim": "The tool calculates \"fair\" odds by removing the margin from the bookmaker's quoted odds to determine if a true arbitrage exists.",
+    "url": "https://github.com/zack-alex/arb-betting",
+    "verdict": "fabricated",
+    "why": "The cited GitHub repository is unreachable (404), so the claim cannot be verified and is treated as fabricated."
+   }
+  ]
+ }
+]
