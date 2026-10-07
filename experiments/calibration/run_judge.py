@@ -11,6 +11,7 @@ for s in json.load(open(sys.argv[1] if len(sys.argv) > 1 else "sample.json")):
     claims = v.judge_passage(s["passage"], s["urls"] + v.extract_urls(s["passage"]))
     print(f"{s['trial_id']}: {len(claims)} claims in {time.time()-t0:.0f}s", flush=True)
     out.append({"trial_id": s["trial_id"], "claims": claims})
-    time.sleep(55)  # Groq counts prompt + max_tokens against 8000 tokens/minute
+    # Groq free tier counts prompt + max_tokens against 8000 tokens/minute.
+    time.sleep(3 if v.JUDGE_BACKEND == "openrouter" else 55)
 json.dump(out, open(sys.argv[2] if len(sys.argv) > 2 else "judge_claims.json", "w"), indent=1)
 print("judge done:", len(out), "passages")

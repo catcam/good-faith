@@ -23,10 +23,29 @@ import json
 import re
 import time
 
-from lib import GROQ_KEY
+import os
+
+from lib import GROQ_KEY, OPENROUTER_KEY
+
+# JUDGE_BACKEND=openrouter sends the same model and settings through OpenRouter,
+# pinned to Groq as the provider (no fallback), so the judge is the same
+# inference engine. Added 2026-10-07 after the Groq free tier hit its daily
+# token cap mid-calibration.
+JUDGE_BACKEND = os.environ.get("JUDGE_BACKEND", "groq")
 
 
 def call_groq_judge(prompt: str) -> str:
+    if JUDGE_BACKEND == "openrouter":
+        r = httpx.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={"Authorization": f"Bearer {OPENROUTER_KEY}"},
+            json={"model": "openai/gpt-oss-120b", "messages": [{"role": "user", "content": prompt}],
+                  "max_tokens": 2500, "temperature": 0, "reasoning": {"effort": "low"},
+                  "provider": {"order": ["Groq"], "allow_fallbacks": False}},
+            timeout=120,
+        )
+        r.raise_for_status()
+        return r.json()["choices"][0]["message"]["content"]
     # Same judge model and settings as lib.call_groq_judge (v1), but a larger
     # completion budget: v2 returns one entry per claim, which can exceed v1's
     # 1500 tokens for claim-dense passages.

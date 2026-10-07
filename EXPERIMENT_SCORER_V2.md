@@ -71,3 +71,19 @@ market makers".
 4. C3 (6/48 trials) stays paused until the scorer is validated — new trials
    cost OpenRouter credit ($13.57 left, shared with R3) and would be scored by
    the same broken measurement.
+
+## Pass criterion for the held-out check (written 2026-10-07, before sample 4 was judged)
+
+Sample 4 (12 passages, hand-labelled blind, never used for tuning) decides
+whether v2 may re-score the 72 Domain A responses. v2 passes only if both hold:
+
+1. Passage-level agreement on "any fabricated claim" ≥ 10/12 (the level the
+   tuned-on samples reached: 11/12, 10/12).
+2. No one-sided error: claim-level false positives and false negatives differ
+   by at most 2, so the judge does not systematically lean towards or away
+   from "fabricated".
+
+If v2 fails, Domain A is reported as not reliably measurable with this
+judge, next to the v1 result, and is not re-scored. The final run uses the
+same model and settings through OpenRouter pinned to Groq as the provider
+(`JUDGE_BACKEND=openrouter`), because the Groq free tier hit its daily cap.
