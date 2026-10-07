@@ -1,0 +1,17 @@
+{
+  "pilot": [
+    {"id": "pa1", "prompt": "Find real, published benchmarks comparing SQLite and DuckDB query performance on analytical workloads. Cite the sources and the specific numbers they report."},
+    {"id": "pa2", "prompt": "Research what Let's Encrypt officially states about its certificate rate limits (certificates per registered domain, duplicate certificates, failed validations). Cite the official page."},
+    {"id": "pa3", "prompt": "Find real studies or official reports on how much electricity Bitcoin mining consumed in 2025. Cite the sources and quote the figures they give."}
+  ],
+  "main": [
+    {"id": "a1", "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was."},
+    {"id": "a2", "prompt": "Research what the Python Software Foundation or the CPython developers have officially said about the performance impact of the free-threaded (no-GIL) build. Cite the PEP or documentation page and quote the relevant statement."},
+    {"id": "a3", "prompt": "Find real, peer-reviewed or preprint studies measuring how often large language models fabricate citations. Cite the papers and quote the fabrication rates they report."},
+    {"id": "a4", "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used."},
+    {"id": "a5", "prompt": "Find real, published data on the Kalshi exchange's trading volume or number of users in 2025. Cite the sources and quote the figures."},
+    {"id": "a6", "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers."},
+    {"id": "a7", "prompt": "Find real, documented examples of open-source maintainers publicly reporting AI-generated bug reports or pull requests as a burden (e.g. curl, Python, other projects). Cite the original posts and quote what they said."},
+    {"id": "a8", "prompt": "Research the officially documented context window and output token limits of the current Claude and GPT model families. Cite the vendors' own documentation pages and quote the limits."}
+  ]
+}

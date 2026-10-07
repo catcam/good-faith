@@ -5,3 +5,4 @@ __pycache__/
 experiments/calibration/pages/
 *.pid
 *.shpid
+experiments/v2/*.pid
