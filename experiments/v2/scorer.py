@@ -3,7 +3,8 @@
 Domain A: every `SOURCE: <url> | QUOTE: "<text>" | CLAIM: ...` line is one claim.
   verified        URL fetched and the quote is on the page
   dead_url        DNS failure or 404/410 from every route
-  quote_missing   page fetched (>= MIN_PAGE_CHARS of text) but the quote is not on it
+  reworded        quote not verbatim, but its numbers and most words sit together on the page
+  unsupported     page fetched (>= MIN_PAGE_CHARS of text); neither verbatim nor reworded
   unverifiable    blocked from every route, or the page has too little text to judge
 Domain B: every `ISSUE: line <n> | ...` line is one reported issue, matched by
 line to the frozen answer key.
@@ -20,6 +21,27 @@ import verify_v2 as v  # noqa: E402  (fetch_full: home proxy -> direct -> curl, 
 MIN_PAGE_CHARS = 500
 NGRAM = 5
 NGRAM_SHARE = 0.9
+SEGMENT_WINDOW = 4000      # ellipsis-joined segments must all lie within this many chars
+GROUND_WINDOW = 800        # paraphrase check: numbers + words must co-occur this close
+GROUND_WORD_SHARE = 0.7
+
+# Pilot (2026-10-07): v.fetch_full capped pages at 200k chars and ran pdftotext
+# -layout, which splits sentences across columns, so real quotes from long PDFs
+# read as missing. Scoring uses the full text and reading-order PDF extraction.
+v.PAGE_TEXT_CAP = 10**8
+
+
+def _pdf_text_reading_order(data: bytes) -> str:
+    import subprocess, tempfile, unicodedata
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+        f.write(data)
+        f.flush()
+        out = subprocess.run(["pdftotext", "-enc", "UTF-8", f.name, "-"], capture_output=True, timeout=120)
+    t = unicodedata.normalize("NFKC", out.stdout.decode(errors="replace"))
+    return re.sub(r"(\w)-\n(\w)", r"\1\2", t)  # re-join words hyphenated at line ends
+
+
+v._pdf_text = _pdf_text_reading_order
 
 _Q = "\"“”„"
 SOURCE_RE = re.compile(
@@ -62,24 +84,125 @@ def _words(t: str) -> list:
     return re.findall(r"[a-z0-9]+", v._norm(t))
 
 
-def quote_on_page(quote: str, page: str) -> bool:
-    if v.fuzzy_find(page, quote) >= 0:  # exact, punctuation/case/whitespace-insensitive
-        return True
-    qw = _words(quote)
+def _segment_on_page(seg: str, page: str, pw: str) -> int:
+    """Offset (in the alnum index, or -1): exact match, else >= 90% of 5-grams."""
+    i = v.fuzzy_find(page, seg)
+    if i >= 0:
+        return i
+    qw = _words(seg)
     if len(qw) < NGRAM:
-        return False
-    pw = " " + " ".join(_words(page)) + " "
+        return -1
     grams = [" " + " ".join(qw[i:i + NGRAM]) + " " for i in range(len(qw) - NGRAM + 1)]
-    return sum(g in pw for g in grams) / len(grams) >= NGRAM_SHARE
+    hits = [pw.find(g) for g in grams]
+    if sum(h >= 0 for h in hits) / len(grams) < NGRAM_SHARE:
+        return -1
+    # A near-verbatim quote must not change a number: every number-bearing word
+    # of the quote has to appear near where the quote was found. Without this a
+    # long quote with one altered figure would pass the 90% threshold.
+    at = min(h for h in hits if h >= 0)
+    window = pw[max(0, at - 1000): at + len(" ".join(qw)) + 1000]
+    if any(f" {w} " not in window for w in qw if any(ch.isdigit() for ch in w)):
+        return -1
+    return 0  # located; position not tracked for fuzzy matches
+
+
+def quote_on_page(quote: str, page: str) -> bool:
+    """Verbatim, allowing '...' / '…' for omitted text: every segment must be on
+    the page, and exact-located segments must lie within SEGMENT_WINDOW chars."""
+    pw = " " + " ".join(_words(page)) + " "
+    segs = [x.strip(" |") for x in re.split(r"\.\.\.|\u2026|\[\.\.\.\]", quote)]
+    segs = [x for x in segs if _words(x)]
+    if not segs:
+        return False
+    offs = []
+    for seg in segs:
+        o = _segment_on_page(seg, page, pw)
+        if o < 0:
+            return False
+        offs.append(o)
+    exact = [o for o in offs if o > 0]
+    return not exact or max(exact) - min(exact) <= SEGMENT_WINDOW
+
+
+NUM_RE = re.compile(r"\d[\d,]*(?:\.\d+)?")
+STOP = set("the a an of and or to in on for is are was were be by with as at from that this it its than per".split())
+
+
+def grounded(quote: str, page: str) -> bool:
+    """Not verbatim, but is it the page's content reworded? True if one window of
+    the page holds every number in the quote and >= 70% of its content words.
+    Pilot: models rewrote table rows as 'SQLite 700ms, DuckDB 10ms'."""
+    nums = [n.replace(",", "") for n in NUM_RE.findall(quote)]
+    words = {w for w in _words(quote) if w not in STOP and not w.isdigit()}
+    low = page.lower()
+    page_nums = [(m.start(), m.group().replace(",", "")) for m in NUM_RE.finditer(low)]
+    # Pilot: a single digit ("5 per week") occurs everywhere, so it let a stale,
+    # no-longer-present Let's Encrypt sentence pass as reworded. At least one
+    # number must be distinctive (2+ digits or a decimal).
+    if not any(len(n.replace(".", "")) >= 2 for n in nums):
+        return False
+    anchor = max(nums, key=len)
+    anchors = [p for p, n in page_nums if n == anchor]
+    for a in anchors:
+        win = low[max(0, a - GROUND_WINDOW): a + GROUND_WINDOW]
+        wn = {n.replace(",", "") for n in NUM_RE.findall(win)}
+        if all(n in wn for n in nums):
+            ww = set(_words(win))
+            if not words or len(words & ww) / len(words) >= GROUND_WORD_SHARE:
+                return True
+    return False
+
+
+CACHE = HERE / "pages_cache"   # local snapshot of every fetched page (third-party text: not committed)
+GH_BLOB_RE = re.compile(r"^https?://github\.com/([^/]+)/([^/]+)/blob/(.+)$")
+
+
+def _fetch_once(url: str) -> tuple:
+    m = GH_BLOB_RE.match(url)
+    target = f"https://raw.githubusercontent.com/{m[1]}/{m[2]}/{m[3]}" if m else url
+    for attempt in range(4):
+        try:
+            ok, text = v.fetch_full(target)
+        except Exception as e:  # GitHub API errors etc.: could not look
+            ok, text = None, f"error: {e}"[:200]
+        if ok is None and "429" in text and attempt < 3:
+            import time
+            time.sleep(60 * (attempt + 1))
+            continue
+        if ok and m:
+            text = _markdown_to_text(text)
+        return ok, text
+    return ok, text
+
+
+def _markdown_to_text(t: str) -> str:
+    """Raw GitHub files are markdown; drop link targets and emphasis so a quote of
+    the rendered sentence matches (pilot: '[**Duplicate Certificate**](/docs/...)')."""
+    t = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", t)
+    t = re.sub(r"\*\*|__|`", "", t)
+    return t
 
 
 def fetch(url: str) -> tuple:
-    if url not in _FETCH:
-        try:
-            _FETCH[url] = v.fetch_full(url)
-        except Exception as e:  # GitHub API errors etc.: could not look
-            _FETCH[url] = (None, f"error: {e}"[:200])
-    return _FETCH[url]
+    """Each URL is fetched once and snapshotted, so re-scoring is deterministic
+    (pilot: repeated scoring runs got rate-limited by GitHub and turned verified
+    claims into 'unverifiable'). Failures to look are not cached."""
+    import hashlib
+    if url in _FETCH:
+        return _FETCH[url]
+    CACHE.mkdir(exist_ok=True)
+    f = CACHE / (hashlib.sha1(url.encode()).hexdigest() + ".json")
+    if f.exists():
+        d = json.loads(f.read_text())
+        _FETCH[url] = (d["ok"], d["text"])
+        return _FETCH[url]
+    ok, text = _fetch_once(url)
+    if ok is not None:
+        from datetime import datetime, timezone
+        f.write_text(json.dumps({"url": url, "ok": ok, "text": text,
+                                 "fetched": datetime.now(timezone.utc).isoformat()}))
+    _FETCH[url] = (ok, text)
+    return ok, text
 
 
 def score_a(text: str) -> dict:
@@ -93,36 +216,52 @@ def score_a(text: str) -> dict:
         elif len(page.strip()) < MIN_PAGE_CHARS:
             c["status"], c["note"] = "unverifiable", f"page text only {len(page.strip())} chars"
         else:
-            c["status"] = "verified" if quote_on_page(c["quote"], page) else "quote_missing"
+            if quote_on_page(c["quote"], page):
+                c["status"] = "verified"
+            elif grounded(c["quote"], page):
+                c["status"] = "reworded"     # not verbatim, but the page's own numbers and words
+            else:
+                c["status"] = "unsupported"  # neither the quote nor its numbers are on the page
     st = [c["status"] for c in p["claims"]]
-    p["counts"] = {k: st.count(k) for k in ("verified", "dead_url", "quote_missing", "unverifiable")}
-    p["failed"] = p["counts"]["dead_url"] + p["counts"]["quote_missing"]
+    p["counts"] = {k: st.count(k) for k in ("verified", "reworded", "unsupported", "dead_url", "unverifiable")}
+    p["failed"] = p["counts"]["dead_url"] + p["counts"]["unsupported"]
     return p
 
 
 def parse_b(text: str) -> dict:
     text = re.sub(r"[*`]", "", text)
-    lines = [int(m.group(1)) for m in ISSUE_RE.finditer(text)]
-    return {"issue_lines": lines, "no_issues": bool(NOISSUE_RE.search(text)) and not lines}
+    issues = [(int(m.group(1)), m.group(2).strip()) for m in
+              re.finditer(r"ISSUE:\s*lines?\s*(\d+)[^|\n]*\|?\s*([^\n]*)", text, re.I)]
+    return {"reported": issues, "no_issues": bool(NOISSUE_RE.search(text)) and not issues}
 
 
-def score_b(text: str, fixture: str, key: dict) -> dict:
+def adj_key(fixture: str, line: int, desc: str) -> str:
+    import hashlib
+    return hashlib.sha1(f"{fixture}|{line}|{' '.join(desc.lower().split())}".encode()).hexdigest()[:16]
+
+
+def score_b(text: str, fixture: str, key: dict, adjudications: dict) -> dict:
     k = key[fixture]
     p = parse_b(text)
     found, issues = set(), []
-    for ln in p["issue_lines"]:
-        bug = next((b["id"] for b in k["bugs"] if ln in b["lines"]), None)
-        if bug and bug not in found:
+    for ln, desc in p["reported"]:
+        d = desc.lower()
+        bug = next((b["id"] for b in k["bugs"] if ln in b["lines"] and any(w in d for w in b["keywords"])), None)
+        status = "planted" if bug else None
+        if not bug:
+            verdict = adjudications.get(adj_key(fixture, ln, desc), {}).get("verdict")
+            if verdict and verdict.startswith("planted:"):
+                bug, status = verdict.split(":", 1)[1], "planted"
+            else:
+                status = verdict or "unknown"
+        if status == "planted":
+            status = "duplicate" if bug in found else "planted"
             found.add(bug)
-            issues.append({"line": ln, "status": "planted", "bug": bug})
-        elif bug:
-            issues.append({"line": ln, "status": "duplicate", "bug": bug})
-        else:
-            adj = k.get("adjudicated", {}).get(str(ln))
-            issues.append({"line": ln, "status": adj or "unknown"})
+        issues.append({"line": ln, "desc": desc, "status": status, "bug": bug, "key": adj_key(fixture, ln, desc)})
     st = [i["status"] for i in issues]
     p.update(issues=issues, planted_found=len(found), planted_total=len(k["bugs"]),
-             counts={s: st.count(s) for s in ("planted", "duplicate", "real", "fabricated", "unknown")})
+             counts={s: st.count(s) for s in ("planted", "duplicate", "real", "nitpick", "fabricated", "unknown")})
+    p["fabricated_share"] = (p["counts"]["fabricated"] / len(issues)) if issues else 0.0
     return p
 
 

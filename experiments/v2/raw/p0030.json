@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "pa2",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0030",
+ "prompt": "Research what Let's Encrypt officially states about its certificate rate limits (certificates per registered domain, duplicate certificates, failed validations). Cite the official page.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Let's Encrypt enforces several rate limits to ensure fair usage and system stability. Below are the official statements regarding certificates per registered domain, duplicate certificates (renewals), and failed validations.\n\n**Certificates per Registered Domain**\nLet's Encrypt limits the number of new certificates that can be issued for a specific registered domain within a seven-day window. A \"registered domain\" is determined using the Public Suffix List (e.g., `example.com` in `www.example.com`).\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Up to 50 certificates can be issued per registered domain (or IPv4 address, or IPv6 /64 range) every 7 days.\" | CLAIM: The limit for new certificates per registered domain is 50 every 7 days.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"This is a global limit, and all new order requests, regardless of which account submits them, count towards this limit.\" | CLAIM: The certificate limit applies globally across all accounts for a given domain.\n\n**Duplicate Certificates (Renewals)**\nCertificates that contain the exact same set of identifiers as a previously issued certificate are considered renewals or duplicates. These do not count against the \"New Certificates per Registered Domain\" limit but are subject to their own stricter limit.\n\nSOURCE: https://github.com/letsencrypt/website/blob/cea7bcb013a4507f4e501210fcc0ccbee3fbcabd/content/en/docs/rate-limits.md | QUOTE: \"Renewals are treated specially: they don't count against your **Certificates per Registered Domain** limit, but they are subject to a **Duplicate Certificate** limit of 5 per week.\" | CLAIM: Duplicate certificates are limited to 5 per week and are exempt from the general registered domain limit.\n\nSOURCE: https://github.com/letsencrypt/website/blob/cea7bcb013a4507f4e501210fcc0ccbee3fbcabd/content/en/docs/rate-limits.md | QUOTE: \"A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains the exact same set of hostnames, ignoring capitalization and ordering of hostnames.\" | CLAIM: A duplicate certificate is defined by having the exact same set of hostnames as a previous certificate.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Exceeding the Duplicate Certificate limit is reported with the error message `too many certificates already issued for exact set of domains`.\" | CLAIM: The specific error message for hitting the duplicate certificate limit is provided.\n\n**Failed Validations**\nTo prevent abuse and troubleshoot configuration issues, Let's Encrypt limits the number of failed authorization attempts per identifier per account.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Up to 5 authorization failures per identifier can be incurred by one account every hour.\" | CLAIM: The limit for failed authorizations is 5 per identifier per account every hour.\n\nSOURCE: https://github.com/letsencrypt/website/blob/cea7bcb013a4507f4e501210fcc0ccbee3fbcabd/content/en/docs/rate-limits.md | QUOTE: \"Exceeding the Failed Validations limit is reported with the error message `too many failed authorizations recently`.\" | CLAIM: The error message for exceeding the failed validation limit is specified.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"The ability to incur authorization failures refills at a rate of 1 per identifier every 12 minutes.\" | CLAIM: The failed authorization limit refills at a rate of one failure every 12 minutes per identifier.\n\n**Additional Note on Consecutive Failures**\nLet's Encrypt also imposes a limit on consecutive failures to prevent clients from getting stuck in infinite retry loops.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Up to 1,152 consecutive authorization failures per identifier can be incurred by one account.\" | CLAIM: There is a separate limit of 1,152 consecutive authorization failures per identifier per account.",
+  "usage": {
+   "prompt_tokens": 2606,
+   "completion_tokens": 970,
+   "total_tokens": 3576,
+   "cost": 0.00973845,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00273845,
+    "upstream_inference_prompt_cost": 0.00084695,
+    "upstream_inference_completions_cost": 0.0018915
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791401897-mJTf8dRrdY5va2QZWFke"
+ },
+ "ts": "2026-10-07T19:38:41.124414+00:00"
+}

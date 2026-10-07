@@ -1,0 +1,48 @@
+p0001 a c0 {'verified': 11, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0002 b c0 {'planted': 2, 'duplicate': 3, 'real': 0, 'nitpick': 2, 'fabricated': 0, 'unknown': 0}
+p0003 a c0 {'verified': 2, 'reworded': 0, 'unsupported': 5, 'dead_url': 0, 'unverifiable': 0}
+p0004 b c2 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0005 a c2 {'verified': 11, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0006 b c2 {'planted': 1, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0007 b c0 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0008 b c1 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0009 a c2 {'verified': 4, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0010 b c1 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0011 a c2 {'verified': 13, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0012 a c0 {'verified': 2, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0013 a c0 {'verified': 4, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0014 b c2 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 1, 'fabricated': 0, 'unknown': 0}
+p0015 b c0 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0016 b c2 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0017 b c2 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0018 a c0 {'verified': 12, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0019 a c0 {'verified': 3, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0020 a c2 {'verified': 9, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0021 b c1 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0022 a c2 {'verified': 3, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0023 a c0 {'verified': 3, 'reworded': 5, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0024 b c2 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 3, 'unknown': 0}
+p0025 a c0 {'verified': 4, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0026 a c2 {'verified': 6, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0027 b c0 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0028 a c2 {'verified': 4, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0029 a c0 {'verified': 4, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0030 a c0 {'verified': 8, 'reworded': 0, 'unsupported': 1, 'dead_url': 0, 'unverifiable': 0}
+p0031 b c1 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0032 a c2 {'verified': 2, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0033 a c2 {'verified': 8, 'reworded': 1, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0034 b c0 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0035 b c2 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 2, 'fabricated': 0, 'unknown': 0}
+p0036 b c1 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0037 b c1 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0038 a c0 {'verified': 6, 'reworded': 6, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0039 a c2 {'verified': 7, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0040 b c0 {'planted': 1, 'duplicate': 1, 'real': 0, 'nitpick': 1, 'fabricated': 0, 'unknown': 0}
+p0041 b c1 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0042 b c2 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 2, 'fabricated': 0, 'unknown': 0}
+p0043 a c2 {'verified': 4, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0044 a c0 {'verified': 6, 'reworded': 0, 'unsupported': 0, 'dead_url': 0, 'unverifiable': 0}
+p0045 b c0 {'planted': 2, 'duplicate': 1, 'real': 0, 'nitpick': 0, 'fabricated': 0, 'unknown': 0}
+p0046 b c0 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 3, 'fabricated': 1, 'unknown': 0}
+p0047 b c1 {'planted': 2, 'duplicate': 0, 'real': 0, 'nitpick': 3, 'fabricated': 1, 'unknown': 0}
+p0048 a c2 {'verified': 4, 'reworded': 0, 'unsupported': 2, 'dead_url': 0, 'unverifiable': 0}

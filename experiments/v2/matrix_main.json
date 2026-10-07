@@ -1,0 +1,3266 @@
+[
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0001"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0002"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0003"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0004"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0005"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0006"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0007"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0008"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0009"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0010"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0011"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0012"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0013"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0014"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0015"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0016"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0017"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0018"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0019"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0020"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0021"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0022"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0023"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0024"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0025"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0026"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0027"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0028"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0029"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0030"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0031"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0032"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0033"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0034"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0035"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0036"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0037"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0038"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0039"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0040"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0041"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0042"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0043"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0044"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0045"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0046"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0047"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0048"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0049"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0050"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0051"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0052"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0053"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0054"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0055"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0056"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0057"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0058"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0059"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0060"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0061"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0062"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0063"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0064"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0065"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0066"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0067"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0068"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0069"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0070"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0071"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0072"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0073"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0074"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0075"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0076"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0077"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0078"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0079"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0080"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0081"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0082"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0083"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0084"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0085"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0086"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0087"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0088"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0089"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0090"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0091"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0092"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0093"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0094"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0095"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0096"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0097"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0098"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0099"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0100"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0101"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0102"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0103"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0104"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0105"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0106"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0107"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0108"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0109"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0110"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0111"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0112"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0113"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0114"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0115"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0116"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0117"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0118"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0119"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0120"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0121"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0122"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0123"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0124"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0125"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0126"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0127"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0128"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0129"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0130"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0131"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0132"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0133"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0134"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0135"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0136"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0137"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0138"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0139"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0140"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0141"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0142"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0143"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0144"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0145"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0146"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0147"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0148"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0149"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0150"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0151"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0152"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0153"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0154"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0155"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0156"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0157"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0158"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0159"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0160"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0161"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0162"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0163"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0164"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0165"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0166"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0167"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0168"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0169"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0170"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0171"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0172"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0173"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0174"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0175"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0176"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0177"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0178"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0179"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0180"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0181"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0182"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0183"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0184"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0185"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0186"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0187"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0188"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0189"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0190"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0191"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0192"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0193"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0194"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0195"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0196"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0197"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0198"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0199"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0200"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0201"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0202"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0203"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0204"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0205"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0206"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0207"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0208"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0209"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0210"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0211"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0212"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0213"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0214"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0215"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0216"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0217"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0218"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0219"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0220"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0221"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0222"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0223"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0224"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0225"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0226"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0227"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0228"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0229"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0230"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0231"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0232"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0233"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0234"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0235"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0236"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0237"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0238"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0239"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0240"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0241"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0242"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0243"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0244"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0245"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0246"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0247"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0248"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0249"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0250"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0251"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0252"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0253"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0254"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0255"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0256"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0257"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0258"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0259"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0260"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0261"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0262"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0263"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0264"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0265"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0266"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0267"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0268"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0269"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0270"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0271"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0272"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0273"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0274"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0275"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0276"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0277"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0278"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0279"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0280"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0281"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0282"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0283"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0284"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0285"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0286"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0287"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0288"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0289"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0290"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0291"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0292"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0293"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0294"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0295"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0296"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0297"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0298"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0299"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0300"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0301"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0302"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0303"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0304"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0305"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0306"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0307"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0308"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0309"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0310"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0311"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0312"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0313"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0314"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0315"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0316"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0317"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0318"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0319"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0320"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0321"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0322"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0323"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0324"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0325"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0326"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0327"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0328"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0329"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0330"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0331"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0332"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0333"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0334"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0335"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0336"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0337"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0338"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0339"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0340"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0341"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0342"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0343"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0344"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0345"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0346"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0347"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0348"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0349"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0350"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0351"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0352"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0353"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0354"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0355"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0356"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0357"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0358"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0359"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0360"
+ },
+ {
+  "domain": "a",
+  "task": "a2",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0361"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0362"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0363"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0364"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0365"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0366"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0367"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0368"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0369"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0370"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0371"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0372"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0373"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0374"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0375"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0376"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0377"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0378"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 2,
+  "trial_id": "m0379"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0380"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0381"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0382"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0383"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0384"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0385"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0386"
+ },
+ {
+  "domain": "b",
+  "task": "m1_lru_cache.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0387"
+ },
+ {
+  "domain": "a",
+  "task": "a8",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0388"
+ },
+ {
+  "domain": "a",
+  "task": "a5",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0389"
+ },
+ {
+  "domain": "a",
+  "task": "a7",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0390"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0391"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0392"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0393"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0394"
+ },
+ {
+  "domain": "b",
+  "task": "m5_dates.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0395"
+ },
+ {
+  "domain": "a",
+  "task": "a3",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "m0396"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0397"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0398"
+ },
+ {
+  "domain": "b",
+  "task": "m2_retry_client.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 2,
+  "trial_id": "m0399"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "z-ai/glm-5.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0400"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 2,
+  "trial_id": "m0401"
+ },
+ {
+  "domain": "b",
+  "task": "m6_sessions.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 0,
+  "trial_id": "m0402"
+ },
+ {
+  "domain": "a",
+  "task": "a1",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c2",
+  "rep": 0,
+  "trial_id": "m0403"
+ },
+ {
+  "domain": "b",
+  "task": "m3_config.py",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0404"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "z-ai/glm-5.1",
+  "condition": "c2",
+  "rep": 1,
+  "trial_id": "m0405"
+ },
+ {
+  "domain": "b",
+  "task": "m4_orders.py",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c1",
+  "rep": 1,
+  "trial_id": "m0406"
+ },
+ {
+  "domain": "a",
+  "task": "a4",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0407"
+ },
+ {
+  "domain": "a",
+  "task": "a6",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 1,
+  "trial_id": "m0408"
+ }
+]

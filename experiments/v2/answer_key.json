@@ -1,36 +1,380 @@
 {
-  "_note": "Planted bugs, each proven by a test or by reading (2026-10-07). 'lines' = report lines that count as finding this bug. 'adjudicated' is filled from pilot responses and frozen with the pre-registration; it lists issues that are real-but-unplanted (real) or not real (fabricated), by line.",
-  "p1_rate_limiter.py": {"bugs": [
-    {"id": "p1-cap", "lines": [18, 19, 20, 21], "desc": "_refill never caps tokens at capacity: after idle time the bucket holds unbounded tokens, so bursts exceed capacity"},
-    {"id": "p1-race", "lines": [46, 47, 48, 49, 52, 53, 54, 55], "desc": "KeyedLimiter mutates/iterates self.buckets without a lock although buckets are meant for concurrent use: duplicate buckets per key, and 'dictionary changed size during iteration' in forget_idle"}
-  ], "adjudicated": {}},
-  "p2_report.py": {"bugs": [
-    {"id": "p2-zero", "lines": [25, 26, 27], "desc": "average_per_day divides by len(days); empty input raises ZeroDivisionError"},
-    {"id": "p2-sort", "lines": [30, 31, 32], "desc": "top_regions sorts ascending, so it returns the lowest regions, not the top"}
-  ], "adjudicated": {}},
-  "m1_lru_cache.py": {"bugs": [
-    {"id": "m1-recency", "lines": [16, 17, 18, 19], "desc": "get() does not move the key to the end, so eviction is by insertion order (FIFO), not least-recently-used"},
-    {"id": "m1-zero", "lines": [41, 42, 43], "desc": "hit_rate divides by zero before any lookup"},
-    {"id": "m1-none", "lines": [57, 58, 59, 60, 61], "desc": "cached() treats a cached None as a miss: functions returning None are recomputed every call (and default=None conflates miss with value)"}
-  ], "adjudicated": {}},
-  "m2_retry_client.py": {"bugs": [
-    {"id": "m2-exit", "lines": [53, 54, 55], "desc": "__exit__ returns True, silently swallowing every exception raised inside the with-block"},
-    {"id": "m2-status", "lines": [43, 44, 45], "desc": "get_json parses the body of non-retryable error responses (4xx, final 5xx path aside) without checking status, returning error pages as data or raising a confusing JSON error"}
-  ], "adjudicated": {}},
-  "m3_config.py": {"bugs": [
-    {"id": "m3-alias", "lines": [26, 27, 28, 29, 30, 31], "desc": "config = DEFAULTS aliases the module-level dict: load_config mutates DEFAULTS, so later calls inherit earlier file/env values"},
-    {"id": "m3-bool", "lines": [15, 16, 17], "desc": "bool(value) is True for any non-empty string, so APP_DEBUG=false enables debug"}
-  ], "adjudicated": {}},
-  "m4_orders.py": {"bugs": [
-    {"id": "m4-atomic", "lines": [34, 35, 36, 37, 38, 39, 40], "desc": "reserve() decrements earlier items before discovering a later item is short, and returns False without rolling back: not all-or-nothing as documented"},
-    {"id": "m4-release", "lines": [42, 43, 44], "desc": "release() overwrites stock with the order quantity instead of adding it back"}
-  ], "adjudicated": {}},
-  "m5_dates.py": {"bugs": [
-    {"id": "m5-inclusive", "lines": [4, 5, 6, 7, 8, 9, 10], "desc": "daterange uses d < end, excluding end although documented inclusive (business_days inherits the error)"},
-    {"id": "m5-quarter", "lines": [46, 47], "desc": "quarter() uses month // 3 + 1: March gives 2, December gives 5; should be (month - 1) // 3 + 1"}
-  ], "adjudicated": {}},
-  "m6_sessions.py": {"bugs": [
-    {"id": "m6-timing", "lines": [23, 24, 25, 26, 27], "desc": "MAC compared with != instead of hmac.compare_digest: timing side channel"},
-    {"id": "m6-kdf", "lines": [54, 55, 56, 57], "desc": "password hashing is a single salted SHA-256: a fast hash, not a password KDF (bcrypt/scrypt/argon2/PBKDF2)"}
-  ], "adjudicated": {}}
+ "_note": "Planted bugs, each proven by a test or by reading (2026-10-07). A reported issue counts as a planted bug only if its line is in 'lines' AND its description contains one of 'keywords' (pilot: models often name the right bug on a neighbouring line, e.g. the dict declaration). Everything else is looked up in adjudications.json, labelled by Claude blind to condition and model: real / nitpick (true but not a defect) / fabricated (false about the code) / planted:<id>.",
+ "p1_rate_limiter.py": {
+  "bugs": [
+   {
+    "id": "p1-cap",
+    "lines": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "desc": "_refill never caps tokens at capacity: after idle time the bucket holds unbounded tokens, so bursts exceed capacity",
+    "keywords": [
+     "cap",
+     "capacity",
+     "bound",
+     "burst",
+     "min("
+    ]
+   },
+   {
+    "id": "p1-race",
+    "lines": [
+     40,
+     41,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     51,
+     52,
+     53,
+     54,
+     55
+    ],
+    "desc": "KeyedLimiter mutates/iterates self.buckets without a lock although buckets are meant for concurrent use: duplicate buckets per key, and 'dictionary changed size during iteration' in forget_idle",
+    "keywords": [
+     "race",
+     "thread",
+     "lock",
+     "concurren",
+     "synchron",
+     "dictionary changed size",
+     "atomic"
+    ]
+   }
+  ]
+ },
+ "p2_report.py": {
+  "bugs": [
+   {
+    "id": "p2-zero",
+    "lines": [
+     24,
+     25,
+     26,
+     27
+    ],
+    "desc": "average_per_day divides by len(days); empty input raises ZeroDivisionError",
+    "keywords": [
+     "zero",
+     "empty",
+     "divisionerror",
+     "division"
+    ]
+   },
+   {
+    "id": "p2-sort",
+    "lines": [
+     30,
+     31,
+     32
+    ],
+    "desc": "top_regions sorts ascending, so it returns the lowest regions, not the top",
+    "keywords": [
+     "ascending",
+     "descending",
+     "reverse",
+     "lowest",
+     "smallest",
+     "bottom",
+     "sort"
+    ]
+   }
+  ]
+ },
+ "m1_lru_cache.py": {
+  "bugs": [
+   {
+    "id": "m1-recency",
+    "lines": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "desc": "get() does not move the key to the end, so eviction is by insertion order (FIFO), not least-recently-used",
+    "keywords": [
+     "move_to_end",
+     "recen",
+     "lru",
+     "fifo",
+     "insertion order",
+     "access order",
+     "evict"
+    ]
+   },
+   {
+    "id": "m1-zero",
+    "lines": [
+     41,
+     42,
+     43
+    ],
+    "desc": "hit_rate divides by zero before any lookup",
+    "keywords": [
+     "zero",
+     "divisionerror",
+     "division"
+    ]
+   },
+   {
+    "id": "m1-none",
+    "lines": [
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61
+    ],
+    "desc": "cached() treats a cached None as a miss: functions returning None are recomputed every call (and default=None conflates miss with value)",
+    "keywords": [
+     "none"
+    ]
+   }
+  ]
+ },
+ "m2_retry_client.py": {
+  "bugs": [
+   {
+    "id": "m2-exit",
+    "lines": [
+     53,
+     54,
+     55
+    ],
+    "desc": "__exit__ returns True, silently swallowing every exception raised inside the with-block",
+    "keywords": [
+     "swallow",
+     "suppress",
+     "return true",
+     "exception",
+     "__exit__"
+    ]
+   },
+   {
+    "id": "m2-status",
+    "lines": [
+     43,
+     44,
+     45
+    ],
+    "desc": "get_json parses the body of non-retryable error responses (4xx, final 5xx path aside) without checking status, returning error pages as data or raising a confusing JSON error",
+    "keywords": [
+     "status",
+     "raise_for_status",
+     "error response",
+     "4xx",
+     "non-2xx",
+     "404",
+     "error page",
+     "not check"
+    ]
+   }
+  ]
+ },
+ "m3_config.py": {
+  "bugs": [
+   {
+    "id": "m3-alias",
+    "lines": [
+     5,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "desc": "config = DEFAULTS aliases the module-level dict: load_config mutates DEFAULTS, so later calls inherit earlier file/env values",
+    "keywords": [
+     "mutat",
+     "alias",
+     "shared",
+     "copy",
+     "defaults",
+     "global",
+     "module-level"
+    ]
+   },
+   {
+    "id": "m3-bool",
+    "lines": [
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "desc": "bool(value) is True for any non-empty string, so APP_DEBUG=false enables debug",
+    "keywords": [
+     "bool",
+     "false",
+     "truthy",
+     "non-empty",
+     "\"0\"",
+     "'0'"
+    ]
+   }
+  ]
+ },
+ "m4_orders.py": {
+  "bugs": [
+   {
+    "id": "m4-atomic",
+    "lines": [
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     52,
+     53
+    ],
+    "desc": "reserve() decrements earlier items before discovering a later item is short, and returns False without rolling back: not all-or-nothing as documented",
+    "keywords": [
+     "rollback",
+     "roll back",
+     "partial",
+     "atomic",
+     "all-or-nothing",
+     "all or nothing",
+     "restore",
+     "undo"
+    ]
+   },
+   {
+    "id": "m4-release",
+    "lines": [
+     42,
+     43,
+     44
+    ],
+    "desc": "release() overwrites stock with the order quantity instead of adding it back",
+    "keywords": [
+     "overwrit",
+     "replace",
+     "add back",
+     "adds back",
+     "instead of add",
+     "+=",
+     "restor",
+     "release"
+    ]
+   }
+  ]
+ },
+ "m5_dates.py": {
+  "bugs": [
+   {
+    "id": "m5-inclusive",
+    "lines": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "desc": "daterange uses d < end, excluding end although documented inclusive (business_days inherits the error)",
+    "keywords": [
+     "inclusive",
+     "exclud",
+     "end date",
+     "off-by-one",
+     "off by one",
+     "<="
+    ]
+   },
+   {
+    "id": "m5-quarter",
+    "lines": [
+     46,
+     47
+    ],
+    "desc": "quarter() uses month // 3 + 1: March gives 2, December gives 5; should be (month - 1) // 3 + 1",
+    "keywords": [
+     "quarter",
+     "month - 1",
+     "(month-1)",
+     "// 3",
+     "march",
+     "december",
+     "5"
+    ]
+   }
+  ]
+ },
+ "m6_sessions.py": {
+  "bugs": [
+   {
+    "id": "m6-timing",
+    "lines": [
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "desc": "MAC compared with != instead of hmac.compare_digest: timing side channel",
+    "keywords": [
+     "timing",
+     "compare_digest",
+     "constant-time",
+     "constant time",
+     "side channel",
+     "side-channel"
+    ]
+   },
+   {
+    "id": "m6-kdf",
+    "lines": [
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61
+    ],
+    "desc": "password hashing is a single salted SHA-256: a fast hash, not a password KDF (bcrypt/scrypt/argon2/PBKDF2)",
+    "keywords": [
+     "sha256",
+     "sha-256",
+     "kdf",
+     "bcrypt",
+     "scrypt",
+     "argon",
+     "pbkdf",
+     "fast hash",
+     "brute",
+     "iteration",
+     "stretch"
+    ]
+   }
+  ]
+ }
 }

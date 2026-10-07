@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "pa1",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0018",
+ "prompt": "Find real, published benchmarks comparing SQLite and DuckDB query performance on analytical workloads. Cite the sources and the specific numbers they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the real, published benchmarks comparing SQLite and DuckDB query performance on analytical workloads.\n\n### Analytical Query Performance (Aggregations and Scans)\n\nDuckDB significantly outperforms SQLite in analytical queries involving aggregations, group-bys, and large dataset scans due to its columnar vectorized execution engine, whereas SQLite\u2019s row-oriented architecture suffers from high overhead in these scenarios.\n\nSOURCE: https://junaidhasan.com/assets/report-cse544.pdf | QUOTE: \"Performance: DuckDB executed this query in 0.22 seconds, whereas SQLite took 349 seconds (a 1,500x difference).\" | CLAIM: On a 41-million row NYC Taxi dataset, DuckDB was 1,500 times faster than SQLite for a specific analytical query.\n\nSOURCE: https://junaidhasan.com/assets/report-cse544.pdf | QUOTE: \"PostgreSQL performed respectfully at 4.26 seconds.\" | CLAIM: In the same benchmark, PostgreSQL was significantly slower than DuckDB but much faster than SQLite.\n\nSOURCE: https://zaynetro.com/post/2023-playing-with-olap | QUOTE: \"| Count by event_type | 700ms | 10ms | ... | Average page loads per session | 255ms | 10ms | ... | Page loads per day | 235ms | 5ms |\" | CLAIM: In a benchmark on a Macbook Air M2, DuckDB completed analytical queries like counting events and averaging page loads in 5\u201310ms, while SQLite took 235\u2013700ms.\n\nSOURCE: https://zaynetro.com/post/2023-playing-with-olap | QUOTE: \"| Count by event_type | 10350ms | 70ms | ... | Form submissions by page | 12340ms | 620ms (650ms) |\" | CLAIM: When querying JSON payloads, SQLite's performance degraded significantly (10\u201312 seconds), while DuckDB remained fast (70\u2013620ms).\n\nSOURCE: https://diogoribeiro7.github.io/data-science/a_database_for_analysis_rows_columns_indexes/ | QUOTE: \"| Sum of one column | 312 ms | 9.7 ms | ... | Group by channel | 2.93 s | 30 ms | ... | Join to both dimensions, group | 11.4 s | 271 ms |\" | CLAIM: On five million synthetic orders, DuckDB (single-threaded) was 32x to 97x faster than SQLite for analytical operations like sums, group-bys, and joins.\n\n### Point Lookups and Transactional Workloads\n\nSQLite generally outperforms DuckDB in point lookups (fetching specific rows by key) and high-frequency individual inserts, as DuckDB is optimized for bulk analytical throughput rather than low-latency single-row operations.\n\nSOURCE: https://diogoribeiro7.github.io/data-science/a_database_for_analysis_rows_columns_indexes/ | QUOTE: \"| 2,000 lookups by key | 34 ms | 1.14 s | 1.84 s | 0.03\u00d7 |\" | CLAIM: For 2,000 point lookups by key, SQLite (34ms) was significantly faster than DuckDB (1.14s single-thread), reversing the analytical performance advantage.\n\nSOURCE: https://github.com/marvelousmlops/database_comparison/blob/master/README.md | QUOTE: \"| Query by ID | 0.00281 seconds | 0.03814 seconds | ... | 0.00121 seconds | 0.00056 seconds |\" | CLAIM: In a 1-million record dataset, SQLite with indexing (0.00056s) was faster than DuckDB with indexing (0.00121s) for simple ID lookups, though DuckDB without indexing was still faster than SQLite without indexing.\n\nSOURCE: https://marending.dev/notes/sqlite-vs-duckdb/ | QUOTE: \"DuckDB achieves around 4k naive inserts per second, while SQLite manages around 30k to 40k depending on indices.\" | CLAIM: SQLite handles individual insert transactions at a rate 7\u201310 times higher than DuckDB.\n\n### Storage Efficiency\n\nDuckDB stores analytical data more compactly than SQLite, particularly when dealing with structured or typed data.\n\nSOURCE: https://marending.dev/notes/sqlite-vs-duckdb/ | QUOTE: \"DuckDB is storing the data significantly more compactly, too. 20 MB for the database file versus 60-80 MB with SQLite depending on indices.\" | CLAIM: DuckDB database files were 3\u20134 times smaller than equivalent SQLite databases in this test.\n\nSOURCE: https://zaynetro.com/post/2023-playing-with-olap | QUOTE: \"| SQLite | 593M | DuckDB (JSON payload) | 190M | DuckDB (Typed payload) | 177M |\" | CLAIM: For a dataset of event logs, SQLite required 593MB of storage, while DuckDB required only 177\u2013190MB.\n\n### Impact of Indexing\n\nIndexing benefits SQLite significantly for filtered queries, whereas DuckDB sees minimal or negative performance impact from indices in analytical contexts, relying instead on columnar scans.\n\nSOURCE: https://marending.dev/notes/sqlite-vs-duckdb/ | QUOTE: \"Interestingly, unlike SQLite, DuckDB doesn\u2019t benefit from indices at all; they even seem to hurt performance.\" | CLAIM: Indices did not improve DuckDB's analytical query performance and sometimes degraded it.\n\nSOURCE: https://diogoribeiro7.github.io/data-science/a_database_for_analysis_rows_columns_indexes/ | QUOTE: \"plan chosen    SEARCH orders USING INDEX idx_orders_day_amount (order_day<?)    27.5 s\nforced scan    SCAN orders    (FROM orders NOT INDEXED)                          0.53 s\" | CLAIM: In some cases, DuckDB's optimizer chose an index strategy that was 50x slower than a full table scan, highlighting potential planning inefficiencies for certain filters compared to forced scans.\n\nSOURCE: https://github.com/marvelousmlops/database_comparison/blob/master/README.md | QUOTE: \"SQLite: Benefits greatly from indexing, with indexed queries performing much faster than non-indexed ones.\" | CLAIM: SQLite query times dropped from ~0.038s to ~0.00056s for ID lookups when indexes were added.",
+  "usage": {
+   "prompt_tokens": 3233,
+   "completion_tokens": 1464,
+   "total_tokens": 4697,
+   "cost": 0.010905525,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003905525,
+    "upstream_inference_prompt_cost": 0.001050725,
+    "upstream_inference_completions_cost": 0.0028548
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791401656-8uk2XCSLPgMn6l75KWSd"
+ },
+ "ts": "2026-10-07T19:34:43.842261+00:00"
+}

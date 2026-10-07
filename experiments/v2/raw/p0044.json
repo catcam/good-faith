@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "pa2",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0044",
+ "prompt": "Research what Let's Encrypt officially states about its certificate rate limits (certificates per registered domain, duplicate certificates, failed validations). Cite the official page.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Let's Encrypt's official documentation, here are the key details about their certificate rate limits.\n\n**Certificates per Registered Domain**\n\nThis is a global limit applied to the main domain name (e.g., `example.com` in `www.example.com`), determined using the Public Suffix List.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"Up to 50 certificates can be issued per registered domain (or IPv4 address, or IPv6 /64 range) every 7 days.\" | CLAIM: The limit for new certificates per registered domain is 50 per week.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"The ability to issue new certificates for the same registered domain refills at a rate of 1 certificate every 202 minutes.\" | CLAIM: The rate limit refills gradually, at one certificate per registered domain every 202 minutes.\n\n**Duplicate Certificates (Renewals)**\n\nCertificates that are considered renewals (having the exact same set of identifiers as a previous certificate) are subject to a different, special limit.\nSOURCE: https://github.com/letsencrypt/website/blob/cea7bcb013a4507f4e501210fcc0ccbee3fbcabd/content/en/docs/rate-limits.md | QUOTE: \"they are subject to a **Duplicate Certificate** limit of 5 per week.\" | CLAIM: The limit for duplicate certificates (renewals with the exact same hostnames) is 5 per week.\nSOURCE: https://github.com/letsencrypt/website/blob/cea7bcb013a4507f4e501210fcc0ccbee3fbcabd/content/en/docs/rate-limits.md | QUOTE: \"A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains the exact same set of hostnames, ignoring capitalization and ordering of hostnames.\" | CLAIM: A certificate is considered a duplicate/renewal based on having an identical set of hostnames.\n\n**Failed Validations**\n\nThis limit applies when a validation challenge (like HTTP-01 or DNS-01) fails.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"Up to 5 authorization failures per identifier can be incurred by one account every hour.\" | CLAIM: The limit for failed validations is 5 per identifier (hostname or IP) per account, per hour.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"The ability to incur authorization failures refills at a rate of 1 per identifier every 12 minutes.\" | CLAIM: The failed validation limit refills at a rate of one failure per identifier every 12 minutes.",
+  "usage": {
+   "prompt_tokens": 2516,
+   "completion_tokens": 580,
+   "total_tokens": 3096,
+   "cost": 0.00825932,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125932,
+    "upstream_inference_prompt_cost": 0.00067932,
+    "upstream_inference_completions_cost": 0.00058
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791402219-semJ0YKiVEd3ObDBd5Qv"
+ },
+ "ts": "2026-10-07T19:44:07.704986+00:00"
+}

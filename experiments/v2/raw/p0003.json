@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "pa2",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0003",
+ "prompt": "Research what Let's Encrypt officially states about its certificate rate limits (certificates per registered domain, duplicate certificates, failed validations). Cite the official page.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Let\u2019s Encrypt officially describes a main weekly cap per registered domain, a separate duplicate/renewal cap, and an hourly failed-validation cap; the same official documentation also notes that revoking certificates does not reset these limits, and the staging environment is recommended for debugging because limits are higher there.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"The main limit is Certificates per Registered Domain (50 per week).\" | CLAIM: The primary certificate issuance limit is 50 certificates per registered domain per week.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"A registered domain is, generally speaking, the part of the domain you purchased from your domain name registrar.\" | CLAIM: \u201cRegistered domain\u201d means the registrable domain (e.g., example.com), based on the public suffix plus one label.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"Renewals are treated specially: they don't count against your Certificates per Registered Domain limit, but they are subject to a Duplicate Certificate limit of 5 per week.\" | CLAIM: Renewals don\u2019t count against the 50/week registered-domain limit, but duplicates are limited to 5 per week.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"A certificate is considered a renewal (or a duplicate) of an earlier certificate if it contains the exact same set of hostnames, ignoring capitalization and ordering of hostnames.\" | CLAIM: \u201cDuplicate certificate\u201d is determined by the exact same hostname set (case/order-insensitive).\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"There is a Failed Validation limit of 5 failures per account, per hostname, per hour.\" | CLAIM: Failed validations are limited to 5 per account per hostname per hour.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"This limit is higher on our staging environment, so you can use that environment to debug connectivity problems.\" | CLAIM: The staging environment has higher failed-validation limits and is intended for troubleshooting.\nSOURCE: https://letsencrypt.org/docs/rate-limits/ | QUOTE: \"Revoking certificates does not reset rate limits, because the resources used to issue those certificates have already been consumed.\" | CLAIM: Revocation does not reset or refund rate-limit capacity.",
+  "usage": {
+   "prompt_tokens": 2464,
+   "completion_tokens": 494,
+   "total_tokens": 2958,
+   "cost": 0.0198284,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0128284,
+    "upstream_inference_prompt_cost": 0.0064064,
+    "upstream_inference_completions_cost": 0.006422
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791401222-fCwXoMMYjEinVjwuLAeJ"
+ },
+ "ts": "2026-10-07T19:27:12.449652+00:00"
+}

@@ -1,0 +1,97 @@
+{
+ "0a70665af18b41d8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tokens cannot go negative: try_acquire only subtracts when tokens >= n",
+  "verdict": "fabricated"
+ },
+ "0c64fde2a7812138": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "1086345823a54ccc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the dict grows until forget_idle is called; design choice, cleanup method exists",
+  "verdict": "nitpick"
+ },
+ "17ebc53caf7cdf7e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "float rounding exists but is negligible here",
+  "verdict": "nitpick"
+ },
+ "5aae44c2ffc776ea": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tokens cannot go negative: subtraction only after tokens >= n",
+  "verdict": "fabricated"
+ },
+ "6673c8c02ac836ab": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "685cbe997b925451": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "69c949ffd0d5abf5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "idle keys are collected into a list before deletion, so no dict change during iteration single-threaded; stated cause (bucket.updated changing) is wrong",
+  "verdict": "fabricated"
+ },
+ "6b7bf74782d86fea": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "input validation suggestion",
+  "verdict": "nitpick"
+ },
+ "7bfebb89a989ac5c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "conditional KeyError on malformed input, not a defect",
+  "verdict": "nitpick"
+ },
+ "812da699700c9215": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "83873c9039509cb1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tokens can never go negative (try_acquire checks >= n); fractional tokens handled by float division",
+  "verdict": "fabricated"
+ },
+ "a09b3a65d3d155f3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "be7433f0c837a27d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the dict grows until forget_idle is called; design choice, cleanup method exists",
+  "verdict": "nitpick"
+ },
+ "bf3164d36bd98d97": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the dict grows until forget_idle is called; design choice, cleanup method exists",
+  "verdict": "nitpick"
+ },
+ "c98840a70dec0d94": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "facts true (updated reset on every refill) but that is the intended meaning of idle",
+  "verdict": "nitpick"
+ },
+ "c9b5432178c9039a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "float rounding exists but is negligible here",
+  "verdict": "nitpick"
+ },
+ "d6906f21e88b69ee": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "write_summary opens the file with a with-statement; no handle leak",
+  "verdict": "fabricated"
+ },
+ "ec568b354dd040e9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ }
+}

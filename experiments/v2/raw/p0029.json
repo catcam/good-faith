@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "pa2",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0029",
+ "prompt": "Research what Let's Encrypt officially states about its certificate rate limits (certificates per registered domain, duplicate certificates, failed validations). Cite the official page.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Let's Encrypt enforces several rate limits to ensure fair usage. Below are the official statements regarding certificates per registered domain, duplicate certificates, and failed validations, based on their documentation.\n\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Up to 50 certificates can be issued per registered domain (or IPv4 address, or IPv6 /64 range) every 7 days.\" | CLAIM: The limit for certificates issued per registered domain is 50 per week.\nSOURCE: https://github.com/letsencrypt/website/blob/cea7bcb013a4507f4e501210fcc0ccbee3fbcabd/content/en/docs/rate-limits.md | QUOTE: \"Renewals are treated specially: they don't count against your Certificates per Registered Domain limit, but they are subject to a Duplicate Certificate limit of 5 per week.\" | CLAIM: Renewals are exempt from the registered domain limit but are subject to a separate duplicate certificate limit of 5 per week.\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Up to 5 authorization failures per identifier can be incurred by one account every hour.\" | CLAIM: The failed validation limit is 5 authorization failures per account, per identifier, per hour.\nSOURCE: https://letsencrypt.org/docs/rate-limits/?origin_team=T4LT36D1N | QUOTE: \"Revoking certificates does not reset rate limits, because the resources used to issue those certificates have already been consumed.\" | CLAIM: Revoking a certificate does not reset any of the rate limits.",
+  "usage": {
+   "prompt_tokens": 2465,
+   "completion_tokens": 351,
+   "total_tokens": 2816,
+   "cost": 0.01049678,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00349678,
+    "upstream_inference_prompt_cost": 0.0024157,
+    "upstream_inference_completions_cost": 0.00108108
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791401888-vesByPCiskDLOuQWmj1E"
+ },
+ "ts": "2026-10-07T19:38:17.338593+00:00"
+}

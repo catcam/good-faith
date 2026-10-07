@@ -6,3 +6,4 @@ experiments/calibration/pages/
 *.pid
 *.shpid
 experiments/v2/*.pid
+experiments/v2/pages_cache/

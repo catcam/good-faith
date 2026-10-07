@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "pa1",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0023",
+ "prompt": "Find real, published benchmarks comparing SQLite and DuckDB query performance on analytical workloads. Cite the sources and the specific numbers they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the key benchmarks comparing SQLite and DuckDB performance on analytical workloads:\n\n**Benchmark Results Summary:**\n\nThe benchmarks consistently show DuckDB significantly outperforming SQLite on analytical queries (aggregations, groupings, joins), often by orders of magnitude, while SQLite maintains an advantage for point lookups and high-volume transactional inserts.\n\nSOURCE: https://marending.dev/notes/sqlite-vs-duckdb/ | QUOTE: \"Clearly, DuckDB is faster across the board.\" | CLAIM: DuckDB demonstrates superior performance in analytical workloads compared to SQLite.\n\nSOURCE: https://github.com/marvelousmlops/database_comparison/blob/master/README.md | QUOTE: \"Aggregation query: SQLite (without index) 0.26850 seconds, DuckDB (without index) 0.00427 seconds\" | CLAIM: DuckDB was over 60x faster than SQLite on an aggregation query without indexes.\n\nSOURCE: https://zaynetro.com/post/2023-playing-with-olap | QUOTE: \"Count by event_type: SQLite 700ms, DuckDB 10ms\" | CLAIM: On a count-by query, DuckDB was 70x faster than SQLite.\n\nSOURCE: https://junaidhasan.com/assets/report-cse544.pdf | QUOTE: \"DuckDB executed this query in 0.22 seconds, whereas SQLite took 349 seconds (a 1,500x difference).\" | CLAIM: On a specific analytical query, DuckDB was 1,500x faster than SQLite.\n\nSOURCE: https://diogoribeiro7.github.io/data-science/a_database_for_analysis_rows_columns_indexes/ | QUOTE: \"Sum of one column: SQLite 312 ms, DuckDB, 1 thread 9.7 ms\" | CLAIM: DuckDB was 32x faster than SQLite on a simple column summation query using a single thread.\n\nSOURCE: https://diogoribeiro7.github.io/data-science/a_database_for_analysis_rows_columns_indexes/ | QUOTE: \"Group by channel: SQLite 2.93 s, DuckDB, 1 thread 30 ms\" | CLAIM: On a group-by query, DuckDB was 97x faster than SQLite using a single thread.\n\nSOURCE: https://diogoribeiro7.github.io/data-science/a_database_for_analysis_rows_columns_indexes/ | QUOTE: \"2,000 lookups by key: SQLite 34 ms, DuckDB, 1 thread 1.14 s\" | CLAIM: SQLite was ~33x faster than DuckDB for individual key lookups, showing its strength for transactional point queries.\n\nSOURCE: https://marending.dev/notes/sqlite-vs-duckdb/ | QUOTE: \"DuckDB achieves around 4k naive inserts per second, while SQLite manages around 30k to 40k depending on indices.\" | CLAIM: SQLite has a significant advantage over DuckDB for high-volume transactional inserts.",
+  "usage": {
+   "prompt_tokens": 2900,
+   "completion_tokens": 656,
+   "total_tokens": 3556,
+   "cost": 0.0096774,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0026774,
+    "upstream_inference_prompt_cost": 0.001595,
+    "upstream_inference_completions_cost": 0.0010824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "CoreWeave",
+  "id": "gen-1791401781-MAm4C0AlRF5kOVzE49sK"
+ },
+ "ts": "2026-10-07T19:36:49.887842+00:00"
+}

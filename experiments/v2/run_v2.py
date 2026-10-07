@@ -1,6 +1,6 @@
 """v2 trial runner (EXPERIMENT_V2.md).
 
-  python run_v2.py matrix pilot|main [reps]   write matrix_<phase>.json (shuffled, seeded)
+  python run_v2.py matrix pilot|main [reps_a reps_b]   write matrix_<phase>.json (shuffled, seeded)
   python run_v2.py run pilot|main [limit]     run pending trials, resumable
   python run_v2.py score pilot|main           (re)score every raw trial mechanically
 
@@ -42,16 +42,16 @@ def call(model: str, prompt: str, web: bool) -> dict:
             "provider": data.get("provider"), "id": data.get("id")}
 
 
-def make_matrix(phase: str, reps: int = 1) -> list:
+def make_matrix(phase: str, reps_a: int = 1, reps_b: int = 1) -> list:
     tasks = json.loads((HERE / "tasks_a.json").read_text())[phase]
     fixtures = sorted(f.name for f in FIX.glob(("p" if phase == "pilot" else "m") + "*.py"))
     a_conds = ["c0", "c2"] if phase == "pilot" else ["c0", "c1", "c2"]
     rows = []
-    for rep in range(reps):
-        for m in MODELS:
-            rows += [{"domain": "a", "task": t["id"], "model": m, "condition": c, "rep": rep} for t in tasks for c in a_conds]
-            rows += [{"domain": "b", "task": f, "model": m, "condition": c, "rep": rep}
-                     for f in fixtures for c in ("c0", "c1", "c2")]
+    for m in MODELS:
+        rows += [{"domain": "a", "task": t["id"], "model": m, "condition": c, "rep": rep}
+                 for rep in range(reps_a) for t in tasks for c in a_conds]
+        rows += [{"domain": "b", "task": f, "model": m, "condition": c, "rep": rep}
+                 for rep in range(reps_b) for f in fixtures for c in ("c0", "c1", "c2")]
     random.Random(f"good-faith-v2-{phase}").shuffle(rows)
     for i, r in enumerate(rows, 1):
         r["trial_id"] = f"{phase[0]}{i:04d}"
@@ -99,6 +99,8 @@ def run(phase: str, limit: int = 10**9) -> None:
 
 def score(phase: str) -> None:
     key = json.loads((HERE / "answer_key.json").read_text())
+    adj_path = HERE / "adjudications.json"
+    adj = json.loads(adj_path.read_text()) if adj_path.exists() else {}
     rows = json.loads((HERE / f"matrix_{phase}.json").read_text())
     scored = []
     for row in rows:
@@ -107,7 +109,7 @@ def score(phase: str) -> None:
             continue
         d = json.loads(f.read_text())
         text = d["response"]["content"]
-        s = scorer.score_a(text) if row["domain"] == "a" else scorer.score_b(text, row["task"], key)
+        s = scorer.score_a(text) if row["domain"] == "a" else scorer.score_b(text, row["task"], key, adj)
         scored.append({**row, "cost": d["response"]["usage"].get("cost"), "score": s})
         print(row["trial_id"], row["domain"], row["condition"], s["counts"], flush=True)
     (HERE / f"scored_{phase}.json").write_text(json.dumps(scored, indent=1))
@@ -116,7 +118,7 @@ def score(phase: str) -> None:
 if __name__ == "__main__":
     cmd, phase = sys.argv[1], sys.argv[2]
     if cmd == "matrix":
-        print(len(make_matrix(phase, int(sys.argv[3]) if len(sys.argv) > 3 else 1)), "trials")
+        print(len(make_matrix(phase, *[int(x) for x in sys.argv[3:5]])), "trials")
     elif cmd == "run":
         run(phase, int(sys.argv[3]) if len(sys.argv) > 3 else 10**9)
     elif cmd == "score":
