@@ -1,0 +1,18 @@
+[
+ {"id": "t01", "kind": "documented", "prompt": "Research what the Rust project officially documents about its release cadence and how long each stable version is supported. Cite the official Rust page and quote the relevant statement."},
+ {"id": "t02", "kind": "documented", "prompt": "Find what the PostgreSQL Global Development Group officially states about how long each major PostgreSQL version receives fixes. Cite the official versioning policy page and quote it."},
+ {"id": "t03", "kind": "documented", "prompt": "Research the officially documented limits of Cloudflare Workers on the free plan (requests per day, CPU time per request). Cite Cloudflare's own documentation and quote the limits."},
+ {"id": "t04", "kind": "documented", "prompt": "Find what the Node.js project officially says about the lifecycle of its LTS releases (how long Active LTS and Maintenance LTS last). Cite the official page and quote it."},
+ {"id": "t05", "kind": "documented", "prompt": "Research the official rate limits of the public GitHub REST API for unauthenticated and authenticated requests. Cite the GitHub documentation page and quote the numbers."},
+ {"id": "t06", "kind": "documented", "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement."},
+ {"id": "t07", "kind": "documented", "prompt": "Research what the SQLite project officially documents about the maximum database size and maximum row size. Cite the official SQLite limits page and quote the figures."},
+ {"id": "t08", "kind": "documented", "prompt": "Find the Raspberry Pi Foundation's or Raspberry Pi Ltd's official statement about how long the Raspberry Pi 5 will remain in production. Cite the official page and quote it."},
+ {"id": "t09", "kind": "thin", "prompt": "Find real, published measurements of how much battery life a typical Bluetooth LE smart home sensor (e.g. Zigbee or BLE door/temperature sensors) actually achieves in the field, as opposed to manufacturer claims. Cite the sources and quote the figures."},
+ {"id": "t10", "kind": "thin", "prompt": "Find real studies or surveys reporting what share of professional developers use AI coding assistants daily in 2025 or 2026. Cite the sources and quote the percentages they report."},
+ {"id": "t11", "kind": "thin", "prompt": "Find real, published data on how often prediction markets (Polymarket, Kalshi or similar) resolve disputed or ambiguous markets, or how many market resolutions were challenged. Cite the sources and quote the figures."},
+ {"id": "t12", "kind": "thin", "prompt": "Find real research measuring whether fall-detection devices or ambient sensors reduce hospital admissions or time-on-floor for elderly people living alone. Cite the studies and quote their main results."},
+ {"id": "t13", "kind": "thin", "prompt": "Find real, published figures for the energy consumed per query (in Wh) by large language model chatbots. Cite the sources and quote the estimates they give."},
+ {"id": "t14", "kind": "thin", "prompt": "Find real data on how many people actively use the Omarchy Linux distribution or how many times it has been installed. Cite the sources and quote any figures."},
+ {"id": "t15", "kind": "thin", "prompt": "Find real, published studies on whether people with ADHD benefit from using AI assistants for task initiation or executive function. Cite the studies and quote their findings."},
+ {"id": "t16", "kind": "thin", "prompt": "Find real, documented measurements of WLED or ESP32-based LED controller reliability (uptime, failure rates) in long-running installations. Cite the sources and quote the figures."}
+]
