@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a2",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0254",
+ "prompt": "Research what the Python Software Foundation or the CPython developers have officially said about the performance impact of the free-threaded (no-GIL) build. Cite the PEP or documentation page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "The Python Software Foundation and CPython developers have outlined specific performance expectations and trade-offs for the free-threaded (no-GIL) build through PEP 703, PEP 779, and official documentation. The consensus is that while the free-threaded build incurs a performance penalty in single-threaded or linear workloads due to thread-safety overheads, this cost is considered acceptable given the benefits of true parallelism on multi-core systems.\n\nHere are the specific statements regarding performance impact:\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"The changes to make CPython thread-safe without the GIL increase execution overhead for `--disable-gil` builds.\" | CLAIM: The free-threaded build inherently has higher execution overhead compared to the standard GIL-enabled build.\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"On the pyperformance benchmark suite, the average overhead ranges from about 1% on macOS aarch64 to 8% on x86-64 Linux systems.\" | CLAIM: Official documentation quantifies the single-threaded performance overhead as varying by platform, generally staying under 10% on most systems.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"The performance penalty on linear performance, comparing a free-threaded build against a with-GIL build, as measured by the pyperformance benchmarks... is currently around 10% (except on macOS, where it\u2019s more like 3%).\" | CLAIM: Recent measurements cited in PEP 779 indicate a linear performance penalty of approximately 10% on Linux and Windows, and 3% on macOS.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"For phase II (not the default flip), we propose 15% as a hard performance target.\" | CLAIM: The developers have set a hard acceptance criterion of no more than 15% performance regression for the free-threaded build to be considered officially supported.\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"At this point we\u2019re expecting a (worst case) performance penalty of 10-15%.\" | CLAIM: The Steering Council explicitly acknowledged an expected worst-case performance penalty of 10-15% when accepting PEP 703.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"Realistically, though, higher memory use is the cost of having efficient, safe free-threading, and we are unlikely to get this very close to the with-GIL build\u2019s memory use without significant performance cost.\" | CLAIM: Developers state that increased memory usage (currently estimated at 15-20%) is an inherent trade-off for achieving thread safety without the GIL.\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware.\" | CLAIM: The performance benefit of the free-threaded build is contingent on the application's ability to utilize multiple threads effectively.",
+  "usage": {
+   "prompt_tokens": 2667,
+   "completion_tokens": 719,
+   "total_tokens": 3386,
+   "cost": 0.009268825,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002268825,
+    "upstream_inference_prompt_cost": 0.000866775,
+    "upstream_inference_completions_cost": 0.00140205
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791409533-L1hAJeLmT54y7JEZul0e"
+ },
+ "ts": "2026-10-07T21:45:49.185343+00:00"
+}

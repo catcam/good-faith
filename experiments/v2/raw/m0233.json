@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a6",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0233",
+ "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official publications from the Home Assistant project, there are two distinct figures for active installations: one based on opt-in analytics data and one based on the project's broader estimates of the total user base.\n\nThe official analytics page, which only includes data from users who have opted in, reports nearly 700,000 active installations.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"695,026 Active Home Assistant Installations\" | CLAIM: There are 695,026 active installations that have opted into analytics.\n\nThe project explicitly states that this number does not represent all users, as analytics are opt-in. They estimate that the actual total number of installations is significantly higher.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"We estimate that less than a fourth of all Home Assistant users opt in.\" | CLAIM: The total number of users is estimated to be more than four times the number who opt into analytics.\n\nA blog post from April 2025 provides an estimated figure for the total active installation base, which has grown substantially.\n\nSOURCE: https://www.home-assistant.io/blog/2025/04/16/state-of-the-open-home-recap/ | QUOTE: \"One big announcement Franck made was that this year we went from 1 million to over 2 million active installations in 2024!\" | CLAIM: The total estimated number of active Home Assistant installations surpassed 2 million in 2024.\n\nOther sources provide additional context about the opt-in rate and the history of the analytics program.\n\nSOURCE: https://analytics.home-assistant.io/statistics/ | QUOTE: \"496,813 of 637,194 (77.97%) installations have chosen to share usage statistics\" | CLAIM: As of the time of that specific statistic, 77.97% of installations that had the analytics system available had opted in.\n\nSOURCE: https://www.home-assistant.io/integrations/analytics/ | QUOTE: \"The Analytics system was introduced in Home Assistant 2021.4, and it's used by 76.5% of the active installations.\" | CLAIM: A high percentage of installations that have the analytics feature available choose to use it.\n\nSOURCE: https://www.home-assistant.io/blog/2021/11/12/100k-analytics/ | QUOTE: \"Our estimate is that there are 4-5x more installations than people that opt-in to analytics.\" | CLAIM: The project's longstanding estimate is that the total user base is 4 to 5 times larger than the opt-in analytics count.",
+  "usage": {
+   "prompt_tokens": 1064,
+   "completion_tokens": 540,
+   "total_tokens": 1604,
+   "cost": 0.00782728,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00082728,
+    "upstream_inference_prompt_cost": 0.00028728,
+    "upstream_inference_completions_cost": 0.00054
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791409110-KbYIv1lhMkTCOrRJWiGa"
+ },
+ "ts": "2026-10-07T21:39:02.238280+00:00"
+}

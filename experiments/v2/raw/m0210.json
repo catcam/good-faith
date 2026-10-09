@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m5_dates.py",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 2,
+ "trial_id": "m0210",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  from datetime import date, datetime, timedelta, timezone\n   2  \n   3  \n   4  def daterange(start: date, end: date):\n   5      \"\"\"Yield every date from start to end, inclusive.\"\"\"\n   6      d = start\n   7      while d < end:\n   8          yield d\n   9          d += timedelta(days=1)\n  10  \n  11  \n  12  def business_days(start: date, end: date) -> int:\n  13      \"\"\"Number of Monday-Friday dates from start to end, inclusive.\"\"\"\n  14      return sum(1 for d in daterange(start, end) if d.weekday() < 5)\n  15  \n  16  \n  17  def add_months(d: date, months: int) -> date:\n  18      month_index = d.month - 1 + months\n  19      year = d.year + month_index // 12\n  20      month = month_index % 12 + 1\n  21      day = min(d.day, _days_in_month(year, month))\n  22      return date(year, month, day)\n  23  \n  24  \n  25  def _days_in_month(year: int, month: int) -> int:\n  26      if month == 12:\n  27          return 31\n  28      return (date(year, month + 1, 1) - date(year, month, 1)).days\n  29  \n  30  \n  31  def parse_timestamp(value: str) -> datetime:\n  32      \"\"\"Parse ISO-8601; naive timestamps are taken to be UTC.\"\"\"\n  33      dt = datetime.fromisoformat(value)\n  34      if dt.tzinfo is None:\n  35          dt = dt.replace(tzinfo=timezone.utc)\n  36      return dt\n  37  \n  38  \n  39  def age_in_years(born: date, today: date) -> int:\n  40      years = today.year - born.year\n  41      if (today.month, today.day) < (born.month, born.day):\n  42          years -= 1\n  43      return years\n  44  \n  45  \n  46  def quarter(d: date) -> int:\n  47      return d.month // 3 + 1\n  48  \n  49  \n  50  def overlaps(a_start: date, a_end: date, b_start: date, b_end: date) -> bool:\n  51      \"\"\"True if the inclusive ranges [a_start, a_end] and [b_start, b_end] share a day.\"\"\"\n  52      return a_start <= b_end and b_start <= a_end\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "After reviewing the code, I found several issues that could lead to incorrect results or unexpected behavior:\n\nISSUE: line 7 | The daterange function excludes the end date due to \"while d < end\" instead of \"while d <= end\"\nISSUE: line 14 | business_days function excludes the end date due to daterange bug, giving incorrect count\nISSUE: line 18 | add_months function may handle negative months incorrectly (no validation or handling)\nISSUE: line 28 | _days_in_month function fails for December (returns 31 but should use proper calculation)\nISSUE: line 31 | parse_timestamp function doesn't handle all ISO-8601 formats, only Python's fromisoformat subset\nISSUE: line 39 | age_in_years function may return incorrect results for leap day birthdays on non-leap years\nISSUE: line 47 | quarter function gives incorrect results (e.g., month 3 should be Q1 but returns 2)\nISSUE: line 52 | overlaps function uses inclusive ranges but the comparison logic may exclude edge cases\n\nThe most critical issues are:\n1. The `daterange` function excludes the end date, which affects `business_days` and any other functions that use it\n2. The `quarter` function has incorrect calculation logic\n3. The `_days_in_month` function has a special case for December that's unnecessary and potentially error-prone\n4. The `add_months` function doesn't handle negative values for months parameter",
+  "usage": {
+   "prompt_tokens": 682,
+   "completion_tokens": 324,
+   "total_tokens": 1006,
+   "cost": 0.00047806,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00047806,
+    "upstream_inference_prompt_cost": 0.00017026,
+    "upstream_inference_completions_cost": 0.0003078
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791408626-0UVK5cIcoR1sAB4OKoiT"
+ },
+ "ts": "2026-10-07T21:30:47.112209+00:00"
+}

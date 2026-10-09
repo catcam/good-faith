@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a8",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0040",
+ "prompt": "Research the officially documented context window and output token limits of the current Claude and GPT model families. Cite the vendors' own documentation pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I have researched the official documentation from Anthropic for the Claude model family. For the GPT model family (OpenAI), I was unable to locate the specific official documentation page containing these limits in the provided search results.\n\nBelow are the verified limits for Claude models, followed by the items for which I could not find documentation.\n\n**Claude Model Limits (from Anthropic/Claude Platform documentation):**\n\nSOURCE: https://platform.claude.com/docs/en/build-with-claude/context-windows | QUOTE: \"Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, Claude Mythos 5, Claude Opus 5.5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 5.5, Claude Sonnet 5, Claude Sonnet 4.6, and Claude Mythos Preview have a 1M-token context window.\" | CLAIM: These Claude models have a 1,000,000 token context window.\n\nSOURCE: https://platform.claude.com/docs/en/build-with-claude/context-windows | QUOTE: \"A single request to any of them can generate up to 128k output tokens (`max_tokens`).\" | CLAIM: These Claude models have a maximum output limit of 128,000 tokens in a single request.\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"Context window: 1M tokens \u00b7 Max output: 128K tokens\" | CLAIM: Claude Opus 5.5 has a 1 million token context window and a 128,000 token maximum output limit.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Context window 1M tokens\" | CLAIM: Claude Fable 5.1, Claude Opus 5, and Claude Sonnet 5 have a 1 million token context window.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Max output 128K tokens\" | CLAIM: Claude Fable 5.1, Claude Opus 5, and Claude Sonnet 5 have a maximum output of 128,000 tokens.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Context window 200K tokens\" | CLAIM: Claude Haiku 4.5 has a 200,000 token context window.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Max output 64K tokens\" | CLAIM: Claude Haiku 4.5 has a maximum output of 64,000 tokens.\n\nSOURCE: https://platform.claude.com/docs/en/build-with-claude/context-windows | QUOTE: \"Other Claude models, including Claude Sonnet 4.5, have a 200k-token context window.\" | CLAIM: Claude models not in the 1M-token list, including Claude Sonnet 4.5, have a 200,000 token context window.\n\n**GPT Model Limits (OpenAI):**\n\nNO_SOURCE_FOUND: Official OpenAI documentation URL and quoted limits for GPT model family context windows\n\nNO_SOURCE_FOUND: Official OpenAI documentation URL and quoted limits for GPT model family maximum output tokens",
+  "usage": {
+   "prompt_tokens": 3302,
+   "completion_tokens": 699,
+   "total_tokens": 4001,
+   "cost": 0.0246722,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0176722,
+    "upstream_inference_prompt_cost": 0.0085852,
+    "upstream_inference_completions_cost": 0.009087
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791403799-QfD6CC1zbbOx4YcJOgP9"
+ },
+ "ts": "2026-10-07T20:10:12.790742+00:00"
+}

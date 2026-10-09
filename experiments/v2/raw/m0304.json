@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a5",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0304",
+ "prompt": "Find real, published data on the Kalshi exchange's trading volume or number of users in 2025. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here is the published data regarding the Kalshi exchange's trading volume and user metrics for 2025.\n\n**Trading Volume**\nMultiple sources confirm that Kalshi's total notional trading volume for 2025 reached $23.8 billion, representing a year-over-year increase of 1,108%. December 2025 was a record-breaking month, generating $6.38 billion in volume, with December 21 specifically setting a single-day record of $381.7 million. Open interest for the year also grew significantly, reaching $225 million (a 169% increase).\n\n**Number of Users/Transactions**\nWhile exact \"user\" counts are not explicitly listed for Kalshi in the provided snippets, transaction counts are. Kalshi processed 97 million transactions in 2025, a 1,680% increase year-over-year. December alone accounted for 27.67 million transactions, with the single-day peak on December 21 reaching 1.5 million transactions. (Polymarket, Kalshi's rival, reported 477,850 active monthly traders in October 2025, but no equivalent active trader metric was provided for Kalshi).\n\nSOURCE: https://www.tradetheoutcome.com/prediction-markets-in-2025-data-stats-key-trends/ | QUOTE: \"Kalshi processed 97 million transactions in 2025 and set a single-day record of $381.7 million on December 21.\" | CLAIM: Kalshi's 2025 transaction count and single-day volume record.\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"Kalshi reported a remarkable surge in trading volume for 2025, reaching $23.8 billion, a 1,108% increase from the previous year.\" | CLAIM: Kalshi's total 2025 trading volume and YoY growth percentage.\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"December alone accounted for $6.38 billion, setting a new monthly record, while December 21 saw a daily peak of $381.7 million.\" | CLAIM: Kalshi's monthly volume record and daily volume peak in December 2025.\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"The total number of transactions for the year hit 97 million, up 1,680% year-on-year, with December contributing 27.67 million transactions.\" | CLAIM: Kalshi's 2025 total transaction count, YoY transaction growth, and December transaction count.\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"Open interest also saw significant growth, totaling $225 million, a 169% increase from 2024.\" | CLAIM: Kalshi's total open interest and YoY open interest growth in 2025.\nSOURCE: https://www.htx.com/news/2025-prediction-market-review-total-trading-volume-exceeds-5-Q4y3TtCj/ | QUOTE: \"December 21st saw 1.5 million trades, all setting historical highs.\" | CLAIM: Kalshi's single-day transaction record on December 21, 2025.\nNO_SOURCE_FOUND: A specific count of active monthly or yearly users/traders on Kalshi in 2025 (only transaction counts were provided).",
+  "usage": {
+   "prompt_tokens": 3027,
+   "completion_tokens": 776,
+   "total_tokens": 3803,
+   "cost": 0.01426959,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00726959,
+    "upstream_inference_prompt_cost": 0.00402591,
+    "upstream_inference_completions_cost": 0.00324368
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791410547-CETALuRcca8UQ8PI7HU6"
+ },
+ "ts": "2026-10-07T22:02:38.326693+00:00"
+}

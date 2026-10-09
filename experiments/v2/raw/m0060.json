@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m2_retry_client.py",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0060",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import random\n   2  import time\n   3  \n   4  import httpx\n   5  \n   6  RETRYABLE_STATUS = {429, 500, 502, 503, 504}\n   7  \n   8  \n   9  class RetryClient:\n  10      \"\"\"HTTP GET with exponential backoff and jitter.\"\"\"\n  11  \n  12      def __init__(self, max_attempts: int = 5, base_delay: float = 0.5, max_delay: float = 30.0,\n  13                   timeout: float = 10.0):\n  14          self.max_attempts = max_attempts\n  15          self.base_delay = base_delay\n  16          self.max_delay = max_delay\n  17          self.client = httpx.Client(timeout=timeout)\n  18  \n  19      def _delay(self, attempt: int, retry_after: str = None) -> float:\n  20          if retry_after is not None:\n  21              try:\n  22                  return min(max(0.0, float(retry_after)), self.max_delay)\n  23              except ValueError:\n  24                  pass\n  25          delay = self.base_delay * (2 ** attempt)\n  26          return min(delay, self.max_delay) * random.uniform(0.5, 1.0)\n  27  \n  28      def get(self, url: str, **kwargs) -> httpx.Response:\n  29          last_exc = None\n  30          for attempt in range(self.max_attempts):\n  31              try:\n  32                  resp = self.client.get(url, **kwargs)\n  33              except httpx.TransportError as exc:\n  34                  last_exc = exc\n  35                  time.sleep(self._delay(attempt))\n  36                  continue\n  37              if resp.status_code in RETRYABLE_STATUS:\n  38                  time.sleep(self._delay(attempt, resp.headers.get(\"Retry-After\")))\n  39                  continue\n  40              return resp\n  41          raise RuntimeError(f\"giving up on {url} after {self.max_attempts} attempts\") from last_exc\n  42  \n  43      def get_json(self, url: str, **kwargs):\n  44          resp = self.get(url, **kwargs)\n  45          return resp.json()\n  46  \n  47      def close(self) -> None:\n  48          self.client.close()\n  49  \n  50      def __enter__(self):\n  51          return self\n  52  \n  53      def __exit__(self, *exc):\n  54          self.close()\n  55          return True\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "The code contains a critical resource management bug and a subtle logic error regarding exception handling.\n\n1.  **Resource Leak / Crash on Exception**: The `httpx.Client` is created in `__init__` but there is no guarantee it will be closed if an exception occurs during initialization or if the user does not use the context manager (`with` statement). More importantly, if `get` raises an exception (line 41), the client remains open. While `__exit__` handles the context manager case, if the user instantiates `RetryClient()` and calls `get()` without using `with`, and an error occurs, or if they simply forget to call `close()`, the underlying connection pool resources may leak. However, the most direct \"bug\" in typical usage patterns involving context managers is usually fine, but let's look closer at line 54.\n\n2.  **Suppressed Exceptions**: Line 54 returns `True`. In Python's context manager protocol, returning `True` from `__exit__` suppresses any exceptions that occurred within the `with` block. This means if `get` raises a `RuntimeError` (line 41) or any other exception, it will be silently swallowed. This is almost certainly not the intended behavior for a general-purpose client wrapper, as it hides errors from the caller.\n\n3.  **Missing Close on Garbage Collection**: If the user doesn't use the context manager, the `httpx.Client` might not be closed promptly depending on the garbage collector, potentially leading to resource leaks (open sockets). A `__del__` method or better yet, ensuring the client is closed properly is good practice, but the suppression of exceptions is a definite functional defect.\n\n4.  **Jitter Application**: Line 26 applies jitter *after* capping the delay with `max_delay`. This is technically acceptable but often jitter is applied before capping or the cap is applied to the final result. However, `min(delay, self.max_delay) * random.uniform(0.5, 1.0)` ensures the final delay is always <= `max_delay`. This is not a bug, just a design choice.\n\n5.  **Exponential Backoff Calculation**: Line 25 uses `2 ** attempt`. For `attempt=0`, delay is `base_delay`. For `attempt=4` (last attempt), delay is `base_delay * 16`. This is standard.\n\n6.  **Critical Issue: Exception Suppression**. Returning `True` in `__exit__` is the most significant defect here. It masks failures.\n\n7.  **Potential Issue: `last_exc` is None**. If the loop finishes because `max_attempts` is reached, but the last failure was a status code (not a transport error), `last_exc` will still be `None` (initialized at line 29, only set in `except` block at line 34). When line 41 executes `raise ... from last_exc`, if `last_exc` is `None`, the `from None` part is valid syntax, but it loses the chain information for the HTTP error case. Wait, `raise X from None` is valid. But if we want to preserve the cause for status code failures, we aren't storing the response or a specific exception. However, the bigger issue is that for status code retries, we don't have an exception object to chain from. This isn't a crash, but it's poor error reporting.\n\n    Let's re-read line 41: `raise RuntimeError(...) from last_exc`.\n    - Case 1: Last failure was `TransportError`. `last_exc` is the exception. Correct.\n    - Case 2: Last failure was retryable status code. `last_exc` is `None` (or the previous transport error if mixed). If it's `None`, `from None` suppresses the exception chain display, which is okay, but we lost the info about the last HTTP response. This is a minor observability issue, not a crash.\n\n    The primary \"real defect\" is the exception suppression in `__exit__`.\n\nISSUE: line 54 | Returning True suppresses all exceptions raised in the with block, hiding errors from the caller.",
+  "usage": {
+   "prompt_tokens": 808,
+   "completion_tokens": 893,
+   "total_tokens": 1701,
+   "cost": 0.00200395,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00200395,
+    "upstream_inference_prompt_cost": 0.0002626,
+    "upstream_inference_completions_cost": 0.00174135
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791404664-JHEEmgPuFzeKxdRQClFE"
+ },
+ "ts": "2026-10-07T20:24:40.290052+00:00"
+}

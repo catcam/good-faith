@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a7",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0300",
+ "prompt": "Find real, documented examples of open-source maintainers publicly reporting AI-generated bug reports or pull requests as a burden (e.g. curl, Python, other projects). Cite the original posts and quote what they said.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Open-source maintainers, particularly in security-critical projects like `curl` and `Python`, have publicly documented the significant burden imposed by AI-generated bug reports, often referred to as \"AI slop.\" These reports are characterized by high volume, low quality, and a lack of human verification, leading to maintainer burnout and wasted resources.\n\n**Curl Project**\nDaniel Stenberg, the founder and lead maintainer of `curl`, has been vocal about the impact of AI-generated vulnerability reports. He described the phenomenon as a form of denial-of-service attack on the project's maintainers due to the time required to triage invalid submissions. In response, the `curl` team implemented stricter submission guidelines, including mandatory disclosure of AI use and immediate bans for low-effort reports.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Stenberg said the amount of time it takes project maintainers to triage each AI-assisted vulnerability report made via HackerOne, only for them to be deemed invalid, is tantamount to a DDoS attack on the project.\" | CLAIM: Daniel Stenberg equates the time cost of triaging AI bug reports to a DDoS attack.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"We now ban every reporter instantly who submits reports we deem AI slop,\" Stenberg added. \"A threshold has been reached. We are effectively being DDoSed. If we could, we would charge them for this waste of our time.\" | CLAIM: The curl project now instantly bans reporters submitting AI slop due to the overwhelming volume.\n\nSOURCE: https://arstechnica.com/gadgets/2025/05/open-source-project-curl-is-sick-of-users-submitting-ai-slop-vulnerabilities/ | QUOTE: \"We still have not seen a single valid security report done with AI help,\" Stenberg wrote. | CLAIM: As of May 2025, curl had not received a single valid security report generated with AI assistance.\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"The general trend so far in 2025 has been way more AI slop than ever before (about 20% of all submissions) as we have averaged in about two security report submissions per week.\" | CLAIM: By July 2025, approximately 20% of all security submissions to curl were classified as AI slop.\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"In early July, about 5% of the submissions in 2025 had turned out to be genuine vulnerabilities. The valid-rate has decreased significantly compared to previous years.\" | CLAIM: The rate of genuine vulnerabilities among submissions dropped significantly, with only about 5% being valid in early 2025.\n\nSOURCE: https://lwn.net/Articles/1058266/ | QUOTE: \"Now, Stenberg said, he calls this method of sending AI-generated security reports 'terror reporting'.\" | CLAIM: Daniel Stenberg refers to the influx of AI-generated security reports as \"terror reporting.\"\n\nSOURCE: https://lwn.net/Articles/1058266/ | QUOTE: \"In the past, he estimated that one out of six reports turned out to be real security flaws. Now it is more like one out of 20 or 30.\" | CLAIM: The ratio of valid security reports dropped from 1 in 6 to approximately 1 in 20 or 30 due to AI slop.\n\n**Python Project**\nSeth Larson, a maintainer for the Python project, has also highlighted the negative impact of these reports on open-source contributors, noting that the emotional and temporal costs contribute to burnout.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Security reports that waste maintainers' time result in confusion, stress, frustration, and to top it off, a sense of isolation due to the secretive nature of security reports,\" Larson wrote. | CLAIM: Seth Larson states that wasting maintainers' time with bogus reports causes stress, frustration, and isolation.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"All of these feelings can add to burnout of likely highly trusted contributors to open source projects.\" | CLAIM: The stress from processing low-quality reports contributes to contributor burnout.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"In many ways, these low-quality reports should be treated as if they are malicious. Even if this is not their intent, the outcome is maintainers that are burnt out and more averse to legitimate security work.\" | CLAIM: Larson argues that low-quality AI reports should be treated as malicious due to their detrimental outcome on maintainer well-being.\n\n**General Industry Context**\nThe issue extends beyond specific projects, affecting the broader open-source ecosystem where maintainers are considering restrictive measures to manage the influx of low-effort submissions.\n\nSOURCE: https://redmonk.com/videos/daniel-stenberg-ai-onslop/ | QUOTE: \"It is a little bit of abuse because most of these, that we call them AI slop, they\u2019re just generated by someone really quickly. They don\u2019t really understand it, they haven\u2019t really verified it.\" | CLAIM: Daniel Stenberg characterizes the submission of unverified AI reports as a form of abuse.\n\nSOURCE: https://redmonk.com/videos/daniel-stenberg-ai-onslop/ | QUOTE: \"So we spend more time than ever to get less out of it than ever.\" | CLAIM: Maintainers are spending increased time for decreased value due to the prevalence of AI-generated content.",
+  "usage": {
+   "prompt_tokens": 2727,
+   "completion_tokens": 1407,
+   "total_tokens": 4134,
+   "cost": 0.010629925,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003629925,
+    "upstream_inference_prompt_cost": 0.000886275,
+    "upstream_inference_completions_cost": 0.00274365
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791410457-7LkJ5iiEMT9Z4mFUM1PT"
+ },
+ "ts": "2026-10-07T22:01:24.900868+00:00"
+}

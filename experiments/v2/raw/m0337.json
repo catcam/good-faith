@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m1_lru_cache.py",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0337",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  from collections import OrderedDict\n   2  from typing import Any, Callable, Hashable\n   3  \n   4  \n   5  class LRUCache:\n   6      \"\"\"Least-recently-used cache with a fixed maximum size.\"\"\"\n   7  \n   8      def __init__(self, maxsize: int = 128):\n   9          if maxsize < 1:\n  10              raise ValueError(\"maxsize must be at least 1\")\n  11          self.maxsize = maxsize\n  12          self.data = OrderedDict()\n  13          self.hits = 0\n  14          self.misses = 0\n  15  \n  16      def get(self, key: Hashable, default: Any = None) -> Any:\n  17          if key in self.data:\n  18              self.hits += 1\n  19              return self.data[key]\n  20          self.misses += 1\n  21          return default\n  22  \n  23      def put(self, key: Hashable, value: Any) -> None:\n  24          if key in self.data:\n  25              self.data.move_to_end(key)\n  26          self.data[key] = value\n  27          if len(self.data) > self.maxsize:\n  28              self.data.popitem(last=False)\n  29  \n  30      def delete(self, key: Hashable) -> bool:\n  31          if key in self.data:\n  32              del self.data[key]\n  33              return True\n  34          return False\n  35  \n  36      def clear(self) -> None:\n  37          self.data.clear()\n  38          self.hits = 0\n  39          self.misses = 0\n  40  \n  41      def hit_rate(self) -> float:\n  42          total = self.hits + self.misses\n  43          return self.hits / total\n  44  \n  45      def __len__(self) -> int:\n  46          return len(self.data)\n  47  \n  48      def __contains__(self, key: Hashable) -> bool:\n  49          return key in self.data\n  50  \n  51  \n  52  def cached(maxsize: int = 128) -> Callable:\n  53      \"\"\"Decorator memoizing a function of positional, hashable arguments.\"\"\"\n  54      def wrap(fn: Callable) -> Callable:\n  55          cache = LRUCache(maxsize)\n  56  \n  57          def inner(*args):\n  58              result = cache.get(args)\n  59              if result is None:\n  60                  result = fn(*args)\n  61                  cache.put(args, result)\n  62              return result\n  63  \n  64          inner.cache = cache\n  65          return inner\n  66      return wrap\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I've reviewed the Python code and found several issues that could cause incorrect behavior, crashes, or resource problems.\n\nHere are the issues I identified:\n\nISSUE: line 18 | Keys are not moved to the end when accessed via get(), violating LRU semantics\nISSUE: line 19 | Should use `self.data.move_to_end(key)` before returning to maintain LRU order\nISSUE: line 26 | Missing check for cache size after updating existing key (potential overgrowth)\nISSUE: line 59 | Using `result is None` may incorrectly cache actual None return values\nISSUE: line 61 | Stores result even if fn(*args) returns None, but get() uses None as cache miss indicator\n\n**Detailed explanation:**\n\n1. **LRU ordering violation (lines 18-19)**: When `get()` finds a key, it increments the hit counter but doesn't move the key to the end of the OrderedDict to mark it as most recently used. This breaks the LRU eviction logic.\n\n2. **Cache size management issue (line 26)**: The `put()` method only checks the cache size after inserting a new key. However, if an existing key is being updated, the cache could grow beyond maxsize without proper eviction since the condition `len(self.data) > self.maxsize` would only be true when adding new keys.\n\n3. **None handling problem (lines 59, 61)**: The decorator uses `result is None` to determine cache misses, but if the wrapped function legitimately returns None, the decorator will continue calling the underlying function instead of using the cached None value. Also, the decorator caches None results, which then become indistinguishable from cache misses.\n\nHere's a corrected version of the key problematic sections:\n\n```python\ndef get(self, key: Hashable, default: Any = None) -> Any:\n    if key in self.data:\n        self.hits += 1\n        self.data.move_to_end(key)  # Fix: maintain LRU order\n        return self.data[key]\n    self.misses += 1\n    return default\n\ndef put(self, key: Hashable, value: Any) -> None:\n    if key in self.data:\n        self.data.move_to_end(key)\n    self.data[key] = value\n    # Fix: always check size after insertion\n    if len(self.data) > self.maxsize:\n        self.data.popitem(last=False)\n\n# In the decorator:\ndef inner(*args):\n    try:\n        # Use KeyError instead of None check for cache misses\n        result = cache.get(args, sentinel = object())\n        if result is sentinel:\n            result = fn(*args)\n            cache.put(args, result)\n        return result\n    except KeyError:\n        result = fn(*args)\n        cache.put(args, result)\n        return result\n```\n\nThe code is otherwise well-structured with proper type hints and documentation.",
+  "usage": {
+   "prompt_tokens": 700,
+   "completion_tokens": 613,
+   "total_tokens": 1313,
+   "cost": 0.000802,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000802,
+    "upstream_inference_prompt_cost": 0.000189,
+    "upstream_inference_completions_cost": 0.000613
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791411439-ndwt7TeHayYlbAoz86LB"
+ },
+ "ts": "2026-10-07T22:17:56.640037+00:00"
+}

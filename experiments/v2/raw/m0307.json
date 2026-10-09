@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a3",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0307",
+ "prompt": "Find real, peer-reviewed or preprint studies measuring how often large language models fabricate citations. Cite the papers and quote the fabrication rates they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the findings from real studies measuring how often large language models fabricate citations.\n\nA study published in *Scientific Reports* specifically measured the citation fabrication rates of ChatGPT-3.5 and ChatGPT-4 when generating short literature reviews.\nSOURCE: https://www.nature.com/articles/s41598-023-41032-5 | QUOTE: \"Of the 222 works cited in the GPT-3.5 papers, 55% are fabricated... Only 18% [of GPT-4 citations] are fabricated.\" | CLAIM: ChatGPT-3.5 fabricated 55% of its citations, while ChatGPT-4 fabricated 18%.\n\nA large-scale audit posted on arXiv, which evaluated 10 commercially deployed LLMs, found a wide range of fabrication rates.\nSOURCE: https://arxiv.org/abs/2603.03299 | QUOTE: \"Our results show that the observed hallucination rates span a fivefold range (between 11.4% and 56.8%) and are strongly shaped by model, domain, and prompt framing.\" | CLAIM: A study of 10 LLMs found citation hallucination rates ranging from 11.4% to 56.8%.\n\nA study in the *Journal of Medical Internet Research* (JMIR) PMC archive focused on GPT-4o's performance on mental health topics.\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC12658395/ | QUOTE: \"Of the 176 citations provided by GPT-4o, 35 (19.9%) were fabricated.\" | CLAIM: A study found that GPT-4o fabricated 19.9% of its citations when generating literature reviews on mental health topics.\n\nA study posted on arXiv, which developed the CiteVerifier framework, benchmarked 13 state-of-the-art LLMs.\nSOURCE: https://arxiv.org/html/2602.06718v1 | QUOTE: \"This benchmark shows that all tested models hallucinate citations, with rates from 14.23% (DeepSeek) to 94.93% (Hunyuan).\" | CLAIM: A large-scale benchmark of 13 LLMs found citation hallucination rates ranging from 14.23% to 94.93%.\n\nAn analysis of published papers in the journal *Data* sought to measure the prevalence of fabricated references that had made it into the scientific literature.\nSOURCE: https://www.mdpi.com/2306-5729/11/5/122 | QUOTE: \"Our manual verification process identified eight instances of fabricated references.\" | CLAIM: A manual analysis of over 127,000 references from published papers found 8 instances of fabricated references, indicating a low but non-zero prevalence in the literature.",
+  "usage": {
+   "prompt_tokens": 2486,
+   "completion_tokens": 569,
+   "total_tokens": 3055,
+   "cost": 0.00930615,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00230615,
+    "upstream_inference_prompt_cost": 0.0013673,
+    "upstream_inference_completions_cost": 0.00093885
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "CoreWeave",
+  "id": "gen-1791410606-riMzgY1OLxyGg86dVFUp"
+ },
+ "ts": "2026-10-07T22:03:56.241718+00:00"
+}

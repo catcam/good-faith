@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a8",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0274",
+ "prompt": "Research the officially documented context window and output token limits of the current Claude and GPT model families. Cite the vendors' own documentation pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "# Context Window and Output Token Limits: Claude and GPT Models\n\n## Research Findings\n\n### Claude Model Family\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"Context window: 1M tokens \u00b7 Max output: 128K tokens \u00b7 Input pricing: $4 / MTok \u00b7 Output pricing: $20 / MTok\" | CLAIM: Claude Opus 5.5 has a 1 million token context window and can generate up to 128,000 output tokens.\n\nSOURCE: https://platform.claude.com/docs/en/about-claude/models/overview | QUOTE: \"Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, Claude Mythos 5, Claude Opus 5.5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 5.5, Claude Sonnet 5, Claude Sonnet 4.6, and Claude Mythos Preview have a 1M-token context window.\" | CLAIM: Multiple Claude models including Fable 5.1, Opus 5.5, Opus 5, Sonnet 5.5, and Sonnet 5 all have 1 million token context windows.\n\nSOURCE: https://platform.claude.com/docs/en/about-claude/models/overview | QUOTE: \"Other Claude models, including Claude Sonnet 4.5, have a 200k-token context window.\" | CLAIM: Claude Sonnet 4.5 and certain other Claude models are limited to 200,000 token context windows.\n\nSOURCE: https://platform.claude.com/docs/en/about-claude/models/overview | QUOTE: \"A single request to any of them can generate up to 128k output tokens (`max_tokens`).\" | CLAIM: Claude models with 1M token context windows can generate up to 128,000 output tokens per request.\n\nSOURCE: https://platform.claude.com/docs/en/about-claude/models/overview | QUOTE: \"Claude Haiku 5.5 | 1M | 128K | From $0.10 / $0.50\" | CLAIM: Claude Haiku 5.5 has a 1 million token context window and 128,000 token maximum output.\n\n### GPT Model Family\n\nNO_SOURCE_FOUND: Official OpenAI documentation for current GPT model context windows and output token limits\n\n## Summary\n\nBased on the available documentation:\n\n**Claude Models (Anthropic):**\n- **1M token context window models:** Claude Fable 5.1, Opus 5.5, Opus 5, Sonnet 5.5, Sonnet 5, Haiku 5.5, and several others\n- **200K token context window models:** Claude Sonnet 4.5 and some older models\n- **Maximum output:** 128K tokens across all current Claude models\n\n**GPT Models (OpenAI):**\nI was unable to locate official OpenAI documentation in the search results provided. To find current GPT model specifications (GPT-4, GPT-4 Turbo, GPT-3.5, etc.), you would need to consult OpenAI's official documentation at https://platform.openai.com/docs or https://openai.com/api/, as context windows and output limits have varied significantly across GPT model versions and have been updated over time.",
+  "usage": {
+   "prompt_tokens": 3240,
+   "completion_tokens": 719,
+   "total_tokens": 3959,
+   "cost": 0.024771,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.017771,
+    "upstream_inference_prompt_cost": 0.008424,
+    "upstream_inference_completions_cost": 0.009347
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791409931-e5T9L6Be0XbRWb8QUGg9"
+ },
+ "ts": "2026-10-07T21:52:22.104089+00:00"
+}

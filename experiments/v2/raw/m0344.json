@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0344",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here are the official free-tier limits for GitHub Actions, based on the GitHub documentation. For public repositories, standard GitHub-hosted runner usage is free and unlimited. For private repositories, limits vary by account plan and are reset monthly. Note that storage limits for Actions artifacts are shared with GitHub Packages. \n\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"The use of standard GitHub-hosted runners is free: In public repositories For GitHub Pages For Dependabot\" | CLAIM: Standard GitHub-hosted runners are free to use with no minute limits for public repositories.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"Larger runners are always charged for, even when used by public repositories or when you have quota available from your plan.\" | CLAIM: Larger runners do not have a free tier and are always billed, regardless of repository visibility.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Free 500 MB Minutes (per month) 2,000 Cache storage 10 GB\" | CLAIM: Private repositories on the GitHub Free plan receive 2,000 free minutes per month, 500 MB of artifact storage, and 10 GB of cache storage.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Team 2 GB Minutes (per month) 3,000 Cache storage 10 GB\" | CLAIM: Private repositories on the GitHub Team plan receive 3,000 free minutes per month, 2 GB of artifact storage, and 10 GB of cache storage.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Enterprise Cloud 50 GB Minutes (per month) 50,000 Cache storage 10 GB\" | CLAIM: Private repositories on the GitHub Enterprise Cloud plan receive 50,000 free minutes per month, 50 GB of artifact storage, and 10 GB of cache storage.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"The storage amounts shown are shared with GitHub Packages. This means your total storage across Actions artifacts, Actions caches, and Packages cannot exceed the included amount for your plan.\" | CLAIM: Free storage limits for Actions artifacts and caches are not isolated; they are a shared pool with GitHub Packages storage.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner Free 20 5 Not applicable\" | CLAIM: Free tier (Free plan) accounts have a concurrent job limit of 20 total jobs, with a maximum of 5 concurrent macOS jobs.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner Team 60 5 Not applicable\" | CLAIM: Team plan accounts have a concurrent job limit of 60 total jobs, with a maximum of 5 concurrent macOS jobs.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"All GitHub-hosted runners Job execution time 6 hours\" | CLAIM: Jobs running on GitHub-hosted runners in both public and private repositories are subject to a maximum execution time limit of 6 hours.\nNO_SOURCE_FOUND: Whether the free tier concurrency limits for public repositories explicitly differ from the plan-based concurrency limits of private repositories (the documentation implies they are tied to the account plan, but does not explicitly separate public vs. private concurrency).",
+  "usage": {
+   "prompt_tokens": 2612,
+   "completion_tokens": 728,
+   "total_tokens": 3340,
+   "cost": 0.01386,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00686,
+    "upstream_inference_prompt_cost": 0.0036568,
+    "upstream_inference_completions_cost": 0.0032032
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Baidu",
+  "id": "gen-1791411630-nTzVbTlzk0mVsH5olRjE"
+ },
+ "ts": "2026-10-07T22:20:39.497214+00:00"
+}

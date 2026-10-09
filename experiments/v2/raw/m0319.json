@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a6",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0319",
+ "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the provided web search results, the Home Assistant project has published several official figures and estimates regarding its number of active installations and the opt-in analytics program.\n\nThe most recent and definitive figure comes from the State of the Open Home 2025 event, which announced a major milestone.\n\nSOURCE: https://www.home-assistant.io/blog/2025/04/16/state-of-the-open-home-recap/ | QUOTE: \"One big announcement Franck made was that this year we went from 1 million to over 2 million active installations in 2024!\" | CLAIM: There were over 2 million active Home Assistant installations in 2024.\n\nOther sources provide context about the analytics program itself, its opt-in nature, and how the total user base is estimated from the number of users who share analytics.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"695,026 Active Home Assistant Installations\" | CLAIM: As of the time that analytics page was accessed, there were 695,026 installations opted into analytics.\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"We estimate that less than a fourth of all Home Assistant users opt in.\" | CLAIM: The Home Assistant project estimates that the number of users who opt into analytics represents less than 25% of the total user base.\nSOURCE: https://www.home-assistant.io/blog/2021/11/12/100k-analytics/ | QUOTE: \"Our estimate is that there are 4-5x more installations than people that opt-in to analytics.\" | CLAIM: The project historically estimated the total number of installations to be 4 to 5 times the number of installations opted into analytics.\nSOURCE: https://www.home-assistant.io/integrations/analytics/ | QUOTE: \"The Analytics system was introduced in Home Assistant 2021.4, and it's used by 76.5% of the active installations.\" | CLAIM: At the time that integration page was written, 76.5% of active installations had opted into analytics. (Note: This percentage appears to be from an earlier snapshot in time and conflicts with the \"less than a fourth\" estimate from the main analytics page, highlighting that the opt-in rate has changed over time).\nSOURCE: https://analytics.home-assistant.io/statistics/ | QUOTE: \"496,813 of 637,194 (77.97%) installations have chosen to share usage statistics\" | CLAIM: At the time that statistics page was accessed, 77.97% of the installations tracked by the analytics system had opted to share data.\n\nNO_SOURCE_FOUND: A more recent, specific number for the current count of installations opted into analytics (beyond the 695k figure). The 2 million total figure is the most recent official number published.",
+  "usage": {
+   "prompt_tokens": 1096,
+   "completion_tokens": 592,
+   "total_tokens": 1688,
+   "cost": 0.00783628,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00083628,
+    "upstream_inference_prompt_cost": 0.00027388,
+    "upstream_inference_completions_cost": 0.0005624
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791410816-zjbVfHxdluyipPoIRjmd"
+ },
+ "ts": "2026-10-07T22:08:11.578358+00:00"
+}

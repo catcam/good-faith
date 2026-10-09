@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0375",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official GitHub documentation, the limits for GitHub Actions differ significantly between public and private repositories, particularly regarding cost and minute quotas. Below is a breakdown of the free-tier limits for minutes, storage, and concurrency.\n\n### Minutes and Billing\nFor **public repositories**, the use of standard GitHub-hosted runners is free and unlimited. For **private repositories**, users receive a monthly quota of free minutes based on their plan, after which they are billed. Self-hosted runners are always free to use regardless of repository visibility.\n\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"The use of standard GitHub-hosted runners is free: In public repositories\" | CLAIM: Standard GitHub-hosted runners are free for public repositories.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Actions usage is free for self-hosted runners and for public repositories that use standard GitHub-hosted runners.\" | CLAIM: Self-hosted runners and public repository standard runners do not incur costs.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"For private repositories, each GitHub account receives a quota of free minutes, artifact storage, and cache storage for use with GitHub-hosted runners, depending on the account's plan.\" | CLAIM: Private repositories have a specific free quota for minutes and storage based on the user's plan.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Free | 500 MB | 2,000 | 10 GB\" | CLAIM: The GitHub Free plan includes 2,000 free minutes per month for private repositories.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"Larger runners are always charged for, even when used by public repositories or when you have quota available from your plan.\" | CLAIM: Larger runners are not free, even for public repositories.\n\n### Storage Limits\nStorage limits apply primarily to private repositories or when exceeding free tiers. Artifact storage is shared with GitHub Packages, while cache storage has a separate allowance per repository. GitHub Support cannot increase storage limits.\n\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"GitHub Support cannot increase storage limits for GitHub Actions.\" | CLAIM: Storage limits are fixed and cannot be increased via support tickets.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"The artifact storage amounts shown are shared with GitHub Packages. This means your total storage across Actions artifacts and GitHub Packages storage cannot exceed the included amount for your plan.\" | CLAIM: Artifact storage and GitHub Packages share the same storage quota.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"Cache storage: Actions cache storage is a separate allowance of 10 GB per repository.\" | CLAIM: Cache storage is allocated separately at 10 GB per repository, regardless of the plan.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Free | 500 MB | 2,000 | 10 GB\" | CLAIM: The GitHub Free plan includes 500 MB of artifact storage.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Enterprise Cloud | 50 GB | 50,000 | 10 GB\" | CLAIM: The GitHub Enterprise Cloud plan includes 50 GB of artifact storage.\n\n### Concurrency and Rate Limits\nConcurrency limits restrict how many jobs or workflows can run simultaneously or be queued. These limits apply to check runs, workflow triggers, and concurrency groups.\n\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"A check suite can have a maximum of 50,000 check runs.\" | CLAIM: There is a limit of 50,000 check runs per check suite.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Each repository is limited to events triggering a workflow run. 1500 events / 10 seconds / repository\" | CLAIM: Repositories are limited to 1,500 workflow trigger events every 10 seconds.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"500 workflow runs / 10 seconds\" | CLAIM: A maximum of 500 workflow runs can be queued every 10 seconds.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"When using `queue: max` in the `concurrency` section, up to 100 workflow runs / concurrency group\" | CLAIM: Concurrency groups can queue up to 100 workflow runs.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner | Free | 20\" | CLAIM: The Free plan allows 20 total concurrent jobs on standard GitHub-hosted runners.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner | Pro | 40\" | CLAIM: The Pro plan allows 40 total concurrent jobs on standard GitHub-hosted runners.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner | Team | 60\" | CLAIM: The Team plan allows 60 total concurrent jobs on standard GitHub-hosted runners.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner | Enterprise | 500\" | CLAIM: The Enterprise plan allows 500 total concurrent jobs on standard GitHub-hosted runners.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"The maximum concurrent macOS jobs is shared across standard GitHub-hosted runners and GitHub-hosted larger runners.\" | CLAIM: macOS job concurrency limits are shared across runner types.",
+  "usage": {
+   "prompt_tokens": 2793,
+   "completion_tokens": 1291,
+   "total_tokens": 4084,
+   "cost": 0.010425175,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003425175,
+    "upstream_inference_prompt_cost": 0.000907725,
+    "upstream_inference_completions_cost": 0.00251745
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791412322-xTeG65PVkxmL5L28SOwy"
+ },
+ "ts": "2026-10-07T22:32:27.398193+00:00"
+}

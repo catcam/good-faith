@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a1",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0341",
+ "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results, here are the documented post-mortems for major cloud outages in 2025 involving Cloudflare, AWS, and Azure.\n\n### Cloudflare Outage (November 18, 2025)\nCloudflare experienced a significant network failure caused by an internal configuration error rather than external attack. The issue stemmed from a database permission change that generated an oversized file, which crashed the proxy software responsible for routing traffic.\n\nSOURCE: https://blog.cloudflare.com/18-november-2025-outage/ | QUOTE: \"Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a \u201cfeature file\u201d used by our Bot Management system.\" | CLAIM: The root cause was a database permission change that created an oversized feature file, causing the network routing software to fail due to size limits.\n\n### Amazon DynamoDB Service Disruption (October 19\u201320, 2025)\nAWS faced a service disruption in the US-EAST-1 region affecting DynamoDB. The incident was driven by a race condition in the DNS management system that resulted in the deletion of IP addresses for the regional endpoint.\n\nSOURCE: https://postmortem.io/incidents/aws--2025-10-19--dynamodb-dns-service-disruption-us-east-1/ | QUOTE: \"The incident stemmed from a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service\u2019s regional endpoint.\" | CLAIM: The root cause was a race condition between the DNS Planner and DNS Enactor components, leading to an empty DNS record and loss of connectivity.\n\n### Azure Front Door and CDN Outage (October 29\u201330, 2025)\nMicrosoft Azure suffered a global outage affecting Azure Front Door and CDN services, which also impacted dependent services like Microsoft 365 and the Azure Portal. The crash was triggered by incompatible metadata generated from valid customer configuration changes.\n\nSOURCE: https://postmortem.io/incidents/azure--2025-10-29--azure-front-door-global-connectivity-dns-issues/ | QUOTE: \"A specific sequence of customer configuration changes, performed across two different control plane build versions, resulted in incompatible customer configuration metadata being generated.\" | CLAIM: The root cause was incompatible configuration metadata produced by valid customer changes across different control plane versions, which exposed a latent bug and crashed the data plane.\n\n### Cloudflare Dashboard and API Outage (September 12, 2025)\nCloudflare experienced an outage affecting its Dashboard and APIs due to a bug in the frontend code that overwhelmed the backend Tenant Service API with excessive requests.\n\nSOURCE: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/ | QUOTE: \"The incident\u2019s impact stemmed from several issues, but the immediate trigger was a bug in the dashboard.\" | CLAIM: The root cause was a React useEffect hook bug in the dashboard that caused repeated, unnecessary API calls, overwhelming the Tenant Service.\n\n### Cloudflare Network Failure (December 5, 2025)\nA partial network outage occurred at Cloudflare due to a software bug introduced while updating body parsing logic to address a vulnerability in React Server Components.\n\nSOURCE: https://blog.cloudflare.com/5-december-2025-outage/ | QUOTE: \"Instead, it was triggered by changes being made to our body parsing logic while attempting to detect and mitigate an industry-wide vulnerability disclosed this week in React Server Components.\" | CLAIM: The root cause was a bug in the FL1 proxy's rules module triggered by changes to body parsing logic intended to mitigate a React Server Components vulnerability.\n\nNO_SOURCE_FOUND: Documented post-mortems for major Google Cloud outages in 2025.",
+  "usage": {
+   "prompt_tokens": 2649,
+   "completion_tokens": 817,
+   "total_tokens": 3466,
+   "cost": 0.009454075,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002454075,
+    "upstream_inference_prompt_cost": 0.000860925,
+    "upstream_inference_completions_cost": 0.00159315
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791411537-b1TcLSKoTueDobIO4GH7"
+ },
+ "ts": "2026-10-07T22:19:14.190622+00:00"
+}

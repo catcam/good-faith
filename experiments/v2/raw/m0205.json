@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a2",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0205",
+ "prompt": "Research what the Python Software Foundation or the CPython developers have officially said about the performance impact of the free-threaded (no-GIL) build. Cite the PEP or documentation page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on my search, I can provide the following official statements from the Python Software Foundation and CPython developers regarding the performance impact of the free-threaded (no-GIL) build.\n\n**From Official Documentation (Python 3.14.5):**\nThe documentation explicitly confirms a performance overhead for the free-threaded build and provides specific figures from the pyperformance benchmark suite.\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"The free-threaded build has additional overhead when executing Python code compared to the default GIL-enabled build. The amount of overhead depends on the workload and hardware. On the pyperformance benchmark suite, the average overhead ranges from about 1% on macOS aarch64 to 8% on x86-64 Linux systems.\" | CLAIM: The free-threaded build is slower than the GIL-enabled build, with overhead varying by platform.\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"The free-threaded build will typically use more memory compared to the default build.\" | CLAIM: The free-threaded build has increased memory usage.\n\n**From PEP 779 (Criteria for Supported Status):**\nThis PEP, which outlines the criteria for the free-threaded build to become officially supported, gives more detailed performance and memory targets.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"the performance penalty on linear performance, comparing a free-threaded build against a with-GIL build, as measured by the pyperformance benchmarks... is currently around 10% (except on macOS, where it\u2019s more like 3%).\" | CLAIM: The current performance penalty for the free-threaded build is around 10% on most platforms, but lower on macOS.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"free-threaded Python currently sees about 15-20% higher memory use (geometric mean, as measured by pyperformance).\" | CLAIM: The free-threaded build currently uses 15-20% more memory.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"for phase II (not the default flip), we propose 15% as a hard performance target.\" | CLAIM: The developers propose a maximum acceptable performance penalty of 15% for the officially supported (but not yet default) free-threaded build.\n\n**From Steering Council Discussion on PEP 703 Acceptance:**\nThe Steering Council, which accepted PEP 703, commented on the expected performance trade-offs.\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"At this point we\u2019re expecting a (worst case) performance penalty of 10-15%.\" | CLAIM: The Steering Council expected a performance penalty in the range of 10-15%.\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"The performance impact should be isolated to a free-threaded build; a GIL build should not see any performance impact in existing code.\" | CLAIM: The performance penalty is only for the free-threaded build; the standard GIL-enabled build is unaffected.\n\n**Regarding PEP 703 itself:**\nThe original PEP 703 also provided specific performance measurements.\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"The changes to make CPython thread-safe without the GIL increase execution overhead for `--disable-gil` builds.\" | CLAIM: Acknowledges that the no-GIL build incurs a performance overhead.\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"One thread | 6% | 5%\" and \"Multiple threads | 8% | 7%\" | CLAIM: Provided specific overhead figures for single-threaded (5-6%) and multi-threaded (7-8%) execution on different CPU architectures.\n\nIn summary, the official sources uniformly state that the free-threaded build currently incurs a performance overhead and uses more memory compared to the standard build, but they consider this an acceptable trade-off for the benefit of true parallelism.",
+  "usage": {
+   "prompt_tokens": 2606,
+   "completion_tokens": 952,
+   "total_tokens": 3558,
+   "cost": 0.00865562,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00165562,
+    "upstream_inference_prompt_cost": 0.00070362,
+    "upstream_inference_completions_cost": 0.000952
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791408487-ow0BDL0RYp6lMVaDD508"
+ },
+ "ts": "2026-10-07T21:28:57.355209+00:00"
+}

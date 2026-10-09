@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0407",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the official free-tier limits for GitHub Actions based on the documentation:\n\nSOURCE: https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job | QUOTE: \"Use of the standard GitHub-hosted runners is free and unlimited on public repositories.\" | CLAIM: For public repositories, GitHub Actions provides unlimited free minutes when using standard GitHub-hosted runners.\n\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Actions usage is **free** for **self-hosted runners** and for **public repositories** that use standard GitHub-hosted runners.\" | CLAIM: For public repositories, GitHub Actions usage (which encompasses both minutes and storage) is free when using standard runners.\n\nSOURCE: https://docs.github.com/en/billing/man",
+  "usage": {
+   "prompt_tokens": 2518,
+   "completion_tokens": 4000,
+   "total_tokens": 6518,
+   "cost": 0.02807484,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.02107484,
+    "upstream_inference_prompt_cost": 0.00347484,
+    "upstream_inference_completions_cost": 0.0176
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3828,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Novita",
+  "id": "gen-1791413012-mZbjcdZqVL4Ex5ycOUKX"
+ },
+ "ts": "2026-10-07T22:45:18.444478+00:00"
+}

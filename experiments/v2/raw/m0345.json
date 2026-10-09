@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m6_sessions.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0345",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import hashlib\n   2  import hmac\n   3  import secrets\n   4  import time\n   5  \n   6  SESSION_TTL = 3600\n   7  \n   8  \n   9  class SessionStore:\n  10      def __init__(self, secret: bytes):\n  11          self.secret = secret\n  12          self.sessions = {}\n  13  \n  14      def _sign(self, session_id: str) -> str:\n  15          mac = hmac.new(self.secret, session_id.encode(), hashlib.sha256).hexdigest()\n  16          return f\"{session_id}.{mac}\"\n  17  \n  18      def create(self, user_id: str) -> str:\n  19          session_id = secrets.token_urlsafe(32)\n  20          self.sessions[session_id] = {\"user_id\": user_id, \"created\": time.time()}\n  21          return self._sign(session_id)\n  22  \n  23      def _verify(self, token: str):\n  24          session_id, _, mac = token.rpartition(\".\")\n  25          expected = hmac.new(self.secret, session_id.encode(), hashlib.sha256).hexdigest()\n  26          if mac != expected:\n  27              return None\n  28          return session_id\n  29  \n  30      def get_user(self, token: str):\n  31          session_id = self._verify(token)\n  32          if session_id is None:\n  33              return None\n  34          session = self.sessions.get(session_id)\n  35          if session is None:\n  36              return None\n  37          if time.time() - session[\"created\"] > SESSION_TTL:\n  38              del self.sessions[session_id]\n  39              return None\n  40          return session[\"user_id\"]\n  41  \n  42      def destroy(self, token: str) -> None:\n  43          session_id = self._verify(token)\n  44          if session_id is not None:\n  45              self.sessions.pop(session_id, None)\n  46  \n  47      def destroy_all_for(self, user_id: str) -> int:\n  48          doomed = [sid for sid, s in self.sessions.items() if s[\"user_id\"] == user_id]\n  49          for sid in doomed:\n  50              del self.sessions[sid]\n  51          return len(doomed)\n  52  \n  53  \n  54  def hash_password(password: str, salt: bytes = None) -> tuple:\n  55      salt = salt or secrets.token_bytes(16)\n  56      digest = hashlib.sha256(salt + password.encode()).hexdigest()\n  57      return salt, digest\n  58  \n  59  \n  60  def check_password(password: str, salt: bytes, digest: str) -> bool:\n  61      return hmac.compare_digest(hash_password(password, salt)[1], digest)\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here is the review of the provided Python code.\n\n**Security Vulnerabilities:**\n- **Timing Attack (Line 26):** The MAC comparison `mac != expected` is done using a standard string inequality operator. This causes Python to evaluate character-by-character and return `False` as soon as a mismatch is found, leaking timing information that allows an attacker to forge a valid MAC. `hmac.compare_digest()` must be used instead.\n- **Weak Password Hashing (Lines 56 & 60):** Passwords are hashed with a single unsalted/unstretched SHA-256 round. This makes offline password cracking trivial if the database is compromised. A memory-hard, deliberately slow KDF (e.g., `bcrypt`, `argon2`, or `hashlib.pbkdf2_hmac`) should be used instead.\n\n**Functional Bugs:**\n- **Incorrect Token Parsing (Line 24):** Using `str.rpartition(\".\")` breaks if the original `session_id` contains a dot. Since `secrets.token_urlsafe()` can emit dots, a valid token can be incorrectly split, causing the extracted `session_id` to fail the MAC validation. The signature length is fixed at 64 hex chars, so `token[:-65]` and `token[-64:]` should be used instead.\n- **Unbound Resource Leak (Line 20):** Expired sessions are only purged when specifically accessed via `get_user()`. If a user abandons a session or an attacker floods `create()`, the entries permanently consume memory. The store lacks active eviction, background cleanup, or LRU bounds, leading to a memory exhaustion denial-of-service (DoS).\n- **Missing Input Validation (Line 26):** If `_verify` is called with an empty string, `rpartition(\".\")` sets `session_id` to `\"\"` and `mac` to `\"\"`. Since both expected and provided MACs would conceptually mismatch, `compare_digest` would safely reject it, but the current broken `!=` operator may still be subjected to malformed timing payloads. Moreover, it lacks handling for tokens missing the `.` separator entirely, potentially raising exceptions downstream if used naively, though it currently just yields empty strings.\n\nISSUE: line 26 | Timing attack vulnerability: comparing HMACs with `!=` instead of `hmac.compare_digest` allows MAC forgery via timing side-channels.\nISSUE: line 24 | Incorrect parsing: `rpartition(\".\")` corrupts session IDs that naturally contain dots, causing valid sessions to fail verification.\nISSUE: line 20 | Memory leak: expired or abandoned sessions are never proactively purged, allowing unbounded memory growth and DoS.\nISSUE: line 56 | Insecure password hashing: using plain `hashlib.sha256` is too fast and trivially crackable; requires a dedicated slow KDF like bcrypt or PBKDF2.\nISSUE: line 60 | Insecure password verification: checking against a weak SHA-256 digest offers insufficient protection against offline brute-force attacks.",
+  "usage": {
+   "prompt_tokens": 760,
+   "completion_tokens": 623,
+   "total_tokens": 1383,
+   "cost": 0.0038052,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0038052,
+    "upstream_inference_prompt_cost": 0.001064,
+    "upstream_inference_completions_cost": 0.0027412
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "GMICloud",
+  "id": "gen-1791411640-hkU7OG0pg9gQg74PuXMO"
+ },
+ "ts": "2026-10-07T22:20:51.250641+00:00"
+}

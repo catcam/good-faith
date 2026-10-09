@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a5",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0085",
+ "prompt": "Find real, published data on the Kalshi exchange's trading volume or number of users in 2025. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the provided search results, here is the real, published data regarding Kalshi's trading volume and user/transaction metrics for 2025.\n\n**Trading Volume**\nKalshi experienced significant growth in 2025, with total annual notional volume reaching $23.8 billion. This represented a year-over-year increase of approximately 1,108%. The platform saw its highest activity in December 2025, which set monthly and daily records.\n\nSOURCE: https://www.tradetheoutcome.com/prediction-markets-in-2025-data-stats-key-trends/ | QUOTE: \"Kalshi | $23.8B | +1,108% | 2021 | CFTC-regulated, USD\" | CLAIM: Kalshi's total trading volume in 2025 was $23.8 billion, representing a 1,108% year-over-year growth.\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"Kalshi reported a remarkable surge in trading volume for 2025, reaching $23.8 billion, a 1,108% increase from the previous year.\" | CLAIM: Confirms Kalshi's 2025 trading volume was $23.8 billion with 1,108% YoY growth.\n\nSOURCE: https://www.tradetheoutcome.com/prediction-markets-in-2025-data-stats-key-trends/ | QUOTE: \"Kalshi went from roughly $0.85B to an estimated $4.4B the same month [October], then $5.8B in November and a record $6.38B in December.\" | CLAIM: Kalshi's monthly volume peaked in December 2025 at $6.38 billion.\n\nSOURCE: https://defirate.com/news/prediction-markets-record-all-time-high-volume-to-end-2025/ | QUOTE: \"Kalshi led the week in raw notional volume... Kalshi with $1.98B... for the week of Dec. 29\" | CLAIM: In the final week of 2025 (Dec 29\u2013Jan 4), Kalshi recorded $1.98 billion in weekly notional volume.\n\n**Transactions and User Activity**\nWhile specific unique user counts for the full year are not explicitly detailed in the snippets, transaction volumes and active trader metrics are available. Kalshi processed 97 million transactions in 2025. In the final week of the year, it recorded over 7.5 million weekly transactions.\n\nSOURCE: https://www.tradetheoutcome.com/prediction-markets-in-2025-data-stats-key-trends/ | QUOTE: \"Kalshi processed 97 million transactions in 2025 and set a single-day record of $381.7 million on December 21.\" | CLAIM: Kalshi processed 97 million total transactions in 2025.\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"The total number of transactions for the year hit 97 million, up 1,680% year-on-year, with December contributing 27.67 million transactions.\" | CLAIM: Kalshi's 97 million transactions in 2025 represented a 1,680% increase from 2024, with 27.67 million occurring in December alone.\n\nSOURCE: https://defirate.com/news/prediction-markets-record-all-time-high-volume-to-end-2025/ | QUOTE: \"Weekly transactions also show Kalshi and Polymarket as the two runaway market co-leaders: - Kalshi: 9,502,802\" | CLAIM: During the week of December 29, 2025, Kalshi recorded approximately 9.5 million transactions.\n\nSOURCE: https://www.cryptopolitan.com/kalshi-starts-2026-hot-after-record-2025/ | QUOTE: \"peak activity occurring on December 21, 2025, when daily notional volume hit $381.7 million, and transactions reached 1.5 million.\" | CLAIM: On December 21, 2025, Kalshi recorded 1.5 million transactions in a single day.\n\nNO_SOURCE_FOUND: Specific count of unique registered users or monthly active users (MAU) for Kalshi for the full year 2025. (Note: One source mentions Polymarket's active traders, but does not provide an equivalent full-year user count for Kalshi, only transaction counts).",
+  "usage": {
+   "prompt_tokens": 3446,
+   "completion_tokens": 1070,
+   "total_tokens": 4516,
+   "cost": 0.01020645,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00320645,
+    "upstream_inference_prompt_cost": 0.00111995,
+    "upstream_inference_completions_cost": 0.0020865
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791405433-LBUhEtR7xwOqkdwd17Qa"
+ },
+ "ts": "2026-10-07T20:37:34.302104+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a1",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0241",
+ "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the search results provided, here are the documented post-mortems for major cloud outages in 2025 involving Cloudflare, AWS, and Azure.\n\n### Cloudflare Outage (November 18, 2025)\nCloudflare experienced a significant network failure triggered by a database permission change that resulted in an oversized configuration file for its Bot Management system.\n\nSOURCE: https://blog.cloudflare.com/18-november-2025-outage/ | QUOTE: \"Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a \u201cfeature file\u201d used by our Bot Management system.\" | CLAIM: The root cause was a database permission change that generated duplicate entries in a feature file, doubling its size and causing software failures when propagated to network machines.\n\n### AWS DynamoDB Disruption (October 19\u201320, 2025)\nAmazon Web Services faced a service disruption in the US-EAST-1 region due to a race condition in their DNS management system, which led to the deletion of IP addresses for the regional endpoint.\n\nSOURCE: https://postmortem.io/incidents/aws--2025-10-19--dynamodb-dns-service-disruption-us-east-1/ | QUOTE: \"The incident stemmed from a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service\u2019s regional endpoint.\" | CLAIM: The root cause was a race condition where an outdated DNS plan overwrote a newer one, leading to the removal of all IP addresses for the endpoint.\n\n### Azure Front Door & CDN Outage (October 29\u201330, 2025)\nMicrosoft Azure suffered a global connectivity issue affecting Azure Front Door and CDN services, caused by incompatible customer configuration metadata that crashed data plane services at edge sites.\n\nSOURCE: https://postmortem.io/incidents/azure--2025-10-29--azure-front-door-global-connectivity-dns-issues/ | QUOTE: \"A specific sequence of customer configuration changes, performed across two different control plane build versions, resulted in incompatible customer configuration metadata being generated.\" | CLAIM: The root cause was incompatible metadata generated from valid customer configurations across different build versions, which exposed a latent bug and crashed the data plane.\n\n### Cloudflare Outage (December 5, 2025)\nCloudflare had a brief outage caused by changes to body parsing logic intended to mitigate a React Server Components vulnerability, which triggered a bug in their proxy's rules module.\n\nSOURCE: https://blog.cloudflare.com/5-december-2025-outage/ | QUOTE: \"Instead, it was triggered by changes being made to our body parsing logic while attempting to detect and mitigate an industry-wide vulnerability disclosed this week in React Server Components.\" | CLAIM: The root cause was a code change related to vulnerability mitigation that triggered a Lua exception in the FL1 proxy's rules module.\n\n### Cloudflare Dashboard & API Outage (September 12, 2025)\nCloudflare experienced an outage of its Dashboard and APIs due to a bug in the React frontend that caused excessive API calls to the Tenant Service, overwhelming it.\n\nSOURCE: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/ | QUOTE: \"The incident\u2019s impact stemmed from several issues, but the immediate trigger was a bug in the dashboard.\" | CLAIM: The root cause was a React `useEffect` hook bug that repeatedly called the Tenant Service API, overwhelming the service during an update.\n\nNO_SOURCE_FOUND: Major cloud outages for Google Cloud in 2025 with cited provider post-mortems were not found in the provided search results.",
+  "usage": {
+   "prompt_tokens": 2639,
+   "completion_tokens": 801,
+   "total_tokens": 3440,
+   "cost": 0.009419625,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002419625,
+    "upstream_inference_prompt_cost": 0.000857675,
+    "upstream_inference_completions_cost": 0.00156195
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791409320-EQlloGvJ9YsZu6XHDsod"
+ },
+ "ts": "2026-10-07T21:42:16.672985+00:00"
+}

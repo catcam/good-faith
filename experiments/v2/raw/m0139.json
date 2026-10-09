@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a1",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0139",
+ "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are documented post-mortems of major cloud outages in 2025 based on the provided search results:\n\n**Cloudflare Outage on November 18, 2025**\nOn November 18, 2025, Cloudflare experienced a significant network failure affecting core traffic delivery. The incident lasted roughly 6 hours and was triggered by an internal database permissions change that caused a configuration file to exceed its maximum allowable size.\n\nSOURCE: https://blog.cloudflare.com/18-november-2025-outage-uk-ua/ | QUOTE: \"Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a \u201cfeature file\u201d used by our Bot Management system.\" | CLAIM: The root cause of the November 18, 2025 Cloudflare outage was a database permissions change that corrupted a feature file.\n\n**Amazon DynamoDB Service Disruption (October 19-20, 2025)**\nAWS experienced a service disruption for Amazon DynamoDB in the US-EAST-1 Region on October 19 and 20, 2025. The outage lasted several hours and resulted in increased API error rates, ultimately caused by a flaw in the service's DNS management automation.\n\nSOURCE: https://postmortem.io/incidents/aws--2025-10-19--dynamodb-dns-service-disruption-us-east-1/ | QUOTE: \"The incident stemmed from a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service\u2019s regional endpoint.\" | CLAIM: The root cause of the October 2025 DynamoDB outage was a race condition in the DNS management system.\n\n**Azure Front Door Global Connectivity Issues (October 29-30, 2025)**\nMicrosoft Azure suffered an ~8.5 hour global outage affecting Azure Front Door and Azure CDN on October 29 and 30, 2025. The disruption took down multiple major Microsoft portals and services. The failure was triggered when valid customer configuration changes produced incompatible metadata that crashed the edge data plane.\n\nSOURCE: https://postmortem.io/incidents/azure--2025-10-29--azure-front-door-global-connectivity-dns-issues/ | QUOTE: \"A specific sequence of customer configuration changes, performed across two different control plane build versions, resulted in incompatible customer configuration metadata being generated.\" | CLAIM: The root cause of the October 2025 Azure Front Door outage was incompatible configuration metadata generated from changes across different control plane builds.\n\n**Cloudflare Outage on December 5, 2025**\nOn December 5, 2025, Cloudflare experienced a 25-minute outage impacting approximately 28% of its HTTP traffic. This was triggered by a bug in the proxy rules module that was exposed when attempting to mitigate an industry-wide vulnerability.\n\nSOURCE: https://blog.cloudflare.com/5-december-2025-outage/ | QUOTE: \"Instead, it was triggered by changes being made to our body parsing logic while attempting to detect and mitigate an industry-wide vulnerability disclosed this week in React Server Components.\" | CLAIM: The root cause of the December 5, 2025 Cloudflare outage was a change to body parsing logic intended to mitigate a React Server Components vulnerability.\n\n**Cloudflare Dashboard and API Outage (September 12, 2025)**\nCloudflare also experienced a dashboard and API outage on September 12, 2025. The immediate trigger was a bug in the frontend dashboard that repeatedly overwhelmed the Tenant Service API with unnecessary calls.\n\nSOURCE: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/ | QUOTE: \"This bug caused repeated, unnecessary calls to the Tenant Service API.\" | CLAIM: The root cause of the September 12, 2025 Cloudflare dashboard/API outage was a bug causing repeated API calls.\n\nNO_SOURCE_FOUND: A real, documented post-mortem for a 2025 Google Cloud outage.",
+  "usage": {
+   "prompt_tokens": 2434,
+   "completion_tokens": 816,
+   "total_tokens": 3250,
+   "cost": 0.01182862,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00482862,
+    "upstream_inference_prompt_cost": 0.002351244,
+    "upstream_inference_completions_cost": 0.002477376
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791406494-tOZUupOIzO5d48awwycA"
+ },
+ "ts": "2026-10-07T20:55:14.867018+00:00"
+}

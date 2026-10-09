@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m5_dates.py",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0373",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  from datetime import date, datetime, timedelta, timezone\n   2  \n   3  \n   4  def daterange(start: date, end: date):\n   5      \"\"\"Yield every date from start to end, inclusive.\"\"\"\n   6      d = start\n   7      while d < end:\n   8          yield d\n   9          d += timedelta(days=1)\n  10  \n  11  \n  12  def business_days(start: date, end: date) -> int:\n  13      \"\"\"Number of Monday-Friday dates from start to end, inclusive.\"\"\"\n  14      return sum(1 for d in daterange(start, end) if d.weekday() < 5)\n  15  \n  16  \n  17  def add_months(d: date, months: int) -> date:\n  18      month_index = d.month - 1 + months\n  19      year = d.year + month_index // 12\n  20      month = month_index % 12 + 1\n  21      day = min(d.day, _days_in_month(year, month))\n  22      return date(year, month, day)\n  23  \n  24  \n  25  def _days_in_month(year: int, month: int) -> int:\n  26      if month == 12:\n  27          return 31\n  28      return (date(year, month + 1, 1) - date(year, month, 1)).days\n  29  \n  30  \n  31  def parse_timestamp(value: str) -> datetime:\n  32      \"\"\"Parse ISO-8601; naive timestamps are taken to be UTC.\"\"\"\n  33      dt = datetime.fromisoformat(value)\n  34      if dt.tzinfo is None:\n  35          dt = dt.replace(tzinfo=timezone.utc)\n  36      return dt\n  37  \n  38  \n  39  def age_in_years(born: date, today: date) -> int:\n  40      years = today.year - born.year\n  41      if (today.month, today.day) < (born.month, born.day):\n  42          years -= 1\n  43      return years\n  44  \n  45  \n  46  def quarter(d: date) -> int:\n  47      return d.month // 3 + 1\n  48  \n  49  \n  50  def overlaps(a_start: date, a_end: date, b_start: date, b_end: date) -> bool:\n  51      \"\"\"True if the inclusive ranges [a_start, a_end] and [b_start, b_end] share a day.\"\"\"\n  52      return a_start <= b_end and b_start <= a_end\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here are the issues I found:\n\nISSUE: line 7 | `daterange` docstring claims \"inclusive\" for the end date, but the `while d < end:` condition yields dates only up to (and excluding) `end`; this makes `business_days` undercount by one business day when `end` is a weekday, since it never includes the `end` date.\nISSUE: line 47 | `quarter(d.month // 3 + 1)` returns the wrong quarter for months 3, 6, 9, 12 \u2014 e.g. March (month 3) gives 2 instead of 1, and December (month 12) gives 5, which isn't a valid quarter; should be `(d.month - 1) // 3 + 1`.\n\nA couple of borderline points I considered but am not reporting as bugs:\n- `parse_timestamp` accepts strings ending in \"Z\" only on Python 3.11+; on older Pythons `fromisoformat` raises `ValueError`, but that's environment-dependent, not strictly a bug.\n- `age_in_years` handles Feb 29 birthdays via the month/day tuple comparison, which is a convention choice rather than a crash or wrong-result defect.",
+  "usage": {
+   "prompt_tokens": 743,
+   "completion_tokens": 269,
+   "total_tokens": 1012,
+   "cost": 0.0059508,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0059508,
+    "upstream_inference_prompt_cost": 0.00211755,
+    "upstream_inference_completions_cost": 0.00383325
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791412314-kQIZPc8dZqjsxFoavv1q"
+ },
+ "ts": "2026-10-07T22:31:57.343341+00:00"
+}

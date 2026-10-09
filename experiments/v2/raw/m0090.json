@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0090",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on my research of the GitHub documentation, here are the free-tier limits for GitHub Actions.\n\nGitHub Actions usage differs significantly between public and private repositories. For public repositories, the use of standard GitHub-hosted runners is free and unlimited.\n\ndocs.github.com | QUOTE: \"Use of the standard GitHub-hosted runners is free and unlimited on public repositories.\" | CLAIM: Standard GitHub-hosted runners are free and unlimited for public repositories.\n\nFor private repositories, usage is subject to a monthly quota of free minutes and storage, which varies by GitHub plan. Any usage beyond these quotas is billed.\n\ndocs.github.com | QUOTE: \"For private repositories, each GitHub account receives a quota of free minutes, artifact storage, and cache storage for use with GitHub-hosted runners, depending on the account's plan.\" | CLAIM: Private repositories have a quota of free minutes and storage based on the account's plan.\n\nThe following table summarizes the free monthly quotas for private repositories, which reset at the start of each billing cycle.\n\n**Free Monthly Quotas for Private Repositories:**\ndocs.github.com | QUOTE: \"| GitHub Free | 500 MB | 2,000 | 10 GB |\" | CLAIM: The GitHub Free plan includes 500 MB of artifact storage, 2,000 minutes, and 10 GB of cache storage per month.\ndocs.github.com | QUOTE: \"| GitHub Pro | 1 GB | 3,000 | 10 GB |\" | CLAIM: The GitHub Pro plan includes 1 GB of artifact storage, 3,000 minutes, and 10 GB of cache storage per month.\ndocs.github.com | QUOTE: \"| GitHub Team | 2 GB | 3,000 | 10 GB |\" | CLAIM: The GitHub Team plan includes 2 GB of artifact storage, 3,000 minutes, and 10 GB of cache storage per month.\ndocs.github.com | QUOTE: \"| GitHub Enterprise Cloud | 50 GB | 50,000 | 10 GB |\" | CLAIM: The GitHub Enterprise Cloud plan includes 50 GB of artifact storage, 50,000 minutes, and 10 GB of cache storage per month.\n\nIt's important to note that self-hosted runners are always free to use, regardless of the repository visibility.\n\ndocs.github.com | QUOTE: \"GitHub Actions usage is free for self-hosted runners\" | CLAIM: Using self-hosted runners is free for both public and private repositories.\n\nRegarding concurrency limits for GitHub-hosted runners, these are the job limits for standard runners on the Free plan:\n\ndocs.github.com | QUOTE: \"| Standard GitHub-hosted runner | Free | 20 | 5 | Not applicable |\" | CLAIM: The Free plan allows for a total of 20 concurrent jobs, with a maximum of 5 concurrent macOS jobs.\n\nNO_SOURCE_FOUND: A specific source confirming that the concurrency limits for standard GitHub-hosted runners on public repositories are the same as for private repositories (i.e., the plan-based limits apply to both). The documentation clearly states that usage is \"free and unlimited\" for public repos, but it is ambiguous whether this \"unlimited\" applies to concurrency or only to minute/storage costs. The concurrency table does not specify repository visibility.",
+  "usage": {
+   "prompt_tokens": 2652,
+   "completion_tokens": 680,
+   "total_tokens": 3332,
+   "cost": 0.00839604,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00139604,
+    "upstream_inference_prompt_cost": 0.00071604,
+    "upstream_inference_completions_cost": 0.00068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791405595-surVBD6ew7QAsD2iCIVS"
+ },
+ "ts": "2026-10-07T20:40:26.052397+00:00"
+}

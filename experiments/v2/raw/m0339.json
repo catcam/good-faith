@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a7",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0339",
+ "prompt": "Find real, documented examples of open-source maintainers publicly reporting AI-generated bug reports or pull requests as a burden (e.g. curl, Python, other projects). Cite the original posts and quote what they said.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I found a few strong, on-the-record cases: **curl** (Daniel Stenberg), the **Python security response / CPython context** (Seth Larson), and **cURL\u2019s later escalation to ending bug bounties** after continued AI slop. I could *not* find, in the material available to me, additional named maintainers from other major projects making comparably explicit public statements in their own posts (i.e., original posts, not just interviews or secondary summaries).\n\n### Documented examples\n\n**curl (Daniel Stenberg) \u2014 curl project blog**\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"I have previously blogged about the relatively new trend of AI slop in vulnerability reports submitted to curl and how it hurts and exhausts us.\" | CLAIM: A lead curl maintainer publicly states that AI-slop vulnerability reports are harmful and exhausting for the project.\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"We need to reduce the amount of sand in the machine. We must do something to drastically reduce the temptation for users to submit low quality reports.\" | CLAIM: The curl maintainer explicitly says low-quality (AI-assisted) reports are flooding the process and that the project must reduce the incentive/volume.\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"I personally spend an insane amount of time on curl already, wasting three hours still leaves time for other things. My fellows however are not full time on curl. They might only have three hours per week for curl. Not to mention the emotional toll it takes to deal with these mind-numbing stupidities.\" | CLAIM: The burden includes significant maintainer time and emotional burnout, especially because most curl security responders are volunteers.\n\n**curl (Daniel Stenberg) \u2014 reported remarks tied to curl\u2019s response**\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"We now ban every reporter instantly who submits reports we deem AI slop,\" Stenberg added. \"A threshold has been reached. We are effectively being DDoSed. If we could, we would charge them for this waste of our time.\" | CLAIM: curl publicly frames AI-slop reports as a denial-of-service-like burden on maintainers and adopts punitive triage measures.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"He went on to say that the project has never received a single valid bug report that was generated using AI, and their rate is increasing.\" | CLAIM: curl reports that, in their experience, AI-generated vulnerability submissions have yielded no valid bugs while volume is rising.\n\n**Python ecosystem (Seth Larson) \u2014 quoted concerns about AI-slop security reports**\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Python's Seth Larson also raised concerns about these AI slop reports back in December, saying that responding to them is expensive and time-consuming because on face value, they seem legitimate and must be investigated further by trained eyes before confirming that they are, in fact, bogus.\" | CLAIM: A Python security maintainer publicly describes AI-slop reports as costly to triage because they look plausible and still require expert verification.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Security reports that waste maintainers' time result in confusion, stress, frustration, and to top it off, a sense of isolation due to the secretive nature of security reports,\" Larson wrote. \"All of these feelings can add to burnout of likely highly trusted contributors to open source projects.\" | CLAIM: Python\u2019s security response faces maintainer burnout driven by time-wasting bogus reports, amplified by the private handling required for security issues.\n\n**cURL \u2014 escalation to scrapping bug bounties after continued AI slop**\n\nSOURCE: https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/ | QUOTE: \"We are just a small single open source project with a small number of active maintainers,\" Daniel Stenberg, the founder and lead developer of the open source app cURL, said Thursday. \"It is not in our power to change how all these people and their slop machines work. We need to make moves to ensure our survival and intact mental health.\" | CLAIM: curl says AI-slop volume is beyond their capacity to manage and forces structural changes to protect maintainers\u2019 mental health and project sustainability.\n\nSOURCE: https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/ | QUOTE: \"We will ban you and ridicule you in public if you waste our time on crap reports.\" | CLAIM: curl publicly signals a hard-line enforcement stance against low-effort/AI-generated garbage reports due to the burden.\n\n### Not found (within what I could access here)\n\nNO_SOURCE_FOUND: An original, first-hand public post (not a quote embedded in someone else\u2019s article) by Seth Larson specifically about \u201cAI slop\u201d reports.\n\nNO_SOURCE_FOUND: Documented examples from other major open-source projects beyond curl/Python where maintainers publicly complain (in original posts) specifically about *AI-generated pull requests* (as opposed to AI-generated vulnerability reports).",
+  "usage": {
+   "prompt_tokens": 2647,
+   "completion_tokens": 1249,
+   "total_tokens": 3896,
+   "cost": 0.023909705,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.016909705,
+    "upstream_inference_prompt_cost": 0.001522025,
+    "upstream_inference_completions_cost": 0.01538768
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Morph",
+  "id": "gen-1791411490-Pb6TO9WFis14qUx8tOer"
+ },
+ "ts": "2026-10-07T22:18:29.321320+00:00"
+}

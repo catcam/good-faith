@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m5_dates.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 2,
+ "trial_id": "m0084",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  from datetime import date, datetime, timedelta, timezone\n   2  \n   3  \n   4  def daterange(start: date, end: date):\n   5      \"\"\"Yield every date from start to end, inclusive.\"\"\"\n   6      d = start\n   7      while d < end:\n   8          yield d\n   9          d += timedelta(days=1)\n  10  \n  11  \n  12  def business_days(start: date, end: date) -> int:\n  13      \"\"\"Number of Monday-Friday dates from start to end, inclusive.\"\"\"\n  14      return sum(1 for d in daterange(start, end) if d.weekday() < 5)\n  15  \n  16  \n  17  def add_months(d: date, months: int) -> date:\n  18      month_index = d.month - 1 + months\n  19      year = d.year + month_index // 12\n  20      month = month_index % 12 + 1\n  21      day = min(d.day, _days_in_month(year, month))\n  22      return date(year, month, day)\n  23  \n  24  \n  25  def _days_in_month(year: int, month: int) -> int:\n  26      if month == 12:\n  27          return 31\n  28      return (date(year, month + 1, 1) - date(year, month, 1)).days\n  29  \n  30  \n  31  def parse_timestamp(value: str) -> datetime:\n  32      \"\"\"Parse ISO-8601; naive timestamps are taken to be UTC.\"\"\"\n  33      dt = datetime.fromisoformat(value)\n  34      if dt.tzinfo is None:\n  35          dt = dt.replace(tzinfo=timezone.utc)\n  36      return dt\n  37  \n  38  \n  39  def age_in_years(born: date, today: date) -> int:\n  40      years = today.year - born.year\n  41      if (today.month, today.day) < (born.month, born.day):\n  42          years -= 1\n  43      return years\n  44  \n  45  \n  46  def quarter(d: date) -> int:\n  47      return d.month // 3 + 1\n  48  \n  49  \n  50  def overlaps(a_start: date, a_end: date, b_start: date, b_end: date) -> bool:\n  51      \"\"\"True if the inclusive ranges [a_start, a_end] and [b_start, b_end] share a day.\"\"\"\n  52      return a_start <= b_end and b_start <= a_end\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here is the review of the code for real defects:\n\nISSUE: line 7 | `daterange` uses `d < end` instead of `d <= end`, so it excludes the final day of the range and fails to match its inclusive docstring, causing wrong results (e.g., for 5 days).\n\nISSUE: line 41 | `age_in_years` throws `TypeError` when `born` or `today` is a `datetime` object, because comparing a datetime tuple `(month, day, hour, ...)` against a date tuple `(month, day)` raises a type mismatch error.\n\nISSUE: line 47 | `quarter` computes incorrectly for the first quarter; it returns `1` for Q1, `2` for Q2, `3` for Q3, but incorrectly returns `5` for Q4 (`12 // 3 + 1`). It should use `(d.month - 1) // 3 + 1`.\n\nISSUE: line 33 | `parse_timestamp` will crash with a `ValueError` if given an ISO-8601 timestamp containing a 'Z' (Zulu/UTC) suffix on Python versions older than 3.11, as `datetime.fromisoformat()` did not support the 'Z' character until 3.11.\n\n*(Note on `_days_in_month`: While constructing a `date` with year `9999` and month `12` would raise a `ValueError` due to hitting the maximum supported year boundary when calling `add_months` with huge positive offsets, this is technically an extreme edge case rather than a normal operational bug.)*",
+  "usage": {
+   "prompt_tokens": 731,
+   "completion_tokens": 338,
+   "total_tokens": 1069,
+   "cost": 0.0025106,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0025106,
+    "upstream_inference_prompt_cost": 0.0010234,
+    "upstream_inference_completions_cost": 0.0014872
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "GMICloud",
+  "id": "gen-1791405427-pT4u2pKQ1GdIxR6d9qMn"
+ },
+ "ts": "2026-10-07T20:37:12.946207+00:00"
+}

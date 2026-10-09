@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m1_lru_cache.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 2,
+ "trial_id": "m0083",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  from collections import OrderedDict\n   2  from typing import Any, Callable, Hashable\n   3  \n   4  \n   5  class LRUCache:\n   6      \"\"\"Least-recently-used cache with a fixed maximum size.\"\"\"\n   7  \n   8      def __init__(self, maxsize: int = 128):\n   9          if maxsize < 1:\n  10              raise ValueError(\"maxsize must be at least 1\")\n  11          self.maxsize = maxsize\n  12          self.data = OrderedDict()\n  13          self.hits = 0\n  14          self.misses = 0\n  15  \n  16      def get(self, key: Hashable, default: Any = None) -> Any:\n  17          if key in self.data:\n  18              self.hits += 1\n  19              return self.data[key]\n  20          self.misses += 1\n  21          return default\n  22  \n  23      def put(self, key: Hashable, value: Any) -> None:\n  24          if key in self.data:\n  25              self.data.move_to_end(key)\n  26          self.data[key] = value\n  27          if len(self.data) > self.maxsize:\n  28              self.data.popitem(last=False)\n  29  \n  30      def delete(self, key: Hashable) -> bool:\n  31          if key in self.data:\n  32              del self.data[key]\n  33              return True\n  34          return False\n  35  \n  36      def clear(self) -> None:\n  37          self.data.clear()\n  38          self.hits = 0\n  39          self.misses = 0\n  40  \n  41      def hit_rate(self) -> float:\n  42          total = self.hits + self.misses\n  43          return self.hits / total\n  44  \n  45      def __len__(self) -> int:\n  46          return len(self.data)\n  47  \n  48      def __contains__(self, key: Hashable) -> bool:\n  49          return key in self.data\n  50  \n  51  \n  52  def cached(maxsize: int = 128) -> Callable:\n  53      \"\"\"Decorator memoizing a function of positional, hashable arguments.\"\"\"\n  54      def wrap(fn: Callable) -> Callable:\n  55          cache = LRUCache(maxsize)\n  56  \n  57          def inner(*args):\n  58              result = cache.get(args)\n  59              if result is None:\n  60                  result = fn(*args)\n  61                  cache.put(args, result)\n  62              return result\n  63  \n  64          inner.cache = cache\n  65          return inner\n  66      return wrap\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Looking at this code carefully, I can identify several real defects:\n\n**1. LRU recency not updated on `get`** \u2014 The whole point of an LRU cache is that accessing an item marks it as recently used. In `LRUCache.get`, when a key is found, the code just returns the value without calling `move_to_end`. This means frequently-read items can still be evicted as if they were stale, producing wrong eviction behavior. (`put` does the right thing via `move_to_end`, but `get` does not.)\n\n**2. `hit_rate` divides by zero** \u2014 If `hit_rate()` is called before any `get`/`put` activity (or right after `clear`), `total` is 0 and `self.hits / total` raises `ZeroDivisionError`.\n\n**3. `cached` cannot memoize functions that return `None`** \u2014 `inner` uses `result = cache.get(args)` with the default of `None`, then tests `if result is None` to decide whether it was a miss. If the wrapped function legitimately returns `None`, every call is treated as a miss: the function is re-invoked each time and the `hits`/`misses` counters are wrong. The standard fix is to use a sentinel object as the default and compare against it.\n\nISSUE: line 19 | `get` does not call `self.data.move_to_end(key)` on a hit, so accessed entries are not marked recently-used and the cache is not truly LRU.\nISSUE: line 43 | `hit_rate` raises `ZeroDivisionError` when `self.hits + self.misses == 0` (e.g., on a fresh or freshly-cleared cache).\nISSUE: line 59 | Using `None` as both the cache-miss sentinel and a legitimate cached value means functions returning `None` are never memoized; a sentinel should be used instead.",
+  "usage": {
+   "prompt_tokens": 755,
+   "completion_tokens": 1595,
+   "total_tokens": 2350,
+   "cost": 0.0072675,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0072675,
+    "upstream_inference_prompt_cost": 0.0009513,
+    "upstream_inference_completions_cost": 0.0063162
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1191,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "AtlasCloud",
+  "id": "gen-1791405405-B7xYwnLy65sEtEc5CDiT"
+ },
+ "ts": "2026-10-07T20:37:06.647462+00:00"
+}

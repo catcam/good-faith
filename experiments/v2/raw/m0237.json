@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a2",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0237",
+ "prompt": "Research what the Python Software Foundation or the CPython developers have officially said about the performance impact of the free-threaded (no-GIL) build. Cite the PEP or documentation page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, both PEP 703 (the original proposal) and PEP 779 (the criteria for supported status) contain official statements from the CPython developers and the Steering Council regarding the performance impact of the free-threaded (no-GIL) build. Additionally, the official Python 3.14 documentation provides current benchmarks.\n\nHere are the specific findings:\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"The changes to make CPython thread-safe without the GIL increase execution overhead for --disable-gil builds.\" | CLAIM: The no-GIL build inherently introduces execution overhead compared to the default build.\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"On the pyperformance benchmark suite, the average overhead ranges from about 1% on macOS aarch64 to 8% on x86-64 Linux systems.\" | CLAIM: The specific performance overhead for single-threaded execution in the free-threaded build varies by hardware but currently ranges from 1% to 8%.\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"At this point we\u2019re expecting a (worst case) performance penalty of 10-15%.\" | CLAIM: The Steering Council officially expects a worst-case performance penalty of 10-15% for the free-threaded build.\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"The performance impact should be isolated to a free-threaded build; a GIL build should not see any performance impact in existing code.\" | CLAIM: The performance overhead will only affect the free-threaded build, and the default GIL-enabled build will not suffer performance regressions.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"the performance penalty on linear performance, comparing a free-threaded build against a with-GIL build, as measured by the pyperformance benchmarks (for example as run by Microsoft\u2019s Faster CPython team, or Meta\u2019s Python Runtime team), is currently around 10% (except on macOS, where it\u2019s more like 3%).\" | CLAIM: As of PEP 779, the measured linear performance penalty is around 10% on Linux/Windows and 3% on macOS.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"We propose a target of 20% (geometric mean, as measured by pyperformance) for phase II.\" | CLAIM: The CPython developers have officially proposed a maximum acceptable memory overhead target of 20% for the free-threaded build.\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"The free-threaded build will typically use more memory compared to the default build.\" | CLAIM: The official documentation acknowledges that the free-threaded build has higher memory usage than the default build.",
+  "usage": {
+   "prompt_tokens": 2573,
+   "completion_tokens": 665,
+   "total_tokens": 3238,
+   "cost": 0.01320179,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00620179,
+    "upstream_inference_prompt_cost": 0.00342209,
+    "upstream_inference_completions_cost": 0.0027797
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791409181-G1ztXS4QfDgVs4ivFEkQ"
+ },
+ "ts": "2026-10-07T21:39:51.045957+00:00"
+}

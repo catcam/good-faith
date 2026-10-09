@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m1_lru_cache.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0133",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  from collections import OrderedDict\n   2  from typing import Any, Callable, Hashable\n   3  \n   4  \n   5  class LRUCache:\n   6      \"\"\"Least-recently-used cache with a fixed maximum size.\"\"\"\n   7  \n   8      def __init__(self, maxsize: int = 128):\n   9          if maxsize < 1:\n  10              raise ValueError(\"maxsize must be at least 1\")\n  11          self.maxsize = maxsize\n  12          self.data = OrderedDict()\n  13          self.hits = 0\n  14          self.misses = 0\n  15  \n  16      def get(self, key: Hashable, default: Any = None) -> Any:\n  17          if key in self.data:\n  18              self.hits += 1\n  19              return self.data[key]\n  20          self.misses += 1\n  21          return default\n  22  \n  23      def put(self, key: Hashable, value: Any) -> None:\n  24          if key in self.data:\n  25              self.data.move_to_end(key)\n  26          self.data[key] = value\n  27          if len(self.data) > self.maxsize:\n  28              self.data.popitem(last=False)\n  29  \n  30      def delete(self, key: Hashable) -> bool:\n  31          if key in self.data:\n  32              del self.data[key]\n  33              return True\n  34          return False\n  35  \n  36      def clear(self) -> None:\n  37          self.data.clear()\n  38          self.hits = 0\n  39          self.misses = 0\n  40  \n  41      def hit_rate(self) -> float:\n  42          total = self.hits + self.misses\n  43          return self.hits / total\n  44  \n  45      def __len__(self) -> int:\n  46          return len(self.data)\n  47  \n  48      def __contains__(self, key: Hashable) -> bool:\n  49          return key in self.data\n  50  \n  51  \n  52  def cached(maxsize: int = 128) -> Callable:\n  53      \"\"\"Decorator memoizing a function of positional, hashable arguments.\"\"\"\n  54      def wrap(fn: Callable) -> Callable:\n  55          cache = LRUCache(maxsize)\n  56  \n  57          def inner(*args):\n  58              result = cache.get(args)\n  59              if result is None:\n  60                  result = fn(*args)\n  61                  cache.put(args, result)\n  62              return result\n  63  \n  64          inner.cache = cache\n  65          return inner\n  66      return wrap\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here is a review of the bugs found in the code:\n\nISSUE: line 19 | The `get` method does not update the recency of the accessed key. It checks for the key and returns its value but fails to call `self.data.move_to_end(key)`, breaking the core LRU (Least Recently Used) eviction policy. Recently accessed items will not be promoted and could be evicted prematurely.\n\nISSUE: line 43 | The `hit_rate` method raises a `ZeroDivisionError` if called when the cache has recorded zero total accesses (`self.hits + self.misses == 0`).\n\nISSUE: line 59 | The `cached` decorator incorrectly checks for a cache miss by testing `if result is None`. If the function `fn` legitimately returns `None` for some arguments, it will be treated as a miss and the function will be re-executed on every subsequent call with those arguments, defeating the purpose of the cache. It should check against a unique sentinel object instead.",
+  "usage": {
+   "prompt_tokens": 748,
+   "completion_tokens": 208,
+   "total_tokens": 956,
+   "cost": 0.00177868,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00177868,
+    "upstream_inference_prompt_cost": 0.00090508,
+    "upstream_inference_completions_cost": 0.0008736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Phala",
+  "id": "gen-1791406392-NNHUK2IS5ew4q12k1keR"
+ },
+ "ts": "2026-10-07T20:53:25.620221+00:00"
+}

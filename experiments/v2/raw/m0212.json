@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a2",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0212",
+ "prompt": "Research what the Python Software Foundation or the CPython developers have officially said about the performance impact of the free-threaded (no-GIL) build. Cite the PEP or documentation page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the provided search results, here are the official statements from the Python Software Foundation and CPython developers regarding the performance impact of the free-threaded (no-GIL) build.\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"The free-threaded build has additional overhead when executing Python code compared to the default GIL-enabled build.\" | CLAIM: Official Python documentation acknowledges that the free-threaded build incurs a performance overhead compared to the default GIL-enabled build.\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"On the pyperformance benchmark suite, the average overhead ranges from about 1% on macOS aarch64 to 8% on x86-64 Linux systems.\" | CLAIM: Official Python documentation quantifies the single-threaded execution overhead of the free-threaded build as ranging from 1% to 8% depending on the hardware.\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"The changes to make CPython thread-safe without the GIL increase execution overhead for --disable-gil builds.\" | CLAIM: PEP 703 states that the internal changes required to make CPython thread-safe without the GIL inherently increase execution overhead.\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"For thread-safety reasons, an application running with multiple threads will only specialize a given bytecode once; this is why the overhead for programs that use multiple threads is larger compared to programs that only use one thread.\" | CLAIM: PEP 703 explains that multi-threaded programs have larger execution overhead than single-threaded ones due to bytecode specialization restrictions.\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"The largest contribution to execution overhead is biased reference counting followed by per-object locking.\" | CLAIM: PEP 703 identifies biased reference counting and per-object locking as the primary factors contributing to the execution overhead.\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"Note that this PEP would not affect the performance of the default (non --disable-gil) builds of CPython.\" | CLAIM: PEP 703 asserts that the performance impact is strictly isolated to the free-threaded build, and standard GIL-enabled builds will not be affected.\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"At this point we\u2019re expecting a (worst case) performance penalty of 10-15%.\" | CLAIM: The Steering Council's acceptance of PEP 703 outlines an expected worst-case performance penalty of 10% to 15% for the free-threaded build.\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"The performance impact should be isolated to a free-threaded build; a GIL build should not see any performance impact in existing code.\" | CLAIM: The Steering Council mandates that any performance impact must be confined to the free-threaded build, ensuring existing GIL builds suffer no regressions.\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"The performance penalty on linear performance, comparing a free-threaded build against a with-GIL build, as measured by the pyperformance benchmarks (for example as run by Microsoft\u2019s Faster CPython team, or Meta\u2019s Python Runtime team), is currently around 10% (except on macOS, where it\u2019s more like 3%).\" | CLAIM: PEP 779 reports that current single-threaded performance penalties hover around 10% on Linux/Windows and 3% on macOS.\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"Free-threaded Python currently sees about 15-20% higher memory use (geometric mean, as measured by pyperformance).\" | CLAIM: PEP 779 reports the memory use overhead of the free-threaded build to be approximately 15-20% higher than the with-GIL build.\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"We propose a target of 20% (geometric mean, as measured by pyperformance) for phase II.\" | CLAIM: PEP 779 proposes a hard target of a maximum 20% memory use overhead for the officially supported \"Phase II\" stage of free-threading.\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"we propose 15% as a hard performance target.\" | CLAIM: PEP 779 proposes a hard performance target allowing for a maximum 15% slowdown for the officially supported \"Phase II\" stage of free-threading.\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"Realistically, though, higher memory use is the cost of having efficient, safe free-threading, and we are unlikely to get this very close to the with-GIL build\u2019s memory use without significant performance cost.\" | CLAIM: PEP 779 acknowledges that higher memory usage is an unavoidable cost for safe and efficient free-threading, and that minimizing it would significantly hurt CPU performance.",
+  "usage": {
+   "prompt_tokens": 2547,
+   "completion_tokens": 1151,
+   "total_tokens": 3698,
+   "cost": 0.0156302,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0086302,
+    "upstream_inference_prompt_cost": 0.0035658,
+    "upstream_inference_completions_cost": 0.0050644
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Baidu",
+  "id": "gen-1791408707-m58SoYT82BSmSvOe4ViD"
+ },
+ "ts": "2026-10-07T21:32:02.811141+00:00"
+}

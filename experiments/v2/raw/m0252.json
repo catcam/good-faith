@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a6",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0252",
+ "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the web search results, the Home Assistant project has published two distinct sets of figures regarding active installations and analytics. The analytics platform page provides the current real-time count of active installations sharing data, while the 2025 State of the Open Home blog post provides an official milestone for total estimated active installations in 2024.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"695,026 Active Home Assistant Installations\" | CLAIM: As of the data snapshot, there are 695,026 active Home Assistant installations reporting to the analytics system.\nSOURCE: https://analytics.home-assistant.io/statistics/ | QUOTE: \"496,813 of 637,194 (77.97%) installations have chosen to share usage statistics\" | CLAIM: Out of 637,194 installations, 496,813 (77.97%) have opted in to share their usage statistics.\nSOURCE: https://www.home-assistant.io/blog/2025/04/16/state-of-the-open-home-recap/ | QUOTE: \"One big announcement Franck made was that this year we went from 1 million to over 2 million active installations in 2024!\" | CLAIM: The official number of total active Home Assistant installations grew to over 2 million in 2024.",
+  "usage": {
+   "prompt_tokens": 1058,
+   "completion_tokens": 276,
+   "total_tokens": 1334,
+   "cost": 0.0096956,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0026956,
+    "upstream_inference_prompt_cost": 0.0014812,
+    "upstream_inference_completions_cost": 0.0012144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Z.AI",
+  "id": "gen-1791409513-EJUGeRqRFghndDm7REqr"
+ },
+ "ts": "2026-10-07T21:45:26.129158+00:00"
+}

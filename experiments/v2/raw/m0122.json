@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0122",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I researched the official GitHub documentation to identify the free-tier limits for GitHub Actions. Below are the findings, followed by the required citation lines.\n\n**Key findings:**\n\nFor **public repositories**, standard GitHub-hosted runners are completely free and unlimited. For **private repositories**, the free tier provides a monthly quota of minutes (2,000 for Free plans), artifact storage (500 MB), and cache storage (10 GB per repository), with concurrency limits ranging from 20 to 40 concurrent jobs depending on whether the account is Free or Pro.\n\nHere are the cited sources in the required format:\n\nSOURCE: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions | QUOTE: \"GitHub Actions usage is free for self-hosted runners and for public repositories that use standard GitHub-hosted runners.\" | CLAIM: Standard GitHub-hosted runners are free for public repositories.\n\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"| GitHub Free | 500 MB | 2,000 | 10 GB | Not applicable |\" | CLAIM: The GitHub Free plan includes 500 MB of artifact storage, 2,000 minutes per month, and 10 GB of cache storage.\n\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"| Standard GitHub-hosted runner | Free | 20 | 5 | Not applicable |\" | CLAIM: The Free plan allows a maximum of 20 total concurrent jobs (with a limit of 5 for macOS jobs).\n\nSOURCE: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions | QUOTE: \"For private repositories, each GitHub account receives a quota of free minutes, artifact storage, and cache storage for use with GitHub-hosted runners, depending on the account's plan.\" | CLAIM: Private repositories receive free tier quotas for minutes, artifact storage, and cache storage based on the account plan.\n\nSOURCE: https://docs.github.com/en/actions/reference/runners/github-hosted-runners | QUOTE: \"Use of the standard GitHub-hosted runners is free and unlimited on public repositories.\" | CLAIM: Standard GitHub-hosted runners are both free and unlimited for public repositories.",
+  "usage": {
+   "prompt_tokens": 2598,
+   "completion_tokens": 464,
+   "total_tokens": 3062,
+   "cost": 0.01434324,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00734324,
+    "upstream_inference_prompt_cost": 0.001964088,
+    "upstream_inference_completions_cost": 0.005379152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Morph",
+  "id": "gen-1791406178-e1KnTabDSgF2FsbwmS9j"
+ },
+ "ts": "2026-10-07T20:49:48.712212+00:00"
+}

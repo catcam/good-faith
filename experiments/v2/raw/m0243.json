@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m3_config.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 2,
+ "trial_id": "m0243",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import json\n   2  import os\n   3  from pathlib import Path\n   4  \n   5  DEFAULTS = {\n   6      \"host\": \"127.0.0.1\",\n   7      \"port\": 8080,\n   8      \"debug\": False,\n   9      \"workers\": 4,\n  10      \"allowed_origins\": [],\n  11  }\n  12  \n  13  \n  14  def _coerce(value: str, like):\n  15      \"\"\"Convert an environment string to the type of the default value.\"\"\"\n  16      if isinstance(like, bool):\n  17          return bool(value)\n  18      if isinstance(like, int):\n  19          return int(value)\n  20      if isinstance(like, list):\n  21          return [v.strip() for v in value.split(\",\") if v.strip()]\n  22      return value\n  23  \n  24  \n  25  def load_config(path: str = None, env_prefix: str = \"APP_\") -> dict:\n  26      config = DEFAULTS\n  27      if path:\n  28          p = Path(path)\n  29          if p.exists():\n  30              with p.open() as f:\n  31                  config.update(json.load(f))\n  32      for key, default in DEFAULTS.items():\n  33          env_key = env_prefix + key.upper()\n  34          if env_key in os.environ:\n  35              config[key] = _coerce(os.environ[env_key], default)\n  36      validate(config)\n  37      return config\n  38  \n  39  \n  40  def validate(config: dict) -> None:\n  41      unknown = set(config) - set(DEFAULTS)\n  42      if unknown:\n  43          raise ValueError(f\"unknown config keys: {sorted(unknown)}\")\n  44      if not (0 < config[\"port\"] < 65536):\n  45          raise ValueError(\"port out of range\")\n  46      if config[\"workers\"] < 1:\n  47          raise ValueError(\"workers must be at least 1\")\n  48  \n  49  \n  50  def dump_config(config: dict, path: str) -> None:\n  51      tmp = Path(path).with_suffix(\".tmp\")\n  52      with tmp.open(\"w\") as f:\n  53          json.dump(config, f, indent=2, sort_keys=True)\n  54      os.replace(tmp, path)\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here is a review of the bugs found in the code:\n\nISSUE: line 17 | `bool(value)` does not parse string environment variables correctly; any non-empty string (including `\"False\"`, `\"0\"`) evaluates to `True`, so the debug flag will almost always be set to True if the environment variable is present.\nISSUE: line 26 | `config = DEFAULTS` creates an alias to the global dictionary rather than a copy, so subsequent `config.update()` (line 31) and `config[key] = ...` (line 35) mutations permanently modify the shared `DEFAULTS`, causing state to leak across multiple calls.\nISSUE: line 33 | `key.upper()` breaks matching for keys containing underscores (like `allowed_origins`), transforming them into `ALLOWED_ORIGINS`, which fails to match the intended `APP_ALLOWED_ORIGINS` environment variable convention (uppercasing does not add the missing underscore).\nISSUE: line 54 | `os.replace(tmp, path)` raises a `TypeError` because `path` is a string while `tmp` is a `pathlib.Path` object; they must both be the same type (either both strings or both Path objects).",
+  "usage": {
+   "prompt_tokens": 681,
+   "completion_tokens": 251,
+   "total_tokens": 932,
+   "cost": 0.00174913,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00174913,
+    "upstream_inference_prompt_cost": 0.00081039,
+    "upstream_inference_completions_cost": 0.00093874
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791409369-zvwBxAszrBp9TH32sl57"
+ },
+ "ts": "2026-10-07T21:43:00.121799+00:00"
+}

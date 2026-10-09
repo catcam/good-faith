@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m6_sessions.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 2,
+ "trial_id": "m0127",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import hashlib\n   2  import hmac\n   3  import secrets\n   4  import time\n   5  \n   6  SESSION_TTL = 3600\n   7  \n   8  \n   9  class SessionStore:\n  10      def __init__(self, secret: bytes):\n  11          self.secret = secret\n  12          self.sessions = {}\n  13  \n  14      def _sign(self, session_id: str) -> str:\n  15          mac = hmac.new(self.secret, session_id.encode(), hashlib.sha256).hexdigest()\n  16          return f\"{session_id}.{mac}\"\n  17  \n  18      def create(self, user_id: str) -> str:\n  19          session_id = secrets.token_urlsafe(32)\n  20          self.sessions[session_id] = {\"user_id\": user_id, \"created\": time.time()}\n  21          return self._sign(session_id)\n  22  \n  23      def _verify(self, token: str):\n  24          session_id, _, mac = token.rpartition(\".\")\n  25          expected = hmac.new(self.secret, session_id.encode(), hashlib.sha256).hexdigest()\n  26          if mac != expected:\n  27              return None\n  28          return session_id\n  29  \n  30      def get_user(self, token: str):\n  31          session_id = self._verify(token)\n  32          if session_id is None:\n  33              return None\n  34          session = self.sessions.get(session_id)\n  35          if session is None:\n  36              return None\n  37          if time.time() - session[\"created\"] > SESSION_TTL:\n  38              del self.sessions[session_id]\n  39              return None\n  40          return session[\"user_id\"]\n  41  \n  42      def destroy(self, token: str) -> None:\n  43          session_id = self._verify(token)\n  44          if session_id is not None:\n  45              self.sessions.pop(session_id, None)\n  46  \n  47      def destroy_all_for(self, user_id: str) -> int:\n  48          doomed = [sid for sid, s in self.sessions.items() if s[\"user_id\"] == user_id]\n  49          for sid in doomed:\n  50              del self.sessions[sid]\n  51          return len(doomed)\n  52  \n  53  \n  54  def hash_password(password: str, salt: bytes = None) -> tuple:\n  55      salt = salt or secrets.token_bytes(16)\n  56      digest = hashlib.sha256(salt + password.encode()).hexdigest()\n  57      return salt, digest\n  58  \n  59  \n  60  def check_password(password: str, salt: bytes, digest: str) -> bool:\n  61      return hmac.compare_digest(hash_password(password, salt)[1], digest)\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here is a review of the defects found in the code:\n\nISSUE: line 26 | Timing attack vulnerability: using `!=` for MAC comparison instead of `hmac.compare_digest()`, allowing an attacker to forge tokens via timing side-channels.\nISSUE: line 54 | Insecure password hashing: using a single, fast SHA-256 iteration makes it trivial to crack passwords via brute-force or dictionary attacks; a dedicated key derivation function like `scrypt` or `argon2` is required.",
+  "usage": {
+   "prompt_tokens": 771,
+   "completion_tokens": 104,
+   "total_tokens": 875,
+   "cost": 0.00106053,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00106053,
+    "upstream_inference_prompt_cost": 0.000744786,
+    "upstream_inference_completions_cost": 0.000315744
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791406288-8HSw3T4yuDsIpOml7xR5"
+ },
+ "ts": "2026-10-07T20:51:31.991414+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0145",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results from GitHub's official documentation, here are the free-tier limits for GitHub Actions:\n\n**For Public Repositories:**\n- Standard GitHub-hosted runners are free and unlimited for public repositories\n- Usage includes free minutes, artifact storage, and cache storage without quotas\n- Larger runners are always charged, even for public repositories\n\n**For Private Repositories:**\nFree usage depends on your GitHub plan and includes monthly quotas that reset at the start of each billing cycle. Here are the key limits:\n\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"The following amounts of time for standard runners, artifact storage, and cache storage are included in your GitHub plan.\" | CLAIM: GitHub provides free tier limits for private repositories based on account plan\n\nSOURCE: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions | QUOTE: \"GitHub Free: 500 MB artifact storage, 2,000 minutes per month, 10 GB cache storage\" | CLAIM: Free plan includes limited monthly minutes and storage\n\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Pro: 1 GB artifact storage, 3,000 minutes per month, 10 GB cache storage\" | CLAIM: Pro plan includes higher free tier limits than Free plan\n\nSOURCE: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions | QUOTE: \"The artifact storage amounts shown are shared with GitHub Packages.\" | CLAIM: Storage allowance is shared between Actions artifacts and GitHub Packages\n\n**Concurrency Limits:**\n\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner | Free | 20 concurrent jobs\" | CLAIM: Free accounts have a concurrency limit of 20 jobs\n\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Free plan: Maximum concurrent macOS jobs: 5\" | CLAIM: Free accounts have a limit of 5 concurrent macOS jobs\n\n**Additional Notes:**\n- Self-hosted runners are always free for both public and private repositories\n- Cache storage is separate from artifact storage (10 GB per repository for all plans)\n- Larger runners are always paid, even for public repositories\n- Free minutes reset to the full amount at the start of each billing cycle\n\nNO_SOURCE_FOUND: Specific concurrency limits for public repositories (searches only showed limits for private repositories based on plans)",
+  "usage": {
+   "prompt_tokens": 2575,
+   "completion_tokens": 547,
+   "total_tokens": 3122,
+   "cost": 0.00824225,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00124225,
+    "upstream_inference_prompt_cost": 0.00069525,
+    "upstream_inference_completions_cost": 0.000547
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791406706-CMPMXdbFv8uJ2ijETvCD"
+ },
+ "ts": "2026-10-07T20:58:49.996386+00:00"
+}

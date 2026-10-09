@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m2_retry_client.py",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0371",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import random\n   2  import time\n   3  \n   4  import httpx\n   5  \n   6  RETRYABLE_STATUS = {429, 500, 502, 503, 504}\n   7  \n   8  \n   9  class RetryClient:\n  10      \"\"\"HTTP GET with exponential backoff and jitter.\"\"\"\n  11  \n  12      def __init__(self, max_attempts: int = 5, base_delay: float = 0.5, max_delay: float = 30.0,\n  13                   timeout: float = 10.0):\n  14          self.max_attempts = max_attempts\n  15          self.base_delay = base_delay\n  16          self.max_delay = max_delay\n  17          self.client = httpx.Client(timeout=timeout)\n  18  \n  19      def _delay(self, attempt: int, retry_after: str = None) -> float:\n  20          if retry_after is not None:\n  21              try:\n  22                  return min(max(0.0, float(retry_after)), self.max_delay)\n  23              except ValueError:\n  24                  pass\n  25          delay = self.base_delay * (2 ** attempt)\n  26          return min(delay, self.max_delay) * random.uniform(0.5, 1.0)\n  27  \n  28      def get(self, url: str, **kwargs) -> httpx.Response:\n  29          last_exc = None\n  30          for attempt in range(self.max_attempts):\n  31              try:\n  32                  resp = self.client.get(url, **kwargs)\n  33              except httpx.TransportError as exc:\n  34                  last_exc = exc\n  35                  time.sleep(self._delay(attempt))\n  36                  continue\n  37              if resp.status_code in RETRYABLE_STATUS:\n  38                  time.sleep(self._delay(attempt, resp.headers.get(\"Retry-After\")))\n  39                  continue\n  40              return resp\n  41          raise RuntimeError(f\"giving up on {url} after {self.max_attempts} attempts\") from last_exc\n  42  \n  43      def get_json(self, url: str, **kwargs):\n  44          resp = self.get(url, **kwargs)\n  45          return resp.json()\n  46  \n  47      def close(self) -> None:\n  48          self.client.close()\n  49  \n  50      def __enter__(self):\n  51          return self\n  52  \n  53      def __exit__(self, *exc):\n  54          self.close()\n  55          return True\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "After reviewing the code, I found several issues that could lead to incorrect behavior, resource leaks, or other problems:\n\nISSUE: line 22 | Potential ValueError when parsing retry_after: float() conversion should handle empty strings and invalid formats more robustly\nISSUE: line 25 | Attempt counter starts at 0, so 2**0 = 1, but the first retry should be attempt 1, not 0\nISSUE: line 35 | Transport errors are retried without checking if the status code indicates retryability\nISSUE: line 38 | Missing response consumption/closure before continuing retry loop, could cause connection pool exhaustion\nISSUE: line 40 | Missing response validation before returning - should check for successful status codes\nISSUE: line 41 | RuntimeError should include the specific exception that caused the failure\nISSUE: line 45 | Missing error handling for resp.json() - could raise JSONDecodeError on invalid responses\nISSUE: line 54 | __exit__ returns True, which suppresses all exceptions - should return False to propagate exceptions\n\nLet me explain the key issues:\n\n1. **Line 22**: The float() conversion could fail on empty strings or non-numeric values, but the except block only catches ValueError and continues without setting a proper delay.\n\n2. **Line 25**: The exponential backoff calculation uses `attempt` which starts at 0, making the first delay smaller than intended.\n\n3. **Line 35**: Transport errors (like connection failures) are always retried without considering whether they're actually retryable.\n\n4. **Line 38**: When retrying based on status codes, the response isn't properly consumed or closed, which could lead to connection pool exhaustion.\n\n5. **Line 45**: The `get_json` method doesn't handle cases where `resp.json()` might fail due to invalid JSON content.\n\n6. **Line 54**: Returning `True` from `__exit__` suppresses all exceptions, which is usually not the desired behavior for context managers.",
+  "usage": {
+   "prompt_tokens": 692,
+   "completion_tokens": 433,
+   "total_tokens": 1125,
+   "cost": 0.00058411,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058411,
+    "upstream_inference_prompt_cost": 0.00017276,
+    "upstream_inference_completions_cost": 0.00041135
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791412179-lfwyxAmhQrMu8TO7bKwJ"
+ },
+ "ts": "2026-10-07T22:31:20.518513+00:00"
+}

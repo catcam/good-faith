@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a7",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0255",
+ "prompt": "Find real, documented examples of open-source maintainers publicly reporting AI-generated bug reports or pull requests as a burden (e.g. curl, Python, other projects). Cite the original posts and quote what they said.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my web search results, I found several explicit and direct examples of open-source maintainers publicly discussing the burden of AI-generated submissions. The primary and most detailed examples come from Daniel Stenberg of the curl project and Seth Larson of the Python project. Here are the documented claims, presented in the requested format.\n\n**Explanation:**\nThe sources reveal a pattern where maintainers are spending significant time triaging low-quality, AI-generated reports (\"AI slop\") that are invalid. This is described as a drain on time and morale, especially for volunteer-driven open-source projects.\n\n**Documented Claims:**\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"I have previously blogged about the relatively new trend of AI slop in vulnerability reports submitted to curl and how it hurts and exhausts us.\" | CLAIM: The curl project maintainers are explicitly stating that AI-generated vulnerability reports are causing them exhaustion.\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"We need to reduce the amount of sand in the machine. We must do something to drastically reduce the temptation for users to submit low quality reports. Be it with AI or without AI.\" | CLAIM: The curl team views low-quality AI reports as a significant operational problem (\"sand in the machine\") that requires action.\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"Not to mention the emotional toll it takes to deal with these mind-numbing stupidities.\" | CLAIM: Dealing with these reports has a negative emotional impact on the security team members.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Stenberg said the amount of time it takes project maintainers to triage each AI-assisted vulnerability report made via HackerOne, only for them to be deemed invalid, is tantamount to a DDoS attack on the project.\" | CLAIM: The curl founder equates the volume of invalid AI reports to a DDoS attack due to the resource drain.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"He went on to say that the project has never received a single valid bug report that was generated using AI, and their rate is increasing.\" | CLAIM: All AI-generated reports submitted to curl have been invalid, and the number of such reports is growing.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"These concerns are not new. Python's Seth Larson also raised concerns about these AI slop reports back in December, saying that responding to them is expensive and time-consuming because on face value, they seem legitimate and must be investigated further by trained eyes before confirming that they are, in fact, bogus.\" | CLAIM: The Python project's security lead, Seth Larson, has publicly stated that AI reports are expensive and time-consuming to debunk because they appear legitimate initially.\n\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"'Security reports that waste maintainers' time result in confusion, stress, frustration, and to top it off, a sense of isolation due to the secretive nature of security reports,' Larson wrote. 'All of these feelings can add to burnout of likely highly trusted contributors to open source projects.'\" | CLAIM: Seth Larson explicitly links low-quality AI reports to negative emotions and contributor burnout.\n\nSOURCE: https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/ | QUOTE: \"\u201cWe are just a small single open source project with a small number of active maintainers,\u201d Daniel Stenberg, the founder and lead developer of the open source app cURL, said Thursday. \u201cIt is not in our power to change how all these people and their slop machines work. We need to make moves to ensure our survival and intact mental health.\u201d\" | CLAIM: The burden of AI slop led the curl project to end its bug bounty program to protect the maintainers' mental health.\n\n**No Source Found:**\nWhile the sources mention that the problem is not unique to curl and likely affects other projects (even mentioning FFmpeg in a general context), the search results did not contain specific, quotable public statements from maintainers of other major projects like FFmpeg, the Linux kernel, or Apache. The primary documented examples are from curl and Python.\n\nNO_SOURCE_FOUND: Specific public statements from maintainers of other major open-source projects (e.g., FFmpeg, Linux) detailing the burden of AI-generated PRs or bug reports.",
+  "usage": {
+   "prompt_tokens": 2661,
+   "completion_tokens": 1104,
+   "total_tokens": 3765,
+   "cost": 0.00882247,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00182247,
+    "upstream_inference_prompt_cost": 0.00071847,
+    "upstream_inference_completions_cost": 0.001104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791409549-0Qvh38umDRQzYu7GjLI8"
+ },
+ "ts": "2026-10-07T21:46:43.356828+00:00"
+}

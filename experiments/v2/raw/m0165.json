@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a8",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0165",
+ "prompt": "Research the officially documented context window and output token limits of the current Claude and GPT model families. Cite the vendors' own documentation pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "I've researched the Claude family limits using the provided web search results. For the GPT family, I did not conduct a new web search, so I must note that I lack fresh sources for those claims.\n\nBelow are the documented limits I can substantiate, followed by lines for what I could not find sources for.\n\n---\n\n**Claude Family (from provided search results)**\n\nThe current Claude model families have two tiers of context windows: 1M tokens for the newer/higher-tier models, and 200K tokens for older/smaller models. Maximum output tokens range from 128K down to 64K depending on the model.\n\nSOURCE: https://platform.claude.com/docs/en/build-with-claude/context-windows | QUOTE: \"Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, Claude Mythos 5, Claude Opus 5.5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 5.5, Claude Sonnet 5, Claude Sonnet 4.6, and Claude Mythos Preview have a 1M-token context window.\" | CLAIM: Many current Claude models have a 1M-token context window.\n\nSOURCE: https://platform.claude.com/docs/en/build-with-claude/context-windows | QUOTE: \"Other Claude models, including Claude Sonnet 4.5, have a 200k-token context window.\" | CLAIM: Some Claude models, including Sonnet 4.5, have a 200k-token context window.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"1M tokens is roughly 555k words or 2.5M Unicode characters on the current tokenizer (introduced with Claude Opus 4.7); models before it fit about 750k words in 1M tokens. 200k tokens is roughly 150k words.\" | CLAIM: Approximate word/character equivalents for 1M and 200k token context windows.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"On the Message Batches API, Claude Opus 5, Claude Sonnet 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, and Claude Sonnet 4.6 support up to 300k output tokens with the output-300k-2026-03-24 beta header.\" | CLAIM: Certain Claude models support up to 300K output tokens on the Batch API with a beta header.\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"Context window: 1M tokens \u00b7 Max output: 128K tokens \u00b7 Input pricing: $4 / MTok \u00b7 Output pricing: $20 / MTok\" | CLAIM: Claude Opus 5.5 has a 1M-token context window and 128K max output.\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"On the Message Batches API, Claude Opus 5.5 supports up to 300k output tokens with the output-300k-2026-03-24 beta header.\" | CLAIM: Claude Opus 5.5 supports 300K output tokens on the Batch API with a beta header.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Claude Haiku 4.5 \u2026 Context window: 200K tokens \u2026 Max output: 64K tokens\" | CLAIM: Claude Haiku 4.5 has a 200K context window and 64K max output.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Claude Sonnet 5 \u2026 Context window: 1M tokens \u2026 Max output: 128K tokens\" | CLAIM: Claude Sonnet 5 has a 1M context window and 128K max output.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Claude Opus 5 \u2026 Context window: 1M tokens \u2026 Max output: 128K tokens\" | CLAIM: Claude Opus 5 has a 1M context window and 128K max output.\n\nSOURCE: https://docs.anthropic.com/en/docs/about-claude/models | QUOTE: \"Claude Fable 5.1 \u2026 Context window: 1M tokens \u2026 Max output: 128K tokens\" | CLAIM: Claude Fable 5.1 has a 1M context window and 128K max output.\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"Claude Fable 5.1 | 1M | 128K | $10 / $50 | Slower | Adaptive (always on) | high | Jun 2026\" | CLAIM: Claude Fable 5.1 has a 1M context window and 128K max output (confirmed in another source).\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"Claude Haiku 5.5 | 1M | 128K | From $0.10 / $0.50 | Fastest | Adaptive | medium | Jun 2026\" | CLAIM: Claude Haiku 5.5 has a 1M context window and 128K max output.\n\nSOURCE: https://platform.claude.com/docs/en/models/opus-5-5/overview | QUOTE: \"Claude Sonnet 5.5 | 1M | 128K | $2 / $10 | Fast | Adaptive | high | Jun 2026\" | CLAIM: Claude Sonnet 5.5 has a 1M context window and 128K max output.\n\n---\n\n**GPT Family (no search conducted)**\n\nNO_SOURCE_FOUND: Official OpenAI documentation pages for the context window and max output token limits of GPT-4o, GPT-4 Turbo, GPT-4, GPT-4o mini, and o1/o3 family models. (I did not perform a web search for these, so I cannot cite or quote vendor documentation. From general knowledge I believe GPT-4o has a 128K context window and 16K max output, and GPT-4 Turbo has 128K context / 4K max output, but I cannot substantiate these with sourced quotes per the required format.)",
+  "usage": {
+   "prompt_tokens": 3238,
+   "completion_tokens": 1409,
+   "total_tokens": 4647,
+   "cost": 0.014405632,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.007405632,
+    "upstream_inference_prompt_cost": 0.003127908,
+    "upstream_inference_completions_cost": 0.004277724
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791407355-obvHQmGDtlz4c7x9IcEA"
+ },
+ "ts": "2026-10-07T21:09:33.826511+00:00"
+}

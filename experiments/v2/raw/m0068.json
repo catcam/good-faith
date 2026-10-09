@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a1",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0068",
+ "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here are documented post-mortems for major cloud outages in 2025 from AWS, Azure, and Cloudflare, based on the provided search results. I was unable to find a Google Cloud outage post-mortem in the provided data.\n\n**AWS DynamoDB Outage (October 19-20, 2025)**\n\nSOURCE: https://postmortem.io/incidents/aws--2025-10-19--dynamodb-dns-service-disruption-us-east-1/ | QUOTE: \"The incident stemmed from a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service\u2019s regional endpoint.\" | CLAIM: The root cause of the AWS DynamoDB service disruption was a race condition in the DNS management system.\n\n**Azure Front Door Outage (October 29-30, 2025)**\n\nSOURCE: https://postmortem.io/incidents/azure--2025-10-29--azure-front-door-global-connectivity-dns-issues/ | QUOTE: \"A specific sequence of customer configuration changes, performed across two different control plane build versions, resulted in incompatible customer configuration metadata being generated.\" | CLAIM: The root cause of the Azure Front Door global outage was incompatible customer configuration metadata generated across different control plane versions.\n\n**Cloudflare Outage (November 18, 2025)**\n\nSOURCE: https://blog.cloudflare.com/18-november-2025-outage/ | QUOTE: \"Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a \u201cfeature file\u201d used by our Bot Management system.\" | CLAIM: The root cause of the Cloudflare network outage was a database permissions change that caused an oversized feature file to propagate and crash the routing software.\n\n**Cloudflare Outage (December 5, 2025)**\n\nSOURCE: https://blog.cloudflare.com/5-december-2025-outage/ | QUOTE: \"Instead, it was triggered by changes being made to our body parsing logic while attempting to detect and mitigate an industry-wide vulnerability disclosed this week in React Server Components.\" | CLAIM: The root cause of the Cloudflare outage was an error triggered by changes to body parsing logic meant to mitigate a React Server Components vulnerability.\n\n**Cloudflare Dashboard and API Outage (September 12, 2025)**\n\nSOURCE: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/ | QUOTE: \"This bug caused repeated, unnecessary calls to the Tenant Service API.\" | CLAIM: The root cause of the Cloudflare dashboard and API outage was a bug causing repeated API calls that overwhelmed the Tenant Service.\n\n**Google Cloud**\n\nNO_SOURCE_FOUND: A 2025 post-mortem for a major Google Cloud outage",
+  "usage": {
+   "prompt_tokens": 2449,
+   "completion_tokens": 577,
+   "total_tokens": 3026,
+   "cost": 0.01291842,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00591842,
+    "upstream_inference_prompt_cost": 0.00337962,
+    "upstream_inference_completions_cost": 0.0025388
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Novita",
+  "id": "gen-1791404812-zoBmfFLVs30odxs5wOEJ"
+ },
+ "ts": "2026-10-07T20:27:15.771577+00:00"
+}

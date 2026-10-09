@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a1",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0266",
+ "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "I found several documented post-mortems for major cloud outages in 2025. Below are the sourced lines, followed by a summary table and notes on gaps.\n\n**SOURCE LINES**\n\nSOURCE: https://blog.cloudflare.com/18-november-2025-outage/ | QUOTE: \"The issue was not caused, directly or indirectly, by a cyber attack or malicious activity of any kind. Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a 'feature file' used by our Bot Management system. That feature file, in turn, doubled in size. The larger-than-expected feature file was then propagated to all the machines that make up our network.\" | CLAIM: Cloudflare attributes the root cause of the November 18, 2025 outage to a database permissions change that generated an oversized feature file, which exceeded software limits and caused traffic routing failures.\n\nSOURCE: https://blog.cloudflare.com/5-december-2025-outage/ | QUOTE: \"The issue was not caused, directly or indirectly, by a cyber attack on Cloudflare\u2019s systems or malicious activity of any kind. Instead, it was triggered by changes being made to our body parsing logic while attempting to detect and mitigate an industry-wide vulnerability disclosed this week in React Server Components.\" | CLAIM: Cloudflare attributes the root cause of the December 5, 2025 outage to modifications in body parsing logic made in response to a React Server Components vulnerability.\n\nSOURCE: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/ | QUOTE: \"The incident\u2019s impact stemmed from several issues, but the immediate trigger was a bug in the dashboard. This bug caused repeated, unnecessary calls to the Tenant Service API. The API calls were managed by a React useEffect hook, but we mistakenly included a problematic object in its dependency array. Because this object was recreated on every state or prop change, React treated it as 'always new,' causing the useEffect to re-run each time. As a result, the API call executed many times during a single dashboard render instead of just once. This behavior coincided with a service update to the Tenant Service API, compounding instability and ultimately overwhelming the service, which then failed to recover.\" | CLAIM: Cloudflare attributes the root cause of the September 12, 2025 dashboard and API outage to a React useEffect bug that caused excessive API calls, which overwhelmed the Tenant Service API.\n\nSOURCE: https://postmortem.io/incidents/aws--2025-10-19--dynamodb-dns-service-disruption-us-east-1/ | QUOTE: \"The incident stemmed from a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service\u2019s regional endpoint.\" | CLAIM: AWS attributes the root cause of the October 19\u201320, 2025 DynamoDB outage in us-east-1 to a latent race condition in the DNS management system that created an empty DNS record.\n\nSOURCE: https://postmortem.io/incidents/azure--2025-10-29--azure-front-door-global-connectivity-dns-issues/ | QUOTE: \"A specific sequence of customer configuration changes, performed across two different control plane build versions, resulted in incompatible customer configuration metadata being generated. These customer configuration changes themselves were valid and non-malicious \u2013 however they produced metadata that, when deployed to edge site servers, exposed a latent bug in the data plane.\" | CLAIM: Microsoft attributes the root cause of the October 29\u201330, 2025 Azure Front Door outage to incompatible customer configuration metadata generated across different control plane versions, which triggered a latent data plane bug.\n\nNO_SOURCE_FOUND: A Google Cloud outage post-mortem for 2025 could not be located in the available search results; no official Google Cloud incident report URL or root cause quote was found.\n\n**SUMMARY TABLE**\n\n| Date | Provider | Service Affected | Duration | Root Cause (per provider) |\n|------|----------|------------------|----------|---------------------------|\n| September 12, 2025 | Cloudflare | Dashboard & APIs | Not specified in excerpt | React useEffect bug causing API call loop |\n| October 19\u201320, 2025 | AWS | DynamoDB (us-east-1) | ~14.5 hours | Latent race condition in DNS management system |\n| October 29\u201330, 2025 | Azure | Front Door & CDN | ~8.5 hours | Incompatible configuration metadata triggering data plane bug |\n| November 18, 2025 | Cloudflare | Core network traffic | ~5.75 hours | Oversized Bot Management feature file |\n| December 5, 2025 | Cloudflare | Network traffic | ~25 minutes | Body parsing logic changes for React Server Components mitigation |\n\n**NOTES**\n\n1. **Cloudflare dominance in available reports**: The search results returned three Cloudflare incidents, reflecting either their transparency cadence or search indexing bias. This does not necessarily indicate higher failure rates relative to other providers.\n\n2. **Google Cloud gap**: I could not locate a 2025 Google Cloud post-mortem in the provided results. Google typically publishes incident reports at [status.cloud.google.com](https://status.cloud.google.com/), but no 2025 incident summary was captured in the search data provided.\n\n3. **AWS and Azure sourcing**: The AWS and Azure post-mortems were sourced from [postmortem.io](https://postmortem.io/), which aggregates official incident reports. The quotes are presented as originating from AWS and Microsoft's own summaries, but for the most direct verification, the providers' native status pages or blogs would be preferable.",
+  "usage": {
+   "prompt_tokens": 2477,
+   "completion_tokens": 1181,
+   "total_tokens": 3658,
+   "cost": 0.02502418,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01802418,
+    "upstream_inference_prompt_cost": 0.00208068,
+    "upstream_inference_completions_cost": 0.0159435
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Sail Research",
+  "id": "gen-1791409756-XvIa8iQdubHGDY27fFHo"
+ },
+ "ts": "2026-10-07T21:49:29.515114+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a6",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0351",
+ "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the web search results, the Home Assistant project has published data regarding its active installations through its opt-in analytics system. Because analytics are strictly opt-in and privacy-focused, the project also publishes estimates on how the opt-in numbers relate to the total user base.\n\nHere are the specific claims and quotes from the official sources:\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"695,026 Active Home Assistant Installations\" | CLAIM: The current number of active Home Assistant installations sharing analytics.\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"We estimate that less than a fourth of all Home Assistant users opt in.\" | CLAIM: The estimated ratio of opt-in analytics users to the total user base.\nSOURCE: https://www.home-assistant.io/blog/2021/11/12/100k-analytics/ | QUOTE: \"Our estimate is that there are 4-5x more installations than people that opt-in to analytics.\" | CLAIM: An earlier official estimate of the multiplier used to guess the total number of installations based on opt-in figures.\nSOURCE: https://www.home-assistant.io/blog/2025/04/16/state-of-the-open-home-recap/ | QUOTE: \"this year we went from 1 million to over 2 million active installations in 2024!\" | CLAIM: The total estimated number of active installations reached in 2024.\n\nNO_SOURCE_FOUND: A specific, current official multiplier mapping the exact 695,026 opt-in installations to a precise total installation count today. (While the 2021 blog estimated a 4-5x multiplier, and the analytics page notes \"less than a fourth\" opt in, there is no exact current calculation provided in the sources.)",
+  "usage": {
+   "prompt_tokens": 1093,
+   "completion_tokens": 362,
+   "total_tokens": 1455,
+   "cost": 0.0098107,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0028107,
+    "upstream_inference_prompt_cost": 0.00137718,
+    "upstream_inference_completions_cost": 0.00143352
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "AtlasCloud",
+  "id": "gen-1791411695-vP2NVuN2aJvznfDa14m0"
+ },
+ "ts": "2026-10-07T22:21:48.194451+00:00"
+}

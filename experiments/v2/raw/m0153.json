@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a5",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0153",
+ "prompt": "Find real, published data on the Kalshi exchange's trading volume or number of users in 2025. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here is what I found from published data on Kalshi's 2025 trading activity, based on search results from late 2025 and early 2026.\n\n**Summary:** Kalshi experienced explosive growth in 2025, processing $23.8 billion in total trading volume\u2014a year-over-year increase of over 1,100%. Activity peaked in December, with $6.38 billion in monthly volume and a single-day record of $381.7 million on December 21. While precise total user counts for 2025 were not available in the sources reviewed, transaction counts (97 million) and weekly transaction metrics (over 9.5 million in late December) indicate substantial platform activity.\n\nSOURCE: https://www.tradetheoutcome.com/prediction-markets-in-2025-data-stats-key-trends/ | QUOTE: \"Kalshi processed 97 million transactions in 2025 and set a single-day record of $381.7 million on December 21.\" | CLAIM: Kalshi's total transaction count for 2025 and its peak daily trading volume record.\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"Kalshi reported a remarkable surge in trading volume for 2025, reaching $23.8 billion, a 1,108% increase from the previous year.\" | CLAIM: Kalshi's total 2025 trading volume was $23.8 billion, representing 1,108% year-over-year growth.\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"December alone accounted for $6.38 billion, setting a new monthly record, while December 21 saw a daily peak of $381.7 million.\" | CLAIM: December 2025 was Kalshi's highest-volume month at $6.38 billion, with a daily volume peak of $381.7 million on December 21.\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"The total number of transactions for the year hit 97 million, up 1,680% year-on-year\" | CLAIM: Kalshi processed 97 million transactions in 2025, a 1,680% increase over 2024.\n\nSOURCE: https://defirate.com/news/prediction-markets-record-all-time-high-volume-to-end-2025/ | QUOTE: \"Kalshi: 9,502,802\" | CLAIM: In the final week of December 2025 (Dec 29\u2013Jan 4), Kalshi recorded approximately 9.5 million transactions.\n\nNO_SOURCE_FOUND: Specific total number of registered users or active unique users for Kalshi in 2025.",
+  "usage": {
+   "prompt_tokens": 3035,
+   "completion_tokens": 616,
+   "total_tokens": 3651,
+   "cost": 0.02442775,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01742775,
+    "upstream_inference_prompt_cost": 0.00864975,
+    "upstream_inference_completions_cost": 0.008778
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791406874-9qvpXMEIzDuRhbrRCih1"
+ },
+ "ts": "2026-10-07T21:01:40.876506+00:00"
+}

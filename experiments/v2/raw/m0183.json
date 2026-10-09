@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a5",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0183",
+ "prompt": "Find real, published data on the Kalshi exchange's trading volume or number of users in 2025. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the available published data from early 2026 covering the 2025 calendar year, here are the verified figures for Kalshi's trading volume and transaction metrics:\n\n**Trading Volume (Annual):** Kalshi processed $23.8 billion in total notional volume during 2025, representing growth of over 1,100% compared to 2024.\n\n**Transaction Metrics:** The exchange processed 97 million transactions in 2025 (up 1,680% year-over-year), with a peak single-day volume of $381.7 million recorded on December 21, 2025.\n\n**User Data:** While transaction counts are available, specific \"registered user\" or \"active user account\" figures for Kalshi are not disclosed in the reviewed sources. The platform does not appear to publish monthly active user (MAU) counts in the same way Polymarket does (Polymarket reported 477,850 active monthly traders in October 2025, but Kalshi is excluded from those particular charts).\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"Kalshi reported a remarkable surge in trading volume for 2025, reaching $23.8 billion, a 1,108% increase from the previous year.\" | CLAIM: Kalshi's total trading volume for the full year 2025 was $23.8 billion, representing 1,108% growth over 2024.\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"The total number of transactions for the year hit 97 million, up 1,680% year-on-year\" | CLAIM: Kalshi processed 97 million transactions in 2025, which serves as a proxy for platform activity (though distinct from unique user counts).\n\nSOURCE: https://phemex.com/news/article/kalshis-2025-trading-volume-soars-to-238-billion-up-1108-51226 | QUOTE: \"December alone accounted for $6.38 billion, setting a new monthly record, while December 21 saw a daily peak of $381.7 million.\" | CLAIM: Kalshi set a single-day volume record of $381.7 million on December 21, 2025.\n\nSOURCE: https://www.cryptopolitan.com/kalshi-starts-2026-hot-after-record-2025/ | QUOTE: \"The platform handled 97 million transactions in 2025, which is over 1,680% higher than what it saw in 2024, with peak activity occurring on December 21, 2025, when daily notional volume hit $381.7 million, and transactions reached 1.5 million.\" | CLAIM: Confirms the 97 million annual transaction figure and provides additional context that the peak day (Dec 21, 2025) saw 1.5 million transactions.\n\nSOURCE: https://defirate.com/news/prediction-markets-record-all-time-high-volume-to-end-2025/ | QUOTE: \"Kalshi: 9,502,802\" | CLAIM: For the week of December 29, 2025\u2013January 4, 2026, Kalshi recorded approximately 9.5 million weekly transactions, indicating high-frequency usage intensity.\n\nSOURCE: https://defirate.com/news/prediction-markets-record-all-time-high-volume-to-end-2025/ | QUOTE: \"Note: Kalshi is excluded from this chart.\" | CLAIM: Published data explicitly excludes Kalshi from weekly active user comparisons (unlike transaction counts), suggesting the platform does not publicly report standardized active user metrics.\n\nNO_SOURCE_FOUND: Specific number of registered users, active monthly users (MAU), or unique account holders on Kalshi in 2025. Available data covers transaction counts (97 million annually) but not distinct user accounts.",
+  "usage": {
+   "prompt_tokens": 3035,
+   "completion_tokens": 834,
+   "total_tokens": 3869,
+   "cost": 0.025733,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.018733,
+    "upstream_inference_prompt_cost": 0.007891,
+    "upstream_inference_completions_cost": 0.010842
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791407786-QgcMZYC3AmrKHJVlIrR2"
+ },
+ "ts": "2026-10-07T21:16:39.576020+00:00"
+}

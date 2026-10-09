@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a4",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0334",
+ "prompt": "Research the official free-tier limits of the GitHub Actions service for public and private repositories (minutes, storage, concurrency). Cite the GitHub documentation page you used.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here is the research on the official free-tier limits of GitHub Actions for public and private repositories, based on the GitHub documentation provided.\n\n### Explanation of Findings\n\n**1. Minutes**\nFor public repositories, GitHub Actions usage is free and unlimited on standard GitHub-hosted runners. For private repositories, free-tier limits depend on the account's plan: GitHub Free (personal and organization) receives 2,000 minutes per month, GitHub Pro receives 3,000 minutes, GitHub Team receives 3,000 minutes, and GitHub Enterprise Cloud receives 50,000 minutes. Note that larger runners are always charged, even for public repositories.\n\n**2. Storage**\nThere are three categories of storage to consider:\n- **Artifact Storage:** Free-tier limits for private repositories vary by plan (e.g., 500 MB for GitHub Free, 1 GB for Pro, 2 GB for Team, 50 GB for Enterprise). This allowance is shared with GitHub Packages. For public repositories, artifact storage limits are subject to the same plan-based allowances, but standard runner usage is free.\n- **Cache Storage:** Cache storage is a separate allowance of 10 GB per repository across all plans. \n- **Custom Image Storage:** Only available for Team (75 GB) and Enterprise (150 GB) plans. GitHub Support cannot increase storage limits.\n\n**3. Concurrency**\nJob concurrency limits for standard GitHub-hosted runners on the free tier (GitHub Free plan) are 20 total concurrent jobs, with a maximum of 5 concurrent macOS jobs (GPU jobs are not applicable). Additionally, workflow queuing is limited to 1,500 events per 10 seconds per repository, and up to 500 workflow runs can be queued per 10 seconds. Concurrency group queues are limited to 100 workflow runs per concurrency group. \n\n***\n\n### Source Citations\n\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"The use of standard GitHub-hosted runners is free: - In public repositories\" | CLAIM: GitHub Actions usage on standard runners is free for public repositories.\nSOURCE: https://docs.github.com/en/actions/reference/runners/github-hosted-runners | QUOTE: \"Use of the standard GitHub-hosted runners is free and unlimited on public repositories.\" | CLAIM: Minute usage is unlimited for public repositories using standard runners.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"Larger runners are always charged for, even when used by public repositories or when you have quota available from your plan.\" | CLAIM: Larger runners are not free, even for public repositories.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Free | 500 MB | 2,000 | 10 GB\" | CLAIM: The GitHub Free plan provides 2,000 minutes per month for private repositories.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Pro | 1 GB | 3,000 | 10 GB\" | CLAIM: The GitHub Pro plan provides 3,000 minutes per month for private repositories.\nSOURCE: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions | QUOTE: \"Cache storage: Actions cache storage is a separate allowance of 10 GB per repository. Cache storage is not shared with artifacts or GitHub Packages.\" | CLAIM: Cache storage is 10 GB per repository and separate from other storage.\nSOURCE: https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions | QUOTE: \"The artifact storage amounts shown are shared with GitHub Packages. This means your total storage across Actions artifacts and GitHub Packages storage cannot exceed the included amount for your plan.\" | CLAIM: Artifact storage is shared with GitHub Packages.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Free | 500 MB | 2,000 | 10 GB\" | CLAIM: The GitHub Free plan provides 500 MB of artifact storage.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Pro | 1 GB | 3,000 | 10 GB\" | CLAIM: The GitHub Pro plan provides 1 GB of artifact storage.\nSOURCE: https://docs.github.com/en/billing/concepts/product-billing/github-actions | QUOTE: \"GitHub Team | 2 GB | 3,000 | 10 GB\" | CLAIM: The GitHub Team plan provides 2 GB of artifact storage.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Standard GitHub-hosted runner | Free | 20 | 5 | Not applicable\" | CLAIM: For the GitHub Free plan, the total concurrent jobs limit is 20, and the maximum concurrent macOS jobs is 5.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Workflow trigger event rate limit | 1500 events / 10 seconds / repository\" | CLAIM: Workflow queuing is limited to 1500 events per 10 seconds per repository.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Workflow run queued | 500 workflow runs / 10 seconds\" | CLAIM: Workflow run queuing is limited to 500 workflow runs per 10 seconds.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"Concurrency group queue | 100 workflow runs / concurrency group\" | CLAIM: Concurrency group queues are limited to 100 workflow runs per group.\nSOURCE: https://docs.github.com/en/actions/reference/limits | QUOTE: \"GitHub Support cannot increase storage limits for GitHub Actions.\" | CLAIM: Storage limits cannot be increased by GitHub Support.\n\nNO_SOURCE_FOUND: The exact free-tier artifact storage limit specific to public repositories (the documentation details plan-based private limits and states usage is free/unlimited, but does not provide a distinct public repository storage GB allowance).",
+  "usage": {
+   "prompt_tokens": 2542,
+   "completion_tokens": 1250,
+   "total_tokens": 3792,
+   "cost": 0.01334116,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00634116,
+    "upstream_inference_prompt_cost": 0.00249116,
+    "upstream_inference_completions_cost": 0.00385
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791411357-AG4cfF9QSRnjF0rqpRyx"
+ },
+ "ts": "2026-10-07T22:16:40.434052+00:00"
+}

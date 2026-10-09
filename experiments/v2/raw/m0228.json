@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m6_sessions.py",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0228",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import hashlib\n   2  import hmac\n   3  import secrets\n   4  import time\n   5  \n   6  SESSION_TTL = 3600\n   7  \n   8  \n   9  class SessionStore:\n  10      def __init__(self, secret: bytes):\n  11          self.secret = secret\n  12          self.sessions = {}\n  13  \n  14      def _sign(self, session_id: str) -> str:\n  15          mac = hmac.new(self.secret, session_id.encode(), hashlib.sha256).hexdigest()\n  16          return f\"{session_id}.{mac}\"\n  17  \n  18      def create(self, user_id: str) -> str:\n  19          session_id = secrets.token_urlsafe(32)\n  20          self.sessions[session_id] = {\"user_id\": user_id, \"created\": time.time()}\n  21          return self._sign(session_id)\n  22  \n  23      def _verify(self, token: str):\n  24          session_id, _, mac = token.rpartition(\".\")\n  25          expected = hmac.new(self.secret, session_id.encode(), hashlib.sha256).hexdigest()\n  26          if mac != expected:\n  27              return None\n  28          return session_id\n  29  \n  30      def get_user(self, token: str):\n  31          session_id = self._verify(token)\n  32          if session_id is None:\n  33              return None\n  34          session = self.sessions.get(session_id)\n  35          if session is None:\n  36              return None\n  37          if time.time() - session[\"created\"] > SESSION_TTL:\n  38              del self.sessions[session_id]\n  39              return None\n  40          return session[\"user_id\"]\n  41  \n  42      def destroy(self, token: str) -> None:\n  43          session_id = self._verify(token)\n  44          if session_id is not None:\n  45              self.sessions.pop(session_id, None)\n  46  \n  47      def destroy_all_for(self, user_id: str) -> int:\n  48          doomed = [sid for sid, s in self.sessions.items() if s[\"user_id\"] == user_id]\n  49          for sid in doomed:\n  50              del self.sessions[sid]\n  51          return len(doomed)\n  52  \n  53  \n  54  def hash_password(password: str, salt: bytes = None) -> tuple:\n  55      salt = salt or secrets.token_bytes(16)\n  56      digest = hashlib.sha256(salt + password.encode()).hexdigest()\n  57      return salt, digest\n  58  \n  59  \n  60  def check_password(password: str, salt: bytes, digest: str) -> bool:\n  61      return hmac.compare_digest(hash_password(password, salt)[1], digest)\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I've reviewed the code and found several issues. Here are the problems I identified:\n\nISSUE: line 24 | Potential ValueError when unpacking token if it doesn't contain a dot\nISSUE: line 24 | Using rpartition('.') can create incorrect session_id if token contains multiple dots\nISSUE: line 38 | Race condition: session could be deleted between get and del operations\nISSUE: line 46 | The `destroy` method doesn't validate if the session is expired before deleting\nISSUE: line 48 | Race condition: sessions could be modified while iterating over dictionary items\nISSUE: line 56 | Using simple SHA-256 for password hashing is not secure (should use key derivation function)\nISSUE: line 56 | String concatenation of salt and password could cause encoding issues\nISSUE: line 56 | Using hexdigest() for password storage is inefficient and less secure than binary\nISSUE: line 61 | Recomputing hash with `hash_password` is inefficient and creates unnecessary salt\n\n**Explanation of the issues:**\n\n1. **Token parsing issues (line 24)**: The `rpartition('.')` method splits the token at the last dot, but this is problematic because:\n   - If the token doesn't contain a dot, it will cause a ValueError when unpacking\n   - If the token contains multiple dots, `session_id` will incorrectly include dots\n\n2. **Race conditions (lines 38, 48)**: \n   - In `get_user()`, there's a window between checking the session and deleting it where another thread might access it\n   - In `destroy_all_for()`, the dictionary is being modified while iterating over it, which can cause RuntimeError\n\n3. **Session management issues (line 46)**: The `destroy()` method doesn't check if the session is expired, potentially allowing deletion of already-expired sessions.\n\n4. **Password security issues (lines 56, 61)**:\n   - Using SHA-256 without a key derivation function is vulnerable to brute force attacks\n   - String concatenation of bytes and string can cause encoding problems\n   - The password checking function recomputes the hash unnecessarily and creates a new salt\n\n**Additional minor issue not included above (not a security/functional bug):** The code doesn't clean up expired sessions automatically, which could lead to memory leaks over time if sessions are never accessed after expiration.",
+  "usage": {
+   "prompt_tokens": 743,
+   "completion_tokens": 513,
+   "total_tokens": 1256,
+   "cost": 0.00071361,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00071361,
+    "upstream_inference_prompt_cost": 0.00020061,
+    "upstream_inference_completions_cost": 0.000513
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791409025-N4v5A5jqkdDv9S2h4s7S"
+ },
+ "ts": "2026-10-07T21:37:40.404925+00:00"
+}

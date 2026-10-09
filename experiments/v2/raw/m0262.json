@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m2_retry_client.py",
+ "model": "z-ai/glm-5.1",
+ "condition": "c1",
+ "rep": 2,
+ "trial_id": "m0262",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import random\n   2  import time\n   3  \n   4  import httpx\n   5  \n   6  RETRYABLE_STATUS = {429, 500, 502, 503, 504}\n   7  \n   8  \n   9  class RetryClient:\n  10      \"\"\"HTTP GET with exponential backoff and jitter.\"\"\"\n  11  \n  12      def __init__(self, max_attempts: int = 5, base_delay: float = 0.5, max_delay: float = 30.0,\n  13                   timeout: float = 10.0):\n  14          self.max_attempts = max_attempts\n  15          self.base_delay = base_delay\n  16          self.max_delay = max_delay\n  17          self.client = httpx.Client(timeout=timeout)\n  18  \n  19      def _delay(self, attempt: int, retry_after: str = None) -> float:\n  20          if retry_after is not None:\n  21              try:\n  22                  return min(max(0.0, float(retry_after)), self.max_delay)\n  23              except ValueError:\n  24                  pass\n  25          delay = self.base_delay * (2 ** attempt)\n  26          return min(delay, self.max_delay) * random.uniform(0.5, 1.0)\n  27  \n  28      def get(self, url: str, **kwargs) -> httpx.Response:\n  29          last_exc = None\n  30          for attempt in range(self.max_attempts):\n  31              try:\n  32                  resp = self.client.get(url, **kwargs)\n  33              except httpx.TransportError as exc:\n  34                  last_exc = exc\n  35                  time.sleep(self._delay(attempt))\n  36                  continue\n  37              if resp.status_code in RETRYABLE_STATUS:\n  38                  time.sleep(self._delay(attempt, resp.headers.get(\"Retry-After\")))\n  39                  continue\n  40              return resp\n  41          raise RuntimeError(f\"giving up on {url} after {self.max_attempts} attempts\") from last_exc\n  42  \n  43      def get_json(self, url: str, **kwargs):\n  44          resp = self.get(url, **kwargs)\n  45          return resp.json()\n  46  \n  47      def close(self) -> None:\n  48          self.client.close()\n  49  \n  50      def __enter__(self):\n  51          return self\n  52  \n  53      def __exit__(self, *exc):\n  54          self.close()\n  55          return True\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here is a review of the code for bugs:\n\nISSUE: line 17 | Resource leak: `httpx.Client` is created in `__init__` but if the object is not explicitly used in a `with` statement or `close()` is never called, the underlying connection pool is never closed because `__del__` is not implemented.\nISSUE: line 37 | Wrong results: On a retryable HTTP status (e.g., 429, 5xx), the response body stream `resp` is never read or closed. This causes a resource leak of the stream and, more critically, causes `httpx` to fail to reuse the connection for the next request, breaking keep-alive and pooling.\nISSUE: line 41 | Security/Crash: If all attempts fail due to `httpx.TransportError`, `last_exc` is set and the exception is raised correctly. However, if all attempts fail due to retryable HTTP status codes, `last_exc` remains `None`, causing `raise RuntimeError(...) from None` which drops the last HTTP response context, losing the API's error details.\nISSUE: line 53 | Wrong results/Swallowed exceptions: The `__exit__` method returns `True`, which suppresses any exception raised within the `with RetryClient(...) as c:` block. It should return `False` (or implicitly `None`) to allow exceptions to propagate normally.",
+  "usage": {
+   "prompt_tokens": 713,
+   "completion_tokens": 293,
+   "total_tokens": 1006,
+   "cost": 0.00194429,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00194429,
+    "upstream_inference_prompt_cost": 0.00084847,
+    "upstream_inference_completions_cost": 0.00109582
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791409709-JXvXBeTcx6dLVGkY1BTq"
+ },
+ "ts": "2026-10-07T21:48:35.175073+00:00"
+}

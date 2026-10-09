@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a6",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0150",
+ "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Below are the specific official figures published by the Home Assistant project regarding active installations, distinguishing between the public opt-in analytics data and broader official estimates of the total user base.\n\n**Analysis Summary**\nThe Home Assistant project officially publishes a live count of installations that have explicitly agreed to share data via the Analytics integration. Because this is an opt-in system (introduced in 2021.4), the project acknowledges the public number does not reflect the total user base. Official estimates place the total active installations significantly higher\u2014ranging from 3-5 times the analytics count in late 2021 to over 2 million in 2025.\n\n**Source Lines**\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"695,026 Active Home Assistant Installations\" | CLAIM: The Home Assistant project officially tracks approximately 695,026 active installations that have opted into the analytics program.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"Analytics in Home Assistant are opt-in and do not reflect the entire Home Assistant userbase. We estimate that less than a fourth of all Home Assistant users opt in.\" | CLAIM: The public count of active installations is an opt-in metric, meaning the total actual user base is estimated to be at least four times higher than the reported number.\n\nSOURCE: https://www.home-assistant.io/integrations/analytics | QUOTE: \"The Analytics system was introduced in Home Assistant 2021.4, and it's used by 76.5% of the active installations.\" | CLAIM: The analytics system was officially launched in version 2021.4, and 76.5% of the installations tracked in the system actively share this data.\n\nSOURCE: https://www.home-assistant.io/blog/2021/11/12/100k-analytics/ | QUOTE: \"Today we have reached a major milestone for Home Assistant Analytics: 100,000 users have opted in to be included!\" | CLAIM: In November 2021, the project officially announced reaching a milestone of 100,000 opt-in installations.\n\nSOURCE: https://www.home-assistant.io/blog/2021/11/12/100k-analytics/ | QUOTE: \"Our estimate is that there are 4-5x more installations than people that opt-in to analytics.\" | CLAIM: The Home Assistant project estimates the total number of active installations is 4 to 5 times larger than the number shown in the opt-in analytics data.\n\nSOURCE: https://www.home-assistant.io/blog/2025/04/16/state-of-the-open-home-recap/ | QUOTE: \"One big announcement Franck made was that this year we went from 1 million to over 2 million active installations in 2024!\" | CLAIM: The Home Assistant project officially reported exceeding 2 million active installations by April 2025, doubling from 1 million in the previous year.",
+  "usage": {
+   "prompt_tokens": 1021,
+   "completion_tokens": 599,
+   "total_tokens": 1620,
+   "cost": 0.0174416,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0104416,
+    "upstream_inference_prompt_cost": 0.0026546,
+    "upstream_inference_completions_cost": 0.007787
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791406814-gM0LS9z65iXUcyzGEb9p"
+ },
+ "ts": "2026-10-07T21:00:26.312740+00:00"
+}

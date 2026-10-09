@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a6",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c1",
+ "rep": 1,
+ "trial_id": "m0303",
+ "prompt": "Research what the Home Assistant project has officially published about the number of active installations (its opt-in analytics). Cite the page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Based on the official Home Assistant Analytics data and project announcements, here are the published figures regarding active installations and opt-in rates.\n\nThe most recent specific count of active installations sharing analytics is approximately 695,026. However, broader project announcements indicate that the total active user base (including those who do not share analytics) exceeded 2 million in 2024. The project estimates that less than 25% of all users opt in to share data, meaning the analytics numbers represent a subset of the total community.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"695,026 Active Home Assistant Installations\" | CLAIM: The current number of active Home Assistant installations that have opted in to share usage data is 695,026.\n\nSOURCE: https://www.home-assistant.io/blog/2025/04/16/state-of-the-open-home-recap/ | QUOTE: \"One big announcement Franck made was that this year we went from 1 million to over 2 million active installations in 2024!\" | CLAIM: The total number of active Home Assistant installations surpassed 2 million in 2024.\n\nSOURCE: https://analytics.home-assistant.io/ | QUOTE: \"We estimate that less than a fourth of all Home Assistant users opt in.\" | CLAIM: The project estimates that fewer than 25% of the total user base participates in the analytics program.\n\nSOURCE: https://www.home-assistant.io/integrations/analytics | QUOTE: \"the Analytics system was introduced in Home Assistant 2021.4, and it's used by 76.5% of the active installations.\" | CLAIM: Among the installations counted in the analytics system, 76.5% are actively sending usage statistics (note: this percentage refers to the retention rate within the opted-in pool or a specific snapshot metric, distinct from the total user base penetration).\n\nSOURCE: https://analytics.home-assistant.io/statistics/ | QUOTE: \"496,813 of 637,194 (77.97%) installations have chosen to share usage statistics\" | CLAIM: A historical or specific subset snapshot showed that roughly 78% of tracked installations were actively sharing statistics at that time.",
+  "usage": {
+   "prompt_tokens": 1222,
+   "completion_tokens": 490,
+   "total_tokens": 1712,
+   "cost": 0.00835265,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00135265,
+    "upstream_inference_prompt_cost": 0.00039715,
+    "upstream_inference_completions_cost": 0.0009555
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791410536-rKLdXoHsuK7rj6WgPOAD"
+ },
+ "ts": "2026-10-07T22:02:27.349902+00:00"
+}

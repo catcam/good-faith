@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a7",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0062",
+ "prompt": "Find real, documented examples of open-source maintainers publicly reporting AI-generated bug reports or pull requests as a burden (e.g. curl, Python, other projects). Cite the original posts and quote what they said.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The rise of AI-generated \"slop\"\u2014low-effort, low-quality bug reports and pull requests\u2014has increasingly burdened open-source maintainers, draining their time and threatening their mental health. The curl project and Python maintainers are among the most prominent voices publicly documenting this issue. \n\nBelow are the documented examples based on the provided sources:\n\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"I have previously blogged about the relatively new trend of AI slop in vulnerability reports submitted to curl and how it hurts and exhausts us.\" | CLAIM: Curl maintainers are publicly reporting AI-generated vulnerability reports as an exhausting burden.\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"Perhaps for 30 minutes, sometimes up to an hour or three. Each.\" | CLAIM: AI-generated reports consume massive amounts of maintainers' time per report to triage.\nSOURCE: https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/ | QUOTE: \"Not to mention the emotional toll it takes to deal with these mind-numbing stupidities.\" | CLAIM: The burden of AI slop inflicts emotional toll and burnout on maintainers.\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"A threshold has been reached. We are effectively being DDoSed. If we could, we would charge them for this waste of our time.\" | CLAIM: Curl's founder considers the volume of invalid AI bug reports to be equivalent to a DDoS attack that wastes maintainers' time.\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"He went on to say that the project has never received a single valid bug report that was generated using AI, and their rate is increasing.\" | CLAIM: AI-generated reports are entirely invalid for curl and are growing in frequency.\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Security reports that waste maintainers' time result in confusion, stress, frustration, and to top it off, a sense of isolation due to the secretive nature of security reports\" | CLAIM: Python maintainer Seth Larson reported that low-quality AI security reports cause confusion, stress, frustration, and isolation.\nSOURCE: https://www.theregister.com/security/2025/05/07/curl-takes-action-against-time-wasting-ai-bug-reports/267311 | QUOTE: \"Even if this is not their intent, the outcome is maintainers that are burnt out and more averse to legitimate security work.\" | CLAIM: AI slop reports are causing maintainer burnout and aversion to security work.\nSOURCE: https://redmonk.com/videos/daniel-stenberg-ai-onslop/ | QUOTE: \"is not only the volume goes up, the quality goes down. So we spend more time than ever to get less out of it than ever.\" | CLAIM: AI-generated bug reports increase the volume of work while decreasing the value, putting a heavy burden on maintainers.\nSOURCE: https://redmonk.com/videos/daniel-stenberg-ai-onslop/ | QUOTE: \"They don\u2019t really understand it, they haven\u2019t really verified it. The AI told them this is a problem, they pass it on to us. No effort, quick, easy for them and they just hand it over to us and we get a couple of hours of work per every such instance. It doesn\u2019t work.\" | CLAIM: AI allows reporters to submit unverified bugs with zero effort, shifting hours of triage work onto maintainers.\nSOURCE: https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/ | QUOTE: \"We are just a small single open source project with a small number of active maintainers. It is not in our power to change how all these people and their slop machines work. We need to make moves to ensure our survival and intact mental health.\" | CLAIM: The curl project was forced to scrap its bug bounty program because AI slop was threatening the survival and mental health of maintainers.\nSOURCE: https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/ | QUOTE: \"AI slop is overwhelming maintainers *today* and it won\u2019t stop at curl but only starts there.\" | CLAIM: The maintainer burden caused by AI slop is a widespread issue that will spread beyond curl.\nSOURCE: https://arstechnica.com/gadgets/2025/05/open-source-project-curl-is-sick-of-users-submitting-ai-slop-vulnerabilities/ | QUOTE: \"A threshold has been reached. We are effectively being DDoSed. If we could, we would charge them for this waste of our time,\" | CLAIM: The volume of time-wasting AI bug reports has reached a breaking point for maintainers.\n\nNO_SOURCE_FOUND: Specific public posts by maintainers of projects *other than* curl and Python (e.g., Linux kernel, Next.js, Node.js) explicitly complaining about AI-generated pull requests or bug reports as a burden.",
+  "usage": {
+   "prompt_tokens": 2621,
+   "completion_tokens": 1216,
+   "total_tokens": 3837,
+   "cost": 0.01556881,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00856881,
+    "upstream_inference_prompt_cost": 0.00348593,
+    "upstream_inference_completions_cost": 0.00508288
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791404694-Ed3IDU6PKRiNp3KXo2Ix"
+ },
+ "ts": "2026-10-07T20:25:09.188860+00:00"
+}

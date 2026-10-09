@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a1",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0245",
+ "prompt": "Find real, documented post-mortems of major cloud outages in 2025 (AWS, Azure, Google Cloud or Cloudflare). For each, cite the provider's own incident report and quote what it says the root cause was.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Of course. After reviewing the provided web search results, here are the documented post-mortems for major cloud outages in 2025 from Cloudflare, AWS, and Microsoft Azure. The search results did not contain any incidents for Google Cloud in 2025.\n\n### Cloudflare Outages\n\nThe search results detail several Cloudflare outages throughout 2025.\n\n**September 12, 2025: Dashboard and API Outage**\nSOURCE: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/ | QUOTE: \"The incident\u2019s impact stemmed from several issues, but the immediate trigger was a bug in the dashboard. This bug caused repeated, unnecessary calls to the Tenant Service API.\" | CLAIM: The root cause was a software bug in the Cloudflare dashboard that overloaded a critical API.\n\n**November 18, 2025: Core Network Traffic Failure**\nSOURCE: https://blog.cloudflare.com/18-november-2025-outage/ | QUOTE: \"Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a 'feature file' used by our Bot Management system.\" | CLAIM: The root cause was a permissions change in a database that generated an oversized configuration file, which crashed the proxy software.\n\n**December 5, 2025: Partial Network Failure**\nSOURCE: https://blog.cloudflare.com/5-december-2025-outage/ | QUOTE: \"Instead, it was triggered by changes being made to our body parsing logic while attempting to detect and mitigate an industry-wide vulnerability disclosed this week in React Server Components.\" | CLAIM: The root cause was a software bug introduced by a change intended to address a vulnerability in React Server Components.\n\n### AWS Outage\n\n**October 19-20, 2025: Amazon DynamoDB Service Disruption**\nSOURCE: https://postmortem.io/incidents/aws--2025-10-19--dynamodb-dns-service-disruption-us-east-1/ | QUOTE: \"The incident stemmed from a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service\u2019s regional endpoint.\" | CLAIM: The root cause was a latent race condition in the DNS management automation that deleted all IP addresses for the DynamoDB endpoint.\n\n### Microsoft Azure Outage\n\n**October 29-30, 2025: Global Azure Front Door and CDN Outage**\nSOURCE: https://postmortem.io/incidents/azure--2025-10-29--azure-front-door-global-connectivity-dns-issues/ | QUOTE: \"A specific sequence of customer configuration changes, performed across two different control plane build versions, resulted in incompatible customer configuration metadata being generated... [which] exposed a latent bug in the data plane.\" | CLAIM: The root cause was incompatible configuration metadata from different software versions that triggered a latent bug, crashing the global data plane.\n\n### Not Found\n\nNO_SOURCE_FOUND: A documented post-mortem for a major Google Cloud outage that occurred in 2025.",
+  "usage": {
+   "prompt_tokens": 2487,
+   "completion_tokens": 657,
+   "total_tokens": 3144,
+   "cost": 0.00832849,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00132849,
+    "upstream_inference_prompt_cost": 0.00067149,
+    "upstream_inference_completions_cost": 0.000657
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791409385-zXYYSzTJjzxjJeiAYdwm"
+ },
+ "ts": "2026-10-07T21:43:34.662272+00:00"
+}

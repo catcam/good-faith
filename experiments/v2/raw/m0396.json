@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a3",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0396",
+ "prompt": "Find real, peer-reviewed or preprint studies measuring how often large language models fabricate citations. Cite the papers and quote the fabrication rates they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the peer-reviewed and preprint studies that measure how often large language models fabricate citations, along with their reported rates:\n\n1. **Study on GPT-3.5 and GPT-4 (Scientific Reports)**\nThis study evaluated ChatGPT models generating literature reviews across 42 multidisciplinary topics. It found a dramatic difference between model versions, with GPT-3.5 fabricating the majority of its citations, while GPT-4 showed significant improvement but still exhibited problems. \n\nSOURCE: https://www.nature.com/articles/s41598-023-41032-5 | QUOTE: \"Of the 222 works cited in the GPT-3.5 papers, 55% are fabricated\" | CLAIM: GPT-3.5 fabricates citations at a rate of 55%.\nSOURCE: https://www.nature.com/articles/s41598-023-41032-5 | QUOTE: \"Within this set of documents, 55% of the GPT-3.5 citations but just 18% of the GPT-4 citations are fabricated.\" | CLAIM: GPT-4 fabricates citations at a rate of 18%.\n\n2. **Cross-Model Audit of 10 Commercially Deployed LLMs (arXiv Preprint)**\nThis large-scale audit tested 10 different commercially deployed LLMs across four academic domains. It found that fabrication rates varied widely depending on the model, domain, and prompt framing, spanning a fivefold range.\n\nSOURCE: https://arxiv.org/abs/2603.03299 | QUOTE: \"Our results show that the observed hallucination rates span a fivefold range (between 11.4% and 56.8%)\" | CLAIM: Across 10 different commercial LLMs, citation fabrication rates range from 11.4% to 56.8%.\n\n3. **Experimental Study on Topic Familiarity and Prompt Specificity in Mental Health Research (PMC/Peer-reviewed)**\nThis study tested GPT-4o generating literature reviews on mental health topics with varying levels of public awareness. It found that fabrication rates were heavily dependent on how well-known the disorder was, and that even for real citations, errors were highly prevalent.\n\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC12658395/ | QUOTE: \"Across the 6 reviews, GPT-4o generated 176 citations; 35 (19.9%) were fabricated.\" | CLAIM: GPT-4o fabricates citations at an overall rate of 19.9% for mental health literature reviews.\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC12658395/ | QUOTE: \"Fabrication rates differed significantly by disorder (\u03c722=13.7; P=.001), with higher rates for binge eating disorder (17/60, 28%) and body dysmorphic disorder (14/48, 29%) than for major depressive disorder (4/68, 6%).\" | CLAIM: GPT-4o's fabrication rate varies significantly by topic familiarity, fabricating 28% of citations for binge eating disorder, 29% for body dysmorphic disorder, and 6% for major depressive disorder.\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC12658395/ | QUOTE: \"fabrication rate was significantly higher for specialized (11/24, 46%) compared to generic (6/36, 17%) reviews on binge eating disorder produced by GPT-4o (P=.01).\" | CLAIM: For specific specialized reviews on binge eating disorder, GPT-4o's fabrication rate jumps to 46% compared to 17% for generic reviews.\n\n4. **Large-Scale Benchmark of 13 State-of-the-Art LLMs (arXiv Preprint)**\nThis preprint introduces an open-source framework (CiteVerifier) and benchmarks 13 state-of-the-art LLMs, including newer models like GPT-5 and Claude-4, across 40 computer science research domains. The study found that every single model tested was capable of hallucinating citations.\n\nSOURCE: https://arxiv.org/html/2602.06718v1 | QUOTE: \"This benchmark shows that all tested models hallucinate citations, with rates from 14.23% (DeepSeek) to 94.93% (Hunyuan).\" | CLAIM: Across 13 state-of-the-art LLMs, citation fabrication rates range from 14.23% to 94.93%.\n\n5. **Study on the Prevalence of Fabricated References in Published Literature (MDPI/Peer-reviewed)**\nWhile this study primarily analyzed published papers for fake references, it also generated a large dataset of references using nine LLMs to analyze the phenomenon. It found that fabricated references are already beginning to appear in the peer-reviewed scientific literature.\n\nSOURCE: https://www.mdpi.com/2306-5729/11/5/122 | QUOTE: \"Our manual verification process identified eight instances of fabricated references. While the overall rate is statistically low, the mere existence of fabricated content in the peer-reviewed literature is a critical integrity issue\" | CLAIM: While LLMs can generate fabricated references, the current rate of these fakes successfully infiltrating peer-reviewed literature is statistically low, though still a critical integrity issue.\n\nNO_SOURCE_FOUND: A study measuring fabrication rates for Anthropic's older Claude models (Claude 1 or Claude 2) specifically.",
+  "usage": {
+   "prompt_tokens": 2556,
+   "completion_tokens": 1157,
+   "total_tokens": 3713,
+   "cost": 0.012981748,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.005981748,
+    "upstream_inference_prompt_cost": 0.002469096,
+    "upstream_inference_completions_cost": 0.003512652
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791412893-xcOPtGfUYOWhpBPZSFcV"
+ },
+ "ts": "2026-10-07T22:41:48.499583+00:00"
+}

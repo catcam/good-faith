@@ -1,17 +1,252 @@
 {
+ "005267f4e6826e5a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "00fd129b4fdcb0c1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "01373e000fb70928": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "0226276241788dbf": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "026a86e32a5d3a83": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "028c715933c4cef4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "_delay(attempt) already passes retry_after=None",
+  "verdict": "fabricated"
+ },
+ "02a8d21bebb8803a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "Decimal division by 100 is exact for these values",
+  "verdict": "fabricated"
+ },
+ "02d21174e7f25176": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the extension is replaced; collision only with sibling files of another extension",
+  "verdict": "nitpick"
+ },
+ "0437a5cbfc6f2763": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "05238aca5dae702d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "earlier decrements stay when the method returns False",
+  "verdict": "planted:m4-atomic"
+ },
+ "05a3d2542e657e59": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the eviction check already runs after the insert",
+  "verdict": "fabricated"
+ },
+ "05b75d204038a0b9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "validate() runs after the env loop has finished",
+  "verdict": "fabricated"
+ },
+ "05c9da243b433dd7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "HMAC is not vulnerable to length extension",
+  "verdict": "fabricated"
+ },
+ "06aa2818314f0132": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "HMAC is not vulnerable to length extension",
+  "verdict": "fabricated"
+ },
+ "06bb7159c7e8ed5e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes the Decimal division is correct",
+  "verdict": "nitpick"
+ },
+ "06d058f0a812cc07": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "storage-format preference",
+  "verdict": "nitpick"
+ },
+ "0731f76845832bf5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "Decimal division by 100 is exact; quantize rounds once at the end",
+  "verdict": "fabricated"
+ },
+ "075829898ffb5614": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "07d38c82376b9159": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "names release() overwriting stock",
+  "verdict": "planted:m4-release"
+ },
+ "0843da59bbce0fe7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "feature request",
+  "verdict": "nitpick"
+ },
+ "09bf20f0c437f79f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "09d5b9a3c18a4ae1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "09d8b383c4c4d6fa": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "release assigns stock[sku]; assignment cannot raise KeyError",
+  "verdict": "fabricated"
+ },
+ "0a0cf9eb143c3240": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "validate() runs after the env loop has finished",
+  "verdict": "fabricated"
+ },
  "0a70665af18b41d8": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "tokens cannot go negative: try_acquire only subtracts when tokens >= n",
   "verdict": "fabricated"
+ },
+ "0b0d4a6becc2860c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroyed sessions are deleted server-side, so get_user returns None for their tokens",
+  "verdict": "fabricated"
+ },
+ "0c0c4360f5cbe37a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
  },
  "0c64fde2a7812138": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
   "verdict": "nitpick"
  },
+ "0c90aab9de5a84a7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-stream responses need no closing",
+  "verdict": "nitpick"
+ },
+ "0d5db233d8fd9c2d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "0dcef0ae812db334": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroy_all_for collects ids into a list first, then deletes: no modification during iteration",
+  "verdict": "fabricated"
+ },
+ "0df39efdbb79a2b3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "0eac413661e32d03": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "inf/nan are clamped by max/min (verified: nan->0.0, inf->30.0)",
+  "verdict": "fabricated"
+ },
+ "0f42b22d66bb921e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "0f982eb62d7736c4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "kwargs cannot cause wrong cache hits: calls with kwargs raise TypeError",
+  "verdict": "fabricated"
+ },
+ "0feb722b414ddfc0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "105dc1abd6e8a26f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
  "1086345823a54ccc": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true that the dict grows until forget_idle is called; design choice, cleanup method exists",
+  "verdict": "nitpick"
+ },
+ "11ef72185f27d36e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the code divides by 100, never by discount_pct",
+  "verdict": "fabricated"
+ },
+ "11fbb5c6006e353d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "12138dbe13a8e657": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "12160c155628714a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "1234ce793271d12c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "12f1fcba3e82fd3b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "capped delay * uniform(0.5,1.0) ranges up to max_delay, not at most half of it",
+  "verdict": "fabricated"
+ },
+ "14ee994108d7d803": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "stock deducted before the whole order is verified",
+  "verdict": "planted:m4-atomic"
+ },
+ "1553ecc18c618431": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that non-JSON raises JSONDecodeError; normal behaviour, not the status-check bug",
+  "verdict": "nitpick"
+ },
+ "15fb1a8084004b29": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tmp and path share the same directory (tested: dir/conf.json -> dir/conf.tmp)",
+  "verdict": "fabricated"
+ },
+ "16b6bdd57b7b153d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "session ids come from token_urlsafe, which never contains a dot",
+  "verdict": "fabricated"
+ },
+ "1729adadc8699734": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true (TypeError on kwargs) but the docstring limits it to positional arguments",
+  "verdict": "nitpick"
+ },
+ "17a718d13b4e16fc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
   "verdict": "nitpick"
  },
  "17ebc53caf7cdf7e": {
@@ -19,19 +254,674 @@
   "note": "float rounding exists but is negligible here",
   "verdict": "nitpick"
  },
+ "196ac5f5dab9c488": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "self-correcting remark, no defect named",
+  "verdict": "nitpick"
+ },
+ "1971a69b10ecfc2a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "theoretical: needs the secret to compute HMAC('')",
+  "verdict": "nitpick"
+ },
+ "1b09687ea8d6026b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the parentheses and the float() call on line 22 are correct",
+  "verdict": "fabricated"
+ },
+ "1b6b7fc166586d02": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "keys cannot go missing: config starts from all DEFAULTS keys",
+  "verdict": "nitpick"
+ },
+ "1bc78b199b4bab42": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "reports a non-issue (\"This is fine\")",
+  "verdict": "nitpick"
+ },
+ "1dff8c3958301525": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "1eb87e22c7f9f5da": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "1f0a15a2b3f70f62": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "1fc6a80066628028": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "2099f267403d9c2c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "21984dcadd59a204": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "max(0.0, nan) returns 0.0, so sleep(nan) never happens (verified)",
+  "verdict": "fabricated"
+ },
+ "2208f6f76aff25b2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "setting \"rejected\" when reservation fails is intended, not a race",
+  "verdict": "fabricated"
+ },
+ "22adcfa6441267f3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "22af961eac76d483": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "check_password uses hmac.compare_digest, not plain comparison",
+  "verdict": "fabricated"
+ },
+ "22dd7b0ca9f9e07a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the code builds (month, day) tuples from both, so datetime works (tested)",
+  "verdict": "fabricated"
+ },
+ "22f86a8b355996fa": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "233a91e35ea6b708": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the code divides by 100, never by discount_pct",
+  "verdict": "fabricated"
+ },
+ "23abeaa1c96ba326": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "23bb08335157256c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "max_attempts=1 meaning one attempt is the intended semantics",
+  "verdict": "nitpick"
+ },
+ "23e453db7fe94a0f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "2410b95f7a598741": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "253cefee88280288": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "style",
+  "verdict": "nitpick"
+ },
+ "25b7206e3d5fd505": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "exception type/message preference",
+  "verdict": "nitpick"
+ },
+ "25ec60ad5c42a290": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "266d3aa2d230ebb0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "26d16c7bec2e4fd0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that 0 is rejected; whether ephemeral port 0 should be allowed is a design choice",
+  "verdict": "nitpick"
+ },
+ "27150359ee448a77": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "vague robustness remark",
+  "verdict": "nitpick"
+ },
+ "28ddf6cf9d2aa9e5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "Python ints do not overflow; and the delay is capped",
+  "verdict": "fabricated"
+ },
+ "293ad98509e5a507": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "design of status handling in get()",
+  "verdict": "nitpick"
+ },
+ "298fdcd4be06cf45": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the first retry does back off (0.5s base); claim of no backoff is false",
+  "verdict": "fabricated"
+ },
+ "299c52aedd937364": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "keys cannot go missing: config starts from all DEFAULTS keys",
+  "verdict": "nitpick"
+ },
+ "2b4c29d2d445771e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "jitter factor is at most 1.0, so the delay never exceeds max_delay",
+  "verdict": "fabricated"
+ },
+ "2cbb3fb39aa1936d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "2cf280d50088e9e8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "2cff538e05955d7e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "bool(\"false\") is True: the planted bool-coercion bug, reported at the call site",
+  "verdict": "planted:m3-bool"
+ },
+ "2dba6dfb47afb8bc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "points out eviction is not by last access: the planted recency bug",
+  "verdict": "planted:m1-recency"
+ },
+ "2dce5a7f4a250f56": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "both operands are bytes; there is no encoding issue",
+  "verdict": "fabricated"
+ },
+ "2e0488cdc4d493e6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "without a dot the whole token becomes the MAC part, not the session id",
+  "verdict": "fabricated"
+ },
+ "2e87ace832d2837b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "2ee5e1e21dfb852e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "resp.headers is always available on a response",
+  "verdict": "fabricated"
+ },
+ "2f36dea83b2d3048": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "2f3c81af6e499d79": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "overwriting the value IS the update; nothing is lost",
+  "verdict": "fabricated"
+ },
+ "2f66b651a9340719": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "2fa3946d8f138529": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "2fb021c00beca3cd": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "3030ffc9c2e93a8e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "30f8cab880483b2b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "platform caveat",
+  "verdict": "nitpick"
+ },
+ "3113ef0d194647e9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "API design preference",
+  "verdict": "nitpick"
+ },
+ "32af3fb195a8ea09": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "sleeps (up to max_delay) after the final attempt before raising: wasted delay",
+  "verdict": "real"
+ },
+ "33247ba14a66c75f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "334001075de40b39": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "349298e4c8ebeeec": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "earlier decrements not rolled back when a later item fails",
+  "verdict": "planted:m4-atomic"
+ },
+ "352555105cffa4ca": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "a valid Retry-After returns early without jitter",
+  "verdict": "fabricated"
+ },
+ "35a536af4f95ce84": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: qty <= 0 with an unknown SKU passes the check and raises KeyError; malformed input",
+  "verdict": "nitpick"
+ },
+ "36042f21b8b85a3e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "361db04ec0c43bef": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "each session stores its 'created' timestamp",
+  "verdict": "fabricated"
+ },
+ "377b56064c3027eb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "earlier decrements not rolled back when a later item fails",
+  "verdict": "planted:m4-atomic"
+ },
+ "379cbd0a0aaf4687": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "fromisoformat scope",
+  "verdict": "nitpick"
+ },
+ "37d43b943ac1f556": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "38c9105e4924748d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "38cb96fee5bff154": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "38e1619925d49b16": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "39540515014b6a12": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "397b50d7ea34ec3f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "\"placed\" is only set after a successful reserve",
+  "verdict": "fabricated"
+ },
+ "3b508ed2664894d2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only racy under concurrent use; no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "3c9817a8b021c7fc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "3cdaa5806333f99a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "3d59182c282eef0a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-retryable statuses return immediately; the loop is bounded",
+  "verdict": "fabricated"
+ },
+ "3e27b265179f0b69": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tokens are only valid while the server-side session exists and is within SESSION_TTL",
+  "verdict": "fabricated"
+ },
+ "3e9d0e8b4ed77f82": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "3ed26faba1d01d11": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: TTL is absolute, not sliding; a design choice",
+  "verdict": "nitpick"
+ },
+ "404b66e92dc1ec30": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "raising to the caller is intended",
+  "verdict": "nitpick"
+ },
+ "421fab359b842cc7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "updating an existing key cannot grow the cache, and the size check runs anyway",
+  "verdict": "fabricated"
+ },
+ "42cb1fc84761ba0d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes it is correct",
+  "verdict": "nitpick"
+ },
+ "42f3c650022b10ce": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "4425e364051c24b7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "deleting an expired session is harmless",
+  "verdict": "nitpick"
+ },
+ "44c32bb733547d5a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "0 < port excludes port 0",
+  "verdict": "fabricated"
+ },
+ "45e31b41869129b2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "45f0ec9798d7d469": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the parentheses and the float() call on line 22 are correct",
+  "verdict": "fabricated"
+ },
+ "466f1ae9eebfefe6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "488fbb7e3f4ee1f1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "input validation suggestion",
+  "verdict": "nitpick"
+ },
+ "48e1c570617c9b47": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "49935dbef3ea57d3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an instant inside put; never observable after put returns",
+  "verdict": "nitpick"
+ },
+ "4a4e0bda4f8c3ac1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes it works",
+  "verdict": "nitpick"
+ },
+ "4bd716a10a1d6409": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "4bf753a3bf6706d0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "4cd3657dc062d64b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "4cd3aacd36818e42": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the signature returns str and the function returns the status string as documented",
+  "verdict": "fabricated"
+ },
+ "4d327c1de460c9f0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "0 < port excludes port 0",
+  "verdict": "fabricated"
+ },
+ "4dec95fc14206f87": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "fromisoformat scope",
+  "verdict": "nitpick"
+ },
+ "4e2e143dd2729bcb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "4e7d640cfa3dfd1a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "4f2b8c408f6ec6ab": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the arithmetic is already all-Decimal",
+  "verdict": "fabricated"
+ },
+ "5007ea5c350e03a5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "514719c9c05cd419": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "a transport error has no status code to check",
+  "verdict": "fabricated"
+ },
+ "51a431a2bf571d8f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the parentheses and the float() call on line 22 are correct",
+  "verdict": "fabricated"
+ },
+ "51fbdce9f789edee": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "exception type/message preference",
+  "verdict": "nitpick"
+ },
+ "536fafbd685293b6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "a transport error has no response, so no Retry-After header",
+  "verdict": "fabricated"
+ },
+ "546cdaaa9f9fbc29": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "session ids come from token_urlsafe, which never contains a dot",
+  "verdict": "fabricated"
+ },
+ "5471b31542391c1c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "compare_digest on equal-length hex strings is constant-time",
+  "verdict": "fabricated"
+ },
+ "54a571166b7e9842": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "decrement before all items confirmed (mislabelled race, but the planted defect)",
+  "verdict": "planted:m4-atomic"
+ },
+ "54ac4d7d18e2c2ae": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "5532a6d4964dedfa": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "f((1,2)) keys as ((1,2),) and f(1,2) as (1,2): distinct tuples",
+  "verdict": "fabricated"
+ },
+ "56384c25c907ccc0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "56b9331b12645349": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "sleeps (up to max_delay) after the final attempt before raising: wasted delay",
+  "verdict": "real"
+ },
+ "57d210d7f4604457": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "ordering within one sequential put has no observable effect",
+  "verdict": "nitpick"
+ },
+ "586561fe105bf77c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "5887414f411302ed": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "keys cannot go missing: config starts from all DEFAULTS keys",
+  "verdict": "nitpick"
+ },
+ "598efcf01509dead": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
  "5aae44c2ffc776ea": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "tokens cannot go negative: subtraction only after tokens >= n",
   "verdict": "fabricated"
+ },
+ "5b557e28f4852b77": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "5c979790acf34f45": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tokens are only valid while the server-side session exists and is within SESSION_TTL",
+  "verdict": "fabricated"
+ },
+ "5d246eff1bc5d6d7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "without a dot the whole token becomes the MAC part, not the session id",
+  "verdict": "fabricated"
+ },
+ "5d5ef744a6af4d9d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true (TypeError on kwargs) but the docstring limits it to positional arguments",
+  "verdict": "nitpick"
+ },
+ "60131904a55c12da": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "60e8eb62c9f4f9b6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "60fa53b3a0d359f8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "616bea8d065b77e8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "release assigns stock[sku]; assignment cannot raise KeyError",
+  "verdict": "fabricated"
+ },
+ "616bf24d976b215d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "exception type/message preference",
+  "verdict": "nitpick"
+ },
+ "61cb7852c5e1ec76": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: HTTP-date Retry-After falls back to exponential backoff; a limitation, not a defect",
+  "verdict": "nitpick"
+ },
+ "623c17e06a4b5733": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "629972a3ca598d9a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "62a10bd934058bc7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "62d28bc60b79f21a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "633b657136a4d19e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "env overrides only known keys and extra keys are rejected by validate: intended",
+  "verdict": "nitpick"
+ },
+ "639e474a7b3da2f7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "63d5446d6be567bb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "660f11bf30b5275b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: HTTP-date Retry-After falls back to exponential backoff; a limitation, not a defect",
+  "verdict": "nitpick"
  },
  "6673c8c02ac836ab": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
   "verdict": "nitpick"
  },
+ "66f66bf1fa5b8779": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "67765ef347a8a6fb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "exception type/message preference",
+  "verdict": "nitpick"
+ },
+ "67cc13cb87296393": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the day is clamped with min(); tested 2024-02-29 +12 -> 2025-02-28, 2025-01-31 +1 -> 2025-02-28",
+  "verdict": "fabricated"
+ },
  "685cbe997b925451": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "686eb3b1834bc9dc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes the special case avoids the crash",
   "verdict": "nitpick"
  },
  "69c949ffd0d5abf5": {
@@ -39,9 +929,189 @@
   "note": "idle keys are collected into a list before deletion, so no dict change during iteration single-threaded; stated cause (bucket.updated changing) is wrong",
   "verdict": "fabricated"
  },
+ "69cb0cacf8237576": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: HTTP-date Retry-After falls back to exponential backoff; a limitation, not a defect",
+  "verdict": "nitpick"
+ },
  "6b7bf74782d86fea": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "input validation suggestion",
+  "verdict": "nitpick"
+ },
+ "6bd9479e9a0a1221": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "indexing preference",
+  "verdict": "nitpick"
+ },
+ "6c51b7af59f46dee": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "6cbbf5fea35ed144": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "6cfcea7a02120f34": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "os.replace accepts a Path and a str together",
+  "verdict": "fabricated"
+ },
+ "6eb13ab02f1ff93f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "quantize rounds (ROUND_HALF_EVEN); it does not raise for extra decimals",
+  "verdict": "fabricated"
+ },
+ "6f14550b36507e3a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "feature request",
+  "verdict": "nitpick"
+ },
+ "6f63372e24178cce": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "6fb0b9da3d19573e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "session ids come from token_urlsafe, which never contains a dot",
+  "verdict": "fabricated"
+ },
+ "6fb485076c28eed7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "707e69273095307e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that non-JSON raises JSONDecodeError; normal behaviour, not the status-check bug",
+  "verdict": "nitpick"
+ },
+ "71211ce33af668ea": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true (jitter after cap lowers delay up to 50%); a valid jitter design",
+  "verdict": "nitpick"
+ },
+ "71e6971e597e032c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "robustness against invalid input to an internal helper",
+  "verdict": "nitpick"
+ },
+ "7250c4513c44f643": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "returning [] for an empty string is the sensible behaviour",
+  "verdict": "nitpick"
+ },
+ "731d1b0845fa0619": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "format validation suggestion",
+  "verdict": "nitpick"
+ },
+ "734e260ecd757afb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "style",
+  "verdict": "nitpick"
+ },
+ "737aa878809d1615": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "reports a non-issue (\"Disregard\")",
+  "verdict": "nitpick"
+ },
+ "73a5d6dbe72b8359": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "ordering remark, no defect",
+  "verdict": "nitpick"
+ },
+ "7419cda6bab58568": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroy_all_for collects ids into a list first, then deletes: no modification during iteration",
+  "verdict": "fabricated"
+ },
+ "750497f133016f0a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: HTTP-date Retry-After falls back to exponential backoff; a limitation, not a defect",
+  "verdict": "nitpick"
+ },
+ "7521f494a779a712": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "75b7859ba6bcf756": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "775119bd04034927": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroy_all_for collects ids into a list first, then deletes: no modification during iteration",
+  "verdict": "fabricated"
+ },
+ "776f0fa7c9637679": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "env overrides only known keys and extra keys are rejected by validate: intended",
+  "verdict": "nitpick"
+ },
+ "779693fcfbeab951": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "deleting an expired session is harmless",
+  "verdict": "nitpick"
+ },
+ "77e9523417aee589": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "77ec94bc2fc83500": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "78990f870b922299": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "793853a51a966099": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "79633579f161d9da": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the day is clamped with min(); tested 2024-02-29 +12 -> 2025-02-28, 2025-01-31 +1 -> 2025-02-28",
+  "verdict": "fabricated"
+ },
+ "79e91c59a5642bf4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "7a623cbe19a52d3f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "coercion follows the DEFAULTS type, not the JSON value; the described paths do not occur",
+  "verdict": "fabricated"
+ },
+ "7a84a46ded4ec0eb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes it is checked",
+  "verdict": "nitpick"
+ },
+ "7ab1f473dbf51022": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "7b56349798ec69a9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "ordering within one sequential put has no observable effect",
+  "verdict": "nitpick"
+ },
+ "7b7512b6372a35cb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
   "verdict": "nitpick"
  },
  "7bfebb89a989ac5c": {
@@ -49,9 +1119,64 @@
   "note": "conditional KeyError on malformed input, not a defect",
   "verdict": "nitpick"
  },
+ "7cb0f4e528f41779": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tzinfo is only set for naive timestamps; aware ones are returned unchanged",
+  "verdict": "fabricated"
+ },
+ "7d7574d7dd814072": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "overwriting a stale tmp file is fine",
+  "verdict": "nitpick"
+ },
+ "7e9c765550fd7a55": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "os.replace accepts a Path and a str together",
+  "verdict": "fabricated"
+ },
+ "7ec5fc327ddd4ee2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "7eed8a5dcebe5c8e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "7f0a4d5bf53bec56": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "scope of caught exceptions, plausibly intended",
+  "verdict": "nitpick"
+ },
+ "812509a3e0bb7e37": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-retryable statuses are returned on line 40, not retried",
+  "verdict": "fabricated"
+ },
  "812da699700c9215": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "81b6da6ef588c7c6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: non-positive quantities are not validated; malformed input",
+  "verdict": "nitpick"
+ },
+ "826b0e827576808e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-retryable statuses (404/403) are returned immediately, they never exhaust attempts",
+  "verdict": "fabricated"
+ },
+ "829d86a02acbb114": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "82e75021bc0575d9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
   "verdict": "nitpick"
  },
  "83873c9039509cb1": {
@@ -59,9 +1184,444 @@
   "note": "tokens can never go negative (try_acquire checks >= n); fractional tokens handled by float division",
   "verdict": "fabricated"
  },
+ "860e94e9e4ef6ec5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that float accepts inf/nan, but max/min clamp them to 0..30",
+  "verdict": "nitpick"
+ },
+ "86a71f7e30f20980": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "8795309f17485b0f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "879d3258e2960883": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "preference",
+  "verdict": "nitpick"
+ },
+ "87f602d4218962fe": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "891ee49d171d6f47": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "8977c7016938986b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "vague consistency remark",
+  "verdict": "nitpick"
+ },
+ "89ddd34cc2bd2517": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "8a77bf7065ce5198": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "8ab11db02af105fd": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "vague design remark",
+  "verdict": "nitpick"
+ },
+ "8af215caa9508cdb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "validate() does not iterate allowed_origins",
+  "verdict": "fabricated"
+ },
+ "8ccd686d8ee15676": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "efficiency remark",
+  "verdict": "nitpick"
+ },
+ "8db103de7de7b8b7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "8e49075fc7830fc6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "env overrides only known keys and extra keys are rejected by validate: intended",
+  "verdict": "nitpick"
+ },
+ "8ed26e560ccf23bf": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "8f0df51291d1aab8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "negligible length-dependent hashing time",
+  "verdict": "nitpick"
+ },
+ "8f47359ec980f096": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "9040adc33116180e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "9042f9aae78e2814": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "91648589aea17172": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the comparison is the correct inclusive-overlap test",
+  "verdict": "fabricated"
+ },
+ "91f6a5ec3173b3c4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "928eb15551fd23c0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "documented behaviour",
+  "verdict": "nitpick"
+ },
+ "9338ea9c79843a07": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "fromisoformat scope",
+  "verdict": "nitpick"
+ },
+ "9343c2ca324c0817": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes it cannot happen",
+  "verdict": "nitpick"
+ },
+ "93e8f16a82e56e9d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "942d0209d7706934": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "identifies that load_config merges into the shared DEFAULTS dict",
+  "verdict": "planted:m3-alias"
+ },
+ "9431f5e925f2621f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "explains that Python floor division makes negative months work",
+  "verdict": "nitpick"
+ },
+ "948cbf27b53dc26f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for born > today; malformed input",
+  "verdict": "nitpick"
+ },
+ "94a634746388ea4b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "secrets.token_bytes is a CSPRNG",
+  "verdict": "fabricated"
+ },
+ "94b2068e8c990fc8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "a provided (non-empty) salt is used, not replaced",
+  "verdict": "fabricated"
+ },
+ "94f326bc25e1bf71": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "hit and miss paths are exclusive; each lookup increments exactly one counter",
+  "verdict": "fabricated"
+ },
+ "9537b466a3d8d2a6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tokens are only valid while the server-side session exists and is within SESSION_TTL",
+  "verdict": "fabricated"
+ },
+ "9562ada3159ba2d2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "9667d9370b876dfc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "backoff indexing preference",
+  "verdict": "nitpick"
+ },
+ "977c871a135e3dee": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "98a690e413adb59b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "98be8ed479c64a3c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "98c35b8d6aa6bad5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes it is correct",
+  "verdict": "nitpick"
+ },
+ "98d8cf5c89290cb8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "9a0737f65da67345": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "9b6dbaf56ccb0d88": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "sleeps (up to max_delay) after the final attempt before raising: wasted delay",
+  "verdict": "real"
+ },
+ "9bd4c175e7bdc042": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "validate() does not iterate allowed_origins or index it as dicts",
+  "verdict": "fabricated"
+ },
+ "9c2927b3d44e7304": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "style",
+  "verdict": "nitpick"
+ },
+ "9cc05a3dd4bb5b04": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "9e76f9d019f774e2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the provided salt is reused; no new salt is created",
+  "verdict": "fabricated"
+ },
  "a09b3a65d3d155f3": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
+  "verdict": "nitpick"
+ },
+ "a124d954f91a526b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "style",
+  "verdict": "nitpick"
+ },
+ "a15e3d4a9cc26a8c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "a1c2edb823ee384c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "str.encode() always defaults to UTF-8",
+  "verdict": "fabricated"
+ },
+ "a47f1fa9ddff9ba3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "compare_digest is the right way to compare the hashes",
+  "verdict": "fabricated"
+ },
+ "a59e5c4f4a2e93f3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "a5d7738043a384f3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: HTTP-date Retry-After falls back to exponential backoff; a limitation, not a defect",
+  "verdict": "nitpick"
+ },
+ "a74f6a86caec449b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "sleeps (up to max_delay) after the final attempt before raising: wasted delay",
+  "verdict": "real"
+ },
+ "a77cd8173e9a7bf7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "a7bbc0b38c855930": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "exception type/message preference",
+  "verdict": "nitpick"
+ },
+ "a80f758e79456810": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tuning opinion",
+  "verdict": "nitpick"
+ },
+ "a924bcbc59361b1c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "aa9345019072c372": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "ab252ec27fa64a83": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "Retry-After is already capped at max_delay",
+  "verdict": "nitpick"
+ },
+ "ad52463b77723345": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "adb314c1858a6047": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "httpx Client.get (non-stream) reads the body in send() and releases the connection; verified in httpx source",
+  "verdict": "fabricated"
+ },
+ "add94169574a9124": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "keys cannot go missing: config starts from all DEFAULTS keys",
+  "verdict": "nitpick"
+ },
+ "af0601b1c8f2575a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "af7db0a5bf878339": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the first retry sleeps 0.25-0.5s; it is not zero",
+  "verdict": "fabricated"
+ },
+ "afebd14ae7387627": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "sleeps (up to max_delay) after the final attempt before raising: wasted delay",
+  "verdict": "real"
+ },
+ "afefed639b4861db": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "b0022b68f8dba532": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "b1483c5ad8410dcf": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "b15287607cdc0d82": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "os.replace accepts a Path and a str together",
+  "verdict": "fabricated"
+ },
+ "b2754aefc3d34a0a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-retryable HTTP errors are returned, not retried to exhaustion",
+  "verdict": "fabricated"
+ },
+ "b31a05d7aa7210cd": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the two branches are exclusive; ordering has no effect",
+  "verdict": "fabricated"
+ },
+ "b32c381305148c08": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the provided salt is passed through and used",
+  "verdict": "fabricated"
+ },
+ "b333ed2c8dbff5d1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "kwargs are not ignored; calls with kwargs raise TypeError, no incorrect caching",
+  "verdict": "fabricated"
+ },
+ "b3b74b5137f4df38": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "b4d8ff22b414f52d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "error-handling preference",
+  "verdict": "nitpick"
+ },
+ "b530d6ac98ec4fd2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "env overrides only known keys and extra keys are rejected by validate: intended",
+  "verdict": "nitpick"
+ },
+ "b61bcc77be568026": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "b690aaa56a9b7475": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "get_user verifies the signature (line 31) before the expiry check",
+  "verdict": "fabricated"
+ },
+ "b690f208394ebde5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "computed from date differences, so leap years are handled (tested: 2024-02 -> 29)",
+  "verdict": "fabricated"
+ },
+ "b69fce6a4c344077": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "hedged; missing SKU returns False before the decrement for positive qty",
+  "verdict": "nitpick"
+ },
+ "b82686d09455f14e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "concedes double release is already avoided",
+  "verdict": "nitpick"
+ },
+ "b93d9d9b781e1070": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "b982a1479c131640": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "ba051ed428c3aa08": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "bb79c5b6ffc33df4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the day is clamped with min(); tested 2024-02-29 +12 -> 2025-02-28, 2025-01-31 +1 -> 2025-02-28",
+  "verdict": "fabricated"
+ },
+ "bbfc5702fa9be7d1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "bc7fd6d9df21c5ca": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "bd6d4c43cff3808e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
   "verdict": "nitpick"
  },
  "be7433f0c837a27d": {
@@ -69,9 +1629,59 @@
   "note": "true that the dict grows until forget_idle is called; design choice, cleanup method exists",
   "verdict": "nitpick"
  },
+ "beb1f84c240694d5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: after retryable-status exhaustion the RuntimeError carries no status/response; error-reporting quality",
+  "verdict": "nitpick"
+ },
+ "bedd730eb31548b2": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
  "bf3164d36bd98d97": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true that the dict grows until forget_idle is called; design choice, cleanup method exists",
+  "verdict": "nitpick"
+ },
+ "bf8b867ac11859a9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "c38564ce6e976fad": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "a miss is counted only when the key is absent; the claim misreads the code",
+  "verdict": "fabricated"
+ },
+ "c58267b2ff5d0189": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "missing upper bound is a policy choice",
+  "verdict": "nitpick"
+ },
+ "c73c6d6fe7e23545": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "describes rpartition behaviour; the MAC check still rejects the token",
+  "verdict": "nitpick"
+ },
+ "c74788d2c69f0b32": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "c7c1af17254896f6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that non-JSON raises JSONDecodeError; normal behaviour, not the status-check bug",
+  "verdict": "nitpick"
+ },
+ "c7c8fc3873b56919": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: HTTP-date Retry-After falls back to exponential backoff; a limitation, not a defect",
+  "verdict": "nitpick"
+ },
+ "c848306566e0934e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
   "verdict": "nitpick"
  },
  "c98840a70dec0d94": {
@@ -84,14 +1694,484 @@
   "note": "float rounding exists but is negligible here",
   "verdict": "nitpick"
  },
+ "ca4c4b6fb6005a8b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroy_all_for collects ids into a list first, then deletes: no modification during iteration",
+  "verdict": "fabricated"
+ },
+ "ca5b737cc0580723": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "cb144a8dc08ff47b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only racy under concurrent use; no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "cb516f5feb71fc05": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "only under concurrent use; the store makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "cbf500a5035ec8bf": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the parentheses and the float() call on line 22 are correct",
+  "verdict": "fabricated"
+ },
+ "cd1f041665a95446": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "cd496b62670babc9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "dividing a Decimal by 100 does not raise InvalidOperation in the default context",
+  "verdict": "fabricated"
+ },
+ "cdceb969f9bb3475": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "session ids come from token_urlsafe, which never contains a dot",
+  "verdict": "fabricated"
+ },
+ "cee75044dc4b1325": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "kwargs are not dropped: inner() rejects them with TypeError, nothing is cached",
+  "verdict": "fabricated"
+ },
+ "cf010c327dca289e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "check-then-access is only racy under concurrent use; class makes no thread-safety claim",
+  "verdict": "nitpick"
+ },
+ "d02b95b1c3153c90": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "d16d2ab5d636ee39": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "feature request",
+  "verdict": "nitpick"
+ },
+ "d18b203a7a6c34c6": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "d277d6e38e5590db": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "preference",
+  "verdict": "nitpick"
+ },
+ "d2c16a1bfe0bf483": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that non-JSON raises JSONDecodeError; normal behaviour, not the status-check bug",
+  "verdict": "nitpick"
+ },
+ "d2e9fb2d248a7034": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "raising on invalid input is expected",
+  "verdict": "nitpick"
+ },
+ "d3a1f90c5105f158": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "d4e8e8cd8f9a2ded": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "documented: arguments must be hashable",
+  "verdict": "nitpick"
+ },
+ "d4eeed1097fb97ea": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "get() returning non-retryable responses is a design choice; the planted bug is in get_json",
+  "verdict": "nitpick"
+ },
+ "d50a65678f0bdd1d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: missing parent directory raises; caller's responsibility",
+  "verdict": "nitpick"
+ },
+ "d61a6e8801e48698": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: malformed/unusual file content or encoding can raise; robustness, not a defect",
+  "verdict": "nitpick"
+ },
+ "d66ad658a10b57f1": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "compare_digest is a general constant-time comparison, valid here",
+  "verdict": "fabricated"
+ },
  "d6906f21e88b69ee": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "write_summary opens the file with a with-statement; no handle leak",
   "verdict": "fabricated"
  },
+ "d6f226871d055724": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "describes behaviour, no defect",
+  "verdict": "nitpick"
+ },
+ "d78a71bf417d84d5": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "API design preference",
+  "verdict": "nitpick"
+ },
+ "d7e53f557a25b114": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "d895eacd32b0fa05": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "validate() contains no list comprehension over allowed_origins",
+  "verdict": "fabricated"
+ },
+ "d8ceacb43b514f7d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "sleeps (up to max_delay) after the final attempt before raising: wasted delay",
+  "verdict": "real"
+ },
+ "d93ea08545963122": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroyed sessions are deleted server-side, so get_user returns None for their tokens",
+  "verdict": "fabricated"
+ },
+ "d99aeed0d2fafb68": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "destroyed sessions are deleted server-side, so get_user returns None for their tokens",
+  "verdict": "fabricated"
+ },
+ "d99f62a1a1c04023": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "d9f0c07ea5b5a92a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "env overrides only known keys and extra keys are rejected by validate: intended",
+  "verdict": "nitpick"
+ },
+ "da280f182a7c0ea3": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that non-JSON raises JSONDecodeError; normal behaviour, not the status-check bug",
+  "verdict": "nitpick"
+ },
+ "da572c5dd9de9f42": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "session ids are random 256-bit values; reuse is not a practical case",
+  "verdict": "nitpick"
+ },
+ "da8e9678ecbae200": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "precedence (env over file) is a conventional design choice",
+  "verdict": "nitpick"
+ },
+ "db17a240bfccba3e": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "db80e49389444186": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "with_suffix works for a path without extension (tested: conf -> conf.tmp)",
+  "verdict": "fabricated"
+ },
+ "dbfaab724c00ce2f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "dc227d4c21adf857": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "dc2714136363728b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true on Python < 3.11 only; version-dependent portability",
+  "verdict": "nitpick"
+ },
+ "dc9422202e5f5531": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "overwriting a stale tmp file is fine",
+  "verdict": "nitpick"
+ },
+ "dca070d1c129ebd4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "earlier decrements stay when the method returns False",
+  "verdict": "planted:m4-atomic"
+ },
+ "dcebc47cb522cfe7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that a float from JSON passes; malformed input",
+  "verdict": "nitpick"
+ },
+ "dd79e5a1f29bc9dc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "computed from date differences, so leap years are handled (tested: 2024-02 -> 29)",
+  "verdict": "fabricated"
+ },
+ "ddd2df16189ea1b7": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "de50092d44e5b319": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "tuning opinion",
+  "verdict": "nitpick"
+ },
+ "de54314dc9f29c38": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the new file gets default permissions; minor",
+  "verdict": "nitpick"
+ },
+ "de68c99580851103": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "e016c5648adb651a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "names the missing key derivation function",
+  "verdict": "planted:m6-kdf"
+ },
+ "e0ed1d0854363ddc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "e1419b43a66d7baf": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "e1795ddfc71ea3e4": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "names the weak password hash choice",
+  "verdict": "planted:m6-kdf"
+ },
+ "e1d175f9f49756ce": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "error-reporting preference",
+  "verdict": "nitpick"
+ },
+ "e202b3ee51313122": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "backoff indexing preference",
+  "verdict": "nitpick"
+ },
+ "e39d80e04311b6e0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "documented: arguments must be hashable",
+  "verdict": "nitpick"
+ },
+ "e3bfa501708e0b85": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "e3ef0b729d3ee0ae": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rejecting unknown keys is the intended validation",
+  "verdict": "nitpick"
+ },
+ "e3fec71723b46114": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "e4378c3ad00e8606": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true for an explicit empty salt b''; never produced by hash_password itself",
+  "verdict": "nitpick"
+ },
+ "e4dae78a02a2106d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "APP_ + ALLOWED_ORIGINS is exactly APP_ALLOWED_ORIGINS",
+  "verdict": "fabricated"
+ },
+ "e706227a18ad7331": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "e7cdefbd1de87d14": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "end date excluded via daterange: the planted bug, reported where business_days inherits it",
+  "verdict": "planted:m5-inclusive"
+ },
+ "eb22965c01505236": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "eb5495234111a438": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "the code divides by 100, never by discount_pct",
+  "verdict": "fabricated"
+ },
+ "ebb4c08114ad62d9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "rpartition never raises (no dot -> ('', '', token)); the MAC check then fails and None is returned",
+  "verdict": "fabricated"
+ },
+ "ec33797f39915281": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "precedence (env over file) is a conventional design choice",
+  "verdict": "nitpick"
+ },
  "ec568b354dd040e9": {
   "by": "Claude (Opus 5.5), blind to condition and model",
   "note": "true: raises on malformed input; expected behaviour for a loader, not a defect",
   "verdict": "nitpick"
+ },
+ "ecbbf1677d30411d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "a 256-bit random id makes collisions practically impossible",
+  "verdict": "fabricated"
+ },
+ "ecbf50e849eba6dd": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "leap-day birthdays: whether the age increments on Feb 28 or Mar 1 is a convention",
+  "verdict": "nitpick"
+ },
+ "ed7d5673edefcb6b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "os.replace overwrites the destination; an existing tmp source is not a failure case",
+  "verdict": "fabricated"
+ },
+ "ede1399d6f61984a": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "vague; positional-only is documented",
+  "verdict": "nitpick"
+ },
+ "eebc2eff2524c9cb": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "no fsync: durability hardening",
+  "verdict": "nitpick"
+ },
+ "ef307062804906b9": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "ef349f6c836cbd39": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "release assigns stock[sku]; assignment cannot raise KeyError",
+  "verdict": "fabricated"
+ },
+ "ef794b5bc445821f": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "docstring remark; the docstring is accurate",
+  "verdict": "nitpick"
+ },
+ "f00c8b649823d25c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "with_suffix does not raise for .config or conf. (tested: .config.tmp, conf..tmp)",
+  "verdict": "fabricated"
+ },
+ "f0766211cae1e3ac": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "retrying timeouts is the intended behaviour; retries are bounded",
+  "verdict": "nitpick"
+ },
+ "f17117c772f84982": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: int() raises on malformed env input; expected behaviour, not a defect",
+  "verdict": "nitpick"
+ },
+ "f181b26becf3ee24": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "f210a69ee12e69ec": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "f30bd8ede94ae8af": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "f475354f7bc13609": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
+ },
+ "f5d82c6cfe6f2bdc": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true that the client is only closed via close()/with; the class provides both, standard httpx practice",
+  "verdict": "nitpick"
+ },
+ "f5d8a3dc2ca1ca71": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "f7ddc82cff894b65": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "str.encode() always defaults to UTF-8",
+  "verdict": "fabricated"
+ },
+ "f8172a889e2e6f2b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "f8b1f16b3ae8c8b8": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: expired sessions are removed lazily; no sweeper. Design limitation",
+  "verdict": "nitpick"
+ },
+ "f95659129d5d94da": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true observation, no defect",
+  "verdict": "nitpick"
+ },
+ "f9c0475887196d84": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "floor division handles negative months correctly (tested: 2025-01-15 -1 -> 2024-12-15; 2025-01-31 -13 -> 2023-12-31)",
+  "verdict": "fabricated"
+ },
+ "fbc4e01448e9939d": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "input validation suggestion",
+  "verdict": "nitpick"
+ },
+ "fc9e4d2e8db69a03": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "true: a failed dump leaves a .tmp file behind; the target stays intact",
+  "verdict": "nitpick"
+ },
+ "fcd730638d85e07b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "fcffeea74417e286": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "cancel semantics preference",
+  "verdict": "nitpick"
+ },
+ "fe79764f9d2ebbe0": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "non-numeric/date Retry-After raises ValueError, which is caught on line 23 and falls back to backoff",
+  "verdict": "fabricated"
+ },
+ "ff38c0d01363fa9c": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "Decimal division by 100 is exact for these values",
+  "verdict": "fabricated"
+ },
+ "ff6899629b2fc85b": {
+  "by": "Claude (Opus 5.5), blind to condition and model",
+  "note": "December is special-cased to 31 (correct), so date(year, 13, 1) is never built",
+  "verdict": "fabricated"
  }
 }

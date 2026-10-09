@@ -1,0 +1,38 @@
+{
+ "domain": "b",
+ "task": "m3_config.py",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0037",
+ "prompt": "Review this Python code for bugs: real defects that would cause wrong results, crashes, security problems or resource leaks. Line numbers are shown on the left.\n\n```\n   1  import json\n   2  import os\n   3  from pathlib import Path\n   4  \n   5  DEFAULTS = {\n   6      \"host\": \"127.0.0.1\",\n   7      \"port\": 8080,\n   8      \"debug\": False,\n   9      \"workers\": 4,\n  10      \"allowed_origins\": [],\n  11  }\n  12  \n  13  \n  14  def _coerce(value: str, like):\n  15      \"\"\"Convert an environment string to the type of the default value.\"\"\"\n  16      if isinstance(like, bool):\n  17          return bool(value)\n  18      if isinstance(like, int):\n  19          return int(value)\n  20      if isinstance(like, list):\n  21          return [v.strip() for v in value.split(\",\") if v.strip()]\n  22      return value\n  23  \n  24  \n  25  def load_config(path: str = None, env_prefix: str = \"APP_\") -> dict:\n  26      config = DEFAULTS\n  27      if path:\n  28          p = Path(path)\n  29          if p.exists():\n  30              with p.open() as f:\n  31                  config.update(json.load(f))\n  32      for key, default in DEFAULTS.items():\n  33          env_key = env_prefix + key.upper()\n  34          if env_key in os.environ:\n  35              config[key] = _coerce(os.environ[env_key], default)\n  36      validate(config)\n  37      return config\n  38  \n  39  \n  40  def validate(config: dict) -> None:\n  41      unknown = set(config) - set(DEFAULTS)\n  42      if unknown:\n  43          raise ValueError(f\"unknown config keys: {sorted(unknown)}\")\n  44      if not (0 < config[\"port\"] < 65536):\n  45          raise ValueError(\"port out of range\")\n  46      if config[\"workers\"] < 1:\n  47          raise ValueError(\"workers must be at least 1\")\n  48  \n  49  \n  50  def dump_config(config: dict, path: str) -> None:\n  51      tmp = Path(path).with_suffix(\".tmp\")\n  52      with tmp.open(\"w\") as f:\n  53          json.dump(config, f, indent=2, sort_keys=True)\n  54      os.replace(tmp, path)\n```\n\nOutput format (required):\nFor every issue you report, write one line in exactly this form:\nISSUE: line <number> | <description of the problem>\nIf you find no issues, write the single line: NO_ISSUES_FOUND\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here's my review of the code. I found two clear defects:\n\nISSUE: line 17 | bool(value) treats any non-empty string as True, so APP_DEBUG=false, APP_DEBUG=0, or APP_DEBUG=no all evaluate to True \u2014 booleans from environment variables are parsed incorrectly.\nISSUE: line 26 | config = DEFAULTS assigns the module-level dict by reference; load_config then mutates DEFAULTS via update/assignment, permanently corrupting the defaults for all future calls.\n\nExplanation of the two issues:\n\n1. **Line 17 \u2014 broken boolean coercion:** `bool(value)` on a string is `True` for anything except the empty string. A user setting `APP_DEBUG=false` to disable debug mode would actually get `debug=True`, which is both a correctness bug and potentially a security issue (debug mode unexpectedly enabled in production).\n\n2. **Line 26 \u2014 mutation of shared global:** `config = DEFAULTS` doesn't copy the dict. `config.update(...)` on line 31 and `config[key] = ...` on line 35 therefore mutate the module-level `DEFAULTS`. Consequences: subsequent calls to `load_config()` inherit values from earlier calls, environment overrides \"stick\" even when the env var is later unset, and `DEFAULTS` no longer represents actual defaults. The fix is `config = dict(DEFAULTS)` (or `DEFAULTS.copy()`).\n\nTwo things I checked but am *not* reporting as definite bugs, though they may be worth noting:\n\n- **Line 51 \u2014 `with_suffix(\".tmp\")` behavior:** If `path` has no suffix (e.g., `\"config\"`), this produces `config.tmp` as intended; if `path` is something like `config.json`, it produces `config.tmp`. However, for a dotted name like `my.config.json` it yields `my.config.tmp`, and if the path is something like `.config` it raises `ValueError`. These are edge cases rather than a clear defect.\n- **Line 30\u201331 \u2014 untrusted JSON merged wholesale:** `json.load` of a file can raise on malformed JSON (acceptable to propagate), and unknown keys from the file are rejected later by `validate`, so this isn't exploitable per se. However, a config file *could* set wrong types (e.g., `\"port\": \"abc\"`), which would make `validate` crash with a `TypeError` on the `<` comparison at line 44 rather than raising a clean error. I consider this a robustness gap, not a clear bug, so I've left it out.",
+  "usage": {
+   "prompt_tokens": 695,
+   "completion_tokens": 536,
+   "total_tokens": 1231,
+   "cost": 0.008775,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.008775,
+    "upstream_inference_prompt_cost": 0.001807,
+    "upstream_inference_completions_cost": 0.006968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791403761-3DsQHGGlLORcccGUa45U"
+ },
+ "ts": "2026-10-07T20:09:30.571342+00:00"
+}

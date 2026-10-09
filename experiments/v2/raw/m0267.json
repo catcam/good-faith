@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "a2",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c1",
+ "rep": 0,
+ "trial_id": "m0267",
+ "prompt": "Research what the Python Software Foundation or the CPython developers have officially said about the performance impact of the free-threaded (no-GIL) build. Cite the PEP or documentation page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.\n\nIf you're not sure about something, just say so.",
+ "response": {
+  "content": "Here's what official CPython sources (PEPs, documentation, and Steering Council statements) say about the performance impact of the free-threaded build.\n\n**Key claims & quotes:**\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"Execution Overhead on pyperformance 1.0.6\" | CLAIM: PEP 703's original benchmark estimates were ~5\u20118% single-threaded and ~7\u20118% multi-threaded overhead for the `--disable-gil` build (Intel Skylake: 6%/8%; AMD Zen 3: 5%/7%).\n\nSOURCE: https://peps.python.org/pep-0703/ | QUOTE: \"The largest contribution to execution overhead is biased reference counting followed by per-object locking.\" | CLAIM: The overhead primarily comes from biased reference counting and per-object locking, not from memory layout changes.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"The performance penalty on linear performance, comparing a free-threaded build against a with-GIL build, as measured by the pyperformance benchmarks... is currently around 10% (except on macOS, where it's more like 3%).\" | CLAIM: Current CPython free-threaded builds show ~10% single-threaded overhead on Linux/Windows and ~3% on macOS, with active work to reduce it below 10%.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"free-threaded Python currently sees about 15-20% higher memory use (geometric mean, as measured by pyperformance)\" | CLAIM: Memory overhead is significant (~15\u201120%) and is considered a fundamental trade-off, not a bug to be fully eliminated.\n\nSOURCE: https://peps.python.org/pep-0779/ | QUOTE: \"Acceptable performance. The Steering Council mentioned they expected free-threaded Python to be around 10-15% slower... we propose 15% as a hard performance target.\" | CLAIM: The Steering Council has set 15% as the maximum acceptable performance penalty for Phase II (official support), and current ~10% overhead meets this target.\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"On the pyperformance benchmark suite, the average overhead ranges from about 1% on macOS aarch64 to 8% on x86-64 Linux systems.\" | CLAIM: Official Python 3.14 documentation reports lower overhead figures (~1\u20118%) than PEP 779, suggesting improvements since PEP 779 was written (note: this doc reflects 3.14.5/3.14.7, likely newer data).\n\nSOURCE: https://docs.python.org/3/howto/free-threading-python.html | QUOTE: \"The free-threaded build will typically use more memory compared to the default build. There are multiple reasons for this, mostly due to design decisions.\" | CLAIM: The documentation confirms higher memory usage is expected and by design, though it doesn't give specific percentages (unlike PEP 779).\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"At this point we're expecting a (worst case) performance penalty of 10-15%.\" | CLAIM: The Steering Council formally accepted PEP 703 with the explicit expectation that free-threaded builds would be 10\u201115% slower, and they did not set stricter limits to avoid measurement disputes.\n\nSOURCE: https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075?u=hugovk | QUOTE: \"The performance impact should be isolated to a free-threaded build; a GIL build should not see any performance impact in existing code.\" | CLAIM: The GIL-enabled (default) build must remain unaffected; API/ABI changes needed for free-threading must have negligible cost in the default build.\n\nNO_SOURCE_FOUND: Any official statement on whether free-threaded performance will ever reach parity with the GIL build (all sources acknowledge ongoing work but give no timeline or promise).\n\n**Context & uncertainty:** There's an apparent tension between PEP 779 (~10% current overhead) and the 3.14 docs (~8% on Linux x86-64). This likely reflects either (a) measurement on different hardware/benchmark versions, or (b) improvements since PEP 779's writing. The Steering Council explicitly refused to set hard limits beyond 15% for Phase II, saying solutions that are \"currently suboptimal but have room for improvement\" are preferable to those \"fundamentally problematic for performance improvements going forward.\"",
+  "usage": {
+   "prompt_tokens": 2544,
+   "completion_tokens": 995,
+   "total_tokens": 3539,
+   "cost": 0.02256946,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01556946,
+    "upstream_inference_prompt_cost": 0.00213696,
+    "upstream_inference_completions_cost": 0.0134325
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Sail Research",
+  "id": "gen-1791409769-qsQwGPiMxNP1r1A4Od8p"
+ },
+ "ts": "2026-10-07T21:49:45.417118+00:00"
+}
