@@ -22,9 +22,14 @@ This isn't a magic phrase. It's a testable change to what counts as success in t
 
 ## Evidence status
 
-Honest version: **unproven.** The idea came from one observed case. A pre-registered 144-trial experiment ([EXPERIMENT.md](EXPERIMENT.md)) was run to test it, and its result is **inconclusive**. The automatic fabrication scorer turned out to be unreliable, a corrected scorer failed its own held-out validation, and the code-review judge was never calibrated. The raw numbers even point the wrong way in one domain, but they come from a measurement shown to be broken. Full account: [REPORT.md](REPORT.md).
+Honest version: **unproven.** The idea came from one observed case. It has been tested twice with pre-registered experiments:
 
-What still stands without the experiment is the second half of the practice: verify every checkable claim yourself. That holds no matter which prompt you use.
+- **v1** ([REPORT.md](REPORT.md)): inconclusive. The automatic scorer turned out to be invalid.
+- **v2** ([REPORT_V2.md](REPORT_V2.md)): mechanical scoring, frozen before the run, 408 trials. **Not significant in either domain.**
+  - For citations, the good-faith framing produced about half as many quotes that are not on the cited page, plus twice as many explicit "no source found" answers. The direction is right, but p = 0.13, and one of four models went the other way.
+  - For code review, there was no difference.
+
+What stands without any experiment is the second half of the practice: verify every checkable claim yourself, whatever prompt you used.
 
 ## How It Works
 
