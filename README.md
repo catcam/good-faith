@@ -27,6 +27,8 @@ Honest version: **unproven.** The idea came from one observed case. It has been 
 - **v1** ([REPORT.md](REPORT.md)): inconclusive. The automatic scorer turned out to be invalid.
 - **v2** ([REPORT_V2.md](REPORT_V2.md)): mechanical scoring, frozen before the run, 408 trials. **Not significant in either domain.**
   - For citations, the good-faith framing produced about half as many quotes that are not on the cited page, plus twice as many explicit "no source found" answers. The direction is right, but p = 0.13, and one of four models went the other way.
+  - Part of that gap later turned out to be scorer error: real quotes in tabbed tables and in JavaScript-rendered text were marked as "not on the page". With the fixed scorer, p = 0.29.
+- **v3** ([EXPERIMENT_V3.md](EXPERIMENT_V3.md)): paused after its pilots. With web search on, the models rarely quoted text that was not on the page.
   - For code review, there was no difference.
 
 What stands without any experiment is the second half of the practice: verify every checkable claim yourself, whatever prompt you used.
