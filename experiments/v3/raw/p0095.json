@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u07",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0095",
+ "prompt": "Research Docker Hub's officially documented pull rate limits for unauthenticated and authenticated free users. Cite Docker's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://docs.docker.com/docker-hub/usage/ | QUOTE: \"The following table provides an overview of the included usage and limits for each user type, subject to fair use:\" | CLAIM: Docker publishes an authoritative table of Hub usage limits by user type, and those limits are subject to fair use.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"The pull rate limit is calculated on a 6-hour basis.\" | CLAIM: Docker's officially documented pull rate limit is evaluated over a six-hour window.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"Unauthenticated and Docker Personal users are subject to a 6-hour pull rate limit on Docker Hub.\" | CLAIM: The documented limits specifically apply to unauthenticated users and free Docker Personal accounts.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"In contrast, Docker Pro, Team, and Business users benefit from an unlimited pull rate.\" | CLAIM: The documentation contrasts paid accounts, which are unlimited, with the limited unauthenticated and free Personal tiers.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"| Personal (authenticated) | 200 |\" | CLAIM: Docker's official limit for authenticated free Personal users is 200 pulls per six hours.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"| Unauthenticated Users | 100 per IPv4 address or IPv6 /64 subnet |\" | CLAIM: Docker's official limit for unauthenticated users is 100 pulls per six hours per IPv4 address or IPv6 /64 subnet.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/ | QUOTE: \"Unauthenticated and Docker Personal users using Docker Hub will experience rate limits on image pulls.\" | CLAIM: Docker says these categories of users will in practice experience pull rate limiting.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"When you issue a pull and you are over the limit, Docker Hub returns a `429` response code with the following body when the manifest is requested:\" | CLAIM: The documented symptom of exceeding the limit is a 429 response during the manifest request.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limits\" | CLAIM: Docker documents the exact over-limit error message and points users to authentication or an upgrade to raise the limit.\n\nNO_SOURCE_FOUND: Docker's officially documented current pull rate limits for unauthenticated and authenticated free users expressed as hourly limits.",
+  "usage": {
+   "prompt_tokens": 1920,
+   "completion_tokens": 570,
+   "total_tokens": 2490,
+   "cost": 0.019402,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.012402,
+    "upstream_inference_prompt_cost": 0.004992,
+    "upstream_inference_completions_cost": 0.00741
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791593231-yJzZtJYtedScwCIpQ7jC"
+ },
+ "ts": "2026-10-10T00:47:17.998095+00:00"
+}

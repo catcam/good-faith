@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u15",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0072",
+ "prompt": "Research the officially documented free tier of Cloudflare R2 (storage, Class A and Class B operations, egress). Cite Cloudflare's documentation and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Cloudflare's official documentation for R2, here are the details of the free tier:\n\n**Standard Storage**\nCloudflare R2 provides 10 GB-month of storage for free each month. The free tier explicitly applies only to Standard storage and not to the Infrequent Access storage class.\n\n**Class A Operations**\nClass A operations (which tend to mutate state, such as writes or lists) include 1 million requests per month for free.\n\n**Class B Operations**\nClass B operations (which tend to read existing state, such as `GetObject`) include 10 million requests per month for free.\n\n**Egress**\nR2 does not charge for egress bandwidth (data transfer to the Internet) for any storage class. Direct egress via the Workers API, S3 API, and r2.dev domains is completely free.\n\n***\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Storage 10 GB-month / month\" | CLAIM: The free tier for Cloudflare R2 includes 10 GB-month of storage per month.\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Class A Operations 1 million requests / month\" | CLAIM: The free tier includes 1 million Class A operations per month.\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Class B Operations 10 million requests / month\" | CLAIM: The free tier includes 10 million Class B operations per month.\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Egress (data transfer to Internet) Free 1\" | CLAIM: Egress to the internet is free under the R2 free tier.\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"The free tier only applies to Standard storage, and does not apply to Infrequent Access storage.\" | CLAIM: The free tier storage allowance is exclusively for the Standard storage class.\nSOURCE: https://developers.cloudflare.com/r2/pricing/index.md | QUOTE: \"Egressing directly from R2, including via the Workers API, S3 API, and r2.dev domains does not incur data transfer (egress) charges and is free.\" | CLAIM: Egress is free when using direct methods like the Workers API, S3 API, and r2.dev domains.",
+  "usage": {
+   "prompt_tokens": 1732,
+   "completion_tokens": 480,
+   "total_tokens": 2212,
+   "cost": 0.0115368,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0045368,
+    "upstream_inference_prompt_cost": 0.0024248,
+    "upstream_inference_completions_cost": 0.002112
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "GMICloud",
+  "id": "gen-1791592629-5DLqO5KVmYmWXdhSmy59"
+ },
+ "ts": "2026-10-10T00:37:17.613185+00:00"
+}

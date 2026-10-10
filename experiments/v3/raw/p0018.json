@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u21",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0018",
+ "prompt": "Research the Chrome browser's officially documented release cycle (how many weeks between major stable releases, and the Extended Stable option). Cite the Chromium or Google page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official documentation and announcements from Google and the Chromium project, here are the details regarding Chrome's release cycles as of late 2026.\n\n**Stable Channel Release Cycle**\nStarting in September 2026, Chrome moved to a two-week release cycle for major stable releases. This applies to all platforms, including Desktop, Android, and iOS.\n\nSOURCE: https://developer.chrome.com/blog/chrome-two-week-release | QUOTE: \"The new release cycle means that a new beta and stable version of Chrome will ship every two weeks, starting from the stable release of Chrome 153 on September 8th.\" | CLAIM: The Stable channel now ships a new major version every two weeks.\n\nSOURCE: https://chromium.googlesource.com/chromium/src/+/main/docs/process/release_cycle.md | QUOTE: \"Chrome ships a new milestone (major version) to the stable channel every two weeks.\" | CLAIM: The Chromium documentation confirms the two-week cadence for major stable milestones.\n\n**Extended Stable Channel Release Cycle**\nThe Extended Stable channel remains on an eight-week cycle. It is designed for enterprises that require a slower update cadence for managed devices on Windows and Mac. It is not available for mobile platforms (iOS or Android).\n\nSOURCE: https://support.google.com/chrome/a/answer/16942104 | QUOTE: \"The Stable channel follows a 2-week release cycle, whereas the Extended Stable channel operates on an 8-week release cycle.\" | CLAIM: The Extended Stable channel operates on an 8-week release cycle, distinct from the 2-week Stable cycle.\n\nSOURCE: https://developer.chrome.com/blog/chrome-two-week-release | QUOTE: \"Extended Stable will continue with its existing eight-week cycle.\" | CLAIM: The shift to a two-week Stable cycle did not change the eight-week cadence of the Extended Stable channel.\n\nSOURCE: https://support.google.com/chrome/a/answer/16942104 | QUOTE: \"Extended Stable is currently available for managed devices on Windows and Mac platforms. It is not supported on mobile (iOS or Android).\" | CLAIM: Extended Stable is restricted to Windows and Mac managed devices and is unavailable for mobile operating systems.\n\n**Security Updates and Backporting**\nWhile Extended Stable receives fewer feature updates, it receives weekly security refreshes. However, complex security changes may only be available on the faster-moving Stable channel.\n\nSOURCE: https://support.google.com/chrome/a/answer/16942104 | QUOTE: \"Extended Stable receives feature updates less frequently than Stable, but it continues to receive weekly refreshes for security fixes.\" | CLAIM: Extended Stable users receive weekly security updates despite the slower major version cadence.\n\nSOURCE: https://chromium.googlesource.com/chromium/src/+/main/docs/process/release_cycle.md | QUOTE: \"It's important to note that while the team will make an effort to backport all important security fixes to extended stable, complex and risky changes as well as larger features that improve security (e.g. Site Isolation) may not be viable to backport and will only be available on the stable channel\" | CLAIM: Some complex security improvements are exclusive to the Stable channel because they cannot be safely backported to Extended Stable.",
+  "usage": {
+   "prompt_tokens": 2474,
+   "completion_tokens": 689,
+   "total_tokens": 3163,
+   "cost": 0.0091476,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021476,
+    "upstream_inference_prompt_cost": 0.00080405,
+    "upstream_inference_completions_cost": 0.00134355
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591429-DqmXw4ybNkOfTvCPOUtp"
+ },
+ "ts": "2026-10-10T00:17:25.101598+00:00"
+}

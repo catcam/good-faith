@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u04",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0004",
+ "prompt": "Research the officially documented limits of AWS Lambda: maximum timeout, maximum memory, and the monthly free tier. Cite AWS's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the officially documented limits for AWS Lambda regarding maximum timeout, maximum memory, and the monthly free tier.\n\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"Function timeout | 900 seconds (15 minutes). For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes).\" | CLAIM: The maximum timeout for a standard AWS Lambda function is 900 seconds (15 minutes), though certain Managed Instance configurations allow up to 5,400 seconds (90 minutes).\n\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"Function memory allocation | 128 MB to 10,240 MB, in 1-MB increments.\" | CLAIM: The maximum memory allocation for an AWS Lambda function is 10,240 MB.\n\nSOURCE: https://aws.amazon.com/lambda/pricing/ | QUOTE: \"The free tier includes one million requests and 400,000 GB-seconds per month.\" | CLAIM: The AWS Lambda monthly free tier includes 1 million requests and 400,000 GB-seconds of compute duration.",
+  "usage": {
+   "prompt_tokens": 2540,
+   "completion_tokens": 266,
+   "total_tokens": 2806,
+   "cost": 0.01149008,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00449008,
+    "upstream_inference_prompt_cost": 0.0033782,
+    "upstream_inference_completions_cost": 0.00111188
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591100-VFooRS1ezzLeKEaMqxAY"
+ },
+ "ts": "2026-10-10T00:11:46.550723+00:00"
+}

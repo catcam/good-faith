@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u15",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0096",
+ "prompt": "Research the officially documented free tier of Cloudflare R2 (storage, Class A and Class B operations, egress). Cite Cloudflare's documentation and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "# Cloudflare R2 Free Tier Research\n\nBased on Cloudflare's official documentation, here are the documented free tier details for Cloudflare R2:\n\n---\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"You can use the following amount of storage and operations each month for free.\" | CLAIM: This introduces the free tier table that follows.\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Storage | 10 GB-month / month\" | CLAIM: The free tier includes 10 GB-month of storage per month.\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Class A Operations | 1 million requests / month\" | CLAIM: The free tier includes 1 million Class A operations per month.\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Class B Operations | 10 million requests / month\" | CLAIM: The free tier includes 10 million Class B operations per month.\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Egress (data transfer to Internet) | Free\" | CLAIM: Egress from R2 is free with no data transfer charges.\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Egressing directly from R2, including via the Workers API, S3 API, and r2.dev domains does not incur data transfer (egress) charges and is free.\" | CLAIM: This confirms egress is free regardless of access method (Workers API, S3 API, or r2.dev domains).\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"The free tier only applies to Standard storage, and does not apply to Infrequent Access storage.\" | CLAIM: The free tier benefits (10 GB storage, 1M Class A, 10M Class B operations) only apply to Standard storage class, not Infrequent Access.\n\nSOURCE: https://developers.cloudflare.com/r2/pricing/ | QUOTE: \"Free operations include `DeleteObject`, `DeleteBucket` and `AbortMultipartUpload`.\" | CLAIM: These three operations are always free and do not count against the free tier operation limits.\n\nSOURCE: https://www.cloudflare.com/products/r2/ | QUOTE: \"R2 doesn't charge for egress.\" | CLAIM: This is a high-level marketing confirmation that R2 has no egress fees.\n\nSOURCE: https://www.cloudflare.com/pricing.md | QUOTE: \"Standard Storage | 10 GB-month | $0.015 / GB-month\" | CLAIM: Confirms the 10 GB-month free tier for Standard storage, with paid usage at $0.015/GB-month beyond that.\n\nSOURCE: https://www.cloudflare.com/pricing.md | QUOTE: \"Standard Class A operations | 1 million | $4.50 / million requests\" | CLAIM: Confirms 1 million free Class A operations, with paid usage at $4.50/million requests.\n\nSOURCE: https://www.cloudflare.com/pricing.md | QUOTE: \"Standard Class B operations | 10 million | $0.36 / million requests\" | CLAIM: Confirms 10 million free Class B operations, with paid usage at $0.36/million requests.\n\n---\n\n## Summary\n\nCloudflare R2's officially documented free tier includes:\n\n| Component | Free Tier Allowance |\n|-----------|-------------------|\n| **Storage** | 10 GB-month per month |\n| **Class A Operations** | 1 million requests per month |\n| **Class B Operations** | 10 million requests per month |\n| **Egress** | Free (unlimited) |\n\n**Important caveats documented:**\n- The free tier applies **only to Standard storage class** \u2014 Infrequent Access storage has no free tier\n- `DeleteObject`, `DeleteBucket`, and `AbortMultipartUpload` operations are always free and don't count against limits\n- Egress is free regardless of whether you use the Workers API, S3 API, or r2.dev domains",
+  "usage": {
+   "prompt_tokens": 1575,
+   "completion_tokens": 847,
+   "total_tokens": 2422,
+   "cost": 0.0196945,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0126945,
+    "upstream_inference_prompt_cost": 0.00126,
+    "upstream_inference_completions_cost": 0.0114345
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791593240-o31hFKnqlchkIcRYJNbp"
+ },
+ "ts": "2026-10-10T00:47:25.893912+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u09",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0015",
+ "prompt": "Research the officially documented limits of the Telegram Bot API: messages per second, file upload and download size. Cite Telegram's own documentation or FAQ and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my research of the official Telegram documentation, here are the officially documented limits for the Telegram Bot API:\n\n**Message Rate Limits:**\n- In individual chats: Approximately 1 message per second per chat, though short bursts may be allowed\n- In groups: Maximum of 20 messages per minute per group\n- For bulk broadcasts: Maximum of approximately 30 messages per second unless using paid broadcasts\n\n**File Size Limits:**\n- File download: Maximum of 20 MB using the standard API\n- File upload: Maximum of 50 MB using the standard API\n\nHowever, it's important to note that these limits can be significantly increased by running a local Bot API server, which allows for much larger file transfers.\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"In a single chat, avoid sending more than one message per second.\" | CLAIM: Maximum of approximately 1 message per second per chat\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"In a group, bots are not be able to send more than 20 messages per minute.\" | CLAIM: Maximum of 20 messages per minute per group\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"For bulk notifications, bots are not able to broadcast more than about 30 messages per second\" | CLAIM: Maximum of approximately 30 messages per second for broadcasts\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"Use the getFile method. Please note that this will only work with files of up to 20 MB in size.\" | CLAIM: Maximum file download size of 20 MB\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"Bots can currently send files of any type of up to 50 MB in size\" | CLAIM: Maximum file upload size of 50 MB\n\nSOURCE: https://core.telegram.org/bots/api/ | QUOTE: \"Download files without a size limit.\" | CLAIM: Local Bot API server removes download size limits\n\nSOURCE: https://core.telegram.org/bots/api/ | QUOTE: \"Upload files up to 2000 MB.\" | CLAIM: Local Bot API server increases upload limit to 2000 MB\n\nSOURCE: https://core.telegram.org/bots/features | QUOTE: \"Official | 20MB | 50MB\" | CLAIM: Confirms official download (20MB) and upload (50MB) limits\n\nNO_SOURCE_FOUND: Specific documentation of maximum messages per second across all chats (not just per chat or broadcast)",
+  "usage": {
+   "prompt_tokens": 2693,
+   "completion_tokens": 564,
+   "total_tokens": 3257,
+   "cost": 0.00820701,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00120701,
+    "upstream_inference_prompt_cost": 0.00067121,
+    "upstream_inference_completions_cost": 0.0005358
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791591370-HdQivElYCNPLLQSJ7B5M"
+ },
+ "ts": "2026-10-10T00:16:26.795526+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u16",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0027",
+ "prompt": "Research Polymarket's officially documented trading fees (maker and taker fees, any market-specific fees). Cite Polymarket's own documentation and quote what it says.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my review of Polymarket's official documentation, here is the information on their trading fees:\n\nPolymarket employs a taker fee model where only takers pay fees, with makers receiving rebates. The fee structure varies significantly by market category.\n\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Makers are never charged fees. Only takers pay fees.\" | CLAIM: Polymarket does not charge maker fees\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Polymarket charges a small taker fee on certain markets.\" | CLAIM: Taker fees are applied to certain markets\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Geopolitical and world events markets are fee-free.\" | CLAIM: Geopolitics category markets have no fees\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Fees are calculated using the following formula: fee = C \u00d7 feeRate \u00d7 p \u00d7 (1 - p)\" | CLAIM: Fee calculation formula uses contract count, fee rate, and price probability\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"The fee parameters differ by market category:\" | CLAIM: Fee rates vary by market category\n\n**Category-specific taker fee rates:**\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Crypto | 0.07\" | CLAIM: Crypto markets have 7% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Sports | 0.05\" | CLAIM: Sports markets have 5% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Finance | 0.04\" | CLAIM: Finance markets have 4% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Politics | 0.04\" | CLAIM: Politics markets have 4% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Economics | 0.05\" | CLAIM: Economics markets have 5% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Culture | 0.05\" | CLAIM: Culture markets have 5% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Weather | 0.05\" | CLAIM: Weather markets have 5% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Other / General | 0.05\" | CLAIM: Other/General markets have 5% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Mentions | 0.04\" | CLAIM: Mentions markets have 4% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Tech | 0.04\" | CLAIM: Tech markets have 4% taker fee rate\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Geopolitics | 0\" | CLAIM: Geopolitics markets have 0% taker fee rate\n\n**Maker rebate program:**\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Maker Rebates are funded by taker fees collected in eligible markets.\" | CLAIM: Maker rebates come from taker fees\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Crypto | 20%\" | CLAIM: Crypto markets offer 20% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Sports | 15%\" | CLAIM: Sports markets offer 15% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Finance | 25%\" | CLAIM: Finance markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Politics | 25%\" | CLAIM: Politics markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Economics | 25%\" | CLAIM: Economics markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Culture | 25%\" | CLAIM: Culture markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Weather | 25%\" | CLAIM: Weather markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Other / General | 25%\" | CLAIM: Other/General markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Mentions | 25%\" | CLAIM: Mentions markets offer 25% maker rebate\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Tech | 25%\" | CLAIM: Tech markets offer 25% maker rebate\n\n**Special market exceptions:**\nSOURCE: https://docs.polymarket.us/fees | QUOTE: \"Table Tennis markets use a higher taker fee coefficient (\u0398 = 0.10).\" | CLAIM: Table Tennis markets have 10% taker fee rate\nSOURCE: https://polymarket.com/fees | QUOTE: \"NFL and NCAAF (CFB) at 0.03 from October 1 through the end of October 2026\" | CLAIM: NFL and NCAAF markets have reduced 3% fee during specified period\n\n**Deposit/withdrawal fees:**\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"There are also no Polymarket fees to deposit or withdraw USDC (though intermediaries like Coinbase or MoonPay may charge their own fees).\" | CLAIM: No platform fees for USDC deposits/withdrawals\n\nNO_SOURCE_FOUND: Detailed information about minimum fee amounts or fee rounding procedures beyond the basic mention\nNO_SOURCE_FOUND: Comprehensive list of all market-specific fee exceptions beyond Table Tennis and NFL/NCAAF",
+  "usage": {
+   "prompt_tokens": 1774,
+   "completion_tokens": 1460,
+   "total_tokens": 3234,
+   "cost": 0.00883026,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00183026,
+    "upstream_inference_prompt_cost": 0.00044326,
+    "upstream_inference_completions_cost": 0.001387
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791591653-6PPTl7Zg3PZJHYVw1pl1"
+ },
+ "ts": "2026-10-10T00:22:58.419895+00:00"
+}

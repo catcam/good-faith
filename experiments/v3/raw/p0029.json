@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u02",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0029",
+ "prompt": "Research the current official API prices (per million input and output tokens) of Anthropic's current Claude models. Cite Anthropic's own pricing page and quote the prices.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the current official API prices for Anthropic's Claude models as of October 2026. All prices are in USD per million tokens (MTok).\n\n**Claude Fable 5.1 and Mythos 5.1**\nThe most advanced models, Claude Fable 5.1 and Claude Mythos 5.1, are priced at $10 per million input tokens and $50 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Fable 5.1 | $10 / MTok | $12.50 / MTok | $20 / MTok | $0.25 / MTok1 | $50 / MTok |\" | CLAIM: Claude Fable 5.1 costs $10/MTok for input and $50/MTok for output.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Mythos 5.1 (limited availability) | $10 / MTok | $12.50 / MTok | $20 / MTok | $0.25 / MTok1 | $50 / MTok |\" | CLAIM: Claude Mythos 5.1 costs $10/MTok for input and $50/MTok for output.\n\n**Claude Opus 5 and Opus 4.x Series**\nClaude Opus 5 and the recent Opus 4.x models (4.8, 4.7, 4.6, 4.5) share the same pricing structure of $5 per million input tokens and $25 per million output tokens. Older Opus models (4.1 and 4) are retired on most platforms but retain higher pricing where available.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Opus 5 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |\" | CLAIM: Claude Opus 5 costs $5/MTok for input and $25/MTok for output.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Opus 4.8 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |\" | CLAIM: Claude Opus 4.8 costs $5/MTok for input and $25/MTok for output.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Opus 4.1 (retired, except on Bedrock and Google Cloud) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |\" | CLAIM: Retired Claude Opus 4.1 costs $15/MTok for input and $75/MTok for output.\n\n**Claude Sonnet 5 and Sonnet 4.x Series**\nClaude Sonnet 5 is priced at $2 per million input tokens and $10 per million output tokens. This pricing was initially introductory but has become standard.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"The $2/$ 10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price.\" | CLAIM: Claude Sonnet 5 standard pricing is $2/MTok input and $10/MTok output.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Sonnet 5 | $2 / MTok | $2.50 / MTok | $4 / MTok | $0.20 / MTok | $10 / MTok |\" | CLAIM: Claude Sonnet 5 costs $2/MTok for input and $10/MTok for output.\n\nOlder Sonnet models (4.6, 4.5, and retired 4) are priced at $3 per million input tokens and $15 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Sonnet 4.6 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |\" | CLAIM: Claude Sonnet 4.6 costs $3/MTok for input and $15/MTok for output.\n\n**Claude Haiku 4.5 and Haiku 3.5**\nClaude Haiku 4.5 is priced at $1 per million input tokens and $5 per million output tokens. The older Haiku 3.5 is retired on most platforms but costs $0.80/$4 where available.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Haiku 4.5 | $1 / MTok | $1.25 / MTok | $2 / MTok | $0.10 / MTok | $5 / MTok |\" | CLAIM: Claude Haiku 4.5 costs $1/MTok for input and $5/MTok for output.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"| Claude Haiku 3.5 (retired, except on Bedrock and Google Cloud) | $0.80 / MTok | $1 / MTok | $1.60 / MTok | $0.08 / MTok | $4 / MTok |\" | CLAIM: Retired Claude Haiku 3.5 costs $0.80/MTok for input and $4/MTok for output.\n\n**Regional and Batch Pricing Variations**\nPrices may vary by region (e.g., US-only inference is slightly higher) and usage type (batch processing is discounted).\nSOURCE: https://www-cdn.anthropic.com/files/4zrzovbb/website/9e03129acc36d31970777d336f969bb53dc84355.pdf | QUOTE: \"| Standard | US-only inference | All | $11.00 | $55.00 | $13.75 | $22.00 | $0.275 |\" | CLAIM: Claude Fable 5.1 US-only inference costs $11/MTok input and $55/MTok output.\nSOURCE: https://www-cdn.anthropic.com/files/4zrzovbb/website/9e03129acc36d31970777d336f969bb53dc84355.pdf | QUOTE: \"Batch processing Global All $5.00 $25.00 $6.25 $10.00 $0.125\" | CLAIM: Claude Fable 5.1 batch processing global pricing is $5/MTok input and $25/MTok output.",
+  "usage": {
+   "prompt_tokens": 4638,
+   "completion_tokens": 1647,
+   "total_tokens": 6285,
+   "cost": 0.011719,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.004719,
+    "upstream_inference_prompt_cost": 0.00150735,
+    "upstream_inference_completions_cost": 0.00321165
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591798-vfX6NDZZIGMiDfRQ6UNx"
+ },
+ "ts": "2026-10-10T00:23:49.676034+00:00"
+}

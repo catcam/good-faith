@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u24",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0078",
+ "prompt": "Research the officially documented limits of the Home Assistant Cloud (Nabu Casa) subscription: price per month and what is included. Cite the Nabu Casa page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the officially documented limits and inclusions for the Home Assistant Cloud (Nabu Casa) subscription. The price per month depends on your geographic region, and the subscription includes a specific set of cloud features. \n\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 6.50 USD.\" | CLAIM: The price per month in the USA is $6.50 USD (excluding local sales tax).\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 7.50 EUR.\" | CLAIM: The price per month in the European Union is \u20ac7.50 EUR (including VAT).\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 6.50 GBP.\" | CLAIM: The price per month in the United Kingdom is \u00a36.50 GBP (including VAT).\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 8.70 CAD.\" | CLAIM: The price per month in Canada is $8.70 CAD (excluding local VAT).\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 6.50 USD.\" | CLAIM: The price per month for International locations is $6.50 USD (excluding local taxes).\nSOURCE: https://support.nabucasa.com/hc/en-us/articles/26260474250269-List-of-Home-Assistant-Cloud-features | QUOTE: \"Home Assistant Cloud provides the following features: - Secure remote access to your Home Assistant (previously called Remote UI) - Easy integration with popular voice assistants, such as Home Assistant Assist, Amazon Alexa, or Google Assistant - Improved text-to-speech to have text read aloud with natural sounding voices. - Cloud storage of your latest Home Assistant backup - Webhooks, for example to trigger automations. - Improved camera streaming with WebRTC\" | CLAIM: The Home Assistant Cloud subscription includes remote access, voice assistant integration, improved text-to-speech, cloud backup storage, webhooks, and improved camera streaming.\nNO_SOURCE_FOUND: Storage, compute, or device limits/restrictions (e.g., maximum number of backups, maximum number of connected devices, or data caps) for the Home Assistant Cloud subscription.",
+  "usage": {
+   "prompt_tokens": 1283,
+   "completion_tokens": 499,
+   "total_tokens": 1782,
+   "cost": 0.00979426,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00279426,
+    "upstream_inference_prompt_cost": 0.00125734,
+    "upstream_inference_completions_cost": 0.00153692
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791592916-Ch848JfOxYo5nKwQvTOn"
+ },
+ "ts": "2026-10-10T00:42:18.540370+00:00"
+}

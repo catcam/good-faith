@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u17",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0073",
+ "prompt": "Research YouTube's officially documented upload limits: maximum file size and maximum video length, and how to upload longer videos. Cite YouTube's own help page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "According to YouTube's official help documentation, there are specific limits regarding file size and video duration for uploads, as well as a verification process required to exceed the default time limit.\n\n**Maximum File Size and Video Length**\nYouTube imposes a cap on both the physical size of the upload and its duration. The maximum file size allowed is 256 GB, and the maximum length is 12 hours. If a video exceeds either of these thresholds, it cannot be uploaded.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"The maximum file size you can upload is 256 GB or 12 hours, whichever is less.\" | CLAIM: The maximum upload limits are 256 GB in file size or 12 hours in duration, whichever limit is reached first.\n\n**Default Limits and How to Upload Longer Videos**\nBy default, unverified accounts are restricted to uploading videos that are 15 minutes or shorter. To upload videos longer than 15 minutes, users must verify their Google Account. This process involves receiving a verification code via text message or voice call.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"By default, you can upload videos that are up to 15 minutes long. Verified accounts can upload videos longer than 15 minutes.\" | CLAIM: Unverified accounts have a default 15-minute upload limit, which is lifted upon account verification.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"On a computer, go to https://www.youtube.com/verify. Follow the steps to verify your Google Account. You can choose to get a verification code through a text message on a mobile device or an automated voice call.\" | CLAIM: Users can lift the 15-minute limit by verifying their account via SMS or voice call at the provided URL.\n\n**Re-uploading After Verification**\nIt is important to note that verifying an account does not automatically enable previously uploaded long videos to play if they were uploaded before verification. The video must be uploaded again after the verification process is complete.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"After you verify your account, you\u2019ll need to upload your video again:\" | CLAIM: Videos uploaded prior to account verification must be re-uploaded to function correctly as long-form content.",
+  "usage": {
+   "prompt_tokens": 2712,
+   "completion_tokens": 565,
+   "total_tokens": 3277,
+   "cost": 0.00898315,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00198315,
+    "upstream_inference_prompt_cost": 0.0008814,
+    "upstream_inference_completions_cost": 0.00110175
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592637-4qOUUR3aGMRMa294368I"
+ },
+ "ts": "2026-10-10T00:37:29.811990+00:00"
+}

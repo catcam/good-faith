@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u05",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0014",
+ "prompt": "Research the officially documented limits of Vercel's free Hobby plan (bandwidth, function invocations or duration, build minutes). Cite Vercel's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Below are the currently documented limits for Vercel\u2019s free Hobby plan as of 2026-10-10. The following lines meet the required format, with each quote copied verbatim from Vercel\u2019s official documentation.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"The Hobby plan is free and aimed at developers with personal projects, and small-scale applications.\" | CLAIM: The Hobby plan is free and intended for personal or small-scale use.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"Fast Data Transfer | First 100 GB\" | CLAIM: The free Hobby bandwidth (Fast Data Transfer) limit is the first 100 GB per month.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"Function Invocations | First 1,000,000\" | CLAIM: The Hobby plan includes the first 1,000,000 serverless function invocations per month at no cost.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"Active CPU | 4 CPU-hrs\" | CLAIM: The Hobby plan includes 4 CPU-hours of active compute time per month.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"Provisioned Memory | 360 GB-hrs\" | CLAIM: The Hobby plan includes 360 GB-hours of provisioned memory per month.\n\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"Build Time per Deployment (Minutes) | 45 | 45 | 45\" | CLAIM: Each deployment on the Hobby plan has a maximum build time of 45 minutes.\n\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"When the limit is reached, the Build Step will be interrupted and the Deployment will fail.\" | CLAIM: If a build exceeds 45 minutes, it will be interrupted and the deployment will fail.\n\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"You are able to build `100` Deployments every `3600` seconds (1 hour).\" | CLAIM: The Hobby plan allows up to 100 builds per hour.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"In most cases, if you exceed your usage limits on the Hobby plan, you will have to wait until 30 days have passed before you can use the feature again.\" | CLAIM: Exceeding Hobby plan usage limits generally requires waiting 30 days before the feature can be used again.\n\nNO_SOURCE_FOUND: A documented monthly build minutes cap (e.g., a specific number of build minutes per month) separate from the 45-minute per-build limit.",
+  "usage": {
+   "prompt_tokens": 2471,
+   "completion_tokens": 559,
+   "total_tokens": 3030,
+   "cost": 0.0165233,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0095233,
+    "upstream_inference_prompt_cost": 0.0019768,
+    "upstream_inference_completions_cost": 0.0075465
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791591364-gq6YetZNl7eVfjl4vIF9"
+ },
+ "ts": "2026-10-10T00:16:09.903339+00:00"
+}

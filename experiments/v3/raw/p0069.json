@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u22",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0069",
+ "prompt": "Research the officially documented limits of GitHub Pages (published site size, monthly bandwidth, builds per hour). Cite GitHub's documentation page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the officially documented limits for GitHub Pages according to the GitHub Docs:\n\nSOURCE: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits | QUOTE: \"Published GitHub Pages sites may be no larger than 1 GB.\" | CLAIM: The maximum size for a published GitHub Pages site is 1 GB.\n\nSOURCE: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits | QUOTE: \"GitHub Pages sites have a soft bandwidth limit of 100 GB per month.\" | CLAIM: There is a soft monthly bandwidth limit of 100 GB for GitHub Pages sites.\n\nSOURCE: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits | QUOTE: \"GitHub Pages sites have a soft limit of 10 builds per hour.\" | CLAIM: GitHub Pages sites are limited to a soft limit of 10 builds per hour.\n\nNote: The build limit does not apply if you build and publish your site with a custom GitHub Actions workflow.",
+  "usage": {
+   "prompt_tokens": 1030,
+   "completion_tokens": 219,
+   "total_tokens": 1249,
+   "cost": 0.0133647,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0063647,
+    "upstream_inference_prompt_cost": 0.0030797,
+    "upstream_inference_completions_cost": 0.003285
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791592580-z6MANbLkUI727f1FloBO"
+ },
+ "ts": "2026-10-10T00:36:26.558566+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u14",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0050",
+ "prompt": "Research the officially documented limits of Tailscale's free Personal plan (users, devices, other limits). Cite Tailscale's own pricing or documentation page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Tailscale\u2019s Personal plan is documented as free, with six users, unlimited user devices, and several plan-level limits (ACL groups, tagged resources, and ephemeral-resource minutes). The clearest single source is Tailscale\u2019s pricing page; the supporting docs pages confirm the six-user Personal limit and related upgrade behavior.\n\nSOURCE: https://tailscale.com/pricing | QUOTE: \"For individuals who want to securely connect devices, servers, or software. Access nearly all of Tailscale's offerings and products for free, indefinitely.\" | CLAIM: The Personal plan is Tailscale\u2019s free individual plan.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Unlimited user devices\" | CLAIM: The Personal plan does not impose a per-user device cap for ordinary user devices.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 6 users\" | CLAIM: The Personal plan allows a maximum of six users.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 3 ACL groups\" | CLAIM: The Personal plan is limited to three ACL groups.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 50 tagged resources to start\" | CLAIM: The Personal plan includes 50 tagged resources before extra paid add-ons apply.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"1,000 mins per month for ephemeral resources Ephemeral resources enable short-lived workloads like CI/CD runners and Kubernetes pods.\" | CLAIM: The Personal plan includes 1,000 ephemeral-resource minutes per month for short-lived workloads.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Access nearly all of Tailscale\u2019s features\" | CLAIM: The free Personal plan is positioned as including nearly all Tailscale features rather than a separate stripped-down feature set.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Users $0 for up to 6 users\" | CLAIM: The pricing table again states that six users are included at no cost on Personal.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"User Devices Computers, phones, etc. Unlimited\" | CLAIM: The pricing table distinguishes user devices from tagged/ephemeral resources and marks user devices as unlimited.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Tagged resources Resources like exit nodes, etc. 50 tagged resources included; add more for $1/month each.\" | CLAIM: Tagged resources beyond the included 50 cost $1 per month each.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"ACL Groups 3\" | CLAIM: The Personal-plan ACL group limit is three.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Basic Tailscale SSH Up to 5 hosts\" | CLAIM: Basic Tailscale SSH is limited to five hosts on the Personal plan.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"With that in mind, we are currently not enforcing the hard limits or overages of ACL groups, multiple tailnets, tagged resources, and ephemeral resources.\" | CLAIM: Although these limits are published, Tailscale says it is not currently enforcing hard limits or overages for ACL groups, multiple tailnets, tagged resources, and ephemeral resources.\nSOURCE: https://tailscale.com/docs/account/manage-plans/free-plans-discounts | QUOTE: \"The Personal plan permits 6 free users in a single Tailscale network, known as a tailnet.\" | CLAIM: Tailscale\u2019s docs confirm the Personal plan includes six free users in one tailnet.\nSOURCE: https://tailscale.com/docs/account/manage-plans/free-plans-discounts | QUOTE: \"You can also share devices with other users with node sharing.\" | CLAIM: Device sharing with other users is documented separately through node sharing rather than changing the Personal-plan user limit.\nSOURCE: https://tailscale.com/docs/reference/messages/console/reached-use-limit | QUOTE: \"The Personal plan gives you six free users.\" | CLAIM: Tailscale\u2019s error-message documentation confirms the six-user cap in practical account behavior.\nSOURCE: https://tailscale.com/docs/reference/messages/console/reached-use-limit | QUOTE: \"If your tailnet is on the Personal plan, you can upgrade your plan to accommodate more users.\" | CLAIM: Exceeding the Personal-plan user allowance requires upgrading or removing users.\nSOURCE: https://tailscale.com/blog/pricing-v4 | QUOTE: \"It now supports up to six users\u2014the same limit Personal Plus had\u2014and includes more of what personal users have increasingly asked for over time.\" | CLAIM: Tailscale\u2019s pricing-update announcement confirms the Personal plan was expanded to six users.\nNO_SOURCE_FOUND: A single official Tailscale page that consolidates every Personal-plan limit in one place, including users, devices, ACL groups, tagged resources, ephemeral minutes, SSH hosts, multiple tailnets, and enforcement status.",
+  "usage": {
+   "prompt_tokens": 2521,
+   "completion_tokens": 1013,
+   "total_tokens": 3534,
+   "cost": 0.024716,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.017716,
+    "upstream_inference_prompt_cost": 0.002521,
+    "upstream_inference_completions_cost": 0.015195
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Wafer",
+  "id": "gen-1791592147-s1ARurhK5HPqCfna6uFk"
+ },
+ "ts": "2026-10-10T00:29:18.240397+00:00"
+}

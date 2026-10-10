@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u13",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0053",
+ "prompt": "Research Canonical's official statement on how long an Ubuntu LTS release receives standard support, and how long with Ubuntu Pro / ESM. Cite Canonical's own page and quote the periods.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Canonical's official documentation, an Ubuntu LTS release receives 5 years of standard security maintenance. With an Ubuntu Pro subscription, this coverage is extended through Expanded Security Maintenance (ESM) for a total of 10 years. Additionally, a paid \"Legacy add-on\" can extend security maintenance and support to a total of 15 years.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"LTS are released every two years and receive 5 years of standard security maintenance.\" | CLAIM: Ubuntu LTS releases receive 5 years of standard security maintenance.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"ESM extends the life of LTS releases by providing 10 years of security updates for the 'Main' repository and also adds 10 years of security coverage for the 'Universe' repository.\" | CLAIM: Ubuntu Pro/ESM provides 10 years of security updates for Main and Universe repositories.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"At the end of the 10 year ESM period, the Legacy add-on can be purchased to cover additional 5 years of the lifetime of Ubuntu LTS, giving a total of 15 years security maintenance and support for LTS releases.\" | CLAIM: The Legacy add-on extends coverage to a total of 15 years.\n\nSOURCE: https://canonical.com/legal/ubuntu-pro-description | QUOTE: \"End of Standard Support: a date (5 years after the Release Date) on which free standard security maintenance service for the Ubuntu Main repository of an Ubuntu LTS expires\" | CLAIM: Standard support ends 5 years after the release date.\n\nSOURCE: https://ubuntu.com/security/cves/about | QUOTE: \"Ubuntu Long Term Support (LTS) releases get up to 15 years of security maintenance and support.\" | CLAIM: LTS releases can receive up to 15 years of security maintenance and support.",
+  "usage": {
+   "prompt_tokens": 2400,
+   "completion_tokens": 407,
+   "total_tokens": 2807,
+   "cost": 0.00857365,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00157365,
+    "upstream_inference_prompt_cost": 0.00078,
+    "upstream_inference_completions_cost": 0.00079365
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592185-eyDrD6abnc0uQu2iNUoq"
+ },
+ "ts": "2026-10-10T00:29:54.961483+00:00"
+}

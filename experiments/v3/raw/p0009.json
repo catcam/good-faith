@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u17",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0009",
+ "prompt": "Research YouTube's officially documented upload limits: maximum file size and maximum video length, and how to upload longer videos. Cite YouTube's own help page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on YouTube's official help documentation, the platform imposes specific technical limits on uploads, with longer durations requiring account verification.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"The maximum file size you can upload is 256 GB or 12 hours, whichever is less.\" | CLAIM: YouTube's absolute upload ceiling is 256 gigabytes or 12 hours of duration, whichever threshold is reached first.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"By default, you can upload videos that are up to 15 minutes long. Verified accounts can upload videos longer than 15 minutes.\" | CLAIM: Unverified accounts face a 15-minute duration cap, but verifying the account removes this restriction to enable longer uploads.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"1. On a computer, go to https://www.youtube.com/verify.\n2. Follow the steps to verify your Google Account. You can choose to get a verification code through a text message on a mobile device or an automated voice call.\" | CLAIM: To upload videos exceeding 15 minutes, users must verify their Google Account via the youtube.com/verify portal using either SMS text message or an automated voice call to receive a verification code.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"If your video is larger than 256 GB, try compressing your video in a video editing software before uploading it to YouTube. Use the H.264 codec to compress your video file size while maintaining the video quality for YouTube.\" | CLAIM: If a file exceeds the 256 GB limit, YouTube officially recommends compressing it using the H.264 codec in video editing software before attempting to upload.",
+  "usage": {
+   "prompt_tokens": 2040,
+   "completion_tokens": 433,
+   "total_tokens": 2473,
+   "cost": 0.01772275,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01072275,
+    "upstream_inference_prompt_cost": 0.005202,
+    "upstream_inference_completions_cost": 0.00552075
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Decart",
+  "id": "gen-1791591228-kqlczrATVJcJoeILwldA"
+ },
+ "ts": "2026-10-10T00:13:56.009288+00:00"
+}

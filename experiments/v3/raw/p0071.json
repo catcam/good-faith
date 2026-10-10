@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u19",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0071",
+ "prompt": "Research the current official GitHub Copilot plans: monthly price and the number of premium requests included in each plan. Cite GitHub's own page or documentation and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "GitHub Copilot plans are structured around monthly subscriptions that provide varying levels of access to AI models, agents, and usage allowances measured in \"GitHub AI Credits\" or, in some legacy documentation contexts, \"premium requests.\" The current official pricing and included allowances for individual and business plans are detailed below.\n\n**Individual Plans**\n\nThe **Copilot Free** plan is available at no cost but includes limited usage.\nSOURCE: https://github.com/features/copilot/plans | QUOTE: \"GitHub Copilot Free users are limited to 2000 completions and 50 chat requests (including Copilot Edits).\" | CLAIM: The Copilot Free plan costs $0 and includes 2,000 code completions and 50 chat requests per month.\n\nThe **Copilot Pro** plan costs $10 per month. It includes a total of 1,500 GitHub AI Credits per month, composed of 1,000 base credits and a 500 flex allotment.\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/individual-plans | QUOTE: \"Copilot Pro | $10 USD | 1,000 | 500 | 1,500\" | CLAIM: The Copilot Pro plan costs $10 per month and includes a total of 1,500 GitHub AI Credits (1,000 base + 500 flex).\n\nThe **Copilot Pro+** plan costs $39 per month. It includes a total of 7,000 GitHub AI Credits per month, composed of 3,900 base credits and a 3,100 flex allotment.\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/individual-plans | QUOTE: \"Copilot Pro+ | $39 USD | 3,900 | 3,100 | 7,000\" | CLAIM: The Copilot Pro+ plan costs $39 per month and includes a total of 7,000 GitHub AI Credits (3,900 base + 3,100 flex).\n\nThe **Copilot Max** plan costs $100 per month. It includes a total of 20,000 GitHub AI Credits per month, composed of 10,000 base credits and a 10,000 flex allotment.\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/individual-plans | QUOTE: \"Copilot Max | $100 USD | 10,000 | 10,000 | 20,000\" | CLAIM: The Copilot Max plan costs $100 per month and includes a total of 20,000 GitHub AI Credits (10,000 base + 10,000 flex).\n\n**Business and Enterprise Plans**\n\nThe **Copilot Business** plan costs $19 per granted seat per month and includes 1,900 GitHub AI Credits per user per month.\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/individual-plans | QUOTE: \"Copilot Business | $19 USD | Total per user per month: 1,900\" | CLAIM: The Copilot Business plan costs $19 per seat per month and includes 1,900 GitHub AI Credits per user.\n\nThe **Copilot Enterprise** plan costs $39 per granted seat per month and includes 3,900 GitHub AI Credits per user per month.\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/individual-plans | QUOTE: \"Copilot Enterprise | $39 USD | Total per user per month: 3,900\" | CLAIM: The Copilot Enterprise plan costs $39 per seat per month and includes 3,900 GitHub AI Credits per user.\n\n**Note on \"Premium Requests\" vs. \"GitHub AI Credits\"**\n\nWhile recent documentation primarily uses \"GitHub AI Credits\" to measure usage across all features (chat, agents, CLI, etc.), older or specific legacy documentation references \"premium requests.\" For context, legacy documentation indicated that the Copilot Pro plan included 300 premium requests per month, and Copilot Pro+ included 1,500 premium requests per month. However, the current standard for comparing plans is the total monthly AI credits listed above.\nSOURCE: https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests | QUOTE: \"Copilot Pro | ... | Premium requests | 300 per month\" | CLAIM: Legacy documentation stated Copilot Pro included 300 premium requests per month.\nSOURCE: https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests | QUOTE: \"Copilot Pro+ | ... | Premium requests | 1500 per month\" | CLAIM: Legacy documentation stated Copilot Pro+ included 1,500 premium requests per month.",
+  "usage": {
+   "prompt_tokens": 2488,
+   "completion_tokens": 1092,
+   "total_tokens": 3580,
+   "cost": 0.009938,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002938,
+    "upstream_inference_prompt_cost": 0.0008086,
+    "upstream_inference_completions_cost": 0.0021294
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592607-8xgQlrVOP6DHriYjCBCy"
+ },
+ "ts": "2026-10-10T00:37:09.379500+00:00"
+}

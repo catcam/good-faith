@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u14",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0011",
+ "prompt": "Research the officially documented limits of Tailscale's free Personal plan (users, devices, other limits). Cite Tailscale's own pricing or documentation page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Tailscale's official pricing and documentation pages, here are the documented limits for their free Personal plan:\n\nThe free Personal plan allows for up to 6 users in a single tailnet (Tailscale network). [tailscale.com](https://tailscale.com/pricing?plan=personal) | QUOTE: \"Up to 6 users\" | CLAIM: Personal plan has a 6-user limit\nSOURCE: https://tailscale.com/docs/account/manage-plans/free-plans-discounts | QUOTE: \"The Personal plan permits 6 free users in a single Tailscale network\" | CLAIM: Personal plan allows 6 users in one tailnet\n\nUser devices (computers, phones, etc.) are unlimited on all plans, including the free Personal plan.\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"Unlimited user devices\" | CLAIM: No limit on user devices\nSOURCE: https://tailscale.com/pricing | QUOTE: \"User Devices Computers, phones, etc. | Unlimited\" | CLAIM: User devices have no quantity limit\n\nThe plan includes up to 50 tagged resources (servers, exit nodes, subnet routers, etc.) at no cost.\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"Up to 50 tagged resources to start\" | CLAIM: 50 tagged resources included\nSOURCE: https://tailscale.com/pricing | QUOTE: \"50 tagged resources included\" | CLAIM: Base allocation of 50 tagged resources\n\nThe plan provides 1,000 minutes per month for ephemeral resources (short-lived workloads like CI/CD runners, Kubernetes pods).\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"1,000 mins per month for ephemeral resources\" | CLAIM: 1,000 minute monthly allowance for ephemeral resources\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Ephemeral resources Short-running k8s pods, CI/CD runners, etc. | 1,000 mins per month\" | CLAIM: 1,000 minutes monthly ephemeral resource pool\n\nAccess Control List (ACL) groups are limited to 3 groups.\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"Up to 3 ACL groups\" | CLAIM: Maximum of 3 ACL groups\nSOURCE: https://tailscale.com/pricing | QUOTE: \"ACL Groups | 3\" | CLAIM: ACL groups limited to 3\n\nThe Personal plan provides access to nearly all of Tailscale's features, including the ability to try SSH and Kubernetes features.\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"Access nearly all of Tailscale's features\" | CLAIM: Most features are available\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"Try SSH and Kubernetes features\" | CLAIM: SSH and Kubernetes features available for trial\n\nIt's worth noting that according to their documentation, Tailscale is currently not enforcing hard limits or overages for ACL groups, multiple tailnets, tagged resources, and ephemeral resources.\nSOURCE: https://tailscale.com/pricing?plan=personal | QUOTE: \"we are currently not enforcing the hard limits or overages of ACL groups, multiple tailnets, tagged resources, and ephemeral resources\" | CLAIM: Some limits are not currently being enforced\nSOURCE: https://tailscale.com/pricing | QUOTE: \"we are currently not enforcing the hard limits or overages of ACL groups, multiple tailnets, tagged resources, and ephemeral resources\" | CLAIM: Temporary non-enforcement of certain limits\n\nNO_SOURCE_FOUND: Whether there are any bandwidth or data transfer limits on the Personal plan\nNO_SOURCE_FOUND: Whether there are any limitations on the number of simultaneous connections\nNO_SOURCE_FOUND: Whether there are any geographic restrictions on usage",
+  "usage": {
+   "prompt_tokens": 2541,
+   "completion_tokens": 830,
+   "total_tokens": 3371,
+   "cost": 0.00842171,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142171,
+    "upstream_inference_prompt_cost": 0.00063321,
+    "upstream_inference_completions_cost": 0.0007885
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791591258-wB9Wert71lVuOnGETTyN"
+ },
+ "ts": "2026-10-10T00:14:47.292532+00:00"
+}

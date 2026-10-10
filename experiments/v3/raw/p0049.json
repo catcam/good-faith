@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u05",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0049",
+ "prompt": "Research the officially documented limits of Vercel's free Hobby plan (bandwidth, function invocations or duration, build minutes). Cite Vercel's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Vercel's official documentation, here are the documented limits for the free Hobby plan regarding bandwidth, function invocations, function duration, and build minutes/times. \n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"Fast Data Transfer | First 100 GB\" | CLAIM: The Hobby plan includes 100 GB of bandwidth (Fast Data Transfer) per month.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"Function Invocations | First 1,000,000\" | CLAIM: The Hobby plan includes 1,000,000 serverless function invocations per month.\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"Maximum duration | 300s (5 minutes) default and max\" | CLAIM: The maximum duration for a Vercel Function execution on the Hobby plan is 300 seconds (5 minutes).\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"The maximum duration of the Build Step is 45 minutes.\" | CLAIM: The maximum build time allowed per deployment on the Hobby plan is 45 minutes.\nNO_SOURCE_FOUND: A total monthly limit for aggregate build minutes on the Hobby plan (as opposed to the per-deployment limit). Vercel documents a per-deployment build time limit of 45 minutes and a deployment creation limit of 100 per day, but does not appear to document a specific monthly cap on total build minutes for the Hobby plan.",
+  "usage": {
+   "prompt_tokens": 2442,
+   "completion_tokens": 303,
+   "total_tokens": 2745,
+   "cost": 0.0115144,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0045144,
+    "upstream_inference_prompt_cost": 0.00324786,
+    "upstream_inference_completions_cost": 0.00126654
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592136-5F7XAzQ6qhz5YrkiwZ4z"
+ },
+ "ts": "2026-10-10T00:29:04.937511+00:00"
+}

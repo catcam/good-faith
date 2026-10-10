@@ -82,6 +82,21 @@ measured.
     - most other tasks: near 0 in every condition
   - The "3–4×" estimate above treats responses as independent. They are not, so it is
     too optimistic. [EXPERIMENT_V3.md](EXPERIMENT_V3.md) plans for this.
+- **Added 2026-10-10: part of the Domain A gap was a scorer artifact.**
+  - While piloting v3, Claude found three ways the frozen v2 scorer wrongly marked real quotes as `unsupported`:
+    - pricing and limits tables that live only in a page's `.md` version, behind tabs;
+    - figures that JavaScript fills in after the page loads;
+    - editorial insertions such as "[and]".
+  - **Sensitivity check, not pre-registered:** the v2 Domain A responses were re-scored with the fixed scorer (`experiments/v3/rescore_v2_with_v3_scorer.py`). Failed claims per response:
+
+    | | C0 | C1 | C2 |
+    |---|---|---|---|
+    | v2 scorer | 0.94 | 0.80 | 0.53 |
+    | fixed scorer | 0.77 | 0.64 | 0.53 |
+
+  - With the fixed scorer, C2 vs C0 gives Mann–Whitney p = 0.29 and Fisher p = 0.46.
+  - The false failures fell almost entirely in C0 and C1, mostly on a8, the vendor-docs task. One possible reason, untested: C2 responses quoted fewer table rows. So part of the apparent gap came from measurement error, not from honesty.
+  - The pre-registered result above stands as reported. This check makes it weaker, not stronger.
 - **Nothing here supports saying "good-faith prompting reduces fabrication."** What still
   stands is the practice's second half: verify every checkable claim yourself.
 

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u09",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0076",
+ "prompt": "Research the officially documented limits of the Telegram Bot API: messages per second, file upload and download size. Cite Telegram's own documentation or FAQ and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official Telegram Bot API documentation and FAQ, here are the documented limits for messaging rates and file handling.\n\n### Messaging Rate Limits\n\nTelegram imposes different rate limits depending on the context of the conversation (private chat, group, or bulk broadcast).\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"In a single chat, avoid sending more than one message per second.\" | CLAIM: The recommended limit for sending messages in a single private chat is 1 message per second.\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"In a group, bots are not be able to send more than 20 messages per minute.\" | CLAIM: The limit for sending messages in a group chat is 20 messages per minute.\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"For bulk notifications, bots are not able to broadcast more than about 30 messages per second, unless they enable paid broadcasts to increase the limit.\" | CLAIM: The default limit for bulk notifications (broadcasts) is approximately 30 messages per second.\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"Enabling paid broadcasts in @BotFather allows a bot to broadcast up to 1000 messages per second.\" | CLAIM: Bots can increase their bulk broadcast limit to 1000 messages per second by enabling paid broadcasts, subject to specific balance and user activity requirements.\n\n### File Upload and Download Limits (Official API)\n\nWhen using the standard Telegram Bot API servers (`api.telegram.org`), there are strict size limits for files.\n\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"Use the getFile method. Please note that this will only work with files of up to 20 MB in size.\" | CLAIM: The maximum file size that can be downloaded via the `getFile` method on the official API is 20 MB.\nSOURCE: https://core.telegram.org/bots/faq/ | QUOTE: \"Bots can currently send files of any type of up to 50 MB in size, so yes, very large files won't work for now.\" | CLAIM: The maximum file size that can be uploaded/sent by a bot on the official API is 50 MB.\nSOURCE: https://docs.python-telegram-bot.org/en/v13.10/telegram.constants.html | QUOTE: \"`telegram.constants.``MAX_FILESIZE_DOWNLOAD\u00b6 : In bytes (20MB)`\" | CLAIM: The python-telegram-bot library constants reflect the 20 MB download limit.\nSOURCE: https://docs.python-telegram-bot.org/en/v13.10/telegram.constants.html | QUOTE: \"`telegram.constants.``MAX_FILESIZE_UPLOAD\u00b6 : In bytes (50MB)`\" | CLAIM: The python-telegram-bot library constants reflect the 50 MB upload limit.\n\n### Local Bot API Server Limits\n\nTelegram provides an open-source Local Bot API Server that developers can host themselves. This server removes or significantly increases many of the limits imposed by the official cloud API.\n\nSOURCE: https://core.telegram.org/bots/api/ | QUOTE: \"Download files without a size limit.\" | CLAIM: A local Bot API server allows downloading files of unlimited size.\nSOURCE: https://core.telegram.org/bots/api/ | QUOTE: \"Upload files up to 2000 MB.\" | CLAIM: A local Bot API server allows uploading files up to 2000 MB (2 GB).\nSOURCE: https://core.telegram.org/bots/features | QUOTE: \"| Local | Unlimited | 2000MB | HTTP | Any port | 1-100000 |\" | CLAIM: The feature comparison table confirms that the Local API supports unlimited download sizes and 2000 MB upload sizes.",
+  "usage": {
+   "prompt_tokens": 2809,
+   "completion_tokens": 813,
+   "total_tokens": 3622,
+   "cost": 0.009498275,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002498275,
+    "upstream_inference_prompt_cost": 0.000912925,
+    "upstream_inference_completions_cost": 0.00158535
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592877-fKHMOPcvirCQwSItQNBj"
+ },
+ "ts": "2026-10-10T00:41:35.147707+00:00"
+}

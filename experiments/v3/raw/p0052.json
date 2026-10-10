@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u13",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0052",
+ "prompt": "Research Canonical's official statement on how long an Ubuntu LTS release receives standard support, and how long with Ubuntu Pro / ESM. Cite Canonical's own page and quote the periods.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Canonical outlines a multi-tiered support lifecycle for Ubuntu LTS releases, starting with a free standard support period and extending up to 15 years through paid Ubuntu Pro subscriptions and add-ons.\n\nHere are the specific periods as stated on Canonical's official pages:\n\n**Standard Support:**\nUbuntu LTS releases receive 5 years of free standard security maintenance for the Main repository. \n\n**Ubuntu Pro / ESM:**\nWith an Ubuntu Pro subscription, security maintenance is extended via Expanded Security Maintenance (ESM) for up to 10 years from the release date. This includes 5 years of standard support plus 5 additional years of ESM (covering the Main repository, and the Universe repository for 16.04 LTS onwards). Additionally, at the end of the 10-year ESM period, users can purchase a Legacy add-on to extend security maintenance and support for an additional 5 years, bringing the maximum total coverage to 15 years.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"LTS are released every two years and receive 5 years of standard security maintenance.\" | CLAIM: The length of time an Ubuntu LTS release receives standard support.\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"ESM extends the life of LTS releases by providing 10 years of security updates for the 'Main' repository and also adds 10 years of security coverage for the 'Universe' repository.\" | CLAIM: The length of time an Ubuntu LTS release receives security updates under Ubuntu Pro / ESM.\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"At the end of the 10 year ESM period, the Legacy add-on can be purchased to cover additional 5 years of the lifetime of Ubuntu LTS, giving a total of 15 years security maintenance and support for LTS releases.\" | CLAIM: The total possible length of time an Ubuntu LTS release can receive security maintenance and support using the Legacy add-on.\nSOURCE: https://ubuntu.com/security/esm | QUOTE: \"Ubuntu LTS gained popularity due to a 5-year security maintenance commitment for the operating system (specifically all packages in the 'main repository').\" | CLAIM: The baseline length of standard security maintenance provided for free.\nSOURCE: https://canonical.com/legal/ubuntu-pro-description | QUOTE: \"Expanded Security Maintenance (ESM): an additional scope of security patching service delivered by the Ubuntu Security Team as found at https://ubuntu.com/security/esm. It covers fixes to High and Critical CVE for 10 years and could be offered for Ubuntu Main repository, or both Ubuntu Main and Universe repositories, depending on the Ubuntu Pro subscription\" | CLAIM: The duration of the ESM security patching service provided under Ubuntu Pro.",
+  "usage": {
+   "prompt_tokens": 2726,
+   "completion_tokens": 560,
+   "total_tokens": 3286,
+   "cost": 0.0091892044,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2726,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021892044,
+    "upstream_inference_prompt_cost": 0.0004890444,
+    "upstream_inference_completions_cost": 0.00170016
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791592163-Q8xAYRWhWDqLDx40G3Dv"
+ },
+ "ts": "2026-10-10T00:29:45.295955+00:00"
+}

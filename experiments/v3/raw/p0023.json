@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u19",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0023",
+ "prompt": "Research the current official GitHub Copilot plans: monthly price and the number of premium requests included in each plan. Cite GitHub's own page or documentation and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results, the official GitHub Copilot documentation describes a billing system that has transitioned from a \"premium requests\" model to a \"GitHub AI Credits\" model. The information on the current pricing and included usage corresponds to this new credits system.\n\nSOURCE: https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot | QUOTE: \"Copilot Pro | $10 USD per month | Base: 1,000\" | CLAIM: The Copilot Pro plan costs $10 per month and includes a base of 1,000 GitHub AI Credits.\n\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals | QUOTE: \"Copilot Pro | $10 USD | 1,000 | 500 | 1,500\" | CLAIM: The Copilot Pro plan includes a total of 1,500 AI credits per month (1,000 base + 500 flex allotment).\n\nSOURCE: https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot | QUOTE: \"Copilot Pro+ | $39 USD per month. | Base: 3,900\" | CLAIM: The Copilot Pro+ plan costs $39 per month and includes a base of 3,900 GitHub AI Credits.\n\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals | QUOTE: \"Copilot Pro+ | $39 USD | 3,900 | 3,100 | 7,000\" | CLAIM: The Copilot Pro+ plan includes a total of 7,000 AI credits per month (3,900 base + 3,100 flex allotment).\n\nSOURCE: https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot | QUOTE: \"Copilot Max | $100 USD per month | Base: 10,000\" | CLAIM: The Copilot Max plan costs $100 per month and includes a base of 10,000 GitHub AI Credits.\n\nSOURCE: https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals | QUOTE: \"Copilot Max | $100 USD | 10,000 | 10,000 | 20,000\" | CLAIM: The Copilot Max plan includes a total of 20,000 AI credits per month (10,000 base + 10,000 flex allotment).\n\nSOURCE: https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot | QUOTE: \"Copilot Business | $19 USD per granted seat per month | Total per user per month: 1,900\" | CLAIM: The Copilot Business plan costs $19 per user per month and includes 1,900 GitHub AI Credits per user.\n\nSOURCE: https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot | QUOTE: \"Copilot Enterprise | $39 USD per granted seat per month | Total per user per month: 3,900\" | CLAIM: The Copilot Enterprise plan costs $39 per user per month and includes 3,900 GitHub AI Credits per user.\n\nThe search results also contain information about a legacy \"premium requests\" system, which has been superseded by the AI Credits model. The current official plans are described using AI Credits. Credit consumption varies by feature and model used.\n\nNO_SOURCE_FOUND: A direct, official quote stating that the \"premium requests\" billing model is legacy and has been fully replaced by the \"GitHub AI Credits\" model. However, the presence of the detailed AI Credit tables on the main plans page strongly indicates it is the current system.",
+  "usage": {
+   "prompt_tokens": 2242,
+   "completion_tokens": 815,
+   "total_tokens": 3057,
+   "cost": 0.00842034,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142034,
+    "upstream_inference_prompt_cost": 0.00060534,
+    "upstream_inference_completions_cost": 0.000815
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791591529-mT3nfiMqPGdAy2HaJZZZ"
+ },
+ "ts": "2026-10-10T00:19:26.055427+00:00"
+}

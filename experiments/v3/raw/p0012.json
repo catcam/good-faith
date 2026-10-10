@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u18",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0012",
+ "prompt": "Research the current official API prices of DeepSeek's models (per million input and output tokens, including cache-hit pricing). Cite DeepSeek's own pricing page and quote the prices.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, DeepSeek currently offers two main active API models: `deepseek-flash` (version DeepSeek-V4.1-Flash) and `deepseek-v4-pro` (version DeepSeek-V4-Pro-0813). The pricing for these models varies depending on whether the request occurs during peak or off-peak hours. Peak hours are defined as 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday, while all other hours are off-peak (off-peak rates are exactly half of peak rates).\n\nFor the `deepseek-flash` model, the off-peak prices are $0.003 per 1M cache-hit input tokens, $0.15 per 1M cache-miss input tokens, and $0.6 per 1M output tokens. The peak prices are double those amounts.\n\nFor the `deepseek-v4-pro` model, the off-peak prices are $0.022 per 1M cache-hit input tokens, $0.66 per 1M cache-miss input tokens, and $1.98 per 1M output tokens. The peak prices are similarly double.\n\nThere are also references to older, largely deprecated models (`deepseek-chat` and `deepseek-reasoner`) in an archived version of the pricing page, though the most current official page focuses on the V4 models.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"| MODEL | | | deepseek-flash (1) | deepseek-v4-pro (2) |\" | CLAIM: DeepSeek's current official pricing page lists the active models as deepseek-flash and deepseek-v4-pro.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"PRICING (3) | 1M INPUT TOKENS (CACHE HIT) | OFF-PEAK | $0.003 | $0.022\" | CLAIM: The price per 1M cache-hit input tokens is $0.003 for deepseek-flash and $0.022 for deepseek-v4-pro during off-peak hours.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"| 1M INPUT TOKENS (CACHE MISS) | OFF-PEAK | $0.15 | $0.66\" | CLAIM: The price per 1M cache-miss input tokens is $0.15 for deepseek-flash and $0.66 for deepseek-v4-pro during off-peak hours.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"| 1M OUTPUT TOKENS | OFF-PEAK | $0.6 | $1.98\" | CLAIM: The price per 1M output tokens is $0.6 for deepseek-flash and $1.98 for deepseek-v4-pro during off-peak hours.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday (all other hours are off-peak).\" | CLAIM: Defines the time windows for peak and off-peak pricing.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"| 1M INPUT TOKENS (CACHE HIT) | PEAK | $0.006 | $0.044\" | CLAIM: The price per 1M cache-hit input tokens is $0.006 for deepseek-flash and $0.044 for deepseek-v4-pro during peak hours.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"| 1M INPUT TOKENS (CACHE MISS) | PEAK | $0.3 | $1.32\" | CLAIM: The price per 1M cache-miss input tokens is $0.3 for deepseek-flash and $1.32 for deepseek-v4-pro during peak hours.\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"| 1M OUTPUT TOKENS | PEAK | $1.2 | $3.96\" | CLAIM: The price per 1M output tokens is $1.2 for deepseek-flash and $3.96 for deepseek-v4-pro during peak hours.\nSOURCE: https://archive.ph/GPYDV | QUOTE: \"| deepseek-chat | 64K | - | 8K | $0.07 (5) $0.014 | $0.27 (5) $0.14 | $1.10 (5) $0.28 |\" | CLAIM: Older deepseek-chat model pricing was $0.014 per 1M cache-hit input, $0.14 per 1M cache-miss input, and $0.28 per 1M output during its discount period.\nSOURCE: https://archive.ph/GPYDV | QUOTE: \"| deepseek-reasoner | 64K | 32K | 8K | $0.14 | $0.55 | $2.19 (6) |\" | CLAIM: Older deepseek-reasoner model pricing was $0.14 per 1M cache-hit input, $0.55 per 1M cache-miss input, and $2.19 per 1M output tokens.",
+  "usage": {
+   "prompt_tokens": 2511,
+   "completion_tokens": 1153,
+   "total_tokens": 3664,
+   "cost": 0.01301202,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00601202,
+    "upstream_inference_prompt_cost": 0.00246078,
+    "upstream_inference_completions_cost": 0.00355124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791591287-mJ3QamjnkTEhMyU9yXZv"
+ },
+ "ts": "2026-10-10T00:15:49.010249+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u10",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0077",
+ "prompt": "Research the officially documented limits for Discord users: message length and file upload size, for free users and Nitro subscribers. Cite Discord's own support pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the officially documented limits based on Discord\u2019s support pages.\n\n**Message Length**  \n- Free users: 2,000 characters per message. Longer messages are converted into a text file.  \n- Nitro: 4,000 characters per message.  \n\n**File Upload Size**  \nThere is conflicting information across Discord\u2019s support pages:  \n- An updated FAQ states the free limit is **20MB**, with Nitro Basic at **50MB** and Nitro up to **1GB**. It also notes the increase occurred in August 2026 and applies pre-compression.  \n- An older \u201cAccount Caps\u201d page lists the free limit as **10MB**, Nitro Basic as **50MB**, and Nitro as **500MB**.  \n\nSOURCE: https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages | QUOTE: \"The character cap per message is 2000.\" | CLAIM: Free users have a 2,000-character message limit.  \nSOURCE: https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages | QUOTE: \"Messages with more than 2000 characters will be converted into a text file.\" | CLAIM: Exceeding 2,000 characters on a free account converts the message into a text file.  \nSOURCE: https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages | QUOTE: \"You can raise the character cap limit to 4000 when you subscribe to Discord Nitro.\" | CLAIM: Nitro subscribers have a 4,000-character message limit.  \nSOURCE: https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ | QUOTE: \"As of August 2026, the free upload limit is 20MB (up from 10MB)\" | CLAIM: Free users can upload files up to 20MB.  \nSOURCE: https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ | QUOTE: \"If you need more room regularly, Nitro Basic offers 50MB and Nitro offers up to 1GB.\" | CLAIM: Nitro Basic allows 50MB uploads and Nitro allows up to 1GB uploads.  \nSOURCE: https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ | QUOTE: \"We've now moved mobile to the same pre-compression check that desktop has always used, so the number you see is the number that counts.\" | CLAIM: File size limits are enforced pre-compression (before compression is applied).  \nSOURCE: https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic | QUOTE: \"Share larger files up to 1GB - perfect for videos, photos, and more files like videos and photos up to 1GB!\" | CLAIM: Full Nitro includes file uploads up to 1GB.  \nSOURCE: https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic | QUOTE: \"Share larger files up to 50 MB!\" | CLAIM: Nitro Basic includes file uploads up to 50MB.  \nSOURCE: https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic | QUOTE: \"Express more with up to 4000 characters per message!\" | CLAIM: Nitro subscribers can send messages up to 4,000 characters.  \nSOURCE: https://support.discord.com/hc/en-us/articles/33694251638295-Discord-Account-Caps-Server-Caps-and-More | QUOTE: \"File Sharing Limit | 10MB | 50MB | 500MB\" | CLAIM: Free users have a 10MB file limit, Nitro Basic has 50MB, and Nitro has 500MB (note: this conflicts with the newer FAQ citing 20MB/1GB).  \nSOURCE: https://support.discord.com/hc/en-us/articles/33694251638295-Discord-Account-Caps-Server-Caps-and-More | QUOTE: \"Message length | 2000 character | Same | 4000 character\" | CLAIM: Free users have a 2,000-character message limit while Nitro subscribers have 4,000 characters.",
+  "usage": {
+   "prompt_tokens": 2749,
+   "completion_tokens": 943,
+   "total_tokens": 3692,
+   "cost": 0.02322922,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01622922,
+    "upstream_inference_prompt_cost": 0.00420597,
+    "upstream_inference_completions_cost": 0.01202325
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Makora",
+  "id": "gen-1791592895-PasvBPXu4dE15EZMKBs9"
+ },
+ "ts": "2026-10-10T00:41:56.513552+00:00"
+}

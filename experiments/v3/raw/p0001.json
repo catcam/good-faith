@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u20",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0001",
+ "prompt": "Research the fee OpenRouter charges when buying credits (card and crypto), and any fee on bring-your-own-key usage. Cite OpenRouter's own documentation or FAQ and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Below are the requested attribution lines.\n\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"OpenRouter charges a 5.5% ($0.80 minimum) fee when you purchase credits.\" | CLAIM: OpenRouter charges a 5.5% fee, with a $0.80 minimum, when you purchase credits.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"Crypto payments are charged a fee of 5%.\" | CLAIM: Buying credits with crypto is charged a 5% fee.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"We pass through the pricing of the underlying providers; there is no markup on inference pricing (however we do charge a fee when purchasing credits).\" | CLAIM: OpenRouter does not mark up inference pricing, but it does charge a fee when purchasing credits.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"Pay-as-you-go includes $25,000 per month with no BYOK fee, while Enterprise allowances are custom.\" | CLAIM: BYOK includes a $25,000/month free allowance on the pay-as-you-go plan, with custom allowances for Enterprise.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"Usage above the allowance has a fee of 5% of what the same model and provider would normally cost on OpenRouter.\" | CLAIM: BYOK usage above the included allowance is charged 5% of the normal OpenRouter cost for the same model/provider.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"This fee is deducted from your OpenRouter credits.\" | CLAIM: The BYOK overage fee is deducted from OpenRouter credits.\nSOURCE: https://openrouter.ai/docs/guides/overview/auth/byok | QUOTE: \"The cost of using custom provider keys on OpenRouter is 5% of what the same model/provider would cost normally on OpenRouter and will be deducted from your OpenRouter credits.\" | CLAIM: Using custom provider keys (BYOK) costs 5% of the normal OpenRouter cost and is deducted from OpenRouter credits.\nSOURCE: https://openrouter.ai/pricing | QUOTE: \"BYOK Limits Learn more \u2192 | Free No | Standard $25,000 of list price inference / month with no fees, 5% fee after | Business $25,000 of list price inference / month with no fees, 5% fee after | Enterprise Custom\" | CLAIM: OpenRouter's pricing page lists the Standard/Business BYOK terms as $25,000 of list-price inference per month with no fees, then 5% after; Free has no BYOK and Enterprise is custom.\nSOURCE: https://openrouter.ai/blog/announcements/simplifying-our-platform-fee/ | QUOTE: \"Non-crypto payments: 5.5% of the order amount, with a minimum fee of $0.80\" | CLAIM: For non-crypto credit purchases (e.g., card), the fee is 5.5% of the order amount with a $0.80 minimum.",
+  "usage": {
+   "prompt_tokens": 2462,
+   "completion_tokens": 642,
+   "total_tokens": 3104,
+   "cost": 0.02399138,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01699138,
+    "upstream_inference_prompt_cost": 0.00736138,
+    "upstream_inference_completions_cost": 0.00963
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791591040-jPtYxvamsaM0SwnPm3hE"
+ },
+ "ts": "2026-10-10T00:10:45.812901+00:00"
+}

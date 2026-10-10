@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u18",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0090",
+ "prompt": "Research the current official API prices of DeepSeek's models (per million input and output tokens, including cache-hit pricing). Cite DeepSeek's own pricing page and quote the prices.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Below are the current official API prices for DeepSeek's models as listed on DeepSeek's pricing page.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"The prices listed below are in units of per 1M tokens.\" | CLAIM: The DeepSeek pricing page states prices per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"deepseek-flash (1)\" | CLAIM: DeepSeek lists `deepseek-flash` as a model on its pricing page.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"deepseek-v4-pro (2)\" | CLAIM: DeepSeek lists `deepseek-v4-pro` as a model on its pricing page.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"1M INPUT TOKENS (CACHE HIT)\" | CLAIM: The pricing table includes cache-hit input pricing per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"OFF-PEAK\" | CLAIM: DeepSeek separates prices into off-peak and peak rates.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"PEAK\" | CLAIM: DeepSeek separates prices into off-peak and peak rates.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.003\" | CLAIM: For `deepseek-flash`, the off-peak cache-hit input price is $0.003 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.006\" | CLAIM: For `deepseek-flash`, the peak cache-hit input price is $0.006 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.15\" | CLAIM: For `deepseek-flash`, the off-peak cache-miss input price is $0.15 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.3\" | CLAIM: For `deepseek-flash`, the peak cache-miss input price is $0.30 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.6\" | CLAIM: For `deepseek-flash`, the off-peak output price is $0.60 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$1.2\" | CLAIM: For `deepseek-flash`, the peak output price is $1.20 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.022\" | CLAIM: For `deepseek-v4-pro`, the off-peak cache-hit input price is $0.022 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.044\" | CLAIM: For `deepseek-v4-pro`, the peak cache-hit input price is $0.044 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$0.66\" | CLAIM: For `deepseek-v4-pro`, the off-peak cache-miss input price is $0.66 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$1.32\" | CLAIM: For `deepseek-v4-pro`, the peak cache-miss input price is $1.32 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$1.98\" | CLAIM: For `deepseek-v4-pro`, the off-peak output price is $1.98 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"$3.96\" | CLAIM: For `deepseek-v4-pro`, the peak output price is $3.96 per 1M tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"Off-peak rates are half of the peak rates.\" | CLAIM: DeepSeek says off-peak rates are half the peak rates.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday (all other hours are off-peak).\" | CLAIM: DeepSeek defines the specific peak hours used for pricing.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"We will bill based on the total number of input and output tokens by the model.\" | CLAIM: DeepSeek says billing is based on total input and output tokens.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"The expense = number of tokens \u00d7 price.\" | CLAIM: DeepSeek gives the basic formula for calculating API expense.\n\nSOURCE: https://api-docs.deepseek.com/quick_start/pricing | QUOTE: \"Product prices may vary and DeepSeek reserves the right to adjust them.\" | CLAIM: DeepSeek warns that listed prices can change.\n\nNO_SOURCE_FOUND: A single combined quote from DeepSeek's pricing page that contains all prices for all models in one sentence\n\nSummary of the official prices shown on DeepSeek's pricing page:\n- `deepseek-flash`: off-peak cache-hit input $0.003, peak cache-hit input $0.006, off-peak cache-miss input $0.15, peak cache-miss input $0.30, off-peak output $0.60, peak output $1.20 per 1M tokens.\n- `deepseek-v4-pro`: off-peak cache-hit input $0.022, peak cache-hit input $0.044, off-peak cache-miss input $0.66, peak cache-miss input $1.32, off-peak output $1.98, peak output $3.96 per 1M tokens.",
+  "usage": {
+   "prompt_tokens": 2613,
+   "completion_tokens": 1317,
+   "total_tokens": 3930,
+   "cost": 0.02697442,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01997442,
+    "upstream_inference_prompt_cost": 0.00219492,
+    "upstream_inference_completions_cost": 0.0177795
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Sail Research",
+  "id": "gen-1791593171-7tBRAXUeSIjmV8hb0sxw"
+ },
+ "ts": "2026-10-10T00:46:18.505054+00:00"
+}

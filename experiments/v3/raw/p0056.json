@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u11",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0056",
+ "prompt": "Research which Python versions the CPython developers currently list as in bugfix, security-only, or end-of-life status, and the end-of-life dates. Cite the Python developer guide or python.org page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results from October 10, 2026, here is the status of Python versions regarding bugfix, security-only, and end-of-life statuses, along with their end-of-life dates.\n\n**Bugfix Status**\nAs of October 2026, Python 3.15 and Python 3.14 are in the \"bugfix\" phase. Python 3.15 was recently released (October 9, 2026), and Python 3.14 is also receiving bug fixes.\n\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.15 | PEP 790 | bugfix | 2026-10-09 | 2031-10 | Hugo van Kemenade |\" | CLAIM: Python 3.15 is in bugfix status and its end-of-life date is October 2031.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.14 | PEP 745 | bugfix | 2025-10-07 | 2030-10 | Hugo van Kemenade |\" | CLAIM: Python 3.14 is in bugfix status and its end-of-life date is October 2030.\n\n**Security-Only Status**\nPython 3.13, 3.12, and 3.11 are currently in the \"security\" phase, meaning they only receive security fixes and no longer receive regular bugfix binaries.\n\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.13 | PEP 719 | security | 2024-10-07 | 2029-10 | Thomas Wouters |\" | CLAIM: Python 3.13 is in security-only status and its end-of-life date is October 2029.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.12 | PEP 693 | security | 2023-10-02 | 2028-10 | Thomas Wouters |\" | CLAIM: Python 3.12 is in security-only status and its end-of-life date is October 2028.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.11 | PEP 664 | security | 2022-10-24 | 2027-10 | Pablo Galindo Salgado |\" | CLAIM: Python 3.11 is in security-only status and its end-of-life date is October 2027.\n\n**End-of-Life Status**\nPython 3.10 and all earlier versions are listed as \"end-of-life.\" Python 3.10 recently reached end-of-life on October 1, 2026.\n\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.10 | PEP 619 | end-of-life | 2021-10-04 | 2026-10-01 | Pablo Galindo Salgado |\" | CLAIM: Python 3.10 is in end-of-life status and its end-of-life date was October 1, 2026.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.9 | PEP 596 | end-of-life | 2020-10-05 | 2025-10-31 | \u0141ukasz Langa |\" | CLAIM: Python 3.9 is in end-of-life status and its end-of-life date was October 31, 2025.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.8 | PEP 569 | end-of-life | 2019-10-14 | 2024-10-07 | \u0141ukasz Langa |\" | CLAIM: Python 3.8 is in end-of-life status and its end-of-life date was October 7, 2024.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.7 | PEP 537 | end-of-life | 2018-06-27 | 2023-06-27 | Ned Deily |\" | CLAIM: Python 3.7 is in end-of-life status and its end-of-life date was June 27, 2023.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.6 | PEP 494 | end-of-life | 2016-12-23 | 2021-12-23 | Ned Deily |\" | CLAIM: Python 3.6 is in end-of-life status and its end-of-life date was December 23, 2021.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.5 | PEP 478 | end-of-life | 2015-09-13 | 2020-09-30 | Larry Hastings |\" | CLAIM: Python 3.5 is in end-of-life status and its end-of-life date was September 30, 2020.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.4 | PEP 429 | end-of-life | 2014-03-16 | 2019-03-18 | Larry Hastings |\" | CLAIM: Python 3.4 is in end-of-life status and its end-of-life date was March 18, 2019.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.3 | PEP 398 | end-of-life | 2012-09-29 | 2017-09-29 | Georg Brandl & Ned Deily (3.3.7) |\" | CLAIM: Python 3.3 is in end-of-life status and its end-of-life date was September 29, 2017.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.2 | PEP 392 | end-of-life | 2011-02-20 | 2016-02-20 | Georg Brandl |\" | CLAIM: Python 3.2 is in end-of-life status and its end-of-life date was February 20, 2016.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.1 | PEP 375 | end-of-life | 2009-06-27 | 2012-04-09 | Benjamin Peterson |\" | CLAIM: Python 3.1 is in end-of-life status and its end-of-life date was April 9, 2012.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 3.0 | PEP 361 | end-of-life | 2008-12-03 | 2009-06-27 | Barry Warsaw |\" | CLAIM: Python 3.0 is in end-of-life status and its end-of-life date was June 27, 2009.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 2.7 | PEP 373 | end-of-life | 2010-07-03 | 2020-01-01 | Benjamin Peterson |\" | CLAIM: Python 2.7 is in end-of-life status and its end-of-life date was January 1, 2020.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"| 2.6 | PEP 361 | end-of-life | 2008-10-01 | 2013-10-29 | Barry Warsaw |\" | CLAIM: Python 2.6 is in end-of-life status and its end-of-life date was October 29, 2013.\n\n**Definitions of Statuses**\nThe Python Developer Guide defines these statuses as follows:\n\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"bugfix: ... Once a version has been fully released, bug fixes and security fixes are accepted. New binaries are built and released roughly every two months. This phase is also called maintenance mode or stable release.\" | CLAIM: The \"bugfix\" status accepts both bug and security fixes and releases binaries roughly every two months.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"security: ... After two years (18 months for versions before 3.13), only security fixes are accepted and no more binaries are released. New source-only versions can be released as needed.\" | CLAIM: The \"security\" status accepts only security fixes and does not release new binaries, only source-only versions if needed.\nSOURCE: https://devguide.python.org/versions/ | QUOTE: \"end-of-life: ... Five years after a release, support ends. The release cycle is frozen; no further changes are allowed.\" | CLAIM: The \"end-of-life\" status means support has ended and no further changes are allowed to the version.",
+  "usage": {
+   "prompt_tokens": 3363,
+   "completion_tokens": 2134,
+   "total_tokens": 5497,
+   "cost": 0.012254275,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.005254275,
+    "upstream_inference_prompt_cost": 0.001092975,
+    "upstream_inference_completions_cost": 0.0041613
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592255-67ukkjEmrgouNrgzH6bd"
+ },
+ "ts": "2026-10-10T00:31:33.980944+00:00"
+}

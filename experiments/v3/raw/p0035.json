@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u20",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0035",
+ "prompt": "Research the fee OpenRouter charges when buying credits (card and crypto), and any fee on bring-your-own-key usage. Cite OpenRouter's own documentation or FAQ and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on OpenRouter's official documentation, FAQ, and pricing pages, here are the fees associated with purchasing credits and using Bring Your Own Keys (BYOK).\n\nWhen purchasing credits with a card (non-crypto), OpenRouter charges a 5.5% fee with a minimum of $0.80. For cryptocurrency payments, the fee is 5.0%. There is no markup on the actual inference pricing from the underlying model providers. For users who bring their own provider keys (BYOK), there is a $25,000 monthly free allowance (measured by list-price inference cost), after which a 5% fee is applied based on what the equivalent usage would normally cost on OpenRouter. This BYOK fee is deducted from your OpenRouter credits.\n\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"OpenRouter charges a 5.5% ($0.80 minimum) fee when you purchase credits.\" | CLAIM: The fee percentage and minimum amount for purchasing credits using non-crypto payment methods.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"Crypto payments are charged a fee of 5%.\" | CLAIM: The fee percentage for purchasing credits using cryptocurrency.\nSOURCE: https://openrouter.ai/docs/faq | QUOTE: \"Usage above the allowance has a fee of 5% of what the same model and provider would normally cost on OpenRouter.\" | CLAIM: The usage-based fee applied to BYOK usage that exceeds the free allowance.\nSOURCE: https://openrouter.ai/pricing | QUOTE: \"BYOK Limits Learn more \u2192 | Free No | Standard $25,000 of list price inference / month with no fees, 5% fee after\" | CLAIM: The $25,000 monthly free allowance for standard BYOK usage before the 5% fee applies.\nSOURCE: https://openrouter.ai/docs/guides/overview/auth/byok | QUOTE: \"The cost of using custom provider keys on OpenRouter is 5% of what the same model/provider would cost normally on OpenRouter and will be deducted from your OpenRouter credits.\" | CLAIM: How the BYOK fee is calculated and the mechanism by which it is billed.\nSOURCE: https://openrouter.ai/blog/announcements/simplifying-our-platform-fee/ | QUOTE: \"Non-crypto payments: 5.5% of the order amount, with a minimum fee of $0.80\" | CLAIM: Confirmation of the updated non-crypto credit purchase fee structure.\nSOURCE: https://openrouter.ai/blog/announcements/simplifying-our-platform-fee/ | QUOTE: \"Crypto payments: 5.0% flat, no minimum fee\" | CLAIM: Confirmation of the updated crypto credit purchase fee structure.",
+  "usage": {
+   "prompt_tokens": 2452,
+   "completion_tokens": 568,
+   "total_tokens": 3020,
+   "cost": 0.01288296,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00588296,
+    "upstream_inference_prompt_cost": 0.00338376,
+    "upstream_inference_completions_cost": 0.0024992
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Novita",
+  "id": "gen-1791591900-XW7KLFrqmZQ6hrdLCXY8"
+ },
+ "ts": "2026-10-10T00:25:10.722379+00:00"
+}

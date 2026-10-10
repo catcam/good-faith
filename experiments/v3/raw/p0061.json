@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u02",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0061",
+ "prompt": "Research the current official API prices (per million input and output tokens) of Anthropic's current Claude models. Cite Anthropic's own pricing page and quote the prices.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the current official API prices for Anthropic's active Claude models per million tokens (MTok).\n\n**Current Claude Model API Pricing (per MTok):**\n\n*   **Claude Fable 5.1:** $10 input / $50 output\n*   **Claude Opus 5.5:** $4 input / $20 output\n*   **Claude Sonnet 5.5:** $2 input / $10 output\n*   **Claude Haiku 5.5:** From $0.10 input / From $0.50 output\n*   **Claude Opus 5:** $5 input / $25 output\n*   **Claude Sonnet 5:** $2 input / $10 output\n*   **Claude Haiku 4.5:** $1 input / $5 output\n\n**Older/Legacy Models (still listed with pricing):**\n*   **Claude Sonnet 4.6:** $3 input / $15 output\n*   **Claude Sonnet 4.5:** $3 input / $15 output\n*   **Claude Opus 4.6 / 4.5:** $5 input / $25 output\n\nSOURCE: https://platform.claude.com/docs/en/models/overview | QUOTE: \"Pricing | $10 / input MTok, $50 / output MTok\" | CLAIM: Claude Fable 5.1 costs $10 per million input tokens and $50 per million output tokens.\nSOURCE: https://platform.claude.com/docs/en/models/overview | QUOTE: \"Pricing | $4 / input MTok, $20 / output MTok\" | CLAIM: Claude Opus 5.5 costs $4 per million input tokens and $20 per million output tokens.\nSOURCE: https://platform.claude.com/docs/en/models/overview | QUOTE: \"Pricing | $2 / input MTok, $10 / output MTok\" | CLAIM: Claude Sonnet 5.5 costs $2 per million input tokens and $10 per million output tokens.\nSOURCE: https://platform.claude.com/docs/en/models/overview | QUOTE: \"Pricing | From $0.10 / input MTok, From $0.50 / output MTok\" | CLAIM: Claude Haiku 5.5 starts at $0.10 per million input tokens and $0.50 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Opus 5 | $5 / MTok | $25 / MTok\" | CLAIM: Claude Opus 5 costs $5 per million base input tokens and $25 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Sonnet 5 | $2 / MTok | $10 / MTok\" | CLAIM: Claude Sonnet 5 costs $2 per million base input tokens and $10 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Haiku 4.5 | $1 / MTok | $5 / MTok\" | CLAIM: Claude Haiku 4.5 costs $1 per million base input tokens and $5 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Sonnet 4.6 | $3 / MTok | $15 / MTok\" | CLAIM: Claude Sonnet 4.6 costs $3 per million base input tokens and $15 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Sonnet 4.5 | $3 / MTok | $15 / MTok\" | CLAIM: Claude Sonnet 4.5 costs $3 per million base input tokens and $15 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Opus 4.6 | $5 / MTok | $25 / MTok\" | CLAIM: Claude Opus 4.6 costs $5 per million base input tokens and $25 per million output tokens.\nSOURCE: https://docs.anthropic.com/en/about-claude/pricing | QUOTE: \"Claude Opus 4.5 | $5 / MTok | $25 / MTok\" | CLAIM: Claude Opus 4.5 costs $5 per million base input tokens and $25 per million output tokens.",
+  "usage": {
+   "prompt_tokens": 3541,
+   "completion_tokens": 985,
+   "total_tokens": 4526,
+   "cost": 0.0106257154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 3541,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0036257154,
+    "upstream_inference_prompt_cost": 0.0006352554,
+    "upstream_inference_completions_cost": 0.00299046
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791592375-Gkv8zO3EH9yIJCteABCP"
+ },
+ "ts": "2026-10-10T00:33:25.919165+00:00"
+}

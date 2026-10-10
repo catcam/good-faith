@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u21",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0044",
+ "prompt": "Research the Chrome browser's officially documented release cycle (how many weeks between major stable releases, and the Extended Stable option). Cite the Chromium or Google page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on official documentation, the Chrome browser's release cycle is detailed below. The key finding is that the primary Stable channel has a two-week major release cycle, while the Extended Stable channel offers an eight-week cycle for enterprises.\n\nHere are the specific claims supported by the sources:\n\nSOURCE: https://support.google.com/chrome/a/answer/16942104 | QUOTE: \"The Stable channel follows a 2-week release cycle, whereas the Extended Stable channel operates on an 8-week release cycle.\" | CLAIM: The standard Stable channel is updated every 2 weeks, and the Extended Stable channel is updated every 8 weeks.\n\nSOURCE: https://chromium.googlesource.com/chromium/src/+/main/docs/process/release_cycle.md | QUOTE: \"Chrome ships a new milestone (major version) to the stable channel every two weeks.\" | CLAIM: A new major version (milestone) is released to the Stable channel every two weeks.\n\nSOURCE: https://support.google.com/chrome/a/answer/16942104 | QUOTE: \"To provide an Extended Stable release, Chrome browser maintains the milestone branch for 6 additional weeks by back-porting important security fixes to create an Extended Stable channel, where a new milestone is shipped every 8 weeks.\" | CLAIM: The Extended Stable channel is created by maintaining a milestone branch for an extra 6 weeks, resulting in a new release every 8 weeks.\n\nSOURCE: https://support.google.com/chrome/a/answer/16942104 | QUOTE: \"Extended Stable receives feature updates less frequently than Stable, but it continues to receive weekly refreshes for security fixes.\" | CLAIM: The Extended Stable channel receives security updates weekly but gets new features less often than the Stable channel.\n\nSOURCE: https://chromium.googlesource.com/chromium/src/+/main/docs/process/release_cycle.md | QUOTE: \"The extended stable channel is only available to enterprises on the Windows and Mac platforms, and can be enabled via enterprise policies.\" | CLAIM: The Extended Stable channel is an enterprise-only option for Windows and Mac.",
+  "usage": {
+   "prompt_tokens": 2028,
+   "completion_tokens": 435,
+   "total_tokens": 2463,
+   "cost": 0.00798256,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00098256,
+    "upstream_inference_prompt_cost": 0.00054756,
+    "upstream_inference_completions_cost": 0.000435
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791592033-WSYeTj2HnkyrZbx3AipH"
+ },
+ "ts": "2026-10-10T00:27:31.520726+00:00"
+}

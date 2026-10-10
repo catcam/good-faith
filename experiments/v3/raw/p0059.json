@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u23",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0059",
+ "prompt": "Research the officially documented limits of a free Gmail / Google account: total storage, attachment size for sending and receiving, recipients per day. Cite Google's own help pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the officially documented limits for a free Gmail / Google account, based on Google's own help pages.\n\nSOURCE: https://support.google.com/mail/answer/9312312 | QUOTE: \"Each Google Account includes up to 15 GB of storage, which is shared across Gmail, Google Drive, and Google Photos.\" | CLAIM: Total storage for a free Google account is 15 GB.\n\nSOURCE: https://support.google.com/mail/answer/6584 | QUOTE: \"For personal Gmail accounts, the limit is 25 MB.\" | CLAIM: The attachment size limit for sending in a free personal Gmail account is 25 MB.\n\nSOURCE: https://support.google.com/mail/answer/22839 | QUOTE: \"500 recipients in a single email and or more than 500 emails sent in a day.\" | CLAIM: The sending limit for a free Gmail account is 500 recipients per single email and a maximum of 500 emails sent per day.\n\nSOURCE: https://support.google.com/a/answer/1366776 | QUOTE: \"You can receive emails of up to 50 MB (Enterprise Standard) or 70 MB (Enterprise Plus)*.\" | CLAIM: The documented receiving size limit of 50 MB to 70 MB applies to Google Workspace Enterprise editions, not free personal accounts.\n\nNO_SOURCE_FOUND: The official receiving email size limit for a free, personal Gmail account.",
+  "usage": {
+   "prompt_tokens": 2471,
+   "completion_tokens": 289,
+   "total_tokens": 2760,
+   "cost": 0.011731,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.004731,
+    "upstream_inference_prompt_cost": 0.0034594,
+    "upstream_inference_completions_cost": 0.0012716
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "GMICloud",
+  "id": "gen-1791592344-T04jt8kjj19tJLnDYBBk"
+ },
+ "ts": "2026-10-10T00:32:43.224742+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u24",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0006",
+ "prompt": "Research the officially documented limits of the Home Assistant Cloud (Nabu Casa) subscription: price per month and what is included. Cite the Nabu Casa page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Home Assistant Cloud subscription, provided by Nabu Casa, offers region-specific pricing and a suite of features focused on remote access, voice integration, and cloud backups. Below are the officially documented limits regarding price and included features.\n\n**Pricing**\nThe monthly cost varies by region. In the United States and for international users, the monthly fee is $6.50 USD, excluding local taxes. In the European Union, it is \u20ac7.50 EUR (including VAT), and in the United Kingdom, it is \u00a36.50 GBP (including VAT). Canada is priced at $8.70 CAD (excluding VAT). An annual subscription is also available, often described as \"a year for the price of 10 months.\"\n\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 6.50 USD. The annual subscription costs 65 USD. This price is excluding local sales tax.\" | CLAIM: The monthly price for US and International users is $6.50 USD, excluding tax.\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 7.50 EUR. The annual subscription costs 75 EUR. This price includes value-added tax (VAT).\" | CLAIM: The monthly price for EU users is \u20ac7.50 EUR, including VAT.\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 6.50 GBP. The annual subscription costs 65 GBP. This price includes value-added tax (VAT).\" | CLAIM: The monthly price for UK users is \u00a36.50 GBP, including VAT.\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"The monthly subscription costs 8.70 CAD. The annual subscription costs 87 CAD. This price is excluding local value-added tax (VAT).\" | CLAIM: The monthly price for Canadian users is $8.70 CAD, excluding VAT.\nSOURCE: https://www.nabucasa.com/link/ | QUOTE: \"A year for the price of 10 months\" | CLAIM: The annual subscription plan offers a discount equivalent to two free months compared to the monthly rate.\n\n**Included Features**\nThe subscription includes secure remote access, voice assistant integration (Alexa, Google Home, and Home Assistant Assist), improved text-to-speech, offsite cloud backups, and enhanced media streaming capabilities.\n\nSOURCE: https://support.nabucasa.com/hc/en-us/articles/26260474250269-List-of-Home-Assistant-Cloud-features | QUOTE: \"Home Assistant Cloud provides the following features: - Secure remote access to your Home Assistant (previously called Remote UI) - Easy integration with popular voice assistants, such as Home Assistant Assist, Amazon Alexa, or Google Assistant - Improved text-to-speech to have text read aloud with natural sounding voices. - Cloud storage of your latest Home Assistant backup - Webhooks, for example to trigger automations. - Improved camera streaming with WebRTC\" | CLAIM: The subscription includes secure remote access, voice assistant integration, improved TTS, cloud backups, webhooks, and improved camera streaming.\nSOURCE: https://www.nabucasa.com/link/ | QUOTE: \"- Remote Access - Offsite Backups - Voice control (Alexa & Google Home) - Voice Processing (STT/TTS) - Better media streaming (video/audio) - Dedicated Support* - Funds the development of Home Assistant\" | CLAIM: Additional listed benefits include dedicated support for Link features and funding the development of Home Assistant.\n\n**Payment Methods**\nNabu Casa accepts Credit Cards, Google Pay, Apple Pay, and PayPal. They do not offer lifetime subscriptions or one-time fees.\n\nSOURCE: https://www.nabucasa.com/pricing/ | QUOTE: \"We support four payment methods: Credit Card, Google Pay, Apple Pay, or PayPal.\" | CLAIM: The accepted payment methods are Credit Card, Google Pay, Apple Pay, and PayPal.\nSOURCE: https://support.nabucasa.com/hc/en-us/sections/26179596492061-FAQ-Subscription-and-payments | QUOTE: \"We don\u2019t offer a lifetime subscription, one-time payment, or student discount.\" | CLAIM: There are no lifetime, one-time, or student discount options available.",
+  "usage": {
+   "prompt_tokens": 1396,
+   "completion_tokens": 940,
+   "total_tokens": 2336,
+   "cost": 0.0092867,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022867,
+    "upstream_inference_prompt_cost": 0.0004537,
+    "upstream_inference_completions_cost": 0.001833
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591174-x7nt1sgPBWPIBKNrekDT"
+ },
+ "ts": "2026-10-10T00:13:14.651165+00:00"
+}

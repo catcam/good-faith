@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u16",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0091",
+ "prompt": "Research Polymarket's officially documented trading fees (maker and taker fees, any market-specific fees). Cite Polymarket's own documentation and quote what it says.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "### Polymarket Trading Fees Research Summary\n\nBased on official Polymarket documentation:\n\n**Taker Fees**: Charged on certain markets at match time; calculated as `fee = C \u00d7 feeRate \u00d7 p \u00d7 (1 - p)` (where `C` = shares, `p` = price); peaks at 50% probability; rounded to 5 decimals (min 0.00001 USDC); fee-free for geopolitics/world events.\n\n**Maker Fees**: None.\n\n**Category-Specific Taker Rates** (examples):\n- Crypto: 0.07  \n- Sports: 0.05 (Table Tennis: 0.10)  \n- Finance/Politics/Mentions/Tech: 0.04  \n- Economics/Culture/Weather/Other: 0.05  \n- Geopolitics: 0  \n\n**Maker Rebates**: Funded by taker fees; distributed daily to makers; rates 15\u201325% by category.\n\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Polymarket charges a small taker fee on certain markets.\" | CLAIM: Taker fees apply only to select markets.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Makers are never charged fees. Only takers pay fees.\" | CLAIM: No maker fees exist.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"fee = C \u00d7 feeRate \u00d7 p \u00d7 (1 - p)\" | CLAIM: Taker fee formula uses shares, rate, and price symmetry.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"The fee in USDC peaks at 50% probability ($1.75) and decreases symmetrically toward both extremes.\" | CLAIM: Fee maximizes at even odds.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Fees are rounded to 5 decimal places. The smallest fee charged is 0.00001 USDC.\" | CLAIM: Minimum fee precision and rounding rule.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Geopolitical and world events markets are fee-free.\" | CLAIM: Geopolitics markets have no fees.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"| Category | Taker Fee Rate | Maker Fee Rate | Maker Rebate |\n| --- | --- | --- | --- |\n| Crypto | 0.07 | 0 | 20% |\n| Sports | 0.05 | 0 | 15% |\n| Finance | 0.04 | 0 | 25% |\n| Politics | 0.04 | 0 | 25% |\n| Economics | 0.05 | 0 | 25% |\n| Culture | 0.05 | 0 | 25% |\n| Weather | 0.05 | 0 | 25% |\n| Other / General | 0.05 | 0 | 25% |\n| Mentions | 0.04 | 0 | 25% |\n| Tech | 0.04 | 0 | 25% |\n| Geopolitics | 0 | 0 | \u2014 |\" | CLAIM: Category-specific taker/maker/rebate rates.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Table Tennis markets use a higher taker fee coefficient (\u0398 = 0.10).\" | CLAIM: Table Tennis sports fee override.\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Maker Rebates are funded by taker fees collected in eligible markets. A percentage of these fees are redistributed to makers who keep the markets liquid.\" | CLAIM: Rebate program purpose and funding.\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Rebates are distributed using the same formula as taker fees.\" | CLAIM: Rebate calculation method.\nSOURCE: https://polymarket.com/fees | QUOTE: \"Politics fees ... 0 \u2013 1.00%0 \u2013 0.75%after rebate\" | CLAIM: Politics net taker fee range after rebates.\nSOURCE: https://help.polymarket.com/en/articles/13364471-maker-rebates-program | QUOTE: \"Fees apply only to markets deployed on or after the activation date.\" | CLAIM: Fees not retroactive to old markets.\nNO_SOURCE_FOUND: Specific activation dates for fee-enabled markets beyond the general deployment note.\nNO_SOURCE_FOUND: US-specific fee variations (docs.polymarket.us redirects or lacks separate tables).",
+  "usage": {
+   "prompt_tokens": 1842,
+   "completion_tokens": 1004,
+   "total_tokens": 2846,
+   "cost": 0.0220276,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0150276,
+    "upstream_inference_prompt_cost": 0.0014736,
+    "upstream_inference_completions_cost": 0.013554
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791593179-e131c3Wtv7oBfuRY7dGJ"
+ },
+ "ts": "2026-10-10T00:46:31.167833+00:00"
+}

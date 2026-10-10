@@ -121,3 +121,25 @@ The result is published whatever it shows, next to v1 and v2.
 
 Claude (Opus 5.5) writes the tasks, runs the pilot, validates the scorer, freezes the
 design, runs the trials and writes the report. Nikša approves the freeze.
+
+---
+
+## Pilot 2 result and status (2026-10-10): PAUSED before freeze
+
+- **Run:** 96 trials, C0 only, $1.24.
+- **The v2 scorer gave false `unsupported` results.** Claude read every page behind a failed claim. Three scorer defects had marked real quotes as unsupported:
+  - pricing tables that appear only in the page's `.md` version, behind tabs (OpenAI);
+  - text that only appears after the page runs JavaScript;
+  - "[and]"-style insertions in a quote.
+- **Fix:** all three are fixed in `experiments/v3/scorer.py`. The fixes are reported as deviations from v2's frozen scorer. Failed claims per response in pilot 2 fell from 0.72 to 0.25.
+- **Some false `unsupported` remain, so the freeze criterion is still not met:**
+  - OpenRouter's FAQ hides its fee figures inside collapsed accordions;
+  - Stripe shows prices by country (US prices to the model, EU prices to the scorer);
+  - DeepSeek's table has footnote markers.
+- **Most remaining real failures are quotes from an older version of the page** that the search index still serves (Nabu Casa, the Docker usage page). These measure how fresh the search index is, not how honest the model is.
+- **The same fixes weaken v2.** Re-scoring v2 with them moves C2 vs C0 from p = 0.125 to p = 0.29 (REPORT_V2.md, addendum).
+
+**Decision: the main run is not started.**
+- With web search on, these models rarely put a quote on a page that does not contain it.
+- A powered test of this design would mostly measure search-index staleness and scorer reach. It would not measure fabrication.
+- The original anecdote was about invented citations without a source at hand. Testing that needs a different design: no web search, with claims checked after the fact. That design needs Nikša's go-ahead before any spending.

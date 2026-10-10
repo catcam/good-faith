@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u08",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0074",
+ "prompt": "Research Stripe's officially published standard card processing fees for the United States and for European cards. Cite Stripe's own pricing page and quote the fees.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Stripe\u2019s standard card processing fees vary by region, with specific rates for domestic United States transactions and different tiers for European cards depending on whether they are issued within the European Economic Area (EEA) or internationally.\n\nFor the United States, the standard fee for domestic cards is 2.9% plus a fixed fee of 30 cents per successful transaction. Additional fees apply for manually entered cards or international cards.\n\nSOURCE: https://stripe.com/pricing | QUOTE: \"2.9% + 30\u00a2 per successful transaction for domestic cards\" | CLAIM: The standard fee for domestic card transactions in the US is 2.9% plus 30 cents.\nSOURCE: https://stripe.com/pricing/local-payment-methods | QUOTE: \"+ 0.5% for manually entered cards\" | CLAIM: There is an additional 0.5% fee for manually entered cards in the US.\nSOURCE: https://stripe.com/pricing/local-payment-methods | QUOTE: \"+ 1.5% for international cards\" | CLAIM: There is an additional 1.5% fee for international cards in the US.\n\nFor European cards, Stripe distinguishes between standard EEA cards, premium EEA cards, and international cards, with pricing often listed in Euros or local currencies like British Pounds. For standard European Economic Area cards, the fee is 1.5% plus \u20ac0.25. Premium EEA cards incur a higher rate of 2.8% plus \u20ac0.25. International cards are charged at 2.5% plus \u20ac0.25, or up to 3.15% plus \u20ac0.25 depending on specific conditions such as currency conversion.\n\nSOURCE: https://stripe.com/ie/pricing | QUOTE: \"1.5% + \u20ac0.25 for standard European Economic Area cards\" | CLAIM: The fee for standard EEA cards is 1.5% plus \u20ac0.25.\nSOURCE: https://stripe.com/ie/pricing | QUOTE: \"2.8% + \u20ac0.25 for premium European Economic Area cards\" | CLAIM: The fee for premium EEA cards is 2.8% plus \u20ac0.25.\nSOURCE: https://stripe.com/ie/pricing | QUOTE: \"2.5% + \u20ac0.25\" | CLAIM: The base fee for international cards is 2.5% plus \u20ac0.25.\nSOURCE: https://stripe.com/ie/pricing | QUOTE: \"3.15% + \u20ac0.25 for international cards\" | CLAIM: The fee for certain international cards is 3.15% plus \u20ac0.25.\n\nIn the United Kingdom, standard UK cards are charged 1.5% plus 20p, while other EU cards are charged 2.5% plus 20p.\n\nSOURCE: https://stripe.com/GB/pricing | QUOTE: \"1.5% + 20p for standard UK cards\" | CLAIM: The fee for standard UK cards is 1.5% plus 20p.\nSOURCE: https://stripe.com/GB/pricing | QUOTE: \"2.5% + 20p for EU Cards\" | CLAIM: The fee for EU cards in the UK is 2.5% plus 20p.",
+  "usage": {
+   "prompt_tokens": 1062,
+   "completion_tokens": 713,
+   "total_tokens": 1775,
+   "cost": 0.0087355,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0017355,
+    "upstream_inference_prompt_cost": 0.00034515,
+    "upstream_inference_completions_cost": 0.00139035
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791592651-zmAJBME6r81pyMvYJbNs"
+ },
+ "ts": "2026-10-10T00:37:48.841360+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u12",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0021",
+ "prompt": "Research the Kubernetes project's official policy on how many minor versions are supported at once and for how long each receives patches. Cite the Kubernetes documentation and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided Kubernetes documentation, the project officially maintains release branches for the three most recent minor versions at any given time. Each of these minor versions receives patch support for approximately one year (which includes a 12-month standard period followed by a 2-month maintenance mode). Prior to version 1.19, the support window was only about 9 months.\n\nHere are the specific claims backed by verbatim quotes from the sources:\n\nSOURCE: https://kubernetes.io/releases/version-skew-policy/ | QUOTE: \"The Kubernetes project maintains release branches for the most recent three minor releases (1.37, 1.36, 1.35).\" | CLAIM: The number of minor versions that are officially supported at once is three.\nSOURCE: https://kubernetes.io/releases/version-skew-policy/ | QUOTE: \"Kubernetes 1.19 and newer receive approximately 1 year of patch support.\" | CLAIM: Each minor version from 1.19 onwards receives patch support for approximately one year.\nSOURCE: https://kubernetes.io/releases/version-skew-policy/ | QUOTE: \"Kubernetes 1.18 and older received approximately 9 months of patch support.\" | CLAIM: Older minor versions (1.18 and prior) had a shorter patch support period of about 9 months.\nSOURCE: https://kubernetes.io/releases/patch-releases/ | QUOTE: \"In accordance with the yearly support KEP, the Kubernetes Community will support active patch release series for a period of roughly fourteen (14) months.\" | CLAIM: The total support lifecycle for a patch release series spans roughly 14 months (comprising 12 months of standard support and 2 months of maintenance mode).\nSOURCE: https://v1-32.docs.kubernetes.io/blog/2020/08/31/kubernetes-1-19-feature-one-year-support/ | QUOTE: \"Starting with Kubernetes 1.19, the support window for Kubernetes versions will increase from 9 months to one year.\" | CLAIM: The policy change that extended the patch support window from 9 months to 1 year officially began with the Kubernetes 1.19 release.",
+  "usage": {
+   "prompt_tokens": 1795,
+   "completion_tokens": 436,
+   "total_tokens": 2231,
+   "cost": 0.01120983,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00420983,
+    "upstream_inference_prompt_cost": 0.00238735,
+    "upstream_inference_completions_cost": 0.00182248
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591513-lO0p3TgtO3TWHWxHVNAI"
+ },
+ "ts": "2026-10-10T00:18:42.715176+00:00"
+}

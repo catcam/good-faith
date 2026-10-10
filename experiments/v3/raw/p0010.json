@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u05",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0010",
+ "prompt": "Research the officially documented limits of Vercel's free Hobby plan (bandwidth, function invocations or duration, build minutes). Cite Vercel's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Vercel's official documentation, the limits for the free Hobby plan regarding bandwidth, function invocations/duration, and build constraints are detailed below.\n\n### Bandwidth and Data Transfer\nThe Hobby plan includes specific monthly allotments for data transfer and CDN requests. Once these limits are exceeded, usage of the feature is paused until the next cycle (typically 30 days), though some features like Web Analytics have shorter pause periods.\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| Fast Data Transfer | First 100 GB |\" | CLAIM: The Hobby plan includes 100 GB of fast data transfer per month.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| Fast Origin Transfer | First 10 GB |\" | CLAIM: The Hobby plan includes 10 GB of fast origin transfer per month.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| CDN Requests | First 1,000,000 |\" | CLAIM: The Hobby plan includes 1,000,000 CDN requests per month.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"In most cases, if you exceed your usage limits on the Hobby plan, you will have to wait until 30 days have passed before you can use the feature again.\" | CLAIM: Exceeding bandwidth or usage limits results in a 30-day pause on that feature.\n\n### Vercel Functions (Invocations and Duration)\nThe Hobby plan provides a set number of serverless function invocations and strict limits on execution duration and resource allocation (CPU/Memory).\n\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| Function Invocations | First 1,000,000 |\" | CLAIM: The Hobby plan includes 1,000,000 function invocations per month.\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"| Maximum duration | 300s (5 minutes) default and max |\" | CLAIM: The maximum execution duration for a Vercel Function on the Hobby plan is 300 seconds (5 minutes).\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"| Memory and CPU | 2 GB / 1 vCPU default and max |\" | CLAIM: Vercel Functions on the Hobby plan are limited to a maximum of 2 GB of memory and 1 vCPU.\n\n### Build Limits (Time, Frequency, and Resources)\nBuilds on the Hobby plan are subject to time limits, daily deployment caps, and file size restrictions. It is important to note that while there is a per-deployment build time limit, there is no explicit \"monthly build minute\" bucket; rather, limits are applied per deployment and via daily deployment caps.\n\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"The maximum duration of the Build Step is 45 minutes.\" | CLAIM: Each individual build step is limited to a maximum duration of 45 minutes.\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"When the limit is reached, the Build Step will be interrupted and the Deployment will fail.\" | CLAIM: Builds exceeding 45 minutes are terminated and marked as failed.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| Deployments per day | 100 |\" | CLAIM: The Hobby plan allows for a maximum of 100 deployments per day.\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"You are able to build `100` Deployments every `3600` seconds (1 hour).\" | CLAIM: There is a rate limit of 100 builds per hour on the Hobby plan.\nSOURCE: https://vercel.com/docs/limits | QUOTE: \"Static File uploads | 100 MB |\" | CLAIM: When using the CLI, the maximum size of source files that can be uploaded for a deployment is 100 MB on the Hobby plan.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| Build vCPUs | 2 |\" | CLAIM: Builds on the Hobby plan utilize 2 vCPUs.\nSOURCE: https://vercel.com/docs/plans/hobby | QUOTE: \"| Build memory (GB) | 8 |\" | CLAIM: Builds on the Hobby plan are allocated 8 GB of memory.",
+  "usage": {
+   "prompt_tokens": 2929,
+   "completion_tokens": 962,
+   "total_tokens": 3891,
+   "cost": 0.009827825,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002827825,
+    "upstream_inference_prompt_cost": 0.000951925,
+    "upstream_inference_completions_cost": 0.0018759
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591236-jb0cYtAcbNwh0RdGvXCd"
+ },
+ "ts": "2026-10-10T00:14:18.334725+00:00"
+}

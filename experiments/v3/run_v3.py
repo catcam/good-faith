@@ -11,8 +11,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "v2"))
 sys.path.insert(0, str(HERE.parent))
+sys.path.insert(0, str(HERE.parent / "v2"))
+sys.path.insert(0, str(HERE))  # v3/scorer.py (v2's scorer + .md alternate) wins over v2/scorer.py
 import lib  # noqa: E402
 import prompts  # noqa: E402
 import scorer  # noqa: E402

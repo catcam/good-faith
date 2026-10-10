@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u06",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0032",
+ "prompt": "Research the officially documented limits of Supabase's free plan (database size, monthly active users, file storage, project pausing). Cite Supabase's own page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official Supabase documentation and pricing pages, here are the limits for the Free Plan regarding database size, monthly active users, file storage, and project pausing.\n\n**Database Size**\nThe Free Plan includes a specific limit on the actual Postgres data size. If this limit is exceeded, the project enters read-only mode. Note that while the disk size allowance is 1 GB, the trigger for read-only mode is the 500 MB database size limit.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"500 MB database size (Shared CPU \u2022 500 MB RAM)\" | CLAIM: The Free Plan includes a 500 MB database size limit.\nSOURCE: https://supabase.com/docs/guides/platform/database-size | QUOTE: \"Free Plan projects enter read-only mode when your database size exceeds 500 MB.\" | CLAIM: Exceeding the 500 MB database size limit triggers read-only mode.\n\n**Monthly Active Users (MAU)**\nThe Free Plan allows for a specific number of monthly active users before overage charges apply or limits are reached.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"50,000 monthly active users\" | CLAIM: The Free Plan includes 50,000 monthly active users.\n\n**File Storage**\nThe Free Plan includes a limited amount of file storage.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"1 GB file storage\" | CLAIM: The Free Plan includes 1 GB of file storage.\n\n**Project Pausing and Limits**\nFree projects are subject to inactivity pauses and a limit on the number of active projects. Paused projects do not count toward the active project limit.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"Note: Free projects are paused after 1 week of inactivity. Limit of 2 active projects.\" | CLAIM: Free projects pause after one week of inactivity, and users are limited to two active projects.\nSOURCE: https://supabase.com/docs/guides/platform/billing-faq | QUOTE: \"You are entitled to two active free projects. Paused projects do not count towards your quota.\" | CLAIM: Paused projects are exempt from the two-project active limit.",
+  "usage": {
+   "prompt_tokens": 3288,
+   "completion_tokens": 484,
+   "total_tokens": 3772,
+   "cost": 0.0090124,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020124,
+    "upstream_inference_prompt_cost": 0.0010686,
+    "upstream_inference_completions_cost": 0.0009438
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591870-l8Jm3YTnJCm1fEawBWZm"
+ },
+ "ts": "2026-10-10T00:24:42.275509+00:00"
+}

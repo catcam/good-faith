@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u17",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0089",
+ "prompt": "Research YouTube's officially documented upload limits: maximum file size and maximum video length, and how to upload longer videos. Cite YouTube's own help page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on YouTube's official documentation, here are the current upload limits and the process for uploading longer videos.\n\n**Maximum File Size and Video Length:**\nAccording to YouTube's help page titled \"Upload videos longer than 15 minutes,\" the maximum file size you can upload is 256 GB, and the maximum video length is 12 hours. YouTube prioritizes the smaller of the two limits.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"The maximum file size you can upload is 256 GB or 12 hours, whichever is less.\" | CLAIM: The maximum upload file size is 256 GB and the maximum video length is 12 hours.\n\n**Uploading Longer Videos:**\nBy default, accounts are limited to uploading videos that are 15 minutes long. To upload videos longer than 15 minutes, you must verify your Google Account.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"By default, you can upload videos that are up to 15 minutes long. Verified accounts can upload videos longer than 15 minutes.\" | CLAIM: A verified account is required to upload videos longer than 15 minutes.\n\nThe verification process involves receiving a code via text message or automated voice call.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"On a computer, go to https://www.youtube.com/verify. Follow the steps to verify your Google Account. You can choose to get a verification code through a text message on a mobile device or an automated voice call.\" | CLAIM: The verification process is done at youtube.com/verify and uses a code sent by SMS or voice call.\n\nIt is also recommended to use an up-to-date browser for very large files.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"Make sure you're using an up-to-date version of your browser to upload files greater than 20 GB.\" | CLAIM: An up-to-date browser is recommended for uploading files larger than 20 GB.\n\n**Upload Process:**\nThe general upload process is done through YouTube Studio by clicking the \"CREATE\" button.\n\nSOURCE: https://support.google.com/youtube/answer/57407 | QUOTE: \"Sign in to YouTube Studio. In the top-right corner, click CREATE Upload videos.\" | CLAIM: Videos are uploaded by clicking \"CREATE\" in YouTube Studio.\n\nIf an account that was previously able to upload long videos can no longer do so, it may be due to copyright issues.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"If you could previously upload long videos and no longer can, check your account for copyright claims and strikes.\" | CLAIM: Copyright claims or strikes on an account can remove the ability to upload long videos.\n\nFor videos exceeding the 256 GB file size limit, YouTube suggests compressing the file using video editing software.\n\nSOURCE: https://support.google.com/youtube/answer/71673?co=GENIE.Platform%3DDesktop&hl=en | QUOTE: \"If your video is larger than 256 GB, try compressing your video in a video editing software before uploading it to YouTube.\" | CLAIM: You should compress files larger than 256 GB before uploading.",
+  "usage": {
+   "prompt_tokens": 2019,
+   "completion_tokens": 757,
+   "total_tokens": 2776,
+   "cost": 0.00830213,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00130213,
+    "upstream_inference_prompt_cost": 0.00054513,
+    "upstream_inference_completions_cost": 0.000757
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791593133-uZCTC55A9Z7ETetyVDZ8"
+ },
+ "ts": "2026-10-10T00:46:10.703410+00:00"
+}

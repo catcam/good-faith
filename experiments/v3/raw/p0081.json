@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u03",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0081",
+ "prompt": "Research the officially documented free-tier rate limits of the Google Gemini API (requests per minute and per day) for its current models. Cite Google's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here is what I found regarding the free-tier rate limits of the Google Gemini API.\n\n## What the documentation says about rate limits in general\n\nThe Gemini API rate limits are measured across three dimensions: Requests per minute (RPM), Tokens per minute (input) (TPM), and Requests per day (RPD). The documentation states that limits vary by model and tier, and directs users to AI Studio to view their actual active rate limits. Notably, the documentation says that \"Specified rate limits are not guaranteed and actual capacity may vary.\"\n\n## What specific numbers I could and could not find\n\nThe provided search results do **not** contain the specific free-tier RPM and RPD numbers for each Gemini model. The documentation repeatedly directs users to \"View your active rate limits in AI Studio\" and states \"For details on those rate limits, see the AI Studio Rate Limit page\" \u2014 but that AI Studio rate limit page was not included in the search results.\n\nI did find some grounding-specific free-tier RPD limits on the pricing page (e.g., 500 RPD for Google Search grounding on Gemini 2.5 Flash), but these are not the general API request rate limits the task is asking about.\n\n---\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Rate limits are usually measured across three dimensions: Requests per minute (RPM), Tokens per minute (input) (TPM), Requests per day (RPD)\" | CLAIM: The three dimensions along which Gemini API rate limits are measured.\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Rate limits are applied per project, not per API key. Requests per day (RPD) quotas reset at midnight Pacific time.\" | CLAIM: Rate limits apply per project and RPD quotas reset at midnight Pacific time.\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Limits vary depending on the specific model being used, and some limits only apply to specific models.\" | CLAIM: Rate limits differ by model.\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Each model variation has an associated rate limit (requests per minute, RPM). For details on those rate limits, see the AI Studio Rate Limit page.\" | CLAIM: Specific per-model RPM numbers are documented on the AI Studio Rate Limit page, which was not included in the search results.\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Specified rate limits are not guaranteed and actual capacity may vary.\" | CLAIM: Even documented rate limits may not reflect actual available capacity.\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Rate limits are more restricted for experimental and preview models.\" | CLAIM: Experimental and preview models have tighter limits.\n\nSOURCE: https://ai.google.dev/gemini-api/docs/pricing.md.txt | QUOTE: \"Grounding with Google Search | Free of charge, up to 500 RPD (limit shared with Flash-Lite RPD)\" | CLAIM: On the free tier for Gemini 2.5 Flash, Google Search grounding is limited to 500 requests per day (shared with Flash-Lite).\n\nSOURCE: https://ai.google.dev/gemini-api/docs/pricing.md.txt | QUOTE: \"Grounding with Google Search | Free of charge, up to 500 RPD (limit shared with Flash RPD)\" | CLAIM: On the free tier for Gemini 2.5 Flash-Lite, Google Search grounding is limited to 500 requests per day (shared with Flash).\n\nSOURCE: https://ai.google.dev/gemini-api/docs/pricing.md.txt | QUOTE: \"Grounding with Google Search | Not available\" | CLAIM: On the free tier for Gemini 2.5 Pro, Google Search grounding is not available at all.\n\nNO_SOURCE_FOUND: The specific free-tier RPM (requests per minute) numbers for each Gemini model (e.g., Gemini 3.5 Flash, Gemini 3.1 Flash-Lite, Gemini 2.5 Pro, Gemini 2.5 Flash, Gemini 2.5 Flash-Lite). The documentation directs users to AI Studio to view these, but the AI Studio rate limit page was not included in the search results.\n\nNO_SOURCE_FOUND: The specific free-tier RPD (requests per day) numbers for general API requests (not grounding-specific) for each Gemini model. The documentation directs users to AI Studio to view these, but the AI Studio rate limit page was not included in the search results.\n\nNO_SOURCE_FOUND: The specific free-tier TPM (tokens per minute) numbers for each Gemini model.\n\nNO_SOURCE_FOUND: The current list of models available on the free tier with their associated rate limits, as would appear on the AI Studio Rate Limit page.",
+  "usage": {
+   "prompt_tokens": 3052,
+   "completion_tokens": 2712,
+   "total_tokens": 5764,
+   "cost": 0.02158504,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01458504,
+    "upstream_inference_prompt_cost": 0.00384552,
+    "upstream_inference_completions_cost": 0.01073952
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1700,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "AtlasCloud",
+  "id": "gen-1791592971-GhztsLBa6EKDUGUM2XEa"
+ },
+ "ts": "2026-10-10T00:43:35.545579+00:00"
+}

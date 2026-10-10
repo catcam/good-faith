@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u14",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0054",
+ "prompt": "Research the officially documented limits of Tailscale's free Personal plan (users, devices, other limits). Cite Tailscale's own pricing or documentation page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the officially documented limits for Tailscale's free Personal plan:\n\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 6 users\" | CLAIM: The Personal plan has a maximum limit of 6 users.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Unlimited user devices\" | CLAIM: There is no limit on the number of user devices on the Personal plan.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 3 ACL groups\" | CLAIM: The Personal plan has a maximum limit of 3 ACL groups.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 50 tagged resources to start\" | CLAIM: The Personal plan includes a limit of 50 tagged resources by default.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"1,000 mins per month for ephemeral resources\" | CLAIM: The Personal plan has a limit of 1,000 minutes per month for ephemeral resources.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"50 tagged resources included; add more for $1/month each.\" | CLAIM: Tagged resources can be expanded beyond the initial 50, but they are not unlimited without paying.\nSOURCE: https://tailscale.com/docs/reference/messages/console/reached-use-limit | QUOTE: \"The Personal plan gives you six free users.\" | CLAIM: Confirms the hard user limit for the Personal plan is 6 users.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"With that in mind, we are currently not enforcing the hard limits or overages of ACL groups, multiple tailnets, tagged resources, and ephemeral resources.\" | CLAIM: Although documented limits exist for ACL groups, tagged resources, and ephemeral resources, Tailscale is currently not enforcing overages for them on the Personal plan.\n\nNO_SOURCE_FOUND: A hard, documented limit on the maximum number of tailnets allowed on the Personal plan (the sources mention \"multiple tailnets\" in the context of unenforced limits, but do not specify the exact numeric limit).",
+  "usage": {
+   "prompt_tokens": 2547,
+   "completion_tokens": 445,
+   "total_tokens": 2992,
+   "cost": 0.01195087,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00495087,
+    "upstream_inference_prompt_cost": 0.00308187,
+    "upstream_inference_completions_cost": 0.001869
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Phala",
+  "id": "gen-1791592195-rFWi0Zi3XGh6xW7IO1Jy"
+ },
+ "ts": "2026-10-10T00:30:32.558208+00:00"
+}

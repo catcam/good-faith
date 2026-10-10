@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u13",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0065",
+ "prompt": "Research Canonical's official statement on how long an Ubuntu LTS release receives standard support, and how long with Ubuntu Pro / ESM. Cite Canonical's own page and quote the periods.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Canonical's official documentation, here is the breakdown of Ubuntu LTS support periods.\n\nAn Ubuntu LTS release receives **5 years of standard security maintenance** for packages in the Main repository at no cost. This period can be extended to **10 years** for the Main repository and, depending on the subscription, the Universe repository through the **Expanded Security Maintenance (ESM)** service included with Ubuntu Pro. An optional **Legacy add-on** can further extend this to a total of **15 years** of security coverage and support.\n\nHere are the specific claims and their sources:\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"LTS are released every two years and receive 5 years of standard security maintenance.\" | CLAIM: Standard support for an LTS release lasts for 5 years.\n\nSOURCE: https://ubuntu.com/security/esm | QUOTE: \"Ubuntu LTS gained popularity due to a 5-year security maintenance commitment for the operating system (specifically all packages in the 'main repository').\" | CLAIM: The free 5-year commitment is specifically for packages in the Main repository.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"ESM extends the life of LTS releases by providing 10 years of security updates for the 'Main' repository and also adds 10 years of security coverage for the 'Universe' repository.\" | CLAIM: ESM provides 10 years of security coverage for both Main and Universe repositories.\n\nSOURCE: https://canonical.com/legal/ubuntu-pro-description | QUOTE: \"Expanded Security Maintenance (ESM): an additional scope of security patching service... [that] covers fixes to High and Critical CVE for 10 years\" | CLAIM: ESM provides an additional 10 years of security patching.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"At the end of the 10 year ESM period, the Legacy add-on can be purchased to cover additional 5 years... giving a total of 15 years security maintenance and support for LTS releases.\" | CLAIM: The Legacy add-on extends total coverage to 15 years.\n\nSOURCE: https://ubuntu.com/security/esm | QUOTE: \"Extend the lifetime of your favorite Linux and the open source you use on top with reliable security maintenance for up to 15 years.\" | CLAIM: Total possible security maintenance with all offerings is up to 15 years.\n\nSOURCE: https://ubuntu.com/pro/docs/services-overview/ | QUOTE: \"ESM infra: this stream expands the scope of security maintenance for Ubuntu LTS releases for packages in the Ubuntu Main repository from 5 years to 10 years;\" | CLAIM: ESM-infra specifically extends Main repository support from 5 to 10 years.\n\nSOURCE: https://ubuntu.com/pro/docs/services-overview/ | QUOTE: \"ESM apps: this stream expands the scope of security maintenance to include packages in the Ubuntu Universe repository for the full 10 years of an Ubuntu LTS release\u2019s lifecycle.\" | CLAIM: ESM-apps provides 10 years of security coverage for the Universe repository.",
+  "usage": {
+   "prompt_tokens": 2747,
+   "completion_tokens": 666,
+   "total_tokens": 3413,
+   "cost": 0.00960975,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00260975,
+    "upstream_inference_prompt_cost": 0.00151085,
+    "upstream_inference_completions_cost": 0.0010989
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "CoreWeave",
+  "id": "gen-1791592475-CcbfuXJRrFRtP8s06OTd"
+ },
+ "ts": "2026-10-10T00:34:46.525627+00:00"
+}

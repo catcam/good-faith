@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u12",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0047",
+ "prompt": "Research the Kubernetes project's official policy on how many minor versions are supported at once and for how long each receives patches. Cite the Kubernetes documentation and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "# Kubernetes Version Support Policy Research\n\nBased on official Kubernetes documentation, here is the current support policy:\n\nSOURCE: https://kubernetes.io/releases/version-skew-policy/ | QUOTE: \"The Kubernetes project maintains release branches for the most recent three minor releases (1.37, 1.36, 1.35).\" | CLAIM: Kubernetes supports the 3 most recent minor versions at any given time.\n\nSOURCE: https://kubernetes.io/releases/version-skew-policy/ | QUOTE: \"Kubernetes 1.19 and newer receive approximately 1 year of patch support.\" | CLAIM: Each minor version from 1.19 onwards receives approximately 1 year (12 months) of patch support.\n\nSOURCE: https://kubernetes.io/releases/patch-releases/ | QUOTE: \"In accordance with the yearly support KEP, the Kubernetes Community will support active patch release series for a period of roughly fourteen (14) months.\" | CLAIM: Active patch release series are supported for roughly 14 months total (12 months standard + 2 months maintenance mode).\n\nSOURCE: https://kubernetes.io/releases/version-skew-policy/ | QUOTE: \"The Kubernetes project maintains release branches for the most recent three minor releases (1.37, 1.36, 1.35).\" | CLAIM: Kubernetes supports the 3 most recent minor releases simultaneously with patch releases.\n\nSOURCE: https://kubernetes.io/releases/ | QUOTE: \"Kubernetes 1.19 and newer receive approximately 1 year of patch support. Kubernetes 1.18 and older received approximately 9 months of patch support.\" | CLAIM: The support window changed from approximately 9 months (for versions 1.18 and older) to approximately 1 year (for versions 1.19 and newer).",
+  "usage": {
+   "prompt_tokens": 2662,
+   "completion_tokens": 363,
+   "total_tokens": 3025,
+   "cost": 0.01848895,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01148895,
+    "upstream_inference_prompt_cost": 0.0067881,
+    "upstream_inference_completions_cost": 0.00470085
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DigitalOcean",
+  "id": "gen-1791592099-qG9m0bpXfxZgG6xsWKbB"
+ },
+ "ts": "2026-10-10T00:28:28.839509+00:00"
+}

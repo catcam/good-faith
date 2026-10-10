@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u06",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0022",
+ "prompt": "Research the officially documented limits of Supabase's free plan (database size, monthly active users, file storage, project pausing). Cite Supabase's own page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my research of Supabase's official documentation, here are the documented limits for the free plan:\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"500\u2009MB database size (Shared CPU \u2022 500\u2009MB RAM)\" | CLAIM: Free plan projects are limited to 500 MB of database size.\n\nSOURCE: https://supabase.com/docs/guides/platform/billing-on-supabase | QUOTE: \"50,000 MAU\" | CLAIM: The free plan supports up to 50,000 monthly active users.\n\nSOURCE: https://supabase.com/docs/guides/platform/billing-on-supabase | QUOTE: \"1 GB\" | CLAIM: File storage on the free plan is limited to 1 GB.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"Free projects are paused after 1 week of inactivity. Limit of 2 active projects.\" | CLAIM: Free projects are paused after 7 days of inactivity, and users are limited to 2 active projects maximum.\n\nSOURCE: https://supabase.com/docs/guides/platform/billing-faq | QUOTE: \"Paused projects do not count towards your quota.\" | CLAIM: While limited to 2 active projects, users can pause projects indefinitely and these paused projects do not count toward the 2-project limit.\n\nAdditional context: The documentation also notes that exceeding the database size limit triggers read-only mode rather than automatic suspension. According to [Supabase's database size documentation](https://supabase.com/docs/guides/platform/database-size), \"Free Plan projects enter read-only mode when your database size exceeds 500 MB,\" though this is a behavioral detail rather than a static limit quote.",
+  "usage": {
+   "prompt_tokens": 2892,
+   "completion_tokens": 345,
+   "total_tokens": 3237,
+   "cost": 0.0139711,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0069711,
+    "upstream_inference_prompt_cost": 0.0023136,
+    "upstream_inference_completions_cost": 0.0046575
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791591524-V7fMNGvJn3yDN7oAVfgb"
+ },
+ "ts": "2026-10-10T00:18:48.198800+00:00"
+}

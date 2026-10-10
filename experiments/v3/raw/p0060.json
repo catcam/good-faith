@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u13",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0060",
+ "prompt": "Research Canonical's official statement on how long an Ubuntu LTS release receives standard support, and how long with Ubuntu Pro / ESM. Cite Canonical's own page and quote the periods.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Canonical\u2019s own position is that standard Ubuntu LTS security maintenance lasts 5 years for Main, while Ubuntu Pro/ESM extends coverage to 10 years, with an optional Legacy add-on to 15 years.\n\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"LTS are released every two years and receive 5 years of standard security maintenance.\" | CLAIM: Canonical states the standard support/security-maintenance period for an Ubuntu LTS is 5 years.\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"Ubuntu Pro is Canonical's enhanced security and support subscription for Ubuntu systems.\" | CLAIM: Canonical frames Ubuntu Pro as the subscription that adds security/support beyond standard LTS maintenance.\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"It includes up to 15 years of security coverage (ESM and Legacy add-on), Kernel Livepatch, Landscape, FIPS 140-3 certified packages, and CIS hardening, and optional enterprise-grade support.\" | CLAIM: Canonical says Ubuntu Pro can provide up to 15 years of total security coverage when ESM and the Legacy add-on are included.\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"ESM extends the life of LTS releases by providing 10 years of security updates for the 'Main' repository and also adds 10 years of security coverage for the 'Universe' repository.\" | CLAIM: Canonical\u2019s stated Ubuntu Pro/ESM period is 10 years for Main, and also 10 years for Universe.\nSOURCE: https://ubuntu.com/about/release-cycle?product= | QUOTE: \"At the end of the 10 year ESM period, the Legacy add-on can be purchased to cover additional 5 years of the lifetime of Ubuntu LTS, giving a total of 15 years security maintenance and support for LTS releases.\" | CLAIM: Canonical says the optional Legacy add-on extends the 10-year ESM period by another 5 years, for 15 years total.\nSOURCE: https://ubuntu.com/security/esm | QUOTE: \"Ubuntu LTS gained popularity due to a 5-year security maintenance commitment for the operating system (specifically all packages in the 'main repository').\" | CLAIM: Canonical again identifies the standard LTS commitment as 5 years, specifically for Main.\nSOURCE: https://ubuntu.com/security/esm | QUOTE: \"The 'esm-apps' stream covers all 'Universe' packages for ten years from the release of the LTS.\" | CLAIM: Canonical states that ESM-apps covers Universe packages for 10 years from release.\nSOURCE: https://ubuntu.com/security/esm | QUOTE: \"The 'esm-infra' stream covers 'Main' packages for the period after the standard five year security maintenance of 'Main' packages ends.\" | CLAIM: Canonical states that ESM-infra covers Main after the initial 5-year period, supporting the 5 + 5 = 10-year ESM interpretation.\nSOURCE: https://canonical.com/legal/ubuntu-pro-description | QUOTE: \"End of Standard Support: a date (5 years after the Release Date) on which free standard security maintenance service for the Ubuntu Main repository of an Ubuntu LTS expires\" | CLAIM: Canonical\u2019s legal definition of standard support confirms that free standard security maintenance for Main lasts 5 years after release.",
+  "usage": {
+   "prompt_tokens": 2712,
+   "completion_tokens": 702,
+   "total_tokens": 3414,
+   "cost": 0.0231772,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0161772,
+    "upstream_inference_prompt_cost": 0.0070512,
+    "upstream_inference_completions_cost": 0.009126
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791592364-x6yxGSS8ZR1BoEgA3xci"
+ },
+ "ts": "2026-10-10T00:32:55.417281+00:00"
+}

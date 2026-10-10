@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u04",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0036",
+ "prompt": "Research the officially documented limits of AWS Lambda: maximum timeout, maximum memory, and the monthly free tier. Cite AWS's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Below are AWS's officially documented limits for AWS Lambda's maximum timeout, maximum memory, and monthly free tier.\n\n**Maximum Timeout**\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"Function timeout | 900 seconds (15 minutes). For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes).\" | CLAIM: The maximum timeout for standard Lambda functions is 900 seconds (15 minutes), while functions using Lambda Managed Instances can run up to 5,400 seconds (90 minutes) for asynchronous invocations and certain event source mappings.\n\n**Maximum Memory**\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"Function memory allocation | 128 MB to 10,240 MB, in 1-MB increments. Note: Lambda allocates CPU power in proportion to the amount of memory configured. You can increase or decrease the memory and CPU power allocated to your function using the Memory (MB) setting. At 1,769 MB, a function has the equivalent of one vCPU.\" | CLAIM: The maximum memory allocation for a Lambda function is 10,240 MB (10 GB), configurable in 1-MB increments starting from a minimum of 128 MB.\n\n**Monthly Free Tier**\nSOURCE: https://aws.amazon.com/lambda/pricing/ | QUOTE: \"The free tier includes one million requests and 400,000 GB-seconds per month.\" | CLAIM: The monthly free tier for AWS Lambda provides 1 million requests and 400,000 GB-seconds of compute time per month.",
+  "usage": {
+   "prompt_tokens": 2518,
+   "completion_tokens": 362,
+   "total_tokens": 2880,
+   "cost": 0.01546804,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00846804,
+    "upstream_inference_prompt_cost": 0.00385254,
+    "upstream_inference_completions_cost": 0.0046155
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Makora",
+  "id": "gen-1791591911-zfE4fc3DhSgXFCpH0DC9"
+ },
+ "ts": "2026-10-10T00:25:20.981679+00:00"
+}

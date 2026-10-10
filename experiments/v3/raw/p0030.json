@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u06",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0030",
+ "prompt": "Research the officially documented limits of Supabase's free plan (database size, monthly active users, file storage, project pausing). Cite Supabase's own page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results, here are the officially documented limits for Supabase's Free Plan.\n\n**Database Size:**\nThe free plan includes 500 MB of database size per project. It's important to distinguish between *disk size* and *database size*; the free plan's 500 MB limit is on the actual Postgres data size.\n\nSOURCE: https://supabase.com/docs/guides/platform/database-size | QUOTE: \"Free Plan projects enter read-only mode when your database size exceeds 500 MB.\" | CLAIM: The free plan has a 500 MB database size limit.\nSOURCE: https://supabase.com/pricing | QUOTE: \"500\u2009MB database size per project included\" | CLAIM: The free plan includes 500 MB of database size per project.\nSOURCE: https://supabase.com/docs/guides/platform/billing-on-supabase | QUOTE: \"Database Size: 500 MB per project\" | CLAIM: The free plan includes 500 MB of database size per project.\n\n**Monthly Active Users (MAU):**\nThe free plan includes 50,000 monthly active users.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"50,000 monthly active users\" | CLAIM: The free plan includes 50,000 monthly active users.\nSOURCE: https://supabase.com/docs/guides/platform/billing-on-supabase | QUOTE: \"Monthly Active Users: 50,000 MAU\" | CLAIM: The free plan includes 50,000 monthly active users.\n\n**File Storage:**\nThe free plan includes 1 GB of file storage.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"1 GB file storage\" | CLAIM: The free plan includes 1 GB of file storage.\nSOURCE: https://supabase.com/docs/guides/platform/billing-on-supabase | QUOTE: \"Storage Size: 1 GB\" | CLAIM: The free plan includes 1 GB of storage.\n\n**Project Pausing:**\nFree projects are automatically paused after 1 week of inactivity. However, users can also manually pause and unpause projects at any time. A user is entitled to have two active free projects simultaneously, but an unlimited number of paused projects.\n\nSOURCE: https://supabase.com/pricing | QUOTE: \"Free projects are paused after 1 week of inactivity.\" | CLAIM: Free projects are automatically paused after 1 week of inactivity.\nSOURCE: https://supabase.com/pricing | QUOTE: \"Yes, you can pause a project at any time. Our Free Plan gives you 2 free projects, but you can have as many paused projects as you want.\" | CLAIM: Users can manually pause projects and have an unlimited number of paused projects.\nSOURCE: https://supabase.com/docs/guides/platform/billing-faq | QUOTE: \"You are entitled to two active free projects. Paused projects do not count towards your quota.\" | CLAIM: The limit is on active projects; paused projects do not count towards the two-project limit.",
+  "usage": {
+   "prompt_tokens": 2897,
+   "completion_tokens": 630,
+   "total_tokens": 3527,
+   "cost": 0.00841219,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00141219,
+    "upstream_inference_prompt_cost": 0.00078219,
+    "upstream_inference_completions_cost": 0.00063
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791591830-wu6YGi5kuU8SoziMMORE"
+ },
+ "ts": "2026-10-10T00:24:20.250390+00:00"
+}

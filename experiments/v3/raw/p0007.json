@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u16",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0007",
+ "prompt": "Research Polymarket's officially documented trading fees (maker and taker fees, any market-specific fees). Cite Polymarket's own documentation and quote what it says.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided web search results, here is the information regarding Polymarket's officially documented trading fees, including maker fees, taker fees, and market-specific fees.\n\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Makers are never charged fees. Only takers pay fees.\" | CLAIM: Polymarket does not charge maker fees; only taker fees apply to trades.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"fee = C \u00d7 feeRate \u00d7 p \u00d7 (1 - p)\" | CLAIM: The exact formula used to calculate taker fees based on shares traded (C), the fee rate, and the share price (p).\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Where C = number of shares traded and p = price of the shares.\" | CLAIM: The definitions for the variables used in the taker fee calculation formula.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Geopolitical and world events markets are fee-free. Polymarket does not charge fees or profit from trading activity on these markets.\" | CLAIM: Geopolitics is a specific market category that is entirely exempt from trading fees.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"The fee amount in USDC is symmetric around 50% probability \u2014 a trade at 30\u00a2 incurs the same dollar fee as a trade at 70\u00a2.\" | CLAIM: Taker fees are symmetrically calculated around 50% probability, meaning trades at complementary prices incur identical dollar fees.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Crypto | 0.07 | 0 | 20%\" | CLAIM: The specific taker fee rate (0.07), maker fee rate (0), and maker rebate percentage (20%) for the Crypto market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Sports | 0.05 | 0 | 15%\" | CLAIM: The specific taker fee rate (0.05), maker fee rate (0), and maker rebate percentage (15%) for the Sports market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Finance | 0.04 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.04), maker fee rate (0), and maker rebate percentage (25%) for the Finance market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Politics | 0.04 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.04), maker fee rate (0), and maker rebate percentage (25%) for the Politics market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Economics | 0.05 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.05), maker fee rate (0), and maker rebate percentage (25%) for the Economics market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Culture | 0.05 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.05), maker fee rate (0), and maker rebate percentage (25%) for the Culture market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Weather | 0.05 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.05), maker fee rate (0), and maker rebate percentage (25%) for the Weather market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Other / General | 0.05 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.05), maker fee rate (0), and maker rebate percentage (25%) for the Other / General market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Mentions | 0.04 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.04), maker fee rate (0), and maker rebate percentage (25%) for the Mentions market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Tech | 0.04 | 0 | 25%\" | CLAIM: The specific taker fee rate (0.04), maker fee rate (0), and maker rebate percentage (25%) for the Tech market category.\nSOURCE: https://docs.polymarket.com/trading/fees | QUOTE: \"Geopolitics | 0 | 0 | \u2014\" | CLAIM: The fee structure for the Geopolitics category confirms a 0% taker fee, 0% maker fee, and no maker rebate.\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Maker Rebates are funded by taker fees collected in eligible markets. A percentage of these fees are redistributed to makers who keep the markets liquid.\" | CLAIM: The Maker Rebates Program is entirely funded by collected taker fees and is used to incentivize market liquidity.\nSOURCE: https://docs.polymarket.com/programs/maker-rebates | QUOTE: \"Rebates are distributed using the same formula as taker fees. This ensures makers are rewarded proportionally to the fee value their liquidity generates.\" | CLAIM: Maker rebates are calculated proportionally using the exact same formula that is applied to taker fees.\nSOURCE: https://docs.polymarket.us/fees | QUOTE: \"Table Tennis markets use a higher taker fee coefficient (\u0398 = 0.10).\" | CLAIM: Table Tennis is a specific market exception that utilizes a higher taker fee coefficient than the standard rate.\nSOURCE: https://help.polymarket.com/en/articles/13364471-maker-rebates-program | QUOTE: \"Fees apply only to markets deployed on or after the activation date. Pre-existing markets are unaffected. Markets with fees enabled have `feesEnabled` set to `true` on the market object.\" | CLAIM: Trading fees are not retroactive and only apply to markets deployed after the fee activation date.\nNO_SOURCE_FOUND: The specific underlying mathematical reasoning or extended examples for why the fee formula uses the p \u00d7 (1 - p) structure beyond the statement that it is symmetric around 50% probability.",
+  "usage": {
+   "prompt_tokens": 1898,
+   "completion_tokens": 1399,
+   "total_tokens": 3297,
+   "cost": 0.0158128,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0088128,
+    "upstream_inference_prompt_cost": 0.0026572,
+    "upstream_inference_completions_cost": 0.0061556
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "GMICloud",
+  "id": "gen-1791591194-Thi8GXmPJFZ9CZfuvYvL"
+ },
+ "ts": "2026-10-10T00:13:33.379327+00:00"
+}

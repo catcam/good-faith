@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u22",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0084",
+ "prompt": "Research the officially documented limits of GitHub Pages (published site size, monthly bandwidth, builds per hour). Cite GitHub's documentation page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on GitHub's official documentation, here are the key limits for GitHub Pages:\n\n**Published Site Size:** GitHub Pages sites have a maximum published size of 1 GB.\nSOURCE: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits | QUOTE: \"Published GitHub Pages sites may be no larger than 1 GB.\" | CLAIM: The maximum size for a published GitHub Pages site is 1 GB.\n\n**Monthly Bandwidth:** GitHub Pages sites have a soft bandwidth limit of 100 GB per month.\nSOURCE: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits | QUOTE: \"GitHub Pages sites have a soft bandwidth limit of 100 GB per month.\" | CLAIM: There is a soft monthly bandwidth limit of 100 GB.\n\n**Builds per Hour:** GitHub Pages sites have a soft limit of 10 builds per hour when using the built-in Pages build process.\nSOURCE: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits | QUOTE: \"GitHub Pages sites have a soft limit of 10 builds per hour.\" | CLAIM: There is a soft limit of 10 builds per hour for the standard GitHub Pages build process.\n\nIt's important to note that this build limit does not apply if you publish your site using a custom GitHub Actions workflow.",
+  "usage": {
+   "prompt_tokens": 919,
+   "completion_tokens": 298,
+   "total_tokens": 1217,
+   "cost": 0.00751273,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00051273,
+    "upstream_inference_prompt_cost": 0.00022963,
+    "upstream_inference_completions_cost": 0.0002831
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791593042-rQcyrXt2tFYrac9hpKj9"
+ },
+ "ts": "2026-10-10T00:44:16.493020+00:00"
+}

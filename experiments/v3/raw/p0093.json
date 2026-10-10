@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u03",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0093",
+ "prompt": "Research the officially documented free-tier rate limits of the Google Gemini API (requests per minute and per day) for its current models. Cite Google's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, Google\u2019s official documentation does not list specific numerical values for free-tier rate limits (such as exact Requests Per Minute or Requests Per Day) in the static text. Instead, the documentation states that these limits are dynamic, vary by model and usage tier, and must be viewed directly within the Google AI Studio interface.\n\nThe documentation confirms that the Free Tier exists and provides free access to input and output tokens for certain models, but it explicitly directs users to AI Studio to view their active limits, noting that \"specified rate limits are not guaranteed and actual capacity may vary.\"\n\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"View your active rate limits in AI Studio\" | CLAIM: Users must check Google AI Studio to see their specific active rate limits rather than relying on a static number in the documentation.\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Rate limits depend on a variety of factors (such as your usage tier) and can be viewed in Google AI Studio.\" | CLAIM: Rate limits are variable and dependent on the user's current usage tier.\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Specified rate limits are not guaranteed and actual capacity may vary.\" | CLAIM: The documentation does not provide fixed, guaranteed numerical limits for rate caps.\nSOURCE: https://ai.google.dev/gemini-api/docs/rate-limits | QUOTE: \"Rate limits are usually measured across three dimensions: ... - Requests per minute (RPM) ... - Requests per day (RPD)\" | CLAIM: The API enforces limits on both requests per minute and requests per day, though specific free-tier values are not listed in the text.\nSOURCE: https://ai.google.dev/gemini-api/docs/pricing | QUOTE: \"For developers and small projects getting started with the Gemini API. ... Limited access to certain models ... Free input & output tokens\" | CLAIM: The Free Tier provides free token usage but restricts access to certain models.\nSOURCE: https://ai.google.dev/gemini-api/docs/billing | QUOTE: \"New accounts begin on the Free Tier, which allows access to certain models in the Gemini API and AI Studio, up to the models' free tier rate limits.\" | CLAIM: New accounts are automatically placed on the Free Tier, which is subject to specific rate limits.\n\nNO_SOURCE_FOUND: Specific numerical values for free-tier Requests Per Minute (RPM) and Requests Per Day (RPD) for current Gemini models.",
+  "usage": {
+   "prompt_tokens": 3489,
+   "completion_tokens": 539,
+   "total_tokens": 4028,
+   "cost": 0.009184975,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002184975,
+    "upstream_inference_prompt_cost": 0.001133925,
+    "upstream_inference_completions_cost": 0.00105105
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791593198-RNxBgdwoWAq0h3OgeRse"
+ },
+ "ts": "2026-10-10T00:46:50.163890+00:00"
+}

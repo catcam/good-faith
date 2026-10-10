@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u04",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0003",
+ "prompt": "Research the officially documented limits of AWS Lambda: maximum timeout, maximum memory, and the monthly free tier. Cite AWS's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official AWS documentation, here are the limits for maximum timeout, maximum memory, and the monthly free tier for AWS Lambda.\n\n**Maximum Memory**\nAWS Lambda allows functions to be configured with up to 10,240 MB of memory. This allocation also determines the proportional CPU power assigned to the function.\n\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"Function memory allocation | 128 MB to 10,240 MB, in 1-MB increments.\" | CLAIM: The maximum memory allocation for a Lambda function is 10,240 MB.\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/configuration-memory.html | QUOTE: \"You can configure memory between 128 MB and 10,240 MB in 1-MB increments.\" | CLAIM: The configurable memory range tops out at 10,240 MB.\n\n**Maximum Timeout**\nThe standard maximum execution duration for a Lambda function is 15 minutes (900 seconds). However, for specific use cases involving Lambda Managed Instances invoked asynchronously or through most event source mappings, the limit extends to 90 minutes (5,400 seconds).\n\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"Function timeout | 900 seconds (15 minutes).\" | CLAIM: The standard maximum timeout for a Lambda function is 900 seconds.\nSOURCE: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html | QUOTE: \"For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes).\" | CLAIM: The maximum timeout can extend to 5,400 seconds for specific managed instance configurations.\n\n**Monthly Free Tier**\nThe AWS Lambda free tier provides 1 million free requests per month and 400,000 GB-seconds of compute time per month.\n\nSOURCE: https://aws.amazon.com/lambda/pricing/ | QUOTE: \"The free tier includes one million requests and 400,000 GB-seconds per month.\" | CLAIM: The monthly free tier consists of 1 million requests and 400,000 GB-seconds of compute duration.",
+  "usage": {
+   "prompt_tokens": 2861,
+   "completion_tokens": 521,
+   "total_tokens": 3382,
+   "cost": 0.008945775,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001945775,
+    "upstream_inference_prompt_cost": 0.000929825,
+    "upstream_inference_completions_cost": 0.00101595
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591087-pELwzoS5ySnzkJm0PjND"
+ },
+ "ts": "2026-10-10T00:11:39.805860+00:00"
+}

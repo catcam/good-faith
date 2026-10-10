@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u14",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0013",
+ "prompt": "Research the officially documented limits of Tailscale's free Personal plan (users, devices, other limits). Cite Tailscale's own pricing or documentation page and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Tailscale's official documentation and pricing pages, here are the officially documented limits for the free Personal plan:\n\n**Users**\nThe Personal plan allows for up to 6 users.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 6 users\" | CLAIM: The Personal plan supports a maximum of 6 users.\nSOURCE: https://tailscale.com/docs/account/manage-plans/free-plans-discounts | QUOTE: \"The Personal plan permits 6 free users in a single Tailscale network, known as a tailnet.\" | CLAIM: The Personal plan explicitly permits 6 free users.\n\n**User Devices**\nThere is no limit on the number of devices associated with those users.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Unlimited user devices\" | CLAIM: Users on the Personal plan can connect an unlimited number of personal devices (computers, phones, etc.).\nSOURCE: https://tailscale.com/pricing | QUOTE: \"User devices are free and unlimited.\" | CLAIM: Personal devices do not count against any paid limits or caps.\n\n**Tagged Resources**\nThe plan includes a baseline allowance for tagged resources (such as servers, exit nodes, or subnet routers), with options to purchase more.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 50 tagged resources to start\" | CLAIM: The Personal plan includes 50 tagged resources by default.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"50 tagged resources included; add more for $1/month each.\" | CLAIM: Additional tagged resources beyond the initial 50 cost $1 per month per resource.\n\n**Ephemeral Resources**\nThere is a time-based limit for short-lived resources like CI/CD runners or Kubernetes pods.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"1,000 mins per month for ephemeral resources\" | CLAIM: The Personal plan provides 1,000 minutes of usage per month for ephemeral resources.\n\n**ACL Groups**\nThere is a limit on the number of Access Control List (ACL) groups that can be created.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"Up to 3 ACL groups\" | CLAIM: The Personal plan is limited to 3 ACL groups.\n\n**Enforcement Note**\nTailscale notes that while these limits exist, they may not be strictly enforced at all times.\nSOURCE: https://tailscale.com/pricing | QUOTE: \"With that in mind, we are currently not enforcing the hard limits or overages of ACL groups, multiple tailnets, tagged resources, and ephemeral resources.\" | CLAIM: Tailscale is currently not strictly enforcing hard limits or overages for certain resources on the Personal plan.",
+  "usage": {
+   "prompt_tokens": 2802,
+   "completion_tokens": 595,
+   "total_tokens": 3397,
+   "cost": 0.0090709,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020709,
+    "upstream_inference_prompt_cost": 0.00091065,
+    "upstream_inference_completions_cost": 0.00116025
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791591350-z3klQ7xKOzjSNqvmvx76"
+ },
+ "ts": "2026-10-10T00:16:03.720057+00:00"
+}

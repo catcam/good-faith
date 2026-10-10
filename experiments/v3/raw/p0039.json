@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u23",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0039",
+ "prompt": "Research the officially documented limits of a free Gmail / Google account: total storage, attachment size for sending and receiving, recipients per day. Cite Google's own help pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the officially documented limits for a free Gmail / Google account, based on Google's help pages.\n\nSOURCE: https://support.google.com/mail/answer/9312312 | QUOTE: \"Each Google Account includes up to 15 GB of storage, which is shared across Gmail, Google Drive, and Google Photos.\" | CLAIM: The total storage limit for a free Gmail / Google account is 15 GB, shared across Gmail, Google Drive, and Google Photos.\nSOURCE: https://support.google.com/mail/answer/6584 | QUOTE: \"For personal Gmail accounts, the limit is 25 MB.\" | CLAIM: For a free personal Gmail account, the attachment size limit is 25 MB; the same page presents this as the relevant attachment limit for personal accounts and says files over the limit are added as a Google Drive link.\nSOURCE: https://support.google.com/mail/answer/22839 | QUOTE: \"You may see this message if you send an email to a total of more than 500 recipients in a single email and or more than 500 emails sent in a day.\" | CLAIM: For a free Gmail account, Google documents a limit of 500 recipients in a single email and/or 500 emails sent per day.\nSOURCE: https://support.google.com/a/answer/166852 | QUOTE: \"If your users exceed an email sending limit, they'll get an error message\" | CLAIM: This confirms Google Workspace accounts have documented sending limits, but it does not provide the free Gmail limit.\n\nNO_SOURCE_FOUND: a separate officially documented incoming attachment-size limit for free personal Gmail accounts, distinct from the 25 MB sending attachment limit.",
+  "usage": {
+   "prompt_tokens": 2443,
+   "completion_tokens": 347,
+   "total_tokens": 2790,
+   "cost": 0.01516204,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00816204,
+    "upstream_inference_prompt_cost": 0.00373779,
+    "upstream_inference_completions_cost": 0.00442425
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Makora",
+  "id": "gen-1791591984-ogKCEoKFPRG56NPrxc6W"
+ },
+ "ts": "2026-10-10T00:26:38.228408+00:00"
+}

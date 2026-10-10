@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u07",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0063",
+ "prompt": "Research Docker Hub's officially documented pull rate limits for unauthenticated and authenticated free users. Cite Docker's documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, there is a discrepancy between Docker's official documentation pages and their recent blog/FAQ announcements regarding the pull rate limits for free users. The core documentation still reflects a 6-hour limit, while newer policy updates and FAQs mention an hourly limit that was scheduled but then delayed/unenforced.\n\nHere are the officially documented limits along with the exact quotes and citations:\n\nSOURCE: https://docs.docker.com/docker-hub/usage/pulls/ | QUOTE: \"Unauthenticated and Docker Personal users are subject to a 6-hour pull rate limit on Docker Hub.\" | CLAIM: The pull rate limits for both unauthenticated and authenticated free (Personal) users are calculated on a 6-hour window.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/ | QUOTE: \"Personal (authenticated) | 200\" | CLAIM: The documented pull rate limit for authenticated free (Docker Personal) users is 200 pulls per 6 hours.\n\nSOURCE: https://docs.docker.com/docker-hub/usage/ | QUOTE: \"Unauthenticated users | 100 per IPv4 address or IPv6 /64 subnet\" | CLAIM: The documented pull rate limit for unauthenticated users is 100 pulls per 6 hours per IP address/subnet.\n\nSOURCE: https://www.docker.com/pricing/faq/ | QUOTE: \"For authenticated Personal users, there is a 100 pull/hour rate limit per user; for unauthenticated users, there is a 10 pull/hour rate limit per IP address.\" | CLAIM: Docker's pricing FAQ documents an hourly rate limit policy (100 pulls/hour for authenticated Personal users, 10 pulls/hour for unauthenticated users).\n\nSOURCE: https://www.docker.com/blog/revisiting-docker-hub-policies-prioritizing-developer-experience/ | QUOTE: \"We did not enforce the Docker Hub rate limit changes previously scheduled for April 1, 2025. The current limits\u2014100 pulls per 6 hours for unauthenticated users and 200 pulls per 6 hours for Docker Personal users\u2014will remain in place\" | CLAIM: As of April 8, 2025, the officially enforced limits remain the original 6-hour limits (100 per 6 hours for unauthenticated, 200 per 6 hours for Personal) because the announced hourly limits were not enforced.\n\nNO_SOURCE_FOUND: An updated official documentation page (docs.docker.com) explicitly reflecting the April 2025 enforcement delay or officially replacing the 6-hour limits with the hourly limits in the core usage tables.",
+  "usage": {
+   "prompt_tokens": 1903,
+   "completion_tokens": 523,
+   "total_tokens": 2426,
+   "cost": 0.01047578,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00347578,
+    "upstream_inference_prompt_cost": 0.00186494,
+    "upstream_inference_completions_cost": 0.00161084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791592419-O2MPcMfBTfX2AP6TxNs4"
+ },
+ "ts": "2026-10-10T00:33:59.785319+00:00"
+}

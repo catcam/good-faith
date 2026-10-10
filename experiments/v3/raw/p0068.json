@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "u10",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0068",
+ "prompt": "Research the officially documented limits for Discord users: message length and file upload size, for free users and Nitro subscribers. Cite Discord's own support pages and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the officially documented limits for Discord message length and file upload sizes, broken down by user tier.\n\n**Message Length Limits**\nFor free users, the character limit per message is 2,000 characters. Subscribing to Discord Nitro raises this limit to 4,000 characters. Nitro Basic does not increase the message length limit.\n\n**File Upload Size Limits**\nFor free users, the current maximum file upload size is 20 MB. Nitro Basic subscribers can upload files up to 50 MB, while full Nitro subscribers enjoy an upload limit of up to 1 GB. Additionally, Server Boosts can increase the upload limit for all members within that specific server (50 MB at Level 2, and 100 MB at Level 3), though the baseline account limits remain as stated.\n\nSOURCE: https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages | QUOTE: \"The character cap per message is 2000. Messages with more than 2000 characters will be converted into a text file.\" | CLAIM: Free user message length is 2000 characters.\nSOURCE: https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages | QUOTE: \"You can raise the character cap limit to 4000 when you subscribe to Discord Nitro.\" | CLAIM: Nitro subscriber message length is 4000 characters.\nSOURCE: https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ | QUOTE: \"For non-Nitro subscribers, the maximum file upload is 20MB.\" | CLAIM: Free user file upload size is 20MB.\nSOURCE: https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ | QUOTE: \"As of August 2026, the free upload limit is 20MB (up from 10MB)\" | CLAIM: Current free user upload limit is 20MB.\nSOURCE: https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic | QUOTE: \"Enhanced File Uploads Share larger files up to 50 MB!\" | CLAIM: Nitro Basic file upload size is 50MB.\nSOURCE: https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic | QUOTE: \"Premium File Uploads Share larger files up to 1GB - perfect for videos, photos, and more files like videos and photos up to 1GB!\" | CLAIM: Nitro file upload size is 1GB.",
+  "usage": {
+   "prompt_tokens": 2752,
+   "completion_tokens": 573,
+   "total_tokens": 3325,
+   "cost": 0.013374,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.006374,
+    "upstream_inference_prompt_cost": 0.0038528,
+    "upstream_inference_completions_cost": 0.0025212
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Friendli",
+  "id": "gen-1791592574-tK1Xh6EIbwHnWqkNwxuW"
+ },
+ "ts": "2026-10-10T00:36:20.343985+00:00"
+}
