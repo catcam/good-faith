@@ -74,6 +74,14 @@ measured.
   experiment cannot distinguish it from chance**. A follow-up would need roughly 3–4×
   the Domain A sample to detect an effect of this size reliably. That is an estimate from
   these data, not a computed power analysis.
+- **Added 2026-10-10, after the report: the effect is concentrated in a few tasks.**
+  - C0 → C2 failed claims per response, by task:
+    - a8, vendor model limits: 3.75 → 0.38
+    - a5, Kalshi figures: 0.88 → 0.12
+    - a7, maintainer posts: 0.50 → 1.38, the opposite direction
+    - most other tasks: near 0 in every condition
+  - The "3–4×" estimate above treats responses as independent. They are not, so it is
+    too optimistic. [EXPERIMENT_V3.md](EXPERIMENT_V3.md) plans for this.
 - **Nothing here supports saying "good-faith prompting reduces fabrication."** What still
   stands is the practice's second half: verify every checkable claim yourself.
 
