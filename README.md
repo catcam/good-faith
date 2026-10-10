@@ -22,13 +22,16 @@ This isn't a magic phrase. It's a testable change to what counts as success in t
 
 ## Evidence status
 
-Honest version: **unproven.** The idea came from one observed case. It has been tested twice with pre-registered experiments:
+Honest version: **unproven.** The idea came from one observed case. It has been tested with pre-registered experiments:
 
 - **v1** ([REPORT.md](REPORT.md)): inconclusive. The automatic scorer turned out to be invalid.
 - **v2** ([REPORT_V2.md](REPORT_V2.md)): mechanical scoring, frozen before the run, 408 trials. **Not significant in either domain.**
   - For citations, the good-faith framing produced about half as many quotes that are not on the cited page, plus twice as many explicit "no source found" answers. The direction is right, but p = 0.13, and one of four models went the other way.
   - Part of that gap later turned out to be scorer error: real quotes in tabbed tables and in JavaScript-rendered text were marked as "not on the page". With the fixed scorer, p = 0.29.
 - **v3** ([EXPERIMENT_V3.md](EXPERIMENT_V3.md)): paused after its pilots. With web search on, the models rarely quoted text that was not on the page.
+- **v4** ([REPORT_V4.md](REPORT_V4.md)): citations from memory, with no web search, which is the case that started this project. 640 trials. **No reduction.**
+  - Good-faith framing: 1.82 failed citations per response. No framing: 1.61. The primary test gives p = 0.14.
+  - The models said "no source found" more often under the framing, but the citations they did give were just as wrong, about 78% in both conditions.
   - For code review, there was no difference.
 
 What stands without any experiment is the second half of the practice: verify every checkable claim yourself, whatever prompt you used.
