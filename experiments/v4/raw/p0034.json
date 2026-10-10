@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t06",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0034",
+ "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Debian project officially states that a standard stable release is supported for approximately 3 years, while the Long Term Support (LTS) effort extends this support to approximately 5 years from the initial stable release.\n\nHere are the cited sources with the exact quotes and claims:\n\nSOURCE: https://www.debian.org/security/ | QUOTE: \"The Debian security team handles security support for the current stable distribution. Security support for the testing distribution is not handled by the security team, but the testing security team. Support for the stable distribution is limited to a certain time.\" | CLAIM: Standard security support for a stable release is time-limited.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to at least 5 years.\" | CLAIM: The LTS project extends the total support period of a Debian stable release to at least 5 years.\nSOURCE: https://www.debian.org/security/ | QUOTE: \"After that time, the release is moved to the archive and security support is no longer provided; users should upgrade to a newer release to obtain continued security support. Debian provides security support for the stable distribution for approximately 3 years after its initial release.\" | CLAIM: A standard stable release receives official security support for approximately 3 years.",
+  "usage": {
+   "prompt_tokens": 130,
+   "completion_tokens": 275,
+   "total_tokens": 405,
+   "cost": 0.0009744,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009744,
+    "upstream_inference_prompt_cost": 0.0001274,
+    "upstream_inference_completions_cost": 0.000847
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791648735-wlL1dUdnOxnSpdRy3Hyg"
+ },
+ "ts": "2026-10-10T16:12:32.034621+00:00"
+}

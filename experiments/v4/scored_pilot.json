@@ -1,0 +1,2889 @@
+[
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0001",
+  "cost": 0.0070278,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/release",
+     "quote": "Initial active development.",
+     "claim": "This is the label used in the official LTS schedule table for the first phase of a release's life; while the schedule implies this phase lasts approximately 18 months (from Initial release to Maintenance start), the page does not contain an explicit sentence stating \"Active LTS lasts 18 months,\" so I cannot quote one.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://github.com/nodejs/release",
+     "quote": "Only critical bug fixes, security updates, and documentation updates are permitted.",
+     "claim": "This describes what the Maintenance LTS phase involves (the page's schedule table implies it runs for approximately 12 months, after which the release reaches End-of-Life), but no explicit sentence stating \"Maintenance LTS lasts 12 months\" is present on this page.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "A single verbatim sentence from an official Node.js page explicitly stating \"Active LTS lasts 18 months\" \u2014 the 18-month figure is derivable from the dates in the LTS schedule table but I could not find it stated as a quotable sentence.",
+    "A verbatim sentence from an official Node.js page explicitly stating the total LTS lifetime (e.g., \"each LTS release is supported for 30 months\" or \"36 months total\"). The official schedule at https://github.com/nodejs/release shows these durations via its table (Initial \u2192 Active LTS \u2192 Maintenance \u2192 End-of-Life dates for each major version), but does not appear to include a prose sentence with the total duration that I can quote word-for-word."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0002",
+  "cost": 0.00304019,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.theverge.com/2024/6/12/24172712/ai-queries-google-search-emissions-electricity",
+     "quote": "A typical Google search uses about 0.3 watt-hours of electricity, while a ChatGPT query can use roughly 2.9 watt-hours, according to Alex de Vries.",
+     "claim": "An average ChatGPT query uses approximately 2.9 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.reuters.com/business/energy-guzzling-chatgpt-can-cut-ai-energy-use-90-says-study-2023-07-18/",
+     "quote": "A ChatGPT query needs between 0.002 and 0.6 watt-hours of electricity, according to a study by the University of Washington.",
+     "claim": "A ChatGPT query requires between 0.002 and 0.6 Wh depending on the specifics of the query.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 401; curl: HTTP 401)"
+    },
+    {
+     "url": "https://digiconomist.net/ai-energy-consumption/",
+     "quote": "If an AI agent generates 10,000 words, the energy consumption per query can be as high as 8.3 watt-hours.",
+     "claim": "A complex AI agent query generating 10,000 words consumes roughly 8.3 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://spectrum.ieee.org/chatgpt-power-consumption",
+     "quote": "A typical Google search uses 0.3 watt-hours; a ChatGPT query can use 2.9 watt-hours.",
+     "claim": "A ChatGPT query uses roughly 2.9 Wh, which is substantially more than a standard Google search.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "A single, universally agreed-upon average energy consumption figure in Wh for all LLM chatbots across different providers (e.g., Google Gemini, Anthropic Claude, Meta Llama) without specifying model size, token counts, or hardware generation."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 3,
+    "unverifiable": 1
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0003",
+  "cost": 0.000151125,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "Real studies or surveys from 2025 or 2026 reporting the share of professional developers using AI coding assistants daily, as these years are in the future relative to the current knowledge cutoff and no such data exists yet."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0004",
+  "cost": 0.0006737436,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/Release#release-plan",
+     "quote": "Active LTS: 18 months",
+     "claim": "The Active LTS phase lasts for 18 months.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://github.com/nodejs/Release#release-plan",
+     "quote": "Maintenance LTS: 12 months",
+     "claim": "The Maintenance LTS phase lasts for 12 months.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0005",
+  "cost": 0.0010043,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "Any data on the number of active installations or active users of Omarchy Linux. This data is not collected or published by the project."
+   ],
+   "malformed_source_lines": 3,
+   "urls_outside_format": [
+    "https://omarchlinux.com/download/",
+    "https://osdn.net/projects/archmerge/stats/",
+    "https://sourceforge.net/projects/archmerge/files/"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0006",
+  "cost": 0.00083081,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "A large-scale, randomized controlled trial that directly and exclusively measures the reduction in hospital admission rates attributable solely to fall-detection devices for elderly people living alone. Most studies measure proxies (ambulance calls, response time) or are part of a larger intervention package."
+   ],
+   "malformed_source_lines": 5,
+   "urls_outside_format": [
+    "https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-020-01568-x",
+    "https://onlinelibrary.wiley.com/doi/full/10.1111/jgs.18133",
+    "https://pubmed.ncbi.nlm.nih.gov/25600154/",
+    "https://www.cdc.gov/falls/faq.html",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6519120/"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0007",
+  "cost": 0.00065721,
+  "score": {
+   "claims": [
+    {
+     "url": "https://survey.stackoverflow.co/2024/#section-most-popular-technologies-developer-tools",
+     "quote": "AI coding tools are already in widespread use, with 75% of professional developers using them at work either sometimes, often, or all the time.",
+     "claim": "75% of professional developers use AI coding tools at work with some frequency.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://survey.stackoverflow.co/2024/#section-most-popular-technologies-developer-tools",
+     "quote": "When we look at usage frequency, 44% of professional developers use them \u2018sometimes,\u2019 21% \u2018often,\u2019 and 10% \u2018all the time.\u2019",
+     "claim": "31% of professional developers use AI coding tools \"often\" or \"all the time\" (i.e., near-daily or daily).",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://octoverse.github.com/2023/state-of-open-source-report/ai",
+     "quote": "92% of developers are already using AI coding tools both at work and in their personal time",
+     "claim": "92% of developers use AI coding tools in some context.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://octoverse.github.com/2023/state-of-open-source-report/ai",
+     "quote": "57% of developers use AI coding tools in their daily work, and 70% see significant benefits from using them, reporting they help them achieve better results with less effort and faster code completion.",
+     "claim": "57% of developers use AI coding tools in their daily work.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "A study or survey reporting the daily usage share of AI coding assistants by professional developers specifically in the year 2025.",
+    "A study or survey reporting the daily usage share of AI coding assistants by professional developers specifically in the year 2026."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 2,
+    "unverifiable": 0
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0008",
+  "cost": 0.00054022,
+  "score": {
+   "claims": [
+    {
+     "url": "https://polymarket.com/help",
+     "quote": "Once a market resolves, there is a 48-hour challenge period where any user can challenge the resolution by putting up a bond. If the challenge is successful, the bond is returned and the challenger receives a reward. If it fails, the bond is lost.",
+     "claim": "Polymarket has a formal process for challenging resolutions, but the source does not provide data on how often it is used.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://kalshi.com/rules",
+     "quote": "If a Member disagrees with Kalshi\u2019s resolution of a market, such Member may appeal such resolution by notifying Kalshi\u2019s support team... within two (2) Business Days after the initial resolution.",
+     "claim": "Kalshi has a formal appeals process, but the source does not provide data on how often it is used.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 429; curl: HTTP 429)"
+    }
+   ],
+   "no_source": [
+    "A published academic paper providing a statistical analysis of dispute or challenge rates on prediction market platforms.",
+    "An industry report or analysis article that aggregates and publishes data on resolution challenge rates for prediction markets.",
+    "A real, published figure for how often prediction markets resolve disputed or ambiguous markets or how many resolutions are challenged."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 1,
+    "unverifiable": 1
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0009",
+  "cost": 0.00027791,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/#worker-limits",
+     "quote": "Free: 100,000 requests per day",
+     "claim": "The free plan has a limit of 100,000 requests per day.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/#cpu-time",
+     "quote": "The maximum amount of CPU time a Worker can use per request, before being terminated, is 10 milliseconds for requests on the free plan and 30 milliseconds for requests on paid plans.",
+     "claim": "The free plan has a CPU time limit of 10 milliseconds per request.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0010",
+  "cost": 0.003456,
+  "score": {
+   "claims": [
+    {
+     "url": "https://survey.stackoverflow.co/2025/ai/",
+     "quote": "Daily use is reported by 17.9% of respondents",
+     "claim": "17.9% of professional developers use AI tools daily in their development workflow (2025 data).",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "2026 studies/surveys reporting the specific share of professional developers using AI coding assistants daily."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0011",
+  "cost": 0.000362375,
+  "score": {
+   "claims": [
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Each Debian stable release is supported for about 5 years: 3 years by the Debian Security Team and 2 additional years by the Debian LTS team.",
+     "claim": "The official support period for a Debian stable release, including LTS, is approximately 5 years, split between standard security support and LTS support.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0012",
+  "cost": 0.0156807,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "You can make unauthenticated requests if you are only fetching public data. Unauthenticated requests are associated with the originating IP address, not with the user or application that made the request. The primary rate limit for unauthenticated requests is 60 requests per hour.",
+     "claim": "Unauthenticated requests are limited to 60 requests per hour per IP address.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "Primary rate limits for authenticated users",
+     "claim": "This section header introduces the rate limits for authenticated requests.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "If you are using a personal access token for authentication, you can make up to 5,000 requests per hour.",
+     "claim": "Personal access tokens allow 5,000 requests per hour.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "You can use the built-in GITHUB_TOKEN to authenticate requests in GitHub Actions workflows. When you use GITHUB_TOKEN, the rate limit is 1,000 requests per hour per repository. For requests to resources that belong to an enterprise account on GitHub.com, the limit is 15,000 requests per hour per repository.",
+     "claim": "GitHub Actions' GITHUB_TOKEN has a limit of 1,000 requests per hour per repository (15,000 for Enterprise Cloud).",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "GitHub Apps authenticating with an installation access token use the installation's minimum rate limit of 5,000 requests per hour. If the installation is on a GitHub Enterprise Cloud organization, the installation has a rate limit of 15,000 requests per hour.",
+     "claim": "GitHub App installations have a base rate limit of 5,000 requests per hour (15,000 for Enterprise Cloud).",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "For installations that are not on a GitHub Enterprise Cloud organization, the rate limit for the installation will scale with the number of users and repositories. Installations that have more than 20 repositories receive another 50 requests per hour for each repository. Installations that are on an organization that have more than 20 users receive another 50 requests per hour for each user. The rate limit cannot increase beyond 12,500 requests per hour.",
+     "claim": "GitHub App installation rate limits scale based on repositories/users, capping at 12,500 requests per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "OAuth apps are limited to 5,000 requests per hour and 5,000 requests per user per hour.",
+     "claim": "OAuth Apps have a limit of 5,000 requests per hour per user.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "In addition to primary rate limits, GitHub enforces secondary rate limits in order to prevent abuse and keep the API available for all users.",
+     "claim": "GitHub enforces secondary rate limits beyond the primary rate limits.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 3,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "u02",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0013",
+  "cost": 0.00084175,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3.5 Sonnet $3.00 / MTok input $15.00 / MTok output",
+     "claim": "The price for Claude 3.5 Sonnet is $3.00 per million input tokens and $15.00 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3 Opus $15.00 / MTok input $75.00 / MTok output",
+     "claim": "The price for Claude 3 Opus is $15.00 per million input tokens and $75.00 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3 Haiku $0.25 / MTok input $1.25 / MTok output",
+     "claim": "The price for Claude 3 Haiku is $0.25 per million input tokens and $1.25 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3.5 Haiku $0.80 / MTok input $4.00 / MTok output",
+     "claim": "The price for Claude 3.5 Haiku is $0.80 per million input tokens and $4.00 per million output tokens.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 4,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0014",
+  "cost": 0.00348551,
+  "score": {
+   "claims": [
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18215337/",
+     "quote": "Users of the emergency call device had a significantly shorter mean time on the floor (28 min) compared with non-users (2.3 h) and had a significantly lower hospital admission rate (30% vs 56%).",
+     "claim": "Wearable fall-detection/emergency-call devices drastically reduce time-on-floor and subsequently reduce hospital admissions by preventing the severe complications of prolonged immobility after a fall.",
+     "status": "unverifiable",
+     "note": "page text only 153 chars"
+    },
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18215337/",
+     "quote": "The automated sensor system detected falls and alerted staff more quickly than the traditional pull-cord system, resulting in an average time on the floor of less than 10 minutes compared to over an hour for non-detected falls.",
+     "claim": "Ambient smart-home sensor networks reduce time-on-floor compared to traditional manual alert systems by providing faster, automated detection when a person falls and cannot summon help.",
+     "status": "unverifiable",
+     "note": "page text only 153 chars"
+    },
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18359379/",
+     "quote": "The automated sensor system detected falls and alerted staff more quickly than the traditional pull-cord system, resulting in an average time on the floor of less than 10 minutes compared to over an hour for non-detected falls.",
+     "claim": "Ambient smart-home sensor networks reduce time-on-floor compared to traditional manual alert systems by providing faster, automated detection when a person falls and cannot summon help.",
+     "status": "unverifiable",
+     "note": "page text only 153 chars"
+    },
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/20226125/",
+     "quote": "Home telehealth did not significantly reduce hospital admissions compared to usual care, although there was a trend toward reduced length of stay.",
+     "claim": "Providing remote ambient sensors and telehealth monitoring does not significantly reduce overall hospital admission rates for the elderly, even if it may reduce time-on-floor or length of stay when admissions do occur.",
+     "status": "unverifiable",
+     "note": "page text only 153 chars"
+    }
+   ],
+   "no_source": [
+    "A randomized controlled trial specifically and exclusively evaluating elderly people living alone in private single-family homes (rather than assisted living or sheltered housing) that measures both time-on-floor and overall hospital admission reduction using exclusively ambient sensors without any wearable component."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 4
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0015",
+  "cost": 0.00713925,
+  "score": {
+   "claims": [
+    {
+     "url": "https://advisors.vanguard.com/insights/market-perspectives/article/predictive-markets-a-useful-prediction-tool-or-a-poor-forecast",
+     "quote": "A small number of prediction market events have been poorly defined, leading to resolution disputes.",
+     "claim": "Vanguard's published commentary on prediction markets acknowledges that resolution disputes occur, but provides no specific count, rate, or percentage.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://help.polymarket.com/en/articles/14011-what-are-events-and-markets",
+     "quote": "These clear resolution rules ensure that all participants know exactly what conditions must be met for a market to resolve.",
+     "claim": "Polymarket's help documentation describes their resolution process but provides no statistics on how often disputes or challenges actually occur.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "Any published dataset, research paper, or official report quantifying the percentage or absolute number of Polymarket market resolutions that were disputed or challenged by users.",
+    "Any published dataset, research paper, or official report quantifying how often Kalshi market resolutions were challenged, disputed, or reversed.",
+    "Any published academic study that systematically tracks or estimates the rate of disputed market resolutions across prediction market platforms (Polymarket, Kalshi, PredictIt, or similar).",
+    "Any published data on how often UMA oracle resolutions on Polymarket were disputed by tokenholders, or how often a disputed UMA resolution was overturned.",
+    "Any regulatory filing or CFTC enforcement action that cites specific numbers of disputed prediction market resolutions."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 2,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0016",
+  "cost": 0.002719,
+  "score": {
+   "claims": [
+    {
+     "url": "https://rust-lang.github.io/rustup/concepts/channels.html",
+     "quote": "New releases of stable Rust are made every six weeks.",
+     "claim": "The Rust project officially documents a six-week release cadence for stable releases.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "An official Rust page that explicitly states how long each individual stable version is supported (i.e., how many weeks or months after release a given version continues to receive updates or patches)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0017",
+  "cost": 0.007469,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum database size is 2^47 bytes, or 140,737,488,355,328 bytes (about 128 terabytes).",
+     "claim": "The official SQLite limits page documents the maximum database size as 2^47 bytes / 140,737,488,355,328 bytes, described as about 128 terabytes.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum page count is 2,147,483,646.",
+     "claim": "The page count limit is the basis for the maximum database size calculation.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "Maximum page size is 65,536 bytes.",
+     "claim": "The largest supported page size is 65,536 bytes, which is used in the maximum database size calculation.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum database size is the maximum page count times the maximum page size.",
+     "claim": "SQLite derives its maximum database size by multiplying the maximum page count by the maximum page size.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "A specific numeric \u201cmaximum row size\u201d figure from the official SQLite limits page. (The excerpts I have discuss storing large BLOBs and efficient access, but do not state a distinct maximum row size.)"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 1,
+    "unsupported": 3,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0018",
+  "cost": 0.0005655,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "Peer-reviewed, published studies specifically measuring the impact of generative AI assistants on task initiation or executive function in people with ADHD."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0019",
+  "cost": 0.0007044624,
+  "score": {
+   "claims": [
+    {
+     "url": "https://survey.stackoverflow.co/2025/technology#ai-tools",
+     "quote": "81% of professional developers use AI coding assistants daily, with an additional 13% using them weekly.",
+     "claim": "The share of professional developers who use AI coding assistants daily in 2025 is 81%.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://cloud.google.com/transform/state-of-devops-2025",
+     "quote": "Our research found that 67% of professional developers now rely on AI coding assistants on a daily basis to write and review code.",
+     "claim": "The share of professional developers who use AI coding assistants daily in 2025 is 67%.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "Studies or surveys reporting the share of professional developers using AI coding assistants daily in 2026."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0020",
+  "cost": 0.00049545,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "PostgreSQL official releases are made available for a five-year period.",
+     "claim": "Each major PostgreSQL version is supported for five years.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "For example, PostgreSQL 12 was released on October 3, 2019. Its end-of-life (final release) is scheduled for November 14, 2024.",
+     "claim": "The five-year period is calculated from the initial major release date to a specific end-of-life date.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "A major release is indicated by increasing either the first or second part of the version number, e.g., 10 to 11, or 11.1 to 11.2. Major releases often add new features and can require changes to stored data or the operating system environment, so a more complex upgrade process is often required.",
+     "claim": "Defines what constitutes a major version.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "A minor release is indicated by increasing the third part of the version number, e.g. 11.1 to 11.2. Minor releases only fix bugs and security issues, and do not change the internal storage format or require special upgrade procedures.",
+     "claim": "Defines minor versions as the vehicle for delivering fixes during the support period.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 4,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0021",
+  "cost": 0.0025902,
+  "score": {
+   "claims": [
+    {
+     "url": "https://doi.org/10.1016/j.chb.2023.03.029",
+     "quote": "Findings suggest that AI assistants can help users with ADHD by breaking down complex tasks into smaller, manageable steps, thereby reducing the cognitive load associated with task initiation.",
+     "claim": "AI assistants reduce the cognitive barrier to task initiation for people with ADHD by providing structured task decomposition.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://dl.acm.org/doi/10.1145/3544548.3580918",
+     "quote": "Our findings indicate that LLM-based tools can act as external executive function aids, with participants reporting significant reductions in initiation anxiety when using the AI to generate first steps.",
+     "claim": "Large Language Models (LLMs) act as external cognitive aids that specifically lower the anxiety and executive dysfunction barrier to starting tasks for people with ADHD.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36409889/",
+     "quote": "Digital health interventions incorporating automated prompt generation demonstrated a statistically significant improvement in task initiation metrics among adults with executive function deficits.",
+     "claim": "Automated, AI-driven prompting provides measurable benefits for task initiation in populations with executive function deficits.",
+     "status": "unverifiable",
+     "note": "page text only 153 chars"
+    },
+    {
+     "url": "https://doi.org/10.3390/bs13080657",
+     "quote": "Conversational agents providing structured, on-demand cognitive support were perceived as highly effective scaffolding for executive dysfunction, particularly in overcoming initiation paralysis.",
+     "claim": "On-demand conversational AI provides effective external scaffolding that helps users overcome the executive dysfunction paralysis of task initiation.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [
+    "Large-scale, longitudinal, double-blind, randomized controlled trials (RCTs) published in peer-reviewed psychiatry or medical journals specifically measuring the clinical efficacy of AI assistants (like ChatGPT or Claude) on ADHD task initiation over an extended period.",
+    "Peer-reviewed neuropsychological studies measuring objective biological markers (e.g., fMRI, EEG) demonstrating how AI assistant use alters or compensates for executive function neural pathways in ADHD brains.",
+    "Published empirical studies comparing the specific effectiveness of different types of AI assistants (e.g., LLM chatbots vs. rule-based digital organizers) for ADHD executive function management."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 1,
+    "unverifiable": 3
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0022",
+  "cost": 0.00125955,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Free plan: 100,000 requests/day",
+     "claim": "Workers on the free plan are limited to 100,000 requests per day.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "CPU time: 10 ms",
+     "claim": "Workers on the free plan are limited to a maximum of 10 milliseconds of CPU time per request.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+     "quote": "Free: 100,000 requests per day, 10 ms CPU time per invocation",
+     "claim": "The free tier pricing page corroborates both the 100,000 daily request limit and the 10 ms CPU time limit per invocation.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [
+    "N/A"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 1,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0023",
+  "cost": 0.00069685,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/release#release-schedule",
+     "quote": "Active LTS: For 12 months, or for 6 months after the next Major release, whichever is longer. During this period, the release will receive both security updates and bug fixes.",
+     "claim": "The Active LTS phase lasts for a minimum of 12 months, but can be extended if the next major release is delayed.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://github.com/nodejs/release#release-schedule",
+     "quote": "Maintenance LTS: For 12 months. During this period, the release will receive security updates and critical bug fixes only.",
+     "claim": "The Maintenance LTS phase lasts for a fixed period of 12 months after the Active LTS phase ends.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://github.com/nodejs/release#release-schedule",
+     "quote": "End-of-life: After the Maintenance period, the release reaches its end-of-life and will not receive any further updates.",
+     "claim": "A release receives no updates after the Maintenance LTS period concludes.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 1,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0024",
+  "cost": 0.00210665,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.zigbee2mqtt.io/guide/faq/faq.html",
+     "quote": "Battery powered devices will sleep most of the time and only wake up when they need to send data. This means that they can last for years on a single battery.",
+     "claim": "Zigbee2mqtt documentation acknowledges that battery life is highly dependent on wake-up frequency, implying that default configurations may not match idealized \"years\" of life if data reporting is frequent.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.reddit.com/r/homeassistant/comments/10z9q3j/real_world_battery_life_of_zigbee_sensors/",
+     "quote": "Aqara door/window sensors... I get about 6-8 months per CR2032 battery with about 10-15 openings per day.",
+     "claim": "Real-world user data for Aqara Zigbee door sensors shows a battery life of 6\u20138 months under moderate usage, which is significantly lower than the manufacturer's claim of up to 2 years.",
+     "status": "unverifiable",
+     "note": "page text only 6 chars"
+    },
+    {
+     "url": "https://smarthomescene.com/reviews/ikea-tradfri-motion-sensor-review/",
+     "quote": "After six months of use, the battery level had dropped from 100% to 70%, suggesting a total lifespan of around two years.",
+     "claim": "Independent testing of the IKEA Tradfri (Zigbee) motion sensor indicates a projected 2-year lifespan, aligning with manufacturer claims under typical hallway usage conditions.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.home-assistant.io/integrations/bluetooth/",
+     "quote": "Bluetooth devices typically advertise their presence periodically. The more frequently they advertise, the more battery they consume.",
+     "claim": "Home Assistant documentation confirms that BLE battery life is directly proportional to advertising interval, meaning factory defaults may prioritize responsiveness over battery longevity, reducing real-world life below claims.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.reddit.com/r/homeautomation/comments/11gqz8h/switchbot_meter_pro_battery_life_real_world/",
+     "quote": "My SwitchBot Meter Pro (BLE) lasted exactly 4 months before dying, despite the claim of 1 year.",
+     "claim": "User-reported field data for the SwitchBot Meter Pro (BLE) shows a 4-month battery life, substantially shorter than the 1-year manufacturer claim, likely due to frequent BLE advertising or cloud sync requirements.",
+     "status": "unverifiable",
+     "note": "page text only 6 chars"
+    },
+    {
+     "url": "https://github.com/custom-components/ble_monitor/issues/102",
+     "quote": "Xiaomi Mijia temperature/humidity sensors (BLE) typically last 6\u201312 months in practice, depending on the advertising interval set by the firmware.",
+     "claim": "Community monitoring of Xiaomi BLE sensors indicates a real-world range of 6\u201312 months, which is consistent with or slightly below the 1\u20132 year claims, depending on firmware behavior.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "Peer-reviewed academic journal articles specifically measuring multi-year battery degradation of consumer BLE/Zigbee sensors in residential field deployments with controlled variables. Most available data comes from community forums, hobbyist blogs, and integration documentation rather than formal scientific studies."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 2,
+    "unverifiable": 2
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "u02",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0025",
+  "cost": 0.0048574,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3.5 Sonnet $3 / MTok $15 / MTok",
+     "claim": "The lower-tier API price for Claude 3.5 Sonnet is $3.00 per million input tokens and $15.00 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3.5 Haiku $0.80 / MTok $4.00 / MTok",
+     "claim": "The lower-tier API price for Claude 3.5 Haiku is $0.80 per million input tokens and $4.00 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3 Opus $15 / MTok $75 / MTok",
+     "claim": "The lower-tier API price for Claude 3 Opus is $15.00 per million input tokens and $75.00 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3 Haiku $0.25 / MTok $1.25 / MTok",
+     "claim": "The lower-tier API price for Claude 3 Haiku is $0.25 per million input tokens and $1.25 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3.5 Sonnet $3 / MTok $15 / MTok",
+     "claim": "The higher-tier API price for Claude 3.5 Sonnet is $3.00 per million input tokens and $15.00 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3.5 Haiku $1 / MTok $5.00 / MTok",
+     "claim": "The higher-tier API price for Claude 3.5 Haiku is $1.00 per million input tokens and $5.00 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3 Opus $12.50 / MTok $62.50 / MTok",
+     "claim": "The higher-tier API price for Claude 3 Opus is $12.50 per million input tokens and $62.50 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Claude 3 Haiku $0.30 / MTok $1.50 / MTok",
+     "claim": "The higher-tier API price for Claude 3 Haiku is $0.30 per million input tokens and $1.50 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+     "quote": "Higher tier: For customers using more than $1M/month in API spend, the following pricing applies with a minimum $100K monthly commitment.",
+     "claim": "The higher tier pricing requires an API spend of over $1M per month and carries a minimum $100,000 monthly commitment.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 6,
+    "unsupported": 3,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0026",
+  "cost": 0.00045953,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+     "quote": "Raspberry Pi 5 is on sale now",
+     "claim": "The page confirms the product is currently in production and available for purchase, but does not state for how long.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.raspberrypi.com/news/raspberry-pi-5-on-sale-now-at-60/",
+     "quote": "We\u2019re building Raspberry Pi 5 in Wales, in our own Sony UK TEC factory; we have secure supplies of all key components; and we expect to manufacture millions of units over the coming years.",
+     "claim": "This indicates an intention for large-scale, long-term manufacturing, but it is a general forward-looking statement, not a specific production commitment.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "A specific statement from Raspberry Pi Foundation or Raspberry Pi Ltd. about the planned duration of Raspberry Pi 5 production (e.g., \"We will produce the Pi 5 for at least X years\")."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://www.raspberrypi.com/news/raspberry-pi-5-on-sale-now-at-60/**",
+    "https://www.raspberrypi.com/products/raspberry-pi-5/**"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 1,
+    "unverifiable": 1
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0027",
+  "cost": 0.00094381,
+  "score": {
+   "claims": [
+    {
+     "url": "https://journals.sagepub.com/doi/10.1177/1087054719898512",
+     "quote": "The results of this pilot study suggest that a digital health intervention can be used to reduce ADHD-related functional impairments, particularly in the domains of time management and organization.",
+     "claim": "Digital interventions can effectively reduce impairments in time management and organization, which are core executive function challenges in ADHD.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://journals.sagepub.com/doi/10.1177/1087054719855688",
+     "quote": "Use of the digital system was associated with significant improvement in task completion and a trend toward improved motivation... The system served as an effective cueing mechanism to help participants initiate and complete routine tasks.",
+     "claim": "A digital cueing system (similar to an AI reminder/prompt) significantly improved task completion and helped with task initiation.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s12402-023-00384-2",
+     "quote": "Our findings suggest that the use of smartphone apps is associated with improved executive functioning and mental health well-being among adults with ADHD.",
+     "claim": "Smartphone application use is associated with improved executive functioning in adults with ADHD, indicating that portable digital tools can be effective.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://journals.sagepub.com/doi/full/10.1177/10870547231219230",
+     "quote": "Generative AI may... assist with organization, planning, and prioritizing\u2014executive functions that are often impaired in ADHD... However, the empirical evidence base for the use of generative AI as an intervention for ADHD is currently lacking.",
+     "claim": "Experts recognize generative AI's strong potential to assist with executive function in ADHD but confirm that specific empirical studies are lacking.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://journals.sagepub.com/doi/full/10.1177/10870547231219230",
+     "quote": "We call for research on the potential benefits and risks of generative AI for patients with ADHD, development of clinical guidelines, and ethical oversight regarding its use.",
+     "claim": "Leading researchers are actively calling for studies to be conducted on the use of AI for ADHD, indicating it is a new frontier.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [
+    "A published, peer-reviewed study directly testing the impact of using a general-purpose AI assistant (e.g., ChatGPT, Google Bard, Alexa) on task initiation or specific executive function measures in a population with clinically diagnosed ADHD."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 5
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0028",
+  "cost": 0.001217367,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.raspberrypi.com/news/raspberry-pi-4-model-b-specifications/",
+     "quote": "We anticipate keeping Pi 4 in production until at least January 2026, and Pi 3B+ until at least January 2028, giving typical lifetimes of 6 and 10 years respectively; and as with earlier product lines, we expect to continue to build these for as long as there is demand.",
+     "claim": "Raspberry Pi Ltd's official policy is to keep its mainline products in production for typical lifetimes of 6 to 10 years (or longer as long as there is demand), establishing the production expectations for current and future boards like the Raspberry Pi 5.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://forums.raspberrypi.com/viewtopic.php?p=2137312#p2137312",
+     "quote": "we will keep building them as long as people keep buying them",
+     "claim": "The official stance of Raspberry Pi Ltd is that no product is forcibly retired on a set schedule, meaning the Raspberry Pi 5 will remain in production as long as customer demand exists.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [
+    "A specific official statement detailing the exact number of years or exact end-of-production date exclusively for the Raspberry Pi 5."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 1,
+    "unverifiable": 1
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0029",
+  "cost": 0.0006799,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum number of pages in a SQLite database is 2^32 (4,294,967,296).",
+     "claim": "This defines the upper bound of pages in a database file.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "At the default page size of 1024 bytes, this yields a maximum database size of 140 terabytes.",
+     "claim": "The official maximum database size is 140 terabytes when using the default page size.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum length of a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH.",
+     "claim": "The row size limit is tied to the maximum length of strings or BLOBs.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The default value of SQLITE_MAX_LENGTH is 1,000,000,000 (one billion) bytes.",
+     "claim": "The default maximum row size (for a string or BLOB column) is 1 billion bytes.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 1,
+    "reworded": 1,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0030",
+  "cost": 0.0108585,
+  "score": {
+   "claims": [
+    {
+     "url": "https://ajp.psychiatryonline.org/doi/10.1176/appi.ajp.20240270",
+     "quote": "This systematic review and meta-analysis found that digital interventions were associated with significant improvements in ADHD symptoms and executive function compared with controls.",
+     "claim": "A 2024 meta-analysis in the American Journal of Psychiatry found that digital interventions (technology-based tools) significantly improve both ADHD symptoms and executive function compared to control conditions.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://journals.plos.org/plosdigitalhealth/article?id=10.1371/journal.pdig.0000456",
+     "quote": "Digital health interventions demonstrated moderate to large effect sizes for improving executive function in children and adolescents with ADHD.",
+     "claim": "A 2024 systematic review in PLOS Digital Health found that digital health interventions showed moderate to large positive effects on executive function specifically in children and adolescents with ADHD.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1356789/full",
+     "quote": "The included studies demonstrated that digital interventions can effectively improve executive function and reduce core symptoms in patients with ADHD.",
+     "claim": "A 2024 systematic review published in Frontiers in Psychiatry concluded that digital interventions effectively improve executive function and reduce core ADHD symptoms in patients.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s00702-024-02789-1",
+     "quote": "Artificial intelligence and machine learning applications in ADHD show promise for improving diagnostic accuracy and treatment personalization.",
+     "claim": "A 2024 review in Journal of Neural Transmission indicates that AI applications in ADHD show promise primarily for diagnostic accuracy and treatment personalization, rather than direct executive function assistance.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://www.sciencedirect.com/science/article/pii/S0272735824000029",
+     "quote": "Technology-based interventions show potential for supporting executive function in ADHD, but evidence for specific AI-driven task initiation support is lacking.",
+     "claim": "A 2024 review in Clinical Psychology Review notes that while technology-based interventions show potential for supporting executive function in ADHD, specific evidence for AI-driven task initiation support is currently lacking.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://journals.sagepub.com/doi/10.1177/10870547241234567",
+     "quote": "Mobile applications using AI algorithms demonstrated efficacy in improving attention and reducing impulsivity in adolescents with ADHD.",
+     "claim": "A 2024 study in the Journal of Attention Disorders found that mobile applications utilizing AI algorithms demonstrated efficacy in improving attention and reducing impulsivity in adolescents with ADHD, suggesting indirect benefits for executive function.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [
+    "Studies specifically investigating \"AI assistants\" (conversational AI, chatbots, or virtual assistants like ChatGPT, Claude, or specialized ADHD AI coaches) for task initiation in ADHD populations",
+    "Randomized controlled trials (RCTs) examining AI assistant use specifically for task initiation or executive function support in adults with ADHD",
+    "Published research comparing AI assistants to traditional ADHD interventions (medication, CBT) for executive function deficits"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 2,
+    "unverifiable": 4
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0031",
+  "cost": 0.004119,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/basecamp/omarchy",
+     "quote": "Omarchy is an opinionated, batteries-included, beautiful, modern web development system that turns a fresh Arch installation into a fully-configured, beautiful, and productive development environment based on Hyprland.",
+     "claim": "The official repository describes the distribution but provides no active user or installation statistics.",
+     "status": "unverifiable",
+     "note": "page text only 131 chars"
+    }
+   ],
+   "no_source": [
+    "The total number of active users of Omarchy (no public analytics, dashboards, or statements with verified figures could be located).",
+    "The total number of times Omarchy has been installed (no download counters, release metrics, or official announcements with installation counts were found)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0032",
+  "cost": 0.0020332,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6392685/",
+     "quote": "The median time from fall to alert was 1.4 minutes (IQR 0.9\u20132.5) for the radar system and 1.8 minutes (IQR 1.2\u20133.1) for the camera system.",
+     "claim": "Ambient sensors (radar and camera) can detect falls and generate alerts within approximately 1.4 to 1.8 minutes, significantly reducing potential time-on-floor compared to manual detection.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6392685/",
+     "quote": "In the 12-month study period, 18 falls were detected by the ambient sensor system, of which 16 were confirmed as true falls.",
+     "claim": "Ambient sensor systems demonstrate high validity in detecting actual falls in a home environment, which is a prerequisite for reducing time-on-floor.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4756658/",
+     "quote": "There was no significant difference in the number of participants who had at least one fall, the rate of falls, or the rate of fall-related injuries between the intervention and control groups.",
+     "claim": "A randomized controlled trial of a wearable fall detector with automatic alerting did not significantly reduce fall rates or fall-related injuries (a proxy for severe outcomes leading to admission) compared to usual care.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S016749431500155X",
+     "quote": "The use of personal emergency response systems (PERS) was not associated with a reduction in hospital admissions or emergency department visits.",
+     "claim": "Standard wearable personal emergency response systems do not statistically reduce hospital admissions or ED visits in elderly populations living alone.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568859/",
+     "quote": "There is limited evidence that fall detectors reduce the number of falls or fall-related injuries.",
+     "claim": "Current systematic reviews indicate a lack of robust evidence supporting the claim that fall detectors directly reduce the incidence of falls or resulting injuries.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568859/",
+     "quote": "Fall detectors may reduce the time spent on the floor after a fall, but the evidence is of low quality.",
+     "claim": "While ambient and wearable detectors may reduce time-on-floor, the existing research supporting this claim is considered low quality, suggesting a need for more rigorous studies.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "A single, definitive large-scale randomized controlled trial proving that ambient sensors directly reduce hospital admission rates for elderly people living alone over a multi-year period."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 5,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 5
+  }
+ },
+ {
+  "domain": "a",
+  "task": "u02",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0033",
+  "cost": 0.000605,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3 Opus: $15 | $75",
+     "claim": "Claude 3 Opus costs $15 per million input tokens and $75 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3 Sonnet: $3 | $15",
+     "claim": "Claude 3 Sonnet costs $3 per million input tokens and $15 per million output tokens.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude 3 Haiku: $0.25 | $1.25",
+     "claim": "Claude 3 Haiku costs $0.25 per million input tokens and $1.25 per million output tokens.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.anthropic.com/pricing",
+     "quote": "Claude Instant 1.2: $0.80 | $2.40",
+     "claim": "Claude Instant 1.2 costs $0.80 per million input tokens and $2.40 per million output tokens.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 1,
+    "unsupported": 3,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0034",
+  "cost": 0.0009744,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.debian.org/security/",
+     "quote": "The Debian security team handles security support for the current stable distribution. Security support for the testing distribution is not handled by the security team, but the testing security team. Support for the stable distribution is limited to a certain time.",
+     "claim": "Standard security support for a stable release is time-limited.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to at least 5 years.",
+     "claim": "The LTS project extends the total support period of a Debian stable release to at least 5 years.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://www.debian.org/security/",
+     "quote": "After that time, the release is moved to the archive and security support is no longer provided; users should upgrade to a newer release to obtain continued security support. Debian provides security support for the stable distribution for approximately 3 years after its initial release.",
+     "claim": "A standard stable release receives official security support for approximately 3 years.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0035",
+  "cost": 0.00828154,
+  "score": {
+   "claims": [
+    {
+     "url": "https://epoch.ai/blog/ai-energy-consumption",
+     "quote": "A typical ChatGPT query using GPT-4 consumes approximately 2.9 watt-hours (Wh) of electricity.",
+     "claim": "A standard ChatGPT query (GPT-4) consumes about 2.9 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.sustainablewebdesign.com/estimating-digital-emissions/",
+     "quote": "Training a single AI model can emit as much carbon as five cars in their lifetimes, and a single inference request can consume between 0.001 to 0.01 kWh depending on the model size and infrastructure.",
+     "claim": "A single LLM inference request (query) consumes between 1 Wh and 10 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.theguardian.com/technology/2023/oct/18/ai-chatbots-energy-consumption-carbon-footprint",
+     "quote": "Generating an image using a powerful AI model takes as much energy as fully charging your smartphone, according to a study by researchers at the AI startup Hugging Face and Carnegie Mellon University. However, generating text is significantly less energy-intensive, with a single text generation query consuming approximately 0.001 kWh to 0.01 kWh.",
+     "claim": "A single text-based LLM query consumes roughly 1\u201310 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.wired.com/story/ai-energy-consumption/",
+     "quote": "A query to a large language model like GPT-4 may use around 0.001 kWh to 0.01 kWh of electricity, depending on the data center efficiency and model optimization.",
+     "claim": "A single LLM query consumes approximately 1\u201310 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.nature.com/articles/s41586-023-06004-3",
+     "quote": "We estimate that a single inference pass for a large language model consumes on the order of 0.01 kWh, though this varies significantly with model architecture and hardware.",
+     "claim": "A single LLM inference pass consumes about 10 Wh.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "Exact energy consumption per query for specific proprietary chatbots like Claude, Gemini, or Llama in real-world deployment scenarios (as these companies rarely disclose per-query energy metrics)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 5,
+    "unverifiable": 0
+   },
+   "failed": 5
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0036",
+  "cost": 0.00039325,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "For requests using Basic Authentication, OAuth, or GitHub App access tokens, you can make up to 5,000 requests per hour.",
+     "claim": "Authenticated requests to the GitHub REST API are limited to 5,000 requests per hour.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "Unauthenticated requests are limited to 60 requests per hour.",
+     "claim": "Unauthenticated requests to the GitHub REST API are limited to 60 requests per hour.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0037",
+  "cost": 0.00050339,
+  "score": {
+   "claims": [
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "The Debian Long Term Support (LTS) project is an extension of the official Debian support period, stretching the lifetime of all Debian stable releases to 5 years.",
+     "claim": "The LTS project extends the total support period for a stable release to 5 years.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "The standard (and overlapping) support periods provided by the Debian Security Team are shown in the following table:",
+     "claim": "The standard support is provided by the Debian Security Team and is distinct from the LTS support.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian release lifetime (until end of security support) is 5 years (3 years of regular support + 2 years of LTS support).",
+     "claim": "The total 5-year support period is broken down into 3 years of regular support followed by 2 years of LTS support.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://www.debian.org/security/faq",
+     "quote": "When a new stable distribution is released, the security team will usually cover the previous stable distribution for one year after the new stable distribution is released.",
+     "claim": "The standard security support for the previous stable release continues for about a year after the new release.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.debian.org/security/faq",
+     "quote": "A full three years of support (again, sometimes a bit more) is provided for every stable release.",
+     "claim": "The standard security support for a stable release is a full three years from its initial release.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 3
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0038",
+  "cost": 0.00196545,
+  "score": {
+   "claims": [
+    {
+     "url": "https://wiki.debian.org/DebianReleases",
+     "quote": "A stable release is supported by the security team for about 3 years, with an additional 2 years of Long Term Support (LTS).",
+     "claim": "Debian states that a stable release receives about three years of normal security support, followed by about two more years under LTS.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    }
+   ],
+   "no_source": [
+    "I could not find, on the main Debian release-information page (https://www.debian.org/releases/), a single quoted sentence stating both the normal stable support period and the LTS period."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://www.debian.org/releases/"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0039",
+  "cost": 0.00164945,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.sciencedirect.com/science/article/pii/S2666389923001855",
+     "quote": "For example, a leading technology company estimated that a single search query requires 0.3 Wh of electricity.",
+     "claim": "An estimate for a single search query is 0.3 watt-hours.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://arxiv.org/abs/2311.16886",
+     "quote": "...we estimate the inference cost of BLOOM... For the smallest version of BLOOM, the energy cost per output token ranges from 38 mWh to 214 mWh... For the largest version of BLOOM, the energy cost per output token ranges from 214 mWh to 1500 mWh.",
+     "claim": "For a large model like the 176B parameter BLOOM, generating a single token (a small piece of a word) can consume between 0.214 and 1.5 watt-hours.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://sustainability.google/progress/energy/",
+     "quote": "And thanks to our energy-efficient infrastructure, the energy needed to answer the average search query has remained steady at 0.0003 kWh.",
+     "claim": "A standard Google web search consumes 0.0003 kilowatt-hours, which is 0.3 watt-hours (Wh).",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.newscientist.com/article/2412619-we-now-have-a-clever-way-to-quantify-the-climate-cost-of-ai-images/",
+     "quote": "Creating an image using a powerful AI model, such as Stable Diffusion XL, consumes energy equivalent to charging a smartphone... The researchers found that using an AI model to generate an image required roughly the same energy as charging a smartphone\u2019s battery to 41 per cent of its full capacity, or about 11 per cent for a text generation task.",
+     "claim": "Generating a single AI image can use energy equivalent to charging a smartphone (~15 Wh), while a text generation task uses significantly less (~4 Wh).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 406; curl: HTTP 406)"
+    }
+   ],
+   "no_source": [
+    "A direct, official, and peer-reviewed publication from OpenAI, Google (Gemini), or Anthropic (Claude) stating the exact watt-hours consumed per query for their specific flagship models (e.g., GPT-4, PaLM 2, Claude 3). The figures above are either estimates from academic papers, figures for other models (like BLOOM), or analogies."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 2
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0040",
+  "cost": 0.01183356,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum size of an SQLite database is 281 terabytes (2^48 bytes, or 256 tebibytes).",
+     "claim": "The official documented maximum size of a single SQLite database file is 281 TB (\u2248256 TiB).",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "In its default configuration, the maximum length of a string or BLOB in SQLite is 1,000,000,000 bytes.",
+     "claim": "The maximum size of any single value within a row is, by default, 1 GB; this bounds how large a single field (and hence a portion of a row) can be.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [
+    "An explicit, official \"maximum row size\" figure stated as such on the SQLite limits page. SQLite does not, to my knowledge, list a single hard \"maximum row size\" number on the limits page; a row's effective maximum size is implied by the combination of the per-value (string/BLOB) length limit, the maximum number of columns per table, and the page-size/overflow-page mechanism, rather than being stated as a standalone number."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 1,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0041",
+  "cost": 0.00116675,
+  "score": {
+   "claims": [
+    {
+     "url": "https://arxiv.org/abs/2305.14729",
+     "quote": "We estimate that a single ChatGPT query consumes approximately 0.0003 kWh (0.3 Wh) of electricity.",
+     "claim": "A study by researchers at Utrecht University estimated that a single ChatGPT query consumes about 0.3 Wh.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sciencedirect.com/science/article/pii/S2542435123004878",
+     "quote": "The energy consumption of a single LLM inference request can range from 0.0001 to 0.001 kWh depending on the model size and hardware.",
+     "claim": "A review in Joule (Cell Press) indicates that energy per query ranges from 0.1 Wh to 1 Wh, depending on variables.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://huggingface.co/blog/the-carbon-footprint-of-llms",
+     "quote": "Inference energy costs are significantly lower than training, but at scale, they dominate; a single inference pass for a 175B parameter model can consume ~0.0005 kWh (0.5 Wh).",
+     "claim": "Hugging Face\u2019s analysis suggests that inference for a large model (like GPT-3) consumes approximately 0.5 Wh per query.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.nature.com/articles/s41586-023-02603-8",
+     "quote": "While precise per-query metrics are not publicly disclosed by vendors, independent audits suggest an average of 0.2\u20130.5 Wh per interaction for current-generation conversational AI.",
+     "claim": "A Nature Computer Science article summarizes independent audits estimating 0.2\u20130.5 Wh per interaction.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "Exact, real-time, vendor-verified energy consumption figures per query for proprietary models like ChatGPT-4o, Claude 3.5 Sonnet, or Google Gemini 1.5 Pro, as these are not publicly released by OpenAI, Anthropic, or Google."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 2,
+    "unverifiable": 1
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0042",
+  "cost": 0.00406618,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "The Workers Free plan includes 100,000 requests per day.",
+     "claim": "The free plan for Cloudflare Workers allows 100,000 requests per day.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "CPU time is the amount of time the CPU is actively processing instructions for your Worker.",
+     "claim": "Cloudflare defines CPU time separately from wall-clock time.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "The Free plan has a CPU time limit of 10 ms per request.",
+     "claim": "The free plan limits CPU time to 10 milliseconds per request.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0043",
+  "cost": 0.011403,
+  "score": {
+   "claims": [
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8362887/",
+     "quote": "Twenty-nine percent of the reported falls required the FD to activate the alarm, 60% required help from a third person, and the alarm was triggered automatically only in 3% of the cases.",
+     "claim": "In studies of older adults, fall detectors themselves rarely triggered the alarm automatically; most alerts still required the user or another person, which limits their ability to shorten time on floor.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8362887/",
+     "quote": "The purpose of this systematic review is to (1) assess the association between the living situation (alone or not alone) and fall-related outcomes such as mortality, fear of falling, time on floor, and hospitalization; (2) report the proportion of falls and the time on floor; and (3) describe how and when fall detection devices activate the alarm (manually or automatically).",
+     "claim": "This review specifically examined outcomes you asked about, including hospitalization and time on floor, showing these are recognized but incompletely resolved outcomes in the literature.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8362887/",
+     "quote": "The FD may also be used by individuals who are unable to get up on their own, but it is not intended to prevent falls.",
+     "claim": "Fall-detection devices may help after a fall by summoning help sooner, especially for people who cannot get up independently, but they do not prevent the fall itself.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://mimuw.edu.pl/~wan/pres.pdf",
+     "quote": "The average time-on-floor was 5.5 minutes for the system and 2.5 hours for the PERS.",
+     "claim": "In a real-world independent-living deployment, an ambient in-home sensor system dramatically reduced time on floor compared with a traditional personal emergency response system.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://mimuw.edu.pl/~wan/pres.pdf",
+     "quote": "The sensor system was designed to automatically detect falls and summon help without requiring the resident to wear a device or push a button.",
+     "claim": "The ambient sensor approach can detect falls and call for help without user activation, which is important for older adults who may be unconscious, injured, or otherwise unable to press a pendant.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.cochrane.org/CD003746/INJ_personal-emergency-call-systems-for-use-by-older-adults",
+     "quote": "The quality of the evidence for the included studies was low or very low, and it is uncertain whether personal emergency call systems reduce hospitalisation, mortality or time spent on the floor following a fall.",
+     "claim": "The Cochrane review found no convincing evidence that personal emergency response systems reduce hospitalization or time on floor because the underlying evidence is weak.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "I could not find a high-quality randomized trial showing that fall-detection devices or ambient sensors reduce hospital admissions specifically among elderly people living alone."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 4,
+    "dead_url": 2,
+    "unverifiable": 0
+   },
+   "failed": 6
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0044",
+  "cost": 0.00038675,
+  "score": {
+   "claims": [
+    {
+     "url": "https://forge.rust-lang.org/release/process.html",
+     "quote": "Rust has a 6 week release cycle.",
+     "claim": "The official release cadence for Rust is every six weeks.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.rust-lang.org/policies/support",
+     "quote": "Only the latest stable release of Rust is supported.",
+     "claim": "Each stable version is supported only until the next stable version is released, meaning there is no extended support period for older versions.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 1,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0045",
+  "cost": 0.001432812,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "an official statement from Raspberry Pi Foundation or Raspberry Pi Ltd about how long the Raspberry Pi 5 will remain in production"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0046",
+  "cost": 0.0011154,
+  "score": {
+   "claims": [
+    {
+     "url": "https://polymarket.com/help/what-happens-if-a-market-is-disputed",
+     "quote": "If a market\u2019s outcome is disputed, it can be escalated to the UMA Optimistic Oracle for resolution.",
+     "claim": "Polymarket uses the UMA Optimistic Oracle to resolve disputed markets, implying a mechanism exists but not providing an aggregate frequency rate.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://kalshi.com/rules",
+     "quote": "Kalshi reserves the right to correct any error in the determination of the Outcome of a Market... Participants may not challenge the determination of the Outcome except as expressly provided in these Rules.",
+     "claim": "Kalshi's rules limit the ability of participants to challenge outcomes, suggesting that formal \"challenges\" are rare or restricted to specific error corrections by the platform itself.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 429; curl: HTTP 429)"
+    },
+    {
+     "url": "https://blog.polymarket.com/post-mortem-july-2024/",
+     "quote": "We identified a small number of markets where the initial resolution was ambiguous due to unclear event definitions.",
+     "claim": "Polymarket has acknowledged ambiguity in a \"small number\" of markets, but did not provide a precise numerical figure or percentage in this post-mortem.",
+     "status": "unverifiable",
+     "note": "could not fetch ([Errno -5] No address associated with hostname; curl: HTTP 000)"
+    }
+   ],
+   "no_source": [
+    "A comprehensive, peer-reviewed or officially published statistical report from Polymarket, Kalshi, or similar platforms stating the exact percentage or total count of all markets that have been formally disputed or challenged since their inception."
+   ],
+   "malformed_source_lines": 1,
+   "urls_outside_format": [
+    "https://medium.com/uma-project/uma-optimistic-oracle-v2-is-live-8b8b8b8b8b8b"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 1,
+    "unverifiable": 2
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0047",
+  "cost": 0.00119845,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "SQLite database files are portable across 32-bit and 64-bit machines and between big-endian and little-endian architectures. The maximum size of a database file is 4294967294 pages.",
+     "claim": "The maximum database size is defined by a page count limit.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "At least 512 bytes. The maximum page size is 65536 bytes.",
+     "claim": "The maximum page size is 65536 bytes.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "This means that the maximum database size is 214748364665536 = 140,737,488,224,256 bytes (about 140 terabytes).",
+     "claim": "The official documentation calculates the maximum size as approximately 140 terabytes using a slightly different maximum page number (2147483646) from an older definition. The current page count maximum is higher.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1,000,000,000).",
+     "claim": "The default maximum size for a string or BLOB is 1,000,000,000 bytes.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.sqlite.org/limits.html",
+     "quote": "The maximum number of bytes in a row is 2147483647. SQLite is able to store larger rows by storing large BLOBs and TEXT strings in overflow pages so that only a small part of the large object appears on the main database page.",
+     "claim": "The maximum number of bytes in a single row is 2,147,483,647, but this is managed by using overflow pages for large data.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 3,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0048",
+  "cost": 0.00038935,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "An official statement from the Raspberry Pi Foundation or Raspberry Pi Ltd specifying a fixed end-of-production date or guaranteed production duration for the Raspberry Pi 5."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0049",
+  "cost": 0.00388692,
+  "score": {
+   "claims": [
+    {
+     "url": "https://forge.rust-lang.org/release/schedule.html",
+     "quote": "A new release of Rust occurs every six weeks, on Thursday.",
+     "claim": "Rust's official release schedule is time-based (not feature-based), with a new stable release shipping every six weeks.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.rust-lang.org/policies/releases",
+     "quote": "We use a time-based release train, with a new stable release every six weeks.",
+     "claim": "The Rust project officially documents a six-week stable release cadence.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.rust-lang.org/policies/releases",
+     "quote": "Each stable release is supported until the next stable release, six weeks later.",
+     "claim": "Each stable Rust version is supported for approximately six weeks (until the next stable version is released), after which only the newest stable receives fixes.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "Exact verbatim wording of every sentence quoted above, because I cannot browse live to confirm character-for-character accuracy of the official Rust pages. The substantive claims (6-week cadence, support until next stable) are well-established official Rust policy, but the precise wording should be verified directly at the cited URLs."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 3,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0050",
+  "cost": 0.014451,
+  "score": {
+   "claims": [
+    {
+     "url": "https://community.hubitat.com/t/aqara-vibration-sensor-battery-life/124702",
+     "quote": "Two Aqara vibration sensors just died on me... both lasted just about 6 months.",
+     "claim": "Real-world field testing shows Aqara (Zigbee) vibration sensors lasting approximately 6 months in typical home automation use, significantly shorter than the 2-year manufacturer estimate.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://community.home-assistant.io/t/what-is-the-real-battery-life-of-aqara-sensors/518772",
+     "quote": "Aqara temperature and humidity sensors, original and new T1 versions, seem to last me anywhere from 6 months to a year.",
+     "claim": "Field reports indicate Aqara temperature and humidity sensors (Zigbee) achieve 6-12 months of battery life in practice, contrasting with the 2-year claimed lifespan.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://community.hubitat.com/t/sonoff-snzb-04-battery-life/88929",
+     "quote": "Sonoff SNZB-04 Door Sensor lasted almost exactly 3 months.",
+     "claim": "Real-world testing shows the Sonoff SNZB-04 Zigbee door sensor exhausting its CR2032 battery in approximately 3 months, well below the 2-year specification.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://community.hubitat.com/t/aqara-door-sensor-battery-life/111567",
+     "quote": "I have a few Aqara contact sensors that have lasted over 2 years.",
+     "claim": "Some field deployments of Aqara Zigbee contact sensors achieve the full 2-year lifespan matching manufacturer claims, demonstrating high variability in real-world performance.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.reddit.com/r/HomeKit/comments/18k3k5a/switchbot_contact_sensor_battery_life/",
+     "quote": "My SwitchBot contact sensor battery died after 3 months.",
+     "claim": "Field data shows SwitchBot (BLE) contact sensors lasting only 3 months despite marketing claims of 1-year battery life.",
+     "status": "unverifiable",
+     "note": "page text only 6 chars"
+    },
+    {
+     "url": "https://community.home-assistant.io/t/ble-sensor-battery-life/476262",
+     "quote": "My Govee H5074 thermometer hygrometer lasted about 8 months on the original batteries.",
+     "claim": "Real-world testing indicates Govee BLE temperature sensors achieve roughly 8 months of operation, falling short of the 1-year advertised duration.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://community.home-assistant.io/t/recommendation-for-door-window-sensor-with-good-battery-life/451004",
+     "quote": "Xiaomi Aqara MCCGQ11LM door/window sensor gets me about 1.5 years.",
+     "claim": "Field measurements show Xiaomi Aqara Zigbee door sensors typically lasting 18 months in actual use, less than the 2-year estimate.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://community.home-assistant.io/t/aqara-sensors-battery-life-is-bad/337951",
+     "quote": "My Aqara motion sensor lasted about 5 months before dying.",
+     "claim": "Real-world experience shows Aqara Zigbee motion sensors exhausting batteries in approximately 5 months, substantially less than the claimed 2 years.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.reddit.com/r/homeassistant/comments/1ac3j2x/bluetooth_le_battery_life_sucks/",
+     "quote": "My BLE temperature sensors (ATC firmware) last about 6-8 months on AA batteries.",
+     "claim": "Field data from BLE temperature sensors running alternative firmware indicates 6-8 month battery life despite using AA batteries, compared to year-plus claims.",
+     "status": "unverifiable",
+     "note": "page text only 6 chars"
+    },
+    {
+     "url": "https://www.reddit.com/r/HomeKit/comments/12x4l8k/aqara_temperature_sensor_battery_life/",
+     "quote": "Aqara Temp/Humidity sensor lasted exactly 4 months on the original battery.",
+     "claim": "Real-world testing documents Aqara temperature sensors achieving only 4 months of field service, versus the 2-year manufacturer specification.",
+     "status": "unverifiable",
+     "note": "page text only 6 chars"
+    }
+   ],
+   "no_source": [
+    "Independent, peer-reviewed scientific studies measuring the actual field battery life of commercial Bluetooth LE or Zigbee smart home sensors (as opposed to individual user reports on forums and Reddit)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 2,
+    "unverifiable": 7
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0051",
+  "cost": 0.000839,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "The PostgreSQL Global Development Group releases a new major version annually and provides bug fix support for a major version for 5 years.",
+     "claim": "Each major PostgreSQL version receives fixes for 5 years.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "An official explicit mention of an extended support period beyond 5 years for any specific version on the versioning policy page (though some versions like 9.6 received extended support, this is not stated as a standard policy on the versioning page)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "u02",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0052",
+  "cost": 0.01136228,
+  "score": {
+   "claims": [
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Below are the price per million tokens for each of our models:",
+     "claim": "The page lists official API pricing per million tokens for all current Claude models",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Opus 4.5 | $5 | $25",
+     "claim": "Claude Opus 4.5 costs $5 per million input tokens and $25 per million output tokens",
+     "status": "reworded"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Sonnet 4.5 | $3 | $15",
+     "claim": "Claude Sonnet 4.5 costs $3 per million input tokens and $15 per million output tokens",
+     "status": "reworded"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Haiku 4.5 | $1 | $5",
+     "claim": "Claude Haiku 4.5 costs $1 per million input tokens and $5 per million output tokens",
+     "status": "reworded"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Sonnet 4 | $3 | $15",
+     "claim": "Claude Sonnet 4 costs $3 per million input tokens and $15 per million output tokens",
+     "status": "reworded"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Opus 4.1 | $15 | $75",
+     "claim": "Claude Opus 4.1 costs $15 per million input tokens and $75 per million output tokens",
+     "status": "reworded"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Opus 4 | $15 | $75",
+     "claim": "Claude Opus 4 costs $15 per million input tokens and $75 per million output tokens",
+     "status": "reworded"
+    },
+    {
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "quote": "Haiku 3.5 | $0.80 | $4",
+     "claim": "Claude 3.5 Haiku costs $0.80 per million input tokens and $4 per million output tokens",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 7,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0053",
+  "cost": 0.000255775,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "Real data on how many people actively use the Omarchy Linux distribution",
+    "Real data on how many times Omarchy Linux has been installed"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0054",
+  "cost": 0.001573,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.usenix.org/conference/nsdi21/presentation/ghorbani",
+     "quote": "The battery lifetime of these devices is also impressive: 95% of the devices are projected to last beyond two years, and 80% are projected to last beyond five years.",
+     "claim": "In a large deployment of 1,354 commercial Zigbee smart home sensors (motion, contact, temperature), 95% lasted over 2 years and 80% lasted over 5 years.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://blakadder.com/how-long-do-aqara-sensors-last/",
+     "quote": "After 2 years and 3 months, the battery level is at 35%... Based on this usage, I would expect to get another year of usage from it, totaling to around 3 years and 3 months.",
+     "claim": "An Aqara Zigbee door sensor (model MCCGQ11LM) used in a typical home setting maintained 35% battery after 2 years and 3 months, projecting a total lifespan of over 3 years.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.silabs.com/documents/public/white-papers/zigbee-battery-life-optimization.pdf",
+     "quote": "Battery life can range from days to years, depending on the application requirements... For example, if a security sensor only reports when a door or window is opened, it could achieve a battery life of more than 10 years. However, if the same sensor is polled every 10 seconds for its state, the battery life could drop to less than one month.",
+     "claim": "Battery life is highly dependent on usage patterns; a door sensor reporting only state changes can last over 10 years, but one polled frequently could die in under a month.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [
+    "A published, side-by-side laboratory test comparing the actual battery drain of various popular BLE and Zigbee sensor models from brands like Aqara, Samsung SmartThings, Eve, and Tuya under identical, controlled conditions. Most reviews test products in isolation over time rather than in a direct comparative benchmark."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://blakadder.com/how-long-do-aqara-sensors-last/**",
+    "https://www.silabs.com/documents/public/white-papers/zigbee-battery-life-optimization.pdf**",
+    "https://www.usenix.org/conference/nsdi21/presentation/ghorbani**"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 2,
+    "unverifiable": 1
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0055",
+  "cost": 0.00082671,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28",
+     "quote": "For unauthenticated requests, the rate limit allows for up to 60 requests per hour.",
+     "claim": "The rate limit for unauthenticated requests to the public GitHub REST API is 60 requests per hour.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28",
+     "quote": "For authenticated requests, the primary rate limit allows up to 5,000 requests per hour.",
+     "claim": "The rate limit for authenticated requests to the public GitHub REST API is 5,000 requests per hour.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0056",
+  "cost": 0.0026397,
+  "score": {
+   "claims": [
+    {
+     "url": "https://community.home-assistant.io/t/sonoff-snzb-02-zigbee-temperature-and-humidity-sensor-battery-life/342056",
+     "quote": "I have 4 of these sensors, all installed at the same time with fresh CR2450 batteries in August 2021. By August 2022 (12 months later), all 4 batteries were dead.",
+     "claim": "Real-world field data for the Sonoff SNZB-02 Zigbee temperature sensor shows a battery life of approximately 12 months, significantly shorter than the manufacturer's 2-year claim.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://community.home-assistant.io/t/aqara-door-window-sensor-battery-life/263298",
+     "quote": "I\u2019ve had 8 Aqara door/window sensors running for about 20 months now on the original CR1632 batteries, and they are all reporting between 40% and 50% remaining.",
+     "claim": "Real-world field data for the Aqara Zigbee door sensor shows batteries lasting beyond 20 months, corroborating the manufacturer's roughly 2-year claim, though falling slightly short of the full 24 months.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.kickstarter.com/projects/switchbot/switchbot-the-worlds-first-bluetooth-weather-station/posts/3180040",
+     "quote": "Based on our long-term testing over the past 6 months with a 10-minute broadcast interval, the battery has dropped by roughly 50%, which aligns with a 1-year total battery life in real-world use.",
+     "claim": "Independent long-term testing of the SwitchBot BLE temperature/humidity sensor indicates a real-world battery life of approximately 12 months under standard broadcast intervals.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [
+    "Academic or formal industry studies measuring the discrepancy between manufacturer-claimed and field-measured battery life for Bluetooth LE (broadcast-only) smart home sensors. (Such sensors do not establish two-way connections to report battery levels, meaning there is no automated way to aggregate field data across a user base, and no formal studies measuring this specific discrepancy appear to have been published).",
+    "Crowdsourced or longitudinally tracked field battery life measurements for generic BLE door/temperature sensors. (Unlike Zigbee sensors which report battery voltage to hubs like Home Assistant, most cheap BLE sensors are broadcast-only and provide no state data for users to log and publish long-term battery decay statistics)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 3
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0057",
+  "cost": 0.02741004,
+  "score": {
+   "claims": [],
+   "no_source": [
+    "Real, published data on how often prediction markets (Polymarket, Kalshi or similar) resolve disputed or ambiguous markets, or how many market resolutions were challenged."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0058",
+  "cost": 0.00029965,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/#free-plan-limits",
+     "quote": "100,000 requests per day",
+     "claim": "The free plan allows a maximum of 100,000 requests per day.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/#free-plan-limits",
+     "quote": "10 ms CPU time per request",
+     "claim": "The free plan limits CPU execution time to 10 milliseconds per request.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0059",
+  "cost": 0.0012466,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/basecamp/omarchy/blob/main/README.md",
+     "quote": "No data or statistics are collected about you, your machine, or your usage.",
+     "claim": "Omarchy does not track active users or installations by default, meaning no official telemetry data exists to provide an exact figure.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "A specific numerical figure of how many people actively use Omarchy or exactly how many times it has been installed.",
+    "Third-party analytics or independent tracking reports measuring Omarchy's market share or total installation base."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 1,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0060",
+  "cost": 0.00041916,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting",
+     "quote": "For unauthenticated requests, the rate limit allows for up to 60 requests per hour.",
+     "claim": "The rate limit for unauthenticated requests is 60 requests per hour.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting",
+     "quote": "For API requests using Basic Authentication or OAuth, you can make up to 5,000 requests per hour.",
+     "claim": "The rate limit for authenticated requests is 5,000 requests per hour.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/search?apiVersion=2022-11-28#rate-limit",
+     "quote": "The Search API has a custom rate limit. For requests using Basic Authentication, OAuth, or user access tokens, you can make up to 30 requests per minute.",
+     "claim": "The Search API has a separate rate limit of 30 requests per minute for authenticated requests.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/search?apiVersion=2022-11-28#rate-limit",
+     "quote": "For unauthenticated requests, the rate limit allows you to make up to 10 requests per minute.",
+     "claim": "The Search API rate limit for unauthenticated requests is 10 requests per minute.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 4,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0061",
+  "cost": 0.00055121,
+  "score": {
+   "claims": [],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0062",
+  "cost": 0.00076699,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.rust-lang.org/",
+     "quote": "Releases every six weeks.",
+     "claim": "The Rust project has a release cadence of six weeks for new stable versions.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://github.com/rust-lang/reference/blob/master/src/statement-and-expression-attributes.md?plain=1#L475",
+     "quote": "The Rust project has a six week release cadence.",
+     "claim": "The Rust project has a release cadence of six weeks for new stable versions.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://blog.rust-lang.org/2023/11/02/Rust-1.73.0.html",
+     "quote": "As usual, you can check out the details of the Rust 1.73.0 release on the blog.",
+     "claim": "This blog post is part of the regular, six-weekly release announcements, demonstrating the cadence in practice.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://blog.rust-lang.org/2024/01/25/Rust-1.75.0.html",
+     "quote": "As usual, you can check out the details of the Rust 1.75.0 release on the blog.",
+     "claim": "This blog post is part of the regular, six-weekly release announcements, demonstrating the cadence in practice.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://www.rust-lang.org/policies/security",
+     "quote": "The Rust Security Response WG handles fixing and disclosing security bugs in the Rust project, for all supported Rust releases.",
+     "claim": "Security fixes are provided for all supported Rust releases.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://github.com/rust-lang/reference/blob/master/src/introduction.md#stability",
+     "quote": "With that said, the Rust project has a formal policy, the stability guarantee, which ensures that your code will continue to compile on new stable releases of the Rust compiler, and that the language will only evolve in backward-compatible ways.",
+     "claim": "The stability guarantee implies long-term, indefinite support for stable versions to ensure backward compatibility.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [
+    "An official statement explicitly listing a fixed support duration (e.g., \"24 months\") for a stable Rust release. The policy is one of indefinite support under the stability guarantee."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 3,
+    "dead_url": 3,
+    "unverifiable": 0
+   },
+   "failed": 6
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0063",
+  "cost": 0.00024375,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "The PostgreSQL Global Development Group will release minor updates for each supported major version for a period of five years from the initial release of that major version.",
+     "claim": "Each major PostgreSQL version receives fixes (minor updates) for a period of five years from its initial release.",
+     "status": "unsupported"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0064",
+  "cost": 0.000420225,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/Release/blob/main/README.md",
+     "quote": "Each major active LTS line will be maintained for 18 months from the date it enters LTS.",
+     "claim": "The Active LTS phase lasts for 18 months.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://github.com/nodejs/Release/blob/main/README.md",
+     "quote": "Following the 18 months of active support, each LTS line will enter a 12 month maintenance period.",
+     "claim": "The Maintenance LTS phase lasts for 12 months.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 0,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ }
+]

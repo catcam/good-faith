@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t05",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0012",
+ "prompt": "Research the official rate limits of the public GitHub REST API for unauthenticated and authenticated requests. Cite the GitHub documentation page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the official rate limits for the GitHub REST API, as documented by GitHub.\n\n### Unauthenticated Requests\nThe primary rate limit for unauthenticated requests is 60 requests per hour, per originating IP address.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"You can make unauthenticated requests if you are only fetching public data. Unauthenticated requests are associated with the originating IP address, not with the user or application that made the request. The primary rate limit for unauthenticated requests is 60 requests per hour.\" | CLAIM: Unauthenticated requests are limited to 60 requests per hour per IP address.\n\n### Authenticated Requests\nThe primary rate limits for authenticated requests depend on the authentication method:\n\n*   **Personal Access Token:** 5,000 requests per hour.\n*   **OAuth Apps / GitHub Apps (user-to-server):** 5,000 requests per hour, per user.\n*   **GitHub App (server-to-server / installation):** 5,000 requests per hour, per installation (scaling up to 12,500 requests per hour for large organizations).\n*   **GITHUB_TOKEN in GitHub Actions:** 1,000 requests per hour, per repository (or 15,000 for GitHub Enterprise Cloud organizations).\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"Primary rate limits for authenticated users\" | CLAIM: This section header introduces the rate limits for authenticated requests.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"If you are using a personal access token for authentication, you can make up to 5,000 requests per hour.\" | CLAIM: Personal access tokens allow 5,000 requests per hour.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"You can use the built-in GITHUB_TOKEN to authenticate requests in GitHub Actions workflows. When you use GITHUB_TOKEN, the rate limit is 1,000 requests per hour per repository. For requests to resources that belong to an enterprise account on GitHub.com, the limit is 15,000 requests per hour per repository.\" | CLAIM: GitHub Actions' GITHUB_TOKEN has a limit of 1,000 requests per hour per repository (15,000 for Enterprise Cloud).\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"GitHub Apps authenticating with an installation access token use the installation's minimum rate limit of 5,000 requests per hour. If the installation is on a GitHub Enterprise Cloud organization, the installation has a rate limit of 15,000 requests per hour.\" | CLAIM: GitHub App installations have a base rate limit of 5,000 requests per hour (15,000 for Enterprise Cloud).\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"For installations that are not on a GitHub Enterprise Cloud organization, the rate limit for the installation will scale with the number of users and repositories. Installations that have more than 20 repositories receive another 50 requests per hour for each repository. Installations that are on an organization that have more than 20 users receive another 50 requests per hour for each user. The rate limit cannot increase beyond 12,500 requests per hour.\" | CLAIM: GitHub App installation rate limits scale based on repositories/users, capping at 12,500 requests per hour.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"OAuth apps are limited to 5,000 requests per hour and 5,000 requests per user per hour.\" | CLAIM: OAuth Apps have a limit of 5,000 requests per hour per user.\n\n### Secondary Rate Limits\nGitHub also enforces secondary rate limits (which are not strictly \"rate limits\" per the primary definition but are important for API usage) to prevent abuse, such as excessive concurrent requests or content generation.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"In addition to primary rate limits, GitHub enforces secondary rate limits in order to prevent abuse and keep the API available for all users.\" | CLAIM: GitHub enforces secondary rate limits beyond the primary rate limits.\n\n### Summary Table\n\n| Authentication Method | Primary Rate Limit |\n| :--- | :--- |\n| **Unauthenticated** | 60 requests/hour (per IP) |\n| **Personal Access Token** | 5,000 requests/hour |\n| **GitHub Actions (`GITHUB_TOKEN`)** | 1,000 requests/hour per repo (15,000 for Enterprise Cloud) |\n| **GitHub Apps (Server-to-Server)** | 5,000\u201312,500 requests/hour per installation (15,000 for Enterprise Cloud) |\n| **OAuth Apps** | 5,000 requests/hour per user |",
+  "usage": {
+   "prompt_tokens": 147,
+   "completion_tokens": 1071,
+   "total_tokens": 1218,
+   "cost": 0.0156807,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0156807,
+    "upstream_inference_prompt_cost": 0.00041895,
+    "upstream_inference_completions_cost": 0.01526175
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791648389-FYqxotFf8wDbaffNxP4A"
+ },
+ "ts": "2026-10-10T16:06:43.926519+00:00"
+}

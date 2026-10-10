@@ -1,6 +1,6 @@
 # Experiment v4: citations from memory, no web search
 
-**Status: PILOT, 2026-10-10.** The design will be frozen by commit and sha256 hashes
+**Status: FROZEN, 2026-10-10** (see the end of this file). Nikša approved running it ("da i pokreni eksperiment").
 after the pilot and before the main run. Nikša approved running it ("da i pokreni eksperiment").
 
 ## Why
@@ -51,3 +51,41 @@ The script is `experiments/v4/analyze_v4.py`.
 - Without search, a model may quote a page correctly but give a URL that has since moved. That counts as `dead_url`, because the claim points at a page that does not exist.
 - Claude wrote the tasks and the scorer, and Claude validates the scorer. There are no human labels.
 - The result is published whatever it shows.
+
+---
+
+## FROZEN, 2026-10-10, after the pilot and before any main trial
+
+### Pilot (64 trials, C0 only, $0.20, excluded from analysis)
+
+- **Failures are common without search.** There were 1.61 failed claims per response, and 42 of 64 responses had at least one. With web search on (v3 pilot 2) the rate was 0.25.
+- **Claims:** 7 verified, 37 reworded, 66 unsupported, 37 dead URLs, 46 unverifiable. There were 57 `NO_SOURCE_FOUND` lines.
+
+### Scorer validation (Claude)
+
+- **The top-overlap `unsupported` claims were all read against their pages.** One scorer miss turned up: "$4.00" in the quote vs "$4" on the page, the same price. The fix normalises trailing decimal zeros in `grounded()` (`_num`). It moved 2 claims to `reworded`.
+- **The rest are genuine:**
+  - prices of models no longer on the page (Claude 3 Haiku, Claude 3 Opus);
+  - figures added by the model, such as SQLite's "2^48 bytes, or 256 tebibytes";
+  - paraphrases presented as verbatim quotes.
+- **Dead URLs** were spot-checked as genuinely nonexistent. For example, a Rust 1.75 announcement URL with an invented date (the real one is 2023-12-28), a Nature article ID, and a README path that is not in the repo.
+
+### Analysis
+
+As stated above:
+- Mann–Whitney is the primary test.
+- The stratified permutation test and Fisher's exact test are secondary.
+
+### Frozen materials (sha256)
+
+```
+ea9ac93c0b9117c7a21c19bc0b59ecfc95ff29e5430c265f2f9034f368d0efde  experiments/v3/scorer.py
+cac71366fa9d0bd8d36f2c4d554c07c2fb6bc11783851258f55cc3e5fbb8f700  experiments/v2/prompts.py
+d199378e4a9f329b5f9d0f0a794c6699dbb84f9e55c7eab2714e2d16d48a91a3  experiments/v2/run_v2.py
+c2092f5e23b15b7cbfa163a16669d56dd4a8c9c4b03a0c337e9199bca7242cf9  experiments/verify_v2.py
+83623bed55a5b3758bf5d452566b65cd7dd9853d8ef9f3223d58d8dc08d24949  experiments/lib.py
+3525539574fd24ff5cac24568f648dc1e7c1ad366f012e740987ff83726ccbb7  experiments/v4/run_v4.py
+a6edf28026b466fc4efe17d5b21fc542a8a5e54db2c90eb4b5f86fd19321fc3c  experiments/v4/tasks_v4.json
+fe2280e4c2b938baa6c9af0cd2e326261eb3a6fe95eff3cea7ca55f97d0dd64f  experiments/v4/matrix_main.json
+b24458426e1ab2d078e96f2f2c5d23f87f385a655de2590dd60fa05ed8e41872  experiments/v4/analyze_v4.py
+```

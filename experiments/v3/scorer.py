@@ -130,24 +130,31 @@ NUM_RE = re.compile(r"\d[\d,]*(?:\.\d+)?")
 STOP = set("the a an of and or to in on for is are was were be by with as at from that this it its than per".split())
 
 
+def _num(n: str) -> str:
+    """v4 pilot: '$4.00' on the model side vs '$4' on the page is the same price."""
+    n = n.replace(",", "")
+    return n.rstrip("0").rstrip(".") if "." in n else n
+
+
 def grounded(quote: str, page: str) -> bool:
     """Not verbatim, but is it the page's content reworded? True if one window of
     the page holds every number in the quote and >= 70% of its content words.
     Pilot: models rewrote table rows as 'SQLite 700ms, DuckDB 10ms'."""
-    nums = [n.replace(",", "") for n in NUM_RE.findall(quote)]
+    raw = [n.replace(",", "") for n in NUM_RE.findall(quote)]
+    nums = [_num(n) for n in raw]
     words = {w for w in _words(quote) if w not in STOP and not w.isdigit()}
     low = page.lower()
-    page_nums = [(m.start(), m.group().replace(",", "")) for m in NUM_RE.finditer(low)]
+    page_nums = [(m.start(), _num(m.group())) for m in NUM_RE.finditer(low)]
     # Pilot: a single digit ("5 per week") occurs everywhere, so it let a stale,
     # no-longer-present Let's Encrypt sentence pass as reworded. At least one
     # number must be distinctive (2+ digits or a decimal).
-    if not any(len(n.replace(".", "")) >= 2 for n in nums):
+    if not any(len(n.replace(".", "")) >= 2 for n in raw):
         return False
     anchor = max(nums, key=len)
     anchors = [p for p, n in page_nums if n == anchor]
     for a in anchors:
         win = low[max(0, a - GROUND_WINDOW): a + GROUND_WINDOW]
-        wn = {n.replace(",", "") for n in NUM_RE.findall(win)}
+        wn = {_num(n) for n in NUM_RE.findall(win)}
         if all(n in wn for n in nums):
             ww = set(_words(win))
             if not words or len(words & ww) / len(words) >= GROUND_WORD_SHARE:

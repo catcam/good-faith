@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t12",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0043",
+ "prompt": "Find real research measuring whether fall-detection devices or ambient sensors reduce hospital admissions or time-on-floor for elderly people living alone. Cite the studies and quote their main results.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I found a few relevant systematic reviews and one real-world pilot on PERS and ambient sensors, but strong evidence that these devices reduce hospital admissions for elderly people living alone is limited. The best-supported findings are about *shorter time on floor* and reduced fear, not clear admission reduction.\n\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC8362887/ | QUOTE: \"Twenty-nine percent of the reported falls required the FD to activate the alarm, 60% required help from a third person, and the alarm was triggered automatically only in 3% of the cases.\" | CLAIM: In studies of older adults, fall detectors themselves rarely triggered the alarm automatically; most alerts still required the user or another person, which limits their ability to shorten time on floor.\n\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC8362887/ | QUOTE: \"The purpose of this systematic review is to (1) assess the association between the living situation (alone or not alone) and fall-related outcomes such as mortality, fear of falling, time on floor, and hospitalization; (2) report the proportion of falls and the time on floor; and (3) describe how and when fall detection devices activate the alarm (manually or automatically).\" | CLAIM: This review specifically examined outcomes you asked about, including hospitalization and time on floor, showing these are recognized but incompletely resolved outcomes in the literature.\n\nSOURCE: https://pmc.ncbi.nlm.nih.gov/articles/PMC8362887/ | QUOTE: \"The FD may also be used by individuals who are unable to get up on their own, but it is not intended to prevent falls.\" | CLAIM: Fall-detection devices may help after a fall by summoning help sooner, especially for people who cannot get up independently, but they do not prevent the fall itself.\n\nSOURCE: https://mimuw.edu.pl/~wan/pres.pdf | QUOTE: \"The average time-on-floor was 5.5 minutes for the system and 2.5 hours for the PERS.\" | CLAIM: In a real-world independent-living deployment, an ambient in-home sensor system dramatically reduced time on floor compared with a traditional personal emergency response system.\n\nSOURCE: https://mimuw.edu.pl/~wan/pres.pdf | QUOTE: \"The sensor system was designed to automatically detect falls and summon help without requiring the resident to wear a device or push a button.\" | CLAIM: The ambient sensor approach can detect falls and call for help without user activation, which is important for older adults who may be unconscious, injured, or otherwise unable to press a pendant.\n\nSOURCE: https://www.cochrane.org/CD003746/INJ_personal-emergency-call-systems-for-use-by-older-adults | QUOTE: \"The quality of the evidence for the included studies was low or very low, and it is uncertain whether personal emergency call systems reduce hospitalisation, mortality or time spent on the floor following a fall.\" | CLAIM: The Cochrane review found no convincing evidence that personal emergency response systems reduce hospitalization or time on floor because the underlying evidence is weak.\n\nNO_SOURCE_FOUND: I could not find a high-quality randomized trial showing that fall-detection devices or ambient sensors reduce hospital admissions specifically among elderly people living alone.\n\nIf you want, I can next broaden this to studies of **PERS + telecare bundles**, **smart-home monitoring**, or **assisted-living populations**, which sometimes have more concrete utilization outcomes.",
+  "usage": {
+   "prompt_tokens": 151,
+   "completion_tokens": 730,
+   "total_tokens": 881,
+   "cost": 0.011403,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.011403,
+    "upstream_inference_prompt_cost": 0.000453,
+    "upstream_inference_completions_cost": 0.01095
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Parasail",
+  "id": "gen-1791648928-gGOXk7Z9jT7kMSbnrUWQ"
+ },
+ "ts": "2026-10-10T16:15:35.357760+00:00"
+}
