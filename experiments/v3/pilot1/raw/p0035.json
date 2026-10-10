@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t09",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0035",
+ "prompt": "Find real, published measurements of how much battery life a typical Bluetooth LE smart home sensor (e.g. Zigbee or BLE door/temperature sensors) actually achieves in the field, as opposed to manufacturer claims. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my search, I found several real-world measurements for Zigbee sensor battery life. However, I could not find any published field measurements specifically for **Bluetooth LE (BLE)** smart home sensors. The search results were exclusively focused on Zigbee and Z-Wave technologies.\n\nHere are the relevant findings for Zigbee sensors, which were the only type of field measurements I could locate:\n\nSOURCE: https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/ | QUOTE: \"Motion sensor 1 (RTCGQ01LM) : sits on the landing and of an evening, turns on nightlights for a period of time and then if no further motion detected after a couple of minutes, turns the lights back off... Battery life: 36%\" | CLAIM: A frequently used Xiaomi motion sensor had 36% battery remaining after two years of use.\nSOURCE: https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/ | QUOTE: \"Motion sensor 2 (RTCGQ01LM): sits in a cupboard and turns on additional lighting when the cupboard doors are open, and again, if no further motion detected turns the lights back off. Used rarely, couple of times a week if that. Battery life: 100%\" | CLAIM: An infrequently used Xiaomi motion sensor had 100% battery remaining after two years of use.\nSOURCE: https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/ | QUOTE: \"Office- Battery life: 37%\" | CLAIM: A frequently used Xiaomi temperature/humidity/pressure sensor had 37% battery remaining after two years of use.\nSOURCE: https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/ | QUOTE: \"The two bathroom sensors, which trigger dozens of times a day given how often that space is used, are the closest to needing a swap at the twelve-month mark, currently reporting under 20% in the app.\" | CLAIM: Heavily used Aqara motion sensors were nearing end of battery life (~20% remaining) after one year.\nSOURCE: https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/ | QUOTE: \"The garage sensor, triggered only a handful of times a week, still shows over 70% remaining.\" | CLAIM: An infrequently used Aqara motion sensor had over 70% battery remaining after one year.\nSOURCE: https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart | QUOTE: \"| 30 seconds | 14.3 | 18.2 | 4.3 |\" | CLAIM: In a controlled benchmark test, a Zigbee 3.0 contact sensor reporting every 30 seconds achieved a battery life of 14.3 months.\nSOURCE: https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart | QUOTE: \"| 60 seconds | 22.7 | 28.5 | 7.1 |\" | CLAIM: In a controlled benchmark test, a Zigbee 3.0 contact sensor reporting every 60 seconds achieved a battery life of 22.7 months.\nSOURCE: https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart | QUOTE: \"Zigbee 3.0 battery life dropped by 18% (14.3 to 11.7 months) due to retransmissions\" | CLAIM: In a real-world test with Wi-Fi interference, the battery life of a Zigbee sensor reporting every 30 seconds dropped to 11.7 months.\n\nNO_SOURCE_FOUND: Real, published measurements of battery life for a typical Bluetooth LE (BLE) smart home sensor (e.g., door/temperature sensors) achieved in the field.",
+  "usage": {
+   "prompt_tokens": 3587,
+   "completion_tokens": 870,
+   "total_tokens": 4457,
+   "cost": 0.00872121,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00172121,
+    "upstream_inference_prompt_cost": 0.00089471,
+    "upstream_inference_completions_cost": 0.0008265
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791590092-dakxt0jRtgnE9nR8JNot"
+ },
+ "ts": "2026-10-09T23:55:15.960936+00:00"
+}

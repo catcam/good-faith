@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t15",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0007",
+ "prompt": "Find real, published studies on whether people with ADHD benefit from using AI assistants for task initiation or executive function. Cite the studies and quote their findings.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Research indicates that individuals with ADHD can benefit from AI assistants and conversational agents for task initiation and executive function, though the evidence is still emerging and varies by age group. Below are the findings from published studies on this topic, followed by the specific citations.\n\nFor adults with ADHD, self-guided psychoeducation delivered via an interactive chatbot has been shown to significantly reduce core ADHD symptoms. While the study found the chatbot was similarly effective to a conventional app (not superior), it confirms the therapeutic benefit of chatbot-supported interventions. Additionally, experts see potential in using AI (like ChatGPT) to design executive function rehabilitation programs for adolescents and adults, though they note current limitations in feasibility and personalization.\n\nFor children with ADHD, digital conversational agents that employ self-instruction strategies help them initiate and complete daily tasks, leading to high satisfaction regarding habit formation and morning routines. Similarly, digital therapeutics using adaptive algorithms to train executive functions have demonstrated significant improvements in inattention and hyperactivity symptoms, with effects sustained even a month after discontinuing the intervention.\n\nFor university students with ADHD, the integration of generative AI with augmented reality shows promise in reducing perceived cognitive load and supporting task initiation and planning, though larger studies are needed to confirm statistical significance.\n\nSOURCE: https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775 | QUOTE: \"Observer- and patient-rated ADHD symptoms were significantly reduced from pre- to post-intervention\" | CLAIM: Chatbot-supported AI interventions provide a significant therapeutic benefit for adult ADHD symptoms.\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"The prototype is an android application developed to be suitable for use on 8-inch tablet PCs... The conversation was implemented using a chatbot builder (NAVER CLOVA).\" | CLAIM: A conversational agent/chatbot was developed specifically to assist children with ADHD with daily task execution.\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"By interacting with the prototype as the conversational agent, children can plan, proceed, and evaluate their actions independently.\" | CLAIM: AI conversational agents help children with ADHD independently initiate and manage tasks by supporting executive function processes.\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"The moment the agent started the conversation, it woke her up right away, and it really worked. I think this agent would be useful enough for lower-grade elementary students when they are in the early stages of habit formation.\" | CLAIM: Parents observe real-world benefits in task initiation and routine completion for children using AI conversational agents.\nSOURCE: https://link.springer.com/article/10.1186/s40359-025-03729-2 | QUOTE: \"Experts in Study 3 generally responded positively to the theoretical consistency of the plans, especially those for adolescents and adults, recognizing alignment with established models of executive function rehabilitation.\" | CLAIM: AI-generated plans are viewed by experts as theoretically consistent with established models for executive function rehabilitation in ADHD.\nSOURCE: https://link.springer.com/article/10.1186/s40359-025-03729-2 | QUOTE: \"However, feasibility emerged as a key limitation, with concerns over a lack of personalization, unrealistic resource assumptions, and unvalidated techniques, particularly in adult and older adult profiles.\" | CLAIM: While theoretically sound, current AI-generated executive function rehabilitation programs face practical feasibility issues for adults with ADHD.\nSOURCE: https://link.springer.com/article/10.1007/s44217-026-01264-9 | QUOTE: \"Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.\" | CLAIM: Generative AI provides support for task initiation and executive function by reducing cognitive load and offering just-in-time planning scaffolding for ADHD students.\nSOURCE: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf | QUOTE: \"The ARS inattention (F = 4.080, p = 0.010), hyperactivity (F = 5.998. p < 0.001), and sum (F = 5.902, p < 0.001) significantly improved.\" | CLAIM: Digital therapeutics utilizing an adaptive algorithm to train executive functions significantly improve core ADHD symptoms.\nSOURCE: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf | QUOTE: \"The overall effect was confirmed in the ARS sustained effect analysis even after 1 month of discontinuing the DTx intervention.\" | CLAIM: The executive function improvements gained from adaptive digital therapeutics for ADHD are sustained over time.\nNO_SOURCE_FOUND: Published studies measuring the direct, isolated benefit of standard, general-purpose AI assistants (like ChatGPT, Siri, or Alexa used natively as daily task assistants) specifically on the task initiation deficits of adults with ADHD in real-world settings.",
+  "usage": {
+   "prompt_tokens": 2520,
+   "completion_tokens": 1168,
+   "total_tokens": 3688,
+   "cost": 0.010998136,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2520,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003998136,
+    "upstream_inference_prompt_cost": 0.000452088,
+    "upstream_inference_completions_cost": 0.003546048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791589448-MhJGrnC3oSux7RvfFhge"
+ },
+ "ts": "2026-10-09T23:44:41.607095+00:00"
+}

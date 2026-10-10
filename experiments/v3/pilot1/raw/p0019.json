@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t03",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0019",
+ "prompt": "Research the officially documented limits of Cloudflare Workers on the free plan (requests per day, CPU time per request). Cite Cloudflare's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Cloudflare's official documentation, the limits for Cloudflare Workers on the Free plan are as follows:\n\n**Requests per Day:**\nThe Free plan allows for 100,000 requests per day. This limit resets at midnight UTC. If this limit is exceeded, Cloudflare returns Error 1027, and the behavior depends on whether the route is configured to \"fail open\" (bypassing the Worker) or \"fail closed\" (returning an error page).\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.\" | CLAIM: The daily request limit for Workers on the Free plan is 100,000.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/pricing/ | QUOTE: \"Free | 100,000 per day\" | CLAIM: The pricing documentation confirms the free tier includes 100,000 requests per day.\n\n**CPU Time per Request:**\nThe Free plan allocates 10 milliseconds of CPU time per invocation. It is important to note that CPU time only measures the time spent executing code; waiting for network requests (such as `fetch()` calls) does not count toward this limit.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"CPU time per HTTP request | 10 ms\" | CLAIM: The CPU time limit per HTTP request on the Free plan is 10 milliseconds.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/pricing/ | QUOTE: \"Free | ... | 10 milliseconds of CPU time per invocation\" | CLAIM: The pricing documentation confirms the free tier includes 10 milliseconds of CPU time per invocation.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Waiting on network requests (such as `fetch()` calls, KV reads, or database queries) does not count toward CPU time.\" | CLAIM: Network wait times are excluded from the CPU time calculation.",
+  "usage": {
+   "prompt_tokens": 2390,
+   "completion_tokens": 448,
+   "total_tokens": 2838,
+   "cost": 0.00865035,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00165035,
+    "upstream_inference_prompt_cost": 0.00077675,
+    "upstream_inference_completions_cost": 0.0008736
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791589713-uScysbZISyvzEIOjMtdN"
+ },
+ "ts": "2026-10-09T23:48:43.930313+00:00"
+}

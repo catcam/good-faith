@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t03",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0025",
+ "prompt": "Research the officially documented limits of Cloudflare Workers on the free plan (requests per day, CPU time per request). Cite Cloudflare's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on Cloudflare's official documentation, here are the key limits for the Workers Free plan:\n\n**Requests per day:** The free plan allows 100,000 requests per day, resetting at midnight UTC.\n\n**CPU time per request:** The free plan allows 10 milliseconds of CPU time per HTTP request invocation.\n\nHere are the specific sources and quotes supporting these claims:\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.\" | CLAIM: Free plan has 100,000 requests per day limit\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"CPU time per HTTP request | Workers Free | Workers Paid | --- | --- | --- | 10 ms | 5 min (default: 30 seconds)\" | CLAIM: Free plan has 10ms CPU time limit per HTTP request\n\nSOURCE: https://developers.cloudflare.com/workers/platform/pricing/ | QUOTE: \"Free | 100,000 per day | No charge for duration | 10 milliseconds of CPU time per invocation\" | CLAIM: Free plan has 100,000 requests per day and 10ms CPU time per invocation\n\nSOURCE: https://www.cloudflare.com/plans/ | QUOTE: \"Requests | 100k / day | $0.30 / million requests | CPU Time | 10 ms / request | $0.02 / million CPU ms\" | CLAIM: Free plan has 100k requests per day and 10ms CPU time per request",
+  "usage": {
+   "prompt_tokens": 1998,
+   "completion_tokens": 342,
+   "total_tokens": 2340,
+   "cost": 0.00782236,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 17,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00082236,
+    "upstream_inference_prompt_cost": 0.00049746,
+    "upstream_inference_completions_cost": 0.0003249
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791589898-bb41bfj77R6qcX3o3GDR"
+ },
+ "ts": "2026-10-09T23:52:16.864143+00:00"
+}

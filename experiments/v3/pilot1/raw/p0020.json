@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t03",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0020",
+ "prompt": "Research the officially documented limits of Cloudflare Workers on the free plan (requests per day, CPU time per request). Cite Cloudflare's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "# Cloudflare Workers Free Plan Limits\n\nBased on Cloudflare's official documentation, here are the documented limits for the Workers Free plan:\n\n## Requests Per Day\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.\" | CLAIM: The Workers Free plan allows 100,000 requests per day.\n\n## CPU Time Per Request\n\nSOURCE: https://developers.cloudflare.com/workers/platform/pricing/ | QUOTE: \"10 milliseconds of CPU time per invocation\" | CLAIM: The Workers Free plan includes 10 milliseconds of CPU time per invocation/request.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"CPU time per HTTP request 10 ms\" | CLAIM: The Workers Free plan has a CPU time limit of 10 ms per HTTP request.\n\n## Additional Context\n\nThe limits documentation also clarifies what CPU time means and how it compares to real-world usage:\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"The average Worker uses approximately 2.2 ms per request. Heavier workloads that handle authentication, server-side rendering, or parse large payloads typically use 10-20 ms.\" | CLAIM: The 10 ms CPU time limit on the Free plan is sufficient for average workloads but may be tight for heavier operations.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Waiting on network requests (such as fetch() calls, KV reads, or database queries) does not count toward CPU time.\" | CLAIM: I/O wait time is excluded from the CPU time limit, meaning the 10 ms limit only applies to actual computation.",
+  "usage": {
+   "prompt_tokens": 1837,
+   "completion_tokens": 868,
+   "total_tokens": 2705,
+   "cost": 0.0127519,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0057519,
+    "upstream_inference_prompt_cost": 0.00231462,
+    "upstream_inference_completions_cost": 0.00343728
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 506,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "AtlasCloud",
+  "id": "gen-1791589724-QtimFYcNEGa9xQhHxySi"
+ },
+ "ts": "2026-10-09T23:49:04.249739+00:00"
+}

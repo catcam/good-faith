@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t14",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0051",
+ "prompt": "Find real data on how many people actively use the Omarchy Linux distribution or how many times it has been installed. Cite the sources and quote any figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, I can share data related to the number of times Omarchy has been downloaded and some related community metrics. However, the sources do not provide a clear figure for the number of people who *actively use* Omarchy, as download counts do not equate to long-term, active users.\n\nHere is the data found, presented in the requested format.\n\n**Explanation:** The sources report on download figures and community growth, which indicate significant interest and acquisition. A key point made by one source is that download numbers likely overstate the actual, retained user base, as people may reinstall, use the ISO in virtual machines, or try the system only briefly.\n\nSOURCE: https://omarchy.us/news/2026/08/100000-downloads-in-a-week/ | QUOTE: \"One hundred thousand downloads of the Omarchy ISO in the past week!\" | CLAIM: Omarchy had 100,000 ISO downloads in a seven-day period in August 2026.\n\nSOURCE: https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/ | QUOTE: \"Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!\" | CLAIM: The Quattro release of Omarchy reached 200,000 ISO downloads within 18 days of its release (by early September 2026).\n\nSOURCE: https://exa.ai/library/podcast/2fcpbmjslqh/episode/5vkwc1sslv7 | QUOTE: \"The adoption numbers are the reason Daniel noticed 1,165,980 ISO downloads in year one.\" | CLAIM: Omarchy had a cumulative total of approximately 1.16 million ISO downloads in its first year.\n\nSOURCE: https://stealwhatworks.com/blogs/news/why-omarchy-blowing-up | QUOTE: \"DHH estimated roughly 150,000 installations over an entire month.\" | CLAIM: In 2025, the estimated installation pace was around 150,000 per month.\n\nSOURCE: https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e | QUOTE: \"Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN\" | CLAIM: As of early September 2026, the download rate was nearly 10,000 ISOs per day.\n\nNO_SOURCE_FOUND: The number of people who actively use the Omarchy Linux distribution as their daily operating system (a retained user count).",
+  "usage": {
+   "prompt_tokens": 2644,
+   "completion_tokens": 537,
+   "total_tokens": 3181,
+   "cost": 0.00825088,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00125088,
+    "upstream_inference_prompt_cost": 0.00071388,
+    "upstream_inference_completions_cost": 0.000537
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791590471-usXFhdWSFkfqW6hjQbPP"
+ },
+ "ts": "2026-10-10T00:01:39.275375+00:00"
+}

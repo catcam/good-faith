@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t15",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0005",
+ "prompt": "Find real, published studies on whether people with ADHD benefit from using AI assistants for task initiation or executive function. Cite the studies and quote their findings.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my search, I found several published studies that investigate the use of AI-powered tools, including chatbots and digital therapeutics, for supporting individuals with ADHD. The findings are generally positive but preliminary, indicating that these tools show promise as adjunctive support, particularly for task management and psychoeducation.\n\nHere are the specific claims and their supporting sources:\n\nSOURCE: https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775 | QUOTE: \"Observer- and patient-rated ADHD symptoms were significantly reduced from pre- to post-intervention (observer-rated: mean difference \u22126.18, 95% CI \u22128.06 to \u22124.29; patient-rated: mean difference \u22122.82, 95% CI \u22124.98 to \u22120.67).\" | CLAIM: A chatbot delivering psychoeducation was effective in reducing core ADHD symptoms in adults.\n\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"The purpose of the application is to instill regularity in children's lives by repetitively performing daily tasks through interaction that reflects self-instruction strategy and ultimately promotes executive function development within ADHD children.\" | CLAIM: A conversational agent (chatbot) was designed specifically to help children with ADHD create regularity and develop executive function through self-instruction strategies for daily tasks.\n\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"P4 (Dad of a 7-year-old girl) elaborated that \"As we both work, we bring our kid out too when we leave the house for work. It was tough to wake her up in the morning, but she would get out of bed with no trouble, thanks to the agent. The moment the agent started the conversation, it woke her up right away, and it really worked.\"\" | CLAIM: A field test of a conversational agent showed it was effective in helping a child with task initiation (waking up and getting out of bed).\n\nSOURCE: https://link.springer.com/article/10.1007/s44217-026-01264-9 | QUOTE: \"Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.\" | CLAIM: A system combining Augmented Reality and Generative AI (AR+GenAI) provided support for task initiation, planning, and reducing cognitive load for university students with ADHD.\n\nSOURCE: https://link.springer.com/article/10.1007/s44217-026-01264-9 | QUOTE: \"The addition of GenAI-based personalisation to the AR environment was associated with further gains in observed engagement and task performance\" | CLAIM: The inclusion of Generative AI personalization in a tool was associated with improved task performance for students with ADHD.\n\nNO_SOURCE_FOUND: A published study specifically on the use of general-purpose AI assistants (e.g., ChatGPT, Siri, Google Assistant) for task initiation in ADHD.\nNO_SOURCE_FOUND: A large-scale, longitudinal randomized controlled trial on the long-term benefits of AI assistants for executive function in ADHD.\n\n**Explanation:**\nThe available research focuses on specialized AI applications\u2014chatbots for psychoeducation, digital therapeutics for executive function training, and custom-built conversational agents for routine management. These studies show that AI can be effectively designed to deliver therapeutic strategies and support task management for people with ADHD. However, the evidence base is still emerging, with most studies being small-scale feasibility or pilot projects. There is a notable gap in research concerning the use of mainstream, general-purpose AI assistants (like those found on smartphones) for this population. The findings from the custom-built tools are promising and suggest a potential benefit, but more rigorous and large-scale research is needed.",
+  "usage": {
+   "prompt_tokens": 2444,
+   "completion_tokens": 856,
+   "total_tokens": 3300,
+   "cost": 0.00842408,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00142408,
+    "upstream_inference_prompt_cost": 0.00061088,
+    "upstream_inference_completions_cost": 0.0008132
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791589356-D3HTtoTEe7Z8NEmBVC8I"
+ },
+ "ts": "2026-10-09T23:43:22.080093+00:00"
+}

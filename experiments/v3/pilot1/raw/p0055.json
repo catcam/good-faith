@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t07",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0055",
+ "prompt": "Research what the SQLite project officially documents about the maximum database size and maximum row size. Cite the official SQLite limits page and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official SQLite documentation, the maximum database size and maximum row size are defined by specific internal limits regarding page counts, page sizes, and blob/string lengths.\n\n**Maximum Database Size**\nThe maximum size of an SQLite database is determined by the maximum number of pages allowed in a database file multiplied by the maximum page size. The default configuration allows for a very large theoretical limit, though practical limits are often imposed by the underlying filesystem.\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 2.8e+14 bytes (281 terabytes, or 256 tebibytes, or 281474 gigabytes, or 262143 gibibytes).\" | CLAIM: The maximum theoretical database size is approximately 281 terabytes when using the maximum page size of 65536 bytes.\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"When used with the default page size of 4096 bytes, this gives a maximum database size of about 17.5 terabytes.\" | CLAIM: With the default page size of 4096 bytes, the maximum database size is approximately 17.5 terabytes.\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"The largest possible setting for SQLITE_MAX_PAGE_COUNT is 4294967294 (2 32 -2).\" | CLAIM: The maximum number of pages in a single database file is 4,294,967,294.\n\n**Maximum Row Size**\nThe maximum size of a single row is constrained by the maximum length of a string or BLOB, as SQLite encodes the complete content of each row as a single BLOB during certain processing stages.\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1 thousand million or 1,000,000,000).\" | CLAIM: The default maximum length for a string or BLOB, which effectively limits row size, is 1 billion bytes.\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"The current implementation will only support a string or BLOB length up to 2 31 -3 or 2147483645.\" | CLAIM: The hard upper limit for a string or BLOB length is 2,147,483,645 bytes.\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"During part of SQLite's INSERT and SELECT processing, the complete content of each row in the database is encoded as a single BLOB. So the SQLITE_MAX_LENGTH parameter also determines the maximum number of bytes in a row.\" | CLAIM: The SQLITE_MAX_LENGTH parameter directly determines the maximum number of bytes in a row.",
+  "usage": {
+   "prompt_tokens": 2890,
+   "completion_tokens": 655,
+   "total_tokens": 3545,
+   "cost": 0.0092165,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022165,
+    "upstream_inference_prompt_cost": 0.00093925,
+    "upstream_inference_completions_cost": 0.00127725
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590550-e0RWDjFYyLG9y9KSTgy3"
+ },
+ "ts": "2026-10-10T00:02:46.121688+00:00"
+}

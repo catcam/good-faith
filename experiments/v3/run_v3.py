@@ -24,8 +24,11 @@ TASKS = json.loads((HERE / "tasks_v3.json").read_text())
 
 def make_matrix(phase: str) -> list:
     conds, reps = (["c0"], 1) if phase == "pilot" else (["c0", "c2"], 5)
-    rows = [{"domain": "a", "task": t["id"], "model": m, "condition": c, "rep": r}
-            for m in MODELS for t in TASKS for c in conds for r in range(reps)]
+    ids = [t["id"] for t in TASKS]
+    if phase == "main":  # the 16 tasks chosen from the pilot by the rule in EXPERIMENT_V3.md
+        ids = json.loads((HERE / "selected_tasks.json").read_text())
+    rows = [{"domain": "a", "task": t, "model": m, "condition": c, "rep": r}
+            for m in MODELS for t in ids for c in conds for r in range(reps)]
     random.Random(f"good-faith-v3-{phase}").shuffle(rows)
     for i, r in enumerate(rows, 1):
         r["trial_id"] = f"{phase[0]}{i:04d}"

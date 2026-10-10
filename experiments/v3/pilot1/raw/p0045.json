@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t09",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0045",
+ "prompt": "Find real, published measurements of how much battery life a typical Bluetooth LE smart home sensor (e.g. Zigbee or BLE door/temperature sensors) actually achieves in the field, as opposed to manufacturer claims. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, there are no published field measurements for **Bluetooth LE (BLE)** smart home sensors' battery life; the available data focuses on Zigbee and Z-Wave protocols. However, there are specific real-world usage reports for Zigbee sensors (Aqara/Xiaomi) and controlled benchmark data comparing Zigbee, Z-Wave, and Wi-Fi.\n\nHere are the findings regarding real-world and benchmark battery life measurements:\n\n**Real-World Zigbee Sensor Measurements (Aqara/Xiaomi)**\n\nSOURCE: https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/ | QUOTE: \"Motion sensor 1 (RTCGQ01LM) : sits on the landing and of an evening, turns on nightlights for a period of time and then if no further motion detected after a couple of minutes, turns the lights back off. ... Used all day every day, several times a day. Battery life: 36%\" | CLAIM: An Aqara motion sensor used heavily (multiple times daily) retained 36% battery after two years.\n\nSOURCE: https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/ | QUOTE: \"Temperature/Humidity/Pressure Sensor (WSDCGQ11LM): ... Office- Battery life: 37% ... Bedroom- Battery life: 45%\" | CLAIM: Aqara environmental sensors in regular indoor locations retained between 37% and 45% battery after two years.\n\nSOURCE: https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/ | QUOTE: \"The two bathroom sensors, which trigger dozens of times a day given how often that space is used, are the closest to needing a swap at the twelve-month mark, currently reporting under 20% in the app.\" | CLAIM: Aqara motion sensors triggered dozens of times daily dropped below 20% battery life after one year.\n\nSOURCE: https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/ | QUOTE: \"The garage sensor, triggered only a handful of times a week, still shows over 70% remaining.\" | CLAIM: An Aqara motion sensor triggered only a few times per week retained over 70% battery life after one year.\n\n**Controlled Benchmark Measurements (Zigbee vs. Z-Wave vs. Wi-Fi)**\n\nSOURCE: https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart | QUOTE: \"Zigbee 3.0 battery life dropped by 18% (14.3 to 11.7 months) due to retransmissions... and Wi-Fi 6 battery life dropped by 12% (4.3 to 3.8 months) due to Wi-Fi congestion causing slower associations.\" | CLAIM: In a controlled test with interference, Zigbee 3.0 door sensors reporting every 30 seconds lasted 11.7 months, while Wi-Fi 6 sensors lasted 3.8 months.\n\nSOURCE: https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart | QUOTE: \"In industrial environments with heavy 2.4GHz interference (e.g., factories with 50+ Wi-Fi devices), Zigbee battery life dropped to 8.1 months, while Z-Wave remained at 17.9 months.\" | CLAIM: Under heavy interference, Zigbee sensor battery life (reporting every 30 seconds) decreased to 8.1 months, whereas Z-Wave was unaffected.\n\n**Manufacturer Claims vs. Real-World Context**\n\nSOURCE: https://smarthomescene.com/reviews/best-selling-zigbee-temperature-sensors-tested/ | QUOTE: \"However, outside of this test, I\u2019ve been running first-gen Aqara sensors in my own home for years without a battery change. They are among the most efficient Zigbee temperature and humidity sensors out there, even though they run on a single CR2032 battery.\" | CLAIM: Real-world anecdotal evidence suggests first-generation Aqara temperature sensors can last multiple years on a single CR2032 battery, exceeding typical manufacturer claims.\n\nSOURCE: https://www.cnx-software.com/2024/04/29/review-sonoff-snzb-06p-zigbee-human-presence-snzb-04pdoor-window-sensor/ | QUOTE: \"SONOFF claims up to 5 years, but we know it really depends on usage.\" | CLAIM: Manufacturer claims for newer Zigbee sensors (like the Sonoff SNZB-04P) suggest up to 5 years of battery life, though real-world performance varies by usage.\n\nNO_SOURCE_FOUND: Real, published field measurements of battery life specifically for Bluetooth LE (BLE) smart home sensors.",
+  "usage": {
+   "prompt_tokens": 3877,
+   "completion_tokens": 1078,
+   "total_tokens": 4955,
+   "cost": 0.010362125,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003362125,
+    "upstream_inference_prompt_cost": 0.001260025,
+    "upstream_inference_completions_cost": 0.0021021
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590403-f2FWBlGhVJBuWZMsPpHm"
+ },
+ "ts": "2026-10-10T00:00:25.444840+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t06",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0023",
+ "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official Debian documentation, here is what the Debian project states about the support period of a stable release, including LTS.\n\nThe standard support period for a Debian stable release consists of approximately three years of full security support from the Debian Security Team, followed by two years of Long Term Support (LTS) from the Debian LTS team, resulting in a total supported lifetime of five years.\n\nSOURCE: https://www.debian.org/releases/stable/ | QUOTE: \"The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.\" | CLAIM: A stable release's lifecycle is five years total: three years of full support followed by two years of LTS.\n\nSOURCE: https://wiki.debian.org/DebianReleases | QUOTE: \"has (from release to the end of security updates) a total lifetime of 5 years (the first three years of full support followed by two years of Long Term Support (LTS)).\" | CLAIM: Confirms the total 5-year lifecycle, broken into 3 years of full support and 2 years of LTS.\n\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years.\" | CLAIM: The explicit purpose of LTS is to extend the support period to a minimum of five years.\n\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian LTS is not handled by the Debian Security and Release teams. Thus the Debian LTS team takes over security maintenance of the various releases once the Debian Security team stops its work.\" | CLAIM: LTS support is provided by a separate team after the main Debian Security Team ends its support period.\n\nThe table from the Debian Releases page provides specific dates for current and past releases, illustrating this lifecycle pattern. For example, Debian 12 (Bookworm) had a release date of 2023-06-10, an End of Life (end of standard security support) of 2026-07-11, and an End of LTS of 2028-06-30.",
+  "usage": {
+   "prompt_tokens": 1738,
+   "completion_tokens": 501,
+   "total_tokens": 2239,
+   "cost": 0.00791033,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 1,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00091033,
+    "upstream_inference_prompt_cost": 0.00043438,
+    "upstream_inference_completions_cost": 0.00047595
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791589833-0U8sKnu3k58Nzqyd8xAo"
+ },
+ "ts": "2026-10-09T23:51:29.413711+00:00"
+}

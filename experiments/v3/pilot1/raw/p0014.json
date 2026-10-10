@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t07",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0014",
+ "prompt": "Research what the SQLite project officially documents about the maximum database size and maximum row size. Cite the official SQLite limits page and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on my research of the official SQLite documentation, here are the findings regarding maximum database size and maximum row size:\n\n**Maximum Database Size:**\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"The maximum size of a database file is 4294967294 pages. At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 2.8e+14 bytes (281 terabytes, or 256 tebibytes, or 281474 gigabytes, or 262143 gibibytes).\" | CLAIM: The maximum theoretical database size is approximately 281 terabytes\n\n**Maximum Row Size:**\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1 thousand million or 1,000,000,000).\" | CLAIM: The default maximum row size is 1,000,000,000 bytes (1GB)\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"The current implementation will only support a string or BLOB length up to 2^31 -3 or 2147483645.\" | CLAIM: The absolute hard limit for row size is 2,147,483,645 bytes\n\nSOURCE: https://sqlite.org/limits.html | QUOTE: \"During part of SQLite's INSERT and SELECT processing, the complete content of each row in the database is encoded as a single BLOB. So the SQLITE_MAX_LENGTH parameter also determines the maximum number of bytes in a row.\" | CLAIM: The SQLITE_MAX_LENGTH parameter defines the maximum row size\n\nThese limits are defined in the official SQLite documentation, which notes that the theoretical maximum database size of 281 terabytes is largely academic since most systems will hit filesystem or hardware limits long before reaching SQLite's internal limits. The row size limit is primarily constrained by the maximum string/BLOB length setting, which can be customized at compile-time or run-time.",
+  "usage": {
+   "prompt_tokens": 2701,
+   "completion_tokens": 441,
+   "total_tokens": 3142,
+   "cost": 0.0092132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022132,
+    "upstream_inference_prompt_cost": 0.00148555,
+    "upstream_inference_completions_cost": 0.00072765
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "CoreWeave",
+  "id": "gen-1791589625-JKIobo1kOCcAG2DuBuHz"
+ },
+ "ts": "2026-10-09T23:47:13.716214+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t12",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0028",
+ "prompt": "Find real research measuring whether fall-detection devices or ambient sensors reduce hospital admissions or time-on-floor for elderly people living alone. Cite the studies and quote their main results.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results provided, here is the evidence regarding fall-detection devices and ambient sensors for elderly populations, with particular attention to hospital admissions and time-on-floor outcomes.\n\n**Key distinction identified:** The strongest evidence for reducing time-on-floor and hospital admissions comes from institutional settings (memory care facilities and care homes). For community-dwelling adults living alone, the evidence shows neutral or mixed results regarding hospitalization reduction.\n\n---\n\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).\" | CLAIM: In memory care facilities, real-time video monitoring with AI fall detection eliminated long lies (>1 hour) compared to baseline periods.\n\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"During the RTN period, 76.6% (108/141) of fallers received human staff assistance in less than 10 minutes, and 55.3% (78/141) of them spent less than 10 minutes on the ground.\" | CLAIM: The SafelyYou Guardian system enabled rapid staff response, with over three-quarters of fallers receiving assistance within 10 minutes.\n\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN periods.\" | CLAIM: Real-time notification significantly reduced both time until staff assistance and total time on ground for dementia patients in residential care.\n\nSOURCE: https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf | QUOTE: \"Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.\" | CLAIM: The Nobi ambient AI fall detection system reduced hospitalizations via ambulance transport by approximately one-quarter in care home settings.\n\nSOURCE: https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf | QUOTE: \"There was a significant improvement in the care home staff response times to fall occurrences from an average of 11 minutes before the Nobi device was used to an average of 2.99 minutes after this device was implemented.\" | CLAIM: The ambient sensor technology reduced response times by approximately 8 minutes, effectively reducing long lies.\n\nSOURCE: https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf | QUOTE: \"The technology reduces the likelihood of experiencing a fall in a day by about 32%.\" | CLAIM: The device not only improved response times but also contributed to fall prevention in care home residents.\n\nSOURCE: https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/ | QUOTE: \"no fall related hospital admissions recorded in the last 12-months by the properties who have taken part so far\" | CLAIM: Implementation of 4D imaging fall detection technology in Essex care facilities eliminated fall-related hospital admissions over a 12-month period.\n\nSOURCE: https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/ | QUOTE: \"there have also been no incidents of residents being grounded following a fall for an extended period of time \u2013 commonly known as a 'long lie'.\" | CLAIM: The technology successfully eliminated prolonged time-on-floor incidents in participating care homes.\n\nSOURCE: https://link.springer.com/article/10.1186/s12877-025-05856-2 | QUOTE: \"The intervention had no effect on hospitalisations and emergency contacts.\" | CLAIM: For community-dwelling adults aged \u226575 living alone, a comprehensive intervention (motion sensors, fall detection necklace, and social service) failed to reduce hospitalizations compared to matched controls.\n\nSOURCE: https://link.springer.com/article/10.1186/s12877-025-05856-2 | QUOTE: \"participants made also little use of the intervention\" | CLAIM: The lack of efficacy in the community-dwelling population may be attributed to low adherence or engagement with the fall-detection technology.\n\nNO_SOURCE_FOUND: Randomized controlled trials or longitudinal studies specifically measuring time-on-floor reduction for community-dwelling elderly people living alone in private residences (non-institutional settings). The available evidence for reducing time-on-floor comes exclusively from care home and memory care facility populations with 24-hour staff presence.",
+  "usage": {
+   "prompt_tokens": 2847,
+   "completion_tokens": 1028,
+   "total_tokens": 3875,
+   "cost": 0.02326948,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01626948,
+    "upstream_inference_prompt_cost": 0.00239148,
+    "upstream_inference_completions_cost": 0.013878
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Sail Research",
+  "id": "gen-1791589957-JPRZ2ASxiNvMCD2Hbxum"
+ },
+ "ts": "2026-10-09T23:52:45.626666+00:00"
+}

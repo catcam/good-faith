@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t04",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0050",
+ "prompt": "Find what the Node.js project officially says about the lifecycle of its LTS releases (how long Active LTS and Maintenance LTS last). Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official Node.js documentation, the lifecycle of Long-Term Support (LTS) releases consists of two distinct phases: Active LTS and Maintenance LTS.\n\nFor release lines up to and including Node.js 26, every even-numbered major version becomes an LTS release. These releases receive **12 months** of Active LTS support, followed by **18 months** of Maintenance LTS support.\n\nSOURCE: https://github.com/nodejs/node/blob/main/README.md | QUOTE: \"LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_.\" | CLAIM: Official Node.js documentation states that LTS releases have a 12-month Active LTS period followed by an 18-month Maintenance period.\n\nIt is important to note that the Node.js project has announced an evolving release schedule. For releases starting with Node.js 27 (Alpha beginning October 2026), **every** major release will become LTS, and the support model changes to a single 30-month LTS phase, totaling 36 months of support from the initial Current release.\n\nSOURCE: https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule | QUOTE: \"Every release becomes LTS. ... LTS | 30 months | Long-term support with security fixes\" | CLAIM: Under the new schedule starting with Node.js 27, every release becomes LTS with a 30-month support window.\n\nSOURCE: https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule | QUOTE: \"Total support: 36 months from first Current release to End of Life (EOL).\" | CLAIM: The total support duration for the new release model is 36 months.\n\nFor the current traditional schedule (applicable to versions like 22.x, 24.x, and 26.x), the breakdown remains 12 months Active and 18 months Maintenance.\n\nSOURCE: https://github.com/nodejs/release/blob/main/README.md | QUOTE: \"Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage. Following those 12 months of active support, the major version will transition into \"maintenance\" mode for 18 months.\" | CLAIM: The release repository confirms the 12-month Active and 18-month Maintenance structure for even-numbered LTS versions under the current model.",
+  "usage": {
+   "prompt_tokens": 2581,
+   "completion_tokens": 516,
+   "total_tokens": 3097,
+   "cost": 0.008845025,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001845025,
+    "upstream_inference_prompt_cost": 0.000838825,
+    "upstream_inference_completions_cost": 0.0010062
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590459-hYMBKgEocSrGgWTU2pNh"
+ },
+ "ts": "2026-10-10T00:01:10.462592+00:00"
+}

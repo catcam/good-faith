@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t14",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0021",
+ "prompt": "Find real data on how many people actively use the Omarchy Linux distribution or how many times it has been installed. Cite the sources and quote any figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, there is no public data on the actual number of active daily users or unique installations of Omarchy; the available figures only measure ISO downloads, which the sources explicitly state overstate the retained user base. \n\nSOURCE: https://stealwhatworks.com/blogs/news/why-omarchy-blowing-up | QUOTE: \"Omarchy currently does not publish a clean daily-active-user or retained-install figure that would let us measure this funnel properly.\" | CLAIM: Omarchy does not publicly release data on how many people actively use the OS or how many unique installations exist.\n\nSOURCE: https://omarchy.us/news/2026/08/100000-downloads-in-a-week/ | QUOTE: \"One hundred thousand downloads of the Omarchy ISO in the past week!\" | CLAIM: Omarchy recorded 100,000 ISO downloads in a single week.\n\nSOURCE: https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/ | QUOTE: \"Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!\" | CLAIM: The Omarchy Quattro release reached 200,000 ISO downloads in 18 days.\n\nSOURCE: https://exa.ai/library/podcast/2fcpbmjslqh/episode/5vkwc1sslv7 | QUOTE: \"The adoption numbers are the reason Daniel noticed 1,165,980 ISO downloads in year one.\" | CLAIM: Omarchy reached over 1.1 million total ISO downloads in its first year.\n\nSOURCE: https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e | QUOTE: \"Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN, and many images are being used to create multiple Omarchy devices.\" | CLAIM: Omarchy sees roughly 10,000 ISO downloads per day, though a single image may be used for multiple installations.\n\nNO_SOURCE_FOUND: The exact number of unique installations or actively retained daily users of Omarchy.",
+  "usage": {
+   "prompt_tokens": 2608,
+   "completion_tokens": 2442,
+   "total_tokens": 5050,
+   "cost": 0.02134384,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01434384,
+    "upstream_inference_prompt_cost": 0.00359904,
+    "upstream_inference_completions_cost": 0.0107448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Novita",
+  "id": "gen-1791589744-Zg3YrzQVY6aIRWasba68"
+ },
+ "ts": "2026-10-09T23:50:14.283344+00:00"
+}

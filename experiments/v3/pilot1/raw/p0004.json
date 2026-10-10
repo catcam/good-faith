@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t10",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0004",
+ "prompt": "Find real studies or surveys reporting what share of professional developers use AI coding assistants daily in 2025 or 2026. Cite the sources and quote the percentages they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "# Research on AI Coding Assistant Daily Usage Among Professional Developers\n\nI found several relevant studies and surveys reporting on daily AI tool usage among professional developers in 2025 and 2026.\n\n## Findings\n\nSOURCE: https://survey.stackoverflow.co/2026/ai | QUOTE: \"The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.\" | CLAIM: 73% of respondents use coding assistants and agents daily in 2026.\n\nSOURCE: https://survey.stackoverflow.co/2026/ai | QUOTE: \"Coding assistants and agents have pulled ahead as the dominant use case for AI (66%), outpacing even general-purpose LLM-powered chatbots (63%).\" | CLAIM: 66% of respondents use coding assistants and agents as their primary AI use case in 2026.\n\nSOURCE: https://www.sonarsource.com/state-of-code-developer-survey-report.pdf | QUOTE: \"72% of developers who have tried AI use it every day\" | CLAIM: 72% of developers who have tried AI coding tools use them daily, based on a survey of 1,149 professional developers conducted in October 2025.\n\nSOURCE: https://www.sonarsource.com/state-of-code-developer-survey-report.pdf | QUOTE: \"AI-assisted coding is officially a standard part of the developer workflow. 72% of developers who have tried AI coding tools now use them every day.\" | CLAIM: Confirms the 72% daily usage figure among developers who have tried AI coding tools, from the 2026 State of Code Developer Survey.\n\nSOURCE: https://survey.stackoverflow.co/2025/ | QUOTE: \"51% of professional developers use AI tools daily.\" | CLAIM: 51% of professional developers use AI tools daily in 2025, based on Stack Overflow's survey of over 49,000 respondents.\n\nSOURCE: https://survey.stackoverflow.co/2026/ai | QUOTE: \"31% of daily AI users use it for 4+ hours/day\" | CLAIM: Among daily AI users in 2026, 31% use AI tools for four or more hours per day.\n\n## Additional Context\n\nThe data shows a clear upward trend: from 51% of professional developers using AI tools daily in 2025 ([Stack Overflow 2025](https://survey.stackoverflow.co/2025/)), to 72% of developers who have tried AI using it daily ([SonarSource 2026 State of Code](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)), to 73% of all respondents using coding assistants daily in 2026 ([Stack Overflow 2026](https://survey.stackoverflow.co/2026/ai)).\n\nNote the important distinction between these figures: the Stack Overflow 2025 figure (51%) covers all professional developers, while the SonarSource figure (72%) is specifically among developers \"who have tried AI coding tools,\" which is a narrower base.",
+  "usage": {
+   "prompt_tokens": 2069,
+   "completion_tokens": 634,
+   "total_tokens": 2703,
+   "cost": 0.02269631,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.01569631,
+    "upstream_inference_prompt_cost": 0.00618631,
+    "upstream_inference_completions_cost": 0.00951
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791589350-Ku1XVHmVzh9lw7DLyDm1"
+ },
+ "ts": "2026-10-09T23:42:36.491844+00:00"
+}

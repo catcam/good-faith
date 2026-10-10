@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t04",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0063",
+ "prompt": "Find what the Node.js project officially says about the lifecycle of its LTS releases (how long Active LTS and Maintenance LTS last). Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here\u2019s the current official policy, with the transition note in case you\u2019re comparing older release lines:\n\n- **How long Active LTS lasts:** 12 months.\n- **How long Maintenance LTS lasts:** 18 months.\n\nI also found an official page reflecting the older \u201ceven-numbered only\u201d model that still appears in some release documentation; that applies to release lines up to Node.js 26, while the project\u2019s newer announcement says every release becomes LTS going forward.\n\nSOURCE: https://github.com/nodejs/release/blob/main/README.md | QUOTE: \"Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage.\" | CLAIM: Active LTS lasts 12 months for an even-numbered LTS line.\nSOURCE: https://github.com/nodejs/release/blob/main/README.md | QUOTE: \"Following those 12 months of active support, the major version will transition into \\\"maintenance\\\" mode for 18 months.\" | CLAIM: Maintenance LTS lasts 18 months after Active LTS ends.\nSOURCE: https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule | QUOTE: \"Every release becomes LTS.\" | CLAIM: The newer policy changes which releases become LTS, not just the even-numbered ones.\nSOURCE: https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule | QUOTE: \"LTS | 30 months | Long-term support with security fixes\" | CLAIM: Total LTS support is 30 months.\nSOURCE: https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule | QUOTE: \"Total support: 36 months from first Current release to End of Life (EOL).\" | CLAIM: The full lifecycle from first Current release to EOL is 36 months.\nSOURCE: https://github.com/nodejs/release/blob/main/README.md | QUOTE: \"Odd-numbered release lines are not promoted to LTS - they will not go through the 'Active LTS' or 'Maintenance' phases.\" | CLAIM: Under the older schedule documented here, only even-numbered releases got Active LTS and Maintenance LTS.",
+  "usage": {
+   "prompt_tokens": 2316,
+   "completion_tokens": 453,
+   "total_tokens": 2769,
+   "cost": 0.01631923,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00931923,
+    "upstream_inference_prompt_cost": 0.00354348,
+    "upstream_inference_completions_cost": 0.00577575
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Makora",
+  "id": "gen-1791590689-Tm8PUF8YPfTxDUIb3fXl"
+ },
+ "ts": "2026-10-10T00:05:00.474078+00:00"
+}

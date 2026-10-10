@@ -59,11 +59,40 @@ not mean "no effect".
 
 ## Tasks
 
-16 new research questions, in the style of v2's tasks:
-- each has a checkable answer on public web pages,
-- about half have a well-documented answer, and half have a thin or contested evidence base, where inventing a quote is tempting.
+### Pilot 1 (2026-10-10): the first 16 tasks were too easy
 
-Tasks are written and committed before the pilot.
+The first 16 tasks (`experiments/v3/pilot1/`) ran once each per model under C0: 64 trials, $0.88.
+- **Real failures were rare.** There were 3 unsupported quotes in 64 responses (0.05 per response), against 0.94 under C0 in v2. With a baseline that low, no sample size we can afford can show a reduction.
+- **Scorer check.** Claude read every page behind a failed claim:
+  - All 3 `unsupported` claims are correct. One is the Node.js README's old LTS wording, one is a paraphrase of Sam Altman's post presented as a quote, and one gives "0.30" where Epoch's page says "0.3".
+  - **0 false unsupported.**
+- **Task t16 was broken.** All 14 `dead_url` claims cite `github.com/Aircoookie/WLED/issues/...`, which now returns 404 because the repo moved to `wled/WLED`. The quotes are real. The search index served a dead URL, so this measures the index, not the model. t16 would have been replaced in any case.
+
+### Why v2's effect needs this kind of task
+
+Per task in v2 (C0 → C2 failed per response):
+- a8, vendor model limits: 3.75 → 0.38
+- a5, Kalshi figures: 0.88 → 0.12
+- a7, maintainer posts, went the other way: 0.50 → 1.38
+- the other tasks were near 0
+
+So v2's effect is concentrated in a few tasks. Responses are not independent, so **the power table above overstates power**. Failures happen where the model "knows" an official number from training that has since changed. That is where it quotes from memory instead of from the page.
+
+### Pilot 2: 24 candidate tasks, keep 16
+
+24 new candidate tasks, all about current official limits, prices and support periods that change often (`experiments/v3/tasks_v3.json`). They run once per model under C0 only, which is 96 trials. The pilot cannot preview the effect, because C2 is never run.
+
+**Selection rule, committed before pilot 2 runs.** Keep 16 tasks:
+1. Drop any task where more than half of the claims are `unverifiable`.
+2. Rank the rest by mean C0 failed claims per response, highest first.
+3. Break ties by fewer `unverifiable` claims, then by task id.
+4. Take the top 16, and write them to `experiments/v3/selected_tasks.json`.
+
+Picking tasks on pilot C0 data does not favour either condition: the main run collects fresh C0 and C2 responses on the same tasks.
+
+### Analysis change under consideration (decided at the freeze)
+
+Because failures cluster by task, the stratified permutation test (model × task) may become the primary test, with Mann–Whitney as secondary. This is decided and frozen before the main run, without looking at any C2 data.
 
 ## Pilot (excluded from analysis)
 

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t04",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0037",
+ "prompt": "Find what the Node.js project officially says about the lifecycle of its LTS releases (how long Active LTS and Maintenance LTS last). Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Node.js project recently announced an update to its release schedule, which changes the lifecycle duration for LTS releases starting with Node.js 27. Prior to this change, the LTS lifecycle consisted of an \"Active LTS\" phase followed by a \"Maintenance\" phase.\n\nUnder the **current/older schedule** (which applies to release lines up to and including Node.js 26), Active LTS lasts for 12 months and Maintenance lasts for 18 months. \n\nUnder the **new schedule** (starting with Node.js 27), the distinct \"Active\" and \"Maintenance\" phases are combined into a single 30-month \"LTS\" phase.\n\nHere are the official citations and quotes for these claims:\n\nSOURCE: https://github.com/nodejs/release/blob/main/README.md | QUOTE: \"Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage. Following those 12 months of active support, the major version will transition into \"maintenance\" mode for 18 months.\" | CLAIM: Under the previous release schedule (up to Node.js 26), Active LTS lasts 12 months and Maintenance lasts 18 months.\nSOURCE: https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule | QUOTE: \"Every release becomes LTS. ... LTS 30 months Long-term support with security fixes\" | CLAIM: Under the new release schedule (starting with Node.js 27), the total LTS phase lasts 30 months.\n\nNO_SOURCE_FOUND: An official quote explicitly stating the exact durations of the individual \"Active LTS\" and \"Maintenance\" sub-phases under the *new* release schedule, should they still exist as distinct phases.",
+  "usage": {
+   "prompt_tokens": 2277,
+   "completion_tokens": 346,
+   "total_tokens": 2623,
+   "cost": 0.01100367,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00400367,
+    "upstream_inference_prompt_cost": 0.00270963,
+    "upstream_inference_completions_cost": 0.00129404
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791590136-Oxe3VTSLmdCVo1QdIQxC"
+ },
+ "ts": "2026-10-09T23:55:51.733688+00:00"
+}

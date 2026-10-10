@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t10",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0049",
+ "prompt": "Find real studies or surveys reporting what share of professional developers use AI coding assistants daily in 2025 or 2026. Cite the sources and quote the percentages they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results, several major surveys conducted in late 2025 and early 2026 report on the daily usage of AI coding assistants among professional developers. The data indicates that daily usage has become the norm for a majority or near-majority of professional developers, with figures ranging from 51% to 73% depending on the specific survey population and definition of \"daily user.\"\n\nThe JetBrains Developer Ecosystem Survey (January 2026) reports that **51%** of professional developers use AI tools daily. Similarly, data cited by ToolixLab from the Stack Overflow Developer Survey indicates that **51%** of professional developers use AI tools daily. The State of Code Developer Survey (fieldwork October 2025) found that **72%** of developers who have tried AI coding tools use them every day. Finally, the Stack Overflow Developer Survey 2026 highlights that among those who use AI, **73%** are daily users, with a significant portion (31% of daily users) spending over four hours per day on these tools.\n\nSOURCE: https://baeseokjae.github.io/posts/ai-developer-tools-statistics-2026/ | QUOTE: \"Within three years, near-universal adoption arrived \u2014 but the nature of that adoption has shifted from experimental to workflow-critical. Daily usage among professional developers sits at 51%, meaning more than half the global developer workforce interacts with an AI coding tool every single working day.\" | CLAIM: The JetBrains January 2026 survey reports that 51% of professional developers use AI tools daily.\n\nSOURCE: https://toolixlab.com/blog/ai-coding-statistics-2026 | QUOTE: \"47.1% of all developers \u2014 and 51% of professional developers \u2014 use them daily.\" | CLAIM: Data attributed to the Stack Overflow Developer Survey indicates that 51% of professional developers use AI tools daily.\n\nSOURCE: https://www.sonarsource.com/state-of-code-developer-survey-report.pdf | QUOTE: \"72% of developers who have tried AI coding tools now use them every day.\" | CLAIM: The 2026 State of Code Developer Survey reports that 72% of developers who have tried AI coding tools use them daily.\n\nSOURCE: https://survey.stackoverflow.co/2026/ai | QUOTE: \"The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.\" | CLAIM: The Stack Overflow Developer Survey 2026 reports that 73% of respondents use coding assistants and agents daily.",
+  "usage": {
+   "prompt_tokens": 2910,
+   "completion_tokens": 562,
+   "total_tokens": 3472,
+   "cost": 0.00904165,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00204165,
+    "upstream_inference_prompt_cost": 0.00094575,
+    "upstream_inference_completions_cost": 0.0010959
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590445-glyQ4QVUgE9qPgRlLQTd"
+ },
+ "ts": "2026-10-10T00:00:58.774329+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t12",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0041",
+ "prompt": "Find real research measuring whether fall-detection devices or ambient sensors reduce hospital admissions or time-on-floor for elderly people living alone. Cite the studies and quote their main results.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, there is a distinction in outcomes between studies focusing on elderly people living independently in the community versus those in care settings. While one major study on community-dwelling seniors found no significant reduction in hospitalizations, multiple studies on ambient AI and video-monitoring technologies in care or supported living environments demonstrated significant reductions in \"time on floor\" (long lies) and hospital admissions.\n\nHere are the specific findings formatted as requested:\n\nSOURCE: https://link.springer.com/article/10.1186/s12877-025-05856-2 | QUOTE: \"Our results revealed similar rates of emergency contacts (IRR = 0.89 [95%-CI:0.62\u20131.28]; p = .523) and hospitalisations (IRR = 1.23 [95%-CI:0.95\u20131.60]; p = .122) with similar durations (M Diff = -2.79 days [95%-CI:-7.63\u20132.06]; p = .260) and similar healthcare costs (-7%, [95%-CI: -54%-40%], p = .774) in the IG compared to matched controls (intention to treat approach).\" | CLAIM: A matched-control intervention study of adults aged \u226575 living at home found that fall sensors and social services did not significantly reduce hospitalizations or emergency contacts compared to a control group.\n\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN periods.\" | CLAIM: An observational study of the SafelyYou Guardian system in memory care facilities found that real-time notifications reduced the time until staff assistance by 28.3 minutes and time on the ground by 29.6 minutes.\n\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).\" | CLAIM: The same study on the SafelyYou Guardian system showed that incidents of elderly residents lying on the floor for more than one hour were completely eliminated during the real-time notification period.\n\nSOURCE: https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf | QUOTE: \"Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.\" | CLAIM: An evaluation of the Nobi ambient AI fall detection device in care homes found a statistically significant 24% reduction in ambulance calls that resulted in hospital transport.\n\nSOURCE: https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/ | QUOTE: \"The Council has already seen positive results from the early stages of the project, with no fall related hospital admissions recorded in the last 12-months by the properties who have taken part so far.\" | CLAIM: A large installation of 4D imaging fall detection technology in Essex County Council properties resulted in zero fall-related hospital admissions over a 12-month period.\n\nSOURCE: https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/ | QUOTE: \"And there have also been no incidents of residents being grounded following a fall for an extended period of time \u2013 commonly known as a \u2018long lie\u2019.\" | CLAIM: The Essex County Council project also reported zero incidents of \"long lies\" (extended time on the floor after a fall) among participating residents.\n\nNO_SOURCE_FOUND: Peer-reviewed research specifically measuring the reduction of hospital admissions or time-on-floor for elderly people living entirely alone (independent community dwelling) using ambient sensors, as the primary study found for this demographic showed no significant effect on hospitalizations.",
+  "usage": {
+   "prompt_tokens": 3053,
+   "completion_tokens": 918,
+   "total_tokens": 3971,
+   "cost": 0.009782325,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.002782325,
+    "upstream_inference_prompt_cost": 0.000992225,
+    "upstream_inference_completions_cost": 0.0017901
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590261-BQiwM3JS01H6BhY7ZM11"
+ },
+ "ts": "2026-10-09T23:58:00.735999+00:00"
+}

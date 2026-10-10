@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t06",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0046",
+ "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the search results, here are the official Debian statements regarding the support period of stable releases, including Long Term Support (LTS):\n\nSOURCE: https://www.debian.org/releases/ | QUOTE: \"The Debian release life cycle encompasses five years: the first three years of full support followed by two years of Long Term Support (LTS).\" | CLAIM: Debian officially states that a stable release receives five years of total support, structured as three years of full support plus two years of LTS.\n\nSOURCE: https://www.debian.org/releases/stable/ | QUOTE: \"The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.\" | CLAIM: This five-year lifecycle (three years full support + two years LTS) applies to specific stable releases, exemplified here by Debian 13 \"trixie\".\n\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years.\" | CLAIM: The LTS project officially exists to extend the security support lifetime of stable releases to a minimum of five years total.\n\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian LTS is not handled by the Debian Security and Release teams. Thus the Debian LTS team takes over security maintenance of the various releases once the Debian Security team stops its work.\" | CLAIM: The LTS period is managed separately from the initial full support period, with a dedicated LTS team taking over after the standard security support ends.",
+  "usage": {
+   "prompt_tokens": 1684,
+   "completion_tokens": 363,
+   "total_tokens": 2047,
+   "cost": 0.0132477,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0062477,
+    "upstream_inference_prompt_cost": 0.0013472,
+    "upstream_inference_completions_cost": 0.0049005
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791590427-ksWecXoLyf1TPV9fP5DT"
+ },
+ "ts": "2026-10-10T00:00:31.193051+00:00"
+}

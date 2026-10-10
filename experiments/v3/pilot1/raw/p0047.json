@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t14",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0047",
+ "prompt": "Find real data on how many people actively use the Omarchy Linux distribution or how many times it has been installed. Cite the sources and quote any figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "After digging into the public reports, the clearest picture is that Omarchy is seeing massive download and installation activity, though \"active use\" is harder to pin down than raw acquisition.\n\n**Key takeaways from the data:**\n- **Downloads are exploding**: Omarchy hit 100,000 ISO downloads in a single week in August 2026, followed by 200,000 cumulative downloads of the \"Quattro\" release just 18 days later. By September, daily downloads were approaching 10,000.\n- **Adoption signals**: The password manager 1Password ranks Omarchy as their #2 Linux distro during the week and #1 on weekends, suggesting significant real-world usage beyond just downloads.\n- **Active use vs. downloads**: While exact \"active daily user\" counts aren't published, the founder estimates an initial goal of capturing 20% of the PC market, and notes that single ISOs are being used to create multiple devices.\n\nSOURCE: https://omarchy.us/news/2026/08/100000-downloads-in-a-week/ | QUOTE: \"One hundred thousand downloads of the Omarchy ISO in the past week!\" | CLAIM: Omarchy achieved 100,000 ISO downloads in a single week (August 2026).\n\nSOURCE: https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/ | QUOTE: \"Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!\" | CLAIM: The Quattro release reached 200,000 cumulative ISO downloads in 18 days.\n\nSOURCE: https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/ | QUOTE: \"On average, someone has pulled a fresh Omarchy every 8 seconds since Quattro shipped.\" | CLAIM: The distribution is being downloaded approximately every 8 seconds, indicating high installation velocity.\n\nSOURCE: https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/ | QUOTE: \"At the peak, we shipped 1,165 ISOs in a single hour. One every 3 seconds!\" | CLAIM: Peak download activity reached 1,165 installations per hour.\n\nSOURCE: https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/ | QUOTE: \"1Password knows which Linux distros their users run, and during the week, Omarchy is now their #2 distro, ahead of Fedora. On the weekends? We\u2019re #1!\" | CLAIM: Third-party telemetry from 1Password indicates Omarchy is actively used by a large user base, ranking #1 or #2 among Linux distributions.\n\nSOURCE: https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e | QUOTE: \"DHH stated that he has been retrieving Cloudflare data through the cf cli and pushing download statistics notifications daily on a scheduled basis via the Omarchy built-in proxy.\" | CLAIM: Download statistics are being tracked and verified through Cloudflare CDN data.\n\nSOURCE: https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e | QUOTE: \"According to DHH, the Linux distribution Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN, and many images are being used to create multiple Omarchy devices.\" | CLAIM: Daily downloads are approaching 10,000, and the actual installed base may be higher than download counts suggest due to multiple device installations from single ISOs.\n\nSOURCE: https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e | QUOTE: \"In interactions with users, he said that Omarchy's initial goal is to capture about 20% of the personal computer market.\" | CLAIM: The founder is targeting 20% PC market share, indicating ambitions for mass adoption beyond current download numbers.\n\nNO_SOURCE_FOUND: The specific number of active daily/monthly users (distinct from installation counts)",
+  "usage": {
+   "prompt_tokens": 2629,
+   "completion_tokens": 874,
+   "total_tokens": 3503,
+   "cost": 0.0209022,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0139022,
+    "upstream_inference_prompt_cost": 0.0021032,
+    "upstream_inference_completions_cost": 0.011799
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791590431-EE2KGNqVhdZ7OVLSmz0w"
+ },
+ "ts": "2026-10-10T00:00:40.440260+00:00"
+}

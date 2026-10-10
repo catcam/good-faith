@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t02",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0018",
+ "prompt": "Find what the PostgreSQL Global Development Group officially states about how long each major PostgreSQL version receives fixes. Cite the official versioning policy page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official PostgreSQL Versioning Policy page, the PostgreSQL Global Development Group states that each major version receives support for a period of five years after its initial release.\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.\" | CLAIM: Each major PostgreSQL version is officially supported with fixes for 5 years.\n\nThis five-year support period includes regular minor releases containing bug fixes and security patches, which are scheduled to occur at least once every quarter. The policy also notes that critical fixes may be released outside of this regular schedule if deemed necessary. After the five-year period concludes, a final minor version is released and the version reaches its end-of-life (EOL), meaning it will no longer receive official support or fixes from the PostgreSQL project. The provided table on the versioning page clearly lists the specific end-of-life dates for each historical major version, consistently demonstrating this five-year support lifecycle.",
+  "usage": {
+   "prompt_tokens": 3168,
+   "completion_tokens": 205,
+   "total_tokens": 3373,
+   "cost": 0.0092493,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022493,
+    "upstream_inference_prompt_cost": 0.0019008,
+    "upstream_inference_completions_cost": 0.0003485
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Mara",
+  "id": "gen-1791589702-HlRDgh4ZoUrrYQVWcYow"
+ },
+ "ts": "2026-10-09T23:48:33.561103+00:00"
+}

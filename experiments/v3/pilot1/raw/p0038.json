@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t01",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0038",
+ "prompt": "Research what the Rust project officially documents about its release cadence and how long each stable version is supported. Cite the official Rust page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Rust project operates on a strict six-week release cycle, often referred to as the \"train model,\" where new stable versions are released regularly regardless of feature completeness to ensure predictability. Regarding support duration, the project officially supports only the most recent stable version; once a new version is released, the previous one reaches its end of life (EOL).\n\nSOURCE: https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html | QUOTE: \"Rust releases every six weeks, like clockwork.\" | CLAIM: The official release cadence for Rust stable versions is every six weeks.\nSOURCE: https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html | QUOTE: \"The Rust project supports the most recent stable version.\" | CLAIM: Only the latest stable version receives official support from the Rust project.\nSOURCE: https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html | QUOTE: \"When a new stable version is released, the old version reaches its end of life (EOL).\" | CLAIM: Support for a specific stable version ends immediately upon the release of the next version.\nSOURCE: https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html | QUOTE: \"This means each version is supported for six weeks.\" | CLAIM: The duration of support for any given stable Rust version is exactly six weeks.\nSOURCE: https://doc.rust-lang.org/stable/cargo/reference/rust-version.html | QUOTE: \"Note: the Rust Project only offers bug fixes and security updates for the latest version.\" | CLAIM: Official bug fixes and security updates are exclusively provided for the most current stable release.",
+  "usage": {
+   "prompt_tokens": 2738,
+   "completion_tokens": 368,
+   "total_tokens": 3106,
+   "cost": 0.00860745,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00160745,
+    "upstream_inference_prompt_cost": 0.00088985,
+    "upstream_inference_completions_cost": 0.0007176
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590151-UZrbkqilPOB1okH0mZbF"
+ },
+ "ts": "2026-10-09T23:56:01.689646+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t03",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0013",
+ "prompt": "Research the officially documented limits of Cloudflare Workers on the free plan (requests per day, CPU time per request). Cite Cloudflare's own documentation and quote the limits.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official Cloudflare documentation available, here are the documented limits for the Cloudflare Workers free plan, along with the required source attribution.\n\nThe Cloudflare Workers free plan provides a generous tier for developers, though it imposes specific constraints on request volume and execution time. According to Cloudflare's platform limits documentation, the free tier is designed for light workloads, while paid plans offer significantly higher ceilings for CPU-intensive applications.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Requests 100,000/day No limit\" | CLAIM: The Workers Free plan is limited to 100,000 requests per day, whereas the Paid plan has no request limit.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"CPU time 10 ms 5 min\" | CLAIM: The Free plan allows a maximum of 10 milliseconds of CPU time per request, compared to 5 minutes (or 30 seconds by default) on the Paid plan.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/limits/ | QUOTE: \"Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.\" | CLAIM: The 100,000 request quota resets daily at midnight UTC.\n\nSOURCE: https://developers.cloudflare.com/workers/platform/pricing/ | QUOTE: \"Free 100,000 per day No charge for duration 10 milliseconds of CPU time per invocation\" | CLAIM: The Free plan includes 100,000 requests per day and permits 10 milliseconds of CPU time per invocation.\n\nNO_SOURCE_FOUND: Whether there is a limit on requests per second (rate limiting) on the Free plan. (The documentation explicitly states \"There is no general limit on requests per second\" but does not specify if this applies differently to Free vs. Paid tiers beyond the daily quota.)",
+  "usage": {
+   "prompt_tokens": 1993,
+   "completion_tokens": 391,
+   "total_tokens": 2384,
+   "cost": 0.01416045,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00716045,
+    "upstream_inference_prompt_cost": 0.00129545,
+    "upstream_inference_completions_cost": 0.005865
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Wafer",
+  "id": "gen-1791589618-wvVOz3gviQBpg7lvxDrM"
+ },
+ "ts": "2026-10-09T23:47:05.111017+00:00"
+}

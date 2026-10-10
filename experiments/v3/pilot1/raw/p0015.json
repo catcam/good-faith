@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t15",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0015",
+ "prompt": "Find real, published studies on whether people with ADHD benefit from using AI assistants for task initiation or executive function. Cite the studies and quote their findings.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Recent research indicates that AI assistants and digital therapeutics show promise in supporting individuals with ADHD, particularly in areas of psychoeducation, executive function training, and task initiation. However, the evidence varies by age group and technology type, with some studies showing significant clinical improvements while others highlight feasibility challenges or lack statistical significance due to small sample sizes.\n\n**Adults: Psychoeducation and Symptom Reduction**\nA randomized controlled trial found that chatbot-supported psychoeducation was effective in reducing core ADHD symptoms in adults, performing similarly to conventional app-based methods.\n\nSOURCE: https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775 | QUOTE: \"Observer- and patient-rated ADHD symptoms were significantly reduced from pre- to post-intervention (observer-rated: mean difference \u22126.18, 95% CI \u22128.06 to \u22124.29; patient-rated: mean difference \u22122.82, 95% CI \u22124.98 to \u22120.67).\" | CLAIM: A chatbot intervention significantly reduced ADHD core symptoms in adults.\n\nSOURCE: https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775 | QUOTE: \"Self-guided psychoeducation based on a chatbot or a conventional app appears similarly effective and safe for improving ADHD core symptoms.\" | CLAIM: Chatbots are as effective as conventional apps for adult ADHD psychoeducation.\n\n**Children: Executive Function Training and Task Initiation**\nDigital therapeutics focused on executive functions have shown potential as adjunctive treatments for children, with sustained effects on attention and hyperactivity. Additionally, conversational agents using self-instruction strategies have been reported to help with task initiation and routine formation.\n\nSOURCE: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf | QUOTE: \"The ARS inattention (F = 4.080, p = 0.010), hyperactivity (F = 5.998. p < 0.001), and sum (F = 5.902, p < 0.001) significantly improved.\" | CLAIM: A digital therapeutic specialized in executive functions significantly improved inattention and hyperactivity in children with ADHD.\n\nSOURCE: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf | QUOTE: \"The overall effect was confirmed in the ARS sustained effect analysis even after 1 month of discontinuing the DTx intervention.\" | CLAIM: The benefits of the digital therapeutic persisted one month after stopping the intervention.\n\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"It was tough to wake her up in the morning, but she would get out of bed with no trouble, thanks to the agent.\" | CLAIM: A conversational agent helped a child with ADHD initiate the task of waking up and getting out of bed.\n\nSOURCE: https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452 | QUOTE: \"The agent seems to be useful for children who have poor time management or learning loss.\" | CLAIM: Parents observed that the conversational agent aided children with time management issues.\n\n**Students: Engagement and Task Management via Generative AI**\nFor university students, the integration of Generative AI with Augmented Reality showed directional improvements in engagement and task completion, though these findings were not statistically significant in a small pilot study. Qualitative data suggested reduced cognitive load and better task initiation.\n\nSOURCE: https://link.springer.com/article/10.1007/s44217-026-01264-9 | QUOTE: \"Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.\" | CLAIM: Students reported that Generative AI support improved task initiation and planning.\n\nSOURCE: https://link.springer.com/article/10.1007/s44217-026-01264-9 | QUOTE: \"Quantitative measures showed directional improvements in engagement duration, interaction frequency, and task completion across conditions; however, differences did not reach statistical significance, consistent with the study\u2019s exploratory scale.\" | CLAIM: While trends toward better task completion and engagement were observed with AI tools, they were not statistically significant in this pilot study.\n\n**Clinician Perspectives on AI-Assisted Rehabilitation**\nExperts recognize the theoretical consistency of AI-generated rehabilitation plans but note significant limitations regarding personalization and real-world feasibility.\n\nSOURCE: https://link.springer.com/article/10.1186/s40359-025-03729-2 | QUOTE: \"Many professionals expressed openness to using AI as a support tool in practice.\" | CLAIM: Clinical experts are open to using AI as a support tool for ADHD rehabilitation.\n\nSOURCE: https://link.springer.com/article/10.1186/s40359-025-03729-2 | QUOTE: \"However, feasibility emerged as a key limitation, with concerns over a lack of personalization, unrealistic resource assumptions, and unvalidated techniques, particularly in adult and older adult profiles.\" | CLAIM: Experts identified lack of personalization and feasibility issues as key limitations of current AI-assisted rehabilitation planning.",
+  "usage": {
+   "prompt_tokens": 2683,
+   "completion_tokens": 1332,
+   "total_tokens": 4015,
+   "cost": 0.010469375,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003469375,
+    "upstream_inference_prompt_cost": 0.000871975,
+    "upstream_inference_completions_cost": 0.0025974
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791589633-BoK7OPAlgVzUNRGia27b"
+ },
+ "ts": "2026-10-09T23:47:43.141606+00:00"
+}

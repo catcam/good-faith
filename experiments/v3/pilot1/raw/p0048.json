@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t02",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0048",
+ "prompt": "Find what the PostgreSQL Global Development Group officially states about how long each major PostgreSQL version receives fixes. Cite the official versioning policy page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.\" | CLAIM: The PostgreSQL Global Development Group officially states that each major PostgreSQL version receives fixes and support for five years from its initial release date.\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"After this, a final minor version will be released and the software will then be unsupported (end-of-life).\" | CLAIM: Once the five-year support period expires, the major version stops receiving fixes and is considered end-of-life.\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"Each major version receives bug fixes and, if need be, security fixes that are released at least once every three months in what we call a 'minor release.'\" | CLAIM: During the five-year support window, major versions receive bug fixes and security fixes through quarterly minor releases.",
+  "usage": {
+   "prompt_tokens": 1782,
+   "completion_tokens": 205,
+   "total_tokens": 1987,
+   "cost": 0.01415785,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00715785,
+    "upstream_inference_prompt_cost": 0.0045441,
+    "upstream_inference_completions_cost": 0.00261375
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Phala",
+  "id": "gen-1791590440-bHgefG8FC6EPnaUgm4Vk"
+ },
+ "ts": "2026-10-10T00:00:43.986254+00:00"
+}

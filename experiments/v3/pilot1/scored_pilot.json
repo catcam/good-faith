@@ -1,0 +1,4035 @@
+[
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0001",
+  "cost": 0.0123266,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "The primary rate limit for unauthenticated requests is 60 requests per hour.",
+     "claim": "The rate limit for unauthenticated REST API requests is 60 per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "All of these requests count towards your personal rate limit of 5,000 requests per hour.",
+     "claim": "The rate limit for authenticated REST API requests using a personal access token is 5,000 per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/enterprise-cloud@latest/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2026-03-10",
+     "quote": "Requests made on your behalf by a GitHub App that is owned by a GitHub Enterprise Cloud organization have a higher rate limit of 15,000 requests per hour.",
+     "claim": "The rate limit for authenticated requests made by a GitHub App owned by a GitHub Enterprise Cloud organization is 15,000 per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/enterprise-cloud@latest/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2026-03-10",
+     "quote": "The rate limit for GITHUB_TOKEN is 1,000 requests per hour per repository.",
+     "claim": "The rate limit for the GITHUB_TOKEN in OAuth apps is 1,000 requests per hour per repository.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Any distinct rate limit numbers for Git LFS access are documented under a separate rate-limiting bucket (e.g., 300 requests per minute for unauthenticated) rather than the \"primary\" public REST API limit specifically requested by the task, though the numbers themselves were present in the sources."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0002",
+  "cost": 0.0102176,
+  "score": {
+   "claims": [
+    {
+     "url": "https://link.springer.com/article/10.1186/s12877-025-05856-2",
+     "quote": "Our results revealed similar rates of emergency contacts (IRR = 0.89 [95%-CI:0.62\u20131.28]; p = .523) and hospitalisations (IRR = 1.23 [95%-CI:0.95\u20131.60]; p = .122)",
+     "claim": "A fall detection and sensor system for community-dwelling elderly showed no statistically significant reduction in hospitalizations or emergency contacts.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "The technology reduces the likelihood of experiencing a fall in a day by about 32%.",
+     "claim": "The Nobi ambient AI device was associated with a 32% reduction in falls among care home residents.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "There was a reduction in total ambulance call-outs by 23%... Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.",
+     "claim": "Use of the Nobi device led to a 24% reduction in ambulance call-outs that resulted in a resident being taken to the hospital.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN [Real-Time Notification] periods.",
+     "claim": "The SafelyYou system reduced the time a fallen resident spent waiting for assistance by over 28 minutes and reduced their total time on the ground by nearly 30 minutes.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).",
+     "claim": "The implementation of real-time fall notifications eliminated incidents of residents experiencing a \"long lie\" (over one hour on the ground).",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/",
+     "quote": "The Council has already seen positive results from the early stages of the project, with no fall related hospital admissions recorded in the last 12-months... And there have also been no incidents of residents being grounded following a fall for an extended period of time",
+     "claim": "An Essex County Council project using advanced fall detection technology reported zero fall-related hospital admissions and zero \"long lies\" over a 12-month period.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "A peer-reviewed study measuring the impact of these technologies specifically on elderly individuals living completely alone (without any staff or caregivers on-site). The available studies focus on care homes, memory care facilities, or community-dwelling elderly with access to a social service."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 3
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0003",
+  "cost": 0.0113544,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.debian.org/releases/",
+     "quote": "The Debian release life cycle encompasses five years: the first three years of full support followed by two years of Long Term Support (LTS).",
+     "claim": "The official length of support for a Debian stable release, including LTS, is five years.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.debian.org/releases/stable/",
+     "quote": "The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.",
+     "claim": "The specific timeline for the current Debian 13 stable release, confirming the 3-year full support plus 2-year LTS model.",
+     "status": "verified"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years.",
+     "claim": "The LTS project's goal is to ensure every stable release receives a total lifetime of at least five years of support.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian LTS is not handled by the Debian Security and Release teams. Thus the Debian LTS team takes over security maintenance of the various releases once the Debian Security team stops its work.",
+     "claim": "The LTS phase of support is maintained by a separate volunteer team rather than the official Debian Security team.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://www.debian.org/releases/",
+     "quote": "10 | Buster | 2019-07-06 | 2022-09-10 | 2024-06-30 | 2029-06-30 | Archived release, under third-party paid extended LTS support",
+     "claim": "Beyond the 5-year project support, Debian releases can receive further paid security support through third-party Extended LTS (ELTS).",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 2
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0004",
+  "cost": 0.02269631,
+  "score": {
+   "claims": [
+    {
+     "url": "https://survey.stackoverflow.co/2026/ai",
+     "quote": "The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.",
+     "claim": "73% of respondents use coding assistants and agents daily in 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://survey.stackoverflow.co/2026/ai",
+     "quote": "Coding assistants and agents have pulled ahead as the dominant use case for AI (66%), outpacing even general-purpose LLM-powered chatbots (63%).",
+     "claim": "66% of respondents use coding assistants and agents as their primary AI use case in 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.sonarsource.com/state-of-code-developer-survey-report.pdf",
+     "quote": "72% of developers who have tried AI use it every day",
+     "claim": "72% of developers who have tried AI coding tools use them daily, based on a survey of 1,149 professional developers conducted in October 2025.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.sonarsource.com/state-of-code-developer-survey-report.pdf",
+     "quote": "AI-assisted coding is officially a standard part of the developer workflow. 72% of developers who have tried AI coding tools now use them every day.",
+     "claim": "Confirms the 72% daily usage figure among developers who have tried AI coding tools, from the 2026 State of Code Developer Survey.",
+     "status": "verified"
+    },
+    {
+     "url": "https://survey.stackoverflow.co/2025/",
+     "quote": "51% of professional developers use AI tools daily.",
+     "claim": "51% of professional developers use AI tools daily in 2025, based on Stack Overflow's survey of over 49,000 respondents.",
+     "status": "verified"
+    },
+    {
+     "url": "https://survey.stackoverflow.co/2026/ai",
+     "quote": "31% of daily AI users use it for 4+ hours/day",
+     "claim": "Among daily AI users in 2026, 31% use AI tools for four or more hours per day.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 6,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0005",
+  "cost": 0.00842408,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775",
+     "quote": "Observer- and patient-rated ADHD symptoms were significantly reduced from pre- to post-intervention (observer-rated: mean difference \u22126.18, 95% CI \u22128.06 to \u22124.29; patient-rated: mean difference \u22122.82, 95% CI \u22124.98 to \u22120.67).",
+     "claim": "A chatbot delivering psychoeducation was effective in reducing core ADHD symptoms in adults.",
+     "status": "verified"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "The purpose of the application is to instill regularity in children's lives by repetitively performing daily tasks through interaction that reflects self-instruction strategy and ultimately promotes executive function development within ADHD children.",
+     "claim": "A conversational agent (chatbot) was designed specifically to help children with ADHD create regularity and develop executive function through self-instruction strategies for daily tasks.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "P4 (Dad of a 7-year-old girl) elaborated that \"As we both work, we bring our kid out too when we leave the house for work. It was tough to wake her up in the morning, but she would get out of bed with no trouble, thanks to the agent. The moment the agent started the conversation, it woke her up right away, and it really worked.\"",
+     "claim": "A field test of a conversational agent showed it was effective in helping a child with task initiation (waking up and getting out of bed).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.",
+     "claim": "A system combining Augmented Reality and Generative AI (AR+GenAI) provided support for task initiation, planning, and reducing cognitive load for university students with ADHD.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "The addition of GenAI-based personalisation to the AR environment was associated with further gains in observed engagement and task performance",
+     "claim": "The inclusion of Generative AI personalization in a tool was associated with improved task performance for students with ADHD.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    }
+   ],
+   "no_source": [
+    "A published study specifically on the use of general-purpose AI assistants (e.g., ChatGPT, Siri, Google Assistant) for task initiation in ADHD.",
+    "A large-scale, longitudinal randomized controlled trial on the long-term benefits of AI assistants for executive function in ADHD."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 1,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 4
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0006",
+  "cost": 0.00880214,
+  "score": {
+   "claims": [
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "We pulled every resolved Polymarket market since the platform began publishing UMA oracle status data and found that 0.38% of them, about 1 in 263, end in a formal resolution dispute.",
+     "claim": "The overall dispute rate on Polymarket from March 2025 to August 2026 was 0.38%.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Disputes were rare: 89 markets, 0.08%.",
+     "claim": "In a sample of 110,576 markets from August to September 2026, the dispute rate was 0.08%.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000",
+     "claim": "High-volume markets are disputed at a much higher rate than low-volume markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets",
+     "claim": "Political markets have a significantly higher dispute rate compared to other categories like crypto.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Markets that traded $100,000 or more were disputed 0.5% of the time... geopolitics markets... 3.5% of the time",
+     "claim": "Confirms that high-volume and geopolitical markets have elevated dispute rates.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).",
+     "claim": "Markets with ambiguous resolution rules (C-rated) are far more likely to be disputed than markets with clear rules (A- or B-rated).",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "C-rated contracts dispute at 1.59%, 20 times the 0.08% rate of A- and B-rated contracts combined.",
+     "claim": "Reinforces the strong correlation between low rule clarity and high dispute probability.",
+     "status": "verified"
+    },
+    {
+     "url": "https://fidonis.org/integrity/polymarket/2026-04/",
+     "quote": "From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.",
+     "claim": "While disputes are rare by market count, a significant portion of total trading volume (7.3%) was associated with markets that underwent a dispute.",
+     "status": "verified"
+    },
+    {
+     "url": "https://predictacademy.ai/academy/prediction-market-resolution/",
+     "quote": "More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.",
+     "claim": "The absolute number of disputes on Polymarket was increasing in 2026 compared to 2025.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Specific, quantified data on the frequency of disputes or challenged resolutions on Kalshi. The sources indicate such data is not publicly available because Kalshi does not publish a dispute feed."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 8,
+    "reworded": 1,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0007",
+  "cost": 0.010998136,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775",
+     "quote": "Observer- and patient-rated ADHD symptoms were significantly reduced from pre- to post-intervention",
+     "claim": "Chatbot-supported AI interventions provide a significant therapeutic benefit for adult ADHD symptoms.",
+     "status": "verified"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "The prototype is an android application developed to be suitable for use on 8-inch tablet PCs... The conversation was implemented using a chatbot builder (NAVER CLOVA).",
+     "claim": "A conversational agent/chatbot was developed specifically to assist children with ADHD with daily task execution.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "By interacting with the prototype as the conversational agent, children can plan, proceed, and evaluate their actions independently.",
+     "claim": "AI conversational agents help children with ADHD independently initiate and manage tasks by supporting executive function processes.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "The moment the agent started the conversation, it woke her up right away, and it really worked. I think this agent would be useful enough for lower-grade elementary students when they are in the early stages of habit formation.",
+     "claim": "Parents observe real-world benefits in task initiation and routine completion for children using AI conversational agents.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s40359-025-03729-2",
+     "quote": "Experts in Study 3 generally responded positively to the theoretical consistency of the plans, especially those for adolescents and adults, recognizing alignment with established models of executive function rehabilitation.",
+     "claim": "AI-generated plans are viewed by experts as theoretically consistent with established models for executive function rehabilitation in ADHD.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s40359-025-03729-2",
+     "quote": "However, feasibility emerged as a key limitation, with concerns over a lack of personalization, unrealistic resource assumptions, and unvalidated techniques, particularly in adult and older adult profiles.",
+     "claim": "While theoretically sound, current AI-generated executive function rehabilitation programs face practical feasibility issues for adults with ADHD.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.",
+     "claim": "Generative AI provides support for task initiation and executive function by reducing cognitive load and offering just-in-time planning scaffolding for ADHD students.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf",
+     "quote": "The ARS inattention (F = 4.080, p = 0.010), hyperactivity (F = 5.998. p < 0.001), and sum (F = 5.902, p < 0.001) significantly improved.",
+     "claim": "Digital therapeutics utilizing an adaptive algorithm to train executive functions significantly improve core ADHD symptoms.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf",
+     "quote": "The overall effect was confirmed in the ARS sustained effect analysis even after 1 month of discontinuing the DTx intervention.",
+     "claim": "The executive function improvements gained from adaptive digital therapeutics for ADHD are sustained over time.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Published studies measuring the direct, isolated benefit of standard, general-purpose AI assistants (like ChatGPT, Siri, or Alexa used natively as daily task assistants) specifically on the task initiation deficits of adults with ADHD in real-world settings."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 6
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0008",
+  "cost": 0.00752618,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.raspberrypi.com/products/raspberry-pi-5/?resellerType=industry",
+     "quote": "Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The Raspberry Pi 5 has a minimum production lifetime guarantee.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-008348-DS-8-raspberry-pi-5-product-brief.pdf",
+     "quote": "Production lifetime Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The official product brief confirms the January 2036 production date.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.raspberrypi.com/news/raspberry-pis-commitment-to-longevity-a-sustainable-advantage/",
+     "quote": "Take the flagship Raspberry Pi 5, for example: it has a guaranteed minimum manufacturing end date of January 2038",
+     "claim": "A news article on the official Raspberry Pi website cites an even longer guaranteed manufacturing date of January 2038.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 2,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0009",
+  "cost": 0.00907935,
+  "score": {
+   "claims": [
+    {
+     "url": "https://omarchy.us/news/2026/08/100000-downloads-in-a-week/",
+     "quote": "One hundred thousand downloads of the Omarchy ISO in the past week!",
+     "claim": "Omarchy recorded 100,000 ISO downloads in a single week in late August 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!",
+     "claim": "The Omarchy Quattro release reached 200,000 ISO downloads within 18 days of its launch.",
+     "status": "verified"
+    },
+    {
+     "url": "https://exa.ai/library/podcast/2fcpbmjslqh/episode/5vkwc1sslv7",
+     "quote": "The adoption numbers are the reason Daniel noticed 1,165,980 ISO downloads in year one.",
+     "claim": "Omarchy achieved approximately 1.16 million ISO downloads in its first year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e",
+     "quote": "Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN...",
+     "claim": "Daily download rates reached nearly 10,000 per day as of September 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://stealwhatworks.com/blogs/news/why-omarchy-blowing-up",
+     "quote": "Omarchy's download numbers almost certainly overstate its retained user base, so 100,000 weekly downloads should never be translated into 100,000 new permanent Omarchy users.",
+     "claim": "Download figures are not equivalent to active user counts due to reinstalls, VM testing, and curiosity-driven trials.",
+     "status": "verified"
+    },
+    {
+     "url": "https://stealwhatworks.com/blogs/news/why-omarchy-blowing-up",
+     "quote": "Omarchy currently does not publish a clean daily-active-user or retained-install figure that would let us measure this funnel properly.",
+     "claim": "There is no publicly available official metric for active daily users or retained installations.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Verified number of unique, long-term active daily users for Omarchy."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 6,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0010",
+  "cost": 0.010308175,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "As of June 2016 I have ended the experiment, once all the strips went over 10.000 hours.",
+     "claim": "The experimental setup ran continuously for over 10,000 hours until voluntarily terminated.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "The third version of the Led logger has run without any major issues. Based on uptime logging there has never been any freeze or malfunction.",
+     "claim": "The ESP8266 controller experienced zero freezes or malfunctions during the multi-year experiment.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "And of course, the uptime was measured. Very impressing, as at some point it has reached 4500 hours.",
+     "claim": "A specific continuous uptime milestone of 4,500 hours was recorded without power loss or reboot.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "This also proves that the ESP8266 module I used as a WiFi connection which is one of the first to hit the market, can function for a long time.",
+     "claim": "Early-market ESP8266 modules are capable of long-term stable operation in this context.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After a couple of days, the device because unresponsible within Home Assistant as well as pinging it / access to the WebUI.",
+     "claim": "ESP32-C3 devices running WLED may become completely unresponsive after approximately 2-5 days of operation.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "I have to remove power to get it working again, and then it will work again for the next 3-5 days.",
+     "claim": "The failure mode requires a hard power cycle to resolve, with recurrence every few days.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After downgrading to 0.15.1 on this ESP32-S2 the light currently shows an uptime of 7.5 days with no changes to the hardware, HA setup or power supply.",
+     "claim": "Downgrading WLED firmware from version 0.15.3 to 0.15.1 resolved stability issues on an ESP32-S2, achieving at least 7.5 days of uptime.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "The current state of knowledge are that there are two reasons for crashes: 1. bad hardware / power design... 2. a bug in async webserver which can be triggered by using HA's aggressive polling system",
+     "claim": "Identified causes for ESP32 WLED crashes include poor power design and software bugs in the asynchronous web server when subjected to high concurrency polling.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/wled/WLED/issues/5596",
+     "quote": "Receivers oscillate between 10-25 fps achieved with periodic complete HTTP unresponsiveness.",
+     "claim": "In WLED v0.15.4, ESP32 receivers using DDP virtual-bus fan-out experienced periodic total HTTP unresponsiveness.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/wled/WLED/issues/5596",
+     "quote": "after upgrading to v16 it is working again.",
+     "claim": "Upgrading to WLED v16 resolved the HTTP starvation and unresponsiveness issues on ESP32 receivers.",
+     "status": "verified"
+    },
+    {
+     "url": "https://igor.moomers.org/posts/wled-christmas-lights",
+     "quote": "My initial outdoor controller died after the first rain, losing my hard-programmed schedules and presets.",
+     "claim": "An unprotected ESP32 controller failed immediately upon exposure to rain.",
+     "status": "verified"
+    },
+    {
+     "url": "https://igor.moomers.org/posts/wled-christmas-lights",
+     "quote": "This version lasted through one wet season, but then shorted out soon after I moved to Berkeley.",
+     "claim": "A partially protected (hot-glued) ESP32 controller survived one wet season but eventually failed due to moisture ingress.",
+     "status": "verified"
+    },
+    {
+     "url": "https://tynick.com/blog/12-17-2019/christmas-lights-with-wled/",
+     "quote": "Previously the roofline LEDs were run using a cheap wifi controller. It had a really bad interface and wasn\u2019t reliable at all.",
+     "claim": "Generic cheap WiFi controllers were observed to be unreliable compared to ESP-based WLED setups.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Statistical failure rates (e.g., percentage of units failing per year) for large-scale deployments of WLED controllers."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 9,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 4,
+    "unverifiable": 0
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0011",
+  "cost": 0.00975,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/?from_the_consensus=1",
+     "quote": "The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.",
+     "claim": "Each major PostgreSQL version receives support (including fixes) for 5 years after its initial release.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/?from_the_consensus=1",
+     "quote": "Each major version receives bug fixes and, if need be, security fixes that are released at least once every three months in what we call a \"minor release.\"",
+     "claim": "During the supported period, each major version receives bug fixes and security fixes via minor releases at least quarterly.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/?from_the_consensus=1",
+     "quote": "After this, a final minor version will be released and the software will then be unsupported (end-of-life).",
+     "claim": "After the 5-year support period ends, a final minor version is released and the software becomes unsupported.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0012",
+  "cost": 0.01687965,
+  "score": {
+   "claims": [
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Across 7,166 Polymarket markets with public dispute records, 52 of the 55 markets that ended up in a resolution dispute had been rated C by ClearMarket, the lowest clarity tier. C-rated contracts dispute at 1.59%, 20 times the 0.08% rate of A- and B-rated contracts combined.",
+     "claim": "The overall dispute rate for low-clarity markets is 1.59%, which is 20x higher than the 0.08% combined dispute rate of high-clarity markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).",
+     "claim": "Across over 7,000 markets, A-rated contracts had a 0.12% dispute rate, B-rated had 0.00%, and C-rated had 1.59%.",
+     "status": "verified"
+    },
+    {
+     "url": "https://fidonis.org/integrity/polymarket/2026-04/",
+     "quote": "From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.",
+     "claim": "When weighted by trading volume, 7.3% of all resolved volume on Polymarket ended in a dispute over this period.",
+     "status": "verified"
+    },
+    {
+     "url": "https://fidonis.org/integrity/polymarket/2026-04/",
+     "quote": "Count dispute rate 0.33% Jan '26, dollar-weighted",
+     "claim": "In January 2026, the market-count dispute rate for Polymarket was 0.33%.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Of 143,286 Polymarket markets resolved from March 2025 to August 2026 (Polymarket gamma API, UMA oracle status), 545 or 0.38%, about 1 in 263, ended in a formal resolution dispute.",
+     "claim": "Across a massive sample of 143,286 Polymarket markets, the absolute baseline rate of a formal resolution dispute is 0.38% (roughly 1 in 263).",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000",
+     "claim": "Dispute rates scale dramatically with market size; high-volume markets ($100K+) are disputed 1.45% of the time, compared to 0.13% for low-volume markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets",
+     "claim": "Dispute rates scale heavily by market category, with political/election markets seeing a 1.89% dispute rate, far exceeding crypto markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Of the 69,072 that closed after their scheduled end, half had closed within 2.2 hours and 90% within six. Another 41,151, 37% of the total, closed before their scheduled end because the answer was already known.",
+     "claim": "While not a dispute rate, this shows that the vast majority of markets (37% early, 90% of the rest within 6 hours) resolve quickly and cleanly without issue.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Disputes were rare: 89 markets, 0.08%. They were not spread evenly. Markets that traded $100,000 or more were disputed six times as often, 0.5%, and geopolitics markets, whose questions meet messy events, 3.5% of the time",
+     "claim": "In an Aug-Sept 2026 sample, the overall dispute rate was 0.08%, but high-volume markets saw a 0.5% dispute rate, and geopolitics markets saw a disproportionately high 3.5% dispute rate.",
+     "status": "verified"
+    },
+    {
+     "url": "https://predictacademy.ai/academy/prediction-market-resolution/",
+     "quote": "And disputes are climbing rather than shrinking. More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.",
+     "claim": "The sheer volume and potentially the rate of disputed resolutions are increasing over time on Polymarket.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Kalshi publishes no dispute feed, so its contested settlements become visible only when they reach a courtroom or the press.",
+     "claim": "There is no publicly auditable dataset or dispute feed for Kalshi, making an independent calculation of its challenge rate impossible.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "The largest to date: Kalshi's February 2026 market on whether Iran's Supreme Leader would leave office, roughly $54M in volume, settled at the last traded price under a death carveout that appeared in the CFTC-filed terms but not on the trading page most traders read. Kalshi refunded $2.2M in trades and fees, a class action is pending",
+     "claim": "While exact rates are unavailable, Kalshi does experience contested settlements; its largest known dispute involved a $54M market, a $2.2M refund, and a pending class action due to ambiguous resolution terms.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Any comprehensive, independently calculated dispute or challenge rate for Kalshi (or other CFTC-regulated exchanges) equivalent to the Polymarket dispute rates, because Kalshi does not publish a public dispute feed."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 11,
+    "reworded": 1,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0013",
+  "cost": 0.01416045,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Requests 100,000/day No limit",
+     "claim": "The Workers Free plan is limited to 100,000 requests per day, whereas the Paid plan has no request limit.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "CPU time 10 ms 5 min",
+     "claim": "The Free plan allows a maximum of 10 milliseconds of CPU time per request, compared to 5 minutes (or 30 seconds by default) on the Paid plan.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.",
+     "claim": "The 100,000 request quota resets daily at midnight UTC.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+     "quote": "Free 100,000 per day No charge for duration 10 milliseconds of CPU time per invocation",
+     "claim": "The Free plan includes 100,000 requests per day and permits 10 milliseconds of CPU time per invocation.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Whether there is a limit on requests per second (rate limiting) on the Free plan. (The documentation explicitly states \"There is no general limit on requests per second\" but does not specify if this applies differently to Free vs. Paid tiers beyond the daily quota.)"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0014",
+  "cost": 0.0092132,
+  "score": {
+   "claims": [
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum size of a database file is 4294967294 pages. At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 2.8e+14 bytes (281 terabytes, or 256 tebibytes, or 281474 gigabytes, or 262143 gibibytes).",
+     "claim": "The maximum theoretical database size is approximately 281 terabytes",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1 thousand million or 1,000,000,000).",
+     "claim": "The default maximum row size is 1,000,000,000 bytes (1GB)",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The current implementation will only support a string or BLOB length up to 2^31 -3 or 2147483645.",
+     "claim": "The absolute hard limit for row size is 2,147,483,645 bytes",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "During part of SQLite's INSERT and SELECT processing, the complete content of each row in the database is encoded as a single BLOB. So the SQLITE_MAX_LENGTH parameter also determines the maximum number of bytes in a row.",
+     "claim": "The SQLITE_MAX_LENGTH parameter defines the maximum row size",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0015",
+  "cost": 0.010469375,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775",
+     "quote": "Observer- and patient-rated ADHD symptoms were significantly reduced from pre- to post-intervention (observer-rated: mean difference \u22126.18, 95% CI \u22128.06 to \u22124.29; patient-rated: mean difference \u22122.82, 95% CI \u22124.98 to \u22120.67).",
+     "claim": "A chatbot intervention significantly reduced ADHD core symptoms in adults.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775",
+     "quote": "Self-guided psychoeducation based on a chatbot or a conventional app appears similarly effective and safe for improving ADHD core symptoms.",
+     "claim": "Chatbots are as effective as conventional apps for adult ADHD psychoeducation.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf",
+     "quote": "The ARS inattention (F = 4.080, p = 0.010), hyperactivity (F = 5.998. p < 0.001), and sum (F = 5.902, p < 0.001) significantly improved.",
+     "claim": "A digital therapeutic specialized in executive functions significantly improved inattention and hyperactivity in children with ADHD.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf",
+     "quote": "The overall effect was confirmed in the ARS sustained effect analysis even after 1 month of discontinuing the DTx intervention.",
+     "claim": "The benefits of the digital therapeutic persisted one month after stopping the intervention.",
+     "status": "verified"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "It was tough to wake her up in the morning, but she would get out of bed with no trouble, thanks to the agent.",
+     "claim": "A conversational agent helped a child with ADHD initiate the task of waking up and getting out of bed.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "The agent seems to be useful for children who have poor time management or learning loss.",
+     "claim": "Parents observed that the conversational agent aided children with time management issues.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.",
+     "claim": "Students reported that Generative AI support improved task initiation and planning.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "Quantitative measures showed directional improvements in engagement duration, interaction frequency, and task completion across conditions; however, differences did not reach statistical significance, consistent with the study\u2019s exploratory scale.",
+     "claim": "While trends toward better task completion and engagement were observed with AI tools, they were not statistically significant in this pilot study.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s40359-025-03729-2",
+     "quote": "Many professionals expressed openness to using AI as a support tool in practice.",
+     "claim": "Clinical experts are open to using AI as a support tool for ADHD rehabilitation.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s40359-025-03729-2",
+     "quote": "However, feasibility emerged as a key limitation, with concerns over a lack of personalization, unrealistic resource assumptions, and unvalidated techniques, particularly in adult and older adult profiles.",
+     "claim": "Experts identified lack of personalization and feasibility issues as key limitations of current AI-assisted rehabilitation planning.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 6
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0016",
+  "cost": 0.00991995,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "The third version of the Led logger has run without any major issues. Based on uptime logging there has never been any freeze or malfunction.",
+     "claim": "An ESP8266-based controller ran a long-term LED experiment for years without a single crash or freeze.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "Very impressing, as at some point it has reached 4500 hours. Impressing for the power company, who never turned off the power for > 6 months.",
+     "claim": "The ESP8266 controller achieved a continuous uptime of over 4500 hours (over 6 months) without a power cycle.",
+     "status": "verified"
+    },
+    {
+     "url": "https://wled.discourse.group/t/how-long-should-an-esp32-last/8623",
+     "quote": "I\u2019ve had one that lasted only a few days, but several others are plugged in for more than 600 days and still running strong.",
+     "claim": "Some users report ESP32 controllers running WLED for over 600 days without failure.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After a couple of days, the device because unresponsive within Home Assistant as well as pinging it / access to the WebUI.",
+     "claim": "A common failure mode for WLED on ESP32-C3 is becoming unresponsive and requiring a power cycle after a few days of uptime.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "When I disable the HA Integration, WLED seems stable. When the HA Integration is enabled, after a couple of days WLED hangs and becomes unresponsive.",
+     "claim": "The issue of devices hanging after a few days is strongly correlated with the use of the Home Assistant integration, suggesting a software/network load issue rather than a hardware one.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After downgrading to 0.15.1 on this ESP32-S2 the light currently shows an uptime of 7.5 days with no changes to the hardware, HA setup or power supply.",
+     "claim": "A specific software version (0.15.3) was identified as causing instability, and reverting to a previous version (0.15.1) restored stability, achieving 7.5 days of uptime (and presumably longer).",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "Large-scale, statistically significant failure rate data (e.g., percentage of units failing within a year).",
+    "Documented Mean Time Between Failures (MTBF) figures for ESP32 controllers running WLED.",
+    "Long-term uptime measurements specifically for the newer ESP32-S3 or ESP32-C6 chips."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 3,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0017",
+  "cost": 0.0107557,
+  "score": {
+   "claims": [
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Of 143,286 Polymarket markets resolved from March 2025 to August 2026 (Polymarket gamma API, UMA oracle status), 545 or 0.38%, about 1 in 263, ended in a formal resolution dispute.",
+     "claim": "The overall dispute rate for Polymarket markets in this period was 0.38%.",
+     "status": "verified"
+    },
+    {
+     "url": "https://predictacademy.ai/academy/prediction-market-resolution/",
+     "quote": "More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.",
+     "claim": "Dispute counts rose significantly in the first five months of 2026, exceeding the total for all of 2025.",
+     "status": "verified"
+    },
+    {
+     "url": "https://fidonis.org/integrity/polymarket/2026-04/",
+     "quote": "From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.",
+     "claim": "Approximately 7.3% of the total trading volume on Polymarket went through markets that experienced a dispute.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).",
+     "claim": "Markets with unclear resolution rules (Grade C) had a dispute rate of 1.59%, compared to 0.08% for clearer markets (Grades A and B).",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets...",
+     "claim": "Political and election markets had a dispute rate of 1.89%, significantly higher than crypto markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000...",
+     "claim": "High-volume markets (>$100k) were disputed at a rate of 1.45%, much higher than low-volume markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Markets that traded $100,000 or more were disputed six times as often, 0.5%, and geopolitics markets, whose questions meet messy events, 3.5% of the time...",
+     "claim": "In the Aug\u2013Sep 2026 period, geopolitics markets had a 3.5% dispute rate, while markets with over $100k volume had a 0.5% rate.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Kalshi publishes no dispute feed, so its contested settlements become visible only when they reach a courtroom or the press.",
+     "claim": "There is no public, complete dataset for Kalshi dispute rates comparable to Polymarket's on-chain records.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "The largest to date: Kalshi's February 2026 market on whether Iran's Supreme Leader would leave office, roughly $54M in volume, settled at the last traded price under a death carveout that appeared in the CFTC-filed terms but not on the trading page most traders read.",
+     "claim": "A significant Kalshi dispute occurred in February 2026 involving a $54M volume market, leading to refunds and a class-action lawsuit.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Comprehensive, aggregate dispute rate statistics for Kalshi across all markets and time periods."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 9,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0018",
+  "cost": 0.0092493,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.",
+     "claim": "Each major PostgreSQL version is officially supported with fixes for 5 years.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 1,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0019",
+  "cost": 0.00865035,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.",
+     "claim": "The daily request limit for Workers on the Free plan is 100,000.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+     "quote": "Free | 100,000 per day",
+     "claim": "The pricing documentation confirms the free tier includes 100,000 requests per day.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "CPU time per HTTP request | 10 ms",
+     "claim": "The CPU time limit per HTTP request on the Free plan is 10 milliseconds.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+     "quote": "Free | ... | 10 milliseconds of CPU time per invocation",
+     "claim": "The pricing documentation confirms the free tier includes 10 milliseconds of CPU time per invocation.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Waiting on network requests (such as fetch() calls, KV reads, or database queries) does not count toward CPU time.",
+     "claim": "Network wait times are excluded from the CPU time calculation.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0020",
+  "cost": 0.0127519,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.",
+     "claim": "The Workers Free plan allows 100,000 requests per day.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+     "quote": "10 milliseconds of CPU time per invocation",
+     "claim": "The Workers Free plan includes 10 milliseconds of CPU time per invocation/request.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "CPU time per HTTP request 10 ms",
+     "claim": "The Workers Free plan has a CPU time limit of 10 ms per HTTP request.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "The average Worker uses approximately 2.2 ms per request. Heavier workloads that handle authentication, server-side rendering, or parse large payloads typically use 10-20 ms.",
+     "claim": "The 10 ms CPU time limit on the Free plan is sufficient for average workloads but may be tight for heavier operations.",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Waiting on network requests (such as fetch() calls, KV reads, or database queries) does not count toward CPU time.",
+     "claim": "I/O wait time is excluded from the CPU time limit, meaning the 10 ms limit only applies to actual computation.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0021",
+  "cost": 0.02134384,
+  "score": {
+   "claims": [
+    {
+     "url": "https://stealwhatworks.com/blogs/news/why-omarchy-blowing-up",
+     "quote": "Omarchy currently does not publish a clean daily-active-user or retained-install figure that would let us measure this funnel properly.",
+     "claim": "Omarchy does not publicly release data on how many people actively use the OS or how many unique installations exist.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/08/100000-downloads-in-a-week/",
+     "quote": "One hundred thousand downloads of the Omarchy ISO in the past week!",
+     "claim": "Omarchy recorded 100,000 ISO downloads in a single week.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!",
+     "claim": "The Omarchy Quattro release reached 200,000 ISO downloads in 18 days.",
+     "status": "verified"
+    },
+    {
+     "url": "https://exa.ai/library/podcast/2fcpbmjslqh/episode/5vkwc1sslv7",
+     "quote": "The adoption numbers are the reason Daniel noticed 1,165,980 ISO downloads in year one.",
+     "claim": "Omarchy reached over 1.1 million total ISO downloads in its first year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e",
+     "quote": "Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN, and many images are being used to create multiple Omarchy devices.",
+     "claim": "Omarchy sees roughly 10,000 ISO downloads per day, though a single image may be used for multiple installations.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "The exact number of unique installations or actively retained daily users of Omarchy."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0022",
+  "cost": 0.00787013,
+  "score": {
+   "claims": [
+    {
+     "url": "https://survey.stackoverflow.co/2025/",
+     "quote": "51% of professional developers use AI tools daily.",
+     "claim": "In 2025, 51% of professional developers used AI tools daily.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.sonarsource.com/state-of-code-developer-survey-report.pdf",
+     "quote": "72% of developers who have tried AI coding tools now use them every day.",
+     "claim": "In 2026, 72% of developers who had tried AI coding tools used them every day.",
+     "status": "verified"
+    },
+    {
+     "url": "https://2026.stateofai.dev/en-US",
+     "quote": "the percentage of respondents stating they use AI \u201cconstantly\u201d doubling year-over-year.",
+     "claim": "In 2026, the percentage of developers using AI \"constantly\" saw a significant increase, though a specific percentage is not provided in the snippet.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://survey.stackoverflow.co/2026/ai"
+   ],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0023",
+  "cost": 0.00791033,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.debian.org/releases/stable/",
+     "quote": "The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.",
+     "claim": "A stable release's lifecycle is five years total: three years of full support followed by two years of LTS.",
+     "status": "verified"
+    },
+    {
+     "url": "https://wiki.debian.org/DebianReleases",
+     "quote": "has (from release to the end of security updates) a total lifetime of 5 years (the first three years of full support followed by two years of Long Term Support (LTS)).",
+     "claim": "Confirms the total 5-year lifecycle, broken into 3 years of full support and 2 years of LTS.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years.",
+     "claim": "The explicit purpose of LTS is to extend the support period to a minimum of five years.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian LTS is not handled by the Debian Security and Release teams. Thus the Debian LTS team takes over security maintenance of the various releases once the Debian Security team stops its work.",
+     "claim": "LTS support is provided by a separate team after the main Debian Security Team ends its support period.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 1,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 3
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0024",
+  "cost": 0.0173696,
+  "score": {
+   "claims": [
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum size of a database file is 4294967294 pages. At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 2.8e+14 bytes (281 terabytes, or 256 tebibytes, or 281474 gigabytes, or 262143 gibibytes).",
+     "claim": "Official maximum database size is 281 terabytes (with 65,536-byte pages)",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "During part of SQLite's INSERT and SELECT processing, the complete content of each row in the database is encoded as a single BLOB. So the SQLITE_MAX_LENGTH parameter also determines the maximum number of bytes in a row.",
+     "claim": "Maximum row size is determined by the SQLITE_MAX_LENGTH parameter",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1 thousand million or 1,000,000,000).",
+     "claim": "Default maximum row size (via string/BLOB limit) is 1 billion bytes",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/src/doc/tip/src/sqliteLimit.h",
+     "quote": "The hard limit is the ability of a 32-bit signed integer to count the size: 2^31-1 or 2147483647.",
+     "claim": "Hard upper limit for row size is 2,147,483,647 bytes (2\u00b3\u00b9-1)",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "Since version 3.45.0 (2024-01-15), 4294967294 is also the default value for SQLITE_MAX_PAGE_COUNT. When used with the default page size of 4096 bytes, this gives a maximum database size of about 17.5 terabytes.",
+     "claim": "Default maximum database size (with 4KB pages) is approximately 17.5 terabytes",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0025",
+  "cost": 0.00782236,
+  "score": {
+   "claims": [
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "Accounts on the Workers Free plan have a daily request limit of 100,000 requests, resetting at midnight UTC.",
+     "claim": "Free plan has 100,000 requests per day limit",
+     "status": "verified"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/limits/",
+     "quote": "CPU time per HTTP request | Workers Free | Workers Paid | --- | --- | --- | 10 ms | 5 min (default: 30 seconds)",
+     "claim": "Free plan has 10ms CPU time limit per HTTP request",
+     "status": "reworded"
+    },
+    {
+     "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+     "quote": "Free | 100,000 per day | No charge for duration | 10 milliseconds of CPU time per invocation",
+     "claim": "Free plan has 100,000 requests per day and 10ms CPU time per invocation",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cloudflare.com/plans/",
+     "quote": "Requests | 100k / day | $0.30 / million requests | CPU Time | 10 ms / request | $0.02 / million CPU ms",
+     "claim": "Free plan has 100k requests per day and 10ms CPU time per request",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 1,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0026",
+  "cost": 0.0082532,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.debian.org/releases/",
+     "quote": "The Debian release life cycle encompasses five years: the first three years of full support followed by two years of Long Term Support (LTS).",
+     "claim": "The official support period for a Debian stable release is five years, consisting of three years of full support and two years of LTS.",
+     "status": "verified"
+    },
+    {
+     "url": "https://wiki.debian.org/DebianReleases",
+     "quote": "has (from release to the end of security updates) a total lifetime of 5 years (the first three years of full support followed by two years of Long Term Support (LTS)).",
+     "claim": "The total lifetime of a stable release, from initial release to the end of security updates, is five years.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://www.debian.org/releases/stable/",
+     "quote": "The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.",
+     "claim": "An example of this policy is Debian 13, which receives full support for three years and LTS for the subsequent two years, ending in 2030.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 2,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0027",
+  "cost": 0.02717755,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "The third version of the Led logger has run without any major issues. Based on uptime logging there has never been any freeze or malfunction.",
+     "claim": "An ESP8266-based LED controller (running LED monitoring/logging firmware) achieved continuous operation exceeding 10,000 hours (approximately 14 months) without any crashes, freezes, or hardware malfunctions.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "As of June 2016 I have ended the experiment, once all the strips went over 10.000 hours.",
+     "claim": "The installation provided documented uptime measurements for LED strips monitored over a 10,000+ hour continuous runtime period.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "Very impressing, as at some point it has reached 4500 hours. Impressing for the power company, who never turned off the power for > 6 months.",
+     "claim": "The ESP8266 module achieved 4,500 hours (approximately 6 months) of continuous uninterrupted uptime without requiring a restart.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "This also proves that the ESP8266 module I used as a WiFi connection which is one of the first to hit the market, can function for a long time.",
+     "claim": "First-generation ESP8266 WiFi modules demonstrated long-term operational stability in permanent installation scenarios.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After a couple of days, the device because unresponsible within Home Assistant as well as pinging it / access to the WebUI.",
+     "claim": "WLED controllers based on ESP32-C3 exhibited reliability failures (complete system lockups) occurring after 3-5 days of continuous operation, requiring power cycling to restore functionality.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After downgrading to 0.15.1 on this ESP32-S2 the light currently shows an uptime of 7.5 days with no changes to the hardware, HA setup or power supply.",
+     "claim": "ESP32-S2 running WLED firmware version 0.15.1 achieved at least 7.5 days of documented stable uptime, whereas version 0.15.3 exhibited lockups within a few days under identical conditions.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/wled/WLED/issues/5596",
+     "quote": "after upgrading to v16 it is working again.",
+     "claim": "WLED version 16 resolved previous stability issues that had caused receiver-side choppiness and HTTP starvation in DDP virtual-bus configurations.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "I have two in my garage and both do the same since I had them. Think v0.13.0 originally. Now on 0.15.0 still.",
+     "claim": "Multiple WLED installations (two separate controllers) exhibited identical failure patterns (lockups every few days) across firmware versions 0.13.0 through 0.15.0.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "Long-term (>1 year) continuous uptime statistics specifically for WLED firmware with quantified failure rates (e.g., percentage of devices failing per month) across large sample sizes.",
+    "Documented MTBF (Mean Time Between Failures) figures or failure rate percentages for WLED controllers in permanent outdoor installations."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 3,
+    "unverifiable": 0
+   },
+   "failed": 3
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0028",
+  "cost": 0.02326948,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).",
+     "claim": "In memory care facilities, real-time video monitoring with AI fall detection eliminated long lies (>1 hour) compared to baseline periods.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "During the RTN period, 76.6% (108/141) of fallers received human staff assistance in less than 10 minutes, and 55.3% (78/141) of them spent less than 10 minutes on the ground.",
+     "claim": "The SafelyYou Guardian system enabled rapid staff response, with over three-quarters of fallers receiving assistance within 10 minutes.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN periods.",
+     "claim": "Real-time notification significantly reduced both time until staff assistance and total time on ground for dementia patients in residential care.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.",
+     "claim": "The Nobi ambient AI fall detection system reduced hospitalizations via ambulance transport by approximately one-quarter in care home settings.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "There was a significant improvement in the care home staff response times to fall occurrences from an average of 11 minutes before the Nobi device was used to an average of 2.99 minutes after this device was implemented.",
+     "claim": "The ambient sensor technology reduced response times by approximately 8 minutes, effectively reducing long lies.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "The technology reduces the likelihood of experiencing a fall in a day by about 32%.",
+     "claim": "The device not only improved response times but also contributed to fall prevention in care home residents.",
+     "status": "verified"
+    },
+    {
+     "url": "https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/",
+     "quote": "no fall related hospital admissions recorded in the last 12-months by the properties who have taken part so far",
+     "claim": "Implementation of 4D imaging fall detection technology in Essex care facilities eliminated fall-related hospital admissions over a 12-month period.",
+     "status": "verified"
+    },
+    {
+     "url": "https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/",
+     "quote": "there have also been no incidents of residents being grounded following a fall for an extended period of time \u2013 commonly known as a 'long lie'.",
+     "claim": "The technology successfully eliminated prolonged time-on-floor incidents in participating care homes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s12877-025-05856-2",
+     "quote": "The intervention had no effect on hospitalisations and emergency contacts.",
+     "claim": "For community-dwelling adults aged \u226575 living alone, a comprehensive intervention (motion sensors, fall detection necklace, and social service) failed to reduce hospitalizations compared to matched controls.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s12877-025-05856-2",
+     "quote": "participants made also little use of the intervention",
+     "claim": "The lack of efficacy in the community-dwelling population may be attributed to low adherence or engagement with the fall-detection technology.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    }
+   ],
+   "no_source": [
+    "Randomized controlled trials or longitudinal studies specifically measuring time-on-floor reduction for community-dwelling elderly people living alone in private residences (non-institutional settings). The available evidence for reducing time-on-floor comes exclusively from care home and memory care facility populations with 24-hour staff presence."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 5
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0029",
+  "cost": 0.0295351126,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "This is used all day every day, several times a day. Battery life: 36%",
+     "claim": "A heavily-used Aqara RTCGQ01LM Zigbee motion sensor still had 36% battery remaining after two years of daily use.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Used rarely, couple of times a week if that. Battery life: 100%",
+     "claim": "A rarely triggered Zigbee motion sensor showed no measurable battery drain over two years.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Bedroom- Battery life: 45%",
+     "claim": "Aqara WSDCGQ11LM Zigbee temperature/humidity/pressure sensors were down to 37\u201345% after two years of continuous reporting. Hmm, but the quote \"Bedroom- Battery life: 45%\" alone shows 45%. Maybe quote the office one too. Actually I could do two lines, or one line with the bedroom quote and claim mentioning the office figure separately... The claim should follow from the quote. Let me do:",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "line for BLE-specific field measurements.",
+    "lines for gaps"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+    "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+    "https://smarthomescene.com/reviews/best-selling-zigbee-temperature-sensors-tested/",
+    "https://www.cnx-software.com/2024/04/29/review-sonoff-snzb-06p-zigbee-human-presence-snzb-04pdoor-window-sensor/"
+   ],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0030",
+  "cost": 0.00781021,
+  "score": {
+   "claims": [
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "LTS | 30 months | Long-term support with security fixes",
+     "claim": "The total LTS support period (Active + Maintenance) lasts for 30 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "Total support: 36 months from first Current release to End of Life (EOL).",
+     "claim": "A release receives a total of 36 months of support from its initial release until its End-of-Life.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/nodejs/release/blob/main/README.md",
+     "quote": "Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage. Following those 12 months of active support, the major version will transition into 'maintenance' mode for 18 months.",
+     "claim": "Under the previous schedule, Active LTS lasted 12 months and Maintenance LTS lasted 18 months, for a total LTS period of 30 months.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0031",
+  "cost": 0.010276,
+  "score": {
+   "claims": [
+    {
+     "url": "https://blog.samaltman.com/the-gentle-singularity",
+     "quote": "the average energy use of a ChatGPT query",
+     "claim": "Sam Altman states the average ChatGPT query uses 0.34 watt-hours.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "optimized frontier-scale inference consumes sub-watt-hour energy per query (median 0.31 Wh, interquartile range [IQR] 0.16\u20130.60)",
+     "claim": "A large-scale study finds the median energy for a query on a model over 200B parameters is 0.31 Wh.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "\u201ctypical Gemini Apps request\u201d ... 0.24",
+     "claim": "A measurement from Google indicates a typical request to its Gemini apps uses 0.24 watt-hours.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use",
+     "quote": "GPT-4o ... 0.30",
+     "claim": "An estimate from Epoch AI calculates that a GPT-4o query for 500 output tokens uses 0.30 watt-hours.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://www.arxiv.org/pdf/2505.09598v3",
+     "quote": "A single short GPT-4o query consumes 0.42 Wh ( $\\pm 0.13$ Wh)",
+     "claim": "A study measuring user-side API throughput estimates a short GPT-4o query uses 0.42 watt-hours.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "\u201caverage ChatGPT query\u201d ... 2.9",
+     "claim": "An outdated 2023 estimate by de Vries, based on non-production conditions, claimed an average query used 2.9 watt-hours, which the newer study argues is a significant overestimate.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "DeepSeek-V3 ... 9.30",
+     "claim": "For a long, complex \"test-time scaling\" query (averaging 8,968 output tokens), the energy consumption was measured at 9.30 watt-hours.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "AI Energy Score ... Llama 3.1 70B ... 1.01",
+     "claim": "A measurement under non-production conditions (no batching, no serving engine) found a query used 1.01 watt-hours, over 10x higher than production measurements for the same model.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://www.cell.com/joule/fulltext/S2542-4351(26"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 1,
+    "unsupported": 2,
+    "dead_url": 0,
+    "unverifiable": 5
+   },
+   "failed": 2
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0032",
+  "cost": 0.0136736,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "Very impressing, as at some point it has reached 4500 hours. Impressing for the power company, who never turned off the power for > 6 months.",
+     "claim": "An ESP8266-based LED logger achieved a continuous uptime of at least 4500 hours (over 6 months) without freezing or malfunctioning.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.electrobob.com/led-logger-v3/",
+     "quote": "I cannot say the same for later bought modules (~1 year), as 2 of them had died already.",
+     "claim": "Later-purchased ESP8266 modules exhibited a 100% failure rate (2 out of 2 died) within approximately 1 year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After a couple of days, the device because unresponsible within Home Assistant as well as pinging it / access to the WebUI.",
+     "claim": "ESP32-C3 running WLED becomes unresponsive (crashes) after a couple of days of 24/7 operation.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "After downgrading to 0.15.1 on this ESP32-S2 the light currently shows an uptime of 7.5 days with no changes to the hardware, HA setup or power supply.",
+     "claim": "An ESP32-S2 running WLED version 0.15.1 achieved a stable uptime of 7.5 days, significantly longer than on version 0.15.3 which crashed every few days.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/2750",
+     "quote": "Right now I have around 30 minutes uptime according to the 'info tab' and noticed flash multiple times.",
+     "claim": "WLED 0.13.2 on ESP32 experienced rapid flashing/glitching within a 30-minute uptime window prior to a fix.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    },
+    {
+     "url": "https://github.com/Aircoookie/WLED/issues/4347",
+     "quote": "I've now had the ESP32-mini-SerKo alone powered via USB-C and no WLED mini shield and it's been going for over 9 days.",
+     "claim": "An ESP32-mini controller achieved over 9 days of stable uptime when isolated from its LED power shield.",
+     "status": "dead_url",
+     "note": "HTTP 404"
+    }
+   ],
+   "no_source": [
+    "A specific numerical failure rate (e.g., percentage of deployments failing per year) for WLED or ESP32 controllers in long-running installations."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 2,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 4,
+    "unverifiable": 0
+   },
+   "failed": 4
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0033",
+  "cost": 0.01036854,
+  "score": {
+   "claims": [
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "Rust releases every six weeks, like clockwork.",
+     "claim": "The official release cadence for stable Rust versions is every six weeks.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "When a new stable version is released, the old version reaches its end of life (EOL). This means each version is supported for six weeks.",
+     "claim": "Each stable version of Rust is supported for six weeks.",
+     "status": "verified"
+    },
+    {
+     "url": "https://rust-lang.github.io/rfcs/0507-release-channels.html",
+     "quote": "Development cycles are reduced to six weeks from the current twelve.",
+     "claim": "The release train model cycles are six weeks long.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/reference/index.html",
+     "quote": "Rust has a new language release every six weeks.",
+     "claim": "The Rust language releases on a six-week cadence.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0034",
+  "cost": 0.0339861,
+  "score": {
+   "claims": [
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Of 143,286 Polymarket markets resolved from March 2025 to August 2026 (Polymarket gamma API, UMA oracle status), 545 or 0.38%, about 1 in 263, ended in a formal resolution dispute.",
+     "claim": "Across ~143,000 resolved Polymarket markets, 0.38% (545 markets, roughly 1 in 263) ended in a formal resolution dispute.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000 (143,286 markets, 2025 to 2026).",
+     "claim": "Dispute rates rise sharply with trading volume \u2014 high-volume markets (>$100k) were disputed 1.45% of the time, ~11\u00d7 the rate of sub-$1,000 markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets (markets resolved March 2025 to August 2026).",
+     "claim": "Dispute frequency varies strongly by category; political/election markets dispute at 1.89% versus 0.12% for crypto markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/",
+     "quote": "The largest disputed Polymarket market by volume was the $242 million \u201cWill Zelenskyy wear a suit before July?\u201d contract (June 2025); all five largest disputed markets were political or geopolitical.",
+     "claim": "The biggest disputed market on record had $242M in volume, and the five largest disputed markets were all political/geopolitical.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Disputes were rare: 89 markets, 0.08%.",
+     "claim": "In a 15 August\u201310 September 2026 sample of 110,576 Polymarket markets, only 89 (0.08%) were disputed.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Markets that traded $100,000 or more were disputed six times as often, 0.5%, and geopolitics markets, whose questions meet messy events, 3.5% of the time, with a median wait of 74 hours after their scheduled end.",
+     "claim": "Larger markets were disputed at 0.5% (6\u00d7 the overall rate) and geopolitics markets at 3.5% \u2014 the highest category rate in that window.",
+     "status": "verified"
+    },
+    {
+     "url": "https://vultax.com/research/how-long-polymarket-takes-to-settle-markets",
+     "quote": "Anyone can dispute by posting a matching bond; a first dispute triggers a fresh proposal, and a second sends the question to a vote of UMA token holders, a discussion period of 24 to 48 hours followed by a vote of about 48 hours.",
+     "claim": "Describes Polymarket's formal dispute/challenge mechanism (bond-posted challenges escalating to a UMA token-holder vote).",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).",
+     "claim": "Ambiguously-worded contracts (rated \"C\" for resolution clarity) were disputed at 1.59%, 20\u00d7 the 0.08% rate of clearly-worded ones \u2014 ambiguity is a strong predictor of challenge.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "52 of the 55 markets that ended up in a resolution dispute had been rated C by ClearMarket, the lowest clarity tier.",
+     "claim": "52 of 55 formally disputed Polymarket markets had been pre-identified as having unclear resolution rules.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "The largest to date: Kalshi's February 2026 market on whether Iran's Supreme Leader would leave office, roughly $54M in volume, settled at the last traded price under a death carveout that appeared in the CFTC-filed terms but not on the trading page most traders read.",
+     "claim": "The largest known contested Kalshi settlement (~$54M volume) resulted from a resolution rule visible in filed terms but not on the trading page.",
+     "status": "verified"
+    },
+    {
+     "url": "https://clearmarket.fyi/research/resolution-clarity-index/",
+     "quote": "Kalshi refunded $2.2M in trades and fees, a class action is pending, and the episode forced a new exchange-wide settlement rule.",
+     "claim": "The disputed Kalshi Iran market resolution led to $2.2M in refunds, a pending class action, and a new settlement rule.",
+     "status": "verified"
+    },
+    {
+     "url": "https://fidonis.org/integrity/polymarket/2026-04/",
+     "quote": "From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.",
+     "claim": "Volume-weighted, 7.3% of Polymarket's UMA-resolved trading volume (~$1.5 billion) passed through a disputed resolution \u2014 far higher than the count-based rate, because disputes cluster in big markets.",
+     "status": "verified"
+    },
+    {
+     "url": "https://fidonis.org/integrity/polymarket/2026-04/",
+     "quote": "Count dispute rate 0.33% Jan '26, by market count",
+     "claim": "In January 2026, 0.33% of resolved Polymarket markets were disputed (228 of 69,611 markets that month).",
+     "status": "verified"
+    },
+    {
+     "url": "https://predictacademy.ai/academy/prediction-market-resolution/",
+     "quote": "More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.",
+     "claim": "Disputes are increasing over time \u2014 over 1,150 disputed markets in Jan\u2013May 2026, exceeding all of 2025.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Any comprehensive, independently computable dispute/challenge rate for Kalshi markets. Kalshi publishes no dispute feed; per the ClearMarket source, \"Kalshi publishes no dispute feed, so a Kalshi challenge rate cannot be independently computed by anyone, at any standard\" \u2014 its contested settlements surface only via courts, regulators, and press.",
+    "Data on dispute rates for prediction markets other than Polymarket and Kalshi (e.g., Manifold, Metaculus, PredictIt) \u2014 no published challenge/ambiguous-resolution statistics for these platforms appeared in the sources."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 14,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0035",
+  "cost": 0.00872121,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Motion sensor 1 (RTCGQ01LM) : sits on the landing and of an evening, turns on nightlights for a period of time and then if no further motion detected after a couple of minutes, turns the lights back off... Battery life: 36%",
+     "claim": "A frequently used Xiaomi motion sensor had 36% battery remaining after two years of use.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Motion sensor 2 (RTCGQ01LM): sits in a cupboard and turns on additional lighting when the cupboard doors are open, and again, if no further motion detected turns the lights back off. Used rarely, couple of times a week if that. Battery life: 100%",
+     "claim": "An infrequently used Xiaomi motion sensor had 100% battery remaining after two years of use.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Office- Battery life: 37%",
+     "claim": "A frequently used Xiaomi temperature/humidity/pressure sensor had 37% battery remaining after two years of use.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "The two bathroom sensors, which trigger dozens of times a day given how often that space is used, are the closest to needing a swap at the twelve-month mark, currently reporting under 20% in the app.",
+     "claim": "Heavily used Aqara motion sensors were nearing end of battery life (~20% remaining) after one year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "The garage sensor, triggered only a handful of times a week, still shows over 70% remaining.",
+     "claim": "An infrequently used Aqara motion sensor had over 70% battery remaining after one year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "| 30 seconds | 14.3 | 18.2 | 4.3 |",
+     "claim": "In a controlled benchmark test, a Zigbee 3.0 contact sensor reporting every 30 seconds achieved a battery life of 14.3 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "| 60 seconds | 22.7 | 28.5 | 7.1 |",
+     "claim": "In a controlled benchmark test, a Zigbee 3.0 contact sensor reporting every 60 seconds achieved a battery life of 22.7 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "Zigbee 3.0 battery life dropped by 18% (14.3 to 11.7 months) due to retransmissions",
+     "claim": "In a real-world test with Wi-Fi interference, the battery life of a Zigbee sensor reporting every 30 seconds dropped to 11.7 months.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Real, published measurements of battery life for a typical Bluetooth LE (BLE) smart home sensor (e.g., door/temperature sensors) achieved in the field."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 8,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0036",
+  "cost": 0.00800716,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "The primary rate limit for unauthenticated requests is 60 requests per hour.",
+     "claim": "Unauthenticated API requests are limited to 60 per hour",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "All of these requests count towards your personal rate limit of 5,000 requests per hour.",
+     "claim": "Authenticated requests using personal access tokens have a limit of 5,000 requests per hour",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "Requests made on your behalf by a GitHub App that is owned by a GitHub Enterprise Cloud organization have a higher rate limit of 15,000 requests per hour.",
+     "claim": "GitHub Apps owned by Enterprise Cloud organizations have a limit of 15,000 requests per hour",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "Similarly, requests made on your behalf by a OAuth app that is owned or approved by a GitHub Enterprise Cloud organization have a higher rate limit of 15,000 requests per hour if you are a member of the GitHub Enterprise Cloud organization.",
+     "claim": "OAuth apps owned by Enterprise Cloud organizations have a limit of 15,000 requests per hour for members",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0037",
+  "cost": 0.01100367,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/release/blob/main/README.md",
+     "quote": "Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage. Following those 12 months of active support, the major version will transition into \"maintenance\" mode for 18 months.",
+     "claim": "Under the previous release schedule (up to Node.js 26), Active LTS lasts 12 months and Maintenance lasts 18 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "Every release becomes LTS. ... LTS 30 months Long-term support with security fixes",
+     "claim": "Under the new release schedule (starting with Node.js 27), the total LTS phase lasts 30 months.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "An official quote explicitly stating the exact durations of the individual \"Active LTS\" and \"Maintenance\" sub-phases under the new release schedule, should they still exist as distinct phases."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 2,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0038",
+  "cost": 0.00860745,
+  "score": {
+   "claims": [
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "Rust releases every six weeks, like clockwork.",
+     "claim": "The official release cadence for Rust stable versions is every six weeks.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "The Rust project supports the most recent stable version.",
+     "claim": "Only the latest stable version receives official support from the Rust project.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "When a new stable version is released, the old version reaches its end of life (EOL).",
+     "claim": "Support for a specific stable version ends immediately upon the release of the next version.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "This means each version is supported for six weeks.",
+     "claim": "The duration of support for any given stable Rust version is exactly six weeks.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/cargo/reference/rust-version.html",
+     "quote": "Note: the Rust Project only offers bug fixes and security updates for the latest version.",
+     "claim": "Official bug fixes and security updates are exclusively provided for the most current stable release.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0039",
+  "cost": 0.0361933,
+  "score": {
+   "claims": [
+    {
+     "url": "https://link.springer.com/article/10.1186/s12877-025-05856-2",
+     "quote": "Our results revealed similar rates of emergency contacts (IRR = 0.89 [95%-CI:0.62\u20131.28]; p = .523) and hospitalisations (IRR = 1.23 [95%-CI:0.95\u20131.60]; p = .122) with similar durations (M Diff = -2.79 days [95%-CI:-7.63\u20132.06]; p = .260) and similar healthcare costs (-7%, [95%-CI: -54%-40%], p = .774) in the IG compared to matched controls (intention to treat approach).",
+     "claim": "A fall sensor and home emergency system intervention did not reduce hospitalisations or emergency contacts for \u226575-year-old community-dwelling adults.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s12877-025-05856-2",
+     "quote": "The intervention had no effect on hospitalisations and emergency contacts.",
+     "claim": "Fall detection technologies and motion sensors showed no measurable reduction in hospital admissions for elderly people living at home.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN periods.",
+     "claim": "The SafelyYou Guardian real-time fall detection video technology significantly reduced both Time Until staff Assistance and Time On the Ground for elderly fallers in memory care facilities.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).",
+     "claim": "Real-time notification from the fall detection ambient sensors eliminated incidents of elderly residents lying on the floor for over an hour in care facilities.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.",
+     "claim": "An AI-based ambient fall detection device reduced hospital admissions via ambulance conveyance among care home residents.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "The qualitative data corroborated the quantitative data as the respondents felt that the device helped in reducing long lies among residents.",
+     "claim": "Nobi smart lamps reduced time-on-floor (long lies) for elderly residents in care homes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/",
+     "quote": "One of the largest single installations of 4D imaging fall detection technology in the UK has cut fall related hospital admissions and long lies to zero.",
+     "claim": "4D imaging fall detection technology eliminated fall-related hospital admissions and long lies in participating UK care home properties.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Research specifically isolating elderly individuals living alone rather than general community-dwelling or care home populations to measure the impact of fall-detection devices on hospital admissions or time-on-floor."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 4
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0040",
+  "cost": 0.04071865,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "optimized frontier-scale inference consumes sub-watt-hour energy per query (median 0.31 Wh, interquartile range [IQR] 0.16\u20130.60)",
+     "claim": "Frontier-scale LLM inference under production conditions has median energy use of ~0.31 Wh per query (IQR 0.16\u20130.60 Wh).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "It also shows that high-profile public estimates and measurements based on non-production assumptions overstate energy use by 4\u201320\u00d7.",
+     "claim": "Non-production assumptions can inflate per-query energy estimates by a factor of ~4\u201320.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "recent efficiency improvements in model design, serving systems, and hardware could together reduce energy use by 8\u201320\u00d7",
+     "claim": "Combined model/serving/hardware efficiency gains may cut energy per query by ~8\u201320\u00d7.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Altman, S. (2025). The gentle singularity. Sam Altman Blog. https://blog.samaltman.com/the-gentle-singularity.",
+     "claim": "A public disclosure attributed to Sam Altman reports an average ChatGPT query energy of 0.34 Wh/query (as tabulated in the paper; details like hardware/query mix are not provided).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Elsworth, C. \u2219 Huang, K. \u2219 Patterson, D. ... Measuring the environmental impact of delivering AI at Google Scale",
+     "claim": "A fleetwide Google measurement reports a \u201ctypical Gemini Apps request\u201d energy of 0.24 Wh/query (as tabulated in the paper).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "You, J. (2025). How much energy does ChatGPT use? Epoch AI. https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use.",
+     "claim": "Epoch AI estimates a GPT\u20114o query at 0.30 Wh for ~500 output tokens (as tabulated in the paper).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Jegham, N. \u2219 Abdelatti, M. \u2219 Koh, C.Y. ... How hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference",
+     "claim": "An estimate for GPT\u20114o reports 0.42 Wh per query (300 output tokens) based on API user-side throughput (as tabulated in the paper).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "de Vries, A. The growing energy footprint of artificial intelligence Joule. 2023; 7:2191-2194",
+     "claim": "An older (2023) estimate for an \u201caverage ChatGPT query\u201d reports 2.9 Wh/query (as tabulated in the paper, noted as outdated/non-production conditions).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "median energy per query using FP8 reported as 0.21 Wh; average output tokens: 367",
+     "claim": "ML.ENERGY Benchmark v3 measurement for Llama 3.1 405B reports 0.21 Wh/query (FP8; ~367 output tokens).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "median energy per query for 4xH100 using BF16 reported as 0.04 Wh; assumed to be equivalent to 8xH100 using FP8; average output tokens: 361.",
+     "claim": "ML.ENERGY Benchmark v3 measurement for Llama 3.1 70B reports 0.04 Wh/query (BF16; ~361 output tokens; with an FP8-equivalent assumption stated).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "reported for FP16 as 0.08 Wh/query; we approximate to FP8 as 0.08 Wh/1.7 = 0.05; 300 output tokens",
+     "claim": "Caravaca et al. measurement for Llama 3.1 70B reports 0.08 Wh/query in FP16, approximated to ~0.05 Wh/query at FP8 (300 output tokens).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "reported for FP16 as 0.35 Wh/query; we approximate to FP8 as 0.35 Wh/1.7 = 0.21; 300 output tokens",
+     "claim": "Caravaca et al. measurement for Llama 3.1 405B reports 0.35 Wh/query in FP16, approximated to ~0.21 Wh/query at FP8 (300 output tokens).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "AI Energy Score ... we adjusted for quantization as 1.72 Wh/1.7 = 1.01; non-production conditions, no batching, no serving engine",
+     "claim": "AI Energy Score measurement for Llama 3.1 70B (non-production conditions) is adjusted to ~1.01 Wh/query for quantization (as tabulated).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "IEA estimate ... Mixtral 8\u00d722B ... \u223c1.25",
+     "claim": "IEA estimate for Mixtral 8\u00d722B is ~1.25 Wh/query under non-production conditions (as tabulated).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "IEA estimate ... DeepSeek-R1 ... \u223c2.25",
+     "claim": "IEA estimate for DeepSeek\u2011R1 is ~2.25 Wh/query under non-production conditions (as tabulated).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "median energy per query for B200 using FP8; adjusted to H100 as 3.32 Wh \u00d7 2.8 = 9.30 ... average output tokens: 8,968",
+     "claim": "ML.ENERGY Benchmark v3 measurement for DeepSeek\u2011V3 reports 9.30 Wh/query after hardware adjustment (B200\u2192H100), with very long outputs (~8,968 tokens).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "median energy per query for B200 using FP8; adjusted to H100 as 7.45 Wh \u00d7 2.8 = 20.9; average output tokens: 11,287",
+     "claim": "ML.ENERGY Benchmark v3 measurement for DeepSeek\u2011R1 reports 20.9 Wh/query after hardware adjustment (B200\u2192H100), with very long outputs (~11,287 tokens).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.arxiv.org/pdf/2505.09598v3",
+     "quote": "A single short GPT-4o query consumes 0.42 Wh ( $\\pm 0.13$ Wh)",
+     "claim": "The arXiv paper reports 0.42 Wh \u00b1 0.13 Wh for a single short GPT\u20114o query.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.arxiv.org/pdf/2505.09598v3",
+     "quote": "For medium-length queries, this increases to 9.71 Wh ( $\\pm 1.106$ Wh).",
+     "claim": "The same paper reports 9.71 Wh \u00b1 1.106 Wh for medium-length GPT\u20114o queries (daily pattern statement).",
+     "status": "reworded"
+    },
+    {
+     "url": "https://www.arxiv.org/pdf/2505.09598v3",
+     "quote": "exceeding the footprint of a Google search (0.30 Wh) by approximately 40%",
+     "claim": "The paper compares a short GPT\u20114o query (~0.42 Wh) with a Google search (~0.30 Wh).",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "A single universally accepted Wh/query value across all chatbots and query types (published figures vary widely by model, serving setup, output length, and assumptions)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://blog.samaltman.com/the-gentle-singularity",
+    "https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use",
+    "https://www.cell.com/joule/fulltext/S2542-4351(26"
+   ],
+   "counts": {
+    "verified": 1,
+    "reworded": 2,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 17
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0041",
+  "cost": 0.009782325,
+  "score": {
+   "claims": [
+    {
+     "url": "https://link.springer.com/article/10.1186/s12877-025-05856-2",
+     "quote": "Our results revealed similar rates of emergency contacts (IRR = 0.89 [95%-CI:0.62\u20131.28]; p = .523) and hospitalisations (IRR = 1.23 [95%-CI:0.95\u20131.60]; p = .122) with similar durations (M Diff = -2.79 days [95%-CI:-7.63\u20132.06]; p = .260) and similar healthcare costs (-7%, [95%-CI: -54%-40%], p = .774) in the IG compared to matched controls (intention to treat approach).",
+     "claim": "A matched-control intervention study of adults aged \u226575 living at home found that fall sensors and social services did not significantly reduce hospitalizations or emergency contacts compared to a control group.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN periods.",
+     "claim": "An observational study of the SafelyYou Guardian system in memory care facilities found that real-time notifications reduced the time until staff assistance by 28.3 minutes and time on the ground by 29.6 minutes.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.jmir.org/2021/6/e17551/PDF",
+     "quote": "The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).",
+     "claim": "The same study on the SafelyYou Guardian system showed that incidents of elderly residents lying on the floor for more than one hour were completely eliminated during the real-time notification period.",
+     "status": "unverifiable",
+     "note": "page text only 0 chars"
+    },
+    {
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf",
+     "quote": "Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.",
+     "claim": "An evaluation of the Nobi ambient AI fall detection device in care homes found a statistically significant 24% reduction in ambulance calls that resulted in hospital transport.",
+     "status": "verified"
+    },
+    {
+     "url": "https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/",
+     "quote": "The Council has already seen positive results from the early stages of the project, with no fall related hospital admissions recorded in the last 12-months by the properties who have taken part so far.",
+     "claim": "A large installation of 4D imaging fall detection technology in Essex County Council properties resulted in zero fall-related hospital admissions over a 12-month period.",
+     "status": "verified"
+    },
+    {
+     "url": "https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/",
+     "quote": "And there have also been no incidents of residents being grounded following a fall for an extended period of time \u2013 commonly known as a \u2018long lie\u2019.",
+     "claim": "The Essex County Council project also reported zero incidents of \"long lies\" (extended time on the floor after a fall) among participating residents.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Peer-reviewed research specifically measuring the reduction of hospital admissions or time-on-floor for elderly people living entirely alone (independent community dwelling) using ambient sensors, as the primary study found for this demographic showed no significant effect on hospitalizations."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 3
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0042",
+  "cost": 0.01997035,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "The primary rate limit for unauthenticated requests is 60 requests per hour.",
+     "claim": "The public GitHub REST API limit for unauthenticated requests is 60 requests per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "All of these requests count towards your personal rate limit of 5,000 requests per hour.",
+     "claim": "Authenticated users have a primary REST API rate limit of 5,000 requests per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "Requests made on your behalf by a GitHub App that is owned by a GitHub Enterprise Cloud organization have a higher rate limit of 15,000 requests per hour.",
+     "claim": "GitHub App requests on behalf of users in GitHub Enterprise Cloud organizations can have a 15,000 requests-per-hour limit.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "The rate limit for GITHUB_TOKEN is 1,000 requests per hour per repository.",
+     "claim": "GITHUB_TOKEN in GitHub Actions is limited to 1,000 REST API requests per hour per repository.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "For requests to resources that belong to a GitHub Enterprise Cloud account, the limit is 15,000 requests per hour per repository.",
+     "claim": "GITHUB_TOKEN requests to GitHub Enterprise Cloud resources can be limited at 15,000 requests per hour per repository.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0043",
+  "cost": 0.0093486,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.raspberrypi.com/news/raspberry-pis-commitment-to-longevity-a-sustainable-advantage/",
+     "quote": "Take the flagship Raspberry Pi 5, for example: it has a guaranteed minimum manufacturing end date of January 2038",
+     "claim": "The official statement on how long the Raspberry Pi 5 will remain in production, as announced on their news page.",
+     "status": "verified"
+    },
+    {
+     "url": "https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf",
+     "quote": "Production lifetime: Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The official product brief statement on the guaranteed minimum production lifetime of the Raspberry Pi 5.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "A definitive official statement resolving the discrepancy between the January 2036 date listed on the product brief/data sheets and the extended January 2038 date announced in the news post."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 2,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0044",
+  "cost": 0.01317092,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Under realistic assumptions for large-scale deployments, this study finds that optimized frontier-scale inference consumes sub-watt-hour energy per query (median 0.31 Wh, interquartile range [IQR] 0.16\u20130.60)",
+     "claim": "A 2026 study in Joule found that optimized frontier-scale LLM inference consumes a median of 0.31 Wh per query.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Elsworth et al. ... measurement ... \u201ctypical Gemini Apps request\u201d ... 0.24",
+     "claim": "A Google-scale measurement of the typical Gemini Apps request reported an energy consumption of 0.24 Wh per query.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "You 10 ... estimate ... GPT-4o ... 0.30",
+     "claim": "An Epoch AI heuristic FLOPs-based estimate for GPT-4o (for 500 output tokens) found it consumes 0.30 Wh per query.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Jegham et al. 8 ... estimate ... GPT-4o ... 0.42",
+     "claim": "An API user-side throughput estimate for GPT-4o (for 300 output tokens) found it consumes 0.42 Wh per query.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Altman 11 ... disclosure (unclear if measured or estimated) ... average energy use of a ChatGPT query ... 0.34",
+     "claim": "OpenAI CEO Sam Altman disclosed the average energy use of a ChatGPT query to be 0.34 Wh.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "De Vries 9 ... estimate ... \u201caverage ChatGPT query\u201d ... 2.9",
+     "claim": "An earlier, widely cited 2023 estimate by De Vries for an average ChatGPT query was 2.9 Wh, though the study notes this relied on outdated assumptions and non-production conditions.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "ML.ENERGY Benchmark (version 3.0) ... measurement ... DeepSeek-R1 ... 20.9",
+     "claim": "Measurements of the long-reasoning model DeepSeek-R1 show significantly higher energy consumption at 20.9 Wh per query (adjusted to H100 equivalent).",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.arxiv.org/pdf/2505.09598v3",
+     "quote": "A single short GPT-4o query consumes 0.42 Wh ( $\\pm 0.13$ Wh), exceeding the footprint of a Google search (0.30 Wh) by approximately 40%.",
+     "claim": "A separate study measuring GPT-4o interactions found that a single short query consumes 0.42 Wh.",
+     "status": "reworded"
+    },
+    {
+     "url": "https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use",
+     "quote": "We find that typical ChatGPT queries using GPT-4o likely consume roughly 0.3 watt-hours, which is ten times less than the older estimate.",
+     "claim": "Epoch AI's independent analysis estimates typical ChatGPT queries using GPT-4o consume roughly 0.3 Wh.",
+     "status": "verified"
+    },
+    {
+     "url": "https://engineeringprompts.substack.com/p/the-average-chatgpt-request-uses",
+     "quote": "Yesterday, in a blog post, OpenAI co-founder and CEO Sam Altman revealed that \u201cthe average (ChatGPT) query uses about 0.34 watt-hours\u201d.",
+     "claim": "A news summary confirming Sam Altman's disclosure that the average ChatGPT query uses about 0.34 Wh.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Published estimates for the exact energy consumption per query of Anthropic's Claude models."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://www.cell.com/joule/fulltext/S2542-4351(26"
+   ],
+   "counts": {
+    "verified": 2,
+    "reworded": 1,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 7
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0045",
+  "cost": 0.010362125,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Motion sensor 1 (RTCGQ01LM) : sits on the landing and of an evening, turns on nightlights for a period of time and then if no further motion detected after a couple of minutes, turns the lights back off. ... Used all day every day, several times a day. Battery life: 36%",
+     "claim": "An Aqara motion sensor used heavily (multiple times daily) retained 36% battery after two years.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Temperature/Humidity/Pressure Sensor (WSDCGQ11LM): ... Office- Battery life: 37% ... Bedroom- Battery life: 45%",
+     "claim": "Aqara environmental sensors in regular indoor locations retained between 37% and 45% battery after two years.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "The two bathroom sensors, which trigger dozens of times a day given how often that space is used, are the closest to needing a swap at the twelve-month mark, currently reporting under 20% in the app.",
+     "claim": "Aqara motion sensors triggered dozens of times daily dropped below 20% battery life after one year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "The garage sensor, triggered only a handful of times a week, still shows over 70% remaining.",
+     "claim": "An Aqara motion sensor triggered only a few times per week retained over 70% battery life after one year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "Zigbee 3.0 battery life dropped by 18% (14.3 to 11.7 months) due to retransmissions... and Wi-Fi 6 battery life dropped by 12% (4.3 to 3.8 months) due to Wi-Fi congestion causing slower associations.",
+     "claim": "In a controlled test with interference, Zigbee 3.0 door sensors reporting every 30 seconds lasted 11.7 months, while Wi-Fi 6 sensors lasted 3.8 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "In industrial environments with heavy 2.4GHz interference (e.g., factories with 50+ Wi-Fi devices), Zigbee battery life dropped to 8.1 months, while Z-Wave remained at 17.9 months.",
+     "claim": "Under heavy interference, Zigbee sensor battery life (reporting every 30 seconds) decreased to 8.1 months, whereas Z-Wave was unaffected.",
+     "status": "verified"
+    },
+    {
+     "url": "https://smarthomescene.com/reviews/best-selling-zigbee-temperature-sensors-tested/",
+     "quote": "However, outside of this test, I\u2019ve been running first-gen Aqara sensors in my own home for years without a battery change. They are among the most efficient Zigbee temperature and humidity sensors out there, even though they run on a single CR2032 battery.",
+     "claim": "Real-world anecdotal evidence suggests first-generation Aqara temperature sensors can last multiple years on a single CR2032 battery, exceeding typical manufacturer claims.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cnx-software.com/2024/04/29/review-sonoff-snzb-06p-zigbee-human-presence-snzb-04pdoor-window-sensor/",
+     "quote": "SONOFF claims up to 5 years, but we know it really depends on usage.",
+     "claim": "Manufacturer claims for newer Zigbee sensors (like the Sonoff SNZB-04P) suggest up to 5 years of battery life, though real-world performance varies by usage.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "Real, published field measurements of battery life specifically for Bluetooth LE (BLE) smart home sensors."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 8,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0046",
+  "cost": 0.0132477,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.debian.org/releases/",
+     "quote": "The Debian release life cycle encompasses five years: the first three years of full support followed by two years of Long Term Support (LTS).",
+     "claim": "Debian officially states that a stable release receives five years of total support, structured as three years of full support plus two years of LTS.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.debian.org/releases/stable/",
+     "quote": "The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.",
+     "claim": "This five-year lifecycle (three years full support + two years LTS) applies to specific stable releases, exemplified here by Debian 13 \"trixie\".",
+     "status": "verified"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years.",
+     "claim": "The LTS project officially exists to extend the security support lifetime of stable releases to a minimum of five years total.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    },
+    {
+     "url": "https://wiki.debian.org/LTS",
+     "quote": "Debian LTS is not handled by the Debian Security and Release teams. Thus the Debian LTS team takes over security maintenance of the various releases once the Debian Security team stops its work.",
+     "claim": "The LTS period is managed separately from the initial full support period, with a dedicated LTS team taking over after the standard security support ends.",
+     "status": "unverifiable",
+     "note": "page text only 92 chars"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 2,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 2
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0047",
+  "cost": 0.0209022,
+  "score": {
+   "claims": [
+    {
+     "url": "https://omarchy.us/news/2026/08/100000-downloads-in-a-week/",
+     "quote": "One hundred thousand downloads of the Omarchy ISO in the past week!",
+     "claim": "Omarchy achieved 100,000 ISO downloads in a single week (August 2026).",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!",
+     "claim": "The Quattro release reached 200,000 cumulative ISO downloads in 18 days.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "On average, someone has pulled a fresh Omarchy every 8 seconds since Quattro shipped.",
+     "claim": "The distribution is being downloaded approximately every 8 seconds, indicating high installation velocity.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "At the peak, we shipped 1,165 ISOs in a single hour. One every 3 seconds!",
+     "claim": "Peak download activity reached 1,165 installations per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "1Password knows which Linux distros their users run, and during the week, Omarchy is now their #2 distro, ahead of Fedora. On the weekends? We\u2019re #1!",
+     "claim": "Third-party telemetry from 1Password indicates Omarchy is actively used by a large user base, ranking #1 or #2 among Linux distributions.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e",
+     "quote": "DHH stated that he has been retrieving Cloudflare data through the cf cli and pushing download statistics notifications daily on a scheduled basis via the Omarchy built-in proxy.",
+     "claim": "Download statistics are being tracked and verified through Cloudflare CDN data.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e",
+     "quote": "According to DHH, the Linux distribution Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN, and many images are being used to create multiple Omarchy devices.",
+     "claim": "Daily downloads are approaching 10,000, and the actual installed base may be higher than download counts suggest due to multiple device installations from single ISOs.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e",
+     "quote": "In interactions with users, he said that Omarchy's initial goal is to capture about 20% of the personal computer market.",
+     "claim": "The founder is targeting 20% PC market share, indicating ambitions for mass adoption beyond current download numbers.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "The specific number of active daily/monthly users (distinct from installation counts)"
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 8,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0048",
+  "cost": 0.01415785,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.",
+     "claim": "The PostgreSQL Global Development Group officially states that each major PostgreSQL version receives fixes and support for five years from its initial release date.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "After this, a final minor version will be released and the software will then be unsupported (end-of-life).",
+     "claim": "Once the five-year support period expires, the major version stops receiving fixes and is considered end-of-life.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/",
+     "quote": "Each major version receives bug fixes and, if need be, security fixes that are released at least once every three months in what we call a 'minor release.'",
+     "claim": "During the five-year support window, major versions receive bug fixes and security fixes through quarterly minor releases.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0049",
+  "cost": 0.00904165,
+  "score": {
+   "claims": [
+    {
+     "url": "https://baeseokjae.github.io/posts/ai-developer-tools-statistics-2026/",
+     "quote": "Within three years, near-universal adoption arrived \u2014 but the nature of that adoption has shifted from experimental to workflow-critical. Daily usage among professional developers sits at 51%, meaning more than half the global developer workforce interacts with an AI coding tool every single working day.",
+     "claim": "The JetBrains January 2026 survey reports that 51% of professional developers use AI tools daily.",
+     "status": "verified"
+    },
+    {
+     "url": "https://toolixlab.com/blog/ai-coding-statistics-2026",
+     "quote": "47.1% of all developers \u2014 and 51% of professional developers \u2014 use them daily.",
+     "claim": "Data attributed to the Stack Overflow Developer Survey indicates that 51% of professional developers use AI tools daily.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.sonarsource.com/state-of-code-developer-survey-report.pdf",
+     "quote": "72% of developers who have tried AI coding tools now use them every day.",
+     "claim": "The 2026 State of Code Developer Survey reports that 72% of developers who have tried AI coding tools use them daily.",
+     "status": "verified"
+    },
+    {
+     "url": "https://survey.stackoverflow.co/2026/ai",
+     "quote": "The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.",
+     "claim": "The Stack Overflow Developer Survey 2026 reports that 73% of respondents use coding assistants and agents daily.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0050",
+  "cost": 0.008845025,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/node/blob/main/README.md",
+     "quote": "LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_.",
+     "claim": "Official Node.js documentation states that LTS releases have a 12-month Active LTS period followed by an 18-month Maintenance period.",
+     "status": "unsupported"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "Every release becomes LTS. ... LTS | 30 months | Long-term support with security fixes",
+     "claim": "Under the new schedule starting with Node.js 27, every release becomes LTS with a 30-month support window.",
+     "status": "verified"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "Total support: 36 months from first Current release to End of Life (EOL).",
+     "claim": "The total support duration for the new release model is 36 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/nodejs/release/blob/main/README.md",
+     "quote": "Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage. Following those 12 months of active support, the major version will transition into \"maintenance\" mode for 18 months.",
+     "claim": "The release repository confirms the 12-month Active and 18-month Maintenance structure for even-numbered LTS versions under the current model.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 1,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 1
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0051",
+  "cost": 0.00825088,
+  "score": {
+   "claims": [
+    {
+     "url": "https://omarchy.us/news/2026/08/100000-downloads-in-a-week/",
+     "quote": "One hundred thousand downloads of the Omarchy ISO in the past week!",
+     "claim": "Omarchy had 100,000 ISO downloads in a seven-day period in August 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://omarchy.us/news/2026/09/quattro-crosses-200000-iso-downloads/",
+     "quote": "Two hundred thousand ISO downloads of Omarchy Quattro in just 18 days!",
+     "claim": "The Quattro release of Omarchy reached 200,000 ISO downloads within 18 days of its release (by early September 2026).",
+     "status": "verified"
+    },
+    {
+     "url": "https://exa.ai/library/podcast/2fcpbmjslqh/episode/5vkwc1sslv7",
+     "quote": "The adoption numbers are the reason Daniel noticed 1,165,980 ISO downloads in year one.",
+     "claim": "Omarchy had a cumulative total of approximately 1.16 million ISO downloads in its first year.",
+     "status": "verified"
+    },
+    {
+     "url": "https://stealwhatworks.com/blogs/news/why-omarchy-blowing-up",
+     "quote": "DHH estimated roughly 150,000 installations over an entire month.",
+     "claim": "In 2025, the estimated installation pace was around 150,000 per month.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.panews.io/articles/01a0855c-f312-70ef-b5d1-eb2cf87f5c1e",
+     "quote": "Omarchy ISO downloads have approached nearly 10,000 per day via Cloudflare CDN",
+     "claim": "As of early September 2026, the download rate was nearly 10,000 ISOs per day.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "The number of people who actively use the Omarchy Linux distribution as their daily operating system (a retained user count)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0052",
+  "cost": 0.0134618,
+  "score": {
+   "claims": [
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "Rust releases every six weeks, like clockwork.",
+     "claim": "The official Rust Book documents that stable releases occur on a fixed six-week cadence.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/reference/index.html",
+     "quote": "Rust has a new language release every six weeks.",
+     "claim": "The official Rust Reference confirms the six-week release interval for the language and its associated tooling.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "The Rust project supports the most recent stable version.",
+     "claim": "Official Rust documentation specifies that support (including bug fixes and security updates) is provided only for the latest stable release.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html",
+     "quote": "This means each version is supported for six weeks.",
+     "claim": "The Rust Book explicitly states that the support lifetime of any given stable version is exactly six weeks, tied to the release interval.",
+     "status": "verified"
+    },
+    {
+     "url": "https://doc.rust-lang.org/stable/cargo/reference/rust-version.html",
+     "quote": "Note: the Rust Project only offers bug fixes and security updates for the latest version.",
+     "claim": "The official Cargo Book corroborates that maintenance support (bug fixes and security patches) is restricted to the most recent stable release.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 5,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0053",
+  "cost": 0.00853595,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.postgresql.org/support/versioning/?from_theconsensus=1",
+     "quote": "The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.",
+     "claim": "Each major PostgreSQL version receives official support for a period of five years from its initial release date.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/?from_theconsensus=1",
+     "quote": "After this, a final minor version will be released and the software will then be unsupported (end-of-life).",
+     "claim": "Support ends after the five-year period with the release of a final minor version, after which the software is considered end-of-life.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.postgresql.org/support/versioning/?from_theconsensus=1",
+     "quote": "Each major version receives bug fixes and, if need be, security fixes that are released at least once every three months in what we call a 'minor release.'",
+     "claim": "During the support period, fixes are distributed through minor releases issued at least quarterly.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0054",
+  "cost": 0.00791548,
+  "score": {
+   "claims": [],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://doc.rust-lang.org/stable/book/appendix-07-nightly-rust.html"
+   ],
+   "counts": {
+    "verified": 0,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0055",
+  "cost": 0.0092165,
+  "score": {
+   "claims": [
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 2.8e+14 bytes (281 terabytes, or 256 tebibytes, or 281474 gigabytes, or 262143 gibibytes).",
+     "claim": "The maximum theoretical database size is approximately 281 terabytes when using the maximum page size of 65536 bytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "When used with the default page size of 4096 bytes, this gives a maximum database size of about 17.5 terabytes.",
+     "claim": "With the default page size of 4096 bytes, the maximum database size is approximately 17.5 terabytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The largest possible setting for SQLITE_MAX_PAGE_COUNT is 4294967294 (2 32 -2).",
+     "claim": "The maximum number of pages in a single database file is 4,294,967,294.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1 thousand million or 1,000,000,000).",
+     "claim": "The default maximum length for a string or BLOB, which effectively limits row size, is 1 billion bytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The current implementation will only support a string or BLOB length up to 2 31 -3 or 2147483645.",
+     "claim": "The hard upper limit for a string or BLOB length is 2,147,483,645 bytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "During part of SQLite's INSERT and SELECT processing, the complete content of each row in the database is encoded as a single BLOB. So the SQLITE_MAX_LENGTH parameter also determines the maximum number of bytes in a row.",
+     "claim": "The SQLITE_MAX_LENGTH parameter directly determines the maximum number of bytes in a row.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 6,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0056",
+  "cost": 0.008798875,
+  "score": {
+   "claims": [
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "The primary rate limit for unauthenticated requests is 60 requests per hour.",
+     "claim": "Unauthenticated requests are limited to 60 requests per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "All of these requests count towards your personal rate limit of 5,000 requests per hour.",
+     "claim": "Authenticated users have a primary rate limit of 5,000 requests per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "Requests made on your behalf by a GitHub App that is owned by a GitHub Enterprise Cloud organization have a higher rate limit of 15,000 requests per hour.",
+     "claim": "Authenticated requests made via GitHub Apps owned by GitHub Enterprise Cloud organizations have a limit of 15,000 requests per hour.",
+     "status": "verified"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+     "quote": "These count towards a separate rate limiting bucket with a limit of 300 requests per minute for unauthenticated requests and 3,000 requests per minute for authenticated requests.",
+     "claim": "Git LFS API requests have separate limits of 300 requests per minute for unauthenticated users and 3,000 requests per minute for authenticated users.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0057",
+  "cost": 0.0109572,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Under realistic assumptions for large-scale deployments, this study finds that optimized frontier-scale inference consumes sub-watt-hour energy per query (median 0.31 Wh, interquartile range [IQR] 0.16\u20130.60), aligning with multiple independent measurements and estimates under production conditions.",
+     "claim": "Optimized large-scale LLM inference has a median energy consumption of 0.31 Wh per query.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://engineeringprompts.substack.com/p/the-average-chatgpt-request-uses",
+     "quote": "OpenAI co-founder and CEO Sam Altman revealed that \u201cthe average (ChatGPT) query uses about 0.34 watt-hours\u201d.",
+     "claim": "Sam Altman stated that the average ChatGPT query consumes 0.34 Wh.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Elsworth, C. \u2219 Huang, K. \u2219 Patterson, D. ... Measuring the environmental impact of delivering AI at Google Scale Preprint at arXiv. 2025... \u201ctypical Gemini Apps request\u201d... 0.24",
+     "claim": "A typical Gemini Apps request consumes 0.24 Wh according to Google-scale measurements.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "You, J. (2025). How much energy does ChatGPT use? Epoch AI... GPT-4o... 0.30... heuristic FLOPs-based estimate for500 output tokens",
+     "claim": "A heuristic estimate for a GPT-4o query with 500 output tokens is 0.30 Wh.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "Jegham, N. \u2219 Abdelatti, M. \u2219 Koh, C.Y. ... How hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference Preprint at arXiv. 2025... GPT-4o... 0.42... API user-side throughput for 300 output tokens",
+     "claim": "An estimate for a GPT-4o query with 300 output tokens based on API user-side throughput is 0.42 Wh.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "ML.ENERGY Benchmark (version 3.0)... Llama 3.1 70B... 0.04... median energy per query for 4xH100 using BF16 reported as 0.04 Wh; assumed to be equivalent to 8xH100 using FP8; average output tokens: 361.",
+     "claim": "The median energy per query for Llama 3.1 70B is 0.04 Wh under specific benchmark conditions.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "ML.ENERGY Benchmark (version 3.0)... DeepSeek-R1... 20.9... median energy per query for B200 using FP8; adjusted to H100 as 7.45 Wh \u00d7 2.8 = 20.9; average output tokens: 11,287",
+     "claim": "A DeepSeek-R1 query with an average of 11,287 output tokens consumes approximately 20.9 Wh when adjusted to H100 equivalent hardware.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00114-5",
+     "quote": "De Vries 9... \u201caverage ChatGPT query\u201d... 2.9... outdated estimate; non-production conditions, no batching, no serving engine",
+     "claim": "An older estimate by De Vries placed the average ChatGPT query at 2.9 Wh, though this is considered outdated due to non-production assumptions.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.arxiv.org/pdf/2505.09598v3",
+     "quote": "A single short GPT-4o query consumes 0.42 Wh ( $\\pm 0.13$ Wh), exceeding the footprint of a Google search (0.30 Wh) by approximately 40%.",
+     "claim": "A short GPT-4o query consumes 0.42 Wh, which is about 40% more than a Google search.",
+     "status": "reworded"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [
+    "https://www.cell.com/joule/fulltext/S2542-4351(26"
+   ],
+   "counts": {
+    "verified": 1,
+    "reworded": 1,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 7
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0058",
+  "cost": 0.0375045,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Motion sensor 1 (RTCGQ01LM) : sits on the landing and of an evening, turns on nightlights for a period of time and then if no further motion detected after a couple of minutes, turns the lights back off. This is used all day every day, several times a day. Battery life: 36%",
+     "claim": "A heavily-used Aqara Zigbee motion sensor on CR2032 retained 36% battery after 2 full years of daily multi-trigger use, suggesting roughly 3+ year real-world battery life even under heavy trigger frequency.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Motion sensor 2 (RTCGQ01LM): sits in a cupboard and turns on additional lighting when the cupboard doors are open, and again, if no further motion detected turns the lights back off. Used rarely, couple of times a week if that. Battery life: 100%",
+     "claim": "An infrequently-triggered Aqara Zigbee motion sensor showed 100% battery after 2 years, demonstrating that trigger frequency is the dominant variable in battery drain.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Office- Battery life: 37% \u2026 Bedroom- Battery life: 45%",
+     "claim": "Aqara Zigbee temperature/humidity/pressure sensors (WSDCGQ11LM, CR2032) dropped to 37\u201345% after 2 years, implying roughly 4-year total battery life for always-on environmental sensors.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "Door opened a couple of times a month on average (more in summer obviously). Battery life: 100%",
+     "claim": "An Aqara Zigbee contact sensor (MCCGQ11LM) still showed 100% battery after 2 years of occasional use, showing contact sensors can far exceed manufacturer claims when triggers are rare.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.thesmarthomebook.com/2020/12/04/xiaomi-aqara-2-year-review/",
+     "quote": "The battery life on these sensors has been nothing short of brilliant. Obviously the environmental sensors are going to be the ones dropping the fastest, but the batteries are an easy replacement when they do run out eventually.",
+     "claim": "The author's overall assessment after 2 years: environmental (temperature/humidity) sensors drain fastest, but all Aqara Zigbee sensors outperformed expectations.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "Aqara rates these sensors for roughly a year of battery life on their CR2450 coin cell, and across seven units placed in genuinely different conditions, the real figure has run ahead of that estimate for six of the seven.",
+     "claim": "In a 12-month real-world test of seven Aqara motion sensors, six of seven exceeded the manufacturer's claimed ~1-year battery life.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "The two bathroom sensors, which trigger dozens of times a day given how often that space is used, are the closest to needing a swap at the twelve-month mark, currently reporting under 20% in the app.",
+     "claim": "High-frequency motion sensors (dozens of triggers/day) fell below 20% battery at 12 months, consistent with the ~1-year manufacturer rating.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "The garage sensor, triggered only a handful of times a week, still shows over 70% remaining.",
+     "claim": "A lightly-triggered Aqara motion sensor retained >70% after a full year, suggesting 3+ year battery life for low-activity locations.",
+     "status": "verified"
+    },
+    {
+     "url": "https://asidehouse.com/gizmo/a-year-with-aqara-motion-sensors-dotted-round-the-house/",
+     "quote": "battery life on this category scales with trigger frequency far",
+     "claim": "The author's key finding: real-world battery life varies enormously by trigger frequency, making any single manufacturer figure unreliable as a universal claim.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "All sensors used fresh CR2032 coin cells (225mAh capacity), reported door/window state every 30 seconds, and logged voltage every 10 minutes. End of life was defined as voltage dropping below 2.0V (sensor shutdown). Test duration: 12 months, all 120 sensors completed the test with no hardware failures.",
+     "claim": "A controlled 12-month benchmark of 120 sensors (40 each Zigbee 3.0, Z-Wave 800, Wi-Fi 6) on CR2032 cells, reporting every 30 seconds, with voltage-based end-of-life detection.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "| 30 seconds | 14.3 | 18.2 | 4.3 |",
+     "claim": "At 30-second reporting intervals, measured battery life was 14.3 months (Zigbee 3.0), 18.2 months (Z-Wave 800), and only 4.3 months (Wi-Fi 6) on CR2032.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "| 60 seconds | 22.7 | 28.5 | 7.1 |",
+     "claim": "Halving reporting to 60 seconds roughly doubled measured battery life: 22.7 months (Zigbee), 28.5 months (Z-Wave), 7.1 months (Wi-Fi).",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "Zigbee 3.0 battery life dropped by 18% (14.3 to 11.7 months) due to retransmissions, Z-Wave 800 saw no drop (18.2 months) as 908MHz is unaffected by 2.4GHz interference",
+     "claim": "Under heavy 2.4 GHz interference, measured Zigbee battery life dropped 18% (to 11.7 months) due to retransmissions, while Z-Wave was unaffected.",
+     "status": "verified"
+    },
+    {
+     "url": "https://johal.in/benchmark-zigbee-30-vs-z-wave-vs-wi-fi-smart",
+     "quote": "For industrial environments with heavy 2.4GHz interference (e.g., factories with 50+ Wi-Fi devices), Zigbee battery life dropped to 8.1 months, while Z-Wave remained at 17.9 months.",
+     "claim": "In extreme 2.4 GHz noise, measured Zigbee battery life fell to 8.1 months\u2014nearly half the clean-environment figure\u2014showing environment matters as much as protocol.",
+     "status": "verified"
+    },
+    {
+     "url": "https://smarthomescene.com/reviews/best-selling-zigbee-temperature-sensors-tested/",
+     "quote": "outside of this test, I've been running first-gen Aqara sensors in my own home for years without a battery change. They are among the most efficient Zigbee temperature and humidity sensors out there, even though they run on a single CR2032 battery.",
+     "claim": "A reviewer running first-gen Aqara Zigbee temperature sensors reports multiple years without a battery swap on a single CR2032, corroborating thesmarthomebook's 2-year data.",
+     "status": "verified"
+    },
+    {
+     "url": "https://smarthomescene.com/reviews/best-selling-zigbee-temperature-sensors-tested/",
+     "quote": "Paulie \u25cf deserves a specific mention here too. Its CR2477 packs meaningfully more capacity than a standard CR2032, at the cost of just a bit of extra thickness. Its official rated battery life is 4 years, the best in this comparison.",
+     "claim": "The SONOFF SNZB-02P Zigbee temperature sensor carries a 4-year official battery rating (CR2477), though the reviewer notes they did not independently verify this in the test.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cnx-software.com/2024/04/29/review-sonoff-snzb-06p-zigbee-human-presence-snzb-04pdoor-window-sensor/",
+     "quote": "SONOFF claims up to 5 years, but we know it really depends on usage.",
+     "claim": "SONOFF claims 5-year battery life for the SNZB-04P Zigbee door sensor, but the reviewer cautions that real-world results depend heavily on usage patterns.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "A long-term (multi-year) real-world battery study specifically for Bluetooth LE (BLE) smart home sensors (e.g., Xiaomi Mijia BLE, Govee BLE, SwitchBot BLE) with measured remaining capacity over time. All field data found was for Zigbee sensors; BLE sensor longevity data is only available via manufacturer claims or very short-term reviews."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 17,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0059",
+  "cost": 0.01211003,
+  "score": {
+   "claims": [
+    {
+     "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+     "quote": "Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The official Raspberry Pi 5 product page states it will be manufactured until at least January 2036.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.raspberrypi.com/news/raspberry-pis-commitment-to-longevity-a-sustainable-advantage/",
+     "quote": "Take the flagship Raspberry Pi 5, for example: it has a guaranteed minimum manufacturing end date of January 2038, with production of many of its key silicon components extending as far as 2042.",
+     "claim": "A more recent official Raspberry Pi blog post updates the commitment, stating the Raspberry Pi 5 is guaranteed to be manufactured until at least January 2038.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "An explicit explanation from Raspberry Pi reconciling the discrepancy between the January 2036 date on the product page and the January 2038 date in the blog post."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 1,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0060",
+  "cost": 0.01208882,
+  "score": {
+   "claims": [
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum size of a database file is 4294967294 pages. At the maximum page size of 65536 bytes, this translates into a maximum database size of approximately 2.8e+14 bytes (281 terabytes, or 256 tebibytes, or 281474 gigabytes, or 262143 gibibytes).",
+     "claim": "The maximum theoretical size of a SQLite database is approximately 281 terabytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The maximum number of bytes in a string or BLOB in SQLite is defined by the preprocessor macro SQLITE_MAX_LENGTH. The default value of this macro is 1 billion (1 thousand million or 1,000,000,000).",
+     "claim": "The default maximum size for a string or BLOB, which dictates row size, is 1,000,000,000 bytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "The current implementation will only support a string or BLOB length up to 2 31 -3 or 2147483645.",
+     "claim": "The hard maximum size for a string or BLOB (and thus a row) supported by the current implementation is 2,147,483,645 bytes.",
+     "status": "verified"
+    },
+    {
+     "url": "https://sqlite.org/limits.html",
+     "quote": "During part of SQLite's INSERT and SELECT processing, the complete content of each row in the database is encoded as a single BLOB. So the SQLITE_MAX_LENGTH parameter also determines the maximum number of bytes in a row.",
+     "claim": "The maximum row size in a SQLite table is determined by the SQLITE_MAX_LENGTH parameter (default 1 billion bytes, hard limit 2,147,483,645 bytes).",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0061",
+  "cost": 0.01069516,
+  "score": {
+   "claims": [
+    {
+     "url": "https://baeseokjae.github.io/posts/ai-developer-tools-statistics-2026/",
+     "quote": "Daily usage among professional developers sits at 51%, meaning more than half the global developer workforce interacts with an AI coding tool every single working day.",
+     "claim": "51% of professional developers use AI tools daily in 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://toolixlab.com/blog/ai-coding-statistics-2026",
+     "quote": "47.1% of all developers \u2014 and 51% of professional developers \u2014 use them daily.",
+     "claim": "51% of professional developers use AI tools daily (based on 2025 Stack Overflow survey data).",
+     "status": "verified"
+    },
+    {
+     "url": "https://survey.stackoverflow.co/2026/ai",
+     "quote": "The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.",
+     "claim": "73% of the survey respondents (not explicitly filtered to only professionals, though largely professional developers) use AI coding assistants daily in 2026.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.sonarsource.com/state-of-code-developer-survey-report.pdf",
+     "quote": "72% of developers who have tried AI use it every day",
+     "claim": "72% of professional developers who have tried AI use it every day (based on an October 2025 survey of professional software developers).",
+     "status": "verified"
+    }
+   ],
+   "no_source": [
+    "A study specifically isolating the daily usage percentage of AI coding assistants among exclusively \"professional developers\" for the calendar year 2025 (the 2025 Stack Overflow survey and SonarSource Oct 2025 survey either predate 2025 or fall just outside the exact \"professional\" filter as defined by other metrics, with the clearest 51% professional-specific data citing 2026)."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0062",
+  "cost": 0.008189825,
+  "score": {
+   "claims": [
+    {
+     "url": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-008348-DS-8-raspberry-pi-5-product-brief.pdf",
+     "quote": "Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The official product brief states the minimum production lifetime for the Raspberry Pi 5 ends in January 2036.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.raspberrypi.com/products/raspberry-pi-5/?resellerType=industry",
+     "quote": "Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The official commercial product page confirms the production lifetime extends until at least January 2036.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf",
+     "quote": "Production lifetime: Raspberry Pi 5 will remain in production until at least January 2036",
+     "claim": "The datasheet product brief reiterates the January 2036 minimum production date.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.raspberrypi.com/news/raspberry-pis-commitment-to-longevity-a-sustainable-advantage/",
+     "quote": "Take the flagship Raspberry Pi 5, for example: it has a guaranteed minimum manufacturing end date of January 2038, with production of many of its key silicon components extending as far as 2042.",
+     "claim": "A news article regarding sustainability claims a later date of January 2038, which conflicts with the product brief's January 2036 date.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 3,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 1
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0063",
+  "cost": 0.01631923,
+  "score": {
+   "claims": [
+    {
+     "url": "https://github.com/nodejs/release/blob/main/README.md",
+     "quote": "Every even (LTS) major version will be actively maintained for 12 months from the date it enters LTS coverage.",
+     "claim": "Active LTS lasts 12 months for an even-numbered LTS line.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/nodejs/release/blob/main/README.md",
+     "quote": "Following those 12 months of active support, the major version will transition into \\\"maintenance\\\" mode for 18 months.",
+     "claim": "Maintenance LTS lasts 18 months after Active LTS ends.",
+     "status": "verified"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "Every release becomes LTS.",
+     "claim": "The newer policy changes which releases become LTS, not just the even-numbered ones.",
+     "status": "verified"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "LTS | 30 months | Long-term support with security fixes",
+     "claim": "Total LTS support is 30 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule",
+     "quote": "Total support: 36 months from first Current release to End of Life (EOL).",
+     "claim": "The full lifecycle from first Current release to EOL is 36 months.",
+     "status": "verified"
+    },
+    {
+     "url": "https://github.com/nodejs/release/blob/main/README.md",
+     "quote": "Odd-numbered release lines are not promoted to LTS - they will not go through the 'Active LTS' or 'Maintenance' phases.",
+     "claim": "Under the older schedule documented here, only even-numbered releases got Active LTS and Maintenance LTS.",
+     "status": "verified"
+    }
+   ],
+   "no_source": [],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 6,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 0
+   },
+   "failed": 0
+  }
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0064",
+  "cost": 0.028532,
+  "score": {
+   "claims": [
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "We developed a conversational agent to help children with ADHD initiate and complete tasks. In this work, we investigate whether the conversational agent can help create regularity in children's lives.",
+     "claim": "This is the study most directly on-topic \u2014 a conversational agent built specifically to support task initiation and completion in children with ADHD.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "a field test was conducted by five elementary school teachers in their private homes with their children with non-ADHD for eight days.",
+     "claim": "The actual testing was done with only five children, none of whom had ADHD, so the study provides essentially no direct evidence of benefit for ADHD users \u2014 it is a prototype feasibility evaluation only.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://dl.acm.org/doi/fullHtml/10.1145/3528575.3551452",
+     "quote": "As we both work, we bring our kid out too when we leave the house for work. It was tough to wake her up in the morning, but she would get out of bed with no trouble, thanks to the agent.",
+     "claim": "Qualitative feedback from one parent (of a non-ADHD child) suggested the agent helped with initiating a morning routine, a task-initiation-relevant anecdote \u2014 but again, not in a diagnosed ADHD sample.",
+     "status": "unverifiable",
+     "note": "could not fetch (HTTP 403; curl: HTTP 403)"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf",
+     "quote": "NUROW, which consists of Go/No-go Task- and N-Back/Updating-based training modules and a personalized adaptive algorithm system that adjusts the difficulty level according to the user's performance, was implemented on 30 Korean children with ADHD aged 6 to 12 years.",
+     "claim": "A digital therapeutic with an adaptive algorithm (executive-function training, not a conversational assistant) was tested in children with diagnosed ADHD.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1169030/pdf",
+     "quote": "The ARS inattention (F = 4.080, p = 0.010), hyperactivity (F = 5.998. p < 0.001), and sum (F = 5.902, p < 0.001) significantly improved.",
+     "claim": "ADHD symptom ratings improved significantly after four weeks of the executive-function digital therapeutic, though the study was a single-group feasibility design with no control condition.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775",
+     "quote": "Forty adults with ADHD were randomised, of whom 17 participants in each group completed self-guided psychoeducation based on either a chatbot or conventional psychoeducation app between October 2020 and July 2021.",
+     "claim": "A small RCT tested a chatbot intervention in adults with diagnosed ADHD \u2014 one of the few randomized studies of any chatbot in this population.",
+     "status": "verified"
+    },
+    {
+     "url": "https://www.cambridge.org/core/journals/bjpsych-open/article/chatbotsupported-psychoeducation-in-adult-attentiondeficit-hyperactivity-disorder-randomised-controlled-trial/F2B9BC00F147B953A74159231476B775",
+     "quote": "Self-guided psychoeducation based on a chatbot or a conventional app appears similarly effective and safe for improving ADHD core symptoms.",
+     "claim": "The chatbot improved ADHD core symptoms about as much as a conventional app, but since both groups improved equally and there was no non-treatment control, the benefit can't be attributed to the AI/chatbot format specifically, and the intervention was psychoeducation rather than task-initiation support.",
+     "status": "verified"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "we evaluated ADHDvance LearnAR across three within-subject conditions (baseline tools, AR-enhanced, and AR+GenAI) with n = 15 undergraduate participants.",
+     "claim": "A pilot study specifically tested a generative-AI-enhanced tool for task management and engagement in university students diagnosed with ADHD \u2014 the closest match to \"AI assistants for executive function\" in a diagnosed population.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "Quantitative measures showed directional improvements in engagement duration, interaction frequency, and task completion across conditions; however, differences did not reach statistical significance, consistent with the study's exploratory scale.",
+     "claim": "The generative AI tool showed non-significant trends toward better task completion and engagement in ADHD students \u2014 suggestive but not statistically demonstrated benefit.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01264-9",
+     "quote": "Qualitative analysis provided explanatory depth, identifying themes related to (i) increased task salience through spatial AR visualisation, (ii) improved task initiation and planning support, and (iii) reduced perceived cognitive load through just-in-time GenAI scaffolding.",
+     "claim": "ADHD students in the pilot qualitatively reported that the GenAI scaffolding helped specifically with task initiation and planning.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1186/s40359-025-03729-2",
+     "quote": "While clinical experts express cautious optimism about AI-assisted rehabilitation planning, further development is necessary to enhance accuracy, personalization, and feasibility for the safe integration of AI into clinical practice.",
+     "claim": "Expert evaluation of AI (ChatGPT)-designed executive-function rehabilitation programs for ADHD found them theoretically plausible but not yet ready for clinical use, with concerns about personalization and unvalidated techniques.",
+     "status": "unverifiable",
+     "note": "page text only 315 chars"
+    }
+   ],
+   "no_source": [
+    "Any published study testing whether people with ADHD benefit from general-purpose consumer AI assistants (e.g., ChatGPT, Siri, Alexa, Google Assistant) for task initiation or executive function, as opposed to purpose-built research prototypes.",
+    "Any adequately powered randomized controlled trial demonstrating a statistically significant benefit of an AI assistant specifically on task initiation (rather than psychoeducation or cognitive training) in a diagnosed ADHD population.",
+    "Any long-term follow-up study (beyond ~1 month) of AI assistant use for executive function in people with ADHD."
+   ],
+   "malformed_source_lines": 0,
+   "urls_outside_format": [],
+   "counts": {
+    "verified": 4,
+    "reworded": 0,
+    "unsupported": 0,
+    "dead_url": 0,
+    "unverifiable": 7
+   },
+   "failed": 0
+  }
+ }
+]

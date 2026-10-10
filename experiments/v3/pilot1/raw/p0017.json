@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t11",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0017",
+ "prompt": "Find real, published data on how often prediction markets (Polymarket, Kalshi or similar) resolve disputed or ambiguous markets, or how many market resolutions were challenged. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here is the data regarding the frequency of disputed or challenged resolutions in prediction markets, primarily focusing on Polymarket due to its public on-chain dispute records.\n\n**Overall Dispute Rates on Polymarket**\n\nRecent analyses indicate that formal disputes are relatively rare in terms of market count but can involve significant volume. A study of 143,286 markets resolved between March 2025 and August 2026 found a low overall dispute rate.\nSOURCE: https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Of 143,286 Polymarket markets resolved from March 2025 to August 2026 (Polymarket gamma API, UMA oracle status), 545 or 0.38%, about 1 in 263, ended in a formal resolution dispute.\" | CLAIM: The overall dispute rate for Polymarket markets in this period was 0.38%.\n\nHowever, other data suggests dispute activity may be increasing. One source notes a surge in early 2026.\nSOURCE: https://predictacademy.ai/academy/prediction-market-resolution/ | QUOTE: \"More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.\" | CLAIM: Dispute counts rose significantly in the first five months of 2026, exceeding the total for all of 2025.\n\nData from Fidonis covering March 2025 through January 2026 highlights the volume at stake during disputes.\nSOURCE: https://fidonis.org/integrity/polymarket/2026-04/ | QUOTE: \"From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.\" | CLAIM: Approximately 7.3% of the total trading volume on Polymarket went through markets that experienced a dispute.\n\n**Dispute Rates by Market Clarity and Type**\n\nThe likelihood of a dispute is heavily correlated with the clarity of the market's resolution rules. ClearMarket analyzed 7,166 Polymarket contracts and assigned them clarity grades (A, B, or C).\nSOURCE: https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).\" | CLAIM: Markets with unclear resolution rules (Grade C) had a dispute rate of 1.59%, compared to 0.08% for clearer markets (Grades A and B).\n\nSpecific categories also show higher dispute frequencies. Political and high-volume markets are more prone to challenges.\nSOURCE: https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets...\" | CLAIM: Political and election markets had a dispute rate of 1.89%, significantly higher than crypto markets.\n\nSOURCE: https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000...\" | CLAIM: High-volume markets (>$100k) were disputed at a rate of 1.45%, much higher than low-volume markets.\n\nA separate analysis by Vultax for a specific window in late 2026 found similar trends regarding volume and topic.\nSOURCE: https://vultax.com/research/how-long-polymarket-takes-to-settle-markets | QUOTE: \"Markets that traded $100,000 or more were disputed six times as often, 0.5%, and geopolitics markets, whose questions meet messy events, 3.5% of the time...\" | CLAIM: In the Aug\u2013Sep 2026 period, geopolitics markets had a 3.5% dispute rate, while markets with over $100k volume had a 0.5% rate.\n\n**Kalshi Dispute Data**\n\nPublic, comprehensive dispute data for Kalshi is not available in the same way it is for Polymarket, as Kalshi does not publish a real-time dispute feed. However, specific high-profile incidents have been documented.\nSOURCE: https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"Kalshi publishes no dispute feed, so its contested settlements become visible only when they reach a courtroom or the press.\" | CLAIM: There is no public, complete dataset for Kalshi dispute rates comparable to Polymarket's on-chain records.\n\nOne major Kalshi dispute involved a market on Iran's Supreme Leader.\nSOURCE: https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"The largest to date: Kalshi's February 2026 market on whether Iran's Supreme Leader would leave office, roughly $54M in volume, settled at the last traded price under a death carveout that appeared in the CFTC-filed terms but not on the trading page most traders read.\" | CLAIM: A significant Kalshi dispute occurred in February 2026 involving a $54M volume market, leading to refunds and a class-action lawsuit.\n\nNO_SOURCE_FOUND: Comprehensive, aggregate dispute rate statistics for Kalshi across all markets and time periods.",
+  "usage": {
+   "prompt_tokens": 3528,
+   "completion_tokens": 1338,
+   "total_tokens": 4866,
+   "cost": 0.0107557,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0037557,
+    "upstream_inference_prompt_cost": 0.0011466,
+    "upstream_inference_completions_cost": 0.0026091
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791589676-A8ZsYSDSQtWkGZH47vXz"
+ },
+ "ts": "2026-10-09T23:48:22.189529+00:00"
+}

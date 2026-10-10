@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t02",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0053",
+ "prompt": "Find what the PostgreSQL Global Development Group officially states about how long each major PostgreSQL version receives fixes. Cite the official versioning policy page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The PostgreSQL Global Development Group officially states that each major version is supported for five years after its initial release. During this period, bug fixes and security fixes are released via minor updates, typically at least once every three months.\n\nSOURCE: https://www.postgresql.org/support/versioning/?from_theconsensus=1 | QUOTE: \"The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.\" | CLAIM: Each major PostgreSQL version receives official support for a period of five years from its initial release date.\n\nSOURCE: https://www.postgresql.org/support/versioning/?from_theconsensus=1 | QUOTE: \"After this, a final minor version will be released and the software will then be unsupported (end-of-life).\" | CLAIM: Support ends after the five-year period with the release of a final minor version, after which the software is considered end-of-life.\n\nSOURCE: https://www.postgresql.org/support/versioning/?from_theconsensus=1 | QUOTE: \"Each major version receives bug fixes and, if need be, security fixes that are released at least once every three months in what we call a 'minor release.'\" | CLAIM: During the support period, fixes are distributed through minor releases issued at least quarterly.",
+  "usage": {
+   "prompt_tokens": 3178,
+   "completion_tokens": 258,
+   "total_tokens": 3436,
+   "cost": 0.00853595,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00153595,
+    "upstream_inference_prompt_cost": 0.00103285,
+    "upstream_inference_completions_cost": 0.0005031
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590506-IkmCkbbRq9uMdpQjmCH9"
+ },
+ "ts": "2026-10-10T00:01:53.367004+00:00"
+}

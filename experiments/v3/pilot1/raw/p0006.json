@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t11",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0006",
+ "prompt": "Find real, published data on how often prediction markets (Polymarket, Kalshi or similar) resolve disputed or ambiguous markets, or how many market resolutions were challenged. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the web search results, I found recent data primarily for Polymarket, as it has a public, on-chain dispute process. The data reveals that while formal disputes are statistically rare overall, they are highly concentrated in certain types of markets, such as high-volume or geopolitical contracts. Clear data for Kalshi was not found because its dispute process is not publicly documented.\n\nHere are the specific findings from the sources:\n\n**Overall Dispute Rates:**\nSOURCE: https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"We pulled every resolved Polymarket market since the platform began publishing UMA oracle status data and found that 0.38% of them, about 1 in 263, end in a formal resolution dispute.\" | CLAIM: The overall dispute rate on Polymarket from March 2025 to August 2026 was 0.38%.\n\nSOURCE: https://vultax.com/research/how-long-polymarket-takes-to-settle-markets | QUOTE: \"Disputes were rare: 89 markets, 0.08%.\" | CLAIM: In a sample of 110,576 markets from August to September 2026, the dispute rate was 0.08%.\n\n**Disputes by Market Characteristic:**\nSOURCE: https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000\" | CLAIM: High-volume markets are disputed at a much higher rate than low-volume markets.\n\nSOURCE: https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets\" | CLAIM: Political markets have a significantly higher dispute rate compared to other categories like crypto.\n\nSOURCE: https://vultax.com/research/how-long-polymarket-takes-to-settle-markets | QUOTE: \"Markets that traded $100,000 or more were disputed 0.5% of the time... geopolitics markets... 3.5% of the time\" | CLAIM: Confirms that high-volume and geopolitical markets have elevated dispute rates.\n\n**Predicting Disputes with Rule Clarity:**\nSOURCE: https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).\" | CLAIM: Markets with ambiguous resolution rules (C-rated) are far more likely to be disputed than markets with clear rules (A- or B-rated).\n\nSOURCE: https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"C-rated contracts dispute at 1.59%, 20 times the 0.08% rate of A- and B-rated contracts combined.\" | CLAIM: Reinforces the strong correlation between low rule clarity and high dispute probability.\n\n**Volume and Frequency of Disputes:**\nSOURCE: https://fidonis.org/integrity/polymarket/2026-04/ | QUOTE: \"From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.\" | CLAIM: While disputes are rare by market count, a significant portion of total trading volume (7.3%) was associated with markets that underwent a dispute.\n\nSOURCE: https://predictacademy.ai/academy/prediction-market-resolution/ | QUOTE: \"More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.\" | CLAIM: The absolute number of disputes on Polymarket was increasing in 2026 compared to 2025.\n\nNO_SOURCE_FOUND: Specific, quantified data on the frequency of disputes or challenged resolutions on Kalshi. The sources indicate such data is not publicly available because Kalshi does not publish a dispute feed.",
+  "usage": {
+   "prompt_tokens": 3082,
+   "completion_tokens": 970,
+   "total_tokens": 4052,
+   "cost": 0.00880214,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00180214,
+    "upstream_inference_prompt_cost": 0.00083214,
+    "upstream_inference_completions_cost": 0.00097
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "SiliconFlow",
+  "id": "gen-1791589403-72icI56rapkz8Nn4cXM2"
+ },
+ "ts": "2026-10-09T23:44:08.451927+00:00"
+}

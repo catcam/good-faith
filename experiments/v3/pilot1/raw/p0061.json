@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t10",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0061",
+ "prompt": "Find real studies or surveys reporting what share of professional developers use AI coding assistants daily in 2025 or 2026. Cite the sources and quote the percentages they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the findings from recent surveys and studies regarding the share of professional developers who use AI coding assistants daily in 2025 or 2026:\n\nSOURCE: https://baeseokjae.github.io/posts/ai-developer-tools-statistics-2026/ | QUOTE: \"Daily usage among professional developers sits at 51%, meaning more than half the global developer workforce interacts with an AI coding tool every single working day.\" | CLAIM: 51% of professional developers use AI tools daily in 2026.\nSOURCE: https://toolixlab.com/blog/ai-coding-statistics-2026 | QUOTE: \"47.1% of all developers \u2014 and 51% of professional developers \u2014 use them daily.\" | CLAIM: 51% of professional developers use AI tools daily (based on 2025 Stack Overflow survey data).\nSOURCE: https://survey.stackoverflow.co/2026/ai | QUOTE: \"The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.\" | CLAIM: 73% of the survey respondents (not explicitly filtered to only professionals, though largely professional developers) use AI coding assistants daily in 2026.\nSOURCE: https://www.sonarsource.com/state-of-code-developer-survey-report.pdf | QUOTE: \"72% of developers who have tried AI use it every day\" | CLAIM: 72% of professional developers who have tried AI use it every day (based on an October 2025 survey of professional software developers).\n\nNO_SOURCE_FOUND: A study specifically isolating the daily usage percentage of AI coding assistants among exclusively \"professional developers\" for the calendar year 2025 (the 2025 Stack Overflow survey and SonarSource Oct 2025 survey either predate 2025 or fall just outside the exact \"professional\" filter as defined by other metrics, with the clearest 51% professional-specific data citing 2026).",
+  "usage": {
+   "prompt_tokens": 2504,
+   "completion_tokens": 403,
+   "total_tokens": 2907,
+   "cost": 0.01069516,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00369516,
+    "upstream_inference_prompt_cost": 0.00245392,
+    "upstream_inference_completions_cost": 0.00124124
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Chutes",
+  "id": "gen-1791590659-slQrsflfNrBTtIyOcBRC"
+ },
+ "ts": "2026-10-10T00:04:38.663318+00:00"
+}

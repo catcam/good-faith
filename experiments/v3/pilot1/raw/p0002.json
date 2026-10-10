@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t12",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0002",
+ "prompt": "Find real research measuring whether fall-detection devices or ambient sensors reduce hospital admissions or time-on-floor for elderly people living alone. Cite the studies and quote their main results.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the findings from real research studies that measure the effectiveness of fall-detection devices and ambient sensors for elderly people, primarily in residential care settings. It is important to note that the most robust studies found were conducted in care homes and memory care facilities, not with individuals living completely alone.\n\nThe first study, a matched-control intervention, tested a system (motion sensors, fall detection necklace, social service) on community-dwelling adults aged 75 and over but found no significant effect on hospitalizations or emergency contacts.\nSOURCE: https://link.springer.com/article/10.1186/s12877-025-05856-2 | QUOTE: \"Our results revealed similar rates of emergency contacts (IRR = 0.89 [95%-CI:0.62\u20131.28]; p = .523) and hospitalisations (IRR = 1.23 [95%-CI:0.95\u20131.60]; p = .122)\" | CLAIM: A fall detection and sensor system for community-dwelling elderly showed no statistically significant reduction in hospitalizations or emergency contacts.\n\nHowever, several studies in assisted living and memory care facilities showed highly positive results. An evaluation of the Nobi smart lamp system in care homes found significant reductions in falls and ambulance call-outs.\nSOURCE: https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf | QUOTE: \"The technology reduces the likelihood of experiencing a fall in a day by about 32%.\" | CLAIM: The Nobi ambient AI device was associated with a 32% reduction in falls among care home residents.\nSOURCE: https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/dhr/c4ar/Nobievaluationreport.pdf | QUOTE: \"There was a reduction in total ambulance call-outs by 23%... Ambulance call-outs resulting in hospital conveyance were statistically significantly reduced by 24%.\" | CLAIM: Use of the Nobi device led to a 24% reduction in ambulance call-outs that resulted in a resident being taken to the hospital.\n\nA study on the SafelyYou Guardian (SYG) system, which uses AI-powered video monitoring, demonstrated a dramatic reduction in the critical metric of Time On the Ground (TOG) for residents with dementia.\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"Reductions of 28.3 (CI 19.6-37.1) minutes in TUA and 29.6 (CI 20.3-38.9) minutes in TOG were observed between the baseline and RTN [Real-Time Notification] periods.\" | CLAIM: The SafelyYou system reduced the time a fallen resident spent waiting for assistance by over 28 minutes and reduced their total time on the ground by nearly 30 minutes.\nSOURCE: https://www.jmir.org/2021/6/e17551/PDF | QUOTE: \"The proportion of fallers with TOG >1 hour fell from 31% (8/26; baseline) to zero events (RTN period).\" | CLAIM: The implementation of real-time fall notifications eliminated incidents of residents experiencing a \"long lie\" (over one hour on the ground).\n\nA news article reports on the results of a large-scale installation of 4D imaging fall detection technology by a council, which claims to have eliminated these outcomes entirely.\nSOURCE: https://carehomemagazine.co.uk/fall-detection-technology-helps-essex-county-council-eliminate-hospital-admissions-and-long-lies/ | QUOTE: \"The Council has already seen positive results from the early stages of the project, with no fall related hospital admissions recorded in the last 12-months... And there have also been no incidents of residents being grounded following a fall for an extended period of time\" | CLAIM: An Essex County Council project using advanced fall detection technology reported zero fall-related hospital admissions and zero \"long lies\" over a 12-month period.\n\nNO_SOURCE_FOUND: A peer-reviewed study measuring the impact of these technologies specifically on elderly individuals living completely alone (without any staff or caregivers on-site). The available studies focus on care homes, memory care facilities, or community-dwelling elderly with access to a social service.",
+  "usage": {
+   "prompt_tokens": 2790,
+   "completion_tokens": 908,
+   "total_tokens": 3698,
+   "cost": 0.0102176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0032176,
+    "upstream_inference_prompt_cost": 0.001674,
+    "upstream_inference_completions_cost": 0.0015436
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Mara",
+  "id": "gen-1791589331-Rm4BbiDchkKTGghf9Vdw"
+ },
+ "ts": "2026-10-09T23:42:23.065822+00:00"
+}

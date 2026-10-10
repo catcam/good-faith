@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t06",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0003",
+ "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Debian project officially states that each stable release has a five-year life cycle, consisting of three years of full support followed by two years of Long Term Support (LTS). Additionally, there is an Extended LTS (ELTS) option that can extend support further, though it is managed by third parties rather than the Debian project itself.\n\nHere are the relevant quotes from the official Debian pages:\n\nSOURCE: https://www.debian.org/releases/ | QUOTE: \"The Debian release life cycle encompasses five years: the first three years of full support followed by two years of Long Term Support (LTS).\" | CLAIM: The official length of support for a Debian stable release, including LTS, is five years.\nSOURCE: https://www.debian.org/releases/stable/ | QUOTE: \"The Debian 13 life cycle encompasses five years: the initial three years of full Debian support, until August 9th, 2028, and two years of Long Term Support (LTS), until June 30th, 2030.\" | CLAIM: The specific timeline for the current Debian 13 stable release, confirming the 3-year full support plus 2-year LTS model.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years.\" | CLAIM: The LTS project's goal is to ensure every stable release receives a total lifetime of at least five years of support.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian LTS is not handled by the Debian Security and Release teams. Thus the Debian LTS team takes over security maintenance of the various releases once the Debian Security team stops its work.\" | CLAIM: The LTS phase of support is maintained by a separate volunteer team rather than the official Debian Security team.\nSOURCE: https://www.debian.org/releases/ | QUOTE: \"10 | Buster | 2019-07-06 | 2022-09-10 | 2024-06-30 | 2029-06-30 | Archived release, under third-party paid extended LTS support\" | CLAIM: Beyond the 5-year project support, Debian releases can receive further paid security support through third-party Extended LTS (ELTS).",
+  "usage": {
+   "prompt_tokens": 1660,
+   "completion_tokens": 469,
+   "total_tokens": 2129,
+   "cost": 0.0113544,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0043544,
+    "upstream_inference_prompt_cost": 0.0022908,
+    "upstream_inference_completions_cost": 0.0020636
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Novita",
+  "id": "gen-1791589343-VFdVGucBWedLBcb7IeW3"
+ },
+ "ts": "2026-10-09T23:42:30.546142+00:00"
+}

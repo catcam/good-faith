@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t11",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0012",
+ "prompt": "Find real, published data on how often prediction markets (Polymarket, Kalshi or similar) resolve disputed or ambiguous markets, or how many market resolutions were challenged. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here is the published data on how often prediction market resolutions are disputed or challenged, drawn from the provided search results. The data overwhelmingly focuses on Polymarket due to its public, on-chain dispute mechanism via the UMA optimistic oracle, whereas Kalshi's dispute rate is not publicly auditable.\n\n**SOURCE:** https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"Across 7,166 Polymarket markets with public dispute records, 52 of the 55 markets that ended up in a resolution dispute had been rated C by ClearMarket, the lowest clarity tier. C-rated contracts dispute at 1.59%, 20 times the 0.08% rate of A- and B-rated contracts combined.\" | CLAIM: The overall dispute rate for low-clarity markets is 1.59%, which is 20x higher than the 0.08% combined dispute rate of high-clarity markets.\n\n**SOURCE:** https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"Across 7,166 Polymarket markets with public dispute records, contracts ClearMarket rated C (the lowest of its three Resolution Clarity Grades) were formally disputed at 20 times the rate of A- and B-rated contracts (1.59% vs 0.08%).\" | CLAIM: Across over 7,000 markets, A-rated contracts had a 0.12% dispute rate, B-rated had 0.00%, and C-rated had 1.59%.\n\n**SOURCE:** https://fidonis.org/integrity/polymarket/2026-04/ | QUOTE: \"From Mar 2025 through Jan 2026, $1502.9M of traded volume passed through a disputed resolution, 7.3% of all UMA-resolved volume.\" | CLAIM: When weighted by trading volume, 7.3% of all resolved volume on Polymarket ended in a dispute over this period.\n\n**SOURCE:** https://fidonis.org/integrity/polymarket/2026-04/ | QUOTE: \"Count dispute rate 0.33% Jan '26, dollar-weighted\" | CLAIM: In January 2026, the market-count dispute rate for Polymarket was 0.33%.\n\n**SOURCE:** https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Of 143,286 Polymarket markets resolved from March 2025 to August 2026 (Polymarket gamma API, UMA oracle status), 545 or 0.38%, about 1 in 263, ended in a formal resolution dispute.\" | CLAIM: Across a massive sample of 143,286 Polymarket markets, the absolute baseline rate of a formal resolution dispute is 0.38% (roughly 1 in 263).\n\n**SOURCE:** https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Polymarket markets with more than $100,000 in trading volume were disputed 1.45% of the time (1 in 69), about 11 times the 0.13% rate for markets under $1,000\" | CLAIM: Dispute rates scale dramatically with market size; high-volume markets ($100K+) are disputed 1.45% of the time, compared to 0.13% for low-volume markets.\n\n**SOURCE:** https://bullpenbrief.com/how-often-do-polymarket-markets-end-in-dispute-we-analyzed-143000/ | QUOTE: \"Political and election markets on Polymarket were disputed 1.89% of the time (1 in 53), about 16 times the 0.12% rate for crypto markets\" | CLAIM: Dispute rates scale heavily by market category, with political/election markets seeing a 1.89% dispute rate, far exceeding crypto markets.\n\n**SOURCE:** https://vultax.com/research/how-long-polymarket-takes-to-settle-markets | QUOTE: \"Of the 69,072 that closed after their scheduled end, half had closed within 2.2 hours and 90% within six. Another 41,151, 37% of the total, closed before their scheduled end because the answer was already known.\" | CLAIM: While not a dispute rate, this shows that the vast majority of markets (37% early, 90% of the rest within 6 hours) resolve quickly and cleanly without issue.\n\n**SOURCE:** https://vultax.com/research/how-long-polymarket-takes-to-settle-markets | QUOTE: \"Disputes were rare: 89 markets, 0.08%. They were not spread evenly. Markets that traded $100,000 or more were disputed six times as often, 0.5%, and geopolitics markets, whose questions meet messy events, 3.5% of the time\" | CLAIM: In an Aug-Sept 2026 sample, the overall dispute rate was 0.08%, but high-volume markets saw a 0.5% dispute rate, and geopolitics markets saw a disproportionately high 3.5% dispute rate.\n\n**SOURCE:** https://predictacademy.ai/academy/prediction-market-resolution/ | QUOTE: \"And disputes are climbing rather than shrinking. More than 1,150 Polymarket markets were disputed in the first five months of 2026 alone, already ahead of the full 2025 total.\" | CLAIM: The sheer volume and potentially the rate of disputed resolutions are increasing over time on Polymarket.\n\n**SOURCE:** https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"Kalshi publishes no dispute feed, so its contested settlements become visible only when they reach a courtroom or the press.\" | CLAIM: There is no publicly auditable dataset or dispute feed for Kalshi, making an independent calculation of its challenge rate impossible.\n\n**SOURCE:** https://clearmarket.fyi/research/resolution-clarity-index/ | QUOTE: \"The largest to date: Kalshi's February 2026 market on whether Iran's Supreme Leader would leave office, roughly $54M in volume, settled at the last traded price under a death carveout that appeared in the CFTC-filed terms but not on the trading page most traders read. Kalshi refunded $2.2M in trades and fees, a class action is pending\" | CLAIM: While exact rates are unavailable, Kalshi does experience contested settlements; its largest known dispute involved a $54M market, a $2.2M refund, and a pending class action due to ambiguous resolution terms.\n\nNO_SOURCE_FOUND: Any comprehensive, independently calculated dispute or challenge rate for Kalshi (or other CFTC-regulated exchanges) equivalent to the Polymarket dispute rates, because Kalshi does not publish a public dispute feed.",
+  "usage": {
+   "prompt_tokens": 3125,
+   "completion_tokens": 1452,
+   "total_tokens": 4577,
+   "cost": 0.01687965,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00987965,
+    "upstream_inference_prompt_cost": 0.00378125,
+    "upstream_inference_completions_cost": 0.0060984
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Phala",
+  "id": "gen-1791589553-QkLT9rREuUrkodpqBVZt"
+ },
+ "ts": "2026-10-09T23:46:58.438200+00:00"
+}

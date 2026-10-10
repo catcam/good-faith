@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t16",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0010",
+ "prompt": "Find real, documented measurements of WLED or ESP32-based LED controller reliability (uptime, failure rates) in long-running installations. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the provided search results, here are the documented measurements and observations regarding the reliability of ESP-based LED controllers (specifically ESP8266 and ESP32 running WLED or custom firmware).\n\n### ESP8266 Reliability (Custom Firmware)\nA long-term experiment using an ESP8266 module with custom logging firmware demonstrated high stability over several years.\n\nSOURCE: https://www.electrobob.com/led-logger-v3/ | QUOTE: \"As of June 2016 I have ended the experiment, once all the strips went over 10.000 hours.\" | CLAIM: The experimental setup ran continuously for over 10,000 hours until voluntarily terminated.\n\nSOURCE: https://www.electrobob.com/led-logger-v3/ | QUOTE: \"The third version of the Led logger has run without any major issues. Based on uptime logging there has never been any freeze or malfunction.\" | CLAIM: The ESP8266 controller experienced zero freezes or malfunctions during the multi-year experiment.\n\nSOURCE: https://www.electrobob.com/led-logger-v3/ | QUOTE: \"And of course, the uptime was measured. Very impressing, as at some point it has reached 4500 hours.\" | CLAIM: A specific continuous uptime milestone of 4,500 hours was recorded without power loss or reboot.\n\nSOURCE: https://www.electrobob.com/led-logger-v3/ | QUOTE: \"This also proves that the ESP8266 module I used as a WiFi connection which is one of the first to hit the market, can function for a long time.\" | CLAIM: Early-market ESP8266 modules are capable of long-term stable operation in this context.\n\n### ESP32-C3/S2 Reliability (WLED Firmware)\nRecent reports indicate significant stability issues with ESP32-C3 and ESP32-S2 devices running WLED, particularly when integrated with Home Assistant or using specific software versions. Failures often manifest as unresponsiveness after a few days.\n\nSOURCE: https://github.com/Aircoookie/WLED/issues/4347 | QUOTE: \"After a couple of days, the device because unresponsible within Home Assistant as well as pinging it / access to the WebUI.\" | CLAIM: ESP32-C3 devices running WLED may become completely unresponsive after approximately 2-5 days of operation.\n\nSOURCE: https://github.com/Aircoookie/WLED/issues/4347 | QUOTE: \"I have to remove power to get it working again, and then it will work again for the next 3-5 days.\" | CLAIM: The failure mode requires a hard power cycle to resolve, with recurrence every few days.\n\nSOURCE: https://github.com/Aircoookie/WLED/issues/4347 | QUOTE: \"After downgrading to 0.15.1 on this ESP32-S2 the light currently shows an uptime of 7.5 days with no changes to the hardware, HA setup or power supply.\" | CLAIM: Downgrading WLED firmware from version 0.15.3 to 0.15.1 resolved stability issues on an ESP32-S2, achieving at least 7.5 days of uptime.\n\nSOURCE: https://github.com/Aircoookie/WLED/issues/4347 | QUOTE: \"The current state of knowledge are that there are two reasons for crashes: 1. bad hardware / power design... 2. a bug in async webserver which can be triggered by using HA's aggressive polling system\" | CLAIM: Identified causes for ESP32 WLED crashes include poor power design and software bugs in the asynchronous web server when subjected to high concurrency polling.\n\nSOURCE: https://github.com/wled/WLED/issues/5596 | QUOTE: \"Receivers oscillate between 10-25 fps achieved with periodic complete HTTP unresponsiveness.\" | CLAIM: In WLED v0.15.4, ESP32 receivers using DDP virtual-bus fan-out experienced periodic total HTTP unresponsiveness.\n\nSOURCE: https://github.com/wled/WLED/issues/5596 | QUOTE: \"after upgrading to v16 it is working again.\" | CLAIM: Upgrading to WLED v16 resolved the HTTP starvation and unresponsiveness issues on ESP32 receivers.\n\n### Environmental and Hardware Failure Observations\nAnecdotal evidence highlights the impact of environmental factors (weather) and component quality on longevity.\n\nSOURCE: https://igor.moomers.org/posts/wled-christmas-lights | QUOTE: \"My initial outdoor controller died after the first rain, losing my hard-programmed schedules and presets.\" | CLAIM: An unprotected ESP32 controller failed immediately upon exposure to rain.\n\nSOURCE: https://igor.moomers.org/posts/wled-christmas-lights | QUOTE: \"This version lasted through one wet season, but then shorted out soon after I moved to Berkeley.\" | CLAIM: A partially protected (hot-glued) ESP32 controller survived one wet season but eventually failed due to moisture ingress.\n\nSOURCE: https://tynick.com/blog/12-17-2019/christmas-lights-with-wled/ | QUOTE: \"Previously the roofline LEDs were run using a cheap wifi controller. It had a really bad interface and wasn\u2019t reliable at all.\" | CLAIM: Generic cheap WiFi controllers were observed to be unreliable compared to ESP-based WLED setups.\n\nNO_SOURCE_FOUND: Statistical failure rates (e.g., percentage of units failing per year) for large-scale deployments of WLED controllers.",
+  "usage": {
+   "prompt_tokens": 2937,
+   "completion_tokens": 1207,
+   "total_tokens": 4144,
+   "cost": 0.010308175,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.003308175,
+    "upstream_inference_prompt_cost": 0.000954525,
+    "upstream_inference_completions_cost": 0.00235365
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791589524-KEpK4FY5SsbcEfqgDcqa"
+ },
+ "ts": "2026-10-09T23:45:47.458619+00:00"
+}

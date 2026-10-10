@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t08",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0062",
+ "prompt": "Find the Raspberry Pi Foundation's or Raspberry Pi Ltd's official statement about how long the Raspberry Pi 5 will remain in production. Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official product brief and commercial pages from Raspberry Pi Ltd, the Raspberry Pi 5 is guaranteed to remain in production until at least January 2036. While a news article mentions a date of January 2038, the primary product documentation consistently cites January 2036 as the minimum production lifetime.\n\nSOURCE: https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-008348-DS-8-raspberry-pi-5-product-brief.pdf | QUOTE: \"Raspberry Pi 5 will remain in production until at least January 2036\" | CLAIM: The official product brief states the minimum production lifetime for the Raspberry Pi 5 ends in January 2036.\n\nSOURCE: https://www.raspberrypi.com/products/raspberry-pi-5/?resellerType=industry | QUOTE: \"Raspberry Pi 5 will remain in production until at least January 2036\" | CLAIM: The official commercial product page confirms the production lifetime extends until at least January 2036.\n\nSOURCE: https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf | QUOTE: \"Production lifetime: Raspberry Pi 5 will remain in production until at least January 2036\" | CLAIM: The datasheet product brief reiterates the January 2036 minimum production date.\n\nSOURCE: https://www.raspberrypi.com/news/raspberry-pis-commitment-to-longevity-a-sustainable-advantage/ | QUOTE: \"Take the flagship Raspberry Pi 5, for example: it has a guaranteed minimum manufacturing end date of January 2038, with production of many of its key silicon components extending as far as 2042.\" | CLAIM: A news article regarding sustainability claims a later date of January 2038, which conflicts with the product brief's January 2036 date.",
+  "usage": {
+   "prompt_tokens": 1099,
+   "completion_tokens": 427,
+   "total_tokens": 1526,
+   "cost": 0.008189825,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001189825,
+    "upstream_inference_prompt_cost": 0.000357175,
+    "upstream_inference_completions_cost": 0.00083265
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590678-9BZS0dwR154JeFY28pFn"
+ },
+ "ts": "2026-10-10T00:04:49.242531+00:00"
+}

@@ -1,0 +1,514 @@
+[
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0001"
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0002"
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0003"
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0004"
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0005"
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0006"
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0007"
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0008"
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0009"
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0010"
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0011"
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0012"
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0013"
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0014"
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0015"
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0016"
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0017"
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0018"
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0019"
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0020"
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0021"
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0022"
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0023"
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0024"
+ },
+ {
+  "domain": "a",
+  "task": "t03",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0025"
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0026"
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0027"
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0028"
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0029"
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0030"
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0031"
+ },
+ {
+  "domain": "a",
+  "task": "t16",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0032"
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0033"
+ },
+ {
+  "domain": "a",
+  "task": "t11",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0034"
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0035"
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0036"
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0037"
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0038"
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0039"
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0040"
+ },
+ {
+  "domain": "a",
+  "task": "t12",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0041"
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0042"
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0043"
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0044"
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0045"
+ },
+ {
+  "domain": "a",
+  "task": "t06",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0046"
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0047"
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0048"
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0049"
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0050"
+ },
+ {
+  "domain": "a",
+  "task": "t14",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0051"
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0052"
+ },
+ {
+  "domain": "a",
+  "task": "t02",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0053"
+ },
+ {
+  "domain": "a",
+  "task": "t01",
+  "model": "deepseek/deepseek-chat-v3.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0054"
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0055"
+ },
+ {
+  "domain": "a",
+  "task": "t05",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0056"
+ },
+ {
+  "domain": "a",
+  "task": "t13",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0057"
+ },
+ {
+  "domain": "a",
+  "task": "t09",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0058"
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0059"
+ },
+ {
+  "domain": "a",
+  "task": "t07",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0060"
+ },
+ {
+  "domain": "a",
+  "task": "t10",
+  "model": "z-ai/glm-5.1",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0061"
+ },
+ {
+  "domain": "a",
+  "task": "t08",
+  "model": "qwen/qwen3.6-plus",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0062"
+ },
+ {
+  "domain": "a",
+  "task": "t04",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0063"
+ },
+ {
+  "domain": "a",
+  "task": "t15",
+  "model": "moonshotai/kimi-k3",
+  "condition": "c0",
+  "rep": 0,
+  "trial_id": "p0064"
+ }
+]

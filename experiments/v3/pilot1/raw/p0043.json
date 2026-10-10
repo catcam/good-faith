@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t08",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0043",
+ "prompt": "Find the Raspberry Pi Foundation's or Raspberry Pi Ltd's official statement about how long the Raspberry Pi 5 will remain in production. Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official sources provided, Raspberry Pi has committed to a minimum production lifetime for the Raspberry Pi 5. While one of the product brief documents lists the guaranteed end date as January 2036, the company's official news page announces an extended guaranteed minimum manufacturing end date of January 2038. \n\nSOURCE: https://www.raspberrypi.com/news/raspberry-pis-commitment-to-longevity-a-sustainable-advantage/ | QUOTE: \"Take the flagship Raspberry Pi 5, for example: it has a guaranteed minimum manufacturing end date of January 2038\" | CLAIM: The official statement on how long the Raspberry Pi 5 will remain in production, as announced on their news page.\n\nSOURCE: https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf | QUOTE: \"Production lifetime: Raspberry Pi 5 will remain in production until at least January 2036\" | CLAIM: The official product brief statement on the guaranteed minimum production lifetime of the Raspberry Pi 5.\n\nNO_SOURCE_FOUND: A definitive official statement resolving the discrepancy between the January 2036 date listed on the product brief/data sheets and the extended January 2038 date announced in the news post.",
+  "usage": {
+   "prompt_tokens": 873,
+   "completion_tokens": 256,
+   "total_tokens": 1129,
+   "cost": 0.0093486,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0023486,
+    "upstream_inference_prompt_cost": 0.0012222,
+    "upstream_inference_completions_cost": 0.0011264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Nebius",
+  "id": "gen-1791590287-6XTLZft0LHWRam5Q9FYZ"
+ },
+ "ts": "2026-10-09T23:58:16.388578+00:00"
+}

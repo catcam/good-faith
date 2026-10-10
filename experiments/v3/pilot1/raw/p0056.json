@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t05",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "p0056",
+ "prompt": "Research the official rate limits of the public GitHub REST API for unauthenticated and authenticated requests. Cite the GitHub documentation page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official GitHub documentation, the rate limits for the public REST API differ significantly depending on whether the request is authenticated or unauthenticated.\n\n**Unauthenticated Requests**\nFor users making requests without authentication (typically to fetch public data), the limit is quite low and is tied to the originating IP address rather than a specific user account.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"The primary rate limit for unauthenticated requests is 60 requests per hour.\" | CLAIM: Unauthenticated requests are limited to 60 requests per hour.\n\n**Authenticated Requests**\nWhen using a personal access token, GitHub App, or OAuth app, the rate limit increases substantially. These requests count toward a personal hourly budget.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"All of these requests count towards your personal rate limit of 5,000 requests per hour.\" | CLAIM: Authenticated users have a primary rate limit of 5,000 requests per hour.\n\nHowever, there are exceptions for users within GitHub Enterprise Cloud organizations using specific apps.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"Requests made on your behalf by a GitHub App that is owned by a GitHub Enterprise Cloud organization have a higher rate limit of 15,000 requests per hour.\" | CLAIM: Authenticated requests made via GitHub Apps owned by GitHub Enterprise Cloud organizations have a limit of 15,000 requests per hour.\n\n**Git LFS Rate Limits**\nIt is also important to note that Git Large File Storage (LFS) operations have a separate rate limiting bucket with much higher throughput, measured in requests per minute rather than per hour.\n\nSOURCE: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api | QUOTE: \"These count towards a separate rate limiting bucket with a limit of 300 requests per minute for unauthenticated requests and 3,000 requests per minute for authenticated requests.\" | CLAIM: Git LFS API requests have separate limits of 300 requests per minute for unauthenticated users and 3,000 requests per minute for authenticated users.",
+  "usage": {
+   "prompt_tokens": 2577,
+   "completion_tokens": 493,
+   "total_tokens": 3070,
+   "cost": 0.008798875,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001798875,
+    "upstream_inference_prompt_cost": 0.000837525,
+    "upstream_inference_completions_cost": 0.00096135
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791590566-nT6pM2ZtGzcVnJ54g23Z"
+ },
+ "ts": "2026-10-10T00:02:58.127400+00:00"
+}
