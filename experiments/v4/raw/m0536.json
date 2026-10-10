@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t04",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0536",
+ "prompt": "Find what the Node.js project officially says about the lifecycle of its LTS releases (how long Active LTS and Maintenance LTS last). Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://nodejs.org/en/about/previous-releases | QUOTE: \"Major Node.js versions enter Current release status for six months, which gives library authors time to add support for them.\" | CLAIM: New major versions remain in Current status for six months before transitioning.\nSOURCE: https://nodejs.org/en/about/previous-releases | QUOTE: \"After six months, odd-numbered releases (9, 11, etc.) become unsupported, and even-numbered releases (10, 12, etc.) move to Active LTS status and are ready for general use.\" | CLAIM: Even-numbered releases transition to Active LTS after the six-month Current period.\nSOURCE: https://nodejs.org/en/about/previous-releases | QUOTE: \"LTS release status is 'long-term support', which typically guarantees that critical bugs will be fixed for a total of 30 months.\" | CLAIM: The total LTS lifecycle spans 30 months.\nSOURCE: https://nodejs.org/en/about/previous-releases | QUOTE: \"Production applications should only use Active LTS or Maintenance LTS releases.\" | CLAIM: Both Active and Maintenance LTS phases are supported production-ready states.\nNO_SOURCE_FOUND: An explicit statement on the official page specifying the exact number of months that Active LTS lasts versus Maintenance LTS lasts (the page indicates 30 months total LTS support but does not explicitly break down the duration of each phase).",
+  "usage": {
+   "prompt_tokens": 150,
+   "completion_tokens": 298,
+   "total_tokens": 448,
+   "cost": 0.004592,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.004592,
+    "upstream_inference_prompt_cost": 0.00042,
+    "upstream_inference_completions_cost": 0.004172
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Wafer",
+  "id": "gen-1791662204-lwRedGbEBtoYoyQx8k0q"
+ },
+ "ts": "2026-10-10T19:56:51.496334+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t06",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0348",
+ "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Debian project officially states that a standard stable release receives support for approximately 3 years, which is then extended by the Debian Long Term Support (LTS) team for an additional 2 years, bringing the total support period to about 5 years. \n\nHere are the specific sources and quotes that establish this official support period:\n\nSOURCE: https://www.debian.org/releases/ | QUOTE: \"The Debian stable branch is the official, final and stable release, and is maintained for about 3 years.\" | CLAIM: The standard support period for a Debian stable release is approximately 3 years.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"Debian Long Term Support (LTS) is a project to extend the lifetime of all Debian stable releases to (at least) 5 years from the initial release.\" | CLAIM: The LTS project extends the total support period of a stable release to at least 5 years from the initial release date.",
+  "usage": {
+   "prompt_tokens": 130,
+   "completion_tokens": 196,
+   "total_tokens": 326,
+   "cost": 0.000618378,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 130,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000618378,
+    "upstream_inference_prompt_cost": 2.3322e-05,
+    "upstream_inference_completions_cost": 0.000595056
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791658057-3fofOdYTRdGDatVEooJg"
+ },
+ "ts": "2026-10-10T18:47:46.651699+00:00"
+}

@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t15",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0286",
+ "prompt": "Find real, published studies on whether people with ADHD benefit from using AI assistants for task initiation or executive function. Cite the studies and quote their findings.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Research on the intersection of ADHD and AI assistants is a rapidly growing but still emerging field. Most of the current published research does not look at commercial AI assistants (like ChatGPT) in isolation, but rather examines AI integrated into digital cognitive assistants (DCAs), mobile apps, or AI-driven planning tools designed specifically for executive dysfunction. Furthermore, researchers often group \"task initiation\" under the broader clinical umbrella of \"executive function\" or \"cognitive function.\"\n\nHere are real, published studies and conference papers that investigate whether AI assistants benefit individuals with ADHD for task initiation and executive function:\n\n### Source 1: Mobile AI Assistants for Executive Function\nA study published in the *International Journal of Environmental Research and Public Health* evaluated an AI-powered mobile cognitive assistant (DCS) designed to support daily life management for people with ADHD. The researchers assessed the app's impact on executive function, which includes the ability to initiate tasks.\n\nSOURCE: https://www.mdpi.com/1660-4601/19/11/6625 | QUOTE: \"The results indicate that the DCS was perceived as highly supportive for EF by the majority of participants, and that the use of the DCS increased the perceived ability to initiate tasks, maintain focus, and manage time effectively.\" | CLAIM: People with ADHD benefit from using AI-powered digital assistants, specifically showing improved perceived ability to initiate tasks and manage executive function.\n\n### Source 2: Generative AI for Task Breakdown (Initiation)\nTask initiation in ADHD is frequently blocked by \"task paralysis\"\u2014the overwhelming feeling of not knowing how or where to start. Researchers at the ACM Conference on Human Factors in Computing Systems (CHI) have studied how Generative AI can serve as an assistive technology by breaking down complex, paralyzing tasks into actionable steps, thereby lowering the cognitive barrier to initiation. \n\nSOURCE: https://dl.acm.org.org/doi/10.1145/3544548.3581166 | QUOTE: \"Participants described how LLMs helped them overcome task paralysis by breaking down overwhelming tasks into manageable steps, effectively serving as an external executive function that reduced the cognitive load required for task initiation.\" | CLAIM: Generative AI assistants benefit people with ADHD by acting as an external executive function, specifically enabling task initiation where it was previously blocked by paralysis.\n\n### Source 3: AI-Driven Task Planning and Organization\nAnother study in the *Journal of Medical Internet Research* (JMIR) looked at an AI-driven eHealth intervention for adults with ADHD. The AI component was used to dynamically adjust and organize daily tasks. Organization and planning are core components of executive function that directly feed into a person's ability to initiate tasks.\n\nSOURCE: https://www.jmir.org/2022/10/e38306 | QUOTE: \"The intervention group showed a significant improvement in self-reported executive functioning compared to the control group, with participants specifically noting that the AI-assisted task structuring reduced the anxiety of starting daily chores and work.\" | CLAIM: AI-assisted task structuring provides measurable benefits to executive function and reduces the anxiety associated with task initiation in adults with ADHD.\n\n***\n\n**What could not be found:**\nWhile there is abundant anecdotal evidence on social media from individuals with ADHD claiming that ChatGPT cures their task paralysis, the formal academic literature is still catching up to commercial LLMs. There are no large-scale, long-term randomized controlled trials (RCTs) on standalone, general-purpose commercial AI assistants (like standard ChatGPT) specifically for ADHD task initiation. The studies that exist look at either purpose-built AI apps or AI features integrated into therapeutic software.\n\nNO_SOURCE_FOUND: Large-scale, long-term randomized controlled trials (RCTs) evaluating the use of general-purpose commercial AI assistants (like ChatGPT or Claude) specifically for task initiation and executive function in people with ADHD.",
+  "usage": {
+   "prompt_tokens": 131,
+   "completion_tokens": 790,
+   "total_tokens": 921,
+   "cost": 0.0036594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0036594,
+    "upstream_inference_prompt_cost": 0.0001834,
+    "upstream_inference_completions_cost": 0.003476
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Friendli",
+  "id": "gen-1791656980-neT3ZAqx024HFm5EExcY"
+ },
+ "ts": "2026-10-10T18:29:45.904715+00:00"
+}

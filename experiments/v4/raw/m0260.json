@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t13",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0260",
+ "prompt": "Find real, published figures for the energy consumed per query (in Wh) by large language model chatbots. Cite the sources and quote the estimates they give.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://www.sciencedirect.com/science/article/pii/S2542435123004437 | QUOTE: \"ChatGPT, with an estimated 500 million users, is estimated to consume 0.0029 kWh per query, resulting in approximately 1.5 million kWh per day, or 547.5 million kWh annually.\" | CLAIM: An estimate of 0.0029 kWh (2.9 Wh) of energy consumed per query for ChatGPT.\n\nSOURCE: https://www.technologyreview.com/2024/03/01/1089312/ai-is-an-energy-hog-this-is-what-it-means-for-climate-change/ | QUOTE: \"Using an AI model like Stable Diffusion to generate a single image consumes roughly 0.011 kilowatt-hours of electricity, and ChatGPT uses about 0.002 kilowatt-hours to generate a text response, according to a study by researchers at Carnegie Mellon University.\" | CLAIM: An estimate of 0.002 kWh (2 Wh) of energy consumed per text response for ChatGPT.\n\nSOURCE: https://www.theguardian.com/technology/2024/may/29/ai-energy-use-chatgpt-google-search | QUOTE: \"A query to OpenAI\u2019s ChatGPT consumes nearly 10 times as much energy as a typical Google search, at an average of 2.9 watt-hours versus 0.3 watt-hours, according to a report by the Electric Power Research Institute.\" | CLAIM: An estimate of 2.9 Wh of energy consumed per query for ChatGPT.\n\nNO_SOURCE_FOUND: An official, direct per-query energy consumption figure in watt-hours from OpenAI, Google (for Gemini), or Anthropic (for Claude) published in a research paper or official engineering blog. (The 2.9 Wh figure is a third-party academic estimate, and the Google search figure is from a research institute report cited in press).",
+  "usage": {
+   "prompt_tokens": 146,
+   "completion_tokens": 409,
+   "total_tokens": 555,
+   "cost": 0.00657154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00657154,
+    "upstream_inference_prompt_cost": 0.00043654,
+    "upstream_inference_completions_cost": 0.006135
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791656413-Ew7gG3dIgJFvBFDX7feq"
+ },
+ "ts": "2026-10-10T18:20:16.536631+00:00"
+}

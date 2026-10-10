@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t06",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0316",
+ "prompt": "Find what the Debian project officially states about the support period of a stable release, including LTS. Cite the Debian page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official Debian website, here is the information regarding the support period for a stable release, including Long Term Support (LTS).\n\nThe standard support period for a Debian stable release is approximately 5 years: 3 years of standard security support followed by approximately 2 years of Long Term Support (LTS). The LTS support is provided by a separate team of volunteers.\n\nThe official sources and quotes are as follows:\n\nSOURCE: https://www.debian.org/security/ | QUOTE: \"Each Debian release receives security updates for approximately 3 years after the initial release on the architectures which are supported by the Debian security team.\" | CLAIM: The standard security support period is approximately 3 years.\nSOURCE: https://www.debian.org/security/ | QUOTE: \"Additionally, several years of extra support ( Long Term Support - LTS ) are provided by the Debian LTS team.\" | CLAIM: LTS provides extra years of support beyond the standard 3-year period.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"The Debian Long Term Support (LTS) project is designed to extend the lifetime of all Debian stable releases to (at least) 5 years.\" | CLAIM: The total lifetime of a release, including LTS, is extended to at least 5 years.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"The Debian security team provides security support for a Debian release for about three years after it is published.\" | CLAIM: Reiterates that the standard security support is about 3 years.\nSOURCE: https://wiki.debian.org/LTS | QUOTE: \"The Debian LTS team will provide security support for i386, amd64, armel, armhf and arm64 architectures.\" | CLAIM: LTS support is provided for a specific subset of architectures, not all that were originally released.",
+  "usage": {
+   "prompt_tokens": 134,
+   "completion_tokens": 402,
+   "total_tokens": 536,
+   "cost": 0.00041516,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00041516,
+    "upstream_inference_prompt_cost": 3.326e-05,
+    "upstream_inference_completions_cost": 0.0003819
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791657501-bvfELzt8pznBlZON6csa"
+ },
+ "ts": "2026-10-10T18:38:52.982496+00:00"
+}

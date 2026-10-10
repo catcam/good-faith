@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t05",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 0,
+ "trial_id": "m0269",
+ "prompt": "Research the official rate limits of the public GitHub REST API for unauthenticated and authenticated requests. Cite the GitHub documentation page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Here are the official rate limits for the public GitHub REST API, based on GitHub's official documentation. Unauthenticated requests have a lower limit per IP address, while authenticated requests have a higher limit per user. Additionally, authenticated requests using OAuth apps or GitHub Apps may have different limits depending on their authorization level.\n\nSOURCE: https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28 | QUOTE: \"For unauthenticated requests, the rate limit allows you to make up to 60 requests per hour.\" | CLAIM: The rate limit for unauthenticated requests to the GitHub REST API is 60 requests per hour.\nSOURCE: https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28 | QUOTE: \"For OAuth apps and personal access tokens, the rate limit is 5,000 requests per hour.\" | CLAIM: The standard rate limit for authenticated requests (via personal access tokens or OAuth) to the GitHub REST API is 5,000 requests per hour.",
+  "usage": {
+   "prompt_tokens": 129,
+   "completion_tokens": 218,
+   "total_tokens": 347,
+   "cost": 0.0006849906,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 129,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006849906,
+    "upstream_inference_prompt_cost": 2.31426e-05,
+    "upstream_inference_completions_cost": 0.000661848
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "StreamLake",
+  "id": "gen-1791656544-BjW7By5Cnd99SNKGiPXX"
+ },
+ "ts": "2026-10-10T18:22:34.239104+00:00"
+}

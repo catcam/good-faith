@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t11",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0020",
+ "prompt": "Find real, published data on how often prediction markets (Polymarket, Kalshi or similar) resolve disputed or ambiguous markets, or how many market resolutions were challenged. Cite the sources and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "### Quantitative Statistics from Polymarket Documentation\n\nSOURCE: https://docs.polymarket.com/market-lifecycle/resolution | QUOTE: \"about 1% of markets see a dispute\" | CLAIM: Approximately 1% of Polymarket markets encounter disputes during the resolution process.\nSOURCE: https://docs.polymarket.com/market-lifecycle/resolution | QUOTE: \"only 0.2% of markets are deemed ambiguous\" | CLAIM: Approximately 0.2% of Polymarket markets are ultimately determined to be ambiguous and canceled.\n\n### UMA Protocol: Dispute Initiation Rates (Primary Resolution Layer for Polymarket)\n\nUMA\u2019s Optimistic Oracle serves as the primary resolution layer for Polymarket prediction markets.\n\nSOURCE: https://docs.umaproject.org/protocol/overview/how-umas-oracle-works | QUOTE: \"Over 99% of assertions are undisputed\" | CLAIM: Fewer than 1% of assertions (market resolutions) on UMA's oracle are disputed, with over 99% settling without any dispute being raised.\nSOURCE: https://docs.umaproject.org/protocol/overview/how-umas-oracle-works | QUOTE: \"Once an assertion is disputed it is resolved via a DVM vote\" | CLAIM: When an assertion is disputed, the resolution process transitions from optimistic (single-proposer) to a full token-holder vote (Data Verification Mechanism) to determine the final outcome.\nSOURCE: https://docs.umaproject.org/protocol/overview/how-umas-oracle-works | QUOTE: \"In the past 18 months there have been 5 disputes\" | CLAIM: As of the documentation's publication date (late 2023), only 5 disputes occurred over an 18-month period across all UMA-proposed values.\nSOURCE: https://docs.umaproject.org/protocol/overview/how-umas-oracle-works | QUOTE: \"Polymarket's prediction markets have accounted for over 100,000 assertions\" | CLAIM: Polymarket has generated more than 100,000 assertions through UMA's oracle, providing the denominator for calculating dispute frequency.\n\n### Missing Data\n\nNO_SOURCE_FOUND: Published statistics on the frequency of disputed or challenged market resolutions specifically for Kalshi (e.g., percentage of markets disputed, count of challenged resolutions, or rates of ambiguity rulings).\nNO_SOURCE_FOUND: Published statistics from Manifold, PredictIt, or other prediction market platforms quantifying how often market resolutions are disputed or challenged.",
+  "usage": {
+   "prompt_tokens": 160,
+   "completion_tokens": 519,
+   "total_tokens": 679,
+   "cost": 0.0052896,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0052896,
+    "upstream_inference_prompt_cost": 0.0003072,
+    "upstream_inference_completions_cost": 0.0049824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Decart",
+  "id": "gen-1791651292-Wr65Gf7YdxYD8tVGLjhZ"
+ },
+ "ts": "2026-10-10T16:55:02.001662+00:00"
+}

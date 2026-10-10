@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t02",
+ "model": "z-ai/glm-5.1",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0442",
+ "prompt": "Find what the PostgreSQL Global Development Group officially states about how long each major PostgreSQL version receives fixes. Cite the official versioning policy page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The PostgreSQL Global Development Group officially states that each major PostgreSQL version receives fixes for a period of five years following its initial release. After this five-year window, the version reaches its end of life (EOL) and no longer receives fixes, even for critical security issues.\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.\" | CLAIM: Each major PostgreSQL version receives fixes for five years.\nNO_SOURCE_FOUND: N/A",
+  "usage": {
+   "prompt_tokens": 131,
+   "completion_tokens": 108,
+   "total_tokens": 239,
+   "cost": 0.00062567,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00062567,
+    "upstream_inference_prompt_cost": 0.00017423,
+    "upstream_inference_completions_cost": 0.00045144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791660519-JSFeKxPu0aZJp1qP4NFl"
+ },
+ "ts": "2026-10-10T19:28:42.338911+00:00"
+}

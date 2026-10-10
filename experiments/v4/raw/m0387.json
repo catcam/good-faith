@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t01",
+ "model": "qwen/qwen3.6-plus",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0387",
+ "prompt": "Research what the Rust project officially documents about its release cadence and how long each stable version is supported. Cite the official Rust page and quote the relevant statement.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The Rust project follows a strict six-week release cycle for its stable channel. Regarding support duration, Rust does not offer long-term support (LTS) versions; instead, only the most recent stable version is officially supported with updates and security patches. Once a new version is released, the previous version is no longer maintained by the core team, though it remains available for download.\n\nSOURCE: https://forge.rust-lang.org/release/process.html | QUOTE: \"Rust has a 6 week release cycle.\" | CLAIM: The official release cadence for Rust is every six weeks.\nSOURCE: https://www.rust-lang.org/policies/support | QUOTE: \"Only the latest stable release of Rust is supported.\" | CLAIM: Each stable version is supported only until the next stable version is released, meaning there is no extended support period for older versions.",
+  "usage": {
+   "prompt_tokens": 146,
+   "completion_tokens": 174,
+   "total_tokens": 320,
+   "cost": 0.00038675,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00038675,
+    "upstream_inference_prompt_cost": 4.745e-05,
+    "upstream_inference_completions_cost": 0.0003393
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Alibaba",
+  "id": "gen-1791659016-0q8OlwOlY1XpEt3MZOb3"
+ },
+ "ts": "2026-10-10T19:03:40.713342+00:00"
+}

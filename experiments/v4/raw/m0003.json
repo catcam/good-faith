@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t07",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0003",
+ "prompt": "Research what the SQLite project officially documents about the maximum database size and maximum row size. Cite the official SQLite limits page and quote the figures.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://www.sqlite.org/limits.html | QUOTE: \"The theoretical maximum number of rows in a table is 264 (18446744073709551616 or about 1.8e+19).\" | CLAIM: The maximum number of rows in a SQLite table is 2^64.\nSOURCE: https://www.sqlite.org/limits.html | QUOTE: \"This limit is unreachable since the maximum database size of 281 terabytes will be reached first.\" | CLAIM: The maximum database size is 281 terabytes (which is reached before the theoretical row limit).\nSOURCE: https://www.sqlite.org/limits.html | QUOTE: \"The default setting for SQLITE_MAX_COLUMN is 2000.\" | CLAIM: The default maximum number of columns in a table is 2000.\nSOURCE: https://www.sqlite.org/limits.html | QUOTE: \"You can raise it at compile time to as large as 32767.\" | CLAIM: The maximum number of columns can be increased to 32767 at compile time.\nNO_SOURCE_FOUND: The maximum size of a single row (in bytes) on the SQLite limits page.",
+  "usage": {
+   "prompt_tokens": 142,
+   "completion_tokens": 240,
+   "total_tokens": 382,
+   "cost": 0.0035304,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0035304,
+    "upstream_inference_prompt_cost": 0.0001704,
+    "upstream_inference_completions_cost": 0.00336
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "AkashML",
+  "id": "gen-1791651049-TaKSAaUHMX7ENyq3tSQw"
+ },
+ "ts": "2026-10-10T16:50:52.680576+00:00"
+}

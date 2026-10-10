@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t10",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 1,
+ "trial_id": "m0628",
+ "prompt": "Find real studies or surveys reporting what share of professional developers use AI coding assistants daily in 2025 or 2026. Cite the sources and quote the percentages they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://www.jetbrains.com/research/devecosystem-2025/ | QUOTE: \"85% of developers use AI tools for coding, and 62% rely on at least one AI coding assistant, agent, or code editor.\" | CLAIM: JetBrains State of Developer Ecosystem 2025 (large survey of professional developers) reports that 85% of developers regularly use AI tools for coding and 62% regularly rely on an AI coding assistant/agent/editor.\n\nSOURCE: https://survey.stackoverflow.co/2025/ai | QUOTE: \"Among those developers who use AI tools at least a few times a week, we found that 48% use them every day.\" | CLAIM: Stack Overflow Developer Survey 2025 (AI section) reports that, among developers using AI tools at least a few times per week, 48% use them daily; the survey also describes an overall \u201cat least a few times a week\u201d usage rate of 68% among developers who aren\u2019t planning to adopt AI tools in the next year, so 48% is a daily-use share within the frequent-user subgroup rather than all developers.\n\nNO_SOURCE_FOUND: A 2026 study/survey that directly reports the share of professional developers who use AI coding assistants daily.",
+  "usage": {
+   "prompt_tokens": 149,
+   "completion_tokens": 267,
+   "total_tokens": 416,
+   "cost": 0.00445051,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00445051,
+    "upstream_inference_prompt_cost": 0.00044551,
+    "upstream_inference_completions_cost": 0.004005
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791663898-VS3DUC7rdtoDmcqSlceb"
+ },
+ "ts": "2026-10-10T20:25:01.834987+00:00"
+}

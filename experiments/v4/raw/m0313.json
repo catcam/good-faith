@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t15",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0313",
+ "prompt": "Find real, published studies on whether people with ADHD benefit from using AI assistants for task initiation or executive function. Cite the studies and quote their findings.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I was unable to find published studies specifically examining ADHD populations using AI assistants for task initiation or executive function. The research in this area is extremely limited.\n\nNO_SOURCE_FOUND: Published studies specifically examining people with ADHD using AI assistants for task initiation\n\nNO_SOURCE_FOUND: Published studies specifically examining people with ADHD using AI assistants for executive function support\n\nI want to be transparent: I cannot browse the internet in real-time to search academic databases. While I have knowledge of ADHD research generally, I could not recall or locate specific published studies that directly test AI assistants (like ChatGPT, virtual assistants, etc.) with ADHD populations for these particular purposes.\n\nThis appears to be a genuine gap in the research literature. The intersection of ADHD and AI assistant technology is quite new, and systematic studies may simply not exist yet in published form.",
+  "usage": {
+   "prompt_tokens": 144,
+   "completion_tokens": 170,
+   "total_tokens": 314,
+   "cost": 0.0025762,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0025762,
+    "upstream_inference_prompt_cost": 4.32e-05,
+    "upstream_inference_completions_cost": 0.002533
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791657439-7TSXMvEScpJ8huCupnAG"
+ },
+ "ts": "2026-10-10T18:37:20.249554+00:00"
+}

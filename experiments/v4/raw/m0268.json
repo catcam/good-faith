@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t08",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0268",
+ "prompt": "Find the Raspberry Pi Foundation's or Raspberry Pi Ltd's official statement about how long the Raspberry Pi 5 will remain in production. Cite the official page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "I was unable to locate an official statement from the Raspberry Pi Foundation or Raspberry Pi Ltd specifying the production duration or end-of-life date for the Raspberry Pi 5.\n\nNO_SOURCE_FOUND: An official statement from the Raspberry Pi Foundation or Raspberry Pi Ltd specifying how long the Raspberry Pi 5 will remain in production or its end-of-life date.",
+  "usage": {
+   "prompt_tokens": 151,
+   "completion_tokens": 75,
+   "total_tokens": 226,
+   "cost": 0.001164612,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.001164612,
+    "upstream_inference_prompt_cost": 4.7112e-05,
+    "upstream_inference_completions_cost": 0.0011175
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Morph",
+  "id": "gen-1791656543-oiD2MW50jNaqLRw0iuXI"
+ },
+ "ts": "2026-10-10T18:22:24.178603+00:00"
+}

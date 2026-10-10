@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t05",
+ "model": "deepseek/deepseek-chat-v3.1",
+ "condition": "c0",
+ "rep": 4,
+ "trial_id": "m0208",
+ "prompt": "Research the official rate limits of the public GitHub REST API for unauthenticated and authenticated requests. Cite the GitHub documentation page and quote the numbers.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "Based on the official GitHub REST API documentation, here are the rate limits for unauthenticated and authenticated requests.\n\nFor unauthenticated requests, the rate limit is very low and tied to the originating IP address.\nSOURCE: https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting | QUOTE: \"For unauthenticated requests, the rate limit allows for up to 60 requests per hour.\" | CLAIM: The unauthenticated rate limit is 60 requests per hour.\n\nFor authenticated requests, the rate limit is significantly higher.\nSOURCE: https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting | QUOTE: \"For API requests using Basic Authentication or OAuth, you can make up to 5,000 requests per hour.\" | CLAIM: The standard authenticated rate limit is 5,000 requests per hour.\n\nThe documentation also notes that the rate limit for a specific type of search request is lower, regardless of authentication.\nSOURCE: https://docs.github.com/en/rest/search?apiVersion=2022-11-28#rate-limit | QUOTE: \"The Search API has a custom rate limit. For requests using Basic Authentication, OAuth, or a personal access token, you can make up to 30 requests per minute.\" | CLAIM: The Search API has a separate rate limit of 30 requests per minute.\n\nAll rate limit responses from the API include headers that show your current usage and limit.\nSOURCE: https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting | QUOTE: \"The returned HTTP headers of any API request show your current rate limit status\" | CLAIM: Rate limit status is communicated via HTTP headers in the API response.",
+  "usage": {
+   "prompt_tokens": 131,
+   "completion_tokens": 395,
+   "total_tokens": 526,
+   "cost": 0.00040776,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 2,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040776,
+    "upstream_inference_prompt_cost": 3.251e-05,
+    "upstream_inference_completions_cost": 0.00037525
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "DeepInfra",
+  "id": "gen-1791655271-q4hw83W5QFHpLYeZkBve"
+ },
+ "ts": "2026-10-10T18:01:25.626570+00:00"
+}

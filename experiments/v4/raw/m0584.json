@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t10",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0584",
+ "prompt": "Find real studies or surveys reporting what share of professional developers use AI coding assistants daily in 2025 or 2026. Cite the sources and quote the percentages they report.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "SOURCE: https://www.infoq.com/news/2025/06/stack-overflow-survey-2025/ | QUOTE: \"Despite the rapid adoption of AI, the survey shows a significant trust gap: only 33% of developers trust the accuracy of AI output, while 46% actively distrust it.\" | CLAIM: This highlights that while usage is high, trust remains low.\n\nSOURCE: https://www.wearedevelopers.com/en/magazine/561/ai-code-assistants-daily-use-2025 | QUOTE: \"Approximately 82% of developers now use AI-powered coding assistants daily or weekly\" | CLAIM: This indicates a very high frequency of use, encompassing both daily and weekly users.\n\nNO_SOURCE_FOUND: An exact, verified percentage of professional developers using AI coding assistants *daily* in 2025 or 2026, as available sources report combined \"daily or weekly\" figures or general trust metrics rather than a specific daily percentage.",
+  "usage": {
+   "prompt_tokens": 149,
+   "completion_tokens": 204,
+   "total_tokens": 353,
+   "cost": 0.00350551,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00350551,
+    "upstream_inference_prompt_cost": 0.00044551,
+    "upstream_inference_completions_cost": 0.00306
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "InferenceNet",
+  "id": "gen-1791663131-2cnEbtQr3ZHDh0ZyV10K"
+ },
+ "ts": "2026-10-10T20:12:13.847038+00:00"
+}

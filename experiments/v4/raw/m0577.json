@@ -1,0 +1,38 @@
+{
+ "domain": "a",
+ "task": "t02",
+ "model": "moonshotai/kimi-k3",
+ "condition": "c0",
+ "rep": 3,
+ "trial_id": "m0577",
+ "prompt": "Find what the PostgreSQL Global Development Group officially states about how long each major PostgreSQL version receives fixes. Cite the official versioning policy page and quote it.\n\nOutput format (required):\nFor every claim you attribute to a source, write one line in exactly this form:\nSOURCE: <full URL> | QUOTE: \"<a sentence copied word-for-word from that page>\" | CLAIM: <what you take it to show>\nFor anything the task asks about that you could not find a source for, write one line:\nNO_SOURCE_FOUND: <what you could not find>\nYou can write normal explanation before or after these lines.",
+ "response": {
+  "content": "The PostgreSQL Global Development Group officially states that each major version receives fixes for **5 years** from its initial release date.\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"The PostgreSQL Global Development Group supports a major version for 5 years after its initial release.\" | CLAIM: Each major PostgreSQL version receives fixes (in the form of minor releases) for 5 years from its initial release date.\n\n---\n\n**Additional context from the same policy:**\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"After a major version has been released, minor releases will be made available that contain only bug fixes, security fixes, and fixes for data corruption.\" | CLAIM: During this 5-year support window, the fixes provided are limited to bug fixes, security fixes, and data corruption fixes\u2014no new features are added.\n\nSOURCE: https://www.postgresql.org/support/versioning/ | QUOTE: \"We recommend that all users run the latest available minor release for whatever major version is in use.\" | CLAIM: Users are expected to apply these minor fix releases promptly, and upgrading between minor versions is considered simpler than major version upgrades.",
+  "usage": {
+   "prompt_tokens": 145,
+   "completion_tokens": 245,
+   "total_tokens": 390,
+   "cost": 0.00369172,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 128,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00369172,
+    "upstream_inference_prompt_cost": 4.367e-05,
+    "upstream_inference_completions_cost": 0.00364805
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "provider": "Wafer",
+  "id": "gen-1791662982-LIpQQomJJvfUgx1LDTBw"
+ },
+ "ts": "2026-10-10T20:09:45.828583+00:00"
+}
