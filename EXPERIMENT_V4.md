@@ -1,7 +1,6 @@
 # Experiment v4: citations from memory, no web search
 
 **Status: FROZEN, 2026-10-10** (see the end of this file). Nikša approved running it ("da i pokreni eksperiment").
-after the pilot and before the main run. Nikša approved running it ("da i pokreni eksperiment").
 
 ## Why
 
