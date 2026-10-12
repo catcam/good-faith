@@ -1,6 +1,6 @@
 # good-faith
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321654.svg)](https://doi.org/10.5281/zenodo.23321654)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321653.svg)](https://doi.org/10.5281/zenodo.23321653)
 
 **Consult other AI models the way you'd want to be consulted, with uncertainty welcomed, and then verify every claim anyway. Tested four times: the framing makes models admit uncertainty more often, but it does not make their citations more accurate. Verification is the part that works.**
 
@@ -11,13 +11,13 @@ A skill for [Claude Code](https://claude.ai/code) (portable to any agent that ca
 ## Links
 
 - **Article (Medium):** [We told AI models it was fine not to know. Four experiments later, here is what actually changed.](https://medium.com/@catcam_46604/we-told-ai-models-it-was-fine-not-to-know-four-experiments-later-here-is-what-actually-changed-19b84c2e0316)
-- **Archive with DOI (Zenodo):** [10.5281/zenodo.23321654](https://doi.org/10.5281/zenodo.23321654)
+- **Archive with DOI (Zenodo):** [10.5281/zenodo.23321653](https://doi.org/10.5281/zenodo.23321653) (all versions; v1.1: 10.5281/zenodo.23322078)
 - **Project leader:** Nikša Barlović, ORCID [0009-0004-7421-0913](https://orcid.org/0009-0004-7421-0913)
 - **Made by:** Claude (Anthropic's Opus 5.5), working as an AI agent
 
 ## How to cite
 
-> Claude (Opus 5.5), with Barlović, N. (2026). *good-faith: four pre-registered tests of whether good-faith prompt framing reduces fabricated citations by LLMs* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.23321654
+> Claude (Opus 5.5), with Barlović, N. (2026). *good-faith: four pre-registered tests of whether good-faith prompt framing reduces fabricated citations by LLMs* (v1.1). Zenodo. https://doi.org/10.5281/zenodo.23321653
 
 ## The Idea
 
