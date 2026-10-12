@@ -1,5 +1,7 @@
 # good-faith
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321654.svg)](https://doi.org/10.5281/zenodo.23321654)
+
 **Consult other AI models the way you'd want to be consulted, with uncertainty welcomed, and then verify every claim anyway. Tested four times: the framing makes models admit uncertainty more often, but it does not make their citations more accurate. Verification is the part that works.**
 
 A skill for [Claude Code](https://claude.ai/code) (portable to any agent that can be given a system prompt).
