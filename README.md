@@ -30,6 +30,8 @@ Detail by round:
 - **v3** ([EXPERIMENT_V3.md](EXPERIMENT_V3.md)): stopped after its pilots. With web search, there was little fabrication left to reduce.
 - **v4** ([REPORT_V4.md](REPORT_V4.md)): citations from memory, the original case. 640 trials, **no reduction**: 1.82 vs 1.61 failed citations per response, p = 0.14.
 
+**Status:** the four rounds reported here are complete and their results are final. The project itself continues: the next questions are whether a long, multi-turn working relationship changes accuracy where a single prompt did not, and what happens when a model is explicitly allowed to say no.
+
 ## The Practice, After the Evidence
 
 Two halves, and the second one does the work:
