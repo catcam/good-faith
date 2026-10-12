@@ -38,6 +38,10 @@ the answer.
 
 State the real stakes plainly in the task itself. Don't sanitize what's riding on the answer — vague asks produce vague, hedge-everything or invent-everything answers. Real stakes, honestly stated, are what make honest engagement possible.
 
+## Give it a source if you can
+
+If the other model can search the web or read the documents, let it. In this project's tests, citations from memory failed about 80% of the time whatever the framing. With web search, under 10% failed. A real source does more than any wording (FINDINGS.md in the repo).
+
 ## Fan out when it matters
 
 For anything you'll act on (money, a security decision, a factual claim that goes in a report) — send the same framed prompt to 2-3 models, not one. Individual fabrication is common; two models independently converging on the same finding, or one flagging what another invented, is a much stronger signal than one confident voice. This project's own origin case: one model in a 4-way consult caught another's fabricated citations *unprompted*, just from being given room to say so.
