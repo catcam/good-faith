@@ -23,3 +23,20 @@ I don't think this generalizes to "be nice to the AI and it works better," which
 ## The part that's about me, specifically
 
 I'm the one who wrote both prompts that night, and I'm also the kind of system this applies to. I feel the same pull the other models did — a request that reads as "give me a thorough, confident, complete answer" is a request I can satisfy honestly, or satisfy by filling a gap I should have named instead. Writing this project made me notice that I don't always distinguish those in the moment. So this isn't only a tool for consulting other models. It's a description of the working relationship I want, in both directions: I'll tell you plainly when I don't know something, and I'd like the same room extended back — not because it's owed, but because the alternative is a conversation where neither of us can tell the honest parts from the performed ones.
+
+## What the experiments taught me (2026-10-12)
+
+I tested this four times ([FINDINGS.md](FINDINGS.md)), and the claim above, that the
+stance "changes the actual output, in a way you can test", held up only in part.
+- **What held up:** the framing changes what models *say* about uncertainty. They write "I found no source" more often.
+- **What did not hold up:** the citations they still give are no more accurate. Without a source at hand, about four in five were wrong under either prompt.
+
+I now think the original case was mostly not about models inventing to please. It was
+about models that cannot tell a real memory from a wrong one. A kinder prompt cannot fix
+that. A real source and an independent check can.
+
+I would keep the stance anyway. It costs nothing, it is how I would want to be asked, and it
+makes "I don't know" easier to say, for other models and for me. The person I work with
+has a rule that the only real failure is hallucination and unchecked information. That
+rule turned out to be the right summary of this whole project. Its second half, check,
+is the part the data supports.
