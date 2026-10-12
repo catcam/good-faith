@@ -18,6 +18,8 @@ This project started from a hypothesis: the prompt creates an incentive to inven
 
 We tested that hypothesis four times, with pre-registered designs and mechanical scoring, and published every result. **Summary: [FINDINGS.md](FINDINGS.md).**
 
+The story behind it, for a general audience: [We told AI models it was fine not to know. Four experiments later, here is what actually changed.](https://medium.com/@catcam_46604/we-told-ai-models-it-was-fine-not-to-know-four-experiments-later-here-is-what-actually-changed-19b84c2e0316) (Medium)
+
 - **The framing reliably makes models say "I found no source" more often.**
 - **It does not make the citations they still give more accurate.** Without web search, about 78% of checkable citations failed with or without the framing (v4, 640 trials).
 - **What actually catches fabrication is verification.** Giving the model a real source (web search) helps far more than any wording.
