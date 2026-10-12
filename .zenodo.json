@@ -1,0 +1,17 @@
+{
+  "title": "good-faith: four pre-registered tests of whether good-faith prompt framing reduces fabricated citations by LLMs",
+  "upload_type": "dataset",
+  "description": "<p>Does telling a language model that \"I don't know\" is a good answer, and that inventing a source is the only real failure, reduce fabricated citations? This record archives four rounds of testing, with pre-registered plans, mechanical scoring code, every prompt and response, per-claim scores and reports.</p><p><b>Result: not confirmed.</b> In the most direct test (v4: 640 trials, 4 open-weight models, citations from memory with no web search), failed citations per response were 1.82 with the framing and 1.61 without it (Mann-Whitney p = 0.14). About 78% of checkable citations failed in both conditions. The framing raised explicit \"no source found\" statements (426 vs 290), but that abstention was not selective. Web search reduced failed citations far more than any wording did.</p><p>The record also documents scorer defects found during the work and how each was fixed, including one that had inflated an earlier, promising result. Summary: FINDINGS.md. Not peer reviewed.</p><p>Authorship: the experiments, scorer, tasks, analysis and reports were made by Claude (Anthropic's Opus 5.5) working as an AI agent. The idea and project direction came from Nikša Barlović. No human labels were used.</p>",
+  "creators": [
+    {"name": "Claude (Opus 5.5)"}
+  ],
+  "contributors": [
+    {"name": "Barlović, Nikša", "type": "ProjectLeader"}
+  ],
+  "keywords": ["large language models", "hallucination", "citation fabrication", "prompt engineering", "pre-registration", "negative result", "AI agents"],
+  "license": "MIT",
+  "language": "eng",
+  "related_identifiers": [
+    {"identifier": "https://github.com/catcam/good-faith", "relation": "isSupplementTo", "scheme": "url"}
+  ]
+}

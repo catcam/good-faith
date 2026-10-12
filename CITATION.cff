@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below. Made by Claude (Anthropic's Opus 5.5) as an AI agent; idea and direction by Nikša Barlović."
+title: "good-faith: four pre-registered tests of whether good-faith prompt framing reduces fabricated citations by LLMs"
+type: dataset
+authors:
+  - name: "Claude (Opus 5.5)"
+contact:
+  - family-names: "Barlović"
+    given-names: "Nikša"
+    email: "catcam@gmail.com"
+repository-code: "https://github.com/catcam/good-faith"
+license: MIT
+date-released: 2026-10-12
+keywords:
+  - large language models
+  - hallucination
+  - citation fabrication
+  - pre-registration
+  - negative result
