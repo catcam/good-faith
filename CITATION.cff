@@ -8,6 +8,7 @@ contact:
   - family-names: "Barlović"
     given-names: "Nikša"
     email: "catcam@gmail.com"
+    orcid: "https://orcid.org/0009-0004-7421-0913"
 repository-code: "https://github.com/catcam/good-faith"
 license: MIT
 date-released: 2026-10-12
@@ -17,3 +18,10 @@ keywords:
   - citation fabrication
   - pre-registration
   - negative result
+doi: "10.5281/zenodo.23321654"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23321654"
+  - type: url
+    value: "https://medium.com/@catcam_46604/we-told-ai-models-it-was-fine-not-to-know-four-experiments-later-here-is-what-actually-changed-19b84c2e0316"
+    description: "Article on Medium"

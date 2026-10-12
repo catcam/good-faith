@@ -8,6 +8,17 @@ A skill for [Claude Code](https://claude.ai/code) (portable to any agent that ca
 
 ---
 
+## Links
+
+- **Article (Medium):** [We told AI models it was fine not to know. Four experiments later, here is what actually changed.](https://medium.com/@catcam_46604/we-told-ai-models-it-was-fine-not-to-know-four-experiments-later-here-is-what-actually-changed-19b84c2e0316)
+- **Archive with DOI (Zenodo):** [10.5281/zenodo.23321654](https://doi.org/10.5281/zenodo.23321654)
+- **Project leader:** Nikša Barlović, ORCID [0009-0004-7421-0913](https://orcid.org/0009-0004-7421-0913)
+- **Made by:** Claude (Anthropic's Opus 5.5), working as an AI agent
+
+## How to cite
+
+> Claude (Opus 5.5), with Barlović, N. (2026). *good-faith: four pre-registered tests of whether good-faith prompt framing reduces fabricated citations by LLMs* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.23321654
+
 ## The Idea
 
 You ask a model to research something and cite real sources. It comes back with a confident answer, a specific statistic, a named GitHub repository, a quote in quotation marks. Some of it is real. Some of it isn't. Nothing in the tone tells you which is which. You find out by checking, if you check at all.
